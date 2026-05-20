@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ITAD Service Request</title>
+  <style>
+    /* Base */
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Roboto',Arial,sans-serif;
+      font-size:14px; line-height:1.5; color:#202124;
+      background:#f8f9fa; padding:20px;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    .email-container{
+      max-width:680px; margin:0 auto; background:#fff; border-radius:8px;
+      box-shadow:0 1px 3px rgba(60,64,67,.3),0 4px 8px rgba(60,64,67,.15);
+      overflow:hidden;
+    }
+
+    /* Header */
+    .email-header{
+      color:#000; border-bottom:1px solid #808080; padding:24px 32px;
+    }
+    .email-header h1{font-size:22px; font-weight:400; margin-bottom:4px;}
+    .email-header p{opacity:.9; font-size:14px;}
+
+    /* Sections */
+    .email-content{padding:0;}
+    .section-card{padding:24px 32px; border-bottom:1px solid #e8eaed;}
+    .section-card:last-child{border-bottom:none;}
+
+    .section-header{display:flex; align-items:center; margin-bottom:16px;}
+    .section-icon{width:20px; height:20px; margin-right:12px; color:#5f6368;}
+    .section-title{font-size:16px; font-weight:500; color:#202124;}
+
+    /* Data rows (always two columns) */
+    .data-row{
+      display:flex;
+      padding:8px 0; border-bottom:0;
+    }
+    .data-label{
+      width:75px; flex-shrink:0; color:#5f6368; font-weight:500;
+    }
+    .data-value{
+      color:#202124; flex:1; word-break:break-word;
+    }
+
+    .additional-info{
+      background:#f8f9fa; padding:16px; border-radius:4px; margin-top:8px;
+      white-space:pre-wrap;
+    }
+
+    /* Footer */
+    .email-footer{
+      padding:24px 32px; border-top:1px solid #e8eaed; background:#f8f9fa;
+    }
+    .submission-info{display:flex; align-items:center;}
+    .submitter-name{font-weight:500; margin-bottom:2px;}
+    .submission-time{color:#5f6368; font-size:13px;}
+
+    /* Optional: smaller page padding on very small screens—layout stays identical */
+    @media (max-width:400px){
+      body{padding:12px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="email-container">
+    <!-- Header -->
+    <div class="email-header">
+      <h1>New ITAD Service Request</h1>
+      <p>A new service request has been submitted through the website.</p>
+    </div>
+
+    <!-- Content -->
+    <div class="email-content">
+      <!-- Contact Information -->
+      <div class="section-card">
+        <div class="section-header">
+          <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+          </svg>
+          <h2 class="section-title">Contact Information</h2>
+        </div>
+
+        <div class="data-row"><div class="data-label">Name:</div><div class="data-value">{{name}}</div></div>
+        <div class="data-row"><div class="data-label">Company:</div><div class="data-value">{{company}}</div></div>
+        <div class="data-row"><div class="data-label">Email:</div><div class="data-value">{{email}}</div></div>
+        <div class="data-row"><div class="data-label">Phone:</div><div class="data-value">{{phone}}</div></div>
+      </div>
+
+      <!-- Location Details -->
+      <div class="section-card">
+        <div class="section-header">
+          <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+          </svg>
+          <h2 class="section-title">Location Details</h2>
+        </div>
+
+        <div class="data-row"><div class="data-label">Address:</div><div class="data-value">{{address}}</div></div>
+        <div class="data-row"><div class="data-label">City:</div><div class="data-value">{{city}}</div></div>
+      </div>
+
+      <!-- Service Details -->
+      <div class="section-card">
+        <div class="section-header">
+          <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+          </svg>
+          <h2 class="section-title">Service Details</h2>
+        </div>
+
+        <div class="data-row"><div class="data-label">Service Type:</div><div class="data-value">{{service}}</div></div>
+        
+        </div>
+      </div>
+
+      <!-- Additional Information -->
+      <div class="section-card">
+        <div class="section-header">
+          <svg class="section-icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+          </svg>
+          <h2 class="section-title">Additional Information</h2>
+        </div>
+
+        <div class="additional-info">{{message}}</div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="email-footer">
+      <div class="submission-info">
+        <div>
+          <div class="submitter-name">Booking Requested by {{name}}</div>
+          <div class="submission-time">Submitted on: {{time}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

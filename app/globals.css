@@ -1,0 +1,370 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   DESIGN TOKENS
+================================ */
+@layer base {
+  :root {
+    /* Brand Colors */
+    --brand-primary: 142 57% 42%;          /* #2aac61 */
+    --brand-primary-hover: 142 59% 39%;    /* #299e58 */
+    --brand-primary-border: 142 60% 44%;   /* #2cb563 */
+
+    /* SECONDARY */
+    --brand-secondary: 30 30% 95%;
+    --brand-secondary-hover: 30 25% 90%; 
+    --brand-secondary-border: 30 20% 85%;
+
+    /* Dark system */
+    --dark-bg: 200 55% 10%;
+    --dark-secondary: 196 93% 11%;
+
+    /* Optional variations */
+    --dark-muted: 200 40% 14%;
+    --dark-border: 200 30% 20%;
+
+    /* shadcn Light */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    --primary: var(--brand-primary);
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: var(--brand-primary);
+
+    --radius: 0.5rem;
+
+    --chart-1: 142 57% 42%;
+    --chart-2: 196 93% 11%;
+    --chart-3: 173 58% 39%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: var(--dark-bg);
+    --foreground: 0 0% 98%;
+
+    --card: var(--dark-secondary);
+    --card-foreground: 0 0% 98%;
+
+    --popover: var(--dark-secondary);
+    --popover-foreground: 0 0% 98%;
+
+    --primary: var(--brand-primary);
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: var(--dark-secondary);
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: var(--dark-muted);
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 196 60% 16%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: var(--dark-border);
+    --input: var(--dark-border);
+    --ring: var(--brand-primary);
+
+    --chart-1: 142 57% 42%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
+
+/* ================================
+   LAYOUT UTILITIES
+================================ */
+.container-narrow {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.section {
+  @apply py-14 md:py-20;
+}
+
+.h1 {
+  @apply text-3xl md:text-5xl font-semibold tracking-tight;
+}
+
+.h2 {
+  @apply text-2xl md:text-3xl font-semibold;
+}
+
+.lead {
+  @apply text-muted-foreground;
+}
+
+.card {
+  @apply rounded-lg border bg-card text-card-foreground shadow-sm;
+}
+
+/* ================================
+   BRAND BACKGROUNDS
+================================ */
+.bg-brand {
+  background-color: hsl(var(--brand-primary));
+}
+
+.bg-brand-hover:hover {
+  background-color: hsl(var(--brand-primary-hover));
+}
+@layer utilities {
+  .bg-dark {
+    background-color: hsl(var(--dark-bg));
+  }
+
+  .bg-dark-secondary {
+    background-color: hsl(var(--dark-secondary));
+  }
+}
+
+.bg-dark-hover:hover {
+  background-color: hsl(200 50% 14%);
+}
+
+.bg-dark-secondary-hover:hover {
+  background-color: hsl(196 80% 15%);
+}
+
+/* ================================
+   DARK TEXT
+================================ */
+.text-dark-primary {
+  color: #ffffff;
+}
+
+.text-dark-muted {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ================================
+   DARK BORDER
+================================ */
+.border-dark {
+  border-color: hsl(var(--dark-border));
+}
+
+/* ================================
+   BRAND TEXT
+================================ */
+.text-brand {
+  color: hsl(var(--brand-primary));
+}
+
+.text-brand-hover:hover {
+  color: hsl(var(--brand-primary-hover));
+}
+
+.text-brand-dark {
+  color: hsl(var(--brand-dark));
+}
+
+.text-brand-light {
+  color: #ffffff;
+}
+
+/* ================================
+   BRAND BORDER
+================================ */
+.border-brand {
+  border-color: hsl(var(--brand-primary-border));
+}
+
+.border-brand-dark {
+  border-color: hsl(var(--brand-dark));
+}
+
+/* ================================
+   SECONDARY BACKGROUND
+================================ */
+.bg-secondary {
+  background-color: hsl(var(--brand-secondary));
+}
+
+.bg-secondary-hover:hover {
+  background-color: hsl(var(--brand-secondary-hover));
+}
+
+/* ================================
+   SECONDARY TEXT
+================================ */
+.text-secondary {
+  color: hsl(var(--brand-primary));
+}
+
+/* ================================
+   SECONDARY BORDER
+================================ */
+.border-secondary {
+  border-color: hsl(var(--brand-secondary-border));
+}
+
+/* ================================
+   BUTTONS
+================================ */
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 font-medium transition-all duration-300;
+  background-color: hsl(var(--brand-primary));
+  color: #ffffff;
+  border: 1px solid hsl(var(--brand-primary-border));
+}
+
+.btn-primary:hover {
+  background-color: hsl(var(--brand-primary-hover));
+}
+
+.btn-outline-primary {
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 font-medium transition-all duration-300;
+  background-color: transparent;
+  color: hsl(var(--brand-primary));
+  border: 1px solid hsl(var(--brand-primary-border));
+}
+
+.btn-outline-primary:hover {
+  background-color: hsl(var(--brand-primary));
+  color: #ffffff;
+}
+
+.btn-dark {
+  @apply inline-flex items-center justify-center rounded-lg px-5 py-2.5 font-medium transition-all duration-300;
+  background-color: hsl(var(--brand-dark));
+  color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: hsl(var(--brand-primary));
+}
+
+/* ================================
+   DARK MODE HELPERS
+================================ */
+.dark-box {
+  @apply dark:bg-[#013242];
+}
+
+.dark-bg {
+  @apply dark:bg-[#022836];
+}
+
+/* ================================
+   TIMELINE
+================================ */
+.timeline-item {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-line {
+  background: linear-gradient(to bottom, #2aac61, #268d51);
+  transition: height 0.3s ease-out;
+}
+
+.timeline-node {
+  transition: all 0.3s ease-out;
+}
+
+/* ================================
+   SCROLLBAR
+================================ */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ================================
+   BLOG CARDS
+================================ */
+.blogcards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.blogcard {
+  transition: 400ms ease;
+  border-radius: 8px;
+}
+
+.blogcard:hover {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.blogcards:hover > .blogcard:not(:hover) {
+  filter: blur(6px);
+  transform: scale(0.95);
+}
+
+.blogcard img {
+  transition: transform 200ms ease;
+}
+
+.blogcard:hover img {
+  transform: scale(1.1);
+}
+
+/* ================================
+   RESPONSIVE FIX
+================================ */
+@media only screen and (min-width: 1022px) and (max-width: 1166px) {
+  .my-element {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+
+.themeColor{
+  color: #4ebf5d;
+}
