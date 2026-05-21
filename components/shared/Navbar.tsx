@@ -3,9 +3,10 @@
 import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+
 import Image from 'next/image'
-import integritradeLogoLight from "@/public/integritrade-logo-light.png"
-import integritradeLogoDark from "@/public/integritrade-logo-dark.png"
+import integritradeLogo from "@/public/logo/integritrade-logo.svg"
+
 import {
   ChevronDown,
   Monitor,
@@ -27,7 +28,6 @@ import {
   Shield,
 } from 'lucide-react'
 import { ModeToggle } from './ModeToggle'
-import { useTheme } from 'next-themes'
 import PrimaryButton from './buttons/PrimaryButton'
 import OutlineButton from './buttons/OutlineButton'
 
@@ -42,6 +42,21 @@ interface DesktopDropdownProps {
   item: NavItem
   isActive: boolean
   registerRef: (el: HTMLDivElement | null) => void
+}
+
+/* --------------------- Active-state helpers --------------------- */
+const normalizePath = (p: string): string =>
+  p !== '/' && p.endsWith('/') ? p.replace(/\/+$/, '') : p
+
+const isSubItemActive = (
+  href: string,
+  pathname: string,
+  parentHref: string
+): boolean => {
+  const target = normalizePath(href)
+  const current = normalizePath(pathname)
+  if (target === normalizePath(parentHref)) return current === target
+  return current === target || current.startsWith(`${target}/`)
 }
 
 /* ----------------------- Desktop Dropdown ----------------------- */
@@ -78,53 +93,63 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
 
       {/* Hover dropdown panel */}
       <div
-        className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50 transition-all duration-300 ${
-          open ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-2 pointer-events-none'
+        className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50 transition-all duration-200 ${
+          open
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 -translate-y-1 pointer-events-none'
         }`}
       >
-        <div className="w-[340px] bg-white/95 dark:bg-[#0a1f17]/95 backdrop-blur-xl border border-black/5 dark:border-white/10 rounded-2xl shadow-[0_20px_60px_-15px_rgba(0,0,0,0.25)] dark:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.6)] overflow-hidden p-2">
-          {item.dropdown?.map((dropdownItem, idx) => {
-            const isSubActive = pathname === dropdownItem.href
-            const Icon = dropdownItem.icon
+        <div className="w-[320px] overflow-hidden rounded-md border border-gray-200/70 dark:border-white/10 bg-white dark:bg-[#071611] shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
 
-            return (
-              <Link
-                key={dropdownItem.href}
-                href={dropdownItem.href}
-                style={{ transitionDelay: open ? `${idx * 30}ms` : '0ms' }}
-                className={`group/item flex items-center gap-3 px-3 py-3 rounded-xl transition-all duration-200 ${
-                  isSubActive
-                    ? 'bg-primary/8 dark:bg-primary/15'
-                    : 'hover:bg-gray-50 dark:hover:bg-white/5'
-                }`}
-              >
-                {Icon && (
-                  <div
-                    className={`p-2 rounded-lg transition-all duration-300 ${
-                      isSubActive
-                        ? 'bg-primary'
-                        : 'bg-gray-700 dark:bg-gray-300 group-hover/item:bg-gray-900 dark:group-hover/item:bg-white group-hover/item:scale-110'
-                    }`}
-                  >
-                    <Icon className="h-4 w-4 flex-shrink-0 text-primary" strokeWidth={2.2} />
-                  </div>
-                )}
-                <span
-                  className={`text-[13.5px] font-medium tracking-tight transition-colors ${
+
+          {/* Menu Items */}
+          <div className="">
+            {item.dropdown?.map((dropdownItem, idx) => {
+              const isSubActive = isSubItemActive(dropdownItem.href, pathname, item.href)
+              const isLast = idx === (item.dropdown?.length ?? 0) - 1
+
+              return (
+                <Link
+                  key={dropdownItem.href}
+                  href={dropdownItem.href}
+                  className={`group/item relative flex items-center justify-between px-5 py-5 transition-all duration-200 ${
+                    !isLast
+                      ? 'border-b border-gray-100 dark:border-white/10'
+                      : ''
+                  } ${
                     isSubActive
-                      ? 'text-primary'
-                      : 'text-gray-700 dark:text-gray-200 group-hover/item:text-gray-900 dark:group-hover/item:text-white'
+                      ? 'bg-primary/[0.06] text-primary'
+                      : 'text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/[0.03] hover:text-gray-900 dark:hover:text-white'
                   }`}
                 >
-                  {dropdownItem.label}
-                </span>
-                <ArrowRight
-                  className="w-3.5 h-3.5 ml-auto text-primary opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all duration-300"
-                  strokeWidth={2.5}
-                />
-              </Link>
-            )
-          })}
+
+                  {/* Left active line */}
+                  <span
+                    className={`absolute left-0 top-0 h-full w-[2px] bg-primary transition-opacity duration-200 ${
+                      isSubActive
+                        ? 'opacity-100'
+                        : 'opacity-0 group-hover/item:opacity-100'
+                    }`}
+                  />
+
+                  {/* Label */}
+                  <span className="text-[13px] font-medium tracking-tight transition-all duration-150 group-active/item:scale-[0.97]">
+                    {dropdownItem.label}
+                  </span>
+
+                  {/* Arrow */}
+                  <ArrowRight
+                    className={`w-3.5 h-3.5 transition-all duration-200 ${
+                      isSubActive
+                        ? 'opacity-100 text-primary'
+                        : 'opacity-0 -translate-x-1 text-gray-400 group-hover/item:opacity-100 group-hover/item:translate-x-0'
+                    }`}
+                    strokeWidth={2.2}
+                  />
+                </Link>
+              )
+            })}
+          </div>
         </div>
       </div>
     </div>
@@ -175,9 +200,9 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
           isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="px-3 pb-3 space-y-1">
+       <div className="px-3 pb-3 space-y-1">
           {item.dropdown?.map((dropdownItem, idx) => {
-            const isSubActive = pathname === dropdownItem.href
+            const isSubActive = isSubItemActive(dropdownItem.href, pathname, item.href)
             const Icon = dropdownItem.icon
             return (
               <Link
@@ -185,22 +210,24 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
                 href={dropdownItem.href}
                 onClick={onItemClick}
                 style={{ transitionDelay: isOpen ? `${idx * 40}ms` : '0ms' }}
-                className={`flex items-center gap-3 px-3 py-3 rounded-xl text-[14px] transition-all duration-300 ${
+                className={`flex items-center gap-3 px-3 py-3 rounded-md text-[14px] transition-all duration-300 active:scale-[0.97] active:duration-75 ${
                   isSubActive
-                    ? 'bg-primary/8 text-primary font-semibold'
-                    : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5'
+                    ? 'bg-white dark:bg-dark-secondary text-primary font-semibold shadow-md active:bg-gray-50 dark:active:bg-white/10'
+                    : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 active:bg-gray-100 dark:active:bg-white/10'
                 } ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}
               >
                 {Icon && (
-                  <div className={`p-1.5 rounded-md ${isSubActive ? 'bg-primary/15' : 'bg-gray-100 dark:bg-white/5'}`}>
+                  <div className="p-1.5 rounded-md">
                     <Icon className="h-3.5 w-3.5 flex-shrink-0 text-primary" strokeWidth={2.2} />
                   </div>
                 )}
-                <span className="font-medium tracking-tight">{dropdownItem.label}</span>
+                <span className="font-medium tracking-tight">
+                  {dropdownItem.label}
+                </span>
               </Link>
             )
           })}
-        </div>
+       </div>
       </div>
     </div>
   )
@@ -222,16 +249,9 @@ export default function Navbar() {
     opacity: 0,
   })
   const [hoveredHref, setHoveredHref] = useState<string | null>(null)
-
-  const { resolvedTheme } = useTheme()
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => setMounted(true), [])
-
-  const logoSrc =
-    mounted && resolvedTheme === "dark"
-      ? integritradeLogoDark
-      : integritradeLogoLight
 
   useEffect(() => {
     setIsMenuOpen(false)
@@ -272,6 +292,7 @@ export default function Navbar() {
       href: '/services',
       label: 'Services',
       dropdown: [
+        { href: '/services/', label: 'Compare Our Service Levels', icon: Recycle },
         { href: '/services/e-waste-recycling', label: 'Basic Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
         { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },        
@@ -363,11 +384,11 @@ export default function Navbar() {
           <Link href="/" className="group flex items-center gap-3 flex-shrink-0">
             <div className="flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.03]">
               <Image
-                src={logoSrc}
+                src={integritradeLogo}
                 alt="Integritrade"
-                width={32}
-                height={32}
-                className="w-40 md:w-44 object-contain"
+                width={256}
+                height={80}
+                className="object-contain w-52 md:w-64"
                 priority
               />
             </div>
@@ -381,7 +402,7 @@ export default function Navbar() {
           >
             {/* The sliding pill itself — duration & easing in style to avoid Tailwind ambiguity warnings */}
             <div
-              className="absolute top-1 bottom-1 rounded-md bg-white/90 dark:bg-white/10 shadow-[0_2px_10px_-2px_rgba(0,0,0,0.1)] dark:shadow-[0_2px_10px_-2px_rgba(0,0,0,0.4)] border border-primary/10 dark:border-white/[0.08] transition-all pointer-events-none"
+              className="absolute top-1 bottom-1 rounded-md bg-white/90 dark:bg-white/10 shadow-[0_2px_10px_-2px_rgba(0,0,0,0.1)] dark:shadow-[0_2px_10px_-2px_rgba(0,0,0,0.4)] border border-primary/10 dark:border-white/[0.08] transition-all pointer-events-none active:scale-[0.97]"
               style={{
                 left: `${pillStyle.left}px`,
                 width: `${pillStyle.width}px`,
@@ -420,7 +441,7 @@ export default function Navbar() {
                     if (el) linkRefs.current.set(item.href, el)
                   }}
                   onMouseEnter={() => setHoveredHref(item.href)}
-                  className={`relative z-10 px-4 xl:px-5 py-2 no-underline transition-colors duration-300 font-medium text-[13px] tracking-tight ${
+                  className={`relative z-10 px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight ${
                     isActive
                       ? 'text-primary'
                       : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
@@ -487,11 +508,11 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               <Image
-                src={logoSrc}
-                alt="Integritrade"
-                width={32}
-                height={32}
-                className="w-40 object-contain"
+                src={integritradeLogo}
+                alt="Integritrade LLC Logo"
+                width={208}
+                height={60}
+                className="w-52 object-contain"
                 priority
               />
             </Link>

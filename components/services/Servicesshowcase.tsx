@@ -169,7 +169,7 @@ export default function ServicesShowcase() {
                       <Link
                         href={`/services/${service.slug}`}
                         className={[
-                          'group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.20em] font-semibold pb-1.5 border-b transition-colors',
+                          'group inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.20em] font-semibold pb-1.5 border-b transition-all duration-150 active:scale-[0.97]',
                           theme?.textLight,
                           theme?.textDark,
                           theme?.borderLight,

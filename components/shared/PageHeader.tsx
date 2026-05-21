@@ -33,7 +33,7 @@ export default function PageHeader({
   const cta = hasLink && (
     <Link
       href={linkHref!}
-      className="group font-semibold inline-flex items-center gap-2 self-start text-sm font-mono uppercase tracking-[0.2em] border-b border-stone-900 dark:border-white pb-1 text-primary hover:text-primary/80 hover:border-primary transition-colors duration-300"
+      className="group font-semibold inline-flex items-center gap-2 self-start text-sm font-mono uppercase tracking-[0.2em] border-b border-stone-900 dark:border-white pb-1 text-primary hover:text-primary/80 hover:border-primary transition-all duration-150 active:scale-[0.97]"
     >
       {linkText}
       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />

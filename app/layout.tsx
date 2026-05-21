@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   description: siteConfig.description,
   keywords: siteConfig.keywords,
   icons: {
-    icon: "/logoC.png",
+    icon: "/logo/integritrade-favicon.svg",
   },
   verification: {
     google: "qsfyTTMiUnf1Eai5hEW017rJ__8a7dxZxGRmJWKsvzU",

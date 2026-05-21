@@ -5,7 +5,7 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import { useAppDispatch, useAppSelector } from '@/store'
 import { startLoading, stopLoading } from '@/store/routeSlice'
 import Image from 'next/image'
-import logo from "@/public/logo-png.png"
+import logo from "@/public/logo/integritrade-logo.svg"
 
 export default function RouteLoader() {
   const dispatch = useAppDispatch()
@@ -61,7 +61,7 @@ export default function RouteLoader() {
             background: '#ffffff',
             border: '1.5px solid rgba(42,172,97,0.25)',
             borderRadius: '999px',
-            padding: '8px 14px', 
+            padding: '2px 8px', 
             boxShadow: '0 2px 12px rgba(42,172,97,0.10)',
             animation: 'fadeIn 0.15s ease',
             whiteSpace: 'nowrap',
@@ -70,21 +70,9 @@ export default function RouteLoader() {
             <Image
                 src={logo}
                 alt="Integritrade"
-                height={20}
+                height={32}
                 style={{ display: 'block', objectFit: 'contain', flexShrink: 0 }}
             />
-
-            {/* Text */}
-            <span style={{
-                fontSize: '0.875rem',
-                fontWeight: 700,
-                letterSpacing: '0.1em',
-                color: '#1a7a44',
-                textTransform: 'uppercase',
-            }}>
-                Integritrade
-            </span>
-
             {/* Spinner */}
             <div style={{
                 width: '16px', height: '16px',
@@ -92,7 +80,7 @@ export default function RouteLoader() {
                 border: '2px solid rgba(42,172,97,0.2)',
                 borderTopColor: '#2aac61',
                 animation: 'spin 0.7s linear infinite',
-                flexShrink: 0,            // 👈 prevents spinner squishing
+                flexShrink: 0, 
             }} />
         </div>
 

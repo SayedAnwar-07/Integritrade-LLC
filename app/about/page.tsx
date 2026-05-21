@@ -183,7 +183,7 @@ export default function AboutPage() {
                   iconBorder: "border-sky-200 dark:border-sky-900",
                 },
               ].map((p, i) => (
-                  <div className="">
+                  <div key={p.title} className="">
                     <div className="flex gap-2 flex-col md:flex-row md:items-center">
                       <div className={``}>
                         <p.Icon className={`h-5 w-5 ${p.iconColor}`} />
@@ -195,7 +195,7 @@ export default function AboutPage() {
 
                     {/* <div className="my-4 h-px w-full bg-stone-200 dark:bg-slate-700" /> */}
 
-                    <p className="mt-2 text-sm text-muted-foreground dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
                       {p.desc}
                     </p>
                   </div>
@@ -222,7 +222,7 @@ export default function AboutPage() {
                       contracts.
                     </h2>
                   </div>
-                  <div className="max-w-4xl space-y-5 text-muted-foreground dark:text-gray-300 leading-relaxed mt-8">
+                  <div className="max-w-4xl space-y-5 text-base leading-relaxed text-stone-700 dark:text-slate-300 mt-8">
                     <p className="text-justify">
                       Founded with a mission to provide secure and environmentally responsible IT asset disposition services, Integritrade has become a trusted partner for businesses across industries. Our certified professionals ensure the highest standards of security, compliance, and sustainability.
                     </p>
@@ -290,7 +290,7 @@ export default function AboutPage() {
               },
             ].map((p, i) => (
               <ScrollLoader key={p.title} delay={i * 0.08}>
-              <div key={i} className="">
+              <div key={p.title} className="">
                   <div className="flex gap-2 flex-col md:flex-row md:items-center">
                       <div className={``}>
                         <p.Icon className={`h-5 w-5 ${p.iconColor}`} />
@@ -300,7 +300,7 @@ export default function AboutPage() {
                       </h3>
                     </div>
                   
-                  <p className="mt-4 text-sm text-muted-foreground dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
                     {p.desc}
                   </p>
                 </div>
@@ -371,7 +371,7 @@ export default function AboutPage() {
                         <div className="font-serif text-xl text-gray-900 dark:text-gray-100">
                           {item.title}
                         </div>
-                        <p className="mt-2 text-sm text-muted-foreground dark:text-gray-300 leading-relaxed text-justify">
+                        <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
                           {item.desc}
                         </p>
                       </div>
@@ -402,7 +402,7 @@ export default function AboutPage() {
                 </h2>
               </div>
               <div className="">
-                <p className="text-muted-foreground dark:text-gray-300 leading-relaxed text-justify">
+                <p className="text-base leading-relaxed text-stone-700 dark:text-slate-300  text-justify">
                   Security, environmental, and operations leads sit at the same
                   table so your retirement plan reflects all three constraints
                   from day one.
@@ -449,7 +449,7 @@ export default function AboutPage() {
 
                   <div className="my-4 h-px w-full bg-stone-200 dark:bg-slate-700" />
 
-                  <p className="mt-4 text-sm text-muted-foreground dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="mt-4 text-base  text-stone-700 dark:text-slate-300 leading-relaxed text-justify">
                     {p.desc}
                   </p>
                 </div>
@@ -474,7 +474,7 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                   Site visits welcome. Walk the floor before you sign.
                 </h2>
-                <p className="mt-6 text-muted-foreground dark:text-gray-300 leading-relaxed max-w-xl text-justify">
+                <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl text-justify">
                   We host scheduled facility tours for prospective clients and
                   auditors. Bring your compliance lead they&apos;ll see the same
                   process your retired devices will go through.

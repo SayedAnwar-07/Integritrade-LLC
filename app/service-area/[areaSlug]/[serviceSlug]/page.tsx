@@ -151,7 +151,7 @@ export default async function ServicePage({ params }: PageProps) {
                       </h2>
 
                       {item.body && (
-                        <p className="mt-4 text-muted-foreground dark:text-gray-300 text-justify">
+                        <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
                           {item.body}
                         </p>
                       )}
@@ -183,7 +183,7 @@ export default async function ServicePage({ params }: PageProps) {
                                   {faq.question}
                                 </AccordionTrigger>
 
-                                <AccordionContent className="pb-4 text-muted-foreground dark:text-gray-300 leading-7">
+                                <AccordionContent className="pb-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 leading-7">
                                   {faq.answer}
                                 </AccordionContent>
                               </AccordionItem>

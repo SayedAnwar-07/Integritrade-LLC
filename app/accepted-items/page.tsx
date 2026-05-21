@@ -296,7 +296,7 @@ export default function AcceptedItemsPage() {
             <div className="grid md:grid-cols-2 gap-10 items-center mt-20">
             
                 {/* LEFT CONTENT */}
-                <div className="space-y-4 max-w-xl leading-relaxed">
+                <div className="space-y-4 max-w-xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
                   <p className="">
                     We accept a wide range of IT and office electronics for secure, certified recycling, helping businesses safely dispose of outdated or end-of-life equipment. From laptops and desktops to servers, networking hardware, and mobile devices, we handle assets of all types and brands with care.
                   </p>
@@ -317,6 +317,8 @@ export default function AcceptedItemsPage() {
                     alt="Accepted IT equipment for recycling"
                     fill
                     className="object-contain"
+                    loading="eager"
+                    priority
                   />
                 </div>
 
@@ -379,7 +381,7 @@ export default function AcceptedItemsPage() {
                 <h3 className="font-serif text-lg text-gray-900 dark:text-gray-100 tracking-tight">
                   Copy Machines / Commercial Copiers
                 </h3>
-                <p className="mt-2 text-sm text-muted-foreground dark:text-gray-300">
+                <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300">
                   Large commercial copiers require specialized handling.
                 </p>
               </div>
@@ -434,7 +436,7 @@ export default function AcceptedItemsPage() {
                           {f.title}
                         </h3>
                   </div>
-                    <p className="mt-2 text-sm text-muted-foreground dark:text-gray-300">
+                    <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300">
                       {f.sub}
                     </p>
                     <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-800 text-[11px] uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400 font-semibold">
@@ -448,7 +450,7 @@ export default function AcceptedItemsPage() {
         
         {/* Not Accepted */}
         <div className="mt-20 md:mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-end">
 
             {/* ── Left column: sticky heading + image + inline contact ──── */}
             <div className="lg:col-span-5">
@@ -464,7 +466,7 @@ export default function AcceptedItemsPage() {
                   Materials outside our scope.
                 </h2>
 
-                <p className="mt-6 text-muted-foreground dark:text-gray-300 max-w-md">
+                <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-md">
                   For safety, regulatory, and environmental compliance
                   reasons, the following materials cannot be accepted at our
                   facility. Please do not bring these items for drop-off.
@@ -478,6 +480,8 @@ export default function AcceptedItemsPage() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 40vw"
+                    loading="eager"
+                    priority
                   />
                 </div>
                 
@@ -490,7 +494,7 @@ export default function AcceptedItemsPage() {
                 <ScrollLoader key={item.title} delay={idx * 0.08}>
                   <li
                     key={item.title}
-                    className="group pl-8 md:pl-10 pr-2 py-6 first:pt-0 last:pb-0"
+                    className="group pl-8 md:pl-10 pr-2 py-6 first:pt-0 last:pb-0 mb-4 md:mb-6"
                   >
 
                     <div className="flex items-baseline gap-4 md:gap-6">
@@ -503,7 +507,7 @@ export default function AcceptedItemsPage() {
                           {item.title}
                         </h3>
                         {item.note && (
-                          <p className="mt-2 text-sm md:text-[15px] text-muted-foreground dark:text-gray-400 leading-relaxed max-w-xl">
+                          <p className="text-sm md:text-[15px] text-muted-foreground dark:text-gray-400 leading-relaxed max-w-xl">
                             {item.note}
                           </p>
                         )}
@@ -529,7 +533,7 @@ export default function AcceptedItemsPage() {
                 <h2 className="mt-6 font-serif text-2xl md:text-3xl text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15]">
                   Don&apos;t see your device listed?
                 </h2>
-                <p className="mt-4 text-muted-foreground dark:text-gray-300 max-w-lg">
+                <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-lg">
                   If you have an electronic device that&apos;s not listed
                   above, reach out. We&apos;re always expanding our recycling
                   capabilities and may be able to help.

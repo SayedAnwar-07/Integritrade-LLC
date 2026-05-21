@@ -3,10 +3,12 @@ import Script from "next/script";
 import Image from "next/image";
 import SectionHeader from "@/components/shared/SectionHeader";
 import PageHeader from "@/components/shared/PageHeader";
+
 import ssdShredderImg from "../../../public/about/ssd-shredder.jpeg";
 import hddShredderImg from "../../../public/about/hdd-shredder.jpeg";
 import degausserImg from "../../../public/about/degausser.jpeg";
 import aboutData from '../../../public/about/aboutData.png'
+
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import { Mail, MapPin, Phone } from "lucide-react";
@@ -153,6 +155,8 @@ export default function OurCapabilitiesPage() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 40vw"
+                      loading="eager"
+                      priority
                     />
                   </div>
                 </div>
@@ -184,6 +188,8 @@ export default function OurCapabilitiesPage() {
                       fill
                       className="object-cover rounded-md"
                       sizes="(max-width: 1024px) 100vw, 50vw"
+                      loading="eager"
+                      priority
                     />
                   </div>
                   <div className="p-8 lg:p-10">
@@ -261,6 +267,8 @@ export default function OurCapabilitiesPage() {
                       fill
                       className="object-cover rounded-md"
                       sizes="(max-width: 1024px) 100vw, 50vw"
+                      loading="eager"
+                      priority
                     />
                   </div>           
                 </div>
@@ -290,6 +298,8 @@ export default function OurCapabilitiesPage() {
                       fill
                       className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
+                      loading="eager"
+                      priority
                     />
                   </div>
                 </div>
@@ -430,7 +440,7 @@ export default function OurCapabilitiesPage() {
                     <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                       Site visits welcome. Walk the floor before you sign.
                     </h2>
-                    <p className="mt-6 text-muted-foreground dark:text-gray-300 leading-relaxed max-w-xl text-justify">
+                    <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl text-justify">
                       We host scheduled facility tours for prospective clients and
                       auditors. Bring your compliance lead they&apos;ll see the same
                       process your retired devices will go through.

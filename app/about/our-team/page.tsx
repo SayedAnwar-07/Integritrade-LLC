@@ -439,7 +439,7 @@ export default function OurTeamPage() {
                         <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                           Site visits welcome. Walk the floor before you sign.
                         </h2>
-                        <p className="mt-6 text-muted-foreground dark:text-gray-300 leading-relaxed max-w-xl text-justify">
+                        <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 leading-relaxed max-w-xl text-justify">
                           We host scheduled facility tours for prospective clients and
                           auditors. Bring your compliance lead they&apos;ll see the same
                           process your retired devices will go through.

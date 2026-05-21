@@ -13,6 +13,10 @@ import { milpitasData } from "./areas/milpitasData";
 import { menloParkData } from "./areas/menloParkData";
 import { redwoodCityData } from "./areas/redwoodCityData";
 import { sanMateoData } from "./areas/sanMateoData";
+import { berkeleyData } from "./areas/berkeleyData";
+import { fremontData } from "./areas/fremontData";
+import { oaklandData } from "./areas/oaklandData";
+import { southSanFranciscoData } from "./areas/southSanFranciscoData";
 
 // ── Master list ───────────────────────────────────────────────
 export const serviceAreas: ServiceArea[] = [
@@ -27,7 +31,11 @@ export const serviceAreas: ServiceArea[] = [
   milpitasData,
   menloParkData,
   redwoodCityData,
-  sanMateoData
+  sanMateoData,
+  berkeleyData,
+  fremontData,
+  oaklandData,
+  southSanFranciscoData,
 ];
 
 // ── Re-export types ───────────────────────────────────────────

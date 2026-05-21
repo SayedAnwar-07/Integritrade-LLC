@@ -8,9 +8,9 @@
 @layer base {
   :root {
     /* Brand Colors */
-    --brand-primary: 142 57% 42%;          /* #2aac61 */
-    --brand-primary-hover: 142 59% 39%;    /* #299e58 */
-    --brand-primary-border: 142 60% 44%;   /* #2cb563 */
+    --brand-primary: 136 64% 38%;
+    --brand-primary-hover: 136 64% 34%;
+    --brand-primary-border: 136 60% 42%; 
 
     /* SECONDARY */
     --brand-secondary: 30 30% 95%;
@@ -295,7 +295,7 @@
 }
 
 .timeline-line {
-  background: linear-gradient(to bottom, #2aac61, #268d51);
+   background: linear-gradient(to bottom, #24a048, #1f8a3d);
   transition: height 0.3s ease-out;
 }
 
@@ -366,5 +366,5 @@
 }
 
 .themeColor{
-  color: #4ebf5d;
+  color: #24a048;
 }

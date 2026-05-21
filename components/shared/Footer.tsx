@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import ServicingAreaMenu from "../service-area/ServicingAreaMenu";
-import integritradeLogoDark from "@/public/integritrade-logo-dark.png"
+import integritradeLogo from "@/public/logo/integritrade-logo.svg"
 
 const footerServices = [
   { href: "/services/e-waste-recycling/", label: "Electronic Recycling" },
@@ -36,11 +36,11 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
               <div className="flex items-center justify-center">
                 <Image
-                  src={integritradeLogoDark}
+                  src={integritradeLogo}
                   alt="Integritrade"
-                  width={32}
-                  height={32}
-                  className="w-48 md:w-56 object-contain"
+                  width={256}
+                  height={80}
+                  className="object-contain w-52 md:w-64"
                   priority
                 />
               </div>

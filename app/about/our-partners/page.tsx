@@ -134,6 +134,8 @@ export default function OurPartnersPage() {
               src={ELFUS}
               alt="ELFUS Foundation Partnership with Integritrade LLC"
               className="rounded-md w-full h-80 object-cover"
+              loading="eager"
+              priority
             />
             <div>
               <h2 className="font-serif text-4xl leading-[1.05] tracking-tight text-stone-900 dark:text-white mb-3">
