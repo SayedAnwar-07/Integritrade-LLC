@@ -78,7 +78,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
     >
       <Link
         href={item.href}
-        className={`relative z-10 inline-flex items-center gap-1.5 px-4 xl:px-5 py-2 no-underline transition-colors duration-300 font-medium text-[13px] tracking-tight ${
+        className={`relative z-10 inline-flex items-center gap-1.5 px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight active:scale-[0.97] ${
           isActive
             ? 'text-primary'
             : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
@@ -174,7 +174,7 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
         <Link
           href={item.href}
           onClick={onItemClick}
-          className={`flex-1 px-5 py-4 text-[15px] font-medium tracking-tight transition-colors ${
+          className={`flex-1 px-5 py-4 text-[15px] font-medium tracking-tight transition-all active:scale-[0.97] active:duration-75 ${
             isActive
               ? 'text-primary'
               : 'text-gray-700 dark:text-gray-200'
@@ -382,15 +382,16 @@ export default function Navbar() {
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-2">
           {/* ================== LOGO with subtle scale ================== */}
           <Link href="/" className="group flex items-center gap-3 flex-shrink-0">
-            <div className="flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.03]">
+            <div className="flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.03] w-52 md:w-64">
               <Image
-                src={integritradeLogo}
-                alt="Integritrade"
-                width={256}
-                height={80}
-                className="object-contain w-52 md:w-64"
-                priority
-              />
+  src={integritradeLogo}
+  alt="Integritrade LLC Logo"
+  width={2977}
+  height={783}
+  className="w-full h-auto object-contain"
+  loading="eager"
+  priority
+/>
             </div>
           </Link>
 
@@ -441,7 +442,7 @@ export default function Navbar() {
                     if (el) linkRefs.current.set(item.href, el)
                   }}
                   onMouseEnter={() => setHoveredHref(item.href)}
-                  className={`relative z-10 px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight ${
+                  className={`relative z-10 px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight active:scale-[0.97] ${
                     isActive
                       ? 'text-primary'
                       : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
@@ -507,14 +508,17 @@ export default function Navbar() {
               className="flex gap-2 items-center"
               onClick={() => setIsMenuOpen(false)}
             >
-              <Image
-                src={integritradeLogo}
-                alt="Integritrade LLC Logo"
-                width={208}
-                height={60}
-                className="w-52 object-contain"
-                priority
-              />
+              <span className="block w-52">
+                <Image
+  src={integritradeLogo}
+  alt="Integritrade LLC Logo"
+  width={2977}
+  height={783}
+  className="w-full h-auto object-contain"
+  loading="eager"
+  priority
+/>
+              </span>
             </Link>
             <button
               onClick={() => setIsMenuOpen(false)}
@@ -554,7 +558,7 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-medium tracking-tight transition-colors ${
+                  className={`block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-medium tracking-tight transition-all active:scale-[0.97] active:duration-75 ${
                     isActive ? 'text-primary' : 'text-gray-700 dark:text-gray-200 hover:text-primary'
                   }`}
                 >

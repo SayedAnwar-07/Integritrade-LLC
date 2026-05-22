@@ -17,6 +17,8 @@ import { berkeleyData } from "./areas/berkeleyData";
 import { fremontData } from "./areas/fremontData";
 import { oaklandData } from "./areas/oaklandData";
 import { southSanFranciscoData } from "./areas/southSanFranciscoData";
+import { sanBrunoData } from "./areas/sanBrunoData";
+import { fosterCityData } from "./areas/fosterCityData";
 
 // ── Master list ───────────────────────────────────────────────
 export const serviceAreas: ServiceArea[] = [
@@ -36,6 +38,8 @@ export const serviceAreas: ServiceArea[] = [
   fremontData,
   oaklandData,
   southSanFranciscoData,
+  sanBrunoData,
+  fosterCityData,
 ];
 
 // ── Re-export types ───────────────────────────────────────────
