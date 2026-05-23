@@ -14,7 +14,7 @@ export default function BackButton() {
         rounded-lg border border-white/20
         bg-white/10 px-4 py-2
         text-sm font-medium text-white
-        backdrop-blur
+        backdrop-blur click-feel
         transition-all duration-200
         hover:bg-white/20 hover:-translate-x-1
         active:translate-x-0 active:scale-95

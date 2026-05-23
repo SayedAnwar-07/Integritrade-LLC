@@ -231,7 +231,7 @@ export default function ServicesGrid() {
                 >
                    <Link
                             href={`/services/${service.slug}`}
-                            className="flex h-full flex-col overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 ease-out hover:border-emerald-600/40 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:border-gray-800 dark:bg-dark-secondary dark:hover:border-emerald-500/40 shadow-lg"
+                            className="flex h-full flex-col overflow-hidden rounded-md border border-gray-200 bg-white transition-all duration-300 ease-out hover:border-primary hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:border-gray-800 dark:bg-dark-secondary dark:hover:border-primary shadow-lg"
                     >
                       {/* Image */}
                       <div className="relative aspect-[16/10] w-full overflow-hidden bg-gray-100 dark:bg-gray-90">
@@ -247,7 +247,7 @@ export default function ServicesGrid() {
                       {/* content */}
                       <div className='flex flex-1 flex-col p-6'>
                           {/* Title — reserves space for 2 lines */}
-                          <h3 className="mb-3 font-serif text-xl leading-snug text-gray-900 transition-colors group-hover:text-emerald-700 dark:text-gray-50 dark:group-hover:text-emerald-400 line-clamp-2 min-h-[3.5rem]">
+                          <h3 className="mb-3 font-serif text-xl leading-snug text-gray-900 transition-colors group-hover:text-primary dark:text-gray-50 dark:group-hover:text-primary line-clamp-2 min-h-[3.5rem]">
                             {service.pageTitle}
                           </h3>
 
@@ -256,18 +256,18 @@ export default function ServicesGrid() {
                             {truncate(service.pageSubtitle, 160)}
                           </p>
 
-                          {/* Footer — pinned to bottom */}
-                          <div className="mt-auto flex items-center gap-1.5 border-t border-gray-100 pt-4 dark:border-gray-800">
-                            <span className="text-xs font-medium uppercase tracking-[0.15em] text-gray-700 dark:text-gray-300">
-                               Explore Service
+                         <div className="click-feel group mt-auto flex items-center gap-1.5 border-t border-gray-100 pt-4 dark:border-gray-800 transition-all duration-300">
+                            <span className="text-xs font-medium uppercase tracking-[0.15em] text-gray-700 transition-colors duration-300 group-hover:text-primary dark:text-gray-300 dark:group-hover:text-primary">
+                              Explore Service
                             </span>
+
                             <ArrowUpRight
                               size={14}
-                              className="text-emerald-600 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 dark:text-emerald-500"
+                              className="h-3.5 w-3.5 text-gray-700 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-primary dark:text-gray-300 dark:group-hover:text-primary"
                               strokeWidth={2}
                             />
-                          </div>
-                      </div> 
+                         </div>
+                        </div> 
                     </Link>  
                 </article>   
               </ScrollLoader>        

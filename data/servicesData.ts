@@ -34,7 +34,10 @@ export interface Service {
   heroDescription: string
   sections: ServiceSection[]
   whyChoose: WhyChooseItem[]
-  industries: string[]
+  industries: {
+    label: string
+    href: string
+  }[]
   gallery?: {
     mainCaption: string
     items: GalleryItem[]
@@ -180,12 +183,22 @@ export const servicesData: Service[] = [
       },
     ],
     industries: [
-      "Corporate Offices",
-      "Educational Institutions",
-      "Healthcare Facilities",
-      "Government Agencies",
-      "Manufacturing & Warehousing",
-      "Small to Mid-Size Businesses",
+      {
+        label: "Corporate & Enterprise",
+        href: "/industries/business-corporate",
+      },
+      {
+        label: "Education",
+        href: "/industries/education",
+      },
+      {
+        label: "Healthcare",
+        href: "/industries/healthcare",
+      },
+      {
+        label: "Government & Public Sector",
+        href: "/industries/government-public-sector",
+      },
     ],
     serviceLevel: {
       tier: "01",
@@ -267,13 +280,28 @@ export const servicesData: Service[] = [
       },
     ],
     industries: [
-      "Healthcare Organizations",
-      "Financial & Banking Institutions",
-      "Government & Public Sector",
-      "Educational Institutions",
-      "Data Centers & Cloud Providers",
-      "Corporate Enterprises",
+      {
+        label: "Healthcare",
+        href: "/industries/healthcare",
+      },
+      {
+        label: "Banking & Finance",
+        href: "/industries/finance",
+      },
+      {
+        label: "Government & Public Sector",
+        href: "/industries/government-public-sector",
+      },
+      {
+        label: "Education",
+        href: "/industries/education",
+      },
+      {
+        label: "Corporate & Enterprise",
+        href: "/industries/business-corporate",
+      },
     ],
+
     serviceLevel: {
       tier: "02",
       label: "Data Destruction Services",
@@ -368,13 +396,32 @@ export const servicesData: Service[] = [
       },
     ],
     industries: [
-      "Data Centers & Cloud Providers",
-      "Financial Services & Banking",
-      "Healthcare & Life Sciences",
-      "Government & Public Sector",
-      "Higher Education",
-      "Corporate Enterprises",
+      {
+        label: "Banking & Finance",
+        href: "/industries/finance",
+      },
+      {
+        label: "Healthcare",
+        href: "/industries/healthcare",
+      },
+      {
+        label: "Government & Public Sector",
+        href: "/industries/government-public-sector",
+      },
+      {
+        label: "Education",
+        href: "/industries/education",
+      },
+      {
+        label: "Corporate & Enterprise",
+        href: "/industries/business-corporate",
+      },
+      {
+        label: "Defense Contractors",
+        href: "/industries/defense-contractors",
+      },
     ],
+
     serviceLevel: {
       tier: "03",
       label: "Full ITAD Package",
@@ -468,12 +515,30 @@ export const servicesData: Service[] = [
       },
     ],
     industries: [
-      "Data Centers & Cloud Providers",
-      "Financial Institutions",
-      "Healthcare Organizations",
-      "Government Agencies",
-      "Educational Institutions",
-      "Large Enterprises",
+      {
+        label: "Banking & Finance",
+        href: "/industries/finance",
+      },
+      {
+        label: "Healthcare",
+        href: "/industries/healthcare",
+      },
+      {
+        label: "Government & Public Sector",
+        href: "/industries/government-public-sector",
+      },
+      {
+        label: "Education",
+        href: "/industries/education",
+      },
+      {
+        label: "Corporate & Enterprise",
+        href: "/industries/business-corporate",
+      },
+      {
+        label: "Defense Contractors",
+        href: "/industries/defense-contractors",
+      },
     ],
     serviceLevel: {
       tier: "04",

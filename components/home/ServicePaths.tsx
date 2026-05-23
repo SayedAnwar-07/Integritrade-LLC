@@ -95,7 +95,7 @@ export default function ServicePaths() {
                   <div className="mt-auto pt-5 border-t border-stone-200 dark:border-slate-600">
                     <Link
                       href={href}
-                      className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-stone-900 dark:text-white transition-colors duration-300 hover:text-emerald-700 dark:hover:text-emerald-400"
+                      className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-stone-900 dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary click-feel"
                     >
                       {ctaLabel}
                       <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

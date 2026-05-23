@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import ServicingAreaMenu from "../service-area/ServicingAreaMenu";
 import integritradeLogo from "@/public/logo/integritrade-logo.svg"
+import { usePathname } from "next/navigation";
 
 const footerServices = [
   { href: "/services/e-waste-recycling/", label: "Electronic Recycling" },
@@ -13,6 +14,7 @@ const footerServices = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
   return (
     <footer className="relative bg-[#0A0E0F] text-white overflow-hidden">
       {/* Top accent line */}
@@ -33,7 +35,7 @@ export default function Footer() {
           {/* Brand Column — 5 cols */}
           <div className="lg:col-span-5">
             {/* Logo + Brand */}
-            <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
+            <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 click-feel">
               <div className="flex items-center justify-center">
                 <Image
                   src={integritradeLogo}
@@ -118,10 +120,34 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-3 py-2.5 border-b border-white/5 hover:border-[#2aac61]/25 transition-all duration-300"
+                    className={`
+                      click-feel
+                      group flex items-center gap-3 py-2.5
+                      border-b border-white/5
+                      hover:border-[#2aac61]/25
+                      transition-all duration-300
+                    `}
                   >
-                    <span className="w-0 group-hover:w-4 h-px bg-[#2aac61] transition-all duration-300 flex-shrink-0" />
-                    <span className="text-[13px] text-white/80 group-hover:text-white/90 tracking-wide transition-colors duration-300">
+                    <span
+                      className={`
+                        w-0 group-hover:w-4 h-px bg-[#2aac61]
+                        transition-all duration-300 flex-shrink-0
+
+                        ${pathname === item.href ? "w-4" : ""}
+                      `}
+                    />
+
+                    <span
+                      className={`
+                        text-[13px] tracking-wide transition-colors duration-300
+
+                        ${
+                          pathname === item.href
+                            ? "text-[#2aac61]"
+                            : "text-white/80 group-hover:text-white/90"
+                        }
+                      `}
+                    >
                       {item.label}
                     </span>
                   </Link>
@@ -147,10 +173,34 @@ export default function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="group flex items-center gap-3 py-2.5 border-b border-white/5 hover:border-[#2aac61]/25 transition-all duration-300"
+                    className={`
+                      click-feel
+                      group flex items-center gap-3 py-2.5
+                      border-b border-white/5
+                      hover:border-[#2aac61]/25
+                      transition-all duration-300
+                    `}
                   >
-                    <span className="w-0 group-hover:w-4 h-px bg-[#2aac61] transition-all duration-300 flex-shrink-0" />
-                    <span className="text-[13px] text-white/80 group-hover:text-white/90 tracking-wide transition-colors duration-300">
+                    <span
+                      className={`
+                        w-0 group-hover:w-4 h-px bg-[#2aac61]
+                        transition-all duration-300 flex-shrink-0
+
+                        ${pathname === item.href ? "w-4" : ""}
+                      `}
+                    />
+
+                    <span
+                      className={`
+                        text-[13px] tracking-wide transition-colors duration-300
+
+                        ${
+                          pathname === item.href
+                            ? "text-[#2aac61]"
+                            : "text-white/80 group-hover:text-white/90"
+                        }
+                      `}
+                    >
                       {item.label}
                     </span>
                   </Link>

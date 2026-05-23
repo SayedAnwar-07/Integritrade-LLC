@@ -23,7 +23,7 @@ export default function BlogBreadcrumb({ slug }: BlogBreadcrumbProps) {
         >
           <Link
             href="/"
-            className="hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+            className="click-feel hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
           >
             Home
           </Link>
@@ -32,7 +32,7 @@ export default function BlogBreadcrumb({ slug }: BlogBreadcrumbProps) {
 
           <Link
             href="/blogs"
-            className="hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
+            className="click-feel hover:text-emerald-600 dark:hover:text-emerald-500 transition-colors"
           >
             Blogs
           </Link>

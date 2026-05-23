@@ -78,7 +78,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
     >
       <Link
         href={item.href}
-        className={`relative z-10 inline-flex items-center gap-1.5 px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight active:scale-[0.97] ${
+        className={`relative z-10 inline-flex items-center gap-1.5 px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel ${
           isActive
             ? 'text-primary'
             : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
@@ -133,7 +133,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                   />
 
                   {/* Label */}
-                  <span className="text-[13px] font-medium tracking-tight transition-all duration-150 group-active/item:scale-[0.97]">
+                  <span className="text-[13px] font-medium tracking-tight transition-all duration-150 click-feel">
                     {dropdownItem.label}
                   </span>
 
@@ -174,7 +174,7 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
         <Link
           href={item.href}
           onClick={onItemClick}
-          className={`flex-1 px-5 py-4 text-[15px] font-medium tracking-tight transition-all active:scale-[0.97] active:duration-75 ${
+          className={`flex-1 px-5 py-4 text-[15px] font-medium tracking-tight transition-all click-feel ${
             isActive
               ? 'text-primary'
               : 'text-gray-700 dark:text-gray-200'
@@ -210,7 +210,7 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
                 href={dropdownItem.href}
                 onClick={onItemClick}
                 style={{ transitionDelay: isOpen ? `${idx * 40}ms` : '0ms' }}
-                className={`flex items-center gap-3 px-3 py-3 rounded-md text-[14px] transition-all duration-300 active:scale-[0.97] active:duration-75 ${
+                className={`flex items-center gap-3 px-3 py-3 rounded-md text-[14px] transition-all duration-300 click-feel ${
                   isSubActive
                     ? 'bg-white dark:bg-dark-secondary text-primary font-semibold shadow-md active:bg-gray-50 dark:active:bg-white/10'
                     : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 active:bg-gray-100 dark:active:bg-white/10'
@@ -384,14 +384,14 @@ export default function Navbar() {
           <Link href="/" className="group flex items-center gap-3 flex-shrink-0">
             <div className="flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.03] w-52 md:w-64">
               <Image
-  src={integritradeLogo}
-  alt="Integritrade LLC Logo"
-  width={2977}
-  height={783}
-  className="w-full h-auto object-contain"
-  loading="eager"
-  priority
-/>
+                src={integritradeLogo}
+                alt="Integritrade LLC Logo"
+                width={2977}
+                height={783}
+                className="w-full h-auto object-contain"
+                loading="eager"
+                priority
+              />
             </div>
           </Link>
 
@@ -442,7 +442,7 @@ export default function Navbar() {
                     if (el) linkRefs.current.set(item.href, el)
                   }}
                   onMouseEnter={() => setHoveredHref(item.href)}
-                  className={`relative z-10 px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight active:scale-[0.97] ${
+                  className={`relative z-10 px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight click-feel ${
                     isActive
                       ? 'text-primary'
                       : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
@@ -510,14 +510,14 @@ export default function Navbar() {
             >
               <span className="block w-52">
                 <Image
-  src={integritradeLogo}
-  alt="Integritrade LLC Logo"
-  width={2977}
-  height={783}
-  className="w-full h-auto object-contain"
-  loading="eager"
-  priority
-/>
+                  src={integritradeLogo}
+                  alt="Integritrade LLC Logo"
+                  width={2977}
+                  height={783}
+                  className="w-full h-auto object-contain"
+                  loading="eager"
+                  priority
+                />
               </span>
             </Link>
             <button

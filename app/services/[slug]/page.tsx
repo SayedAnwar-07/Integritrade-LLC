@@ -227,12 +227,8 @@ export default async function ServicePage(props: {
 
                 <dl className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
                   {service.whyChoose.map((item, index) => {
-                    const num = String(index + 1).padStart(2, "0");
                     return (
                       <div key={index} className="flex flex-col">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-primary mb-3">
-                          {num}
-                        </p>
                         <dt className="font-serif text-lg font-semibold text-gray-900 dark:text-white tracking-tight mb-3">
                           {item.title}
                         </dt>
@@ -257,23 +253,29 @@ export default async function ServicePage(props: {
                 </div>
 
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white tracking-tight leading-tight mb-12 max-w-3xl">
-                  Who we serve.
+                  Who we serve
                 </h2>
 
                 <dl className="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-gray-200 dark:border-gray-800">
                   {service.industries.map((industry, index) => {
-                    const num = String(index + 1).padStart(2, "0");
+
                     return (
                       <div
                         key={index}
                         className="flex items-baseline gap-4 py-5 border-b border-gray-200 dark:border-gray-800"
                       >
-                        <span className="font-mono text-[10px] tabular-nums tracking-widest text-gray-400 dark:text-gray-500">
-                          {num}
-                        </span>
-                        <span className="font-serif text-[15px] text-gray-800 dark:text-gray-200">
-                          {industry}
-                        </span>
+                        <Link
+                          href={industry.href}
+                          className="
+                            font-serif text-[15px] text-gray-800 dark:text-gray-200
+                            hover:text-primary dark:hover:text-primary
+                            active:scale-95
+                            active:translate-y-[1px]
+                            transition-all duration-150
+                          "
+                        >
+                          {industry.label}
+                        </Link>
                       </div>
                     );
                   })}
