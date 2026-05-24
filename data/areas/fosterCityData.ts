@@ -66,7 +66,6 @@ export const fosterCityData: ServiceArea = {
             "R2v3 Certified Process: Ensures environmentally friendly and safe recycling as per international standards.",
             "Secure Chain of Custody: The serial number of each device is tracked from the time of collection until destruction.",
             "On-Site and Off-Site Facilities: We can also provide direct service to your Foster City office as per your needs.",
-            "Zero Landfill Guarantee: We guarantee that no toxic e-waste will end up in a California landfill.",
             "Detailed Compliance Report: We provide comprehensive reports and certificates for audit and tax benefits."
           ]
         },

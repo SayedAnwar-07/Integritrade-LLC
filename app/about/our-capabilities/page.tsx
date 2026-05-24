@@ -76,7 +76,7 @@ export default function OurCapabilitiesPage() {
                 Three destruction <em className="italic font-serif">paths.</em> One audit-ready outcome.
               </>
             }
-            description="Every retired drive that enters our facility leaves with a name on it a serial number, a method, a Certificate. Below is the equipment we own, the standards we follow, and how we choose between them on your project."
+            description="Every data-bearing asset follows a documented destruction path. We identify each device, apply the appropriate sanitization or destruction method, and provide serialized reporting or certificates your team can verify. Below is the equipment we use, the standards we follow, and how we choose the right method for each project."
           />
         </ScrollLoader>
 
@@ -373,7 +373,7 @@ export default function OurCapabilitiesPage() {
                     equipment: "Proton Data Security",
                     model: "Model 104",
                     method: "Physical shredding",
-                    media: "HDDs · Post-degaussed media",
+                    media: "Degaussed 3.5-inch and 2.5-inch hard disk drives (HDDs), magnetic media, and other approved electronic media",
                     standard: "NIST 800-88",
                   },
                   {
@@ -386,10 +386,10 @@ export default function OurCapabilitiesPage() {
                   },
                   {
                     num: "04",
-                    equipment: "Blancco + WipeOS",
+                    equipment: "PXE-Boot, USB Boot, Server-Rack Erasure",
                     model: "Software platform",
                     method: "Software sanitization",
-                    media: "Drives intended for reuse",
+                    media: "SSDs, HDDs, NVMes, Cell Phones, Tablets, Computers, etc",
                     standard: "ADISA-verified",
                   },
                 ].map((row) => (

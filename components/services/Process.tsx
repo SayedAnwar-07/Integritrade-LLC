@@ -97,7 +97,7 @@ export default function Process() {
               <ScrollLoader key={title} delay={index * 0.08}>
                 <div key={num} className="group relative">
                   {/* Card */}
-                  <div className={`relative rounded-md border border-gray-200 dark:border-gray-700/50 bg-white dark:bg-dark-secondary p-7`}>
+                  <div className={`relative rounded-md border border-gray-200 dark:border-gray-700/50 bg-white dark:bg-dark-secondary p-7 h-full`}>
                     {/* Icon */}
                     <div className={`inline-flex h-11 w-11 items-center justify-center rounded-md border ${color.iconBorder} mb-5`}>
                       <Icon className={`h-5 w-5 ${color.text}`} strokeWidth={2} />

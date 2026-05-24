@@ -66,7 +66,6 @@ export const emeryvilleData: ServiceArea = {
             "R2v3 Certified Process: Ensures environmentally friendly, safe recycling in accordance with international standards.",
             "Secure Chain of Custody: The serial number of each device is tracked from collection through destruction.",
             "On-Site & Off-Site Facilities: We can provide direct service to your Emeryville office or lab, depending on your needs.",
-            "ZERO LANDFILL GUARANTEE: We guarantee that no toxic e-waste will end up in a California landfill.",
             "Detailed Compliance Report: We provide full report and destruction certificate for audit and tax benefits."
           ]
         },

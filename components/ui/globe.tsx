@@ -2,30 +2,30 @@
 
 import { useEffect, useRef, useState } from "react"
 import createGlobe, { COBEOptions } from "cobe"
-import {
-  Truck,
-  Recycle,
-  BadgeCheck,
-  ClipboardList,
-  HardDrive,
-  type LucideIcon,
-} from "lucide-react"
+import Image, { type StaticImageData } from "next/image"
+
+import Iso9001 from "@/public/ISO/ISO-9001.webp"
+import Iso14001 from "@/public/ISO/ISO-14001.webp"
+import Iso27001 from "@/public/ISO/ISO-27001.webp"
+import Iso45001 from "@/public/ISO/ISO-45001.webp"
+import R2v3 from "@/public/ISO/R2V3_certified_logo.webp"
 
 import { cn } from "@/lib/utils"
 
 
 type Service = {
-  icon: LucideIcon
+  image: StaticImageData
+  alt: string
   label: string
   angle: number
 }
 
 const SERVICES: Service[] = [
-  { icon: Truck,         label: "SECURE\nCOLLECTION",          angle: -90 },
-  { icon: Recycle,       label: "RESPONSIBLE\nRECYCLING",      angle: -32 },
-  { icon: BadgeCheck,    label: "COMPLIANCE\n& CERTIFICATION", angle:  32 },
-  { icon: ClipboardList, label: "AUDIT TRAIL &\nREPORTING",    angle: 148 },
-  { icon: HardDrive,     label: "CERTIFIED DATA\nDESTRUCTION", angle: 212 },
+  { image: R2v3,    alt: "R2v3 certified",  label: "R2v3\nCERTIFIED",         angle: -90 },
+  { image: Iso14001, alt: "ISO 14001",      label: "ISO 14001\nENVIRONMENT",  angle: -32 },
+  { image: Iso27001, alt: "ISO 27001",      label: "ISO 27001\nINFO SECURITY", angle:  32 },
+  { image: Iso45001, alt: "ISO 45001",      label: "ISO 45001\nHEALTH & SAFETY", angle: 148 },
+  { image: Iso9001,  alt: "ISO 9001",       label: "ISO 9001\nQUALITY",       angle: 212 },
 ]
 
 
@@ -57,8 +57,8 @@ const DARK_CONFIG: COBEOptions = {
   diffuse: 3,
   mapBrightness: 8,
   baseColor: [0.157, 0.384, 0.573],
-  markerColor: [0.1, 0.8, 0.5],      
-  glowColor:   [0.02, 0.12, 0.16],   
+  markerColor: [0.1, 0.8, 0.5],
+  glowColor:   [0.02, 0.12, 0.16],
 }
 
 function useIsDark() {
@@ -177,7 +177,6 @@ export function ItadGlobe({ className }: { className?: string }) {
         const r = 44 // % from centre
         const x = 50 + r * Math.cos(rad)
         const y = 50 + r * Math.sin(rad)
-        const Icon = service.icon
 
         return (
           <div
@@ -189,30 +188,32 @@ export function ItadGlobe({ className }: { className?: string }) {
               animation: `nodeIn 700ms cubic-bezier(.2,.7,.2,1) ${i * 90}ms both`,
             }}
           >
-            {/* icon disc */}
+            {/* certificate disc */}
             <div
               className="
-                relative flex h-11 w-11 items-center justify-center rounded-full
-                border border-gray-200 bg-gray-50
+                relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full
+                border border-gray-200 bg-white
                 shadow-[0_4px_14px_-2px_rgba(0,0,0,0.12)]
-                dark:border-gray-800 dark:bg-dark-secondary
+                dark:border-gray-700
                 dark:shadow-[0_4px_14px_-2px_rgba(0,0,0,0.6)]
-                sm:h-14 sm:w-14
+                sm:h-16 sm:w-16
               "
             >
-              <Icon
-                className="h-5 w-5 text-black dark:text-white sm:h-6 sm:w-6 md:h-7 md:w-7"
-                strokeWidth={1.6}
-                aria-hidden
+              <Image
+                src={service.image}
+                alt={service.alt}
+                fill
+                sizes="64px"
+                className="object-contain p-1.5"
               />
             </div>
 
             <div
               className="
-                max-w-[88px] whitespace-pre-line text-center
+                whitespace-pre text-center
                 text-[9px] font-bold leading-tight tracking-[0.08em]
                 text-black dark:text-white
-                sm:max-w-[110px] sm:text-[10px] md:text-xs
+                sm:text-[10px] md:text-xs
               "
             >
               {service.label}

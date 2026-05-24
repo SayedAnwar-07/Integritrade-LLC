@@ -290,7 +290,6 @@ export const fresnoData: ServiceArea = {
             "R2v3 Certified Process: Ensuring environmentally friendly and safe recycling in accordance with international standards.",
             "Secure Chain of Custody: Every device's serial number is tracked from collection to destruction.",
             "On-Site and Off-Site Facilities: We can provide services directly to your Fresno office or commercial space, depending on your needs.",
-            "Zero Landfill Guarantee: We guarantee that no toxic e-waste will end up in a California landfill.",
             "Detailed Compliance Report: We provide a full report and a destruction certificate for audit and tax benefits."
           ]
         },

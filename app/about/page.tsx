@@ -439,7 +439,7 @@ export default function AboutPage() {
               },
             ].map((p, i) => (
               <ScrollLoader key={p.title} delay={i * 0.08}>
-                <div key={i} className="p-8 lg:p-10 bg-white dark:bg-dark-secondary">
+                <div key={i} className="p-8 lg:p-10 bg-white dark:bg-dark-secondary h-full">
                   <div className={`mb-8 p-3 border inline-block rounded-md ${p.iconBorder}`}>
                     <p.Icon className={`h-5 w-5 ${p.iconColor}`} />
                   </div>

@@ -66,7 +66,6 @@ export const fremontData: ServiceArea = {
             "R2v3 Certified Process: Ensures environmentally friendly, safe recycling in accordance with international standards.",
             "Secure Chain of Custody: The serial number of each device is tracked from collection through destruction.",
             "ON-SITE AND OFF-SITE FACILITIES: We can provide direct service to your Fremont office or factory, depending on your needs.",
-            "ZERO LANDFILL GUARANTEE: We guarantee that no toxic e-waste will end up in a California landfill.",
             "Detailed Compliance Report: We provide full reports and certificates for audit and tax benefits."
           ]
         },

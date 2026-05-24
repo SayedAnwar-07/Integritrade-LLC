@@ -181,21 +181,30 @@ const FREE_CATEGORIES: Array<{
   },
 ]
 
-const FEE_ITEMS: { title: string; sub: string, index: number }[] = [
+const FEE_ITEMS: { title: string; sub: string; fee: string; index: number }[] = [
   {
-    index:1,
+    index: 1,
+    title: 'Copy Machines / Commercial Copiers',
+    sub: 'Large commercial copiers require specialized handling.',
+    fee: '$100',
+  },
+  {
+    index: 2,
     title: 'NiCD batteries from power tools',
-    sub: 'Special handling required for hazardous materials',
+    sub: 'Special handling required for hazardous materials.',
+    fee: 'Fee varies',
   },
   {
-    index:2,
+    index: 3,
     title: 'Industrial equipment batteries',
-    sub: 'Requires specialized disposal process',
+    sub: 'Requires specialized disposal process.',
+    fee: 'Fee varies',
   },
   {
-    index:3,
+    index: 4,
     title: 'Large appliances with electronic components',
-    sub: 'Size and complexity require additional processing',
+    sub: 'Size and complexity require additional processing.',
+    fee: 'Fee varies',
   },
 ]
 
@@ -291,41 +300,6 @@ export default function AcceptedItemsPage() {
           </ScrollLoader>
         </div>
 
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-          <ScrollLoader>
-            <div className="grid md:grid-cols-2 gap-10 items-center mt-20">
-            
-                {/* LEFT CONTENT */}
-                <div className="space-y-4 max-w-xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
-                  <p className="">
-                    We accept a wide range of IT and office electronics for secure, certified recycling, helping businesses safely dispose of outdated or end-of-life equipment. From laptops and desktops to servers, networking hardware, and mobile devices, we handle assets of all types and brands with care.
-                  </p>
-
-                  <p className="">
-                    Every item goes through a compliance-driven process focused on data security and environmental responsibility. Our workflows include secure handling, asset tracking, and certified data destruction to ensure safe and responsible recycling.
-                  </p>
-
-                  <p className="">
-                    As an R2v3-certified provider, we maintain strict chain-of-custody and provide clear documentation for full transparency. Whether it&apos;s a few devices or a full IT decommissioning project, we deliver secure, reliable, and compliant solutions.
-                  </p>
-                </div>          
-
-                {/* RIGHT IMAGE */}
-                <div className="relative w-full h-[300px] md:h-[400px] rounded-md overflow-hidden">
-                  <Image
-                    src={acceptedItemsImg}
-                    alt="Accepted IT equipment for recycling"
-                    fill
-                    className="object-contain"
-                    loading="eager"
-                    priority
-                  />
-                </div>
-
-            </div> 
-           </ScrollLoader>           
-        </div>      
-
         {/* ── Free Recycling────────────────── */}
         <div className="mt-20 md:mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollLoader>
@@ -372,6 +346,41 @@ export default function AcceptedItemsPage() {
           </ScrollLoader>
         </div>
 
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <ScrollLoader>
+            <div className="grid md:grid-cols-2 gap-10 items-center mt-20">
+            
+                {/* LEFT CONTENT */}
+                <div className="space-y-4 max-w-xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
+                  <p className="">
+                    We accept a wide range of IT and office electronics for secure, certified recycling, helping businesses safely dispose of outdated or end-of-life equipment. From laptops and desktops to servers, networking hardware, and mobile devices, we handle assets of all types and brands with care.
+                  </p>
+
+                  <p className="">
+                    Every item goes through a compliance-driven process focused on data security and environmental responsibility. Our workflows include secure handling, asset tracking, and certified data destruction to ensure safe and responsible recycling.
+                  </p>
+
+                  <p className="">
+                    As an R2v3-certified provider, we maintain strict chain-of-custody and provide clear documentation for full transparency. Whether it&apos;s a few devices or a full IT decommissioning project, we deliver secure, reliable, and compliant solutions.
+                  </p>
+                </div>          
+
+                {/* RIGHT IMAGE */}
+                <div className="relative w-full h-[300px] md:h-[400px] rounded-md overflow-hidden">
+                  <Image
+                    src={acceptedItemsImg}
+                    alt="Accepted IT equipment for recycling"
+                    fill
+                    className="object-contain"
+                    loading="eager"
+                    priority
+                  />
+                </div>
+
+            </div> 
+           </ScrollLoader>           
+        </div>      
+
         {/* ── Paid item ── */}
         <div className="mt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollLoader>
@@ -413,35 +422,34 @@ export default function AcceptedItemsPage() {
             linkHref=""
           />
 
-          <div className="mt-10 grid gap-4 md:grid-cols-3">
+          <div className="mt-10 grid gap-4 md:grid-cols-4">
             {FEE_ITEMS.map((f, idx) => (
               <ScrollLoader key={f.title} delay={idx * 0.08}>
                   <div
                     key={f.title}
                     className="h-full bg-white dark:bg-dark-secondary rounded-md border border-black/5 dark:border-white/10 p-7 shadow-lg"
                   >
-                    <div className="flex items-start justify-between">
-                      <span className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-amber-700 dark:border-amber-400">
+                    <div className="flex items-center justify-between w-full">
+                      <span className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-amber-700/50 dark:border-amber-400/50">
                         <Zap
                           className="h-5 w-5 text-amber-600 dark:text-amber-400"
                           strokeWidth={1.5}
                         />
                       </span>
-                      <span className="text-[10px] font-mono tracking-[0.2em] text-amber-700 dark:text-amber-400">
-                        {String(idx + 1).padStart(2, '0')}
-                      </span>
+
+                      <p className="text-[11px] uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400 font-semibold">
+                        Fee Required
+                      </p>
                     </div>
-                  <div className=''>
-                      <h3 className="mt-5 font-serif text-lg text-gray-900 dark:text-gray-100 tracking-tight min-h-16">
-                          {f.title}
+                    <div className=''>
+                        <h3 className="mt-5 font-serif text-lg text-gray-900 dark:text-gray-100 tracking-tight min-h-16">
+                            {f.title}
                         </h3>
-                  </div>
+                    </div>
                     <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300  min-h-16">
                       {f.sub}
                     </p>
-                    <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-800 text-[11px] uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400 font-semibold">
-                      Fee Required
-                    </div>
+                    
                   </div>
               </ScrollLoader>
             ))}
@@ -579,11 +587,6 @@ export default function AcceptedItemsPage() {
                         <br />
                         Fresno, CA 93727
                       </dd>
-                    </div>
-                    <div>
-                      <dt className="uppercase tracking-[0.18em] text-[10px] text-muted-foreground dark:text-gray-400">
-                        Hours
-                      </dt>
                     </div>
                   </dl>
                 </ScrollLoader>

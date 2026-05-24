@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Building2, HeartPulse, Landmark, GraduationCap, ArrowUpRight } from "lucide-react"
+import { Building2, HeartPulse, Landmark, GraduationCap, ArrowUpRight, ShieldCheck, Factory, Recycle, ServerCog } from "lucide-react"
 import SectionHeader from "../shared/SectionHeader"
 import Image from "next/image"
 import IndustriesCover from "@/public/industries/Industries.jpeg"
@@ -42,6 +42,42 @@ const industries = [
     iconBorder: "border-emerald-200 dark:border-emerald-900/40",
     iconColor: "text-emerald-600 dark:text-emerald-400",
   },
+  {
+    index:5,
+    icon: ShieldCheck,
+    name: "Government & Public Sector",
+    slug: "government-public-sector",
+    desc: "Certified IT asset disposition supporting secure public sector compliance requirements.",
+    iconBorder: "border-violet-200 dark:border-violet-900/40",
+    iconColor: "text-violet-600 dark:text-violet-400",
+  },
+  {
+    index:6,
+    icon: Factory,
+    name: "Manufacturing",
+    slug: "manufacturing",
+    desc: "Responsible recycling and secure disposal for industrial IT and operational equipment.",
+    iconBorder: "border-orange-200 dark:border-orange-900/40",
+    iconColor: "text-orange-600 dark:text-orange-400",
+  },
+  {
+    index:7,
+    icon: Recycle,
+    name: "E-Waste Recycling",
+    slug: "e-waste-recycling",
+    desc: "Sustainable electronics recycling solutions focused on environmental compliance and recovery.",
+    iconBorder: "border-lime-200 dark:border-lime-900/40",
+    iconColor: "text-lime-600 dark:text-lime-400",
+  },
+  {
+    index:8,
+    icon: ServerCog,
+    name: "Data Centers",
+    slug: "data-centers",
+    desc: "End-to-end decommissioning and secure hardware disposition for data center environments.",
+    iconBorder: "border-cyan-200 dark:border-cyan-900/40",
+    iconColor: "text-cyan-600 dark:text-cyan-400",
+  },
 ];
 
 export default function Industries() {
@@ -75,11 +111,11 @@ export default function Industries() {
 
           {/* Cards — right side, 2x2 grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 order-1 lg:order-2">
-            {industries.map(({ icon: Icon, name, slug, desc, iconBorder, iconColor,index }) => (
+            {industries.slice(0, 4).map(({ icon: Icon, name, slug, desc, iconBorder, iconColor,index }) => (
                <ScrollLoader key={name} delay={index * 0.08}>
                 <div
                   key={name}
-                  className="group bg-white dark:bg-dark-secondary rounded-md p-7 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="h-full group bg-white dark:bg-dark-secondary rounded-md p-7 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
                   {/* Icon — border only, no background */}
                   <div className={`inline-flex items-center justify-center w-11 h-11 rounded-md border ${iconBorder}`}>
@@ -92,7 +128,7 @@ export default function Industries() {
                   </h3>
 
                   {/* Description */}
-                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400 min-h-[3.5rem]">
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400 min-h-[3.5rem] text-justify">
                     {desc}
                   </p>
 
@@ -113,6 +149,48 @@ export default function Industries() {
               </ScrollLoader>
             ))}
           </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 lg:mt-20">
+          {industries.slice(4, 8).map(
+            ({ icon: Icon, name, slug, desc, iconBorder, iconColor, index }) => (
+              <ScrollLoader key={name} delay={index * 0.08}>
+                <div className="h-full group bg-white dark:bg-dark-secondary rounded-md p-7 transition-all duration-300 shadow-lg hover:shadow-xl">
+                  
+                  {/* Icon */}
+                  <div
+                    className={`inline-flex items-center justify-center w-11 h-11 rounded-md border ${iconBorder}`}
+                  >
+                    <Icon className={`h-5 w-5 ${iconColor}`} strokeWidth={1.75} />
+                  </div>
+
+                  {/* Title */}
+                  <h3 className="mt-6 text-lg font-semibold text-black dark:text-white leading-snug lg:min-h-[3.5rem]">
+                    {name}
+                  </h3>
+
+                  {/* Description */}
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400 min-h-[3.5rem] text-justify">
+                    {desc}
+                  </p>
+
+                  {/* Divider */}
+                  <div className="mt-5 h-px bg-gray-200 dark:bg-white/10" />
+
+                  {/* Footer link */}
+                  <div className="pt-5">
+                    <Link
+                      href={`/industries/${slug}/`}
+                      className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-stone-900 dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary click-feel"
+                    >
+                      Explore Industry
+                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </Link>
+                  </div>
+                </div>
+              </ScrollLoader>
+            )
+          )}
         </div>
       </div>
     </section>

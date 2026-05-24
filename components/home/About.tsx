@@ -82,7 +82,7 @@ export default function About() {
                   <ScrollLoader key={label} delay={index * 0.08}>
                     <div
                       key={label}
-                      className="relative bg-white dark:bg-dark-secondary rounded-md p-6"
+                      className=" bg-white dark:bg-dark-secondary rounded-md p-6 h-full"
                     >
                       <div
                         className={`inline-flex items-center justify-center w-12 h-12 rounded-md border ${borderColor} mb-4`}

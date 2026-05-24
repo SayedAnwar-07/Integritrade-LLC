@@ -41,7 +41,7 @@ const paths: Path[] = [
     iconColor: "text-amber-700 dark:text-amber-300",
     iconBorder: "border-amber-200/80 dark:border-amber-700/40",
     title: "Free e-waste drop-off and local pickups",
-    desc: "Households, small offices, and community sites can drop off old electronics at our Fresno facility, or schedule a free local pickup across our California service zones for qualifying volumes.",
+    desc: "Households, small offices, and community sites can drop off various electronics at our Fresno facility, or schedule a convenient pickup across our California service zones for qualifying volumes.",
     ctaLabel: "Explore Drop-off",
     href: "/accepted-items/",
   },

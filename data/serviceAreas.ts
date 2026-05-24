@@ -32,6 +32,9 @@ import { stocktonData } from "./areas/stocktonData";
 import { modestoData } from "./areas/modestoData";
 import { mercedData } from "./areas/mercedData";
 import { visaliaData } from "./areas/visaliaData";
+import { walnutCreekData } from "./areas/walnutCreekData";
+import { santaClaraData } from "./areas/santaClaraData";
+import { cupertinoData } from "./areas/cupertinoData";
 
 // ── Master list ───────────────────────────────────────────────
 export const serviceAreas: ServiceArea[] = [
@@ -66,6 +69,9 @@ export const serviceAreas: ServiceArea[] = [
   modestoData,
   mercedData,
   visaliaData,
+  walnutCreekData,
+  santaClaraData,
+  cupertinoData,
 ];
 
 // ── Re-export types ───────────────────────────────────────────

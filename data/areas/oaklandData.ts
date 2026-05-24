@@ -66,7 +66,6 @@ export const oaklandData: ServiceArea = {
             "R2v3 Certified Process: Ensures environmentally friendly and safe recycling as per international standards.",
             "Secure Chain of Custody: The serial number of each device is tracked from the time of collection until destruction.",
             "ON-SITE & OFF-SITE FACILITIES: We can provide direct service to your Oakland office or downtown workspace, depending on your needs.",
-            "ZERO LANDFILL GUARANTEE: We guarantee that no toxic e-waste will end up in a California landfill.",
             "Detailed Compliance Report: We provide a full report and a destruction certificate for audit and tax benefits."
           ]
         },

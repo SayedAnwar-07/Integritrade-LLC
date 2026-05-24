@@ -66,7 +66,6 @@ export const modestoData: ServiceArea = {
             "R2v3 Certified Process: Ensures environmentally friendly and safe recycling as per international standards.",
             "Secure Chain of Custody: The serial number of each device is tracked from the time of collection until destruction.",
             "On-Site & Off-Site Facilities: We can provide direct service to your Modesto office or commercial space, depending on your needs.",
-            "Zero Landfill Guarantee: We guarantee that no toxic e-waste will end up in a California landfill.",
             "Detailed Compliance Report: We provide a full report and a destruction certificate for audit and tax benefits."
           ]
         },

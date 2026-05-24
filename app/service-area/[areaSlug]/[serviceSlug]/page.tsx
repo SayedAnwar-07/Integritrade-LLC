@@ -157,13 +157,13 @@ export default async function ServicePage({ params }: PageProps) {
                       )}
 
                       {item.bullets && item.bullets.length > 0 && (
-                        <ul className="mt-6 space-y-3">
+                        <ul className="mt-6 space-y-3 pl-4">
                           {item.bullets.map((bullet, bulletIndex) => (
                             <li
                               key={`${bulletIndex}-${bullet}`}
-                              className="flex items-start gap-3 text-slate-600 text-justify"
+                              className="flex text-[15px] items-start gap-3 text-slate-700 dark:text-slate-300 text-justify "
                             >
-                              <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-emerald-600" />
+                              <CheckCircle2 className="mt-1.5 h-4 w-4 shrink-0 text-emerald-600" />
                               <span className="leading-7">{bullet}</span>
                             </li>
                           ))}
@@ -183,7 +183,7 @@ export default async function ServicePage({ params }: PageProps) {
                                   {faq.question}
                                 </AccordionTrigger>
 
-                                <AccordionContent className="pb-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 leading-7">
+                                <AccordionContent className="pb-4 text-base leading-relaxed text-stone-700 dark:text-slate-300">
                                   {faq.answer}
                                 </AccordionContent>
                               </AccordionItem>

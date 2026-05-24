@@ -66,7 +66,6 @@ export const paloAltoData: ServiceArea = {
             "R2v3 Certified Process: We ensure environmentally friendly handling as per international standards.",
             "Secure Chain of Custody: The serial number of each device is tracked from the time of collection until destruction.",
             "On-Site and Off-Site Facilities: As per your requirement, we can provide direct service at your office or process equipment at our facility.",
-            "Zero Landfill Guarantee: We guarantee that no toxic discarded electronics will end up in a landfill or pollute the environment.",
             "Detailed Compliance Report: We provide comprehensive reports and certificates for audit and tax benefit purposes."
           ]
         },

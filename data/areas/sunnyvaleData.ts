@@ -66,7 +66,6 @@ export const sunnyvaleData: ServiceArea = {
             "R2v3 Certified Process: Ensures environmentally friendly and safe handling as per international standards.",
             "Secure Chain of Custody: The serial number of each device is tracked from the time of collection until destruction.",
             "On-Site & Off-Site Facilities: We can visit your Sunnyvale office directly or process equipment at our facility based on your preference.",
-            "Zero Landfill Guarantee: We guarantee that no toxic discarded electronics will end up in a California landfill.",
             "Detailed Compliance Report: We provide comprehensive reports and certificates for audit and tax benefit purposes."
           ]
         },

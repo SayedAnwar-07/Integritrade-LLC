@@ -66,7 +66,6 @@ export const redwoodCityData: ServiceArea = {
             "R2v3 Accredited Process: Ensures environmentally friendly and safe recycling as per international standards.",
             "Tracked Chain of Custody: The serial number of each device is monitored from the time of collection until destruction.",
             "On-Site & Off-Site Facilities: We can visit your Redwood City office directly or process equipment at our facility based on your preference.",
-            "Zero Landfill Guarantee: We guarantee that no toxic e-waste will end up in a California landfill.",
             "Detailed Adherence Report: We provide comprehensive reports and certificates for audit and tax benefit purposes."
           ]
         },
