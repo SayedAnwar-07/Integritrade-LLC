@@ -365,7 +365,7 @@ export default function OurTeamPage() {
                     — BACKGROUND
                   </p>
                   <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15] mt-3">
-                    An engineer who built systems your <em className="italic font-serif">auditors</em> already trust.
+                    An engineer who built systems your auditors already trust.
                   </h3>
                 </div>
                 <div className="lg:col-span-8">
@@ -439,7 +439,7 @@ export default function OurTeamPage() {
                         <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                           Site visits welcome. Walk the floor before you sign.
                         </h2>
-                        <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 leading-relaxed max-w-xl text-justify">
+                        <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl text-justify">
                           We host scheduled facility tours for prospective clients and
                           auditors. Bring your compliance lead they&apos;ll see the same
                           process your retired devices will go through.

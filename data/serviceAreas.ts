@@ -19,6 +19,19 @@ import { oaklandData } from "./areas/oaklandData";
 import { southSanFranciscoData } from "./areas/southSanFranciscoData";
 import { sanBrunoData } from "./areas/sanBrunoData";
 import { fosterCityData } from "./areas/fosterCityData";
+import { alamedaData } from "./areas/alamedaData";
+import { clovisData } from "./areas/clovisData";
+import { emeryvilleData } from "./areas/emeryvilleData";
+import { bakersfieldData } from "./areas/bakersfieldData";
+import { petalumaData } from "./areas/petalumaData";
+import { pleasantonData } from "./areas/pleasantonData";
+import { sacramentoData } from "./areas/sacramentoData";
+import { sanRafaelData } from "./areas/sanRafaelData";
+import { santaRosaData } from "./areas/santaRosaData";
+import { stocktonData } from "./areas/stocktonData";
+import { modestoData } from "./areas/modestoData";
+import { mercedData } from "./areas/mercedData";
+import { visaliaData } from "./areas/visaliaData";
 
 // ── Master list ───────────────────────────────────────────────
 export const serviceAreas: ServiceArea[] = [
@@ -40,6 +53,19 @@ export const serviceAreas: ServiceArea[] = [
   southSanFranciscoData,
   sanBrunoData,
   fosterCityData,
+  alamedaData,
+  clovisData,
+  emeryvilleData,
+  bakersfieldData,
+  petalumaData,
+  pleasantonData,
+  sacramentoData,
+  sanRafaelData,
+  santaRosaData,
+  stocktonData,
+  modestoData,
+  mercedData,
+  visaliaData,
 ];
 
 // ── Re-export types ───────────────────────────────────────────

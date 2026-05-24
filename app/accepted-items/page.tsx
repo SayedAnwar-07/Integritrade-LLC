@@ -418,7 +418,7 @@ export default function AcceptedItemsPage() {
               <ScrollLoader key={f.title} delay={idx * 0.08}>
                   <div
                     key={f.title}
-                    className="bg-white dark:bg-dark-secondary rounded-md border border-black/5 dark:border-white/10 p-7 shadow-lg"
+                    className="h-full bg-white dark:bg-dark-secondary rounded-md border border-black/5 dark:border-white/10 p-7 shadow-lg"
                   >
                     <div className="flex items-start justify-between">
                       <span className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-amber-700 dark:border-amber-400">
@@ -431,12 +431,12 @@ export default function AcceptedItemsPage() {
                         {String(idx + 1).padStart(2, '0')}
                       </span>
                     </div>
-                  <div className='h-12'>
-                      <h3 className="mt-5 font-serif text-lg text-gray-900 dark:text-gray-100 tracking-tight">
+                  <div className=''>
+                      <h3 className="mt-5 font-serif text-lg text-gray-900 dark:text-gray-100 tracking-tight min-h-16">
                           {f.title}
                         </h3>
                   </div>
-                    <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300">
+                    <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300  min-h-16">
                       {f.sub}
                     </p>
                     <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-800 text-[11px] uppercase tracking-[0.18em] text-amber-700 dark:text-amber-400 font-semibold">
