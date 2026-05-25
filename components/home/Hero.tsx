@@ -18,13 +18,13 @@ export default function Hero() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
             <div className="lg:col-span-7 lg:pt-4">
-              <h1 className="font-serif font-bold text-2xl sm:text-4xl lg:text-[2.3rem] leading-[1.15] lg:leading-[1.10] tracking-[0.02em] text-black dark:text-white max-w-5xl">
-                Integritrade helps organizations securely retire IT assets through documented pickup, chain-of-custody tracking, certified data destruction, and final reports your audit team can verify.
+              <h1 className="font-serif font-bold text-2xl sm:text-4xl lg:text-[3.5rem] leading-[1.15] lg:leading-[1.10] tracking-[0.02em] text-black dark:text-white max-w-5xl">
+                Integritrade helps organizations securely retire IT assets
               </h1>
 
               <div className="mt-8 max-w-2xl">
                 <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                  We help companies remove, track, and destroy retired IT equipment while delivering serialized reports and chain-of-custody documentation your audit team can verify line by line.
+                  End-to-end IT asset disposition and electronics recycling you can trust. We manage the removal, tracking, secure erasure, and physical destruction of your retired devices. You receive detailed, serialized reports and comprehensive chain-of-custody documentation built to withstand rigorous audits.
                 </p>
               </div>
 
@@ -54,7 +54,7 @@ export default function Hero() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
               {[
                 { value: "100%", label: "Data Destruction Guarantee" },
-                { value: "Certified", label: "Compliance & Audit Ready" },
+                { value: "5 Industry Certifications", label: "Compliance & Audit Ready" },
                 { value: "40+ years", label: "Combined ITAD & Recycling Experience" },
                 { value: "Verified", label: "Background-checked personnel handling sensitive assets" },
                 { value: "24/7", label: "Video-monitored facility and controlled processing areas" },

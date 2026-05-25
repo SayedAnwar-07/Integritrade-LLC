@@ -17,11 +17,15 @@ import Script from 'next/script'
 import PageHeader from '@/components/shared/PageHeader'
 import SectionHeader from '@/components/shared/SectionHeader'
 import PrimaryButton from '@/components/shared/buttons/PrimaryButton'
+import Process from '@/components/services/Process'
+import ScrollLoader from '@/components/shared/ScrollLoader'
+
 import Image from 'next/image'
 import wasteManagement from '@/public/wasteManagement.png'
 import acceptedItemsImg from "@/public/accepted-items.jpeg";
-import Process from '@/components/services/Process'
-import ScrollLoader from '@/components/shared/ScrollLoader'
+import dropoffDesktop from "@/public/home/Dell-XPS.jpeg";
+
+
 
 
 export const metadata: Metadata = {
@@ -349,37 +353,37 @@ export default function AcceptedItemsPage() {
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <ScrollLoader>
             <div className="grid md:grid-cols-2 gap-10 items-center mt-20">
-            
-                {/* LEFT CONTENT */}
-                <div className="space-y-4 max-w-xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
-                  <p className="">
-                    We accept a wide range of IT and office electronics for secure, certified recycling, helping businesses safely dispose of outdated or end-of-life equipment. From laptops and desktops to servers, networking hardware, and mobile devices, we handle assets of all types and brands with care.
-                  </p>
 
-                  <p className="">
-                    Every item goes through a compliance-driven process focused on data security and environmental responsibility. Our workflows include secure handling, asset tracking, and certified data destruction to ensure safe and responsible recycling.
-                  </p>
+              {/* LEFT CONTENT */}
+              <div className="space-y-4 max-w-xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
+                <p className="">
+                  We accept a wide range of IT and office electronics for secure, certified recycling, helping businesses safely dispose of outdated or end-of-life equipment. From laptops and desktops to servers, networking hardware, and mobile devices, we handle assets of all types and brands with care.
+                </p>
 
-                  <p className="">
-                    As an R2v3-certified provider, we maintain strict chain-of-custody and provide clear documentation for full transparency. Whether it&apos;s a few devices or a full IT decommissioning project, we deliver secure, reliable, and compliant solutions.
-                  </p>
-                </div>          
+                <p className="">
+                  Every item goes through a compliance-driven process focused on data security and environmental responsibility. Our workflows include secure handling, asset tracking, and certified data destruction to ensure safe and responsible recycling.
+                </p>
 
-                {/* RIGHT IMAGE */}
-                <div className="relative w-full h-[300px] md:h-[400px] rounded-md overflow-hidden">
-                  <Image
-                    src={acceptedItemsImg}
-                    alt="Accepted IT equipment for recycling"
-                    fill
-                    className="object-contain"
-                    loading="eager"
-                    priority
-                  />
-                </div>
+                <p className="">
+                  As an R2v3-certified provider, we maintain strict chain-of-custody and provide clear documentation for full transparency. Whether it&apos;s a few devices or a full IT decommissioning project, we deliver secure, reliable, and compliant solutions.
+                </p>
+              </div>
 
-            </div> 
-           </ScrollLoader>           
-        </div>      
+              {/* RIGHT IMAGE */}
+              <div className="relative w-full h-[600px] rounded-md overflow-hidden">
+                <Image
+                  src={dropoffDesktop}
+                  alt="Retired Dell desktop staged in a collection crate for certified recycling drop-off"
+                  fill
+                  className="object-cover"
+                  loading="eager"
+                  priority
+                />
+              </div>
+
+            </div>
+          </ScrollLoader>
+        </div>    
 
         {/* ── Paid item ── */}
         <div className="mt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -458,53 +462,48 @@ export default function AcceptedItemsPage() {
         
         {/* Not Accepted */}
         <div className="mt-20 md:mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-12 gap-10 lg:gap-16 items-end">
+          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 lg:items-end justify-between">
 
-            {/* ── Left column: sticky heading + image + inline contact ──── */}
-            <div className="lg:col-span-5">
-              <div className="">
-                <div className="flex items-center gap-3">
-                  <span className="h-px w-8 bg-red-700 dark:bg-red-400" />
-                  <span className="text-[1rem] font-mono uppercase tracking-[0.25em] text-red-700 dark:text-red-400 font-bold">
-                    Not Accepted
-                  </span>
-                </div>
+            {/* ── Left column: heading + image + inline contact ──── */}
+            <div className="w-full lg:w-5/12">
+              <div className="flex items-center gap-3">
+                <span className="h-px w-8 bg-red-700 dark:bg-red-400" />
+                <span className="text-[1rem] font-mono uppercase tracking-[0.25em] text-red-700 dark:text-red-400 font-bold">
+                  Not Accepted
+                </span>
+              </div>
 
-                <h2 className="mt-6 font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-gray-100 tracking-tight leading-[1.05]">
-                  Materials outside our scope.
-                </h2>
+              <h2 className="mt-6 font-serif text-3xl md:text-4xl lg:text-5xl text-gray-900 dark:text-gray-100 tracking-tight leading-[1.05]">
+                Materials outside our scope.
+              </h2>
 
-                <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-md">
-                  For safety, regulatory, and environmental compliance
-                  reasons, the following materials cannot be accepted at our
-                  facility. Please do not bring these items for drop-off.
-                </p>
+              <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-md">
+                For safety, regulatory, and environmental compliance reasons, the
+                following materials cannot be accepted at our facility. Please do not
+                bring these items for drop-off.
+              </p>
 
-                {/* Image */}
-                <div className="mt-8 relative rounded-md overflow-hidden shadow-lg aspect-[4/3] max-w-md">
-                  <Image
-                    src={wasteManagement}
-                    alt="Hazardous waste materials we cannot accept at our recycling facility"
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 1024px) 100vw, 40vw"
-                    loading="eager"
-                    priority
-                  />
-                </div>
-                
+              {/* Image */}
+              <div className="mt-8 relative rounded-md overflow-hidden shadow-lg aspect-[4/3] w-full max-w-md">
+                <Image
+                  src={wasteManagement}
+                  alt="Hazardous waste materials we cannot accept at our recycling facility"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                  loading="eager"
+                  priority
+                />
               </div>
             </div>
 
             {/* ── Right column: editorial typographic list ──────────────── */}
-            <ol className="lg:col-span-7 relative">
+            <ol className="w-full lg:w-7/12 relative">
               {NOT_ACCEPTED_ITEMS.map((item, idx) => (
                 <ScrollLoader key={item.title} delay={idx * 0.08}>
                   <li
-                    key={item.title}
                     className="group pl-8 md:pl-10 pr-2 py-6 first:pt-0 last:pb-0 mb-4 md:mb-6"
                   >
-
                     <div className="flex items-baseline gap-4 md:gap-6">
                       <span className="font-serif text-xl md:text-2xl text-red-700 dark:text-red-400 shrink-0">
                         {String(idx + 1).padStart(2, '0')}

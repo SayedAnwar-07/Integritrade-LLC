@@ -8,7 +8,6 @@ import Iso45001 from "@/public/ISO/ISO-45001.webp"
 import R2v3 from "@/public/ISO/R2V3_certified_logo.webp"
 import { Separator } from '../ui/separator'
 import BookingForm from './BookingForm'
-import ScrollLoader from '../shared/ScrollLoader'
 
 type Cert = {
   index: number

@@ -3,6 +3,7 @@ import { Building2, ShieldCheck, Recycle, ArrowUpRight } from "lucide-react";
 import SectionHeader from "../shared/SectionHeader";
 import ScrollLoader from "../shared/ScrollLoader";
 
+
 type Path = {
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   id: number;

@@ -3,6 +3,10 @@ import Education from "@/public/industries/education.jpeg";
 import Finance from "@/public/industries/finance.jpeg";
 import BusinessCorporate from "@/public/industries/business-corporate.jpeg";
 import Healthcare from "@/public/industries/healthcare.png";
+import GovernmentITEquipment from "@/public/industries/government-IT-equipment.png";
+import LawFirmData from "@/public/industries/law-firm-data.png";
+import SecureRetailPOS from "@/public/industries/secure-retail-POS.png";
+import SecureDefenseServer from "@/public/industries/secure-defense-server.png";
 
 export type FAQItem = {
   question: string;
@@ -61,9 +65,61 @@ export const industriesData: Industry[] = [
     metaDescription:
       "Secure IT asset disposition for schools and universities. FERPA-compliant data destruction, device recycling, and asset recovery for educational institutions.",
     content: [
-      `For the Education industry, IntegriTrade LLC provides essential ITAD services that address the unique challenges of modern academic environments. Schools and universities today manage massive inventories of devices, from student Chromebooks to high-end research servers, all of which require a secure end-of-life strategy. We specialize in large-scale technology refreshes, helping educational institutions clear out outdated hardware while ensuring that student and faculty data is permanently destroyed in compliance with FERPA regulations. Our certified data sanitization process guarantees that sensitive academic records and personal information never leave the campus in a recoverable format.`,
-
-      `Beyond security, we understand that education budgets are often under immense pressure. Our remarketing program allows schools to recoup significant value from their retired assets, turning old tech into a new revenue stream that can be reinvested into classroom innovation. We also support government-funded educational initiatives by providing detailed reporting and a transparent chain of custody required for public audits. By handling logistics, data security, and environmentally responsible recycling, IntegriTrade LLC empowers educators to focus on learning while we manage the lifecycle of their digital infrastructure with a zero-landfill commitment.`,
+      `Educational institutions manage vast fleets of technology - from individual student Chromebooks to complex research servers. Integritrade provides specialized IT Asset Disposition (ITAD) services designed to address the unique scale, budget constraints, and security requirements of modern academic environments.`,
+      `By partnering with an optimally certified provider like Integritrade, you ensure your digital infrastructure is retired securely, profitably, and responsibly.`,
+    ],
+    contentSections: [
+      {
+        paragraphs: [
+          `Educational institutions manage vast fleets of technology - from individual student Chromebooks to complex research servers. Integritrade provides specialized IT Asset Disposition (ITAD) services designed to address the unique scale, budget constraints, and security requirements of modern academic environments.`,
+        ],
+      },
+      {
+        heading: "Core Benefits for Schools and Universities",
+        bullets: [
+          {
+            title: "FERPA-Compliant Data Destruction",
+            text: "Protecting student and faculty data is paramount. Our certified data sanitization processes guarantee that sensitive academic records and personal information never leave your campus in a recoverable format.",
+          },
+          {
+            title: "Maximizing Tight Budgets",
+            text: "We help schools recoup significant value from retired assets through our targeted remarketing program. By turning outdated hardware into a new revenue stream, you can reinvest directly into classroom innovation.",
+          },
+          {
+            title: "Audit-Ready Transparency",
+            text: "We provide the rigorous chain-of-custody tracking and detailed reporting required for public audits and government-funded educational initiatives.",
+          },
+          {
+            title: "Zero-Landfill Commitment",
+            text: "We manage the logistics and environmentally responsible recycling from start to finish, allowing educators to focus on learning rather than lifecycle management.",
+          },
+        ],
+      },
+      {
+        heading: "The R2v3 Advantage: Why Certification Matters",
+        paragraphs: [
+          `When managing sensitive educational data and retiring hardware, choosing a vendor certified to a rigorous industry standard like R2v3 is essential. This globally recognized certification guarantees that an ITAD partner doesn't just make promises, but actively undergoes third-party audits to ensure:`,
+        ],
+        bullets: [
+          {
+            title: "Absolute Data Security",
+            text: "Strict, verifiable protocols for data sanitization and destruction.",
+          },
+          {
+            title: "Environmental Responsibility",
+            text: "A guarantee that e-waste is processed ethically and sustainably, never dumped in landfills or exported illegally.",
+          },
+          {
+            title: "Liability Protection",
+            text: "Potentially shielding your institution from the severe legal, financial, and reputational risks associated with data breaches or improper recycling by demonstrating vendor selection due-diligence.",
+          },
+        ],
+      },
+      {
+        paragraphs: [
+          `By partnering with an optimally certified provider like Integritrade, you ensure your digital infrastructure is retired securely, profitably, and responsibly.`,
+        ],
+      },
     ],
     projectScenarios: {
       intro:
@@ -350,7 +406,7 @@ export const industriesData: Industry[] = [
 
   {
     slug: "legal-professional-services",
-    image: BusinessCorporate,
+    image: LawFirmData,
     imageAlt: "Professional services office with secure business technology",
     eyebrow: "Industries We Serve",
     title: "Legal & Professional Services",
@@ -363,8 +419,6 @@ export const industriesData: Industry[] = [
       `Law firms, accounting firms, consultants, advisors, architects, and professional service providers handle highly confidential client and business records every single day. When it is time to upgrade or retire office technology, Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction for computers, servers, drives, phones, printers, and scanners that may contain sensitive files or litigation-sensitive data.`,
       `Uncompromising Security for Client Confidentiality Professional service firms require an asset retirement process that absolutely protects client confidentiality and supports strict internal records-retention and vendor-risk expectations. To guarantee this level of security, Integritrade processes all retired assets at our video-surveilled facility. Every device is handled exclusively by thoroughly vetted staff trained in strict security protocols. Utilizing industrial-grade, full destruction equipment, we can sanitize and/or physically shred hard drives and storage media to ensure that privileged communications, financial records, and proprietary client data are permanently destroyed.`,
       `Defensible Compliance and NIST-Aligned Destruction We understand the privacy obligations and litigation risks inherent in professional services. Integritrade provides a documented, legally defensible process by offering secure chain of custody, NIST SP 800-88 media sanitization, audit-ready documentation, and responsible electronics recycling. Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
-      `Best short service line: Confidential ITAD for office refreshes, firm relocations, partner departures, and end-of-life business equipment.`,
-      `SEO Keywords Included: legal ITAD, law firm data destruction, accounting firm electronics recycling, professional services ITAD, confidential device disposal`,
     ],
     contentSections: [
       {
@@ -405,8 +459,6 @@ export const industriesData: Industry[] = [
       {
         paragraphs: [
           `Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
-          `Best short service line: Confidential ITAD for office refreshes, firm relocations, partner departures, and end-of-life business equipment.`,
-          `SEO Keywords Included: legal ITAD, law firm data destruction, accounting firm electronics recycling, professional services ITAD, confidential device disposal`,
         ],
       },
     ],
@@ -462,7 +514,7 @@ export const industriesData: Industry[] = [
 
   {
     slug: "retail-hospitality",
-    image: BusinessCorporate,
+    image: SecureRetailPOS,
     imageAlt: "Retail and hospitality technology prepared for secure recycling",
     eyebrow: "Industries We Serve",
     title: "Retail & Hospitality",
@@ -475,8 +527,6 @@ export const industriesData: Industry[] = [
       `Retailers, hotels, restaurants, franchises, and hospitality groups rely heavily on interconnected technology across storefronts, properties, and distribution centers. When upgrading or decommissioning these systems, Integritrade provides specialized ITAD, electronic recycling, data destruction, and asset recovery for POS systems, tablets, laptops, displays, and back-office equipment to protect both your brand reputation and your customers.`,
       `High-Security Processing for Payment Data Retired retail and hospitality devices frequently harbor highly sensitive cardholder data, customer records, employee information, and corporate Wi-Fi credentials. To completely mitigate this risk, Integritrade safeguards your retired hardware at our video-surveilled facility. Every asset is handled exclusively by strictly vetted staff and processed using industrial-grade, full destruction equipment. We sanitize and physically shred hard drives, solid-state drives, and proprietary components to guarantee that sensitive payment and business data is permanently unrecoverable.`,
       `PCI DSS and NIST-Aligned Compliance Protecting customer data is not optional. Integritrade supports PCI DSS-conscious retirement of payment devices through rigorous, documented protocols. We support your brand's compliance and sustainability goals by offering secure logistics, NIST SP 800-88 media sanitization, documented chain of custody, and certified documentation. Whether you are closing a single location or rolling out new technology to hundreds of franchises, Integritrade ensures your data is destroyed and your electronics are recycled responsibly.`,
-      `Best short service line: Secure retirement for POS refreshes, store closures, hotel upgrades, franchise rollouts, and customer-data devices.`,
-      `SEO Keywords Included: retail ITAD, hospitality electronics recycling, POS system disposal, PCI DSS data destruction, hotel e-waste recycling`,
     ],
     contentSections: [
       {
@@ -517,8 +567,6 @@ export const industriesData: Industry[] = [
       {
         paragraphs: [
           `Whether you are closing a single location or rolling out new technology to hundreds of franchises, Integritrade ensures your data is destroyed and your electronics are recycled responsibly.`,
-          `Best short service line: Secure retirement for POS refreshes, store closures, hotel upgrades, franchise rollouts, and customer-data devices.`,
-          `SEO Keywords Included: retail ITAD, hospitality electronics recycling, POS system disposal, PCI DSS data destruction, hotel e-waste recycling`,
         ],
       },
     ],
@@ -574,7 +622,7 @@ export const industriesData: Industry[] = [
 
   {
     slug: "government-public-sector",
-    image: BusinessCorporate,
+    image: GovernmentITEquipment,
     imageAlt: "Public sector office technology prepared for secure asset disposition",
     eyebrow: "Industries We Serve",
     title: "Government & Public Sector",
@@ -682,7 +730,7 @@ export const industriesData: Industry[] = [
 
   {
     slug: "defense-contractors",
-    image: BusinessCorporate,
+    image: SecureDefenseServer,
     imageAlt: "Secure defense contractor IT assets prepared for controlled destruction",
     eyebrow: "Industries We Serve",
     title: "Defense Contractors",

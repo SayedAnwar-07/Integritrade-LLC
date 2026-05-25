@@ -18,12 +18,12 @@ export const metadata: Metadata = {
   title: "How We Destroy Data | Capabilities | Integritrade LLC",
   description:
     "The machinery, methods, and standards behind every Integritrade destruction project NIST 800-88 software sanitization, magnetic degaussing, and 2mm SSD micro-shredding, with a Certificate for every drive.",
-  alternates: { canonical: "/about/our-capabilities/" },
+  alternates: { canonical: "/about/our-equipment/" },
   openGraph: {
     title: "How We Destroy Data | Capabilities | Integritrade LLC",
     description:
       "Industrial-grade data destruction with documented deliverables: software sanitization, degaussing, and SSD micro-shredding.",
-    url: "https://integritradellc.com/about/our-capabilities/",
+    url: "https://integritradellc.com/about/our-equipment/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",

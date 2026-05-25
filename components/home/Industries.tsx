@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Building2, HeartPulse, Landmark, GraduationCap, ArrowUpRight, ShieldCheck, Factory, Recycle, ServerCog } from "lucide-react"
+import { Building2, HeartPulse, Landmark, GraduationCap, ArrowUpRight, ShieldCheck, Briefcase, Store, Shield } from "lucide-react"
 import SectionHeader from "../shared/SectionHeader"
 import Image from "next/image"
 import IndustriesCover from "@/public/industries/Industries.jpeg"
@@ -7,16 +7,16 @@ import ScrollLoader from "../shared/ScrollLoader"
 
 const industries = [
   {
-    index:1,
+    index: 1,
     icon: Building2,
-    name: "Banking & Finance",
-    slug: "finance",
-    desc: "Secure disposal services ensuring GLBA and SOX compliance standards.",
-    iconBorder: "border-amber-200 dark:border-amber-900/40",
-    iconColor: "text-amber-600 dark:text-amber-400",
+    name: "Corporate & Enterprise",
+    slug: "business-corporate",
+    desc: "Secure enterprise ITAD workflows for corporate devices, offices, and data centers.",
+    iconBorder: "border-blue-200 dark:border-blue-900/40",
+    iconColor: "text-blue-600 dark:text-blue-400",
   },
   {
-    index:2,
+    index: 2,
     icon: HeartPulse,
     name: "Healthcare",
     slug: "healthcare",
@@ -25,16 +25,7 @@ const industries = [
     iconColor: "text-rose-600 dark:text-rose-400",
   },
   {
-    index:3,
-    icon: Landmark,
-    name: "Business & Corporate",
-    slug: "business-corporate",
-    desc: "Secure enterprise ITAD workflows for corporate devices, offices, and data centers.",
-    iconBorder: "border-blue-200 dark:border-blue-900/40",
-    iconColor: "text-blue-600 dark:text-blue-400",
-  },
-  {
-    index:4,
+    index: 3,
     icon: GraduationCap,
     name: "Education",
     slug: "education",
@@ -43,7 +34,34 @@ const industries = [
     iconColor: "text-emerald-600 dark:text-emerald-400",
   },
   {
-    index:5,
+    index: 4,
+    icon: Landmark,
+    name: "Banking & Finance",
+    slug: "finance",
+    desc: "Secure disposal services ensuring GLBA and SOX compliance standards.",
+    iconBorder: "border-amber-200 dark:border-amber-900/40",
+    iconColor: "text-amber-600 dark:text-amber-400",
+  },
+  {
+    index: 5,
+    icon: Briefcase,
+    name: "Legal & Professional Services",
+    slug: "legal-professional-services",
+    desc: "Confidential data destruction safeguarding privileged client records and case files.",
+    iconBorder: "border-indigo-200 dark:border-indigo-900/40",
+    iconColor: "text-indigo-600 dark:text-indigo-400",
+  },
+  {
+    index: 6,
+    icon: Store,
+    name: "Retail & Hospitality",
+    slug: "retail-hospitality",
+    desc: "Secure POS and device disposal supporting PCI DSS payment data compliance.",
+    iconBorder: "border-orange-200 dark:border-orange-900/40",
+    iconColor: "text-orange-600 dark:text-orange-400",
+  },
+  {
+    index: 7,
     icon: ShieldCheck,
     name: "Government & Public Sector",
     slug: "government-public-sector",
@@ -52,31 +70,13 @@ const industries = [
     iconColor: "text-violet-600 dark:text-violet-400",
   },
   {
-    index:6,
-    icon: Factory,
-    name: "Manufacturing",
-    slug: "manufacturing",
-    desc: "Responsible recycling and secure disposal for industrial IT and operational equipment.",
-    iconBorder: "border-orange-200 dark:border-orange-900/40",
-    iconColor: "text-orange-600 dark:text-orange-400",
-  },
-  {
-    index:7,
-    icon: Recycle,
-    name: "E-Waste Recycling",
-    slug: "e-waste-recycling",
-    desc: "Sustainable electronics recycling solutions focused on environmental compliance and recovery.",
-    iconBorder: "border-lime-200 dark:border-lime-900/40",
-    iconColor: "text-lime-600 dark:text-lime-400",
-  },
-  {
-    index:8,
-    icon: ServerCog,
-    name: "Data Centers",
-    slug: "data-centers",
-    desc: "End-to-end decommissioning and secure hardware disposition for data center environments.",
-    iconBorder: "border-cyan-200 dark:border-cyan-900/40",
-    iconColor: "text-cyan-600 dark:text-cyan-400",
+    index: 8,
+    icon: Shield,
+    name: "Defense Contractors",
+    slug: "defense-contractors",
+    desc: "Classified-grade media sanitization meeting NIST 800-88, DFARS, and CMMC standards.",
+    iconBorder: "border-slate-300 dark:border-slate-700",
+    iconColor: "text-slate-600 dark:text-slate-300",
   },
 ];
 

@@ -29,6 +29,7 @@ interface FormData {
   company: string
   service: string
   address: string
+  address2: string
   city: string
   state: string
   zip: string
@@ -47,6 +48,7 @@ export default function BookingForm() {
     company: '',
     service: '',
     address: '',
+    address2: '',
     city: '',
     state: '',
     zip: '',
@@ -104,6 +106,7 @@ export default function BookingForm() {
         company: form.company,
         service: form.service,
         address: form.address,
+         address2: form.address2,
         city: form.city,
         state: form.state,
         zip: form.zip,
@@ -136,6 +139,7 @@ export default function BookingForm() {
           company: '',
           service: '',
           address: '',
+          address2: '',
           city: '',
           state: '',
           zip: '',
@@ -308,21 +312,37 @@ export default function BookingForm() {
           </div>
         </div>
 
-        <div>
-          <FieldLabel htmlFor="address" required>
-            Street Address
-          </FieldLabel>
-          <input
-            type="text"
-            id="address"
-            name="address"
-            placeholder="Enter your street address"
-            required
-            value={form.address}
-            onChange={handleChange}
-            className={`${baseInput} ${inputBorder(!!errors.address)}`}
-          />
-          <ErrorText msg={errors.address} />
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+            <div>
+              <FieldLabel htmlFor="address" required>
+                Street Address
+              </FieldLabel>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Enter your street address"
+                required
+                value={form.address}
+                onChange={handleChange}
+                className={`${baseInput} ${inputBorder(!!errors.address)}`}
+              />
+              <ErrorText msg={errors.address} />
+            </div>
+            <div>
+              <FieldLabel htmlFor="address2">
+                Address Line 2
+              </FieldLabel>
+              <input
+                type="text"
+                id="address2"
+                name="address2"
+                placeholder="Apartment, suite, building, floor (optional)"
+                value={form.address2}
+                onChange={handleChange}
+                className={`${baseInput} ${inputBorder(false)}`}
+              />
+            </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -394,20 +414,23 @@ export default function BookingForm() {
               <SelectValue placeholder="Select a service" />
             </SelectTrigger>
             <SelectContent className="dark:bg-[#013242] dark:text-gray-100 border-gray-200 dark:border-gray-700">
+              <SelectItem className="whitespace-normal py-2.5" value="basic-recycling">
+                Basic Recycling
+              </SelectItem>
               <SelectItem className="whitespace-normal py-2.5" value="certified-data-destruction">
                 Certified Data Destruction
               </SelectItem>
-              <SelectItem className="whitespace-normal py-2.5" value="it-asset-disposition-and-value-recovery">
-                IT Asset Disposition &amp; Value Recovery
-              </SelectItem>
-              <SelectItem className="whitespace-normal py-2.5" value="basic-electronic-recycling-non-data-scrap">
-                Basic Electronic Recycling (Non-Data Scrap)
+              <SelectItem className="whitespace-normal py-2.5" value="it-asset-disposition">
+                IT Asset Disposition
               </SelectItem>
               <SelectItem className="whitespace-normal py-2.5" value="data-center-decommissioning">
                 Data Center Decommissioning
               </SelectItem>
-              <SelectItem className="whitespace-normal py-2.5" value="lease-return-and-buyback-management">
-                Lease Return &amp; Buyback Management
+              <SelectItem className="whitespace-normal py-2.5" value="lease-return">
+                Lease Return
+              </SelectItem>
+              <SelectItem className="whitespace-normal py-2.5" value="sales-inquiry">
+                Sales Inquiry
               </SelectItem>
               <SelectItem className="whitespace-normal py-2.5" value="others">
                 Others

@@ -8,7 +8,7 @@ import Iso9001 from "@/public/ISO/ISO-9001.webp"
 import Iso14001 from "@/public/ISO/ISO-14001.webp"
 import Iso27001 from "@/public/ISO/ISO-27001.webp"
 import Iso45001 from "@/public/ISO/ISO-45001.webp"
-import R2v3 from "@/public/ISO/R2V3_certified_logo.webp"
+import R2v3 from "@/public/ISO/r2v3.png"
 
 import { cn } from "@/lib/utils"
 
