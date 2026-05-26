@@ -130,7 +130,7 @@ export default function BookingForm() {
       )
 
       if (result.status === 200) {
-        toast.success('Message sent successfully!')
+        toast.success('Submission successful. Our team will respond soon.')
         setSubmitStatus('success')
         setForm({
           name: '',

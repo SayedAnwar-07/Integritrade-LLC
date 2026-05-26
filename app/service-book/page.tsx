@@ -244,9 +244,6 @@ export default function ContactPage() {
             <ServiceDescription />
           </ScrollLoader>
 
-          {/* Process Timeline */}
-          <WhatHappensNext />
-
           {/* Free Drop-Off + Accepted Devices */}
           <FreeDropOff />
         </div>

@@ -73,7 +73,30 @@ export default function RootLayout({
             <Footer />
           </ThemeProvider>
 
-          <Toaster position="top-right" reverseOrder={false} />
+          <Toaster
+            position="top-right"
+            reverseOrder={false}
+            toastOptions={{
+              style: {
+                background: "#239f44",
+                color: "#fff",
+                border: "1px solid #2db955",
+              },
+
+              success: {
+                iconTheme: {
+                  primary: "#fff",
+                  secondary: "#239f44",
+                },
+              },
+
+              error: {
+                style: {
+                  background: "#dc2626",
+                },
+              },
+            }}
+          />
           <SchemaMarkup />
         </Providers>
       </body>
