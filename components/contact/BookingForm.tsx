@@ -9,9 +9,7 @@ import {
   Mail,
   Phone,
   Building2,
-  Package,
-  Clock,
-  ArrowRight,
+  Send,
 } from 'lucide-react'
 import toast from 'react-hot-toast'
 import {
@@ -88,6 +86,11 @@ export default function BookingForm() {
     return Object.keys(newErrors).length === 0
   }
 
+  const formatText = (value: string) =>
+  value
+    .replace(/-/g, ' ')
+    .replace(/\b\w/g, (char) => char.toUpperCase())
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     if (!validateForm()) return
@@ -104,14 +107,14 @@ export default function BookingForm() {
         email: form.email,
         phone: form.phone,
         company: form.company,
-        service: form.service,
         address: form.address,
-         address2: form.address2,
+        address2: form.address2,
         city: form.city,
         state: form.state,
         zip: form.zip,
-        estimatedQuantity: form.estimatedQuantity,
-        deploymentUrgency: form.deploymentUrgency,
+        service: formatText(form.service),
+        estimatedQuantity: formatText(form.estimatedQuantity),
+        deploymentUrgency: formatText(form.deploymentUrgency),
         message: form.message,
         time: new Date().toLocaleString('en-US', {
           weekday: 'long',
@@ -445,7 +448,6 @@ export default function BookingForm() {
           <div>
             <FieldLabel required>
               <span className="inline-flex items-center gap-1.5">
-                <Package className="h-3.5 w-3.5" />
                 Estimated Quantity
               </span>
             </FieldLabel>
@@ -484,7 +486,6 @@ export default function BookingForm() {
           <div>
             <FieldLabel required>
               <span className="inline-flex items-center gap-1.5">
-                <Clock className="h-3.5 w-3.5" />
                 Deployment Urgency
               </span>
             </FieldLabel>
@@ -545,17 +546,17 @@ export default function BookingForm() {
         <Button
           type="submit"
           disabled={loading}
-          className="group w-full rounded-md btn-bg btn-hover-bg text-white font-semibold py-3 text-sm transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg hover:-translate-y-0.5 disabled:opacity-70 disabled:translate-y-0"
+          className="group w-full rounded-md btn-bg btn-hover-bg text-white font-semibold py-3 text-sm transition-all duration-300 flex items-center justify-center gap-2 shadow-md hover:shadow-lg disabled:opacity-70 disabled:translate-y-0 click-feel"
         >
           {loading ? (
             <>
               <Loader2 className="animate-spin h-4 w-4" />
-              <span>Sending your request…</span>
+              <span>Submitting request…</span>
             </>
           ) : (
             <>
-              <span>Get Free Quote</span>
-              <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+              <span>Submit Service Request</span>
+              <Send className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
             </>
           )}
         </Button>

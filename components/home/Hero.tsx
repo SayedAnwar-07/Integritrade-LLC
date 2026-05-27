@@ -66,8 +66,8 @@ export default function Hero() {
           </div>
 
           {/* Data ribbon */}
-          <div className="mt-14 lg:mt-16 border-gray-300 dark:border-white/10">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+          <div className="lg:mt-16 border-gray-300 dark:border-white/10">
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
               {[
                 { value: "100%", label: "Data Destruction Guarantee" },
                 { value: "5 Industry Certifications", label: "Compliance & Audit Ready" },
@@ -81,7 +81,7 @@ export default function Hero() {
                     i !== 0 ? "lg:border-l" : ""
                   }`}
                 >
-                  <div className="font-serif text-md md:text-2xl lg:text-3xl font-bold text-black dark:text-white tracking-tight md:min-h-[5.5rem]">
+                  <div className="font-serif text-md md:text-2xl lg:text-3xl font-bold text-black dark:text-white tracking-tight min-h-[2.5rem] md:min-h-[5.5rem]">
                     {item.value}
                   </div>
                   <div className="font-mono text-[11px] text-gray-600 dark:text-gray-400 mt-1.5 leading-tight">
@@ -93,7 +93,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-14">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-gray-500 dark:text-gray-400">
+            <p className="text-xs uppercase tracking-[0.2em] text-gray-700 dark:text-gray-300 text-center">
               Organizations we’ve served
             </p>
           </div>

@@ -100,7 +100,7 @@ export function BlogCards() {
                     {truncate(blog.description, 70)}
                   </p>
 
-                  <div className="mt-auto flex items-center gap-1.5 border-t border-gray-100 pt-4 dark:border-gray-800">
+                  <div className="mt-auto flex items-center gap-1.5 border-t border-gray-100 pt-4 dark:border-gray-800 click-feel">
                     <span className="text-xs font-medium uppercase tracking-[0.15em] text-gray-700 dark:text-gray-300">
                       Read article
                     </span>

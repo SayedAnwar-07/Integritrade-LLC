@@ -229,7 +229,7 @@ export default function ServicingArea() {
                                   >
                                     <Link
                                       href={`/service-area/${match.slug}`}
-                                      className="group/city flex items-center justify-between gap-2 text-sm font-medium text-primary transition-colors hover:text-emerald-700 dark:hover:text-emerald-400"
+                                      className="group/city flex items-center justify-between gap-2 text-sm font-medium text-primary transition-colors hover:text-emerald-700 dark:hover:text-emerald-400 click-feel"
                                     >
                                       <span>{city}</span>
                                       <ArrowUpRight className="h-3.5 w-3.5 -translate-x-1 transition group-hover/city:translate-x-0" />

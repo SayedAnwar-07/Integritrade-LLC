@@ -79,9 +79,9 @@ export default async function ServicePage(props: {
 
           {/* Breadcrumb */}
           <nav className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400 mb-12">
-            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+            <Link href="/" className="hover:text-primary transition-colors click-feel">Home</Link>
             <ChevronRight className="h-2.5 w-2.5" />
-            <Link href="/services/" className="hover:text-primary transition-colors">Services</Link>
+            <Link href="/services/" className="hover:text-primary transition-colors click-feel">Services</Link>
             <ChevronRight className="h-2.5 w-2.5" />
             <span className="text-gray-700 dark:text-gray-300">{service.pageTitle}</span>
           </nav>
@@ -135,7 +135,7 @@ export default async function ServicePage(props: {
                     <Link
                       key={s.slug}
                       href={`/services/${s.slug}/`}
-                      className={`group flex items-baseline gap-4 py-4 border-b border-gray-200 dark:border-gray-800 transition-colors ${
+                      className={`group flex items-baseline gap-4 py-4 border-b border-gray-200 dark:border-gray-800 transition-colors click-feel ${
                         isActive
                           ? "text-primary"
                           : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"

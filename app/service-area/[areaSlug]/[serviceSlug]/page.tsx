@@ -67,23 +67,23 @@ export default async function ServicePage({ params }: PageProps) {
   return (
     <main className="bg-secondary dark:bg-dark transition-colors duration-300">
       {/* breadcrumb */}
-      <div className="border-t">
+      <div className="">
         <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground">
           <nav className="flex flex-wrap items-center gap-2">
-            <Link href="/" className="hover:text-foreground transition">
+            <Link href="/" className="hover:text-foreground transition click-feel">
               Home
             </Link>
             <span>/</span>
             <Link
               href="/service-area"
-              className="hover:text-foreground transition"
+              className="hover:text-foreground transition click-feel"
             >
               Service Areas
             </Link>
             <span>/</span>
             <Link
               href={`/service-area/${area.slug}`}
-              className="hover:text-foreground transition"
+              className="hover:text-foreground transition click-feel"
             >
               {area.name}
             </Link>
@@ -96,14 +96,6 @@ export default async function ServicePage({ params }: PageProps) {
       <section className="">
         <div className="container mx-auto px-4 pt-10">
           <ScrollLoader>
-            <Link
-              href={`/service-area/${area.slug}`}
-              className="mb-6 inline-flex items-center gap-2 text-sm font-medium text-gray-600 dark:text-gray-400 transition hover:text-primary"
-            >
-              <ArrowLeft className="h-4 w-4" />
-              Back to {area.name} Services
-            </Link>
-
             <div className="max-w-4xl">
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 px-4 py-1.5 text-sm font-medium backdrop-blur text-white">
                 <MapPin className="h-4 w-4" />
@@ -114,7 +106,7 @@ export default async function ServicePage({ params }: PageProps) {
                 {service.heroHeading}
               </h1>
 
-              <p className="mt-6 max-w-3xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
+              <p className="mt-6 max-w-3xl text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
                 {service.heroSubheading}
               </p>
             </div>

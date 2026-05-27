@@ -163,8 +163,8 @@ export default function AboutPage() {
               {[
                 {
                   Icon: TrendingUp,
-                  title: "Maximize Returns",
-                  desc: "Most of our ITAD clients generate positive revenue from their retired hardware.",
+                  title: "Value Recovery Focused",
+                  desc: "Whenever possible, we prioritize refurbishment, remarketing, and responsible reuse workflows to help offset retirement costs before recycling is considered.",
                   iconColor: "text-emerald-600 dark:text-emerald-400",
                   iconBorder: "border-emerald-200 dark:border-emerald-900",
                 },
@@ -224,10 +224,11 @@ export default function AboutPage() {
                   </div>
                   <div className="max-w-4xl space-y-5 text-base leading-relaxed text-stone-700 dark:text-slate-300 mt-8">
                     <p className="text-justify">
-                      Founded with a mission to provide secure and environmentally responsible IT asset disposition services, Integritrade has become a trusted partner for businesses across industries. Our certified professionals ensure the highest standards of security, compliance, and sustainability.
-                    </p>
+                      Integritrade was built to give organizations a more accountable approach to IT asset disposition. Many businesses are forced to choose between basic recycling vendors and overly complicated enterprise contractors. Our goal was to create a process that combines secure handling, operational transparency, and practical service execution without unnecessary complexity.
+                      </p>
+
                     <p className="text-justify">
-                      From a local service provider to a regional leader in ITAD solutions, our growth has been driven by innovation, integrity, and customer satisfaction
+                      Today, we support businesses, schools, healthcare organizations, public agencies, and enterprise teams with structured IT asset retirement workflows focused on data protection, responsible recycling, asset recovery, and audit-ready reporting.
                     </p>
                   </div>
                 </div> 
@@ -461,7 +462,7 @@ export default function AboutPage() {
 
       {/* ───────────────── VISIT / CTA ───────────────── */}
       <div className="">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 lg:py-28">
           <ScrollLoader>
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
               <div className="lg:col-span-7">
