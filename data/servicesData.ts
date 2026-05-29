@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image"
 
-import assetDisposition from "@/public/services/assetDisposition.jpeg"
-import assetRecovery from "@/public/services/assetRecovery.jpeg"
+import assetDisposition from "@/public/services/assetDispositionWarehouse.png"
+import assetRecovery from "@/public/services/assetRecovery.png"
 import eRecycling from "@/public/services/E-Recycling.jpeg"
-import certifiedDataDestruction from "@/public/services/certifiedDataDestruction.jpeg"
+import certifiedDataDestruction from "@/public/services/dataDestruction.png"
 
 export interface GalleryItem {
   image: StaticImageData

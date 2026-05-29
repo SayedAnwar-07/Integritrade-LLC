@@ -76,11 +76,19 @@ export default function RootLayout({
           <Toaster
             position="top-right"
             reverseOrder={false}
+            gutter={10}
             toastOptions={{
+              duration: 4000,
+
               style: {
                 background: "#239f44",
                 color: "#fff",
                 border: "1px solid #2db955",
+                borderRadius: "10px",
+                padding: "14px 16px",
+                fontSize: "14px",
+                fontWeight: "500",
+                boxShadow: "0 10px 25px rgba(0,0,0,0.12)",
               },
 
               success: {
@@ -93,6 +101,12 @@ export default function RootLayout({
               error: {
                 style: {
                   background: "#dc2626",
+                  border: "1px solid #ef4444",
+                },
+
+                iconTheme: {
+                  primary: "#fff",
+                  secondary: "#dc2626",
                 },
               },
             }}

@@ -30,7 +30,6 @@ const ITADIcon = ({ className }: IconProps) => (
   </svg>
 )
 
-
 const RecyclingIcon = ({ className }: IconProps) => (
   <svg viewBox="0 0 32 32" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
     <path
@@ -64,68 +63,6 @@ const RecyclingIcon = ({ className }: IconProps) => (
     <rect x="13" y="13" width="6" height="6" rx="0.8" stroke="currentColor" strokeWidth="1.5" />
     <path d="M14 11v2M16 11v2M18 11v2M14 19v2M16 19v2M18 19v2M11 14h2M11 16h2M11 18h2M19 14h2M19 16h2M19 18h2"
       stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-  </svg>
-)
-
-const AssetRecoveryIcon = ({ className }: IconProps) => (
-  <svg viewBox="0 0 32 32" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M5 20c0-6.1 4.9-11 11-11 3.5 0 6.6 1.6 8.6 4.2"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-    />
-    <path d="M21 13.5h4v-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <path
-      d="M27 12c0 6.1-4.9 11-11 11-3.5 0-6.6-1.6-8.6-4.2"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-    />
-    <path d="M11 18.5H7v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-    <circle cx="16" cy="16" r="3.5" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M16 14v4M14.8 14.8h2.4M14.8 17.2h2.4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-  </svg>
-)
-
-const JunkRemovalIcon = ({ className }: IconProps) => (
-  <svg viewBox="0 0 32 32" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M3 10h13v11H3z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinejoin="round"
-    />
-    <path
-      d="M16 14h6l4 4v3h-10v-7z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinejoin="round"
-    />
-    <path d="M3 21h23" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-    <circle cx="9" cy="24" r="2" stroke="currentColor" strokeWidth="1.5" />
-    <circle cx="21" cy="24" r="2" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M7 14l2-2M11 14l-2-2M9 12v4" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
-  </svg>
-)
-
-const LiquidationIcon = ({ className }: IconProps) => (
-  <svg viewBox="0 0 32 32" className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path
-      d="M4 12l12-6 12 6v15H4V12z"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinejoin="round"
-    />
-    <rect x="8" y="16" width="6" height="5" stroke="currentColor" strokeWidth="1.5" />
-    <rect x="18" y="16" width="6" height="5" stroke="currentColor" strokeWidth="1.5" />
-    <path d="M8 24h16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
-    <path
-      d="M19 8.5l3 3M22 8.5l-3 3"
-      stroke="currentColor"
-      strokeWidth="1.3"
-      strokeLinecap="round"
-    />
   </svg>
 )
 
@@ -167,27 +104,6 @@ const iconConfig: Record<string, IconTheme> = {
     borderDark: 'dark:border-teal-700/40',
     textLight: 'text-teal-700',
     textDark: 'dark:text-teal-300',
-  },
-  'asset-recovery-services': {
-    Icon: AssetRecoveryIcon,
-    borderLight: 'border-amber-200/80',
-    borderDark: 'dark:border-amber-700/40',
-    textLight: 'text-amber-700',
-    textDark: 'dark:text-amber-300',
-  },
-  'junk-removal': {
-    Icon: JunkRemovalIcon,
-    borderLight: 'border-orange-200/80',
-    borderDark: 'dark:border-orange-700/40',
-    textLight: 'text-orange-700',
-    textDark: 'dark:text-orange-300',
-  },
-  'business-liquidation': {
-    Icon: LiquidationIcon,
-    borderLight: 'border-sky-200/80',
-    borderDark: 'dark:border-sky-700/40',
-    textLight: 'text-sky-700',
-    textDark: 'dark:text-sky-300',
   },
   'data-destruction-services': {
     Icon: DataDestructionIcon,

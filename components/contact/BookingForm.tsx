@@ -240,8 +240,7 @@ export default function BookingForm() {
             <FieldLabel htmlFor="name" required>
               Full Name
             </FieldLabel>
-            <div className="relative">
-              <User className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" />
+            <div>
               <input
                 type="text"
                 id="name"
@@ -250,7 +249,7 @@ export default function BookingForm() {
                 required
                 value={form.name}
                 onChange={handleChange}
-                className={`${baseInput} ${inputBorder(!!errors.name)} pl-9`}
+                className={`${baseInput} ${inputBorder(!!errors.name)}`}
               />
             </div>
             <ErrorText msg={errors.name} />
@@ -258,8 +257,8 @@ export default function BookingForm() {
 
           <div>
             <FieldLabel htmlFor="company">Company Name</FieldLabel>
-            <div className="relative">
-              <Building2 className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" />
+            <div>
+             
               <input
                 type="text"
                 id="company"
@@ -267,7 +266,7 @@ export default function BookingForm() {
                 placeholder="Enter your company name"
                 value={form.company}
                 onChange={handleChange}
-                className={`${baseInput} ${inputBorder(false)} pl-9`}
+                className={`${baseInput} ${inputBorder(false)}`}
               />
             </div>
           </div>
@@ -278,8 +277,8 @@ export default function BookingForm() {
             <FieldLabel htmlFor="email" required>
               Email Address
             </FieldLabel>
-            <div className="relative">
-              <Mail className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" />
+            <div>
+              
               <input
                 type="email"
                 id="email"
@@ -288,7 +287,7 @@ export default function BookingForm() {
                 required
                 value={form.email}
                 onChange={handleChange}
-                className={`${baseInput} ${inputBorder(!!errors.email)} pl-9`}
+                className={`${baseInput} ${inputBorder(!!errors.email)}`}
               />
             </div>
             <ErrorText msg={errors.email} />
@@ -298,8 +297,8 @@ export default function BookingForm() {
             <FieldLabel htmlFor="phone" required>
               Phone Number
             </FieldLabel>
-            <div className="relative">
-              <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400 pointer-events-none" />
+            <div>
+              
               <input
                 type="tel"
                 id="phone"
@@ -308,7 +307,7 @@ export default function BookingForm() {
                 required
                 value={form.phone}
                 onChange={handleChange}
-                className={`${baseInput} ${inputBorder(!!errors.phone)} pl-9`}
+                className={`${baseInput} ${inputBorder(!!errors.phone)}`}
               />
             </div>
             <ErrorText msg={errors.phone} />
