@@ -27,7 +27,7 @@ export default function OutlineButton({
       className={cn(
         "px-4 py-2.5 text-xs font-semibold rounded-md h-auto",
         "border border-gray-300 bg-transparent text-black",
-        "dark:bg-[#02222e] dark:border-gray-700 dark:text-gray-200",
+        "dark:bg-dark-secondary dark:border-gray-700 dark:text-gray-200",
         "transition-all duration-300 hover:scale-[1.02]",
         "active:scale-[0.97] active:brightness-90",
         "hover:border-emerald-600/60 hover:bg-emerald-50/50",

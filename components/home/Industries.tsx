@@ -44,15 +44,6 @@ const industries = [
   },
   {
     index: 5,
-    icon: Briefcase,
-    name: "Legal & Professional Services",
-    slug: "legal-professional-services",
-    desc: "Confidential data destruction safeguarding privileged client records and case files.",
-    iconBorder: "border-indigo-200 dark:border-indigo-900/40",
-    iconColor: "text-indigo-600 dark:text-indigo-400",
-  },
-  {
-    index: 6,
     icon: Store,
     name: "Retail & Hospitality",
     slug: "retail-hospitality",
@@ -61,7 +52,7 @@ const industries = [
     iconColor: "text-orange-600 dark:text-orange-400",
   },
   {
-    index: 7,
+    index: 6,
     icon: ShieldCheck,
     name: "Government & Public Sector",
     slug: "government-public-sector",
@@ -70,7 +61,7 @@ const industries = [
     iconColor: "text-violet-600 dark:text-violet-400",
   },
   {
-    index: 8,
+    index: 7,
     icon: Shield,
     name: "Defense Contractors",
     slug: "defense-contractors",
@@ -151,7 +142,7 @@ export default function Industries() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 lg:mt-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 lg:mt-20">
           {industries.slice(4, 8).map(
             ({ icon: Icon, name, slug, desc, iconBorder, iconColor, index }) => (
               <ScrollLoader key={name} delay={index * 0.08}>

@@ -6,9 +6,9 @@ import About from '@/components/home/About'
 import SchemaMarkup from "@/components/home/SchemaMarkup"
 import TrustedLogos from "@/components/home/TrustedLogo"
 import Industries from "@/components/home/Industries"
-import Certifications from "@/components/home/Certifications"
 import WhatHappensNext from "@/components/contact/Whathappensnext"
 import ServicePaths from "@/components/home/ServicePaths"
+import BlogHomeSection from "@/components/home/BlogHomeSection"
 
 export const metadata: Metadata = {
     title:
@@ -63,13 +63,14 @@ export default function Page() {
 
       <ServicePaths />
 
-      <section className="bg-secondary dark:bg-[#0a1f28] py-2 transition-colors duration-300">
+      <section className="bg-secondary dark:bg-dark py-2 transition-colors duration-300">
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
            <WhatHappensNext />
          </div>
       </section>
       
-      <Certifications />
+      {/* <Certifications /> */}
+      <BlogHomeSection />
 
       <About />
     </>

@@ -226,7 +226,7 @@ export default function ContactPage() {
       </Script>
 
       <main
-        className="bg-[#f5f3ee] dark:bg-[#0a1f28] py-10 md:py-24 transition-colors duration-300"
+        className="bg-secondary dark:bg-dark py-10 md:py-24 transition-colors duration-300"
         aria-label="Service Booking and Information"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -191,7 +191,7 @@ export default async function ServicePage(props: {
                 <ScrollLoader key={index}>
                   <article>
                     <div className="flex items-center gap-4 mb-8">
-                      <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-gray-500 dark:text-gray-400">
+                      <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-gray-700 dark:text-gray-300">
                         Section {sectionNum}
                       </p>
                       
@@ -232,7 +232,7 @@ export default async function ServicePage(props: {
                         <dt className="font-serif text-lg font-semibold text-gray-900 dark:text-white tracking-tight mb-3">
                           {item.title}
                         </dt>
-                        <dd className="text-[14px] text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                        <dd className="text-[14px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
                           {item.description}
                         </dd>
                       </div>

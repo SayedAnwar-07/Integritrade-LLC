@@ -99,9 +99,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
             : 'opacity-0 -translate-y-1 pointer-events-none'
         }`}
       >
-        <div className="w-[320px] overflow-hidden rounded-md border border-gray-200/70 dark:border-white/10 bg-white dark:bg-[#071611] shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
-
-
+        <div className="w-[320px] overflow-hidden rounded-md border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
           {/* Menu Items */}
           <div className="">
             {item.dropdown?.map((dropdownItem, idx) => {
@@ -118,7 +116,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                       : ''
                   } ${
                     isSubActive
-                      ? 'bg-primary/[0.06] text-primary'
+                      ? 'bg-dark text-primary'
                       : 'text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/[0.03] hover:text-gray-900 dark:hover:text-white'
                   }`}
                 >
@@ -184,7 +182,7 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
         </Link>
         <button
           onClick={onToggle}
-          className={`p-3 mr-3 rounded-md transition-all duration-300 ${
+          className={`p-1 mr-3 rounded-sm transition-all duration-300 ${
             isOpen
               ? 'bg-primary/10 text-primary rotate-180'
               : 'text-gray-400 hover:text-primary hover:bg-primary/5'
@@ -210,9 +208,9 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
                 href={dropdownItem.href}
                 onClick={onItemClick}
                 style={{ transitionDelay: isOpen ? `${idx * 40}ms` : '0ms' }}
-                className={`flex items-center gap-3 px-3 py-3 rounded-md text-[14px] transition-all duration-300 click-feel ${
+                className={`flex items-center gap-3 px-3 py-3  text-[14px] transition-all duration-300 click-feel ${
                   isSubActive
-                    ? 'bg-white dark:bg-dark-secondary text-primary font-semibold shadow-md active:bg-gray-50 dark:active:bg-white/10'
+                    ? 'bg-white dark:bg-dark text-primary rounded-md font-semibold shadow-md active:bg-gray-50 dark:active:bg-white/10 '
                     : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 active:bg-gray-100 dark:active:bg-white/10'
                 } ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}
               >
@@ -306,7 +304,6 @@ export default function Navbar() {
         { href: '/industries/healthcare', label: 'Healthcare', icon: HeartPulse },
         { href: '/industries/education', label: 'Education', icon: GraduationCap },
         { href: '/industries/finance', label: 'Banking & Finance', icon: Landmark },
-        { href: '/industries/legal-professional-services', label: 'Legal & Professional Services', icon: Briefcase },
         { href: '/industries/retail-hospitality', label: 'Retail & Hospitality', icon: Store },
         { href: '/industries/government-public-sector', label: 'Government & Public Sector', icon: ShieldCheck },
         { href: '/industries/defense-contractors', label: 'Defense Contractors', icon: Shield },
@@ -373,7 +370,7 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`sticky top-0 z-50 w-full transition-all duration-500 bg-secondary dark:bg-[#0a1f28] ${
+        className={`sticky top-0 z-50 w-full transition-all duration-500 bg-secondary dark:bg-dark ${
           isScrolled
             ? 'shadow-[0_8px_30px_-12px_rgba(0,0,0,0.12)] dark:shadow-[0_8px_30px_-12px_rgba(0,0,0,0.5)]'
             : ''
@@ -493,7 +490,7 @@ export default function Navbar() {
         />
 
         <div
-          className={`absolute top-0 right-0 bottom-0 h-full w-full sm:w-[420px] bg-secondary dark:bg-[#013242] shadow-2xl flex flex-col transform transition-transform duration-400 ease-out ${
+          className={`absolute top-0 right-0 bottom-0 h-full w-full sm:w-[420px] bg-secondary dark:bg-dark-secondary shadow-2xl flex flex-col transform transition-transform duration-400 ease-out ${
             isMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
           style={{

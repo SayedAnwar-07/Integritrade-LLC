@@ -168,7 +168,7 @@ export default function TermsPage() {
                     <ScrollLoader key={section.title} delay={index * 0.01}>
                       <section
                         key={index}
-                        className="grid grid-cols-[auto_1fr] gap-x-6 md:gap-x-10"
+                        className="grid grid-cols-[auto_1fr] md:gap-x-10"
                       >
                         <div>
                           <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 font-serif mb-4 leading-tight">

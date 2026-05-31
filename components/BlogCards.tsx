@@ -96,7 +96,7 @@ export function BlogCards() {
                     {blog.title}
                   </h2>
 
-                  <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-gray-400 line-clamp-3">
+                  <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-gray-400 line-clamp-3 text-justify">
                     {truncate(blog.description, 70)}
                   </p>
 

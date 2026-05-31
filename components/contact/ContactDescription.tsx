@@ -49,7 +49,7 @@ const certs = [
   {
     image: R2v3,
     name: "R2v3",
-    href: "https://sustainableelectronics.org/",
+    href: "https://sustainableelectronics.org/find-an-r2-certified-facility/?appids=001UQ000001w7S2YAI&tab=2&backto=https://sustainableelectronics.org/find-an-r2-certified-facility/?type=byalias&alias=integritrade",
     external: true,
   },
   {
@@ -173,7 +173,7 @@ export default function ContactDescription() {
                   <ol className="relative space-y-8">
                     {/* vertical line */}
                     <span
-                      className="absolute left-[19px] top-5 bottom-5 w-px bg-stone-200 dark:bg-slate-700/60"
+                      className="absolute left-[19px] top-5 bottom-5 w-px bg-secondary dark:bg-dark"
                       aria-hidden="true"
                     />
 

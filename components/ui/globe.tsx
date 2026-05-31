@@ -12,7 +12,6 @@ import R2v3 from "@/public/ISO/r2v3.png"
 
 import { cn } from "@/lib/utils"
 
-
 type Service = {
   image: StaticImageData
   alt: string
@@ -21,13 +20,12 @@ type Service = {
 }
 
 const SERVICES: Service[] = [
-  { image: R2v3,    alt: "R2v3 certified",  label: "R2v3\nCERTIFIED",         angle: -90 },
-  { image: Iso14001, alt: "ISO 14001",      label: "ISO 14001\nENVIRONMENT",  angle: -32 },
-  { image: Iso27001, alt: "ISO 27001",      label: "ISO 27001\nINFO SECURITY", angle:  32 },
-  { image: Iso45001, alt: "ISO 45001",      label: "ISO 45001\nHEALTH & SAFETY", angle: 148 },
-  { image: Iso9001,  alt: "ISO 9001",       label: "ISO 9001\nQUALITY",       angle: 212 },
+  { image: R2v3, alt: "R2v3 certified", label: "R2v3\nCERTIFIED", angle: -90 },
+  { image: Iso14001, alt: "ISO 14001", label: "ISO 14001\nENVIRONMENT", angle: -32 },
+  { image: Iso27001, alt: "ISO 27001", label: "ISO 27001\nINFO SECURITY", angle: 32 },
+  { image: Iso45001, alt: "ISO 45001", label: "ISO 45001\nHEALTH & SAFETY", angle: 148 },
+  { image: Iso9001, alt: "ISO 9001", label: "ISO 9001\nQUALITY", angle: 212 },
 ]
-
 
 const BASE_CONFIG: Omit<
   COBEOptions,
@@ -56,9 +54,9 @@ const DARK_CONFIG: COBEOptions = {
   dark: 1,
   diffuse: 3,
   mapBrightness: 8,
-  baseColor: [0.157, 0.384, 0.573],
+  baseColor: [0.35, 0.35, 0.33],
   markerColor: [0.1, 0.8, 0.5],
-  glowColor:   [0.02, 0.12, 0.16],
+  glowColor: [0.173, 0.173, 0.165],
 }
 
 function useIsDark() {
@@ -80,11 +78,13 @@ function useIsDark() {
   return isDark
 }
 
-
 export function ItadGlobe({ className }: { className?: string }) {
   const canvasRef = useRef<HTMLCanvasElement>(null)
   const phi = useRef(0)
   const width = useRef(0)
+  const pointerInteracting = useRef<number | null>(null)
+  const pointerMovement = useRef(0)
+  const r = useRef(0)
   const isDark = useIsDark()
 
   useEffect(() => {
@@ -104,9 +104,11 @@ export function ItadGlobe({ className }: { className?: string }) {
 
     let rafId = 0
     const tick = () => {
-      phi.current += 0.003
+      if (pointerInteracting.current === null) {
+        phi.current += 0.003
+      }
       globe.update({
-        phi: phi.current,
+        phi: phi.current + r.current,
         width: width.current * 2,
         height: width.current * 2,
       })
@@ -125,6 +127,23 @@ export function ItadGlobe({ className }: { className?: string }) {
     }
   }, [isDark])
 
+  const onPointerDown = (clientX: number) => {
+    pointerInteracting.current = clientX - pointerMovement.current
+    if (canvasRef.current) canvasRef.current.style.cursor = "grabbing"
+  }
+
+  const onPointerUp = () => {
+    pointerInteracting.current = null
+    if (canvasRef.current) canvasRef.current.style.cursor = "grab"
+  }
+
+  const onPointerMove = (clientX: number) => {
+    if (pointerInteracting.current === null) return
+    const delta = clientX - pointerInteracting.current
+    pointerMovement.current = delta
+    r.current = delta / 200
+  }
+
   return (
     <div
       className={cn(
@@ -133,7 +152,7 @@ export function ItadGlobe({ className }: { className?: string }) {
       )}
     >
       <svg
-        className="pointer-events-none absolute inset-0 h-full w-full text-gray-300 dark:text-[#022836]"
+        className="pointer-events-none absolute inset-0 h-full w-full text-gray-300 dark:text-[#3a3a37]"
         viewBox="0 0 100 100"
         aria-hidden
       >
@@ -159,24 +178,32 @@ export function ItadGlobe({ className }: { className?: string }) {
           className="w-[62%] text-gray-300 dark:text-gray-700"
           aria-hidden
         >
-          <ellipse cx="100" cy="30" rx="82" ry="14" fill="none" stroke="currentColor" strokeWidth="0.4"  opacity="0.4" />
-          <ellipse cx="100" cy="30" rx="68" ry="11" fill="none" stroke="currentColor" strokeWidth="0.3"  opacity="0.3" />
-          <ellipse cx="100" cy="30" rx="55" ry="8"  fill="none" stroke="currentColor" strokeWidth="0.25" opacity="0.2" />
-          <ellipse cx="100" cy="30" rx="42" ry="6"  fill="none" stroke="currentColor" strokeWidth="0.2"  opacity="0.15" />
+          <ellipse cx="100" cy="30" rx="82" ry="14" fill="none" stroke="currentColor" strokeWidth="0.4" opacity="0.4" />
+          <ellipse cx="100" cy="30" rx="68" ry="11" fill="none" stroke="currentColor" strokeWidth="0.3" opacity="0.3" />
+          <ellipse cx="100" cy="30" rx="55" ry="8" fill="none" stroke="currentColor" strokeWidth="0.25" opacity="0.2" />
+          <ellipse cx="100" cy="30" rx="42" ry="6" fill="none" stroke="currentColor" strokeWidth="0.2" opacity="0.15" />
         </svg>
       </div>
+
       <div className="absolute inset-[22%]">
         <canvas
           ref={canvasRef}
-          className="h-full w-full opacity-0 transition-opacity duration-700 [contain:layout_paint_size]"
+          className="h-full w-full cursor-grab opacity-0 transition-opacity duration-700 [contain:layout_paint_size]"
+          onPointerDown={(e) => onPointerDown(e.clientX)}
+          onPointerUp={onPointerUp}
+          onPointerOut={onPointerUp}
+          onMouseMove={(e) => onPointerMove(e.clientX)}
+          onTouchStart={(e) => e.touches[0] && onPointerDown(e.touches[0].clientX)}
+          onTouchEnd={onPointerUp}
+          onTouchMove={(e) => e.touches[0] && onPointerMove(e.touches[0].clientX)}
         />
       </div>
 
       {SERVICES.map((service, i) => {
         const rad = (service.angle * Math.PI) / 180
-        const r = 44 // % from centre
-        const x = 50 + r * Math.cos(rad)
-        const y = 50 + r * Math.sin(rad)
+        const radius = 44
+        const x = 50 + radius * Math.cos(rad)
+        const y = 50 + radius * Math.sin(rad)
 
         return (
           <div
@@ -188,7 +215,6 @@ export function ItadGlobe({ className }: { className?: string }) {
               animation: `nodeIn 700ms cubic-bezier(.2,.7,.2,1) ${i * 90}ms both`,
             }}
           >
-            {/* certificate disc */}
             <div
               className="
                 relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full

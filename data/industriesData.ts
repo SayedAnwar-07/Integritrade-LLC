@@ -404,113 +404,113 @@ export const industriesData: Industry[] = [
     ],
   },
 
-  {
-    slug: "legal-professional-services",
-    image: LawFirmData,
-    imageAlt: "Professional services office with secure business technology",
-    eyebrow: "Industries We Serve",
-    title: "Legal & Professional Services",
-    description:
-      "Confidential ITAD for office refreshes, firm relocations, partner departures, and end-of-life business equipment.",
-    metaTitle: "Legal ITAD | Law Firm Data Destruction & Electronics Recycling",
-    metaDescription:
-      "Confidential ITAD for law firms, accounting firms, consultants, and professional service providers. Secure data destruction, asset recovery, and electronics recycling.",
-    content: [
-      `Law firms, accounting firms, consultants, advisors, architects, and professional service providers handle highly confidential client and business records every single day. When it is time to upgrade or retire office technology, Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction for computers, servers, drives, phones, printers, and scanners that may contain sensitive files or litigation-sensitive data.`,
-      `Uncompromising Security for Client Confidentiality Professional service firms require an asset retirement process that absolutely protects client confidentiality and supports strict internal records-retention and vendor-risk expectations. To guarantee this level of security, Integritrade processes all retired assets at our video-surveilled facility. Every device is handled exclusively by thoroughly vetted staff trained in strict security protocols. Utilizing industrial-grade, full destruction equipment, we can sanitize and/or physically shred hard drives and storage media to ensure that privileged communications, financial records, and proprietary client data are permanently destroyed.`,
-      `Defensible Compliance and NIST-Aligned Destruction We understand the privacy obligations and litigation risks inherent in professional services. Integritrade provides a documented, legally defensible process by offering secure chain of custody, NIST SP 800-88 media sanitization, audit-ready documentation, and responsible electronics recycling. Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
-    ],
-    contentSections: [
-      {
-        paragraphs: [
-          `Law firms, accounting firms, consultants, advisors, architects, and professional service providers handle highly confidential client and business records every single day. When it is time to upgrade or retire office technology, Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction for computers, servers, drives, phones, printers, and scanners that may contain sensitive files or litigation-sensitive data.`,
-        ],
-      },
-      {
-        heading: "Uncompromising Security for Client Confidentiality",
-        paragraphs: [
-          `Professional service firms require an asset retirement process that absolutely protects client confidentiality and supports strict internal records-retention and vendor-risk expectations. To guarantee this level of security, Integritrade processes all retired assets at our video-surveilled facility. Every device is handled exclusively by thoroughly vetted staff trained in strict security protocols. Utilizing industrial-grade, full destruction equipment, we can sanitize and/or physically shred hard drives and storage media to ensure that privileged communications, financial records, and proprietary client data are permanently destroyed.`,
-        ],
-      },
-      {
-        heading: "Defensible Compliance and NIST-Aligned Destruction",
-        paragraphs: [
-          `We understand the privacy obligations and litigation risks inherent in professional services. Integritrade provides a documented, legally defensible process by offering:`,
-        ],
-        bullets: [
-          {
-            title: "Secure Chain of Custody",
-            text: "Tracked and documented logistics tailored for firm relocations, office refreshes, and partner departures.",
-          },
-          {
-            title: "NIST SP 800-88 Media Sanitization",
-            text: "Strict adherence to federal guidelines for the logical wiping and physical destruction of data-bearing media.",
-          },
-          {
-            title: "Audit-Ready Documentation",
-            text: "Comprehensive reporting, including serialized inventory tracking and verifiable certificates of destruction.",
-          },
-          {
-            title: "Responsible Electronics Recycling",
-            text: "R2v3-certified processing to ensure environmentally compliant downstream recycling for all end-of-life business equipment.",
-          },
-        ],
-      },
-      {
-        paragraphs: [
-          `Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
-        ],
-      },
-    ],
-    closingCallout: {
-      linkText: "Request confidential ITAD support",
-      linkHref: "/contact",
-      after: " for your legal or professional services firm.",
-    },
-    projectScenarios: {
-      intro:
-        "Legal and professional services ITAD projects usually involve confidentiality, office transitions, and strict documentation expectations.",
-      items: [
-        {
-          title: "Firm-Wide Office Refresh",
-          description:
-            "Retire desktops, laptops, monitors, printers, servers, and storage devices with documented handling and secure data destruction.",
-        },
-        {
-          title: "Firm Relocation or Office Consolidation",
-          description:
-            "Clear end-of-life equipment during moves, consolidations, and office cleanouts while protecting confidential client data.",
-        },
-        {
-          title: "Partner Departure or Practice Transition",
-          description:
-            "Securely retire or process devices tied to partner transitions, legacy matters, client records, and archived files.",
-        },
-        {
-          title: "Confidential Device Disposal",
-          description:
-            "Support secure disposal of computers, drives, phones, printers, scanners, and other office equipment that may contain privileged data.",
-        },
-      ],
-    },
-    faqs: [
-      {
-        question: "Can you support law firm data destruction requirements?",
-        answer:
-          "Yes. We provide secure chain of custody, NIST SP 800-88-aligned sanitization, physical destruction when required, and certificates of destruction for confidential legal and professional services data.",
-      },
-      {
-        question: "Do you handle office refreshes and firm relocations?",
-        answer:
-          "Yes. We support office refreshes, firm relocations, partner departures, and end-of-life business equipment projects.",
-      },
-      {
-        question: "Can you provide documentation for client confidentiality and vendor review?",
-        answer:
-          "Yes. We provide serialized inventory tracking, audit-ready reporting, chain-of-custody records, and verifiable certificates of destruction.",
-      },
-    ],
-  },
+  // {
+  //   slug: "legal-professional-services",
+  //   image: LawFirmData,
+  //   imageAlt: "Professional services office with secure business technology",
+  //   eyebrow: "Industries We Serve",
+  //   title: "Legal & Professional Services",
+  //   description:
+  //     "Confidential ITAD for office refreshes, firm relocations, partner departures, and end-of-life business equipment.",
+  //   metaTitle: "Legal ITAD | Law Firm Data Destruction & Electronics Recycling",
+  //   metaDescription:
+  //     "Confidential ITAD for law firms, accounting firms, consultants, and professional service providers. Secure data destruction, asset recovery, and electronics recycling.",
+  //   content: [
+  //     `Law firms, accounting firms, consultants, advisors, architects, and professional service providers handle highly confidential client and business records every single day. When it is time to upgrade or retire office technology, Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction for computers, servers, drives, phones, printers, and scanners that may contain sensitive files or litigation-sensitive data.`,
+  //     `Uncompromising Security for Client Confidentiality Professional service firms require an asset retirement process that absolutely protects client confidentiality and supports strict internal records-retention and vendor-risk expectations. To guarantee this level of security, Integritrade processes all retired assets at our video-surveilled facility. Every device is handled exclusively by thoroughly vetted staff trained in strict security protocols. Utilizing industrial-grade, full destruction equipment, we can sanitize and/or physically shred hard drives and storage media to ensure that privileged communications, financial records, and proprietary client data are permanently destroyed.`,
+  //     `Defensible Compliance and NIST-Aligned Destruction We understand the privacy obligations and litigation risks inherent in professional services. Integritrade provides a documented, legally defensible process by offering secure chain of custody, NIST SP 800-88 media sanitization, audit-ready documentation, and responsible electronics recycling. Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
+  //   ],
+  //   contentSections: [
+  //     {
+  //       paragraphs: [
+  //         `Law firms, accounting firms, consultants, advisors, architects, and professional service providers handle highly confidential client and business records every single day. When it is time to upgrade or retire office technology, Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction for computers, servers, drives, phones, printers, and scanners that may contain sensitive files or litigation-sensitive data.`,
+  //       ],
+  //     },
+  //     {
+  //       heading: "Uncompromising Security for Client Confidentiality",
+  //       paragraphs: [
+  //         `Professional service firms require an asset retirement process that absolutely protects client confidentiality and supports strict internal records-retention and vendor-risk expectations. To guarantee this level of security, Integritrade processes all retired assets at our video-surveilled facility. Every device is handled exclusively by thoroughly vetted staff trained in strict security protocols. Utilizing industrial-grade, full destruction equipment, we can sanitize and/or physically shred hard drives and storage media to ensure that privileged communications, financial records, and proprietary client data are permanently destroyed.`,
+  //       ],
+  //     },
+  //     {
+  //       heading: "Defensible Compliance and NIST-Aligned Destruction",
+  //       paragraphs: [
+  //         `We understand the privacy obligations and litigation risks inherent in professional services. Integritrade provides a documented, legally defensible process by offering:`,
+  //       ],
+  //       bullets: [
+  //         {
+  //           title: "Secure Chain of Custody",
+  //           text: "Tracked and documented logistics tailored for firm relocations, office refreshes, and partner departures.",
+  //         },
+  //         {
+  //           title: "NIST SP 800-88 Media Sanitization",
+  //           text: "Strict adherence to federal guidelines for the logical wiping and physical destruction of data-bearing media.",
+  //         },
+  //         {
+  //           title: "Audit-Ready Documentation",
+  //           text: "Comprehensive reporting, including serialized inventory tracking and verifiable certificates of destruction.",
+  //         },
+  //         {
+  //           title: "Responsible Electronics Recycling",
+  //           text: "R2v3-certified processing to ensure environmentally compliant downstream recycling for all end-of-life business equipment.",
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       paragraphs: [
+  //         `Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
+  //       ],
+  //     },
+  //   ],
+  //   closingCallout: {
+  //     linkText: "Request confidential ITAD support",
+  //     linkHref: "/contact",
+  //     after: " for your legal or professional services firm.",
+  //   },
+  //   projectScenarios: {
+  //     intro:
+  //       "Legal and professional services ITAD projects usually involve confidentiality, office transitions, and strict documentation expectations.",
+  //     items: [
+  //       {
+  //         title: "Firm-Wide Office Refresh",
+  //         description:
+  //           "Retire desktops, laptops, monitors, printers, servers, and storage devices with documented handling and secure data destruction.",
+  //       },
+  //       {
+  //         title: "Firm Relocation or Office Consolidation",
+  //         description:
+  //           "Clear end-of-life equipment during moves, consolidations, and office cleanouts while protecting confidential client data.",
+  //       },
+  //       {
+  //         title: "Partner Departure or Practice Transition",
+  //         description:
+  //           "Securely retire or process devices tied to partner transitions, legacy matters, client records, and archived files.",
+  //       },
+  //       {
+  //         title: "Confidential Device Disposal",
+  //         description:
+  //           "Support secure disposal of computers, drives, phones, printers, scanners, and other office equipment that may contain privileged data.",
+  //       },
+  //     ],
+  //   },
+  //   faqs: [
+  //     {
+  //       question: "Can you support law firm data destruction requirements?",
+  //       answer:
+  //         "Yes. We provide secure chain of custody, NIST SP 800-88-aligned sanitization, physical destruction when required, and certificates of destruction for confidential legal and professional services data.",
+  //     },
+  //     {
+  //       question: "Do you handle office refreshes and firm relocations?",
+  //       answer:
+  //         "Yes. We support office refreshes, firm relocations, partner departures, and end-of-life business equipment projects.",
+  //     },
+  //     {
+  //       question: "Can you provide documentation for client confidentiality and vendor review?",
+  //       answer:
+  //         "Yes. We provide serialized inventory tracking, audit-ready reporting, chain-of-custody records, and verifiable certificates of destruction.",
+  //     },
+  //   ],
+  // },
 
   {
     slug: "retail-hospitality",

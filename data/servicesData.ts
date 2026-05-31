@@ -1,6 +1,6 @@
 import { StaticImageData } from "next/image"
 
-import assetDisposition from "@/public/services/assetDispositionWarehouse.png"
+import assetDisposition from "@/public/services/assetDispositionWarehouse.jpeg"
 import assetRecovery from "@/public/services/assetRecovery.png"
 import eRecycling from "@/public/services/E-Recycling.jpeg"
 import certifiedDataDestruction from "@/public/services/dataDestruction.png"

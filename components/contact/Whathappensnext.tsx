@@ -59,14 +59,14 @@ export default function WhatHappensNext() {
             <div className="mt-20">
               <ol className="relative space-y-8">
                 <span
-                  className="absolute left-[15px] top-3 bottom-3 w-px bg-stone-200 dark:bg-slate-700/60"
+                  className="absolute left-[15px] top-3 bottom-3 w-px bg-secondary dark:bg-dark"
                   aria-hidden="true"
                 />
 
                 {processSteps.map(({ step, title, text,index }) => (
                    <ScrollLoader key={title} delay={index * 0.08}>
                       <li key={step} className="relative flex gap-5">
-                        <span className="relative z-10 flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-[#f5f3ee] dark:bg-[#0a1f28] border-2 border-emerald-600 dark:border-emerald-400 text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
+                        <span className="relative z-10 flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary dark:bg-dark border-2 border-emerald-600 dark:border-emerald-400 text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
                           {step}
                         </span>
 

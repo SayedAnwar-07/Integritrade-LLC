@@ -26,7 +26,7 @@ const track = [...logos, ...logos]
 
 export default function TrustedLogos() {
   return (
-    <section className="py-20 bg-secondary dark:bg-[#0a1f28] transition-colors duration-300">
+    <section className="py-20 bg-secondary dark:bg-dark transition-colors duration-300">
       <div className="max-w-7xl mx-auto overflow-hidden">
          <ScrollLoader>
             {/* Carousel */}

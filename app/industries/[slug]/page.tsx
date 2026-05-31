@@ -131,7 +131,7 @@ export default async function IndustryPage(props: {
                 <Image
                   src={industry.image}
                   alt={industry.imageAlt}
-                  className="w-full h-[500px] object-cover object-center"
+                  className="w-full h-[300px] md:h-[500px] object-cover object-center"
                   placeholder="blur"
                   priority
                   sizes="(max-width: 1280px) 100vw, 1152px"
@@ -164,7 +164,7 @@ export default async function IndustryPage(props: {
                         {section.bullets.map((bullet, bulletIndex) => (
                           <li
                             key={bulletIndex}
-                            className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8]"
+                            className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
                           >
                             <span className="mt-3 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#2aac61]" />
 
