@@ -304,6 +304,7 @@ export default function Navbar() {
         { href: '/industries/healthcare', label: 'Healthcare', icon: HeartPulse },
         { href: '/industries/education', label: 'Education', icon: GraduationCap },
         { href: '/industries/finance', label: 'Banking & Finance', icon: Landmark },
+        { href: '/industries/legal-professional-services', label: 'Legal & Professional Services', icon: Briefcase },
         { href: '/industries/retail-hospitality', label: 'Retail & Hospitality', icon: Store },
         { href: '/industries/government-public-sector', label: 'Government & Public Sector', icon: ShieldCheck },
         { href: '/industries/defense-contractors', label: 'Defense Contractors', icon: Shield },

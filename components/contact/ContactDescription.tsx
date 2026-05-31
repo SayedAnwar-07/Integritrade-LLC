@@ -20,28 +20,28 @@ import BookingForm from "./BookingForm";
 const processSteps = [
   {
     icon: Truck,
-    title: "Request a Pickup",
-    text: "Tell us what assets you need removed, your location, quantity, and timeline.",
+    title: "We Come to You",
+    text: "Schedule a pickup at your site no hauling, no hassle.",
   },
   {
     icon: ShieldCheck,
-    title: "We Collect & Track Assets",
-    text: "Your equipment is securely collected and tracked with proper chain-of-custody.",
+    title: "Tracked Every Step",
+    text: "Full chain-of-custody from your door to final processing.",
   },
   {
     icon: HardDriveDownload,
-    title: "Data Is Destroyed",
-    text: "Devices are processed through secure destruction and certified erasure workflows.",
+    title: "Data Gone for Good",
+    text: "NIST 800-88 certified erasure or physical destruction.",
   },
   {
     icon: Recycle,
-    title: "Recycle & Recovery",
-    text: "Reusable assets are recovered while non-reusable equipment is responsibly recycled.",
+    title: "Nothing Wasted",
+    text: "R2v3-responsible recycling zero landfill, full recovery.",
   },
   {
     icon: FileCheck2,
-    title: "Documentation Delivered",
-    text: "Receive complete reports, certificates, and compliance documentation.",
+    title: "Proof in Writing",
+    text: "Certificates of destruction and audit-ready reports.",
   },
 ];
 
@@ -81,28 +81,6 @@ export default function ContactDescription() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-14 items-center">
           {/* LEFT SIDE */}
           <div className="lg:col-span-5">
-
-             {/* Trust indicators */}
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-4 pb-8 border-b border-stone-200 dark:border-slate-700/60">
-                <div className="flex items-center gap-1.5 text-xs text-stone-600 dark:text-slate-400">
-                  <svg className="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="font-medium">No-obligation quote</span>
-                </div>
-                <div className="flex items-center gap-1.5 text-xs text-stone-600 dark:text-slate-400">
-                  <svg className="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="font-medium">24-hour response</span>
-                </div>
-                <div className="flex items-center gap-1.5 text-xs text-stone-600 dark:text-slate-400">
-                  <svg className="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                  </svg>
-                  <span className="font-medium">Fully certified team</span>
-                </div>
-              </div>
 
             {/* Certifications */}
             <div
@@ -180,8 +158,8 @@ export default function ContactDescription() {
                     {processSteps.map(({ icon: Icon, title, text }) => (
                       <li key={title} className="relative flex gap-5">
                         {/* icon */}
-                        <span className="relative z-10 flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-emerald-200 bg-white text-emerald-700 dark:border-emerald-500/30 dark:bg-dark-secondary dark:text-emerald-400 shadow-lg">
-                          <Icon size={18} strokeWidth={2} />
+                        <span className="relative z-10 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full border border-emerald-200 bg-white text-emerald-700 dark:border-emerald-500/30 dark:bg-dark-secondary dark:text-emerald-400 shadow-lg">
+                          <Icon size={14} strokeWidth={2} />
                         </span>
 
                         {/* content */}
@@ -200,11 +178,6 @@ export default function ContactDescription() {
                 </div>
               </div>
             </div>
-
-             <p className="mt-6 max-w-md text-sm leading-6 text-stone-600 dark:text-slate-300 text-justify">
-                All assets are tracked, sanitized, and processed following certified
-                industry compliance and environmental standards.
-             </p>
 
           </div>
 
@@ -246,6 +219,28 @@ export default function ContactDescription() {
                     Submit your details and our team will contact you within
                     one business day with the next step.
                   </p>
+                </div>
+
+                {/* Trust indicators */}
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-4 pb-8 border-b border-stone-200 dark:border-slate-700/60">
+                  <div className="flex items-center gap-1.5 text-xs text-stone-600 dark:text-slate-400">
+                    <svg className="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="font-medium">No-obligation quote</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-xs text-stone-600 dark:text-slate-400">
+                    <svg className="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="font-medium">24-hour response</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-xs text-stone-600 dark:text-slate-400">
+                    <svg className="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="font-medium">Fully certified team</span>
+                  </div>
                 </div>
 
                 {/* FORM */}
