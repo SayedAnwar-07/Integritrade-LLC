@@ -335,7 +335,7 @@ export default function RequestPickupForm() {
               type="text"
               value={data.name}
               onChange={(e) => update('name', e.target.value)}
-              placeholder="Enter your full name"
+              placeholder="Full Name"
               className={inputClass('name')}
             />
             <ErrorMsg field="name" />
@@ -350,7 +350,7 @@ export default function RequestPickupForm() {
               type="text"
               value={data.company}
               onChange={(e) => update('company', e.target.value)}
-              placeholder="Enter your company name"
+              placeholder="Company Name (optional)"
               className={inputClass('company')}
             />
           </div>
@@ -364,7 +364,7 @@ export default function RequestPickupForm() {
               type="email"
               value={data.email}
               onChange={(e) => update('email', e.target.value)}
-              placeholder="you@example.com"
+              placeholder="Email Address"
               className={inputClass('email')}
             />
             <ErrorMsg field="email" />
@@ -379,7 +379,7 @@ export default function RequestPickupForm() {
               type="tel"
               value={data.phone}
               onChange={(e) => update('phone', e.target.value)}
-              placeholder="(559) 325-4813"
+              placeholder="Phone Number"
               className={inputClass('phone')}
             />
             <ErrorMsg field="phone" />
@@ -400,7 +400,7 @@ export default function RequestPickupForm() {
                 type="text"
                 value={data.address}
                 onChange={(e) => update('address', e.target.value)}
-                placeholder="1945 N Fine Ave"
+                placeholder="Street Address"
                 className={inputClass('address')}
               />
               <ErrorMsg field="address" />
@@ -431,7 +431,7 @@ export default function RequestPickupForm() {
                 type="text"
                 value={data.city}
                 onChange={(e) => update('city', e.target.value)}
-                placeholder="Fresno"
+                placeholder="City"
                 className={inputClass('city')}
               />
               <ErrorMsg field="city" />
@@ -446,7 +446,7 @@ export default function RequestPickupForm() {
                 type="text"
                 value={data.state}
                 onChange={(e) => update('state', e.target.value)}
-                placeholder="CA"
+                placeholder="State"
                 className={inputClass('state')}
               />
               <ErrorMsg field="state" />
@@ -462,7 +462,7 @@ export default function RequestPickupForm() {
                 inputMode="numeric"
                 value={data.zip}
                 onChange={(e) => update('zip', e.target.value)}
-                placeholder="93727"
+                placeholder="Zip Code"
                 className={inputClass('zip')}
               />
               <ErrorMsg field="zip" />
