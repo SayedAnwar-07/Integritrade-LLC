@@ -203,7 +203,14 @@ export default async function ServicePage(props: {
 
                     <div className="space-y-5 text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
                       {section.content.map((paragraph, pIndex) => (
-                        <p key={pIndex}>{paragraph}</p>
+                        <p
+                          key={pIndex}
+                          className="
+                            [&_strong]:font-semibold
+                            [&_strong]:text-black dark:[&_strong]:text-white
+                          "
+                          dangerouslySetInnerHTML={{ __html: paragraph }}
+                        />
                       ))}
                     </div>
                   </article>

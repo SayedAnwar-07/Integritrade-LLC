@@ -579,7 +579,7 @@ export const servicesData: Service[] = [
       "Secure demanufacturing and witnessed destruction services for prototypes, engineering samples, electronics, IT assets, and sensitive devices. We prepare material, remove batteries, coordinate shredding through a partner facility, and document the destruction process.",
     pageTitle: "Demanufacturing & Prototype Destruction",
     pageSubtitle:
-      "For organizations that need controlled destruction rather than simple recycling prototypes, pre-release devices, engineering samples, recalled products, branded equipment, and sensitive IT assets that should never re-enter the market.",
+      "For organizations that need controlled destruction rather than simple recycling, including prototypes, pre-release devices, engineering samples, recalled products, branded equipment, and sensitive IT assets that should never re-enter the market.",
     heroTitle:
       "Secure Demanufacturing for Devices That Cannot Be Resold, Reused, or Released",
     heroDescription:
@@ -615,13 +615,19 @@ export const servicesData: Service[] = [
       {
         title: "Our Destruction Workflow",
         content: [
-          "1. Material review and scope confirmation. We begin by identifying the type of devices, approximate quantity, condition, packaging, security concerns, and required documentation. If the material includes batteries, storage media, hazardous components, serialized assets, or highly sensitive prototypes, we define those handling requirements before pickup or receiving.",
-          "2. Receiving, sorting, and staging. Once material is received, we sort and organize it for the correct processing path. Sensitive devices can be segregated from general commodity material. If serialized tracking is required, asset identifiers can be captured before destruction.",
-          "3. Battery and hazard removal. Many electronics contain lithium batteries or other components that should not be shredded with the device. Before shredding, we remove batteries and other items that require separate handling. This preparation helps protect workers and equipment and ensures safe transportation.",
-          "4. Demanufacturing and destruction preparation. Security and transparency dictate every step of our demanufacturing process. We begin by separating components to ensure safe, efficient, and compliant processing. All data-bearing media including hard drives, NVMe drives, and flash memory are strictly isolated and physically destroyed on-site at our Fresno facility using our dedicated, specialized shredders.",
-          "For larger electronics, prototypes, and complex devices, we refuse to simply downstream your assets and lose visibility. Instead, we utilize a strategic partnership with an industrial-scale materials recovery facility. What sets us apart is our uninterrupted chain of custody: we act as your dedicated agent on the ground. Our team personally oversees the transfer and physically witnesses the end-to-end shredding process in real time. We can even provide continuous video evidence as your proprietary assets are completely reduced to raw commodities. By utilizing a specialized processor for large-scale shredding, we leverage the most efficient destruction technology available while drastically reducing your logistics costs, as this facility already serves as our direct materials recovery arm.",
-          "5. Witnessing and recording. We can witness the shredding process and record the destruction event when required. Depending on the project scope, documentation may include photos, video, load records, weight records, asset lists, destruction summaries, and certificates.",
-          "6. Final documentation. After destruction, we provide documentation appropriate to the project. The report may include the material description, quantity, date, handling notes, destruction method, partner facility involvement, and supporting records.",
+          `<strong>1. Material review and scope confirmation.</strong> We begin by identifying the type of devices, approximate quantity, condition, packaging, security concerns, and required documentation. If the material includes batteries, storage media, hazardous components, serialized assets, or highly sensitive prototypes, we define those handling requirements before pickup or receiving.`,
+
+          `<strong>2. Receiving, sorting, and staging.</strong> Once material is received, we sort and organize it for the correct processing path. Sensitive devices can be segregated from general commodity material. If serialized tracking is required, asset identifiers can be captured before destruction.`,
+
+          `<strong>3. Battery and hazard removal.</strong> Many electronics contain lithium batteries or other components that should not be shredded with the device. Before shredding, we remove batteries and other items that require separate handling. This preparation helps protect workers and equipment and ensures safe transportation.`,
+
+          `<strong>4. Demanufacturing and destruction preparation.</strong> Security and transparency dictate every step of our demanufacturing process. We begin by separating components to ensure safe, efficient, and compliant processing. All data-bearing media including hard drives, NVMe drives, and flash memory are strictly isolated and physically destroyed on-site at our Fresno facility using our dedicated, specialized shredders.`,
+
+          `For larger electronics, prototypes, and complex devices, we refuse to simply downstream your assets and lose visibility. Instead, we utilize a strategic partnership with an industrial-scale materials recovery facility. What sets us apart is our uninterrupted chain of custody: we act as your dedicated agent on the ground. Our team personally oversees the transfer and physically witnesses the end-to-end shredding process in real time. We can even provide continuous video evidence as your proprietary assets are completely reduced to raw commodities. By utilizing a specialized processor for large-scale shredding, we leverage the most efficient destruction technology available while drastically reducing your logistics costs, as this facility already serves as our direct materials recovery arm.`,
+
+          `<strong>5. Witnessing and recording.</strong> We can witness the shredding process and record the destruction event when required. Depending on the project scope, documentation may include photos, video, load records, weight records, asset lists, destruction summaries, and certificates.`,
+
+          `<strong>6. Final documentation.</strong> After destruction, we provide documentation appropriate to the project. The report may include the material description, quantity, date, handling notes, destruction method, partner facility involvement, and supporting records.`,
         ],
       },
       {
