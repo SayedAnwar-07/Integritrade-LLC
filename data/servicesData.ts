@@ -450,120 +450,120 @@ export const servicesData: Service[] = [
   // ==========================================================================
   // 4. ASSET RECOVERY  (slug: asset-recovery-services)  
   // ==========================================================================
-  {
-    slug: "asset-recovery-services",
-    image: assetRecovery,
-    metaTitle: "Enterprise IT Asset Recovery & Remarketing Services | Integritrade",
-    metaDescription:
-      "Recover value from retired enterprise IT through certified remarketing not consumer marketplaces. Net recovery credited against your invoice. R2v3 certified, nationwide pickup from Fresno, CA.",
-    pageTitle: "Asset Recovery",
-    pageSubtitle:
-      "For finance and IT teams who know retired hardware still has value and for compliance teams who need to make sure that value isn't recovered through channels that put your asset tags on consumer marketplaces. We remarket through enterprise refurbisher networks and credit recovery directly against your invoice.",
-    heroTitle:
-      "Turn Retired IT Hardware Into Recovered Capital Without Putting Your Asset Tags on eBay",
-    heroDescription:
-      "Every retired laptop, server, and switch with remaining useful life represents recoverable capital but only if it's remarketed through channels that protect your data, your brand, and your asset disposition controls. Integritrade's IT asset recovery program tests, grades, and remarkets enterprise hardware through vetted refurbisher networks. Net recovery is credited directly against your ITAD invoice as a transparent line item not paid out separately on a 90-day cycle. And no, your asset tags don't end up on consumer marketplaces.",
-    sections: [
-      {
-        title: "Why Asset Recovery Goes Wrong at Most ITAD Vendors",
-        content: [
-          "Asset recovery sounds simple: take retired hardware, sell it, give the customer a check. The reality is messier and the way most ITAD vendors handle it creates risks that finance and compliance teams rarely see until something goes wrong.",
-          "Hardware ends up on consumer marketplaces with company asset tags still attached, leaking organizational intelligence. 'Refurbishment' partners turn out to be brokers who export devices to non-OECD markets. Recovery payouts arrive 90+ days after the engagement, with line items that don't reconcile to the original asset list.",
-          "Integritrade's asset recovery program was built specifically to close these gaps. Hardware is graded and remarketed through enterprise-grade refurbisher channels not consumer marketplaces, not export brokers. Net recovery appears as a transparent credit on your ITAD invoice, reconciled to the original asset inventory by serial number.",
-        ],
-      },
-      {
-        title: "How the Recovery Process Actually Works",
-        content: [
-          "IT Asset Valuation & Buyback Every asset is tested, graded (cosmetic + functional), and assigned a fair-market remarketing value before any destruction or recycling commitment is made. You see the full economics before authorizing disposition.",
-          "Pre-Remarketing Data Sanitization Every device bound for resale is sanitized using ADISA-verified, NIST 800-88 compliant software erasure with serialized Certificates of Erasure. Asset tags are physically removed before any remarketing.",
-          "Refurbishment & Enterprise Remarketing Devices with remaining useful life are remarketed through enterprise refurbisher partners and B2B secondary market wholesalers. No consumer marketplaces. No offshore export.",
-          "Responsible Recycling for Non-Recoverable Assets Hardware without remarketing potential is recycled through our R2v3 certified processing chain. Material recovery is documented for ESG reporting alongside resale revenue.",
-          "Logistics & Chain-of-Custody Reporting Pickup, processing, sanitization, remarketing, recycling every step tracked by serial number and reconciled into a single audit-ready report.",
-        ],
-      },
-    ],
-    whyChoose: [
-      {
-        title: "Net Recovery Credited Directly to Your Invoice",
-        description:
-          "Remarketing proceeds appear as a transparent line item against your ITAD engagement not a separate 90-day payout. You see exactly what each asset returned.",
-      },
-      {
-        title: "Enterprise-Grade Remarketing Channels Only",
-        description:
-          "Hardware is remarketed through vetted B2B refurbisher networks. No consumer marketplaces. No offshore export. Asset tags are physically removed before resale.",
-      },
-      {
-        title: "ADISA-Verified Pre-Resale Sanitization",
-        description:
-          "Every device bound for remarketing is sanitized using ADISA-verified software with serialized Certificates of Erasure not a generic 'wiped' claim.",
-      },
-      {
-        title: "Full Asset-Level Economics",
-        description:
-          "Every asset's fair-market value is documented before disposition. You see the full economics of your IT lifecycle, not just a lump-sum check at the end.",
-      },
-      {
-        title: "ESG-Aligned Lifecycle Reporting",
-        description:
-          "Resale and recycling outcomes are reported together extending product lifecycles, documenting circular-economy contribution, and supporting your sustainability metrics.",
-      },
-      {
-        title: "Audit-Ready Single Report",
-        description:
-          "Pickup, sanitization, remarketing, recycling all reconciled in one document tied to the original asset inventory. Auditor-ready, accounting-clean, ESG-defensible.",
-      },
-    ],
-    industries: [
-      {
-        label: "Banking & Finance",
-        href: "/industries/finance",
-      },
-      {
-        label: "Healthcare",
-        href: "/industries/healthcare",
-      },
-      {
-        label: "Government & Public Sector",
-        href: "/industries/government-public-sector",
-      },
-      {
-        label: "Education",
-        href: "/industries/education",
-      },
-      {
-        label: "Corporate & Enterprise",
-        href: "/industries/business-corporate",
-      },
-      {
-        label: "Defense Contractors",
-        href: "/industries/defense-contractors",
-      },
-    ],
-    serviceLevel: {
-      tier: "04",
-      label: "Asset Recovery",
-      bestFor:
-        "Finance and IT teams who know their retired hardware still has value, and compliance teams who need to make sure that value isn't recovered through channels that put their asset tags on consumer marketplaces.",
-      includes:
-        "IT asset valuation and buyback, pre-remarketing data sanitization, refurbishment, enterprise-grade remarketing, responsible recycling for non-recoverable assets, and full chain-of-custody logistics.",
-      documentation:
-        "Asset-level valuation reports, serialized Certificates of Erasure, reconciled chain-of-custody records, and a single audit-ready remarketing and recycling summary.",
-      valueRecovery:
-        "Included net recovery credited directly to your invoice as a transparent line item, not a separate 90-day payout.",
-      whenToChoose:
-        "Your retired IT still has remaining useful life, you want recovery routed through enterprise refurbisher networks instead of consumer marketplaces, and you need the resale proceeds reconciled against your ITAD invoice on the same engagement.",
-      linkText: "Explore Asset Recovery",
-    },
-    cta: {
-      title: "See What Your Retired IT Is Actually Worth",
-      description:
-        "Send us your asset list laptops, servers, networking, storage. We'll come back with a fair-market valuation and a recovery plan within 48 hours.",
-      contact: "559-325-4813  |  info@integritradellc.com",
-      buttonText: "Request a Valuation",
-    },
-  },
+  // {
+  //   slug: "asset-recovery-services",
+  //   image: assetRecovery,
+  //   metaTitle: "Enterprise IT Asset Recovery & Remarketing Services | Integritrade",
+  //   metaDescription:
+  //     "Recover value from retired enterprise IT through certified remarketing not consumer marketplaces. Net recovery credited against your invoice. R2v3 certified, nationwide pickup from Fresno, CA.",
+  //   pageTitle: "Asset Recovery",
+  //   pageSubtitle:
+  //     "For finance and IT teams who know retired hardware still has value and for compliance teams who need to make sure that value isn't recovered through channels that put your asset tags on consumer marketplaces. We remarket through enterprise refurbisher networks and credit recovery directly against your invoice.",
+  //   heroTitle:
+  //     "Turn Retired IT Hardware Into Recovered Capital Without Putting Your Asset Tags on eBay",
+  //   heroDescription:
+  //     "Every retired laptop, server, and switch with remaining useful life represents recoverable capital but only if it's remarketed through channels that protect your data, your brand, and your asset disposition controls. Integritrade's IT asset recovery program tests, grades, and remarkets enterprise hardware through vetted refurbisher networks. Net recovery is credited directly against your ITAD invoice as a transparent line item not paid out separately on a 90-day cycle. And no, your asset tags don't end up on consumer marketplaces.",
+  //   sections: [
+  //     {
+  //       title: "Why Asset Recovery Goes Wrong at Most ITAD Vendors",
+  //       content: [
+  //         "Asset recovery sounds simple: take retired hardware, sell it, give the customer a check. The reality is messier and the way most ITAD vendors handle it creates risks that finance and compliance teams rarely see until something goes wrong.",
+  //         "Hardware ends up on consumer marketplaces with company asset tags still attached, leaking organizational intelligence. 'Refurbishment' partners turn out to be brokers who export devices to non-OECD markets. Recovery payouts arrive 90+ days after the engagement, with line items that don't reconcile to the original asset list.",
+  //         "Integritrade's asset recovery program was built specifically to close these gaps. Hardware is graded and remarketed through enterprise-grade refurbisher channels not consumer marketplaces, not export brokers. Net recovery appears as a transparent credit on your ITAD invoice, reconciled to the original asset inventory by serial number.",
+  //       ],
+  //     },
+  //     {
+  //       title: "How the Recovery Process Actually Works",
+  //       content: [
+  //         "IT Asset Valuation & Buyback Every asset is tested, graded (cosmetic + functional), and assigned a fair-market remarketing value before any destruction or recycling commitment is made. You see the full economics before authorizing disposition.",
+  //         "Pre-Remarketing Data Sanitization Every device bound for resale is sanitized using ADISA-verified, NIST 800-88 compliant software erasure with serialized Certificates of Erasure. Asset tags are physically removed before any remarketing.",
+  //         "Refurbishment & Enterprise Remarketing Devices with remaining useful life are remarketed through enterprise refurbisher partners and B2B secondary market wholesalers. No consumer marketplaces. No offshore export.",
+  //         "Responsible Recycling for Non-Recoverable Assets Hardware without remarketing potential is recycled through our R2v3 certified processing chain. Material recovery is documented for ESG reporting alongside resale revenue.",
+  //         "Logistics & Chain-of-Custody Reporting Pickup, processing, sanitization, remarketing, recycling every step tracked by serial number and reconciled into a single audit-ready report.",
+  //       ],
+  //     },
+  //   ],
+  //   whyChoose: [
+  //     {
+  //       title: "Net Recovery Credited Directly to Your Invoice",
+  //       description:
+  //         "Remarketing proceeds appear as a transparent line item against your ITAD engagement not a separate 90-day payout. You see exactly what each asset returned.",
+  //     },
+  //     {
+  //       title: "Enterprise-Grade Remarketing Channels Only",
+  //       description:
+  //         "Hardware is remarketed through vetted B2B refurbisher networks. No consumer marketplaces. No offshore export. Asset tags are physically removed before resale.",
+  //     },
+  //     {
+  //       title: "ADISA-Verified Pre-Resale Sanitization",
+  //       description:
+  //         "Every device bound for remarketing is sanitized using ADISA-verified software with serialized Certificates of Erasure not a generic 'wiped' claim.",
+  //     },
+  //     {
+  //       title: "Full Asset-Level Economics",
+  //       description:
+  //         "Every asset's fair-market value is documented before disposition. You see the full economics of your IT lifecycle, not just a lump-sum check at the end.",
+  //     },
+  //     {
+  //       title: "ESG-Aligned Lifecycle Reporting",
+  //       description:
+  //         "Resale and recycling outcomes are reported together extending product lifecycles, documenting circular-economy contribution, and supporting your sustainability metrics.",
+  //     },
+  //     {
+  //       title: "Audit-Ready Single Report",
+  //       description:
+  //         "Pickup, sanitization, remarketing, recycling all reconciled in one document tied to the original asset inventory. Auditor-ready, accounting-clean, ESG-defensible.",
+  //     },
+  //   ],
+  //   industries: [
+  //     {
+  //       label: "Banking & Finance",
+  //       href: "/industries/finance",
+  //     },
+  //     {
+  //       label: "Healthcare",
+  //       href: "/industries/healthcare",
+  //     },
+  //     {
+  //       label: "Government & Public Sector",
+  //       href: "/industries/government-public-sector",
+  //     },
+  //     {
+  //       label: "Education",
+  //       href: "/industries/education",
+  //     },
+  //     {
+  //       label: "Corporate & Enterprise",
+  //       href: "/industries/business-corporate",
+  //     },
+  //     {
+  //       label: "Defense Contractors",
+  //       href: "/industries/defense-contractors",
+  //     },
+  //   ],
+  //   serviceLevel: {
+  //     tier: "04",
+  //     label: "Asset Recovery",
+  //     bestFor:
+  //       "Finance and IT teams who know their retired hardware still has value, and compliance teams who need to make sure that value isn't recovered through channels that put their asset tags on consumer marketplaces.",
+  //     includes:
+  //       "IT asset valuation and buyback, pre-remarketing data sanitization, refurbishment, enterprise-grade remarketing, responsible recycling for non-recoverable assets, and full chain-of-custody logistics.",
+  //     documentation:
+  //       "Asset-level valuation reports, serialized Certificates of Erasure, reconciled chain-of-custody records, and a single audit-ready remarketing and recycling summary.",
+  //     valueRecovery:
+  //       "Included net recovery credited directly to your invoice as a transparent line item, not a separate 90-day payout.",
+  //     whenToChoose:
+  //       "Your retired IT still has remaining useful life, you want recovery routed through enterprise refurbisher networks instead of consumer marketplaces, and you need the resale proceeds reconciled against your ITAD invoice on the same engagement.",
+  //     linkText: "Explore Asset Recovery",
+  //   },
+  //   cta: {
+  //     title: "See What Your Retired IT Is Actually Worth",
+  //     description:
+  //       "Send us your asset list laptops, servers, networking, storage. We'll come back with a fair-market valuation and a recovery plan within 48 hours.",
+  //     contact: "559-325-4813  |  info@integritradellc.com",
+  //     buttonText: "Request a Valuation",
+  //   },
+  // },
 
   
   // ==========================================================================

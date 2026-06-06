@@ -26,6 +26,8 @@ import {
   Briefcase,
   Store,
   Shield,
+  Hammer,
+  Scale,
 } from 'lucide-react'
 import { ModeToggle } from './ModeToggle'
 import PrimaryButton from './buttons/PrimaryButton'
@@ -116,7 +118,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                       : ''
                   } ${
                     isSubActive
-                      ? 'bg-dark text-primary'
+                      ? 'bg-gray-50 dark:bg-white/[0.03] text-primary'
                       : 'text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/[0.03] hover:text-gray-900 dark:hover:text-white'
                   }`}
                 >
@@ -290,10 +292,11 @@ export default function Navbar() {
       href: '/services',
       label: 'Services',
       dropdown: [
-        { href: '/services/', label: 'Compare Our Service Levels', icon: Recycle },
+        { href: '/services/', label: 'Compare Our Service Levels', icon: Scale },
         { href: '/services/e-waste-recycling', label: 'Basic Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
         { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },        
+        { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },        
       ],
     },
     {
