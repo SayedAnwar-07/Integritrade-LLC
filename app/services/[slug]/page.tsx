@@ -194,25 +194,69 @@ export default async function ServicePage(props: {
                       <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-gray-700 dark:text-gray-300">
                         Section {sectionNum}
                       </p>
-                      
                     </div>
 
                     <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white tracking-tight leading-tight mb-8 max-w-3xl">
                       {section.title}
                     </h2>
 
-                    <div className="space-y-5 text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                      {section.content.map((paragraph, pIndex) => (
-                        <p
-                          key={pIndex}
-                          className="
-                            [&_strong]:font-semibold
-                            [&_strong]:text-black dark:[&_strong]:text-white
-                          "
-                          dangerouslySetInnerHTML={{ __html: paragraph }}
-                        />
-                      ))}
-                    </div>
+                    {section.intro && (
+                      <p className="text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify mb-10 max-w-3xl">
+                        {section.intro}
+                      </p>
+                    )}
+
+                    {section.items && (
+                      <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-8 border-t border-gray-200 dark:border-gray-800 pt-10">
+                        {section.items.map((item, i) => (
+                          <div key={i} className="flex flex-col border-l-2 border-primary/40 pl-5">
+                            <dt className="font-serif text-base font-semibold text-gray-900 dark:text-white mb-2">
+                              {item.label}
+                            </dt>
+                            <dd className="text-[14px] text-gray-700 dark:text-gray-300 leading-relaxed">
+                              {item.description}
+                            </dd>
+                          </div>
+                        ))}
+                      </dl>
+                    )}
+
+                    {section.compare && (
+                      <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
+                        <div className="grid grid-cols-2 gap-x-8 pb-4 border-b border-gray-200 dark:border-gray-800 mb-2">
+                          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
+                            {section.compare.leftLabel}
+                          </p>
+                          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-primary">
+                            {section.compare.rightLabel}
+                          </p>
+                        </div>
+                        <dl className="divide-y divide-gray-200 dark:divide-gray-800">
+                          {section.compare.rows.map((row, i) => (
+                            <div key={i} className="grid grid-cols-2 gap-x-8 py-5">
+                              <dt className="text-[14px] text-gray-500 dark:text-gray-500 leading-relaxed line-through decoration-gray-300 dark:decoration-gray-700">
+                                {row.left}
+                              </dt>
+                              <dd className="text-[14px] text-gray-800 dark:text-gray-200 leading-relaxed font-medium">
+                                {row.right}
+                              </dd>
+                            </div>
+                          ))}
+                        </dl>
+                      </div>
+                    )}
+
+                    {section.content && (
+                      <div className="space-y-5 text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                        {section.content.map((paragraph, pIndex) => (
+                          <p
+                            key={pIndex}
+                            className="[&_strong]:font-semibold [&_strong]:text-black dark:[&_strong]:text-white"
+                            dangerouslySetInnerHTML={{ __html: paragraph }}
+                          />
+                        ))}
+                      </div>
+                    )}
                   </article>
                 </ScrollLoader>
               );

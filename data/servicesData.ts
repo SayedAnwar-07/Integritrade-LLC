@@ -54,7 +54,14 @@ export interface Service {
 
 export interface ServiceSection {
   title: string
-  content: string[]
+  content?: string[]
+  intro?: string
+  items?: { label: string; description: string }[]
+  compare?: {
+    leftLabel: string
+    rightLabel: string
+    rows: { left: string; right: string }[]
+  }
 }
 
 export interface WhyChooseItem {
@@ -587,87 +594,96 @@ export const servicesData: Service[] = [
     sections: [
       {
         title: "What Is Demanufacturing?",
-        content: [
-          "Demanufacturing is the controlled breakdown and preparation of electronic devices before recycling, shredding, or final destruction. Instead of treating material as loose scrap, we separate devices by type, remove hazardous or sensitive components such as batteries, prepare the material for secure shredding, and document the handling process.",
-          "For sensitive devices, demanufacturing is especially important because many products contain batteries, screens, storage media, circuit boards, identifiers, branded housings, or proprietary assemblies that need to be handled before destruction.",
-          "Device sorting we organize material by product type, risk level, and destruction method.",
-          "Battery removal we remove batteries and other components that should not enter the shredder.",
-          "Component separation we separate items such as boards, cables, plastics, metals, storage devices, and hazardous components where appropriate.",
-          "Destruction preparation we stage material so it can be safely and efficiently shredded at the partner facility, while Integritrade staff witnesses the entire destruction.",
-          "Witnessed shredding we coordinate shredding and destruction at a trusted partner facility, witness the entire process, and record the shredding.",
-          "Recording and documentation we document the destruction event through records, photos, video when appropriate, and certificates or summary reports.",
+        intro:
+          "The controlled breakdown and preparation of electronic devices before recycling, shredding, or final destruction. Instead of treating material as loose scrap, we sort by type, remove hazards like batteries, stage material for secure shredding, and document every step. Sensitive devices often contain batteries, screens, storage, boards, identifiers, branded housings, or proprietary assemblies that need handling before destruction.",
+        items: [
+          { label: "Device sorting", description: "Organized by product type, risk level, and destruction method." },
+          { label: "Battery removal", description: "Batteries and items unsafe for shredders removed first." },
+          { label: "Component separation", description: "Boards, cables, plastics, metals, storage, and hazards separated where appropriate." },
+          { label: "Destruction prep", description: "Material staged for safe, efficient shredding at the partner facility." },
+          { label: "Witnessed shredding", description: "Shredding coordinated, witnessed, and recorded by Integritrade staff." },
+          { label: "Documentation", description: "Destruction events recorded via logs, photos, video, and certificates." },
         ],
       },
       {
-        title:
-          "Built for Prototypes, Sensitive Devices, and Controlled Product Destruction",
-        content: [
-          "Organizations often need more than a standard e-waste pickup when they are dealing with products that carry intellectual property, brand risk, or data-security concerns. A prototype or engineering sample can reveal product design, supplier information, firmware, component selection, board layout, enclosure design, testing history, or a product roadmap. Even non-working equipment may still contain recoverable components, labels, identifiers, or embedded data.",
-          "Our process is designed to reduce that risk. We help ensure that devices are not casually handled, cherry-picked, resold, or released into the secondary market. When destruction is required, we prepare the material and coordinate a controlled shredding event so your organization can show that the devices were physically destroyed.",
-          "Prototypes and engineering samples protects intellectual property, unreleased designs, and internal testing programs.",
-          "Branded electronics prevents unauthorized resale, gray-market distribution, and brand misuse.",
-          "Recalled or defective products reduces risk of unsafe or nonconforming products re-entering circulation.",
-          "IT assets and data-bearing devices supports data-security, privacy, and chain-of-custody requirements.",
-          "Medical, industrial, or specialty electronics helps control sensitive equipment, firmware, configurations, and regulated components.",
-          "Product returns and warranty units prevents unauthorized harvesting, resale, or redistribution of restricted inventory.",
+        title: "Built for Prototypes, Sensitive Devices, and Controlled Product Destruction",
+        intro:
+          "Standard e-waste pickup isn't enough when you're dealing with intellectual property, brand risk, or data-security concerns. A single prototype can expose product design, supplier info, firmware, board layout, testing history, or roadmap. Even non-working equipment can contain recoverable components, labels, or embedded data. Our process ensures devices aren't cherry-picked, resold, or released into the secondary market.",
+        items: [
+          { label: "Prototypes & engineering samples", description: "Protects IP, unreleased designs, and internal testing programs." },
+          { label: "Branded electronics", description: "Prevents unauthorized resale, gray-market distribution, and brand misuse." },
+          { label: "Recalled or defective products", description: "Keeps unsafe or nonconforming products out of circulation." },
+          { label: "IT assets & data-bearing devices", description: "Supports data-security, privacy, and chain-of-custody requirements." },
+          { label: "Medical & specialty electronics", description: "Controls sensitive equipment, firmware, and regulated components." },
+          { label: "Returns & warranty units", description: "Prevents unauthorized harvesting or redistribution of restricted inventory." },
         ],
       },
       {
         title: "Our Destruction Workflow",
         content: [
-          `<strong>1. Material review and scope confirmation.</strong> We begin by identifying the type of devices, approximate quantity, condition, packaging, security concerns, and required documentation. If the material includes batteries, storage media, hazardous components, serialized assets, or highly sensitive prototypes, we define those handling requirements before pickup or receiving.`,
-
-          `<strong>2. Receiving, sorting, and staging.</strong> Once material is received, we sort and organize it for the correct processing path. Sensitive devices can be segregated from general commodity material. If serialized tracking is required, asset identifiers can be captured before destruction.`,
-
-          `<strong>3. Battery and hazard removal.</strong> Many electronics contain lithium batteries or other components that should not be shredded with the device. Before shredding, we remove batteries and other items that require separate handling. This preparation helps protect workers and equipment and ensures safe transportation.`,
-
-          `<strong>4. Demanufacturing and destruction preparation.</strong> Security and transparency dictate every step of our demanufacturing process. We begin by separating components to ensure safe, efficient, and compliant processing. All data-bearing media including hard drives, NVMe drives, and flash memory are strictly isolated and physically destroyed on-site at our Fresno facility using our dedicated, specialized shredders.`,
-
-          `For larger electronics, prototypes, and complex devices, we refuse to simply downstream your assets and lose visibility. Instead, we utilize a strategic partnership with an industrial-scale materials recovery facility. What sets us apart is our uninterrupted chain of custody: we act as your dedicated agent on the ground. Our team personally oversees the transfer and physically witnesses the end-to-end shredding process in real time. We can even provide continuous video evidence as your proprietary assets are completely reduced to raw commodities. By utilizing a specialized processor for large-scale shredding, we leverage the most efficient destruction technology available while drastically reducing your logistics costs, as this facility already serves as our direct materials recovery arm.`,
-
-          `<strong>5. Witnessing and recording.</strong> We can witness the shredding process and record the destruction event when required. Depending on the project scope, documentation may include photos, video, load records, weight records, asset lists, destruction summaries, and certificates.`,
-
-          `<strong>6. Final documentation.</strong> After destruction, we provide documentation appropriate to the project. The report may include the material description, quantity, date, handling notes, destruction method, partner facility involvement, and supporting records.`,
+          `<strong>1. Material review & scope.</strong> We identify device types, quantities, condition, security concerns, and required documentation. Batteries, storage media, hazardous components, serialized assets, or highly sensitive prototypes get handling requirements defined before pickup.`,
+          `<strong>2. Receiving, sorting, staging.</strong> Sensitive devices segregated from general commodity material. Serialized tracking captures asset identifiers before destruction if required.`,
+          `<strong>3. Battery & hazard removal.</strong> Lithium batteries and components that shouldn't be shredded with the device are removed protecting workers, equipment, and transportation.`,
+          `<strong>4. Demanufacturing & destruction prep.</strong> Data-bearing media (HDDs, NVMe, flash) are isolated and physically destroyed on-site at our Fresno facility using dedicated shredders. For larger electronics, prototypes, and complex devices, we use a strategic partnership with an industrial-scale materials recovery facility our team acts as your agent on the ground, personally overseeing the transfer and physically witnessing end-to-end shredding in real time. Continuous video evidence available on request.`,
+          `<strong>5. Witnessing & recording.</strong> We witness the shredding process and record the destruction event with photos, video, load records, weight records, asset lists, destruction summaries, and certificates.`,
+          `<strong>6. Final documentation.</strong> Material description, quantity, date, handling notes, destruction method, partner facility involvement, and supporting records packaged appropriately for the project.`,
         ],
       },
       {
         title: "Why Preparation Before Shredding Matters",
-        content: [
-          "Shredding is not always as simple as feeding whole devices into a machine. Large electronics can contain batteries, capacitors, glass, metal assemblies, plastics, circuit boards, embedded storage, adhesives, labels, or other components that should be removed or separated before destruction.",
-          "Proper preparation reduces safety risk and improves documentation quality. It also helps ensure the destruction process is appropriate for the device type rather than forcing all material through the same workflow.",
-          "Battery removal reduces fire, smoke, thermal runaway, and equipment-damage risk.",
-          "Storage-media identification helps ensure data-bearing components are tracked or destroyed.",
-          "Product segregation prevents sensitive prototypes from being mixed with general scrap.",
-          "Label and identifier review helps document serialized or branded assets before destruction.",
-          "Load organization makes shredding more efficient and easier to witness.",
-          "Documentation before destruction creates a record before the device is physically altered.",
+        intro:
+          "Shredding isn't as simple as feeding whole devices into a machine. Large electronics contain batteries, capacitors, glass, metal assemblies, plastics, boards, embedded storage, adhesives, and labels that should be removed or separated before destruction. Proper preparation reduces safety risk and improves documentation quality.",
+        items: [
+          { label: "Battery removal", description: "Reduces fire, smoke, thermal runaway, and equipment-damage risk." },
+          { label: "Storage-media identification", description: "Ensures data-bearing components are tracked or destroyed." },
+          { label: "Product segregation", description: "Keeps sensitive prototypes from being mixed with general scrap." },
+          { label: "Label & identifier review", description: "Documents serialized or branded assets before destruction." },
+          { label: "Load organization", description: "Makes shredding more efficient and easier to witness." },
+          { label: "Documentation before destruction", description: "Creates a record before the device is physically altered." },
         ],
       },
       {
         title: "Documentation and Chain of Custody",
-        content: [
-          "A destruction service is only as strong as the documentation behind it. We help create a defensible record showing that material was received, prepared, transferred for shredding, witnessed, and destroyed.",
-          "For projects involving sensitive devices, prototypes, or data-bearing electronics, chain of custody may include receiving logs, serialized asset lists, pallet counts, weight records, photos, video clips, witness notes, and certificates of destruction. The goal is to give your organization a clear record that can support internal audits, customer requirements, compliance files, or vendor-management documentation.",
-          "Certificate of destruction general proof that devices were destroyed.",
-          "Serialized asset report for ITAD projects, data-bearing devices, high-value electronics, and controlled assets.",
-          "Photo documentation before-and-after evidence for product destruction or prototype disposal.",
-          "Video documentation for higher-security projects requiring visual proof of shredding.",
-          "Weight report for commodity, recycling, and recovery reporting.",
-          "Witness log for projects where a named individual must confirm the destruction event.",
+        intro:
+          "A destruction service is only as strong as the documentation behind it. We create a defensible record showing material was received, prepared, transferred for shredding, witnessed, and destroyed supporting internal audits, customer requirements, compliance files, and vendor-management documentation.",
+        items: [
+          { label: "Certificate of destruction", description: "General proof that devices were destroyed." },
+          { label: "Serialized asset report", description: "For ITAD projects, data-bearing devices, high-value electronics, and controlled assets." },
+          { label: "Photo documentation", description: "Before-and-after evidence for product destruction or prototype disposal." },
+          { label: "Video documentation", description: "Higher-security projects requiring visual proof of shredding." },
+          { label: "Weight report", description: "Commodity, recycling, and recovery reporting." },
+          { label: "Witness log", description: "Projects where a named individual must confirm the destruction event." },
         ],
       },
       {
-        title:
-          "Why Choose a Controlled Destruction Process Instead of Basic Recycling?",
-        content: [
-          "Basic recycling may be acceptable for low-risk commodity material, but it is not always appropriate for sensitive devices. If your organization needs to protect intellectual property, data, brand integrity, or compliance records, you need more than a pickup receipt.",
-          "A controlled destruction process provides structure. Devices are reviewed, staged, prepared, moved through a defined workflow, and documented. When shredding is required, the process can be witnessed and recorded at the partner facility. This reduces ambiguity and gives your organization a clearer record of what happened to the material.",
-          "Where basic recycling may handle material as commodity scrap, controlled demanufacturing handles material according to security and destruction requirements.",
-          "Where basic recycling offers limited visibility into preparation, controlled demanufacturing reviews batteries, storage, and sensitive components before shredding.",
-          "Where basic recycling documentation may be limited to weight, controlled demanufacturing documentation can include assets, photos, video, witness notes, and certificates.",
-          "Where basic recycling devices may pass through multiple downstream channels, controlled demanufacturing keeps the destruction path coordinated and documented.",
-          "Where basic recycling is not ideal for prototypes or sensitive products, controlled demanufacturing is designed for IP protection, brand protection, and data-security needs.",
+        title: "Who Uses This Service?",
+        intro:
+          "Built for organizations that need a higher level of control than ordinary e-waste recycling especially when devices carry intellectual property, confidential data, brand-sensitive components, safety concerns, or regulatory risk.",
+        items: [
+          { label: "Technology companies", description: "Destruction of prototypes, engineering samples, failed test units, and unreleased products." },
+          { label: "Manufacturers", description: "Controlled destruction of defective, obsolete, or nonconforming electronics." },
+          { label: "OEMs", description: "Product destruction, brand protection, and downstream accountability." },
+          { label: "IT departments", description: "Data-bearing asset destruction and serialized reporting." },
+          { label: "Medical & laboratory orgs", description: "Controlled handling of specialized electronics and sensitive equipment." },
+          { label: "Schools & public agencies", description: "Documented destruction of IT assets and obsolete electronics." },
+          { label: "Retailers & distributors", description: "Destruction of returns, warranty units, and restricted inventory." },
         ],
+      },
+      {
+        title: "Why Choose Controlled Destruction Instead of Basic Recycling?",
+        intro:
+          "Basic recycling may be acceptable for low-risk commodity material, but not for sensitive devices. If you need to protect IP, data, brand integrity, or compliance records, a pickup receipt isn't enough a controlled process gives you a defined workflow, witnessed shredding, and a clearer record of what happened.",
+        compare: {
+          leftLabel: "Basic recycling",
+          rightLabel: "Controlled demanufacturing",
+          rows: [
+            { left: "Material handled as commodity scrap.", right: "Material handled per security and destruction requirements." },
+            { left: "Limited visibility into preparation.", right: "Batteries, storage, and sensitive components reviewed before shredding." },
+            { left: "Documentation may be limited to weight.", right: "Documentation includes assets, photos, video, witness notes, and certificates." },
+            { left: "Devices may pass through multiple downstream channels.", right: "Destruction path coordinated and documented end-to-end." },
+            { left: "Not ideal for prototypes or sensitive products.", right: "Designed for IP protection, brand protection, and data-security needs." },
+          ],
+        },
       },
     ],
     whyChoose: [
