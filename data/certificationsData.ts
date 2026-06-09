@@ -1,8 +1,8 @@
-import img1 from "@/assets/1.jpg";
-import img2 from "@/assets/2.jpg";
-import img3 from "@/assets/3.jpg";
-import img4 from "@/assets/4.jpg";
-import img5 from "@/assets/5.jpg";
+import r2v3 from "@/public/certificates/Amtivo-(USA)-Inc-Certificate.jpg";
+import iso9001 from "@/public/certificates/Integritrade-LLC-QMS-2.jpg";
+import iso14001 from "@/public/certificates/Integritrade-LLC-EMS-2.jpg"
+import iso45001 from "@/public/certificates/Integritrade-LLC-OHS-2.jpg";
+import iso27001 from "@/public/certificates/Integritrade-LLC-ISO 27001-1363.jpg";
 
 export const certificationsData = [
   {
@@ -39,7 +39,8 @@ export const certificationsData = [
     validUntil: "25/01/2027",
     company: "Amtivo (USA) Inc. - ANAB Accredited",
     company_description: "Certification for sustainable electronics recycling, downstream vendor management, data sanitization, testing and repair of mobile devices and consumer electronics.",
-    image: img2
+    image: r2v3,
+    pdf: "/certificates/Amtivo-(USA)-Inc-Certificate.pdf",
   },
   {
     id: 2,
@@ -75,7 +76,8 @@ export const certificationsData = [
     validUntil: "07/07/2026",
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for quality management in electronic goods recycling, including repair, testing, data sanitization, and resale operations.",
-    image: img5
+    image: iso9001,
+    pdf: "/certificates/Integritrade-LLC-QMS-2.pdf",
   },
   {
     id: 3,
@@ -111,7 +113,8 @@ export const certificationsData = [
     validUntil: "07/07/2026",
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for environmental management in electronic goods recycling, repair, testing, data sanitization, and resale operations.",
-    image: img1
+    image: iso14001,
+    pdf: "/certificates/Integritrade-LLC-EMS-2.pdf",
   },
   {
     id: 4,
@@ -147,7 +150,8 @@ export const certificationsData = [
     validUntil: "07/07/2026",
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for occupational health and safety management in electronic goods recycling operations.",
-    image: img3
+    image: iso45001,
+    pdf: "/certificates/Integritrade-LLC-OHS-2.pdf",
   },
   {
     id: 5,
@@ -183,7 +187,8 @@ export const certificationsData = [
     validUntil: "18/11/2027",
     company: "SCK Certifications Pvt. Ltd.",
     company_description: "Certification for information security management in electronic goods recycling, repair, test, data sanitization, and resale operations.",
-    image: img4
+    image: iso27001,
+    pdf: "/certificates/Integritrade-LLC-ISO%2027001-1363.pdf",
   },
 ];
 

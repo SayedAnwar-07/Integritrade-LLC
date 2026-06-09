@@ -9,6 +9,7 @@ import ScrollLoader from "@/components/shared/ScrollLoader"
 import SectionHeader from "@/components/shared/SectionHeader"
 import RackOfServers from "@/public/services/rack-of-servers.jpg"
 import Image from "next/image"
+import ReadMore from "@/components/shared/buttons/ReadMore"
 
 export const metadata: Metadata = {
   title: "Enterprise ITAD, Data Destruction & E-Waste Recycling | Integritrade",
@@ -133,13 +134,14 @@ export default function ServicesPage() {
                 <div
                   key={i}
                   className="grid grid-cols-1 md:grid-cols-12 gap-x-10 gap-y-3 py-7 border-b border-gray-200 dark:border-gray-800"
-                >
-                  <dt className="md:col-span-7 text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
-                    {row.scenario}
-                  </dt>
+                >               
                   <dd className="md:col-span-5 font-serif text-[15px] font-semibold text-gray-900 dark:text-white tracking-tight self-center">
                     {row.recommendation}
                   </dd>
+
+                   <dt className="md:col-span-7 text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+                    {row.scenario}
+                  </dt>
                 </div>
               ))}
             </dl>
@@ -170,9 +172,27 @@ export default function ServicesPage() {
 
                   {/* Disclaimer text — second on mobile, left on desktop */}
                   <aside className="lg:col-span-7 lg:order-1">
-                    <div className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+                    {/* Mobile / tablet: clamped with Read More */}
+                    <div className="lg:hidden">
+                      <ReadMore previewLines={3}>
+                        {valueRecoveryDisclaimer.map((para, i) => (
+                          <p
+                            key={i}
+                            className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify mb-6 last:mb-0"
+                          >
+                            {para}
+                          </p>
+                        ))}
+                      </ReadMore>
+                    </div>
+
+                    {/* Desktop: full text, no toggle */}
+                    <div className="hidden lg:block">
                       {valueRecoveryDisclaimer.map((para, i) => (
-                        <p key={i} className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify mb-6">
+                        <p
+                          key={i}
+                          className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify mb-6 last:mb-0"
+                        >
                           {para}
                         </p>
                       ))}

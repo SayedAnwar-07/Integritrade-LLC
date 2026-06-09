@@ -40,6 +40,23 @@ export default function PageHeader({
     </Link>
   );
 
+  // Reusable description block — clamped on mobile/tablet, full on desktop
+  const descriptionBlock = description && (
+    <>
+      {/* Mobile / tablet: clamped with Read More */}
+      <div className="lg:hidden">
+          <p className="text-justify text-base leading-relaxed text-stone-700 dark:text-slate-300">
+            {description}
+          </p>
+      </div>
+
+      {/* Desktop: full text, no toggle */}
+      <p className="hidden lg:block text-justify text-base leading-relaxed text-stone-700 dark:text-slate-300">
+        {description}
+      </p>
+    </>
+  );
+
   return (
     <div className={`w-full ${className}`}>
       {/* Eyebrow */}
@@ -65,11 +82,7 @@ export default function PageHeader({
             </h1>
           </div>
 
-          {description && (
-            <p className="text-justify mt-6 max-w-3xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
-              {description}
-            </p>
-          )}
+          {description && <div className="mt-6 max-w-3xl">{descriptionBlock}</div>}
 
           {hasLink && <div className="mt-8">{cta}</div>}
         </div>
@@ -83,11 +96,7 @@ export default function PageHeader({
           </div>
 
           <div className="lg:col-span-6 flex flex-col gap-6">
-            {description && (
-              <p className="text-justify text-base leading-relaxed text-stone-700 dark:text-slate-300">
-                {description}
-              </p>
-            )}
+            {descriptionBlock}
             {cta}
           </div>
         </div>

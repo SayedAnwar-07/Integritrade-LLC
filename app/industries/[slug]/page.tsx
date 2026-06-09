@@ -9,6 +9,7 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import Image from "next/image";
 import ScrollLoader from "@/components/shared/ScrollLoader";
+import ReadMore from "@/components/shared/buttons/ReadMore";
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
@@ -142,59 +143,58 @@ export default async function IndustryPage(props: {
             {/* Content */}
             <div className="space-y-8">
               {industry.contentSections?.length ? (
-                industry.contentSections.map((section, sectionIndex) => (
-                  <div key={sectionIndex} className="space-y-4">
-                    {section.heading && (
-                      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                        {section.heading}
-                      </h2>
-                    )}
+                <ReadMore previewLines={6} expandAt="lg">
+                    {industry.contentSections.map((section, sectionIndex) => (
+                      <div key={sectionIndex} className="space-y-4">
+                        {section.heading && (
+                          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-6">
+                            {section.heading}
+                          </h2>
+                        )}
 
-                    {section.paragraphs?.map((paragraph, paragraphIndex) => (
-                      <p
-                        key={paragraphIndex}
-                        className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
-                      >
-                        {paragraph}
-                      </p>
-                    ))}
-
-                    {section.bullets?.length ? (
-                      <ul className="space-y-3 pt-1">
-                        {section.bullets.map((bullet, bulletIndex) => (
-                          <li
-                            key={bulletIndex}
-                            className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
+                        {section.paragraphs?.map((paragraph, paragraphIndex) => (
+                          <p
+                            key={paragraphIndex}
+                            className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
                           >
-                            <span className="mt-3 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#2aac61]" />
-
-                            <span>
-                              {typeof bullet === "string" ? (
-                                bullet
-                              ) : (
-                                <>
-                                  <strong className="font-semibold text-gray-900 dark:text-white">
-                                    {bullet.title}:
-                                  </strong>{" "}
-                                  {bullet.text}
-                                </>
-                              )}
-                            </span>
-                          </li>
+                            {paragraph}
+                          </p>
                         ))}
-                      </ul>
-                    ) : null}
-                  </div>
-                ))
-              ) : (
-                industry.content.map((paragraph, i) => (
-                  <p
-                    key={i}
-                    className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
-                  >
-                    {paragraph}
+
+                        {section.bullets?.length ? (
+                          <ul className="space-y-3 pt-1">
+                            {section.bullets.map((bullet, bulletIndex) => (
+                              <li
+                                key={bulletIndex}
+                                className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
+                              >
+                                <span className="mt-3 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#2aac61]" />
+
+                                <span>
+                                  {typeof bullet === "string" ? (
+                                    bullet
+                                  ) : (
+                                    <>
+                                      <strong className="font-semibold text-gray-900 dark:text-white">
+                                        {bullet.title}:
+                                      </strong>{" "}
+                                      {bullet.text}
+                                    </>
+                                  )}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : null}
+                      </div>
+                    ))}
+                </ReadMore>
+                ) : (
+                <ReadMore previewLines={6} expandAt="lg">
+                  <p className="whitespace-pre-line text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify">
+                    {industry.content.join("\n\n")}
                   </p>
-                ))
+                </ReadMore>
               )}
             </div>
           </div>

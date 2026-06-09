@@ -21,6 +21,7 @@ interface Certification {
   company: string;
   company_description: string;
   image: StaticImageData;
+  pdf: string;
 }
 
 interface CertificationCardProps {
@@ -43,19 +44,24 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
       >
         {/* IMAGE — primary focus, takes 7/12 columns */}
         <div className="lg:col-span-6 relative">
-          <ScrollLoader>            
-            {/* Image container — detached white card, generous, no hover */}
-            <div className="relative bg-secondary dark:bg-dark rounded-md overflow-hidden">
-              <div className="relative aspect-[4/5] w-full">
-                  <Image
-                    src={certification.image}
-                    alt={`${certification.header} certificate — ${certification.company}`}
-                    fill
-                    className="object-contain p-4 sm:p-6 rounded-md"
-                    priority={index < 2}
-                  />
+          <ScrollLoader>
+            <a
+              href={certification.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Open ${certification.header} certificate PDF in a new tab`}
+              className="group/pdf block bg-secondary dark:bg-dark rounded-md overflow-hidden cursor-pointer"
+            >
+              <div className="aspect-[4/5] w-full">
+                <Image
+                  src={certification.image}
+                  alt={`${certification.header} certificate — ${certification.company}`}
+                  fill
+                  className="object-contain p-4 sm:p-6 rounded-md transition-transform duration-300 group-hover/pdf:scale-[1.02]"
+                  priority={index < 2}
+                />
               </div>
-            </div>
+            </a>
           </ScrollLoader>
         </div>
 

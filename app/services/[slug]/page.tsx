@@ -127,7 +127,7 @@ export default async function ServicePage(props: {
               <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-gray-500 dark:text-gray-400 mb-6">
                 All Services
               </p>
-              <nav className="border-t border-gray-200 dark:border-gray-800">
+              <nav className="">
                 {servicesData.map((s, idx) => {
                   const num = String(idx + 1).padStart(2, "0");
                   const isActive = s.slug === service.slug;
@@ -207,7 +207,7 @@ export default async function ServicePage(props: {
                     )}
 
                     {section.items && (
-                      <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-8 border-t border-gray-200 dark:border-gray-800 pt-10">
+                      <dl className="grid sm:grid-cols-2 gap-x-8 gap-y-8  pt-10">
                         {section.items.map((item, i) => (
                           <div key={i} className="flex flex-col border-l-2 border-primary/40 pl-5">
                             <dt className="font-serif text-base font-semibold text-gray-900 dark:text-white mb-2">
@@ -222,7 +222,7 @@ export default async function ServicePage(props: {
                     )}
 
                     {section.compare && (
-                      <div className="border-t border-gray-200 dark:border-gray-800 pt-8">
+                      <div className=" pt-8">
                         <div className="grid grid-cols-2 gap-x-8 pb-4 border-b border-gray-200 dark:border-gray-800 mb-2">
                           <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400">
                             {section.compare.leftLabel}
@@ -307,7 +307,7 @@ export default async function ServicePage(props: {
                   Who we serve
                 </h2>
 
-                <dl className="grid sm:grid-cols-2 lg:grid-cols-3 border-t border-gray-200 dark:border-gray-800">
+                <dl className="grid sm:grid-cols-2 lg:grid-cols-3 ">
                   {service.industries.map((industry, index) => {
 
                     return (
