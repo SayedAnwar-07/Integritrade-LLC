@@ -48,7 +48,7 @@ export const certificationsData = [
     title: "ISO 9001 : Quality Management System (QMS)",
     description: "Integritrade is ISO 9001 certified, ensuring that we maintain the highest standards in quality management across all operations. As a trusted partner in quality assurance, we adhere to the global benchmark for delivering consistent quality.",
     customerBenefit:
-      "If data is on a drive when it arrives at our facility, it is gone provably by the time we issue your Certificate of Data Destruction. No leaks, no liability, no headlines.",
+      "The service you get this quarter is the same service you get next quarter. No skipped steps, no surprises when staff change, no 'we usually do it this way' answers.",
     keyPoints: [
       {
         short_header: "Customer-Centric Approach",
@@ -85,7 +85,7 @@ export const certificationsData = [
     title: "ISO 14001 : Environmental Management System (EMS)",
     description: "Integritrade is ISO 14001 certified, demonstrating our commitment to environmental sustainability. This certification focuses on minimizing our environmental impact while enhancing efficiency in waste management and recycling processes.",
     customerBenefit:
-      "The service you get this quarter is the same service you get next quarter. No skipped steps, no surprises when staff change, no 'we usually do it this way' answers.",
+      "The recycling numbers in your sustainability report are defensible. When ESG questions get sharp, you have a third-party-audited partner backing them up.",
     keyPoints: [
       {
         short_header: "Eco-friendly Electronics Recycling",
@@ -122,7 +122,7 @@ export const certificationsData = [
     title: "ISO 45001 : Occupational Health & Safety (OHS)",
     description: "Integritrade is ISO 45001 certified, ensuring that we operate under strict occupational health and safety standards. Our commitment to safety is reflected in our approach to employee well-being, risk management, and creating a safe working environment.",
     customerBenefit:
-      "The recycling numbers in your sustainability report are defensible. When ESG questions get sharp, you have a third-party-audited partner backing them up.",
+      "Your decommission won't be the news story about an injured warehouse tech. The crew handling your assets is trained, equipped, and operating under a documented safety system.",
     keyPoints: [
       {
         short_header: "Comprehensive Health & Safety Policies",
@@ -159,7 +159,7 @@ export const certificationsData = [
     title: "ISO/IEC 27001 : Information Security Management System (ISMS)",
     description: "Integritrade is ISO/IEC 27001 certified, a globally recognized standard for managing information security and data protection. This certification assures clients that we implement robust controls to safeguard sensitive business data.",
     customerBenefit:
-      "Your decommission won't be the news story about an injured warehouse tech. The crew handling your assets is trained, equipped, and operating under a documented safety system.",
+      "If data is on a drive when it arrives at our facility, it is gone provably by the time we issue your Certificate of Data Destruction. No leaks, no liability, no headlines.",
     keyPoints: [
       {
         short_header: "Comprehensive Data Security",

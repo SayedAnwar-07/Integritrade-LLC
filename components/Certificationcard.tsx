@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import type { StaticImageData } from "next/image";
 import ScrollLoader from "./shared/ScrollLoader";
+import ReadMore from "./shared/buttons/ReadMore";
 
 interface KeyPoint {
   short_header: string;
@@ -68,55 +69,57 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
         {/* DETAILS — secondary, sticky on desktop, 5/12 columns */}
         <div className="lg:col-span-6">
           <ScrollLoader>
-            {/* Eyebrow badge */}
-            <span className="inline-block text-[11px] tracking-[0.18em] uppercase text-white font-semibold bg-primary border border-emerald-700/15 px-3 py-1 rounded-full">
-              {certification.header}
-            </span>
+            <ReadMore previewLines={6} expandAt="lg">
+              {/* Eyebrow badge */}
+              <span className="inline-block text-[11px] tracking-[0.18em] uppercase text-white font-semibold bg-primary border border-emerald-700/15 px-3 py-1 rounded-full">
+                {certification.header}
+              </span>
 
-            {/* Title */}
-            <h3 className="font-serif text-3xl sm:text-4xl leading-[1.1] tracking-tight text-neutral-900 dark:text-gray-100 mt-5">
-              {certification.title.split(":")[1]?.trim() ||
-                certification.title}
-            </h3>
+              {/* Title */}
+              <h3 className="font-serif text-3xl sm:text-4xl leading-[1.1] tracking-tight text-neutral-900 dark:text-gray-100 mt-5">
+                {certification.title.split(":")[1]?.trim() ||
+                  certification.title}
+              </h3>
 
-            {/* Hairline */}
-            <div className="h-px w-12 bg-emerald-700 mt-5 mb-5" />
+              {/* Hairline */}
+              <div className="h-px w-12 bg-emerald-700 mt-5 mb-5" />
 
-            {/* Description */}
-            <p className="text-[15px] leading-relaxed text-neutral-600 dark:text-gray-300 text-justify">
-              {certification.description}
-            </p>
-
-            <div>
-              <p className="text-neutral-900 dark:text-gray-100 font-medium mt-4 mb-1">
-                What it delivers
+              {/* Description */}
+              <p className="text-[15px] leading-relaxed text-neutral-600 dark:text-gray-300 text-justify">
+                {certification.description}
               </p>
-              <p className="text-[15px] leading-relaxed text-neutral-800 dark:text-gray-200 text-justify">
-                {certification.customerBenefit}
-              </p>
-            </div>
 
-            {/* Meta — vertical key-value list */}
-            <dl className="mt-7 space-y-3 border-t border-neutral-200 pt-5">
-              <div className="flex justify-between gap-4 text-sm">
-                <dt className="text-neutral-500 dark:text-gray-400">Issued by</dt>
-                <dd className="text-neutral-900 dark:text-gray-100 text-right font-medium">
-                  {certification.company}
-                </dd>
+              <div>
+                <p className="text-neutral-900 dark:text-gray-100 font-medium mt-4 mb-1">
+                  What it delivers
+                </p>
+                <p className="text-[15px] leading-relaxed text-neutral-800 dark:text-gray-200 text-justify">
+                  {certification.customerBenefit}
+                </p>
               </div>
-              <div className="flex justify-between gap-4 text-sm">
-                <dt className="text-neutral-500 dark:text-gray-400">Scope</dt>
-                <dd className="text-neutral-900 dark:text-gray-100 max-w-[60%] text-justify">
-                  {certification.company_description}
-                </dd>
-              </div>
-              <div className="flex justify-between gap-4 text-sm">
-                <dt className="text-neutral-500 dark:text-gray-400">Valid period</dt>
-                <dd className="text-neutral-900 dark:text-gray-100 text-right tabular-nums">
-                  {certification.validFrom} – {certification.validUntil}
-                </dd>
-              </div>
-            </dl>
+
+              {/* Meta — vertical key-value list */}
+              <dl className="mt-7 space-y-3 border-t border-neutral-200 pt-5">
+                <div className="flex justify-between gap-4 text-sm pb-3 border-b border-neutral-200">
+                  <dt className="text-neutral-500 dark:text-gray-400">Issued by</dt>
+                  <dd className="text-neutral-900 dark:text-gray-100 text-right font-medium">
+                    {certification.company}
+                  </dd>
+                </div>
+                <div className="flex justify-between gap-4 text-sm pb-3 border-b border-neutral-200">
+                  <dt className="text-neutral-500 dark:text-gray-400">Scope</dt>
+                  <dd className="text-neutral-900 dark:text-gray-100 max-w-[60%] text-justify">
+                    {certification.company_description}
+                  </dd>
+                </div>
+                <div className="flex justify-between gap-4 text-sm">
+                  <dt className="text-neutral-500 dark:text-gray-400">Valid period</dt>
+                  <dd className="text-neutral-900 dark:text-gray-100 text-right tabular-nums">
+                    {certification.validFrom} – {certification.validUntil}
+                  </dd>
+                </div>
+              </dl>
+            </ReadMore>
           </ScrollLoader>
         </div>
 
