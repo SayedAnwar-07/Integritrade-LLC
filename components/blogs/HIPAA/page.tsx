@@ -121,7 +121,7 @@ export default function HIPAACompliance() {
           <article className="lg:col-span-2">
 
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={HIPAA}
                 alt="HIPAA-compliant ITAD and secure data destruction process"

@@ -43,7 +43,7 @@ export default function VideoTape() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={videoTape}
                   alt="Secure video tape data destruction methods and best practices"
@@ -187,7 +187,7 @@ export default function VideoTape() {
                   Selecting the right method comes down to balancing security needs, cost, reusability, and environmental impact. The trade-offs across the four approaches:
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
@@ -286,7 +286,7 @@ export default function VideoTape() {
                   Proper tape destruction isn&apos;t just best practice it&apos;s a legal requirement under multiple frameworks. The standards that matter most:
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

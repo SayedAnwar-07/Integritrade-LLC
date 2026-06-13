@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Script from 'next/script'
-import ServiceDescription from '@/components/contact/ContactDescription'
-import WhatHappensNext from '@/components/contact/Whathappensnext'
+import ContactDescription from '@/components/contact/ContactDescription'
 import FreeDropOff from '@/components/contact/Freedropoff'
 import PageHeader from '@/components/shared/PageHeader'
 import ScrollLoader from '@/components/shared/ScrollLoader'
@@ -241,7 +240,7 @@ export default function ContactPage() {
 
           {/* Form + Trust Signals */}
           <ScrollLoader>
-            <ServiceDescription />
+            <ContactDescription />
           </ScrollLoader>
 
           {/* Free Drop-Off + Accepted Devices */}

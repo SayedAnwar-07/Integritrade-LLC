@@ -77,7 +77,7 @@ export default function ITADCutlines() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={ITADCutlinesImage}
                   alt="ITAD cutlines explained: device eligibility for revenue sharing"
@@ -126,7 +126,7 @@ export default function ITADCutlines() {
                   Two payment structures dominate the recovery side of ITAD. They serve different priorities — one optimizes for absolute return, the other for speed and predictability.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

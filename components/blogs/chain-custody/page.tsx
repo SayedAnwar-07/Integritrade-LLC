@@ -49,7 +49,7 @@ export default function ChainCustody() {
           <article className="lg:col-span-2">
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={ChainCustodyImage}
                 alt="Chain of Custody in ITAD"
@@ -158,7 +158,7 @@ export default function ChainCustody() {
                 The difference between a documented chain of custody and informal handling becomes clear during an audit or incident.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

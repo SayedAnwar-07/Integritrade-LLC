@@ -78,7 +78,7 @@ export default function ServerDataCenterDisposal() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={ServerDisposalImage}
                   alt="Server and data center equipment disposal guide"
@@ -178,7 +178,7 @@ export default function ServerDataCenterDisposal() {
                   Internal handling and certified ITAD share the same starting point a rack of retired servers but produce very different outcomes across the four disciplines that matter.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

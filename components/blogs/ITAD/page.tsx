@@ -78,7 +78,7 @@ export default function ITADBlogs() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={ITAD}
                 alt="The importance of IT Asset Disposition (ITAD) sustainability"
@@ -170,7 +170,7 @@ export default function ITADBlogs() {
                 Sustainable ITAD doesn&apos;t rely on good intentions. It runs on recognized standards that produce measurable, auditable outcomes.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

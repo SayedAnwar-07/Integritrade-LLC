@@ -50,7 +50,7 @@ export default function EWasteDisposal() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={ewasteImage}
                 alt="Certified e-waste disposal for compliance and data security"
@@ -139,7 +139,7 @@ export default function EWasteDisposal() {
                 Both certifications produce defensible disposition outcomes. The right choice depends on which dimensions matter most to your organization.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

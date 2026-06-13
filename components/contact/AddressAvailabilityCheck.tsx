@@ -5,7 +5,7 @@ import Link from "next/link";
 import { CheckCircle2, MapPinOff, Info } from "lucide-react";
 import AddressAutocomplete, {
   type AddressResult,
-} from "@/components/AddressAutocomplete";
+} from "@/components/contact/AddressAutocomplete";
 import { SERVICE_REGIONS } from "@/components/service-area/ServicingAreaMenu";
 
 /**
@@ -86,12 +86,12 @@ export default function AddressAvailabilityCheck({
   return (
     <div className={className}>
       {heading && (
-        <h3 className="text-base font-semibold text-[#1B3A5C] dark:text-white">
+        <h3 className="mb-1 text-[17px] font-semibold text-stone-900 dark:text-white">
           {heading}
         </h3>
       )}
       {subtext && (
-        <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{subtext}</p>
+        <p className="mt-1 text-sm leading-7 text-stone-600 dark:text-slate-300">{subtext}</p>
       )}
 
       <div className={heading || subtext ? "mt-4" : ""}>

@@ -78,7 +78,7 @@ export default function LandfillVsCertifiedRecycling() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={LandfillRecyclingImage}
                   alt="Landfill vs certified recycling environmental impact"
@@ -153,7 +153,7 @@ export default function LandfillVsCertifiedRecycling() {
                   Comparing the two paths directly makes the operational and environmental gap impossible to ignore.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

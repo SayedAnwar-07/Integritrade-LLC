@@ -77,7 +77,7 @@ export default function OfficeDevicesRisk() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={OfficeDevicesRiskImage}
                   alt="The risk and depreciation of old office devices"

@@ -77,7 +77,7 @@ export default function NvmeDrives() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={nvmBanner}
                   alt="Why NVMe drives are hard to erase and the case for certified destruction"
@@ -161,7 +161,7 @@ export default function NvmeDrives() {
                   The differences between traditional spinning drives and NVMe go well beyond performance. They fundamentally change what data destruction has to accomplish.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

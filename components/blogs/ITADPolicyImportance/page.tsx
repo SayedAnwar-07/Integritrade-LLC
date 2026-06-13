@@ -46,7 +46,7 @@ export default function ITADPolicyImportance() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={itadPolicyImportance}
                 alt="What is an ITAD policy and why is it important"
@@ -95,7 +95,7 @@ export default function ITADPolicyImportance() {
                 The two terms get used interchangeably, but they cover different responsibilities and serve different purposes. Understanding the distinction is foundational to building either one well.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

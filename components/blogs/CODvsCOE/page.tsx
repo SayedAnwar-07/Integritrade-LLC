@@ -50,7 +50,7 @@ export default function CODvsCOE() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={CODvsCOEImage}
                 alt="COD vs COE: Which is better for your data security?"
@@ -159,7 +159,7 @@ export default function CODvsCOE() {
                 The practical differences become clear when the two documents are compared side by side.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">
