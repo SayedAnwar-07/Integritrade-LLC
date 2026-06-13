@@ -77,7 +77,7 @@ export default function ITAssetRecoveryExplained() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={ValueDataSecurity}
                   alt="IT asset recovery: maximizing value and data security"
@@ -178,7 +178,7 @@ export default function ITAssetRecoveryExplained() {
                   The same retired equipment can produce very different outcomes depending on whether the program leads with recovery or defaults to recycling.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
@@ -246,7 +246,7 @@ export default function ITAssetRecoveryExplained() {
                   Industry certifications confirm that recovery activities follow documented, auditable, and secure processes. Look for these explicitly when evaluating providers.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

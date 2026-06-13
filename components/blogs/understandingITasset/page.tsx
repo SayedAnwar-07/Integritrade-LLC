@@ -44,7 +44,7 @@ export default function UnderstandingITasset() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={understandingITasset}
                   alt="Understanding the importance of IT asset disposition"
@@ -93,7 +93,7 @@ export default function UnderstandingITasset() {
                   ITAD scope is broader than most teams initially assume. Any device capable of storing or processing data falls within the framework.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
@@ -278,7 +278,7 @@ export default function UnderstandingITasset() {
                   Several recognized standards together form the framework for defensible ITAD operations. Look for these explicitly when evaluating providers.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

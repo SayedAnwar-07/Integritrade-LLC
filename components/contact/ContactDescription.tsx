@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 import BookingForm from "./BookingForm";
-import AddressAvailabilityCheck from "@/components/AddressAvailabilityCheck";
+import AddressAvailabilityCheck from "@/components/contact/AddressAvailabilityCheck";
 
 const processSteps = [
   {

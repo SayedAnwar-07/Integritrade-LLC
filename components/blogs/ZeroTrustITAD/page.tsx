@@ -77,7 +77,7 @@ export default function ZeroTrustITAD() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={ZeroTrustITADImage}
                   alt="The relationship between zero-trust security and ITAD"
@@ -177,7 +177,7 @@ export default function ZeroTrustITAD() {
                   The four foundational principles of zero-trust map directly onto specific ITAD controls. The structural alignment is what makes ITAD an extension of zero-trust rather than a separate concern.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

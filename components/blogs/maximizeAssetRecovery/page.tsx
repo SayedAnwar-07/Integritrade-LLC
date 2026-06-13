@@ -77,7 +77,7 @@ export default function MaximizeAssetRecovery() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={assetRecoveryBanner}
                   alt="Maximize IT asset recovery value"
@@ -126,7 +126,7 @@ export default function MaximizeAssetRecovery() {
                   The two approaches share the same starting point retired equipment but produce very different outcomes for the business.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

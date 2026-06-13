@@ -50,7 +50,7 @@ export default function Decommission() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={decommissionBanner}
                 alt="Properly decommissioning old computers and office equipment"
@@ -151,7 +151,7 @@ export default function Decommission() {
                 The materials inside everyday office electronics are exactly why landfill disposal is restricted in so many jurisdictions.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

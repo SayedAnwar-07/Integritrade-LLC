@@ -50,7 +50,7 @@ export default function HardDriveStorageRisk() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={HardDriveRiskImage}
                 alt="The risk of storing old hard drives vs recycling them"
@@ -133,7 +133,7 @@ export default function HardDriveStorageRisk() {
                 Side by side, the two approaches don&apos;t come close to producing equivalent outcomes.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

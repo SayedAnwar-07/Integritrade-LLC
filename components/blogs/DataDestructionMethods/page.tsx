@@ -51,7 +51,7 @@ export default function DataDestructionMethods() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={DataDestructionImage}
                 alt="Data erasure, degaussing, and physical destruction methods"
@@ -194,7 +194,7 @@ export default function DataDestructionMethods() {
                 The three methods differ in scope, asset impact, and the kind of documentation they produce.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

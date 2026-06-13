@@ -43,7 +43,7 @@ export default function RohsCompliance() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={rohsImage}
                   alt="What is RoHS compliance: toxic metals in electronics manufacturing"
@@ -135,7 +135,7 @@ export default function RohsCompliance() {
                   RoHS sets maximum allowable concentrations for specific hazardous substances commonly found in electronics components. The current restricted list and their primary uses and risks:
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
@@ -271,7 +271,7 @@ export default function RohsCompliance() {
                   RoHS is part of a broader regulatory framework. Three directives commonly overlap, each addressing different parts of the electronics lifecycle.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

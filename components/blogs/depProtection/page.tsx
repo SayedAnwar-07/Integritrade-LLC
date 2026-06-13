@@ -50,7 +50,7 @@ export default function RemoveDEPProtection() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={depProtection}
                 alt="Removing DEP protection from Apple devices before resale or recycling"
@@ -99,7 +99,7 @@ export default function RemoveDEPProtection() {
                 Most disposition issues come from confusing DEP with MDM. They work together, but they do different jobs and removing one does not remove the other.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

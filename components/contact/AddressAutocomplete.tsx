@@ -9,6 +9,7 @@ import {
   type KeyboardEvent,
 } from "react";
 import { searchAddresses, MIN_QUERY_LENGTH } from "@/lib/addressSearch";
+import OutlineButton from "../shared/buttons/OutlineButton";
 
 export type AddressResult = { line1: string; line2: string; raw: any };
 
@@ -196,7 +197,7 @@ export default function AddressAutocomplete({
       <div ref={rootRef} className="relative flex-1">
         <label
           htmlFor={`${listboxId}-input`}
-          className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+          className="block text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2"
         >
           Street address and apartment
         </label>
@@ -224,7 +225,7 @@ export default function AddressAutocomplete({
             }}
             onBlur={() => setFocused(false)}
             onKeyDown={handleKeyDown}
-            className="w-full bg-gray-50 dark:bg-dark-secondary text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 border-2 border-transparent focus:border-[#1B3A5C] focus:bg-white dark:focus:border-[#3DBB6C] rounded-md px-4 py-3 text-base outline-none transition"
+            className="w-full rounded-md bg-white dark:bg-dark-secondary text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 border transition-all duration-200 outline-none px-3.5 py-2.5 text-sm focus:border-green-400 dark:focus:border-green-500"
           />
 
           {loading && (
@@ -278,13 +279,11 @@ export default function AddressAutocomplete({
       </div>
 
       <div className="flex items-end">
-        <button
-          type="button"
-          onClick={handleSubmit}
-          className="w-full sm:w-auto bg-[#1B3A5C] hover:bg-[#152e4a] dark:bg-[#3DBB6C] dark:hover:bg-[#34a85f] text-white px-6 py-3 rounded-md font-semibold whitespace-nowrap transition"
-        >
-          {buttonLabel}
-        </button>
+        <div className="flex items-end">
+          <OutlineButton onClick={handleSubmit} className="py-3">
+            {buttonLabel}
+          </OutlineButton>
+        </div>
       </div>
     </div>
   );

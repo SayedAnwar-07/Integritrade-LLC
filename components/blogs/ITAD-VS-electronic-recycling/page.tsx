@@ -78,7 +78,7 @@ export default function ITADVSElectronicRecycling() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={ITADVSElectronicRecyclingImage}
                 alt="ITAD vs electronic recycling: understanding the difference"
@@ -144,7 +144,7 @@ export default function ITADVSElectronicRecycling() {
                 Although the two processes overlap, their objectives, controls, and deliverables produce very different outcomes for the organization retiring the equipment.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

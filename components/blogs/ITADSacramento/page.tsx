@@ -77,7 +77,7 @@ export default function ITADSacramento() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={ITADSacramentoImage}
                   alt="IT Asset Disposition in Sacramento, CA"
@@ -178,7 +178,7 @@ export default function ITADSacramento() {
                   Different sectors across Sacramento operate under different regulatory frameworks. Each one shapes how IT assets must be handled at retirement.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

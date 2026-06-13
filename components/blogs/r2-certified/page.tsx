@@ -73,7 +73,7 @@ export default function R2Certified() {
 
             {/* Hero Image */}
             <ScrollLoader>
-              <figure className="mb-12 overflow-hidden rounded-lg">
+              <figure className="mb-12 overflow-hidden rounded-md">
                 <Image
                   src={r2_certified}
                   alt="Why choosing an R2-certified recycler matters"
@@ -189,7 +189,7 @@ export default function R2Certified() {
                   The operational and compliance gap between certified and non-certified providers is wider than most procurement teams realize.
                 </p>
 
-                <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                   <table className="w-full text-left bg-white dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">

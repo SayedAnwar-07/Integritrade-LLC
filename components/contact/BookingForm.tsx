@@ -14,8 +14,8 @@ import {
   User,
   MapPin,
   ClipboardList,
-  ArrowRight,
-  ArrowLeft,
+  ChevronRight,
+  ChevronLeft,
   Send,
   AlertCircle,
   Loader2,
@@ -573,9 +573,9 @@ export default function RequestPickupForm() {
             type="button"
             onClick={handleBack}
             disabled={isSubmitting}
-            className="inline-flex items-center gap-2 rounded-lg border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:bg-dark dark:text-gray-200 dark:hover:bg-gray-800"
+            className="inline-flex items-center gap-2 rounded-md border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:bg-dark dark:text-gray-200 dark:hover:bg-gray-800"
           >
-            <ArrowLeft className="h-4 w-4" />
+            <ChevronLeft className="h-4 w-4" />
             Back
           </button>
         ) : (
@@ -586,17 +586,17 @@ export default function RequestPickupForm() {
           <button
             type="button"
             onClick={handleNext}
-            className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-green-700"
+            className="inline-flex items-center gap-2 rounded-md bg-green-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-green-700"
           >
             Continue
-            <ArrowRight className="h-4 w-4" />
+            <ChevronRight className="h-4 w-4" />
           </button>
         ) : (
           <button
             type="button"
             onClick={handleSubmit}
             disabled={isSubmitting}
-            className="inline-flex items-center gap-2 rounded-lg bg-green-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-70"
+            className="inline-flex items-center gap-2 rounded-md bg-green-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-70"
           >
             {isSubmitting ? (
               <>

@@ -51,7 +51,7 @@ export default function DeletedDataRecovery() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={DataRecoveredImage}
                 alt="Recovering deleted data from retired drives"
@@ -117,7 +117,7 @@ export default function DeletedDataRecovery() {
                 Both HDDs and SSDs carry serious recovery risk when they aren&apos;t properly sanitized. The methods that work on one don&apos;t always apply to the other.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

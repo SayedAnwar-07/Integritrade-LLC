@@ -55,7 +55,7 @@ export default function AITrends() {
 
             {/* Hero Image */}
             <ScrollLoader>
-            <figure className="mb-12 overflow-hidden rounded-lg">
+            <figure className="mb-12 overflow-hidden rounded-md">
               <Image
                 src={AITrendsImage}
                 alt="AI Trends in IT Refresh & Hardware Recovery"
@@ -153,7 +153,7 @@ export default function AITrends() {
                 The contrast between traditional and AI-era hardware planning is significant. The table below illustrates how priorities and timelines have changed across key categories.
               </p>
 
-              <div className="overflow-x-auto rounded-lg border border-gray-200 dark:border-gray-800">
+              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
                 <table className="w-full text-left bg-white dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">

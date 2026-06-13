@@ -103,7 +103,7 @@ export default async function ServicePage(props: {
       ──────────────────────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollLoader>
-          <figure className="relative h-[320px] md:h-[440px] overflow-hidden rounded-lg">
+          <figure className="relative h-[320px] md:h-[440px] overflow-hidden rounded-md">
             <Image
               src={service.image}
               alt={service.pageTitle}
