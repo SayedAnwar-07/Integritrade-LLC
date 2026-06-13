@@ -6,7 +6,7 @@ import { serviceAreas } from "@/data/serviceAreas";
 import { MapPin, ChevronDown, ChevronRight, X, Menu } from "lucide-react";
 
 
-const SERVICE_REGIONS = [
+export const SERVICE_REGIONS = [
   { name: "San Francisco",              cities: ["San Francisco"] },
   { name: "Silicon Valley & South Bay", cities: ["San Jose","Mountain View","Cupertino","Santa Clara","Palo Alto","Sunnyvale","Los Gatos","Milpitas","Campbell"] },
   { name: "The Peninsula",              cities: ["Menlo Park","Redwood City","San Mateo","San Bruno","South San Francisco","Foster City"] },
