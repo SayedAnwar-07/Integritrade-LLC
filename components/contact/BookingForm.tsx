@@ -20,6 +20,7 @@ import {
   AlertCircle,
   Loader2,
 } from 'lucide-react'
+import AddressAutocomplete from '@/components/contact/AddressAutocomplete'
 
 // ─── TYPES ──────────────────────────────────────────────────────────────────
 interface FormData {
@@ -395,13 +396,22 @@ export default function RequestPickupForm() {
               <label htmlFor="address" className={labelClass}>
                 Street Address <span className="text-red-500">*</span>
               </label>
-              <input
+              <AddressAutocomplete
                 id="address"
-                type="text"
                 value={data.address}
-                onChange={(e) => update('address', e.target.value)}
-                placeholder="Street Address"
-                className={inputClass('address')}
+                onChange={(v) => update('address', v)}
+                onSelect={(s) => {
+                  // Auto-fill the whole location step from the picked address.
+                  // Functional setState in `update` means these merge cleanly.
+                  update('address', s.street_line)
+                  update('address2', s.secondary)
+                  update('city', s.city)
+                  update('state', s.state)
+                  update('zip', s.zipcode)
+                }}
+                placeholder="Start typing your address…"
+                inputClassName={inputClass('address')}
+                aria-invalid={!!errors.address}
               />
               <ErrorMsg field="address" />
             </div>

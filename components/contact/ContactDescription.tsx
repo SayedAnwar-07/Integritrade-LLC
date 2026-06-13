@@ -16,7 +16,6 @@ import {
 } from "lucide-react";
 
 import BookingForm from "./BookingForm";
-import AddressAvailabilityCheck from "@/components/contact/AddressAvailabilityCheck";
 
 const processSteps = [
   {
@@ -80,8 +79,9 @@ export default function ContactDescription() {
     <section>
       <div className="relative mx-auto max-w-7xl mt-20">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-14 items-center">
-          {/* LEFT SIDE */}
-          <div className="lg:col-span-5">
+          {/* LEFT SIDE — certs + process. On mobile/tablet this drops BELOW the
+              form so the pickup request is the first thing users reach. */}
+          <div className="lg:col-span-5 order-2 lg:order-1">
 
             {/* Certifications */}
             <div
@@ -182,8 +182,9 @@ export default function ContactDescription() {
 
           </div>
 
-          {/* RIGHT SIDE */}
-          <div className="lg:col-span-7">
+          {/* RIGHT SIDE — pickup form. Shown FIRST on mobile/tablet (order-1),
+              moves back to the right column on desktop (lg:order-2). */}
+          <div className="lg:col-span-7 order-1 lg:order-2">
             <div className="lg:sticky lg:top-24">
               <div
                 className="
@@ -243,13 +244,6 @@ export default function ContactDescription() {
                     <span className="font-medium">Fully certified team</span>
                   </div>
                 </div>
-
-                {/* Service-area availability check */}
-                <AddressAvailabilityCheck
-                  heading="Do we service your area?"
-                  subtext="Enter your address below and select it from the list to instantly check if you're within our pickup coverage."
-                  className="mb-8 pb-8 border-b border-stone-200 dark:border-slate-700/60"
-                />
 
                 {/* FORM */}
                 <BookingForm />
