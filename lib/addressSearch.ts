@@ -13,13 +13,19 @@
 // allowed hostnames in the Smarty dashboard. (NEXT_PUBLIC_* vars are inlined
 // into the client bundle at build time, which is expected for an embedded key.)
 //
-// Swapping providers later (Google Places, Geoapify, etc.) is contained to this
-// file plus the `raw`-shape reader in components/AddressAvailabilityCheck.tsx.
+// Swapping providers later (Google Places, Geoapify, etc.) is mostly contained
+// to this file — keep the AddressSuggestion shape and consumers won't change.
 
 export type AddressSuggestion = {
   id: string;
-  line1: string;
-  line2: string;
+  line1: string; // display: "112 Elm Ave Apt 1"
+  line2: string; // display: "North Wales PA 19454"
+  // Structured parts, for auto-filling individual form fields:
+  street_line: string;
+  secondary: string;
+  city: string;
+  state: string; // USPS 2-letter code, e.g. "CA"
+  zipcode: string;
   raw: unknown;
 };
 
@@ -108,8 +114,12 @@ export async function searchAddresses(
             .join("|") || `smarty-${i}`,
         line1,
         line2,
-        // Keep the original suggestion so the availability check can read
-        // city/state directly (see resolveRegion in AddressAvailabilityCheck).
+        // Structured parts so the booking form can auto-fill each field.
+        street_line: s.street_line ?? "",
+        secondary: s.secondary ?? "",
+        city: s.city ?? "",
+        state: s.state ?? "",
+        zipcode: s.zipcode ?? "",
         raw: s,
       };
     })
