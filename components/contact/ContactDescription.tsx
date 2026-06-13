@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 
 import BookingForm from "./BookingForm";
+import AddressAvailabilityCheck from "@/components/AddressAvailabilityCheck";
 
 const processSteps = [
   {
@@ -242,6 +243,13 @@ export default function ContactDescription() {
                     <span className="font-medium">Fully certified team</span>
                   </div>
                 </div>
+
+                {/* Service-area availability check */}
+                <AddressAvailabilityCheck
+                  heading="Do we service your area?"
+                  subtext="Enter your address below and select it from the list to instantly check if you're within our pickup coverage."
+                  className="mb-8 pb-8 border-b border-stone-200 dark:border-slate-700/60"
+                />
 
                 {/* FORM */}
                 <BookingForm />

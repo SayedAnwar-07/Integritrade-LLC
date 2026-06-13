@@ -2,6 +2,10 @@ node_modules
 .next
 out
 .env*
+# Exception: .env holds the public, hostname-restricted Smarty embedded key so
+# every clone/build works out of the box. Personal overrides go in .env.local
+# (still ignored above).
+!.env
 .DS_Store
 out.zip
 out.zip
