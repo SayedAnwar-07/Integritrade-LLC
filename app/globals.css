@@ -7,10 +7,12 @@
 ================================ */
 @layer base {
   :root {
-    /* Brand Colors */
-    --brand-primary: 136 64% 38%;
-    --brand-primary-hover: 136 64% 34%;
-    --brand-primary-border: 136 60% 42%;
+    /* Brand Colors
+       NOTE: --brand-primary darkened (L 38% -> 30%) for WCAG 2.1 AA contrast.
+       White text on this green is ~5.2:1 (was 3.43:1, which failed 4.5:1). */
+    --brand-primary: 136 64% 30%;
+    --brand-primary-hover: 136 64% 25%;
+    --brand-primary-border: 136 60% 34%;
 
     /* SECONDARY */
     --brand-secondary: 30 30% 95%;
@@ -202,6 +204,14 @@
 
 .text-brand-light {
   color: #ffffff;
+}
+
+/* Dark mode: the brand green used for button BACKGROUNDS is intentionally dark
+   (so white text on it meets contrast). But that same dark green used as TEXT
+   would be hard to read on dark surfaces, so green text is lightened in dark
+   mode. This lighter green is ~6:1 against the dark background (WCAG AA). */
+.dark .text-primary {
+  color: hsl(136 50% 52%);
 }
 
 /* ================================

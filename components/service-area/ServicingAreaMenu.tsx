@@ -275,7 +275,7 @@ export default function ServicingAreaNav() {
   const [mob, setMob] = useState(false);
 
   return (
-    <nav className="w-full lg:flex lg:items-center lg:justify-center">
+    <nav aria-label="Service areas" className="w-full lg:flex lg:items-center lg:justify-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* ── Desktop ── */}

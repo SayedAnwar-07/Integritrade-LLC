@@ -50,6 +50,7 @@ export default function BlogHomeSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollLoader>
           <SectionHeader
+            as="h2"
             eyebrow="From the Blog"
             title="ITAD insights, guides, and compliance resources"
             description="Expert guidance on certified data destruction, secure chain of custody, and asset recovery so you know exactly what happens to your retired IT equipment."
