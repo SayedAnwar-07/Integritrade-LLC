@@ -152,7 +152,7 @@ export default function TermsPage() {
               <div className="lg:col-span-2">
                 <ScrollLoader>
                   <div className="mb-12 pb-10 border-b border-gray-200 dark:border-gray-800">
-                    <p className="text-sm uppercase tracking-[0.2em] text-[#2aac61] mb-3">
+                    <p className="text-sm uppercase tracking-[0.2em] text-emerald-700 dark:text-emerald-400 mb-3">
                       Last Updated
                     </p>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -186,7 +186,7 @@ export default function TermsPage() {
                 <ScrollLoader>
                   {/* Agreement Section */}
                   <div className="mt-16 pt-12 border-t border-gray-200 dark:border-gray-800">
-                    <p className="text-sm uppercase tracking-[0.2em] text-[#2aac61] mb-3">
+                    <p className="text-sm uppercase tracking-[0.2em] text-emerald-700 dark:text-emerald-400 mb-3">
                       Acknowledgement
                     </p>
                     <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 font-serif mb-4 leading-tight">
@@ -228,7 +228,7 @@ export default function TermsPage() {
                       </p>
                       <a
                         href="mailto:info@integritradeLLC.com"
-                        className="text-gray-700 dark:text-gray-300 hover:text-[#2aac61] dark:hover:text-[#34d399] transition-colors font-medium break-all"
+                        className="text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors font-medium break-all"
                       >
                         info@integritradeLLC.com
                       </a>
@@ -239,7 +239,7 @@ export default function TermsPage() {
                       </p>
                       <a
                         href="tel:+15593254813"
-                        className="text-gray-700 dark:text-gray-300 hover:text-[#2aac61] dark:hover:text-[#34d399] transition-colors font-medium"
+                        className="text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors font-medium"
                       >
                         (559) 325-4813
                       </a>

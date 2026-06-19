@@ -164,7 +164,7 @@ export default function IndustriesPage(){
                               {/* Phone */}
                               <div className="flex items-start gap-4">
                                 <div className="flex-shrink-0 mt-0.5">
-                                  <Phone className="h-4 w-4 text-[#2aac61]" />
+                                  <Phone className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />
                                 </div>
                                 <div className="flex-1 min-w-0">
                                   <p className="text-[10px] font-medium tracking-[0.18em] uppercase text-gray-500 dark:text-gray-400 mb-1.5">
@@ -185,7 +185,7 @@ export default function IndustriesPage(){
                               {/* Email */}
                               <div className="flex items-start gap-4">
                                 <div className="flex-shrink-0 mt-0.5">
-                                  <Mail className="h-4 w-4 text-[#2aac61]" />
+                                  <Mail className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />
                                 </div>
                                 <div className="flex-1 min-w-0">
                                   <p className="text-[10px] font-medium tracking-[0.18em] uppercase text-gray-500 dark:text-gray-400 mb-1.5">

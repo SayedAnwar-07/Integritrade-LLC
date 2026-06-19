@@ -69,7 +69,7 @@ export default async function ServicePage({ params }: PageProps) {
       {/* breadcrumb */}
       <div className="">
         <div className="container mx-auto px-4 py-4 text-sm text-muted-foreground">
-          <nav className="flex flex-wrap items-center gap-2">
+          <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2">
             <Link href="/" className="hover:text-foreground transition click-feel">
               Home
             </Link>

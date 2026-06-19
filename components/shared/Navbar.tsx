@@ -399,6 +399,7 @@ export default function Navbar() {
           {/* ================== DESKTOP NAV with sliding pill (lg+) ================== */}
           <nav
             ref={navRef}
+            aria-label="Primary"
             className="hidden lg:flex items-center relative"
             onMouseLeave={() => setHoveredHref(null)}
           >
@@ -532,6 +533,7 @@ export default function Navbar() {
 
           {/* Scrollable nav */}
           <nav
+            aria-label="Mobile"
             className="flex-1 overflow-y-auto overscroll-contain min-h-0 py-2"
             style={{ WebkitOverflowScrolling: 'touch' }}
           >

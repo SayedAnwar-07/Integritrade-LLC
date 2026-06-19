@@ -169,6 +169,7 @@ export default function Footer() {
                 { href: "/about/", label: "About Us" },
                 { href: "/terms/", label: "Terms" },
                 { href: "/privacy/", label: "Privacy" },
+                { href: "/accessibility/", label: "Accessibility" },
               ].map((item) => (
                 <li key={item.href}>
                   <Link
