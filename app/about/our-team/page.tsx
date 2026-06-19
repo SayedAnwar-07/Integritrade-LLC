@@ -161,7 +161,7 @@ export default function OurTeamPage() {
                 <div className="grid grid-cols-3 gap-6 mt-12">
                   <div>
                     <p className="text-3xl md:text-4xl font-light text-gray-900 dark:text-gray-100 tracking-tight mb-1">
-                      10<span className="text-[#2aac61] dark:text-[#34d399]">+</span>
+                      10<span className="text-emerald-700 dark:text-[#34d399]">+</span>
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">Years</p>
                   </div>
@@ -323,7 +323,7 @@ export default function OurTeamPage() {
                 <div className="grid grid-cols-3 gap-6 mt-12">
                   <div>
                     <p className="text-3xl md:text-4xl font-light text-gray-900 dark:text-gray-100 tracking-tight mb-1">
-                      10<span className="text-[#2aac61] dark:text-[#34d399]">+</span>
+                      10<span className="text-emerald-700 dark:text-[#34d399]">+</span>
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">Years</p>
                   </div>
@@ -335,7 +335,7 @@ export default function OurTeamPage() {
                   </div>
                   <div>
                     <p className="text-3xl md:text-4xl font-light text-gray-900 dark:text-gray-100 tracking-tight mb-1">
-                      5<span className="text-[#2aac61] dark:text-[#34d399]">+</span>
+                      5<span className="text-emerald-700 dark:text-[#34d399]">+</span>
                     </p>
                     <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">Credentials</p>
                   </div>

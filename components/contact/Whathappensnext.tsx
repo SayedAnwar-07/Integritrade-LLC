@@ -57,14 +57,17 @@ export default function WhatHappensNext() {
           {/* Left: Process steps */}
           <div className="lg:col-span-6">
             <div className="mt-20">
-              <ol className="relative space-y-8">
-                <span
-                  className="absolute left-[15px] top-3 bottom-3 w-px bg-secondary dark:bg-dark"
-                  aria-hidden="true"
-                />
+              <ScrollLoader>
+                {/* Wrap the timeline line + list in a positioned container so the
+                    decorative <span> is a sibling of <ol>, not an invalid child. */}
+                <div className="relative">
+                  <span
+                    className="absolute left-[15px] top-3 bottom-3 w-px bg-secondary dark:bg-dark"
+                    aria-hidden="true"
+                  />
 
-                {processSteps.map(({ step, title, text,index }) => (
-                   <ScrollLoader key={title} delay={index * 0.08}>
+                  <ol className="relative space-y-8">
+                    {processSteps.map(({ step, title, text }) => (
                       <li key={step} className="relative flex gap-5">
                         <span className="relative z-10 flex-shrink-0 flex h-8 w-8 items-center justify-center rounded-full bg-secondary dark:bg-dark border-2 border-emerald-600 dark:border-emerald-400 text-[11px] font-bold text-emerald-700 dark:text-emerald-400">
                           {step}
@@ -80,9 +83,10 @@ export default function WhatHappensNext() {
                           </p>
                         </div>
                       </li>
-                  </ScrollLoader>
-                ))}
-              </ol>
+                    ))}
+                  </ol>
+                </div>
+              </ScrollLoader>
             </div>
           </div>
 
