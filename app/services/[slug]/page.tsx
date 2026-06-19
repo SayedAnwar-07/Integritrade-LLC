@@ -78,7 +78,7 @@ export default async function ServicePage(props: {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-12">
 
           {/* Breadcrumb */}
-          <nav className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400 mb-12">
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 font-mono text-[10px] uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400 mb-12">
             <Link href="/" className="hover:text-primary transition-colors click-feel">Home</Link>
             <ChevronRight className="h-2.5 w-2.5" />
             <Link href="/services/" className="hover:text-primary transition-colors click-feel">Services</Link>
@@ -127,7 +127,7 @@ export default async function ServicePage(props: {
               <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-gray-500 dark:text-gray-400 mb-6">
                 All Services
               </p>
-              <nav className="">
+              <nav aria-label="All services" className="">
                 {servicesData.map((s, idx) => {
                   const num = String(idx + 1).padStart(2, "0");
                   const isActive = s.slug === service.slug;

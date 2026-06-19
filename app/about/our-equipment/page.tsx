@@ -129,7 +129,7 @@ export default function OurCapabilitiesPage() {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           aria-hidden="true"
-                          className="w-5 h-5 mt-1 flex-shrink-0 text-[#2aac61] dark:text-[#34d399]"
+                          className="w-5 h-5 mt-1 flex-shrink-0 text-emerald-700 dark:text-[#34d399]"
                         >
                           <polyline points="9 18 15 12 9 6" />
                         </svg>
@@ -194,7 +194,7 @@ export default function OurCapabilitiesPage() {
                   </div>
                   <div className="p-8 lg:p-10">
                     <div className="flex items-baseline justify-between mb-6 pb-6 border-b border-gray-100 dark:border-gray-800">
-                      <p className="text-xs font-bold text-[#2aac61] dark:text-[#34d399] uppercase tracking-widest">
+                      <p className="text-xs font-bold text-emerald-700 dark:text-[#34d399] uppercase tracking-widest">
                       Phase I
                       </p>
                       <p className="text-sm text-gray-400 dark:text-gray-500 italic font-serif">
@@ -230,7 +230,7 @@ export default function OurCapabilitiesPage() {
                 <div className="flex flex-col-reverse md:flex-row gap-4">          
                   <div className="p-8 lg:p-10">
                     <div className="flex items-baseline justify-between mb-6 pb-6 border-b border-gray-100 dark:border-gray-800">
-                      <p className="text-xs font-bold text-[#2aac61] dark:text-[#34d399] uppercase tracking-widest">
+                      <p className="text-xs font-bold text-emerald-700 dark:text-[#34d399] uppercase tracking-widest">
                       Phase II
                       </p>
                       <p className="text-sm text-gray-400 dark:text-gray-500 italic font-serif">
@@ -306,7 +306,7 @@ export default function OurCapabilitiesPage() {
 
                 <div className="lg:col-span-6 lg:order-1">
                   <div className="">
-                    <p className="text-xs font-semibold text-[#2aac61] dark:text-[#34d399] uppercase tracking-widest mb-4">
+                    <p className="text-xs font-semibold text-emerald-700 dark:text-[#34d399] uppercase tracking-widest mb-4">
                       SEM Shredder
                     </p>
                     <h4 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4 tracking-tight">

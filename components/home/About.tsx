@@ -58,10 +58,10 @@ export default function About() {
 
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-end">
                 <div className="lg:col-span-7">
-                  <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight text-white">
+                  <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.05] tracking-tight text-white">
                     A practical ITAD partner for businesses that need proof, not
                     promises.
-                  </h1>
+                  </h2>
                 </div>
 
                 <div className="lg:col-span-5 lg:pb-3">

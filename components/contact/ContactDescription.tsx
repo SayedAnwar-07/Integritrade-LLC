@@ -148,14 +148,14 @@ export default function ContactDescription() {
             {/* Process */}
             <div className="mt-10 lg:mt-14">
               <div className="lg:col-span-6">
-                <div className="mt-10">
-                  <ol className="relative space-y-8">
-                    {/* vertical line */}
-                    <span
-                      className="absolute left-[19px] top-5 bottom-5 w-px bg-secondary dark:bg-dark"
-                      aria-hidden="true"
-                    />
+                <div className="relative mt-10">
+                  {/* vertical line — sibling of <ol>, not a child (valid list markup) */}
+                  <span
+                    className="absolute left-[19px] top-5 bottom-5 w-px bg-secondary dark:bg-dark"
+                    aria-hidden="true"
+                  />
 
+                  <ol className="relative space-y-8">
                     {processSteps.map(({ icon: Icon, title, text }) => (
                       <li key={title} className="relative flex gap-5">
                         {/* icon */}

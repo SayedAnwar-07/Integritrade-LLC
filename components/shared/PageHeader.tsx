@@ -13,6 +13,9 @@ interface PageHeaderProps {
   linkHref?: string;
   align?: "left" | "center";
   className?: string;
+  /** Heading tag. Use "h2" when this header is a section inside a page that
+   *  already has an <h1> (e.g. homepage sections). Defaults to "h1". */
+  as?: "h1" | "h2";
 }
 
 export default function PageHeader({
@@ -24,6 +27,7 @@ export default function PageHeader({
   linkHref,
   align = "left",
   className = "",
+  as: Heading = "h1",
 }: PageHeaderProps) {
   const isCenter = align === "center";
   const hasLink = Boolean(linkText && linkHref);
@@ -77,9 +81,9 @@ export default function PageHeader({
       {isCenter ? (
         <div className="flex flex-col items-center text-center">
           <div className="max-w-2xl">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
+            <Heading className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
               {title}
-            </h1>
+            </Heading>
           </div>
 
           {description && <div className="mt-6 max-w-3xl">{descriptionBlock}</div>}
@@ -90,9 +94,9 @@ export default function PageHeader({
         /* LEFT — STANDARD 12-COL SPLIT (title 6 / description 6) */
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 lg:items-end">
           <div className="lg:col-span-6">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
+            <Heading className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
               {title}
-            </h1>
+            </Heading>
           </div>
 
           <div className="lg:col-span-6 flex flex-col gap-6">
@@ -104,9 +108,9 @@ export default function PageHeader({
         /* LEFT — TITLE ONLY (no description, no link) */
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <div className="lg:col-span-6">
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
+            <Heading className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
               {title}
-            </h1>
+            </Heading>
           </div>
         </div>
       )}
