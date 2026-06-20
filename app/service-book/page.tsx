@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Script from 'next/script'
 import ContactDescription from '@/components/contact/ContactDescription'
-import FreeDropOff from '@/components/contact/Freedropoff'
 import PageHeader from '@/components/shared/PageHeader'
 import ScrollLoader from '@/components/shared/ScrollLoader'
 
@@ -242,9 +241,6 @@ export default function ContactPage() {
           <ScrollLoader>
             <ContactDescription />
           </ScrollLoader>
-
-          {/* Free Drop-Off + Accepted Devices */}
-          <FreeDropOff />
         </div>
       </main>
     </>
