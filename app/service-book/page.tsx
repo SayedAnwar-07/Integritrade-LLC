@@ -233,7 +233,7 @@ export default function ContactPage() {
             <PageHeader
               eyebrow="Get Started"
               title="Contact Certified IT Asset Disposition Experts"
-              description="Contact Integritrade for R2v3-certified ITAD, NIST 800-88 data destruction, and secure e-waste recycling services across California. Whether you need help with a basic e-waste pickup or white-glove IT Asset Disposition, we can work with your team to safely and efficiently manage your equipment's end-of-life."
+              description="Ready to safely retire your technology? Fill out the form below to connect with Integritrade. Whether you need a basic e-waste pickup or a comprehensive, white-glove IT asset disposition strategy anywhere in California (or surrounding states), we integrate seamlessly with your team to protect your data and the planet."
             />
           </ScrollLoader>
 

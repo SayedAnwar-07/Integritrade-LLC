@@ -21,7 +21,7 @@ const processSteps = [
   {
     icon: Truck,
     title: "We Come to You",
-    text: "Schedule a pickup at your site no hauling, no hassle.",
+    text: "Schedule a pickup at your site - no hauling, no hassle",
   },
   {
     icon: ShieldCheck,
@@ -35,13 +35,13 @@ const processSteps = [
   },
   {
     icon: Recycle,
-    title: "Nothing Wasted",
-    text: "R2v3-responsible recycling zero landfill, full recovery.",
+    title: "Responsible Lifecycle Management",
+    text: "R2v3-Responsible Recycling aligned with state and federal environmental laws.",
   },
   {
     icon: FileCheck2,
     title: "Proof in Writing",
-    text: "Certificates of destruction and audit-ready reports.",
+    text: "Certificates of destruction and audit-ready reports available.",
   },
 ];
 
@@ -212,14 +212,21 @@ export default function ContactDescription() {
 
                   <p
                     className="
-                    mt-4 max-w-2xl
-                    text-sm sm:text-base
-                    leading-relaxed
-                    text-slate-600 dark:text-slate-300
-                  "
+                      mt-4 max-w-2xl
+                      text-sm sm:text-base
+                      leading-relaxed
+                      text-slate-600 dark:text-slate-300
+                    "
                   >
-                    Submit your details and our team will contact you within
-                    one business day with the next step.
+                    Submit your details and our team will contact you within one business day
+                    with the next steps. Alternatively, feel free to email us at
+                    {" "}
+                    <a
+                      href="mailto:info@integritradeLLC.com"
+                      className="text-[#2175b3] hover:underline"
+                    >
+                      info@integritradeLLC.com
+                    </a>.
                   </p>
                 </div>
 
