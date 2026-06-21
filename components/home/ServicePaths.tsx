@@ -44,7 +44,7 @@ const paths: Path[] = [
     title: "Free e-waste drop-off and local pickups",
     desc: "Households, small offices, and community sites can drop off various electronics at our Fresno facility, or schedule a convenient pickup across our California service zones for qualifying volumes.",
     ctaLabel: "Explore Drop-off",
-    href: "/accepted-items/",
+    href: "/fresno-electronics-recycling/",
   },
 ];
 

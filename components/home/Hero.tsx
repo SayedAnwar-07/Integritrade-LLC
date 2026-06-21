@@ -49,7 +49,7 @@ export default function Hero() {
                   Get a Free Quote
                 </PrimaryButton>
 
-                <OutlineButton href="/accepted-items/" testId="button-learn-more">
+                <OutlineButton href="/fresno-electronics-recycling/" testId="button-learn-more">
                   See How It Works
                 </OutlineButton>
               </div>

@@ -203,62 +203,112 @@ export default function RequestPickupForm() {
   }
 
   // ─── SUBMIT (EmailJS) ─────────────────────────────────────────────────────────
-  const handleSubmit = async () => {
-    const e = validateStep(2)
-    setErrors(e)
-    if (Object.keys(e).length > 0) return
+const handleSubmit = async () => {
+  const e = validateStep(2)
+  setErrors(e)
+  if (Object.keys(e).length > 0) return
 
-    const serviceId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_SERVICE_ID
-    const templateId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_TEMPLATE_ID
-    const publicKey = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_PUBLIC_KEY
+  const serviceId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_SERVICE_ID
+  const templateId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_TEMPLATE_ID
+  const publicKey = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_PUBLIC_KEY
+  const makeWebhookUrl = process.env.NEXT_PUBLIC_MAKE_WEBHOOK_URL
 
-    if (!serviceId || !templateId || !publicKey) {
-      console.error('Missing EmailJS env vars. Restart the dev server after editing .env.')
-      toast.error('Failed to send message. Please try again.')
+  const templateParams = {
+    name: data.name,
+    company: data.company || 'N/A',
+    email: data.email,
+    phone: data.phone,
+    address: data.address,
+    address2: data.address2 || 'N/A',
+    city: data.city,
+    state: data.state,
+    zip: data.zip,
+    service: labelFor(SERVICE_OPTIONS, data.service),
+    estimatedQuantity: labelFor(QUANTITY_OPTIONS, data.estimatedQuantity),
+    deploymentUrgency: labelFor(URGENCY_OPTIONS, data.deploymentUrgency),
+    message: data.message || 'No additional message',
+    time: new Date().toLocaleString('en-US', {
+      dateStyle: 'medium',
+      timeStyle: 'short',
+    }),
+  }
+
+  console.log('=== FORM DATA ===')
+  console.log(data)
+
+  console.log('=== TEMPLATE PARAMS ===')
+  console.log(templateParams)
+
+  const sendMakeAlert = async (errorMessage: string) => {
+    if (!makeWebhookUrl) {
+      console.error('Missing NEXT_PUBLIC_MAKE_WEBHOOK_URL')
       return
     }
 
-    const templateParams = {
-      name: data.name,
-      company: data.company || 'N/A',
-      email: data.email,
-      phone: data.phone,
-      address: data.address,
-      address2: data.address2 || 'N/A',
-      city: data.city,
-      state: data.state,
-      zip: data.zip,
-      service: labelFor(SERVICE_OPTIONS, data.service),
-      estimatedQuantity: labelFor(QUANTITY_OPTIONS, data.estimatedQuantity),
-      deploymentUrgency: labelFor(URGENCY_OPTIONS, data.deploymentUrgency),
-      message: data.message || 'No additional message',
-      time: new Date().toLocaleString('en-US', {
-        dateStyle: 'medium',
-        timeStyle: 'short',
-      }),
+    const payload = {
+      alertType: 'EmailJS Failure',
+      source: 'Integritrade Service Booking Form',
+      error: errorMessage,
+      submittedAt: templateParams.time,
+      ...templateParams,
     }
 
-    setIsSubmitting(true)
+    console.log('=== WEBHOOK PAYLOAD ===')
+    console.log(JSON.stringify(payload, null, 2))
+
     try {
-      const result = await emailjs.send(serviceId, templateId, templateParams, {
-        publicKey,
+      const response = await fetch(makeWebhookUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
       })
 
-      if (result.status === 200) {
-        toast.success('Submission successful. Our team will respond soon.')
-        resetForm() // clear the form only on success
-      } else {
-        toast.error('Failed to send message. Please try again.')
-        // keep form data on failure
-      }
-    } catch (err) {
-      console.error('EmailJS error:', err)
-      toast.error('Failed to send message. Please try again.')
-      // keep form data on failure
-    } finally {
-      setIsSubmitting(false)
+      console.log('Webhook status:', response.status)
+      console.log('Webhook ok:', response.ok)
+    } catch (webhookError) {
+      console.error('Make webhook alert failed:', webhookError)
     }
   }
+
+  if (!serviceId || !templateId || !publicKey) {
+    console.error('Missing EmailJS env vars. Restart the dev server after editing .env.')
+    await sendMakeAlert('Missing EmailJS environment variables')
+    toast.error('Failed to send message. Please try again.')
+    return
+  }
+
+  setIsSubmitting(true)
+
+  try {
+    console.log('Sending EmailJS request...')
+
+    const result = await emailjs.send(serviceId, templateId, templateParams, {
+      publicKey,
+    })
+
+    console.log('=== EMAILJS RESULT ===')
+    console.log(result)
+
+    if (result.status === 200) {
+      toast.success('Submission successful. Our team will respond soon.')
+      resetForm()
+    } else {
+      await sendMakeAlert(`EmailJS returned non-200 status: ${result.status}`)
+      toast.error('Failed to send message. Please try again.')
+    }
+  } catch (err) {
+    console.error('=== EMAILJS ERROR ===')
+    console.error(err)
+
+    await sendMakeAlert(err instanceof Error ? err.message : String(err))
+
+    toast.error('Failed to send message. Please try again.')
+  } finally {
+    setIsSubmitting(false)
+  }
+}
 
   // ─── HELPERS ──────────────────────────────────────────────────────────────────
   const inputClass = (field: keyof FormData) => `${baseInput} ${inputBorder(!!errors[field])}`

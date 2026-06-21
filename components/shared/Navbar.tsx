@@ -459,8 +459,8 @@ export default function Navbar() {
           {/* ================== RIGHT SIDE (lg+) ================== */}
           <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             <ModeToggle />
-            <OutlineButton href="/accepted-items" testId="button-get-quote">
-              Public E-waste Drop Off
+            <OutlineButton href="/fresno-electronics-recycling/" testId="button-get-quote">
+              Fresno Public E-waste Drop Off
             </OutlineButton>
 
             <PrimaryButton href="/service-book" testId="button-get-quote">
@@ -584,12 +584,12 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/accepted-items"
+              href="/fresno-electronics-recycling/"
               onClick={() => setIsMenuOpen(false)}
               className="group relative flex items-center justify-center gap-2 w-full overflow-hidden rounded-md bg-primary px-5 py-3.5 text-[14px] font-semibold text-white tracking-tight shadow-[0_4px_20px_-4px_rgba(44,181,99,0.4)] transition-all"
             >
               <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-              <span className="relative">Public E-waste Drop Off</span>
+              <span className="relative">Fresno Fresno Public E-waste Drop Off</span>
               <ArrowRight className="relative w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
             </Link>
 
