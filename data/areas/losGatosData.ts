@@ -1,5 +1,9 @@
 import { ServiceArea } from "./types/serviceAreaTypes";
+import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpeg";
+import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
+import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecycling from "@/public/services/serviceArea/electronicRecycling.jpeg";
+import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
 
 
 export const losGatosData: ServiceArea = {
@@ -109,6 +113,327 @@ export const losGatosData: ServiceArea = {
             "Responsible electronics lifecycle management is the call of the hour in an innovative and prestigious town like Los Gatos. By choosing the right partner, you can play a major role in protecting your organization's data while also safeguarding the environment. IntegriTrade LLC offers you the safest and most efficient commercial solutions in compliance with California regulations. Get rid of the outdated technology in your office storeroom today and join us in making Los Gatos a cleaner community. Our expert team is always ready to provide customized services according to your business needs. Request your secure quotation today and help build a better future."
         }
       ]
-    }
+    },
+    {
+      slug: "data-destruction-services",
+
+      title: "Los Gatos Certified Data Destruction | Secure Hard Drive & Data Disposal",
+
+      shortDescription:
+        "Certified data destruction services for businesses in Los Gatos. Secure data wiping, hard drive destruction, NIST 800-88 compliant processes, and complete compliance documentation.",
+
+      icon: "Shield",
+
+      metaTitle:
+        "Certified Data Destruction Los Gatos | Secure Hard Drive Destruction Services",
+
+      metaDescription:
+        "Looking for certified data destruction in Los Gatos, CA? IntegriTrade LLC provides secure data wiping, hard drive destruction, NIST 800-88 compliant sanitization, and Certificates of Destruction for businesses.",
+
+      image: dataDestruction,
+
+      heroHeading:
+        "Los Gatos Certified Data Destruction Services",
+
+      heroSubheading:
+        "Protect your organization from data breaches, compliance violations, and security risks through certified data destruction and secure media disposal services.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading:
+            "Protect Sensitive Information Before Technology Leaves Your Organization",
+          body:
+            "Businesses throughout Los Gatos rely on technology to store and manage sensitive information every day. Customer records, employee data, financial documents, contracts, intellectual property, internal communications, and operational information often remain stored on computers, servers, storage systems, mobile devices, and backup media long after equipment is retired. Simply deleting files or formatting a drive does not permanently remove data. Without proper destruction procedures, organizations risk exposing confidential information to unauthorized access. Certified data destruction ensures sensitive information is permanently eliminated before technology assets are reused, recycled, sold, or disposed of."
+        },
+        {
+          heading:
+            "Why Certified Data Destruction Matters in Los Gatos",
+          body:
+            "Cybersecurity threats continue to evolve, and businesses of all sizes are expected to maintain strong data protection practices. A data breach involving retired equipment can result in financial losses, legal liability, regulatory penalties, and reputational harm. Organizations must be able to demonstrate that sensitive information is securely destroyed when technology reaches the end of its lifecycle. Certified data destruction provides documented proof that information has been permanently removed, helping businesses reduce risk while supporting compliance and governance requirements."
+        },
+        {
+          heading: "Our Secure Data Destruction Process",
+          body:
+            "IntegriTrade LLC follows strict security procedures designed to ensure complete and verifiable destruction of sensitive information. Every project begins with secure collection and transportation of data-bearing assets. Devices are tracked through documented chain-of-custody procedures and processed using NIST 800-88 compliant sanitization methods. For organizations that require physical destruction, we provide hard drive shredding and media destruction services that permanently eliminate the possibility of data recovery. Every stage of the process is documented to ensure accountability, transparency, and confidence.",
+          bullets: [
+            "Secure collection and transportation",
+            "Documented chain-of-custody tracking",
+            "NIST 800-88 compliant data sanitization",
+            "Hard drive and SSD destruction services",
+            "Certificates of Destruction (COD)",
+            "Detailed audit and compliance reporting"
+          ]
+        },
+        {
+          heading: "What Types of Media Can Be Destroyed?",
+          body:
+            "Our certified data destruction services support a wide range of storage media including hard drives, solid-state drives (SSD), backup tapes, storage arrays, USB flash drives, memory cards, laptops, desktop computers, servers, mobile devices, office technology equipment, and enterprise storage infrastructure. Whether your organization needs to destroy a few storage devices or manage a large-scale technology retirement project, we provide scalable destruction solutions tailored to your requirements."
+        },
+        {
+          heading: "Compliance, Security, and Risk Reduction",
+          body:
+            "Proper data destruction is a critical component of modern cybersecurity and risk management programs. Businesses must ensure that retired storage devices cannot be used to recover confidential information. Our certified destruction process helps organizations demonstrate compliance during audits, reduce exposure to data theft, and support internal governance initiatives. By ensuring information is permanently removed before assets leave your control, businesses can significantly reduce future security and compliance risks. Every completed project includes official documentation verifying destruction according to recognized industry standards."
+        },
+        {
+          heading:
+            "Why Choose IntegriTrade LLC for Data Destruction?",
+          body:
+            "Organizations throughout Los Gatos trust IntegriTrade LLC because we provide secure, transparent, and fully documented destruction services. Our team understands the importance of protecting sensitive information and delivers customized solutions designed to maintain compliance while minimizing operational disruption.",
+          bullets: [
+            "NIST 800-88 compliant destruction processes",
+            "Certified destruction documentation",
+            "Secure chain-of-custody procedures",
+            "Experienced data security specialists",
+            "Flexible on-site and off-site solutions",
+            "Trusted by businesses across multiple industries"
+          ]
+        },
+        {
+          heading: "Common Questions About Data Destruction",
+          body:
+            "Find answers to frequently asked questions about certified data destruction services in Los Gatos.",
+          qna: [
+            {
+              question:
+                "Is deleting files enough to protect sensitive information?",
+              answer:
+                "No. Deleted files can often be recovered using specialized software. Certified data destruction permanently removes information and prevents future recovery."
+            },
+            {
+              question: "What is NIST 800-88?",
+              answer:
+                "NIST 800-88 is a widely recognized media sanitization standard that outlines approved methods for permanently removing data from storage devices."
+            },
+            {
+              question:
+                "Do you provide Certificates of Destruction?",
+              answer:
+                "Yes. We provide official Certificates of Destruction (COD) and supporting documentation for completed projects."
+            },
+            {
+              question:
+                "Can SSDs and hard drives both be destroyed?",
+              answer:
+                "Yes. We securely process hard drives, SSDs, backup media, storage arrays, and other data-bearing devices."
+            },
+            {
+              question:
+                "Do you support large-scale destruction projects?",
+              answer:
+                "Absolutely. We support projects ranging from small office device disposal to large-scale technology refreshes, facility relocations, and infrastructure retirement projects."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Protecting sensitive information does not end when technology reaches the end of its useful life. IntegriTrade LLC provides certified data destruction services in Los Gatos that help organizations eliminate data security risks, maintain compliance, and safeguard valuable information. Whether you require secure data wiping, hard drive destruction, or complete media disposal services, our team delivers trusted solutions designed to keep your business protected."
+        }
+      ]
+    },
+    {
+      slug: "it-asset-disposition",
+      title: "Los Gatos IT Asset Disposition (ITAD) | Secure IT Asset Disposal Services",
+      shortDescription:
+        "Professional IT Asset Disposition services for businesses in Los Gatos. Secure data sanitization, asset recovery, electronics recycling, and compliant IT equipment disposal.",
+      icon: "Server",
+      metaTitle:
+        "IT Asset Disposition (ITAD) Los Gatos | Secure IT Asset Disposal Services",
+      metaDescription:
+        "Looking for IT Asset Disposition services in Los Gatos, CA? IntegriTrade LLC provides secure IT asset disposal, certified data sanitization, asset recovery, and environmentally responsible electronics recycling.",
+      image: itAssetDisposition,
+      heroHeading: "Los Gatos Secure IT Asset Disposition Services",
+      heroSubheading:
+        "Helping Los Gatos businesses securely retire outdated technology through certified IT asset disposition, data protection, asset recovery, and environmentally responsible disposal solutions.",
+      ctaText: "Get a Free Quote",
+      details: [
+        {
+          heading: "Secure Technology Lifecycle Management for Los Gatos Businesses",
+          body:
+            "Los Gatos is home to a diverse business community that includes technology companies, professional service firms, healthcare providers, financial organizations, educational institutions, and growing startups. Many organizations in Los Gatos rely heavily on technology to support operations, manage sensitive information, and maintain productivity. As computers, servers, storage systems, networking equipment, and mobile devices reach the end of their useful life, businesses need a secure and compliant way to retire those assets. Professional IT Asset Disposition (ITAD) services help organizations manage outdated technology responsibly while protecting data, maintaining compliance, and supporting sustainability initiatives."
+        },
+        {
+          heading: "Why Professional ITAD Matters in Los Gatos",
+          body:
+            "Technology refresh cycles have become increasingly common as businesses seek to improve cybersecurity, support hybrid work environments, and maintain operational efficiency. However, retired equipment often contains confidential information such as customer records, employee data, financial documents, intellectual property, and internal communications. Improper disposal can expose organizations to data breaches, regulatory penalties, legal liabilities, and reputational harm. A structured ITAD program ensures that retired technology is securely managed while reducing risk and supporting responsible asset lifecycle management."
+        },
+        {
+          heading: "Our End-to-End IT Asset Disposition Process",
+          body:
+            "IntegriTrade LLC provides comprehensive IT Asset Disposition solutions designed to meet the needs of Los Gatos businesses. Our process begins with secure collection and transportation, followed by asset inventory, chain-of-custody tracking, certified data sanitization, asset evaluation, value recovery opportunities, and environmentally responsible disposition. Every asset is managed using documented procedures to ensure accountability, transparency, and compliance throughout the project lifecycle.",
+          bullets: [
+            "Secure pickup and transportation",
+            "Comprehensive asset inventory and auditing",
+            "Chain-of-custody documentation",
+            "Certified data sanitization",
+            "Asset recovery and remarketing",
+            "Environmentally responsible recycling"
+          ]
+        },
+        {
+          heading: "What Types of IT Equipment Can Be Processed?",
+          body:
+            "Our IT Asset Disposition services support a broad range of business technology assets including laptops, desktop computers, servers, storage systems, networking hardware, telecommunications equipment, mobile devices, monitors, printers, workstations, and enterprise infrastructure. Whether your organization is replacing a handful of devices or retiring equipment across multiple departments, we provide scalable solutions designed to meet your operational requirements."
+        },
+        {
+          heading: "Reduce Risk and Maximize Asset Value",
+          body:
+            "Many retired technology assets continue to retain market value even after they are no longer needed by the original owner. Through our asset recovery and remarketing programs, businesses can recover a portion of their technology investment while reducing disposal costs. This approach improves return on investment while supporting sustainability goals through equipment reuse and refurbishment. Assets that no longer have resale value are processed through certified recycling channels to ensure environmentally responsible disposal."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for IT Asset Disposition?",
+          body:
+            "Organizations throughout Los Gatos trust IntegriTrade LLC because we combine security, compliance, sustainability, and value recovery into one streamlined solution. Our experienced team delivers customized services designed to simplify technology retirement while protecting sensitive information and supporting business objectives.",
+          bullets: [
+            "Experienced IT asset disposition specialists",
+            "Secure chain-of-custody procedures",
+            "Certified data destruction capabilities",
+            "Detailed reporting and compliance support",
+            "Asset recovery and remarketing expertise",
+            "Environmentally responsible processing"
+          ]
+        },
+        {
+          heading: "Common Questions About IT Asset Disposition",
+          body:
+            "Find answers to frequently asked questions about IT Asset Disposition services in Los Gatos.",
+          qna: [
+            {
+              question: "What is IT Asset Disposition (ITAD)?",
+              answer:
+                "IT Asset Disposition is the secure process of retiring, remarketing, recycling, or disposing of technology assets while protecting sensitive information and maintaining compliance."
+            },
+            {
+              question: "Can retired IT equipment still have value?",
+              answer:
+                "Yes. Many technology assets retain market value and can be refurbished or remarketed to generate financial returns."
+            },
+            {
+              question: "Do you provide pickup services in Los Gatos?",
+              answer:
+                "Yes. We provide secure pickup and transportation services for businesses throughout Los Gatos and surrounding Silicon Valley communities."
+            },
+            {
+              question: "How is sensitive data protected?",
+              answer:
+                "All data-bearing devices undergo certified sanitization procedures before assets are remarketed, recycled, or destroyed."
+            },
+            {
+              question: "Do you provide compliance documentation?",
+              answer:
+                "Yes. We provide detailed asset inventories, chain-of-custody records, reporting, and data destruction documentation when required."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Retiring outdated technology should never compromise your organization's security or compliance. IntegriTrade LLC provides trusted IT Asset Disposition services in Los Gatos, helping businesses securely manage retired technology assets while maximizing value recovery and supporting sustainability initiatives. Whether you're upgrading systems, refreshing infrastructure, or decommissioning equipment, our team delivers reliable solutions tailored to your organization's needs."
+        }
+      ]
+    },
+    {
+      slug: "asset-recovery",
+      title: "Los Gatos Asset Recovery | Maximize Value from Retired IT Assets",
+      shortDescription:
+        "Professional asset recovery services for businesses in Los Gatos. Recover value from retired IT equipment through secure refurbishment, remarketing, and lifecycle management solutions.",
+      icon: "RefreshCcw",
+      metaTitle:
+        "Asset Recovery Los Gatos | IT Asset Recovery & Remarketing Services",
+      metaDescription:
+        "Looking for asset recovery services in Los Gatos, CA? IntegriTrade LLC helps businesses recover value from retired IT equipment through secure refurbishment, remarketing, and responsible asset management.",
+      image: assetRecovery,
+      heroHeading: "Los Gatos Professional Asset Recovery Services",
+      heroSubheading:
+        "Turn retired technology into measurable business value through secure asset recovery, refurbishment, and remarketing solutions designed for Los Gatos businesses.",
+      ctaText: "Get a Free Quote",
+      details: [
+        {
+          heading: "Recover Maximum Value from Retired Technology Assets",
+          body:
+            "Technology investments represent a significant operational expense for businesses throughout Los Gatos. From employee laptops and desktop computers to servers, storage systems, networking hardware, and mobile devices, organizations invest heavily in technology to support growth and productivity. As equipment reaches the end of its internal lifecycle, many assets continue to retain market value. Without a structured recovery strategy, businesses often miss opportunities to recover capital from retired technology. Professional asset recovery services help organizations maximize financial returns while maintaining security, compliance, and operational efficiency."
+        },
+        {
+          heading: "Why Asset Recovery Matters for Los Gatos Businesses",
+          body:
+            "Businesses frequently replace technology to improve performance, strengthen cybersecurity, support remote work initiatives, and maintain operational efficiency. However, retired equipment often remains valuable in secondary markets. Asset recovery enables organizations to offset technology refresh costs by identifying equipment that can be refurbished, remarketed, or repurposed. This approach not only improves return on investment but also reduces unnecessary waste and supports responsible technology lifecycle management."
+        },
+        {
+          heading: "Our Comprehensive Asset Recovery Process",
+          body:
+            "IntegriTrade LLC provides a structured asset recovery process designed to maximize value while protecting sensitive information. Every project begins with a detailed inventory and evaluation of assets. Equipment is assessed based on condition, specifications, age, and current market demand. Before any asset enters refurbishment or resale channels, all data-bearing devices undergo certified sanitization procedures to ensure confidential information is permanently removed. This process allows businesses to recover value from retired equipment without compromising security or compliance.",
+          bullets: [
+            "Comprehensive asset inventory and auditing",
+            "Residual value assessment",
+            "Certified data sanitization",
+            "Equipment refurbishment and testing",
+            "Remarketing through qualified sales channels",
+            "Detailed recovery and financial reporting"
+          ]
+        },
+        {
+          heading: "What Assets Can Be Recovered?",
+          body:
+            "Many categories of business technology continue to retain value after retirement. We help organizations recover value from laptops, desktop computers, servers, storage systems, networking equipment, telecommunications hardware, monitors, mobile devices, and office technology assets. Whether your business is replacing a handful of devices or retiring equipment across multiple departments, our team develops customized recovery strategies designed to maximize returns."
+        },
+        {
+          heading: "Supporting Sustainability Through Reuse and Remarketing",
+          body:
+            "Asset recovery plays a critical role in sustainable technology lifecycle management. Whenever practical, equipment is refurbished and remarketed rather than immediately recycled. Extending the useful life of technology assets helps reduce electronic waste, conserve resources, and support a circular economy. Businesses that prioritize asset recovery can strengthen environmental, social, and governance (ESG) initiatives while aligning sustainability objectives with financial performance."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Asset Recovery?",
+          body:
+            "Organizations throughout Los Gatos trust IntegriTrade LLC because we combine security, transparency, compliance, and value recovery into one streamlined solution. Our experienced team delivers customized recovery strategies designed to maximize returns while maintaining complete accountability throughout every phase of the recovery process.",
+          bullets: [
+            "Experienced asset recovery specialists",
+            "Secure chain-of-custody procedures",
+            "Certified data destruction capabilities",
+            "Transparent reporting and documentation",
+            "Established remarketing networks",
+            "Environmentally responsible practices"
+          ]
+        },
+        {
+          heading: "Common Questions About Asset Recovery",
+          body:
+            "Find answers to frequently asked questions about asset recovery services in Los Gatos.",
+          qna: [
+            {
+              question: "What is asset recovery?",
+              answer:
+                "Asset recovery is the process of identifying, refurbishing, remarketing, and reselling retired technology assets to maximize financial returns while maintaining security and compliance."
+            },
+            {
+              question: "Can retired technology equipment still have value?",
+              answer:
+                "Yes. Many retired devices retain significant market value depending on their condition, specifications, and demand in secondary markets."
+            },
+            {
+              question: "How is data protected during asset recovery?",
+              answer:
+                "All data-bearing devices undergo certified sanitization procedures before assets are refurbished, resold, or recycled."
+            },
+            {
+              question: "Do you provide recovery reports?",
+              answer:
+                "Yes. We provide detailed reporting that outlines recovered assets, financial returns, and overall project results."
+            },
+            {
+              question: "What happens to assets that have no resale value?",
+              answer:
+                "Equipment with no recovery value is processed through certified recycling channels to ensure environmentally responsible disposal."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Retired technology assets may still represent valuable business resources. IntegriTrade LLC provides professional asset recovery services in Los Gatos, helping organizations maximize returns from retired equipment while maintaining security, compliance, and sustainability. Whether you're upgrading infrastructure, relocating operations, or retiring outdated technology, our team delivers customized recovery solutions designed to improve return on investment and simplify the asset disposition process."
+        }
+      ]
+    },
   ]
 };

@@ -1,5 +1,4 @@
 import { ServiceArea } from "./types/serviceAreaTypes";
-import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpeg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecycling from "@/public/services/serviceArea/electronicRecycling.jpeg";
@@ -95,6 +94,315 @@ export const sanRafaelData: ServiceArea = {
           heading: "Conclusion",
           body:
             "Responsible e-waste management is the need of the hour in an eco-conscious and progressive commercial city like San Rafael. By choosing the right service provider, you can play a big role in protecting your organization's data as well as protecting the environment. IntegriTrade LLC offers you the safest and most efficient commercial recycling solutions in compliance with California regulations. Get rid of the old technology in your office storeroom today and join us in making San Rafael a cleaner environment. Our team of experts is always ready to provide customized services to your business needs. Collect your secure recycling quotation today."
+        }
+      ]
+    },
+    {
+      slug: "data-destruction-services",
+
+      title: "San Rafael Certified Data Destruction | Secure Hard Drive & Data Disposal",
+
+      shortDescription:
+        "Certified data destruction services for businesses in San Rafael. Secure data wiping, hard drive destruction, NIST 800-88 compliant processes, and complete documentation.",
+
+      icon: "Shield",
+
+      metaTitle:
+        "Certified Data Destruction San Rafael | Secure Hard Drive Destruction Services",
+
+      metaDescription:
+        "Looking for certified data destruction in San Rafael, CA? IntegriTrade LLC provides secure data wiping, hard drive destruction, NIST 800-88 compliant data sanitization, and Certificates of Destruction for businesses.",
+
+      image: dataDestruction,
+
+      heroHeading:
+        "San Rafael Certified Data Destruction Services",
+
+      heroSubheading:
+        "Protect your organization from data breaches and compliance risks with secure data destruction, certified hard drive disposal, and complete chain-of-custody documentation.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading: "Protect Sensitive Business Information Before IT Disposal",
+          body:
+            "Businesses throughout San Rafael handle confidential information every day, including customer records, financial data, healthcare information, employee files, intellectual property, and operational documents. When computers, servers, storage devices, and other IT assets reach end-of-life, simply deleting files is not enough. Data can often be recovered using advanced forensic tools. Without proper destruction procedures, organizations risk data breaches, compliance violations, financial losses, and reputational damage. Certified data destruction ensures sensitive information is permanently eliminated before equipment leaves your control."
+        },
+        {
+          heading:
+            "Why Certified Data Destruction Matters for San Rafael Businesses",
+          body:
+            "San Rafael's healthcare providers, legal firms, financial institutions, government contractors, and professional service organizations must meet strict data security and privacy requirements. Improper disposal of data-bearing devices can expose organizations to significant liability and regulatory penalties. Certified data destruction provides documented proof that information has been permanently removed, helping businesses maintain compliance while protecting clients, employees, and stakeholders from unnecessary risk."
+        },
+        {
+          heading: "Our Secure Data Destruction Process",
+          body:
+            "IntegriTrade LLC follows industry-recognized procedures to ensure complete and verifiable data destruction. Every project begins with secure collection and asset tracking. Devices are processed under strict chain-of-custody controls and sanitized using NIST 800-88 compliant methods. For organizations requiring physical destruction, we offer hard drive shredding and media destruction services that permanently eliminate the possibility of data recovery.",
+          bullets: [
+            "Secure asset collection and transportation",
+            "Complete chain-of-custody tracking",
+            "NIST 800-88 compliant data sanitization",
+            "Hard drive and SSD destruction services",
+            "Certificates of Destruction (COD)",
+            "Detailed compliance reporting"
+          ]
+        },
+        {
+          heading: "What Types of Media Can Be Destroyed?",
+          body:
+            "Our certified destruction services cover a wide range of data-bearing devices including hard drives, solid-state drives (SSD), servers, backup tapes, storage arrays, USB flash drives, memory cards, laptops, desktop computers, and other electronic media. Whether your organization is disposing of a few devices or retiring an entire data center, we provide scalable solutions designed to meet your security requirements."
+        },
+        {
+          heading: "Compliance, Security, and Risk Reduction",
+          body:
+            "Modern businesses face increasing pressure to protect sensitive information throughout the technology lifecycle. Certified data destruction plays a critical role in cybersecurity and risk management programs. Our documented processes help organizations demonstrate compliance during audits while reducing exposure to data theft, legal disputes, and regulatory investigations. Every completed project includes detailed reporting and official documentation to support internal governance and compliance initiatives."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Data Destruction?",
+          body:
+            "Organizations throughout San Rafael trust IntegriTrade LLC because we provide secure, transparent, and fully documented destruction services. Our team understands the importance of protecting sensitive information and maintaining compliance throughout the disposal process.",
+          bullets: [
+            "NIST 800-88 compliant processes",
+            "Certified destruction documentation",
+            "Secure chain of custody",
+            "Experienced data security specialists",
+            "Flexible on-site and off-site solutions",
+            "Trusted by businesses across multiple industries"
+          ]
+        },
+        {
+          heading: "Common Questions About Data Destruction",
+          body:
+            "Find answers to frequently asked questions about certified data destruction services in San Rafael.",
+          qna: [
+            {
+              question: "Is deleting files enough to protect sensitive data?",
+              answer:
+                "No. Deleted files can often be recovered. Certified data destruction permanently removes information and prevents future recovery."
+            },
+            {
+              question: "What is NIST 800-88?",
+              answer:
+                "NIST 800-88 is a widely recognized standard for media sanitization that outlines secure methods for permanently removing data from storage devices."
+            },
+            {
+              question: "Do you provide Certificates of Destruction?",
+              answer:
+                "Yes. We provide official Certificates of Destruction (COD) and supporting documentation for completed projects."
+            },
+            {
+              question: "Can SSDs and hard drives both be destroyed?",
+              answer:
+                "Yes. We securely process hard drives, SSDs, backup media, and other data-bearing devices."
+            },
+            {
+              question: "Do you offer services for large-scale projects?",
+              answer:
+                "Absolutely. We support everything from small office equipment retirements to enterprise-level data center decommissioning projects."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Data security does not end when technology reaches the end of its useful life. IntegriTrade LLC provides certified data destruction services in San Rafael that help organizations protect sensitive information, maintain compliance, and eliminate the risk of unauthorized data recovery. Whether you need secure data wiping, hard drive destruction, or complete media disposal services, our team delivers trusted solutions designed to keep your business protected."
+        }
+      ]
+    },
+    {
+      slug: "asset-recovery",
+
+      title: "San Rafael Asset Recovery | Maximize Value from Retired IT Assets",
+
+      shortDescription:
+        "Professional asset recovery services for businesses in San Rafael. Recover value from retired IT equipment through secure refurbishment, resale, and lifecycle management solutions.",
+
+      icon: "RefreshCcw",
+
+      metaTitle:
+        "Asset Recovery San Rafael | IT Asset Recovery & Remarketing Services",
+
+      metaDescription:
+        "Looking for asset recovery services in San Rafael, CA? IntegriTrade LLC helps businesses recover value from retired IT equipment through secure refurbishment, remarketing, and responsible asset management.",
+
+      image: assetRecovery,
+
+      heroHeading:
+        "San Rafael Professional Asset Recovery Services",
+
+      heroSubheading:
+        "Turn retired IT equipment into measurable business value through secure asset recovery, refurbishment, and remarketing solutions designed for San Rafael businesses.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading: "Recover More Value from Your Technology Investments",
+          body:
+            "Businesses throughout San Rafael invest significant resources into technology infrastructure including laptops, servers, networking equipment, storage systems, and workstations. As technology evolves, many organizations replace equipment long before it reaches the end of its potential value. Without a structured asset recovery program, businesses often lose opportunities to generate returns from retired equipment. Professional asset recovery services help organizations identify, evaluate, and recover value from assets that still have useful life in secondary markets."
+        },
+        {
+          heading: "Why Asset Recovery Matters for San Rafael Businesses",
+          body:
+            "San Rafael's business community includes healthcare organizations, legal firms, financial institutions, educational facilities, and professional service providers that regularly refresh technology infrastructure. Simply disposing of old equipment can increase operational costs and waste valuable resources. Asset recovery allows businesses to offset upgrade expenses while supporting sustainability initiatives. Through proper refurbishment and remarketing processes, organizations can improve return on investment and reduce overall technology lifecycle costs."
+        },
+        {
+          heading: "Our Secure Asset Recovery Process",
+          body:
+            "At IntegriTrade LLC, every asset recovery project begins with a detailed inventory and evaluation process. Our team identifies equipment with potential resale or refurbishment value and develops a recovery strategy designed to maximize returns. Before any equipment enters secondary markets, data-bearing devices undergo secure sanitization procedures to ensure sensitive information is permanently removed. This process allows businesses to recover value without compromising security or compliance requirements.",
+          bullets: [
+            "Complete asset inventory and auditing",
+            "Market value assessment",
+            "Secure data sanitization",
+            "Equipment refurbishment and testing",
+            "Remarketing through qualified channels",
+            "Detailed recovery reporting"
+          ]
+        },
+        {
+          heading: "What Assets Can Be Recovered?",
+          body:
+            "Many types of technology assets retain value beyond their primary business use. We help organizations recover value from laptops, desktop computers, servers, networking hardware, storage devices, monitors, telecommunications equipment, and various business electronics. Even equipment that no longer meets your organization's requirements may still hold significant value in secondary markets."
+        },
+        {
+          heading: "Supporting Sustainability Through Asset Recovery",
+          body:
+            "Asset recovery is not only a financial decision but also an environmental one. Extending the useful life of technology equipment reduces electronic waste and supports a circular economy. Instead of sending reusable equipment directly to recycling facilities, asset recovery prioritizes refurbishment and reuse whenever possible. This approach helps businesses strengthen their environmental initiatives while maximizing the return on existing technology investments."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Asset Recovery?",
+          body:
+            "Organizations throughout San Rafael trust IntegriTrade LLC because we combine security, transparency, compliance, and financial value into one streamlined recovery process. Our team understands both the technical and business aspects of IT asset management, allowing us to create customized solutions for organizations of all sizes.",
+          bullets: [
+            "Experienced IT asset recovery specialists",
+            "Secure chain of custody procedures",
+            "Certified data destruction options",
+            "Transparent reporting and documentation",
+            "Strong remarketing and resale channels",
+            "Environmentally responsible practices"
+          ]
+        },
+        {
+          heading: "Common Questions About Asset Recovery",
+          body:
+            "Find answers to frequently asked questions about business asset recovery services in San Rafael.",
+          qna: [
+            {
+              question: "What is asset recovery?",
+              answer:
+                "Asset recovery is the process of identifying, refurbishing, remarketing, and reselling retired equipment to maximize financial returns while maintaining security and compliance."
+            },
+            {
+              question: "Can old IT equipment still have value?",
+              answer:
+                "Yes. Many retired assets retain significant value depending on age, condition, specifications, and market demand."
+            },
+            {
+              question: "How is data protected during asset recovery?",
+              answer:
+                "All data-bearing devices undergo secure sanitization procedures before equipment is refurbished, remarketed, or recycled."
+            },
+            {
+              question: "Do you provide recovery reports?",
+              answer:
+                "Yes. We provide detailed reporting that outlines recovered assets, market value, and project results."
+            },
+            {
+              question: "What happens if equipment has no resale value?",
+              answer:
+                "Assets with no recovery value are directed to certified recycling processes to ensure environmentally responsible disposal."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Your retired technology assets may still represent significant business value. IntegriTrade LLC provides professional asset recovery services in San Rafael, helping organizations maximize returns from retired equipment while maintaining security, compliance, and sustainability. Whether you're upgrading infrastructure, relocating operations, or decommissioning technology assets, our team delivers secure and efficient recovery solutions tailored to your business goals."
+        }
+      ]
+    },
+    {
+      slug: "it-asset-disposition",
+
+      title: "San Rafael IT Asset Disposition (ITAD) | Secure IT Asset Disposal",
+
+      shortDescription:
+        "Professional IT Asset Disposition services for businesses in San Rafael. Secure data sanitization, asset recovery, and compliant IT equipment disposal.",
+
+      icon: "Laptop",
+
+      metaTitle:
+        "IT Asset Disposition (ITAD) San Rafael | Secure IT Asset Disposal Services",
+
+      metaDescription:
+        "Professional IT Asset Disposition (ITAD) services in San Rafael, CA. Secure data sanitization, asset recovery, electronics recycling, and compliant IT equipment disposal.",
+
+      image: itAssetDisposition,
+
+      heroHeading:
+        "San Rafael Secure IT Asset Disposition Services",
+
+      heroSubheading:
+        "We help San Rafael businesses securely retire outdated IT equipment through certified data destruction, asset recovery, and environmentally responsible disposal solutions.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading:
+            "Why IT Asset Disposition Matters for San Rafael Businesses",
+          body:
+            "San Rafael businesses across healthcare, legal, financial, educational, and professional service industries rely heavily on technology infrastructure. When laptops, servers, and networking equipment reach end-of-life, improper disposal can expose organizations to data breaches, compliance violations, and financial risk. A professional ITAD strategy helps businesses securely manage retired assets while maintaining regulatory compliance and protecting sensitive information."
+        },
+        {
+          heading: "Secure IT Asset Disposition Services",
+          body:
+            "Our IT Asset Disposition process begins with secure collection and transportation of retired technology assets. Every device is inventoried, tracked, and processed using strict chain-of-custody procedures. Data-bearing devices undergo certified sanitization procedures before equipment is refurbished, remarketed, or recycled."
+        },
+        {
+          heading: "Maximize Asset Recovery Value",
+          body:
+            "Many retired IT assets still retain market value. Through refurbishment and remarketing programs, businesses can recover a portion of their technology investment while reducing disposal costs. Our asset recovery services help maximize return on investment while ensuring compliance and security."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC?",
+          body:
+            "Businesses throughout San Rafael trust IntegriTrade LLC because we combine security, compliance, sustainability, and value recovery into one streamlined process.",
+          bullets: [
+            "Secure chain of custody for all assets",
+            "Certified data sanitization processes",
+            "Comprehensive asset tracking and reporting",
+            "Asset recovery and remarketing services",
+            "Environmentally responsible recycling",
+            "Customized solutions for businesses of all sizes"
+          ]
+        },
+        {
+          heading: "Frequently Asked Questions",
+          body: "Find answers to frequently asked questions about business asset recovery services in San Rafael.",
+          qna: [
+            {
+              question: "What is IT Asset Disposition (ITAD)?",
+              answer:
+                "ITAD is the secure process of retiring, remarketing, recycling, or disposing of IT equipment while protecting sensitive data and maintaining compliance."
+            },
+            {
+              question: "Can old IT equipment still have value?",
+              answer:
+                "Yes. Many retired assets can be refurbished and resold, helping businesses recover value from obsolete technology."
+            },
+            {
+              question: "Do you provide pickup services in San Rafael?",
+              answer:
+                "Yes. We provide secure pickup and transportation services throughout San Rafael and surrounding areas."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Retiring outdated technology should never put your business at risk. IntegriTrade LLC provides trusted IT Asset Disposition services in San Rafael, helping organizations securely manage retired technology while maximizing value recovery and maintaining compliance."
         }
       ]
     }
