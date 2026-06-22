@@ -1,5 +1,4 @@
 import { ServiceArea } from "./types/serviceAreaTypes";
-import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpeg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecycling from "@/public/services/serviceArea/electronicRecycling.jpeg";
@@ -272,6 +271,114 @@ export const sanFranciscoData: ServiceArea = {
           heading: "Conclusion",
           body:
             "Living and doing business in a forward-thinking city like San Francisco means taking environmental responsibility seriously. Choosing a trusted e-waste recycling partner helps protect your data, supports compliance with California law, and keeps hazardous electronic waste out of landfills. Integritrade provides San Francisco businesses with secure, compliant, and environmentally responsible e-waste recycling solutions they can trust."
+        }
+      ]
+    },
+    {
+      slug: "asset-recovery",
+      title: "South San Francisco Asset Recovery | Maximize Value from Retired IT Assets",
+      shortDescription:
+        "Professional asset recovery services for businesses in South San Francisco. Recover value from retired IT equipment through secure refurbishment, remarketing, and lifecycle management solutions.",
+      icon: "TrendingUp",
+
+      metaTitle:
+        "Asset Recovery South San Francisco | IT Asset Recovery & Remarketing Services",
+
+      metaDescription:
+        "Looking for asset recovery services in South San Francisco, CA? IntegriTrade LLC helps businesses recover value from retired IT equipment through secure refurbishment, remarketing, and responsible asset management.",
+
+      image: assetRecovery,
+
+      heroHeading: "South San Francisco Professional Asset Recovery Services",
+
+      heroSubheading:
+        "Turn retired technology into measurable business value through secure asset recovery, refurbishment, and remarketing solutions designed for South San Francisco businesses.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading: "Recover Maximum Value from Retired Technology Assets",
+          body:
+            "South San Francisco businesses invest heavily in technology infrastructure to support biotechnology research, healthcare operations, laboratory environments, logistics networks, communications, and long-term business growth. From employee laptops and desktop computers to enterprise servers, storage systems, networking equipment, laboratory technology, and specialized research hardware, these assets represent significant investments. As organizations modernize systems and replace aging equipment, many retired assets continue to retain substantial market value. Without a structured recovery strategy, businesses often miss opportunities to recover capital from technology that can still be refurbished, reused, or remarketed. Professional asset recovery services help organizations maximize financial returns while maintaining security, compliance, and operational efficiency."
+        },
+        {
+          heading: "Why Asset Recovery Matters for South San Francisco Businesses",
+          body:
+            "Technology refresh cycles are essential for supporting innovation, maintaining compliance, improving cybersecurity, and ensuring operational efficiency. However, much of the equipment removed from service continues to have value in secondary markets. Through professional asset recovery, organizations can offset technology upgrade costs, improve return on investment, and reduce unnecessary waste. Asset recovery enables businesses to generate additional value from retired assets while supporting responsible lifecycle management and sustainability initiatives."
+        },
+        {
+          heading: "Our Comprehensive Asset Recovery Process",
+          body:
+            "IntegriTrade LLC provides a transparent and structured asset recovery process designed to maximize financial returns while protecting sensitive information. Every project begins with a detailed inventory and assessment of assets. Equipment is evaluated based on condition, age, specifications, and current market demand. Before any asset enters refurbishment or resale channels, all data-bearing devices undergo certified sanitization procedures to ensure confidential information is permanently removed. This allows organizations to recover value from retired equipment without compromising security or regulatory compliance.",
+          bullets: [
+            "Comprehensive asset inventory and auditing",
+            "Residual value assessment",
+            "Certified data sanitization",
+            "Equipment refurbishment and testing",
+            "Remarketing through qualified sales channels",
+            "Detailed recovery and financial reporting"
+          ]
+        },
+        {
+          heading: "What Assets Can Be Recovered?",
+          body:
+            "Many categories of business technology retain value after retirement. We help organizations recover value from laptops, desktop computers, servers, storage systems, networking equipment, telecommunications hardware, laboratory technology systems, research equipment, engineering workstations, monitors, mobile devices, and enterprise infrastructure. Whether your organization is replacing a handful of devices or retiring technology across multiple facilities, our team develops customized recovery strategies designed to maximize financial returns."
+        },
+        {
+          heading: "Supporting Sustainability Through Reuse and Remarketing",
+          body:
+            "Asset recovery is an important component of sustainable technology lifecycle management. Whenever practical, equipment is refurbished and remarketed instead of being immediately recycled. Extending the useful life of technology assets helps reduce electronic waste, conserve valuable resources, and support a circular economy. Organizations that prioritize asset recovery can strengthen environmental, social, and governance (ESG) initiatives while aligning sustainability objectives with financial performance."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Asset Recovery?",
+          body:
+            "Organizations throughout South San Francisco trust IntegriTrade LLC because we combine security, transparency, compliance, and value recovery into one streamlined solution. Our experienced team understands the needs of biotechnology firms, healthcare organizations, research institutions, technology companies, and enterprise businesses. We deliver customized recovery strategies designed to maximize returns while maintaining accountability throughout every phase of the process.",
+          bullets: [
+            "Experienced asset recovery specialists",
+            "Secure chain-of-custody procedures",
+            "Certified data destruction capabilities",
+            "Transparent reporting and documentation",
+            "Established remarketing networks",
+            "Environmentally responsible practices"
+          ]
+        },
+        {
+          heading: "Common Questions About Asset Recovery",
+          body:
+            "Find answers to frequently asked questions about asset recovery services in South San Francisco.",
+          qna: [
+            {
+              question: "What is asset recovery?",
+              answer:
+                "Asset recovery is the process of identifying, refurbishing, remarketing, and reselling retired technology assets to maximize financial returns while maintaining security and compliance."
+            },
+            {
+              question: "Can retired technology equipment still have value?",
+              answer:
+                "Yes. Many retired devices retain significant market value depending on their condition, specifications, and demand in secondary markets."
+            },
+            {
+              question: "How is data protected during asset recovery?",
+              answer:
+                "All data-bearing devices undergo certified sanitization procedures before assets are refurbished, resold, or recycled."
+            },
+            {
+              question: "Do you provide recovery reports?",
+              answer:
+                "Yes. We provide detailed reporting that outlines recovered assets, financial returns, and overall project results."
+            },
+            {
+              question: "What happens to assets that have no resale value?",
+              answer:
+                "Equipment with no recovery value is processed through certified recycling channels to ensure environmentally responsible disposal."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Retired technology assets may still represent valuable business resources. IntegriTrade LLC provides professional asset recovery services in South San Francisco, helping organizations maximize returns from retired equipment while maintaining security, compliance, and sustainability. Whether you're upgrading infrastructure, relocating operations, or retiring outdated technology, our team delivers customized recovery solutions designed to improve return on investment and simplify the asset disposition process."
         }
       ]
     },

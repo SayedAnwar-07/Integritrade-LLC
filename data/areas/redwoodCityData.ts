@@ -112,6 +112,114 @@ export const redwoodCityData: ServiceArea = {
             "Responsible e-waste management is the call of the hour in a bureaucratic and technology-driven city like Redwood City. By choosing the right service provider, you can play a major role in protecting your organization's data while also safeguarding the environment. IntegriTrade LLC offers you the safest and most efficient commercial recycling solutions that meet California regulations. Get rid of the outdated technology in your office storeroom today and join us in keeping Redwood City's environment cleaner. Our expert team is always ready to provide customized services according to your business needs. Request your protected recycling quotation today and move toward a greener future."
         }
       ]
-    }
+    },
+    {
+      slug: "electronic-recycling",
+      title: "Redwood City Electronic Recycling | Certified Business E-Waste Solutions",
+      shortDescription:
+        "Professional electronic recycling services for businesses in Redwood City. Secure, compliant, and environmentally responsible e-waste disposal solutions.",
+      icon: "Recycle",
+
+      metaTitle:
+        "Electronic Recycling Redwood City | Certified Business E-Waste Recycling",
+
+      metaDescription:
+        "Looking for electronic recycling in Redwood City, CA? IntegriTrade LLC provides secure e-waste recycling, responsible electronics disposal, and environmentally compliant recycling services for businesses.",
+
+      image: electronicRecycling,
+
+      heroHeading: "Redwood City Professional Electronic Recycling Services",
+
+      heroSubheading:
+        "Helping Redwood City businesses safely recycle outdated computers, servers, networking equipment, and electronic devices while maintaining environmental compliance and sustainability goals.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading: "Responsible E-Waste Recycling for Redwood City Businesses",
+          body:
+            "Redwood City is home to a diverse and growing business community that includes technology companies, healthcare organizations, life sciences firms, professional service providers, financial institutions, and expanding enterprises. As these organizations continue investing in modern technology infrastructure, older equipment eventually reaches end-of-life. Computers, laptops, servers, networking equipment, storage systems, monitors, and mobile devices must be disposed of responsibly to avoid environmental risks and compliance concerns. Professional electronic recycling services help Redwood City businesses safely retire obsolete technology while supporting sustainability initiatives and regulatory requirements."
+        },
+        {
+          heading: "Environmental Compliance and Sustainable Electronics Disposal",
+          body:
+            "California maintains strict regulations governing the disposal of electronic waste. Many electronic devices contain materials that require specialized handling and processing to prevent environmental contamination. Improper disposal can expose organizations to environmental liabilities and regulatory penalties. Our certified electronic recycling services help Redwood City businesses remain compliant while ensuring valuable materials are recovered, processed responsibly, and diverted from landfills whenever possible. This approach supports environmental stewardship while reducing waste and conserving resources."
+        },
+        {
+          heading: "Our Professional Electronics Recycling Process",
+          body:
+            "IntegriTrade LLC provides comprehensive electronic recycling solutions designed for organizations of all sizes. We manage every stage of the process, including equipment collection, transportation, inventory management, evaluation, recycling, and reporting. Before equipment is recycled, our team evaluates whether assets can be refurbished, reused, or remarketed to maximize value recovery opportunities. Equipment that no longer retains practical value is processed through certified recycling channels using environmentally responsible methods.",
+          bullets: [
+            "Secure collection and transportation",
+            "Comprehensive equipment inventory",
+            "Asset evaluation and recovery opportunities",
+            "Certified electronics recycling processes",
+            "Environmentally responsible material handling",
+            "Detailed reporting and documentation"
+          ]
+        },
+        {
+          heading: "What Types of Electronics Do We Recycle?",
+          body:
+            "Our electronic recycling services support a wide range of business technology assets including laptops, desktop computers, servers, storage systems, networking equipment, telecommunications hardware, healthcare technology equipment, engineering workstations, monitors, printers, mobile devices, accessories, and enterprise infrastructure. Whether your organization is replacing a handful of devices or conducting a large-scale technology refresh, we provide scalable recycling solutions tailored to your operational requirements."
+        },
+        {
+          heading: "Supporting Sustainability Goals in Redwood City",
+          body:
+            "Environmental responsibility is increasingly important for organizations throughout Redwood City and the Peninsula. Proper electronic recycling helps reduce electronic waste, conserve natural resources, and support a circular economy by recovering valuable materials for reuse. Businesses that prioritize responsible recycling can strengthen environmental, social, and governance (ESG) initiatives while demonstrating a commitment to sustainable business practices. Our recycling services help organizations achieve these goals while maintaining compliance and operational efficiency."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Electronic Recycling?",
+          body:
+            "Organizations throughout Redwood City trust IntegriTrade LLC because we combine environmental responsibility, compliance, and professional service into one comprehensive recycling solution. Our experienced team delivers efficient services designed to minimize disruption while ensuring obsolete technology is processed responsibly and securely.",
+          bullets: [
+            "Experienced electronics recycling specialists",
+            "Business-focused service solutions",
+            "Secure logistics and transportation",
+            "Detailed recycling documentation",
+            "Asset recovery opportunities",
+            "Environmentally responsible recycling practices"
+          ]
+        },
+        {
+          heading: "Common Questions About Electronic Recycling",
+          body:
+            "Find answers to frequently asked questions about electronic recycling services in Redwood City.",
+          qna: [
+            {
+              question: "What is electronic recycling?",
+              answer:
+                "Electronic recycling is the process of collecting, dismantling, processing, and responsibly recycling obsolete electronic equipment while recovering reusable materials."
+            },
+            {
+              question: "Do you provide pickup services in Redwood City?",
+              answer:
+                "Yes. We provide secure pickup and transportation services throughout Redwood City and surrounding Peninsula communities."
+            },
+            {
+              question: "Can you handle large-scale recycling projects?",
+              answer:
+                "Absolutely. We support projects ranging from small office upgrades to large-scale corporate refreshes, healthcare technology upgrades, office relocations, and infrastructure retirement projects."
+            },
+            {
+              question: "Do you recycle servers and networking equipment?",
+              answer:
+                "Yes. We recycle servers, storage systems, switches, routers, telecommunications hardware, healthcare technology systems, and other business technology assets."
+            },
+            {
+              question: "What happens to recycled materials?",
+              answer:
+                "Materials are processed through certified recycling channels where valuable resources are recovered, reused, and diverted from landfills whenever possible."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Responsible electronic recycling is essential for businesses seeking to protect the environment while maintaining regulatory compliance. IntegriTrade LLC provides trusted electronic recycling services in Redwood City, helping organizations safely dispose of obsolete technology through secure and environmentally responsible processes. Whether you're upgrading equipment, relocating operations, or managing surplus electronics, our team delivers recycling solutions tailored to your business and sustainability goals."
+        }
+      ]
+    },
   ]
 };
