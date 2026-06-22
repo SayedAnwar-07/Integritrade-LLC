@@ -64,7 +64,7 @@ type Option = { value: string; label: string }
 
 const SERVICE_OPTIONS: Option[] = [
   { value: 'basic-recycling', label: 'Basic Recycling' },
-  { value: 'certified-data-destruction', label: 'Certified Data Destruction' },
+  { value: 'data-destruction-services', label: 'Certified Data Destruction' },
   { value: 'it-asset-disposition', label: 'IT Asset Disposition' },
   { value: 'data-center-decommissioning', label: 'Data Center Decommissioning' },
   { value: 'lease-return', label: 'Lease Return' },

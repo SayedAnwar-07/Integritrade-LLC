@@ -1,5 +1,4 @@
 import { ServiceArea } from "./types/serviceAreaTypes";
-import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpeg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecycling from "@/public/services/serviceArea/electronicRecycling.jpeg";
@@ -114,112 +113,309 @@ export const redwoodCityData: ServiceArea = {
       ]
     },
     {
-      slug: "electronic-recycling",
-      title: "Redwood City Electronic Recycling | Certified Business E-Waste Solutions",
+      slug: "it-asset-disposition",
+      title: "Redwood City IT Asset Disposition (ITAD) | Secure IT Asset Disposal Services",
       shortDescription:
-        "Professional electronic recycling services for businesses in Redwood City. Secure, compliant, and environmentally responsible e-waste disposal solutions.",
-      icon: "Recycle",
-
+        "Professional IT Asset Disposition services for businesses in Redwood City. Secure data sanitization, asset recovery, electronics recycling, and compliant IT equipment disposal.",
+      icon: "Server",
       metaTitle:
-        "Electronic Recycling Redwood City | Certified Business E-Waste Recycling",
-
+        "IT Asset Disposition (ITAD) Redwood City | Secure IT Asset Disposal Services",
       metaDescription:
-        "Looking for electronic recycling in Redwood City, CA? IntegriTrade LLC provides secure e-waste recycling, responsible electronics disposal, and environmentally compliant recycling services for businesses.",
-
-      image: electronicRecycling,
-
-      heroHeading: "Redwood City Professional Electronic Recycling Services",
-
+        "Looking for IT Asset Disposition services in Redwood City, CA? IntegriTrade LLC provides secure IT asset disposal, certified data sanitization, asset recovery, and environmentally responsible electronics recycling.",
+      image: itAssetDisposition,
+      heroHeading: "Redwood City Secure IT Asset Disposition Services",
       heroSubheading:
-        "Helping Redwood City businesses safely recycle outdated computers, servers, networking equipment, and electronic devices while maintaining environmental compliance and sustainability goals.",
-
+        "Helping Redwood City businesses securely retire outdated technology through certified IT asset disposition, data protection, asset recovery, and environmentally responsible disposal solutions.",
       ctaText: "Get a Free Quote",
-
       details: [
         {
-          heading: "Responsible E-Waste Recycling for Redwood City Businesses",
+          heading: "Secure Technology Lifecycle Management for Redwood City Businesses",
           body:
-            "Redwood City is home to a diverse and growing business community that includes technology companies, healthcare organizations, life sciences firms, professional service providers, financial institutions, and expanding enterprises. As these organizations continue investing in modern technology infrastructure, older equipment eventually reaches end-of-life. Computers, laptops, servers, networking equipment, storage systems, monitors, and mobile devices must be disposed of responsibly to avoid environmental risks and compliance concerns. Professional electronic recycling services help Redwood City businesses safely retire obsolete technology while supporting sustainability initiatives and regulatory requirements."
+            "Redwood City is one of the Peninsula's fastest-growing business hubs, home to technology companies, healthcare organizations, professional service firms, life sciences businesses, financial institutions, and expanding enterprises. These organizations depend on reliable technology infrastructure to support daily operations, data management, communications, and long-term growth. As computers, servers, networking equipment, storage systems, and mobile devices reach the end of their useful life, businesses require a secure and compliant strategy for retiring those assets. Professional IT Asset Disposition (ITAD) services help Redwood City organizations manage obsolete technology responsibly while protecting sensitive information, maintaining compliance, and supporting sustainability objectives."
         },
         {
-          heading: "Environmental Compliance and Sustainable Electronics Disposal",
+          heading: "Why Professional ITAD Matters in Redwood City",
           body:
-            "California maintains strict regulations governing the disposal of electronic waste. Many electronic devices contain materials that require specialized handling and processing to prevent environmental contamination. Improper disposal can expose organizations to environmental liabilities and regulatory penalties. Our certified electronic recycling services help Redwood City businesses remain compliant while ensuring valuable materials are recovered, processed responsibly, and diverted from landfills whenever possible. This approach supports environmental stewardship while reducing waste and conserving resources."
+            "Technology refresh cycles are essential for maintaining productivity, improving cybersecurity, and supporting business growth. However, retired equipment often contains confidential information including customer records, employee data, financial documents, intellectual property, healthcare information, contracts, and proprietary business communications. Improper disposal can expose organizations to data breaches, legal liability, compliance violations, and reputational harm. A structured IT Asset Disposition program ensures retired technology assets are securely managed while reducing risk and maintaining operational efficiency."
         },
         {
-          heading: "Our Professional Electronics Recycling Process",
+          heading: "Our End-to-End IT Asset Disposition Process",
           body:
-            "IntegriTrade LLC provides comprehensive electronic recycling solutions designed for organizations of all sizes. We manage every stage of the process, including equipment collection, transportation, inventory management, evaluation, recycling, and reporting. Before equipment is recycled, our team evaluates whether assets can be refurbished, reused, or remarketed to maximize value recovery opportunities. Equipment that no longer retains practical value is processed through certified recycling channels using environmentally responsible methods.",
+            "IntegriTrade LLC provides comprehensive IT Asset Disposition solutions tailored to the needs of Redwood City businesses. Our process begins with secure collection and transportation, followed by asset inventory, chain-of-custody tracking, certified data sanitization, asset evaluation, value recovery opportunities, and environmentally responsible disposition. Every asset is documented and managed throughout the process to ensure accountability, transparency, and compliance.",
           bullets: [
-            "Secure collection and transportation",
-            "Comprehensive equipment inventory",
-            "Asset evaluation and recovery opportunities",
-            "Certified electronics recycling processes",
-            "Environmentally responsible material handling",
-            "Detailed reporting and documentation"
+            "Secure pickup and transportation",
+            "Comprehensive asset inventory and auditing",
+            "Chain-of-custody documentation",
+            "Certified data sanitization",
+            "Asset recovery and remarketing",
+            "Environmentally responsible recycling"
           ]
         },
         {
-          heading: "What Types of Electronics Do We Recycle?",
+          heading: "What Types of IT Equipment Can Be Processed?",
           body:
-            "Our electronic recycling services support a wide range of business technology assets including laptops, desktop computers, servers, storage systems, networking equipment, telecommunications hardware, healthcare technology equipment, engineering workstations, monitors, printers, mobile devices, accessories, and enterprise infrastructure. Whether your organization is replacing a handful of devices or conducting a large-scale technology refresh, we provide scalable recycling solutions tailored to your operational requirements."
+            "Our IT Asset Disposition services support a broad range of business technology assets including laptops, desktop computers, servers, storage systems, networking hardware, telecommunications equipment, mobile devices, monitors, printers, engineering workstations, healthcare technology systems, and enterprise infrastructure. Whether your organization is replacing a few devices or managing a large-scale technology refresh, we provide scalable solutions designed to meet your operational requirements."
         },
         {
-          heading: "Supporting Sustainability Goals in Redwood City",
+          heading: "Reduce Risk and Maximize Asset Value",
           body:
-            "Environmental responsibility is increasingly important for organizations throughout Redwood City and the Peninsula. Proper electronic recycling helps reduce electronic waste, conserve natural resources, and support a circular economy by recovering valuable materials for reuse. Businesses that prioritize responsible recycling can strengthen environmental, social, and governance (ESG) initiatives while demonstrating a commitment to sustainable business practices. Our recycling services help organizations achieve these goals while maintaining compliance and operational efficiency."
+            "Many retired technology assets retain market value long after they are removed from active service. Through our asset recovery and remarketing programs, organizations can recover a portion of their original technology investment while reducing disposal costs. This approach improves return on investment while supporting sustainability goals through equipment reuse and refurbishment. Assets that no longer have recovery value are processed through certified recycling channels to ensure environmentally responsible disposal."
         },
         {
-          heading: "Why Choose IntegriTrade LLC for Electronic Recycling?",
+          heading: "Why Choose IntegriTrade LLC for IT Asset Disposition?",
           body:
-            "Organizations throughout Redwood City trust IntegriTrade LLC because we combine environmental responsibility, compliance, and professional service into one comprehensive recycling solution. Our experienced team delivers efficient services designed to minimize disruption while ensuring obsolete technology is processed responsibly and securely.",
+            "Organizations throughout Redwood City trust IntegriTrade LLC because we combine security, compliance, sustainability, and value recovery into one streamlined solution. Our experienced team understands the needs of technology companies, healthcare organizations, life sciences firms, and enterprise businesses. We deliver customized solutions designed to simplify technology retirement while protecting sensitive information.",
           bullets: [
-            "Experienced electronics recycling specialists",
-            "Business-focused service solutions",
-            "Secure logistics and transportation",
-            "Detailed recycling documentation",
-            "Asset recovery opportunities",
-            "Environmentally responsible recycling practices"
+            "Experienced IT asset disposition specialists",
+            "Secure chain-of-custody procedures",
+            "Certified data destruction capabilities",
+            "Detailed reporting and compliance support",
+            "Asset recovery and remarketing expertise",
+            "Environmentally responsible processing"
           ]
         },
         {
-          heading: "Common Questions About Electronic Recycling",
+          heading: "Common Questions About IT Asset Disposition",
           body:
-            "Find answers to frequently asked questions about electronic recycling services in Redwood City.",
+            "Find answers to frequently asked questions about IT Asset Disposition services in Redwood City.",
           qna: [
             {
-              question: "What is electronic recycling?",
+              question: "What is IT Asset Disposition (ITAD)?",
               answer:
-                "Electronic recycling is the process of collecting, dismantling, processing, and responsibly recycling obsolete electronic equipment while recovering reusable materials."
+                "IT Asset Disposition is the secure process of retiring, remarketing, recycling, or disposing of technology assets while protecting sensitive information and maintaining compliance."
+            },
+            {
+              question: "Can retired IT equipment still have value?",
+              answer:
+                "Yes. Many technology assets retain market value and can be refurbished or remarketed to generate financial returns."
             },
             {
               question: "Do you provide pickup services in Redwood City?",
               answer:
-                "Yes. We provide secure pickup and transportation services throughout Redwood City and surrounding Peninsula communities."
+                "Yes. We provide secure pickup and transportation services for businesses throughout Redwood City and surrounding Peninsula communities."
             },
             {
-              question: "Can you handle large-scale recycling projects?",
+              question: "How is sensitive data protected?",
               answer:
-                "Absolutely. We support projects ranging from small office upgrades to large-scale corporate refreshes, healthcare technology upgrades, office relocations, and infrastructure retirement projects."
+                "All data-bearing devices undergo certified sanitization procedures before assets are remarketed, recycled, or destroyed."
             },
             {
-              question: "Do you recycle servers and networking equipment?",
+              question: "Do you provide compliance documentation?",
               answer:
-                "Yes. We recycle servers, storage systems, switches, routers, telecommunications hardware, healthcare technology systems, and other business technology assets."
-            },
-            {
-              question: "What happens to recycled materials?",
-              answer:
-                "Materials are processed through certified recycling channels where valuable resources are recovered, reused, and diverted from landfills whenever possible."
+                "Yes. We provide detailed asset inventories, chain-of-custody records, reporting, and data destruction documentation when required."
             }
           ]
         },
         {
           heading: "Conclusion",
           body:
-            "Responsible electronic recycling is essential for businesses seeking to protect the environment while maintaining regulatory compliance. IntegriTrade LLC provides trusted electronic recycling services in Redwood City, helping organizations safely dispose of obsolete technology through secure and environmentally responsible processes. Whether you're upgrading equipment, relocating operations, or managing surplus electronics, our team delivers recycling solutions tailored to your business and sustainability goals."
+            "Retiring outdated technology should never compromise your organization's security or compliance. IntegriTrade LLC provides trusted IT Asset Disposition services in Redwood City, helping businesses securely manage retired technology assets while maximizing value recovery and supporting sustainability initiatives. Whether you're upgrading systems, refreshing infrastructure, or decommissioning equipment, our team delivers reliable solutions tailored to your organization's needs."
         }
       ]
     },
+    {
+      slug: "asset-recovery",
+      title: "Redwood City Asset Recovery | Maximize Value from Retired IT Assets",
+      shortDescription:
+        "Professional asset recovery services for businesses in Redwood City. Recover value from retired IT equipment through secure refurbishment, remarketing, and lifecycle management solutions.",
+      icon: "RefreshCcw",
+      metaTitle:
+        "Asset Recovery Redwood City | IT Asset Recovery & Remarketing Services",
+      metaDescription:
+        "Looking for asset recovery services in Redwood City, CA? IntegriTrade LLC helps businesses recover value from retired IT equipment through secure refurbishment, remarketing, and responsible asset management.",
+      image: assetRecovery,
+      heroHeading: "Redwood City Professional Asset Recovery Services",
+      heroSubheading:
+        "Turn retired technology into measurable business value through secure asset recovery, refurbishment, and remarketing solutions designed for Redwood City businesses.",
+      ctaText: "Get a Free Quote",
+      details: [
+        {
+          heading: "Recover Maximum Value from Retired Technology Assets",
+          body:
+            "Redwood City businesses invest heavily in technology infrastructure to support operations, innovation, healthcare services, life sciences research, communications, and long-term growth. From employee laptops and desktop computers to enterprise servers, storage systems, networking equipment, and specialized technology platforms, these assets represent substantial investments. As organizations modernize systems and replace aging hardware, many retired assets continue to retain significant market value. Without a structured recovery strategy, businesses may overlook opportunities to recover capital from equipment that can still be refurbished, reused, or remarketed. Professional asset recovery services help organizations maximize financial returns while maintaining security, compliance, and operational efficiency."
+        },
+        {
+          heading: "Why Asset Recovery Matters for Redwood City Businesses",
+          body:
+            "Technology refresh cycles are essential for improving performance, supporting growth, strengthening cybersecurity, and maintaining competitive advantage. However, much of the equipment removed from service continues to have value in secondary markets. Through professional asset recovery, organizations can offset technology upgrade costs, improve return on investment, and reduce unnecessary waste. Asset recovery enables businesses to generate additional value from retired assets while supporting responsible lifecycle management and sustainability initiatives."
+        },
+        {
+          heading: "Our Comprehensive Asset Recovery Process",
+          body:
+            "IntegriTrade LLC provides a transparent and structured asset recovery process designed to maximize financial returns while protecting sensitive information. Every project begins with a detailed inventory and assessment of assets. Equipment is evaluated based on condition, specifications, age, and current market demand. Before any asset enters refurbishment or resale channels, all data-bearing devices undergo certified sanitization procedures to ensure confidential information is permanently removed. This allows organizations to recover value from retired equipment without compromising security or regulatory compliance.",
+          bullets: [
+            "Comprehensive asset inventory and auditing",
+            "Residual value assessment",
+            "Certified data sanitization",
+            "Equipment refurbishment and testing",
+            "Remarketing through qualified sales channels",
+            "Detailed recovery and financial reporting"
+          ]
+        },
+        {
+          heading: "What Assets Can Be Recovered?",
+          body:
+            "Many categories of business technology retain value after retirement. We help organizations recover value from laptops, desktop computers, servers, storage systems, networking equipment, telecommunications hardware, healthcare technology equipment, engineering workstations, monitors, mobile devices, and enterprise infrastructure. Whether your organization is replacing a few devices or retiring technology across multiple locations, our team develops customized recovery strategies designed to maximize financial returns."
+        },
+        {
+          heading: "Supporting Sustainability Through Reuse and Remarketing",
+          body:
+            "Asset recovery is an important component of sustainable technology lifecycle management. Whenever practical, equipment is refurbished and remarketed instead of being immediately recycled. Extending the useful life of technology assets helps reduce electronic waste, conserve valuable resources, and support a circular economy. Organizations that prioritize asset recovery can strengthen environmental, social, and governance (ESG) initiatives while aligning sustainability objectives with financial performance."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Asset Recovery?",
+          body:
+            "Organizations throughout Redwood City trust IntegriTrade LLC because we combine security, transparency, compliance, and value recovery into one streamlined solution. Our experienced team understands the needs of technology companies, healthcare providers, life sciences organizations, professional service firms, and enterprise businesses. We deliver customized recovery strategies designed to maximize returns while maintaining accountability throughout every phase of the process.",
+          bullets: [
+            "Experienced asset recovery specialists",
+            "Secure chain-of-custody procedures",
+            "Certified data destruction capabilities",
+            "Transparent reporting and documentation",
+            "Established remarketing networks",
+            "Environmentally responsible practices"
+          ]
+        },
+        {
+          heading: "Common Questions About Asset Recovery",
+          body:
+            "Find answers to frequently asked questions about asset recovery services in Redwood City.",
+          qna: [
+            {
+              question: "What is asset recovery?",
+              answer:
+                "Asset recovery is the process of identifying, refurbishing, remarketing, and reselling retired technology assets to maximize financial returns while maintaining security and compliance."
+            },
+            {
+              question: "Can retired technology equipment still have value?",
+              answer:
+                "Yes. Many retired devices retain significant market value depending on their condition, specifications, and demand in secondary markets."
+            },
+            {
+              question: "How is data protected during asset recovery?",
+              answer:
+                "All data-bearing devices undergo certified sanitization procedures before assets are refurbished, resold, or recycled."
+            },
+            {
+              question: "Do you provide recovery reports?",
+              answer:
+                "Yes. We provide detailed reporting that outlines recovered assets, financial returns, and overall project results."
+            },
+            {
+              question: "What happens to assets that have no resale value?",
+              answer:
+                "Equipment with no recovery value is processed through certified recycling channels to ensure environmentally responsible disposal."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Retired technology assets may still represent valuable business resources. IntegriTrade LLC provides professional asset recovery services in Redwood City, helping organizations maximize returns from retired equipment while maintaining security, compliance, and sustainability. Whether you're upgrading infrastructure, relocating operations, or retiring outdated technology, our team delivers customized recovery solutions designed to improve return on investment and simplify the asset disposition process."
+        }
+      ]
+    },
+    {
+      slug: "data-destruction-services",
+      title: "Redwood City Certified Data Destruction | Secure Hard Drive & Data Disposal",
+      shortDescription:
+        "Certified data destruction services for businesses in Redwood City. Secure data wiping, hard drive destruction, NIST 800-88 compliant processes, and complete compliance documentation.",
+      icon: "ShieldCheck",
+      metaTitle:
+        "Certified Data Destruction Redwood City | Secure Hard Drive Destruction Services",
+      metaDescription:
+        "Looking for certified data destruction in Redwood City, CA? IntegriTrade LLC provides secure data wiping, hard drive destruction, NIST 800-88 compliant sanitization, and Certificates of Destruction for businesses.",
+      image: dataDestruction,
+      heroHeading: "Redwood City Certified Data Destruction Services",
+      heroSubheading:
+        "Protect your organization from data breaches, compliance violations, and security risks through certified data destruction and secure media disposal services.",
+      ctaText: "Get a Free Quote",
+      details: [
+        {
+          heading:
+            "Protect Sensitive Information Before Technology Leaves Your Organization",
+          body:
+            "Organizations throughout Redwood City rely on technology to manage highly sensitive information every day. Technology companies, healthcare providers, life sciences firms, financial organizations, legal practices, and professional service businesses store critical data across computers, servers, storage systems, mobile devices, and backup media. These systems often contain customer records, employee information, financial documents, intellectual property, healthcare data, contracts, and confidential business communications. When technology assets reach end-of-life, the information stored on them remains vulnerable if not properly destroyed. Simply deleting files or formatting storage devices does not permanently remove data. Certified data destruction ensures sensitive information is permanently eliminated before assets are reused, sold, recycled, or disposed of."
+        },
+        {
+          heading: "Why Certified Data Destruction Matters in Redwood City",
+          body:
+            "Businesses in Redwood City operate in industries where data security, privacy, and regulatory compliance are essential. A data breach involving retired technology assets can result in financial losses, legal liability, regulatory penalties, and reputational harm. Organizations must demonstrate that confidential information has been securely destroyed throughout the technology lifecycle. Certified data destruction provides documented proof that data has been permanently removed, helping businesses reduce risk while supporting compliance, governance, and cybersecurity objectives."
+        },
+        {
+          heading: "Our Secure Data Destruction Process",
+          body:
+            "IntegriTrade LLC follows strict security procedures designed to ensure complete and verifiable destruction of sensitive information. Every project begins with secure collection and transportation of data-bearing assets. Devices are tracked through documented chain-of-custody procedures and processed using NIST 800-88 compliant sanitization methods. For organizations requiring physical destruction, we provide hard drive shredding and media destruction services that permanently eliminate the possibility of data recovery. Every stage of the process is documented to ensure accountability, transparency, and confidence.",
+          bullets: [
+            "Secure collection and transportation",
+            "Documented chain-of-custody tracking",
+            "NIST 800-88 compliant data sanitization",
+            "Hard drive and SSD destruction services",
+            "Certificates of Destruction (COD)",
+            "Detailed audit and compliance reporting"
+          ]
+        },
+        {
+          heading: "What Types of Media Can Be Destroyed?",
+          body:
+            "Our certified data destruction services support a wide range of storage media including hard drives, solid-state drives (SSD), backup tapes, storage arrays, USB flash drives, memory cards, laptops, desktop computers, servers, mobile devices, healthcare technology systems, engineering workstations, and enterprise storage infrastructure. Whether your organization needs to destroy a handful of storage devices or manage a large-scale technology retirement project, we provide scalable destruction solutions tailored to your operational and security requirements."
+        },
+        {
+          heading: "Compliance, Security, and Risk Reduction",
+          body:
+            "Proper data destruction is a critical component of modern cybersecurity and risk management programs. Businesses must ensure retired storage devices cannot be used to recover confidential information. Our certified destruction process helps organizations demonstrate compliance during audits, reduce exposure to data theft, and support internal governance initiatives. By ensuring information is permanently removed before assets leave your control, organizations can significantly reduce future security and compliance risks. Every completed project includes official documentation verifying destruction according to recognized industry standards."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Data Destruction?",
+          body:
+            "Organizations throughout Redwood City trust IntegriTrade LLC because we provide secure, transparent, and fully documented destruction services. Our team understands the unique security requirements of technology companies, healthcare providers, life sciences organizations, financial firms, and enterprise businesses. We deliver customized solutions designed to protect sensitive information while ensuring compliance and operational efficiency.",
+          bullets: [
+            "NIST 800-88 compliant destruction processes",
+            "Certified destruction documentation",
+            "Secure chain-of-custody procedures",
+            "Experienced data security specialists",
+            "Flexible on-site and off-site solutions",
+            "Trusted by technology, healthcare, and enterprise organizations"
+          ]
+        },
+        {
+          heading: "Common Questions About Data Destruction",
+          body:
+            "Find answers to frequently asked questions about certified data destruction services in Redwood City.",
+          qna: [
+            {
+              question: "Is deleting files enough to protect sensitive information?",
+              answer:
+                "No. Deleted files can often be recovered using specialized software. Certified data destruction permanently removes information and prevents future recovery."
+            },
+            {
+              question: "What is NIST 800-88?",
+              answer:
+                "NIST 800-88 is a widely recognized media sanitization standard that outlines approved methods for permanently removing data from storage devices."
+            },
+            {
+              question: "Do you provide Certificates of Destruction?",
+              answer:
+                "Yes. We provide official Certificates of Destruction (COD) and supporting documentation for completed projects."
+            },
+            {
+              question: "Can SSDs and hard drives both be destroyed?",
+              answer:
+                "Yes. We securely process hard drives, SSDs, backup media, storage arrays, and other data-bearing devices."
+            },
+            {
+              question:
+                "Do you support enterprise and multi-location destruction projects?",
+              answer:
+                "Absolutely. We support projects ranging from small office device disposal to large-scale infrastructure retirement, healthcare technology upgrades, office relocations, and enterprise-wide technology refresh initiatives."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Protecting sensitive information does not end when technology reaches the end of its useful life. IntegriTrade LLC provides certified data destruction services in Redwood City that help organizations eliminate data security risks, maintain compliance, and safeguard valuable information. Whether you require secure data wiping, hard drive destruction, or complete media disposal services, our team delivers trusted solutions designed to keep your business protected."
+        }
+      ]
+    }
   ]
 };

@@ -97,6 +97,343 @@ export const santaRosaData: ServiceArea = {
             "Responsible e-waste management is the call of the hour in an eco-conscious and progressive commercial city like Santa Rosa. By choosing the right service provider, you can play a big role in protecting your organization's data as well as protecting the environment. IntegriTrade LLC offers you the safest and most efficient commercial recycling solutions in compliance with California regulations. Get rid of the outdated technology in your office storeroom today and join us in making Santa Rosa's environment cleaner. Our expert team is always ready to provide customized services according to your business needs. Collect your secure recycling quotation today."
         }
       ]
+    },
+    {
+      slug: "data-destruction-services",
+
+      title: "Santa Rosa Certified Data Destruction | Secure Hard Drive & Data Disposal",
+
+      shortDescription:
+        "Certified data destruction services for businesses in Santa Rosa. Secure data wiping, hard drive destruction, NIST 800-88 compliant processes, and complete compliance documentation.",
+
+      icon: "Shield",
+
+      metaTitle:
+        "Certified Data Destruction Santa Rosa | Secure Hard Drive Destruction Services",
+
+      metaDescription:
+        "Looking for certified data destruction in Santa Rosa, CA? IntegriTrade LLC provides secure data wiping, hard drive destruction, NIST 800-88 compliant sanitization, and Certificates of Destruction for businesses.",
+
+      image: dataDestruction,
+
+      heroHeading:
+        "Santa Rosa Certified Data Destruction Services",
+
+      heroSubheading:
+        "Protect your organization from data breaches, compliance risks, and unauthorized access through secure data destruction and certified hard drive disposal services.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading:
+            "Protect Sensitive Information Before Technology Leaves Your Facility",
+          body:
+            "Businesses throughout Santa Rosa handle valuable and sensitive information every day. Customer records, employee files, financial data, intellectual property, healthcare information, and operational documents are often stored on laptops, servers, hard drives, and backup systems. When these devices reach the end of their lifecycle, simply deleting files or formatting drives is not enough. Advanced recovery tools can often retrieve data from improperly disposed devices. Certified data destruction ensures information is permanently eliminated, protecting organizations from data breaches, regulatory penalties, and reputational damage."
+        },
+        {
+          heading:
+            "Why Certified Data Destruction Matters for Santa Rosa Businesses",
+          body:
+            "Santa Rosa businesses operate in industries that require strong data security practices, including healthcare, manufacturing, financial services, legal firms, educational institutions, and wine industry enterprises. Data protection regulations continue to evolve, and organizations must demonstrate that sensitive information is securely managed throughout the entire technology lifecycle. Certified data destruction provides documented proof that information has been permanently removed, helping businesses satisfy compliance requirements and reduce legal and operational risks."
+        },
+        {
+          heading: "Our Secure Data Destruction Process",
+          body:
+            "IntegriTrade LLC follows strict security procedures to ensure complete and verifiable destruction of sensitive information. Every project begins with secure collection and tracking of data-bearing assets. Devices are processed under documented chain-of-custody controls and sanitized according to NIST 800-88 standards. For organizations requiring physical destruction, we provide hard drive shredding and media destruction services that permanently eliminate the possibility of data recovery.",
+          bullets: [
+            "Secure asset collection and transportation",
+            "Documented chain-of-custody tracking",
+            "NIST 800-88 compliant sanitization",
+            "Hard drive and SSD destruction services",
+            "Certificates of Destruction (COD)",
+            "Detailed audit and compliance reporting"
+          ]
+        },
+        {
+          heading: "What Types of Media Can Be Destroyed?",
+          body:
+            "Our certified data destruction services cover hard drives, solid-state drives (SSD), backup tapes, storage arrays, USB drives, memory cards, laptops, desktop computers, servers, mobile devices, and other electronic media. Whether your organization is disposing of a few devices or decommissioning an entire data center, we provide scalable destruction solutions designed to meet your security requirements."
+        },
+        {
+          heading: "Compliance, Security, and Risk Reduction",
+          body:
+            "Modern organizations face increasing cybersecurity threats and regulatory obligations. Proper data destruction is a critical component of any information security program. Our documented destruction process helps businesses demonstrate compliance during audits while reducing the risk of unauthorized access, data theft, and legal exposure. Every completed project includes official documentation that supports governance, compliance, and internal security initiatives."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Data Destruction?",
+          body:
+            "Organizations throughout Santa Rosa trust IntegriTrade LLC because we provide secure, transparent, and fully documented destruction services. Our team understands the importance of safeguarding sensitive information and maintaining compliance throughout every stage of the disposal process.",
+          bullets: [
+            "NIST 800-88 compliant processes",
+            "Certified destruction documentation",
+            "Secure chain-of-custody procedures",
+            "Experienced data security specialists",
+            "Flexible on-site and off-site services",
+            "Trusted by businesses across multiple industries"
+          ]
+        },
+        {
+          heading: "Common Questions About Data Destruction",
+          body:
+            "Find answers to frequently asked questions about certified data destruction services in Santa Rosa.",
+          qna: [
+            {
+              question:
+                "Is deleting files enough to protect sensitive information?",
+              answer:
+                "No. Deleted files can often be recovered. Certified data destruction permanently removes information and prevents future recovery."
+            },
+            {
+              question: "What is NIST 800-88?",
+              answer:
+                "NIST 800-88 is a widely recognized data sanitization standard that outlines approved methods for permanently removing information from storage devices."
+            },
+            {
+              question: "Do you provide Certificates of Destruction?",
+              answer:
+                "Yes. We provide official Certificates of Destruction (COD) and supporting documentation for completed projects."
+            },
+            {
+              question: "Can SSDs and hard drives both be destroyed?",
+              answer:
+                "Yes. We securely process hard drives, SSDs, backup media, and other data-bearing devices."
+            },
+            {
+              question: "Do you support large-scale destruction projects?",
+              answer:
+                "Absolutely. We support projects ranging from small office equipment retirement to enterprise-level infrastructure and data center decommissioning."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Protecting sensitive information does not end when technology reaches the end of its useful life. IntegriTrade LLC provides certified data destruction services in Santa Rosa that help organizations eliminate data security risks, maintain compliance, and safeguard confidential information. Whether you need secure data wiping, hard drive destruction, or complete media disposal services, our team delivers trusted solutions designed to keep your business protected."
+        }
+      ]
+    },
+    {
+      slug: "it-asset-disposition",
+
+      title: "Santa Rosa IT Asset Disposition (ITAD) | Secure IT Asset Disposal Services",
+
+      shortDescription:
+        "Professional IT Asset Disposition services for businesses in Santa Rosa. Secure data sanitization, asset recovery, electronics recycling, and compliant IT equipment disposal.",
+
+      icon: "Laptop",
+
+      metaTitle:
+        "IT Asset Disposition (ITAD) Santa Rosa | Secure IT Asset Disposal Services",
+
+      metaDescription:
+        "Looking for IT Asset Disposition services in Santa Rosa, CA? IntegriTrade LLC provides secure IT asset disposal, certified data sanitization, asset recovery, and environmentally responsible electronics recycling.",
+
+      image: itAssetDisposition,
+
+      heroHeading: "Santa Rosa Secure IT Asset Disposition Services",
+
+      heroSubheading:
+        "Helping Santa Rosa businesses securely retire outdated technology through certified IT asset disposition, data protection, asset recovery, and environmentally responsible disposal solutions.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading: "Secure IT Asset Management for Santa Rosa Businesses",
+          body:
+            "Santa Rosa is home to a diverse economy that includes healthcare organizations, manufacturing facilities, professional service firms, educational institutions, and businesses supporting Sonoma County's renowned wine industry. As technology continues to evolve, organizations must regularly replace aging computers, servers, storage systems, and networking equipment. Without a structured disposal process, retired assets can create security risks, compliance concerns, and unnecessary operational costs. Professional IT Asset Disposition (ITAD) services provide businesses with a secure and efficient solution for managing outdated technology while protecting sensitive information."
+        },
+        {
+          heading: "Why Professional ITAD Matters in Santa Rosa",
+          body:
+            "Every retired laptop, server, or storage device may still contain confidential business information. Improper disposal can expose organizations to data breaches, legal liabilities, and compliance violations. Businesses throughout Santa Rosa are increasingly prioritizing secure technology lifecycle management to reduce risk and maintain operational integrity. A professional ITAD program ensures that equipment is tracked, data is securely removed, and assets are processed in accordance with industry standards and environmental regulations."
+        },
+        {
+          heading: "Our Comprehensive IT Asset Disposition Process",
+          body:
+            "IntegriTrade LLC delivers end-to-end IT Asset Disposition services designed to simplify technology retirement projects of every size. Our experienced team manages the entire process, ensuring complete accountability and transparency from collection through final processing. Whether your organization is conducting a routine technology refresh or decommissioning an entire facility, we provide customized solutions that align with your operational and compliance requirements.",
+          bullets: [
+            "Secure pickup and transportation",
+            "Complete asset inventory and auditing",
+            "Chain-of-custody documentation",
+            "Certified data sanitization",
+            "Asset remarketing and recovery",
+            "Responsible electronics recycling"
+          ]
+        },
+        {
+          heading: "What Equipment Can Be Processed Through ITAD?",
+          body:
+            "Our ITAD services cover a broad range of business technology assets including laptops, desktop computers, servers, storage devices, networking equipment, telecommunications hardware, monitors, printers, data center equipment, and various IT peripherals. Whether you're retiring a handful of devices or thousands of assets across multiple locations, we have the expertise and infrastructure to manage the project securely and efficiently."
+        },
+        {
+          heading: "Maximize Value While Reducing Risk",
+          body:
+            "Many organizations assume outdated equipment has little or no value. In reality, a significant amount of retired technology retains market demand. Through our asset recovery and remarketing programs, businesses can recover value from equipment that still has usable life. This helps offset upgrade costs while supporting sustainability goals. Equipment that no longer has resale value is responsibly recycled through certified channels, ensuring environmental compliance and reducing landfill waste."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for ITAD?",
+          body:
+            "Businesses throughout Santa Rosa trust IntegriTrade LLC because we combine security, compliance, value recovery, and environmental responsibility into one streamlined solution. Our team understands the unique needs of organizations across multiple industries and delivers customized services designed to minimize disruption while maximizing results.",
+          bullets: [
+            "Experienced IT asset disposition specialists",
+            "Secure and documented chain of custody",
+            "Certified data destruction options",
+            "Detailed reporting and compliance support",
+            "Asset recovery and remarketing expertise",
+            "Environmentally responsible recycling practices"
+          ]
+        },
+        {
+          heading: "Common Questions About IT Asset Disposition",
+          body:
+            "Find answers to frequently asked questions about IT Asset Disposition services in Santa Rosa.",
+          qna: [
+            {
+              question: "What is IT Asset Disposition (ITAD)?",
+              answer:
+                "IT Asset Disposition is the process of securely retiring, remarketing, recycling, or disposing of technology assets while protecting sensitive data and maintaining compliance."
+            },
+            {
+              question: "Can retired IT equipment still have value?",
+              answer:
+                "Yes. Many technology assets retain resale value and can generate financial returns through refurbishment and remarketing."
+            },
+            {
+              question: "Do you provide pickup services in Santa Rosa?",
+              answer:
+                "Yes. We provide secure pickup and transportation services for businesses throughout Santa Rosa and surrounding areas."
+            },
+            {
+              question: "How is sensitive data protected?",
+              answer:
+                "All data-bearing devices undergo certified sanitization procedures before assets are remarketed, recycled, or destroyed."
+            },
+            {
+              question: "Do you provide documentation for compliance purposes?",
+              answer:
+                "Yes. We provide detailed reporting, asset inventories, chain-of-custody records, and data destruction documentation when required."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Managing retired technology should never compromise your organization's security or compliance. IntegriTrade LLC provides trusted IT Asset Disposition services in Santa Rosa, helping businesses securely retire technology, recover value from assets, and maintain environmental responsibility. Whether you're replacing a few devices or managing a large-scale infrastructure refresh, our team delivers reliable solutions tailored to your business needs."
+        }
+      ]
+    },
+    {
+      slug: "asset-recovery",
+
+      title: "Santa Rosa Asset Recovery | Maximize Value from Retired IT Assets",
+
+      shortDescription:
+        "Professional asset recovery services for businesses in Santa Rosa. Recover value from retired IT equipment through secure refurbishment, remarketing, and lifecycle management solutions.",
+
+      icon: "DollarSign",
+
+      metaTitle:
+        "Asset Recovery Santa Rosa | IT Asset Recovery & Remarketing Services",
+
+      metaDescription:
+        "Looking for asset recovery services in Santa Rosa, CA? IntegriTrade LLC helps businesses recover value from retired IT equipment through secure refurbishment, remarketing, and responsible asset management.",
+
+      image: dataDestruction,
+
+      heroHeading: "Santa Rosa Professional Asset Recovery Services",
+
+      heroSubheading:
+        "Turn retired IT equipment into measurable business value through secure asset recovery, refurbishment, and remarketing solutions designed for Santa Rosa businesses.",
+
+      ctaText: "Get a Free Quote",
+
+      details: [
+        {
+          heading: "Recover Hidden Value from Retired Technology Assets",
+          body:
+            "Businesses across Santa Rosa invest heavily in technology infrastructure including computers, servers, storage systems, networking equipment, and telecommunications hardware. As organizations upgrade systems and modernize operations, large quantities of technology assets are retired long before they lose all market value. Without a structured asset recovery strategy, companies often miss opportunities to generate returns from equipment that can still be reused, refurbished, or resold. Professional asset recovery services help businesses maximize value while maintaining security and compliance throughout the process."
+        },
+        {
+          heading: "Why Asset Recovery Matters for Santa Rosa Businesses",
+          body:
+            "Santa Rosa's economy is supported by healthcare providers, manufacturers, educational institutions, wineries, agricultural businesses, and professional service organizations. These industries regularly refresh technology to improve productivity and security. Simply disposing of retired equipment can increase costs and create unnecessary waste. Asset recovery provides an opportunity to offset upgrade expenses while supporting environmental sustainability goals. By recovering value from retired technology, organizations can improve return on investment and reduce total lifecycle costs."
+        },
+        {
+          heading: "Our Comprehensive Asset Recovery Process",
+          body:
+            "IntegriTrade LLC provides a structured and transparent asset recovery process designed to maximize returns while protecting sensitive information. Every project begins with a detailed inventory and evaluation of assets. Equipment is assessed for remarketing potential, refurbishment opportunities, and residual value. Before any equipment is reintroduced into secondary markets, all data-bearing devices undergo secure sanitization procedures to ensure complete protection of business information.",
+          bullets: [
+            "Comprehensive asset inventory and auditing",
+            "Market value assessment",
+            "Secure data sanitization",
+            "Equipment refurbishment and testing",
+            "Remarketing through qualified sales channels",
+            "Detailed reporting and recovery documentation"
+          ]
+        },
+        {
+          heading: "What Assets Can Be Recovered?",
+          body:
+            "Many technology assets retain value even after they are no longer needed by your organization. We help businesses recover value from laptops, desktop computers, servers, storage systems, networking equipment, telecommunications hardware, monitors, and various electronic devices. Whether you're replacing a small number of assets or retiring equipment across multiple locations, our team can help maximize recovery opportunities."
+        },
+        {
+          heading: "Supporting Sustainability Through Asset Reuse",
+          body:
+            "Asset recovery is not only beneficial from a financial perspective but also supports environmental responsibility. Extending the useful life of technology equipment helps reduce electronic waste and conserves valuable resources. Rather than immediately recycling all retired assets, we prioritize refurbishment and reuse whenever practical. This approach supports sustainability initiatives while helping businesses achieve stronger environmental performance and corporate social responsibility goals."
+        },
+        {
+          heading: "Why Choose IntegriTrade LLC for Asset Recovery?",
+          body:
+            "Organizations throughout Santa Rosa trust IntegriTrade LLC because we combine security, transparency, compliance, and value recovery into one streamlined solution. Our team understands both the technical and financial aspects of IT asset management, allowing us to deliver customized recovery strategies that align with each client's objectives.",
+          bullets: [
+            "Experienced asset recovery specialists",
+            "Secure chain-of-custody procedures",
+            "Certified data destruction options",
+            "Transparent reporting and documentation",
+            "Strong resale and remarketing networks",
+            "Environmentally responsible practices"
+          ]
+        },
+        {
+          heading: "Common Questions About Asset Recovery",
+          body:
+            "Find answers to frequently asked questions about asset recovery services in Santa Rosa.",
+          qna: [
+            {
+              question: "What is asset recovery?",
+              answer:
+                "Asset recovery is the process of identifying, refurbishing, remarketing, and reselling retired technology assets to maximize financial returns while maintaining security and compliance."
+            },
+            {
+              question: "Can old IT equipment still have value?",
+              answer:
+                "Yes. Many retired technology assets retain market value depending on their condition, specifications, and current demand."
+            },
+            {
+              question: "How is data protected during asset recovery?",
+              answer:
+                "All data-bearing devices undergo secure sanitization procedures before equipment is refurbished, resold, or recycled."
+            },
+            {
+              question: "Do you provide reporting for recovered assets?",
+              answer:
+                "Yes. We provide detailed reporting that includes asset inventories, recovery values, and project summaries."
+            },
+            {
+              question: "What happens if equipment has no resale value?",
+              answer:
+                "Assets that cannot be remarketed are directed to certified recycling processes to ensure environmentally responsible disposal."
+            }
+          ]
+        },
+        {
+          heading: "Conclusion",
+          body:
+            "Your retired technology assets may still represent significant business value. IntegriTrade LLC provides professional asset recovery services in Santa Rosa, helping organizations recover value from retired equipment while maintaining security, compliance, and environmental responsibility. Whether you're upgrading infrastructure, relocating operations, or retiring legacy technology, our team delivers customized solutions designed to maximize returns and simplify the process."
+        }
+      ]
     }
   ]
 };
