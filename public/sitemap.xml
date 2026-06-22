@@ -74,7 +74,88 @@
   <url><loc>https://integritradellc.com/service-area/foster-city/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/oakland/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/fremont/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  
+
+  <!-- Asset Recovery -->
+  <url><loc>https://integritradellc.com/service-area/san-jose/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/mountain-view/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/los-gatos/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/sunnyvale/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/palo-alto/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/milpitas/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/campbell/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/menlo-park/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/redwood-city/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-mateo/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/berkeley/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/emeryville/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/alameda/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/pleasanton/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-rafael/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/santa-rosa/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/petaluma/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/walnut-creek/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/cupertino/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/santa-clara/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-bruno/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/south-san-francisco/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/foster-city/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/oakland/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/fremont/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- IT Asset Disposition -->
+  <url><loc>https://integritradellc.com/service-area/san-jose/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/mountain-view/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/los-gatos/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/sunnyvale/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/palo-alto/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/milpitas/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/campbell/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/menlo-park/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/redwood-city/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-mateo/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/berkeley/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/emeryville/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/alameda/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/pleasanton/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-rafael/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/santa-rosa/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/petaluma/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/walnut-creek/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/cupertino/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/santa-clara/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-bruno/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/south-san-francisco/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/foster-city/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/oakland/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/fremont/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Data Destruction Services -->
+  <url><loc>https://integritradellc.com/service-area/san-jose/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/mountain-view/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/los-gatos/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/sunnyvale/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/palo-alto/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/milpitas/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/campbell/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/menlo-park/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/redwood-city/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-mateo/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/berkeley/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/emeryville/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/alameda/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/pleasanton/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-rafael/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/santa-rosa/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/petaluma/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/walnut-creek/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/cupertino/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/santa-clara/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-bruno/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/south-san-francisco/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/foster-city/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/oakland/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/fremont/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
   <!-- Blogs -->
   <url><loc>https://integritradellc.com/blogs/decommission-old-computers-it-equipment/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/blogs/video-tape-data-destruction-services/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
