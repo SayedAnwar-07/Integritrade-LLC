@@ -1,7 +1,7 @@
 import { ServiceArea } from "./types/serviceAreaTypes";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
-import electronicRecycling from "@/public/services/serviceArea/electronicRecycling.jpeg";
+import electronicRecycling from "@/public/services/serviceArea/electronicRecycling.png";
 import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
 
 export const sanFranciscoData: ServiceArea = {

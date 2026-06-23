@@ -48,61 +48,59 @@ const standards = [
 export default function ServicesCertificate() {
   return (
     <div className="">
-      {/* Sticky left rail */}
-      <aside className="">
-        <div className="">
-          <ScrollLoader>
-              <SectionHeader
-                    eyebrow="Independently Verified"
-                    title="Audited against the standards our clients answer to."
-                    description="Five third-party frameworks govern how we operate from information governance to workforce safety. Each is reviewed annually by external assessors, not self-attested."
-                    linkText="View accreditation records"
-                    linkHref="/certifications/"
-                />  
-          </ScrollLoader>     
-        </div>
-      </aside>
+      <ScrollLoader>
+        {/* Sticky left rail */}
+        <aside className="">
+          <div className="">
+                <SectionHeader
+                      eyebrow="Independently Verified"
+                      title="Audited against the standards our clients answer to."
+                      description="Five third-party frameworks govern how we operate from information governance to workforce safety. Each is reviewed annually by external assessors, not self-attested."
+                      linkText="View accreditation records"
+                      linkHref="/certifications/"
+                  />    
+          </div>
+        </aside>
 
-      {/* Numbered framework list */}
-      <div className="mt-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {standards.map((s,i) => (
-            <ScrollLoader key={s.label} delay={i * 0.08}>
-              <div
-                key={s.label}
-                className=""
-              >
+        {/* Numbered framework list */}
+        <div className="mt-20">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {standards.map((s,i) => (
+                <div
+                  key={s.label}
+                  className=""
+                >
 
-                <div className="bg-white dark:bg-dark-secondary p-6 rounded-md shadow-lg">
-                  <div className="flex gap-2 items-center">
-                      <div className="relative h-16 w-16 shrink-0 sm:h-20 sm:w-20">
-                          <Image
-                          src={s.img}
-                          alt={s.label}
-                          fill
-                          className="object-contain"
-                          sizes="80px"
-                          />
-                      </div>
-                      <div>                        
-                          <h3 className="mt-1 text-xl leading-tight text-gray-900 dark:text-gray-50 sm:text-2xl">
-                          {s.label}
-                          </h3>
-                          <div className="text-xs font-medium uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400">
-                          {s.framework}
-                          </div>
-                      </div>
+                  <div className="bg-white dark:bg-dark-secondary p-6 rounded-md shadow-lg">
+                    <div className="flex gap-2 items-center">
+                        <div className="relative h-16 w-16 shrink-0 sm:h-20 sm:w-20">
+                            <Image
+                            src={s.img}
+                            alt={s.label}
+                            fill
+                            className="object-contain"
+                            sizes="80px"
+                            />
+                        </div>
+                        <div>                        
+                            <h3 className="mt-1 text-xl leading-tight text-gray-900 dark:text-gray-50 sm:text-2xl">
+                            {s.label}
+                            </h3>
+                            <div className="text-xs font-medium uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400">
+                            {s.framework}
+                            </div>
+                        </div>
+                    </div>
+
+                    <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300">
+                      {s.purpose}
+                    </p>
                   </div>
-
-                  <p className="mt-3 text-sm leading-6 text-gray-600 dark:text-gray-300">
-                    {s.purpose}
-                  </p>
                 </div>
-              </div>
-            </ScrollLoader>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      </ScrollLoader>
     </div>
   )
 }
