@@ -76,44 +76,45 @@ export default async function AreaPage({
 
       {/* Services Section */}
       <section className="max-w-7xl mx-auto px-4 py-12 sm:py-16">
-        {hasServices ? (
-          <>
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {area.services.map((service, index) => (
-                <ScrollLoader key={service.slug} delay={index * 0.08}>
-                  <ServicesBlogCard
-                    key={service.slug}
-                    service={service}
-                    areaSlug={area.slug}
-                  />
-                </ScrollLoader>
-              ))}
+        <ScrollLoader>
+          {hasServices ? (
+            <>
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {area.services.map((service, index) => (
+                    <ServicesBlogCard
+                      key={service.slug}
+                      service={service}
+                      areaSlug={area.slug}
+                    />
+                ))}
+                
+              </div>
+            </>
+          ) : (
+            <div className="text-center py-16 sm:py-20 px-2">
+              <div className="w-20 h-20 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center mx-auto mb-6">
+                <MapPin className="w-10 h-10 text-emerald-500" />
+              </div>
+
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 break-words">
+                Services Coming to {area.name} Soon
+              </h2>
+
+              <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-8 text-base sm:text-lg leading-relaxed break-words">
+                We&apos;re expanding our services to {area.name}. Contact us to
+                discuss your needs — we may already be able to help.
+              </p>
+
+              <Link
+                href="/service-book/"
+                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 sm:px-8 py-3.5 rounded-xl transition-colors duration-200 shadow-md"
+              >
+                Contact Us
+                <ArrowRight className="w-4 h-4 shrink-0" />
+              </Link>
             </div>
-          </>
-        ) : (
-          <div className="text-center py-16 sm:py-20 px-2">
-            <div className="w-20 h-20 rounded-full bg-emerald-50 dark:bg-emerald-900/30 flex items-center justify-center mx-auto mb-6">
-              <MapPin className="w-10 h-10 text-emerald-500" />
-            </div>
-
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 break-words">
-              Services Coming to {area.name} Soon
-            </h2>
-
-            <p className="text-gray-600 dark:text-gray-400 max-w-md mx-auto mb-8 text-base sm:text-lg leading-relaxed break-words">
-              We&apos;re expanding our services to {area.name}. Contact us to
-              discuss your needs — we may already be able to help.
-            </p>
-
-            <Link
-              href="/service-book/"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-6 sm:px-8 py-3.5 rounded-xl transition-colors duration-200 shadow-md"
-            >
-              Contact Us
-              <ArrowRight className="w-4 h-4 shrink-0" />
-            </Link>
-          </div>
-        )}
+          )}
+        </ScrollLoader>
       </section>
 
       {/* my certificates */}
@@ -125,7 +126,7 @@ export default async function AreaPage({
       <section className="">
         <div className="mx-auto max-w-7xl">
           <ScrollLoader>
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:p-16">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 p-4 lg:p-12">
               <div className="lg:col-span-7">
                 <div className="flex items-center gap-3 text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
                   <span className="h-px w-8 bg-primary" />
