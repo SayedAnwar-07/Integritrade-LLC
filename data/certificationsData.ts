@@ -1,8 +1,8 @@
-import r2v3 from "@/public/certificates/Amtivo-(USA)-Inc-Certificate.jpg";
-import iso9001 from "@/public/certificates/Integritrade-LLC-QMS-2.jpg";
-import iso14001 from "@/public/certificates/Integritrade-LLC-EMS-2.jpg"
-import iso45001 from "@/public/certificates/Integritrade-LLC-OHS-2.jpg";
-import iso27001 from "@/public/certificates/Integritrade-LLC-ISO 27001-1363.jpg";
+import r2v3 from "@/public/certificates/Integritrade LLC R2v3 Electronics Recycling Data Security and ITAD.jpg";
+import iso9001 from "@/public/certificates/Integritrade LLC ISO 9001 Electronics Recycling and ITAD QMS.jpg";
+import iso14001 from "@/public/certificates/Integritrade LLC ISO 14001 Electronics Recycling and ITAD EMS.jpg";
+import iso45001 from "@/public/certificates/Integritrade LLC ISO 45001 Electronics Recycling and ITAD OHS.jpg";
+import iso27001 from "@/public/certificates/Integritrade LLC ISO IEC 27001 Electronics Recycling and ITAD ISMS.jpg";
 
 export const certificationsData = [
   {
@@ -40,7 +40,7 @@ export const certificationsData = [
     company: "Amtivo (USA) Inc. - ANAB Accredited",
     company_description: "Certification for sustainable electronics recycling, downstream vendor management, data sanitization, testing and repair of mobile devices and consumer electronics.",
     image: r2v3,
-    pdf: "/certificates/Amtivo-(USA)-Inc-Certificate.pdf",
+    pdf: "/certificates/Integritrade%20LLC%20R2v3%20Electronics%20Recycling%20Data%20Security%20and%20ITAD.pdf",
   },
   {
     id: 2,
@@ -77,7 +77,7 @@ export const certificationsData = [
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for quality management in electronic goods recycling, including repair, testing, data sanitization, and resale operations.",
     image: iso9001,
-    pdf: "/certificates/Integritrade-LLC-QMS-2.pdf",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%209001%20Electronics%20Recycling%20and%20ITAD%20QMS.pdf",
   },
   {
     id: 3,
@@ -114,7 +114,7 @@ export const certificationsData = [
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for environmental management in electronic goods recycling, repair, testing, data sanitization, and resale operations.",
     image: iso14001,
-    pdf: "/certificates/Integritrade-LLC-EMS-2.pdf",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%2014001%20Electronics%20Recycling%20and%20ITAD%20EMS.pdf",
   },
   {
     id: 4,
@@ -151,7 +151,7 @@ export const certificationsData = [
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for occupational health and safety management in electronic goods recycling operations.",
     image: iso45001,
-    pdf: "/certificates/Integritrade-LLC-OHS-2.pdf",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%2045001%20Electronics%20Recycling%20and%20ITAD%20OHS.pdf",
   },
   {
     id: 5,
@@ -188,7 +188,7 @@ export const certificationsData = [
     company: "SCK Certifications Pvt. Ltd.",
     company_description: "Certification for information security management in electronic goods recycling, repair, test, data sanitization, and resale operations.",
     image: iso27001,
-    pdf: "/certificates/Integritrade-LLC-ISO%2027001-1363.pdf",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%20IEC%2027001%20Electronics%20Recycling%20and%20ITAD%20ISMS.pdf",
   },
 ];
 

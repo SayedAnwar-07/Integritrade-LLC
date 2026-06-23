@@ -50,19 +50,20 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
               href={certification.pdf}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Open ${certification.header} certificate PDF in a new tab`}
+              title={`View ${certification.header} Certificate PDF`}
+              aria-label={`View ${certification.header} Certificate PDF`}
               className="group/pdf block bg-secondary dark:bg-dark rounded-md overflow-hidden cursor-pointer"
             >
               <div className="aspect-[4/5] w-full">
                 <Image
                   src={certification.image}
-                  alt={`${certification.header} certificate — ${certification.company}`}
+                  alt={`${certification.company} ${certification.header} Certificate`}
                   fill
                   className="object-contain p-4 sm:p-6 rounded-md transition-transform duration-300 group-hover/pdf:scale-[1.02]"
                   priority={index < 2}
                 />
               </div>
-            </a>
+            </a>            
           </ScrollLoader>
         </div>
 
