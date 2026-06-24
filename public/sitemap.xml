@@ -34,13 +34,13 @@
   <!-- Service Area -->
   <url><loc>https://integritradellc.com/service-area/fresno/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/fresno/hard-drive-shredding/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://integritradellc.com/service-area/fresno/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/fresno/electronics-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/fresno/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <url><loc>https://integritradellc.com/service-area/san-francisco/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/san-francisco/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/san-francisco/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://integritradellc.com/service-area/san-francisco/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-francisco/electronics-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 
   <url><loc>https://integritradellc.com/service-area/san-jose/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/mountain-view/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -59,7 +59,7 @@
   <url><loc>https://integritradellc.com/service-area/san-rafael/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/santa-rosa/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/petaluma/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://integritradellc.com/service-area/clovis/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/clovis/electronics-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/sacramento/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/bakersfield/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/stockton/e-waste-recycling/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
