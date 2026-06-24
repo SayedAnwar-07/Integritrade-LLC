@@ -7,9 +7,6 @@
 ================================ */
 @layer base {
   :root {
-    /* Brand Colors
-       NOTE: --brand-primary darkened (L 38% -> 30%) for WCAG 2.1 AA contrast.
-       White text on this green is ~5.2:1 (was 3.43:1, which failed 4.5:1). */
     --brand-primary: 136 64% 30%;
     --brand-primary-hover: 136 64% 25%;
     --brand-primary-border: 136 60% 34%;
@@ -18,6 +15,11 @@
     --brand-secondary: 30 30% 95%;
     --brand-secondary-hover: 30 25% 90%;
     --brand-secondary-border: 30 20% 85%;
+
+    /* brand secondary color */
+    --brand-accent: 209 57% 49%;
+    --brand-accent-hover: 209 57% 44%;
+    --brand-accent-border: 209 45% 40%;
 
     /* Dark system */
     --dark-bg: 0 0% 5%;
@@ -151,6 +153,7 @@
 .bg-brand-hover:hover {
   background-color: hsl(var(--brand-primary-hover));
 }
+
 @layer utilities {
   .bg-dark {
     background-color: hsl(var(--dark-bg));
@@ -158,6 +161,18 @@
 
   .bg-dark-secondary {
     background-color: hsl(var(--dark-secondary));
+  }
+
+  .bg-brand-accent {
+    background-color: hsl(var(--brand-accent));
+  }
+
+  .bg-brand-accent-hover:hover {
+    background-color: hsl(var(--brand-accent-hover));
+  }
+
+  .border-brand-accent {
+    border-color: hsl(var(--brand-accent-border));
   }
 }
 

@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
-  ArrowUpRight,
   Check,
 } from "lucide-react";
 import ServicingArea from "@/components/service-area/ServicingArea";
@@ -9,6 +7,8 @@ import PageHeader from "@/components/shared/PageHeader";
 import WhyChoose from "@/components/home/WhyChoose";
 import ServiceMap from "@/components/service-area/ServiceMap";
 import ScrollLoader from "@/components/shared/ScrollLoader";
+import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
+import OutlineButton from "@/components/shared/buttons/OutlineButton";
 
 
 export const metadata: Metadata = {
@@ -190,20 +190,15 @@ export default function ServiceAreaPage() {
               </div>
 
               <div className="flex flex-col justify-center gap-4 lg:col-span-5">
-                <Link
-                  href="/service-book/"
-                  className="inline-flex items-center justify-between gap-2 rounded-md bg-primary px-5 py-3.5 text-sm font-medium text-white shadow-sm transition hover:bg-emerald-700"
-                >
-                  Get a free quote
-                  <ArrowUpRight className="h-4 w-4" />
-                </Link>
-                <Link
-                  href="/services/"
-                  className="inline-flex items-center justify-between gap-2 rounded-md border border-gray-300 bg-transparent px-5 py-3.5 text-sm font-medium text-gray-900 transition hover:border-gray-400 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-100 dark:hover:border-gray-600 dark:hover:bg-gray-900/40"
-                >
-                  Explore services
-                  <ArrowUpRight className="h-4 w-4" />
-                </Link>
+
+                <OutlineButton href="/services/" testId="button-learn-more">
+                  View Service Details
+                </OutlineButton>
+
+                <PrimaryButton href="/service-book/" testId="button-get-quote">
+                  Get a Free Quote
+                </PrimaryButton>
+
                 <p className="mt-2 text-xs leading-5 text-gray-500 dark:text-gray-400">
                   Talk directly to the team that will handle your equipment. No
                   call centers, no account-manager carousel.

@@ -32,43 +32,51 @@ export default function OutlineButton({
 
   const content = (
     <>
-      <span className="relative">{children}</span>
+      <span className="relative z-10">{children}</span>
 
-      <span className="inline-flex items-center justify-center w-4 h-4 rounded-md transition-colors duration-300">
+      <span className="relative z-10 inline-flex items-center justify-center w-4 h-4 transition-colors duration-300 overflow-hidden">
         {loading ? (
-          <Loader2 className="h-2.5 w-2.5 animate-spin text-gray-700 dark:text-gray-300" strokeWidth={2.5} />
+          <Loader2 className="h-2.5 w-2.5 animate-spin" strokeWidth={2.5} />
         ) : (
-          <ChevronRight
-            className="h-2.5 w-2.5 text-gray-700 dark:text-gray-300 group-hover:text-emerald-700 dark:group-hover:text-emerald-400
-            transition-all duration-500 ease-out"
-            strokeWidth={2.5}
-          />
+          <>
+            <ChevronRight
+              className="h-2.5 w-2.5 absolute transition-all duration-500 ease-out group-hover:opacity-0"
+              strokeWidth={2.5}
+            />
+            <ChevronRight
+              className="h-2.5 w-2.5 absolute transition-all duration-500 ease-out opacity-0
+              group-hover:opacity-100"
+              strokeWidth={2.5}
+            />
+          </>
         )}
       </span>
+
+      <span
+        className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out bg-gradient-to-r from-transparent via-white/15 to-transparent pointer-events-none"
+        aria-hidden
+      />
     </>
   )
 
   const classes = cn(
-    "px-4 py-2.5 text-xs font-semibold rounded-md h-auto",
-    "border border-gray-300 bg-transparent text-black",
-    "dark:bg-dark-secondary dark:border-gray-700 dark:text-gray-200",
-    "transition-all duration-300 hover:scale-[1.02]",
+    "!bg-brand-accent hover:!bg-[hsl(var(--brand-accent-hover))] !text-white",
+    "px-4 py-2.5 text-xs font-semibold tracking-wide rounded-md",
+    "relative overflow-hidden transition-all duration-300 hover:scale-[1.01]",
     "active:scale-[0.97] active:brightness-90",
-    "hover:border-emerald-600/60 hover:bg-emerald-50/50",
-    "dark:hover:border-emerald-400/40 dark:hover:bg-emerald-900/10",
-    "group relative",
+    "group h-auto",
     "disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100",
     className
   )
 
   if (href) {
     return (
-      <Button asChild variant="outline" className={classes} data-testid={testId}>
+      <Button asChild className={classes} data-testid={testId}>
         <Link
           href={href}
           target={external ? "_blank" : undefined}
           rel={external ? "noopener noreferrer" : undefined}
-          className="inline-flex items-center gap-2"
+          className="inline-flex items-center justify-between w-full lg:w-auto lg:justify-center gap-2" // inline-flex items-center gap-2
         >
           {content}
         </Link>
@@ -78,11 +86,10 @@ export default function OutlineButton({
 
   return (
     <Button
-      variant="outline"
       type={type}
       onClick={onClick}
       disabled={isDisabled}
-      className={cn(classes, "inline-flex items-center gap-2")}
+      className={cn(classes, "inline-flex items-center justify-between w-full lg:w-auto lg:justify-center gap-2")}
       data-testid={testId}
     >
       {content}

@@ -125,14 +125,14 @@ export default function About() {
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 flex-shrink-0">
+            <div className="flex flex-col gap-3 flex-shrink-0 md:min-w-96">
+              <OutlineButton href="/about" testId="button-learn-more">
+                Why Choose Us
+              </OutlineButton>
+
               <PrimaryButton href="/service-book" testId="button-get-quote">
                 Get a Free Quote
               </PrimaryButton>
-
-              <OutlineButton href="/about" testId="button-learn-more">
-                Learn More About Us
-              </OutlineButton>
             </div>
           </div>
         </ScrollLoader>
