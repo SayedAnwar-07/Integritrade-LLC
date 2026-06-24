@@ -336,13 +336,13 @@ export const fresnoData: ServiceArea = {
       heroHeading:
         "The Ultimate Guide to Electronics Recycling in Fresno: Why Certification Matters",
       heroSubheading:
-        "For businesses across Fresno and the wider Central Valley, deciding how to retire old IT assets and electronic waste is more than a housekeeping task — it is a security, compliance, and environmental decision. Whether you are decommissioning a data center, refreshing an office full of laptops, or simply looking for responsible e-waste disposal, choosing the right electronics recycling partner in Fresno is essential.",
+        "For businesses across Fresno and the wider Central Valley, deciding how to retire old IT assets and electronic waste is more than a housekeeping task. It is a security, compliance, and environmental decision. Whether you are decommissioning a data center, refreshing an office full of laptops, or simply looking for responsible e-waste disposal, choosing the right electronics recycling partner in Fresno is essential.",
       ctaText: "Get a Free Quote",
       details: [
         {
           heading: "Why the Right Recycling Partner Matters in Fresno",
           body:
-            "From downtown Fresno offices and healthcare providers to agribusiness operations and Fresno State research facilities, organizations here generate a steady stream of retired technology that must be handled securely. Improper disposal of electronics not only harms the environment but also exposes your organization to serious data breach risks and regulatory penalties. In this guide, we explain how to choose a proper electronics recycling firm, why industry certifications are critical, and why Integritrade — headquartered right here in Fresno — stands out as the premier choice for secure, compliant, and sustainable IT Asset Disposition (ITAD) and electronics recycling."
+            "From downtown Fresno offices and healthcare providers to agribusiness operations and Fresno State research facilities, organizations here generate a steady stream of retired technology that must be handled securely. Improper disposal of electronics not only harms the environment but also exposes your organization to serious data breach risks and regulatory penalties. In this guide, we explain how to choose a proper electronics recycling firm, why industry certifications are critical, and why Integritrade, headquartered right here in Fresno, stands out as the premier choice for secure, compliant, and sustainable IT Asset Disposition (ITAD) and electronics recycling."
         },
         {
           heading: "The Risks of Uncertified Electronics Recycling",
@@ -357,12 +357,12 @@ export const fresnoData: ServiceArea = {
         {
           heading: "Why EPA-Recognized Certifications Matter",
           body:
-            "When evaluating electronics recycling in Fresno, the most important factor to look for is third-party certification. The U.S. Environmental Protection Agency (EPA) strongly encourages businesses to use certified electronics recyclers, specifically recognizing the Responsible Recycling (R2) standard. The R2 standard, currently in its rigorous R2v3 iteration, is the premier global certification for electronics reuse and recycling. According to the EPA, certified recyclers have demonstrated through independent audits that they maximize reuse, minimize environmental exposure, ensure safe downstream management, and require the complete destruction of all data on used electronics. When a facility is R2v3 certified, it means their entire process — from the moment an asset leaves your Fresno location to its final disposition — is heavily regulated, tracked, and audited."
+            "When evaluating electronics recycling in Fresno, the most important factor to look for is third-party certification. The U.S. Environmental Protection Agency (EPA) strongly encourages businesses to use certified electronics recyclers, specifically recognizing the Responsible Recycling (R2) standard. The R2 standard, currently in its rigorous R2v3 iteration, is the premier global certification for electronics reuse and recycling. According to the EPA, certified recyclers have demonstrated through independent audits that they maximize reuse, minimize environmental exposure, ensure safe downstream management, and require the complete destruction of all data on used electronics. When a facility is R2v3 certified, it means their entire process, from the moment an asset leaves your Fresno location to its final disposition, is heavily regulated, tracked, and audited."
         },
         {
           heading: "Integritrade: The Certified Choice for Fresno",
           body:
-            "While some of the largest national electronics recycling corporations focus primarily on high-volume commodity processing, businesses in Fresno often require a more tailored, accountable, and transparent approach to their ITAD needs. As a locally headquartered company serving all of California — including Clovis, Madera, Visalia, and the surrounding Central Valley — Integritrade provides enterprise-grade security and compliance without treating your organization like just another number on a spreadsheet. We hold a comprehensive suite of the industry's most demanding certifications:",
+            "While some of the largest national electronics recycling corporations focus primarily on high-volume commodity processing, businesses in Fresno often require a more tailored, accountable, and transparent approach to their ITAD needs. As a locally headquartered company serving all of California, including Clovis, Madera, Visalia, and the surrounding Central Valley, Integritrade provides enterprise-grade security and compliance without treating your organization like just another number on a spreadsheet. We hold a comprehensive suite of the industry's most demanding certifications:",
           bullets: [
             "R2v3 Certified: Guaranteeing the highest standards in environmental responsibility, data security, and downstream accountability.",
             "ISO 14001 (Environmental Management): Ensuring sustainable operations that minimize environmental footprint.",
@@ -378,7 +378,7 @@ export const fresnoData: ServiceArea = {
           bullets: [
             "Unbroken Chain of Custody: We provide serialized accountability from your loading dock in Fresno to the downstream processor. For ITAD projects, every asset is scanned, with no black boxes in the audit trail.",
             "100% Data Destruction Guarantee: Whether you require NIST 800-88 compliant wiping, 2mm physical shredding, or videotaped destruction, our data destruction services are built to withstand rigorous audits.",
-            "Comprehensive Reporting: We provide serialized Certificates of Destruction, remarketing reports, and R2v3 recycling documentation — the exact proof your compliance officers need.",
+            "Comprehensive Reporting: We provide serialized Certificates of Destruction, remarketing reports, and R2v3 recycling documentation, the exact proof your compliance officers need.",
             "Value Recovery: For newer assets, our Full ITAD Package includes refurbishment and remarketing, letting your organization recover financial value through revenue splits or upfront buybacks.",
             "Background-Checked Personnel: Your sensitive assets are handled exclusively by verified professionals in our 24/7 video-monitored facility."
           ]
@@ -386,7 +386,7 @@ export const fresnoData: ServiceArea = {
         {
           heading: "Full-Service Solutions for Every Need",
           body:
-            "Whether your organization needs Basic Recycling for previously sanitized equipment, compliance-grade Data Destruction, or a Full ITAD Package with value recovery, Integritrade has a tailored solution. We even offer Demanufacturing & Prototype Destruction for highly sensitive intellectual property that must be physically destroyed with witnessed oversight. Don't leave your data security and environmental compliance to chance with uncertified vendors — choose the certified, secure, and accountable partner for electronics recycling in Fresno."
+            "Whether your organization needs Basic Recycling for previously sanitized equipment, compliance-grade Data Destruction, or a Full ITAD Package with value recovery, Integritrade has a tailored solution. We even offer Demanufacturing & Prototype Destruction for highly sensitive intellectual property that must be physically destroyed with witnessed oversight. Don't leave your data security and environmental compliance to chance with uncertified vendors. Choose the certified, secure, and accountable partner for electronics recycling in Fresno."
         },
         {
           heading: "Frequently Asked Questions About Electronics Recycling in Fresno",
