@@ -28,6 +28,7 @@ import {
   Shield,
   Hammer,
   Scale,
+  ChevronRight,
 } from 'lucide-react'
 import { ModeToggle } from './ModeToggle'
 import PrimaryButton from './buttons/PrimaryButton'
@@ -572,34 +573,26 @@ export default function Navbar() {
           </nav>
 
           {/* Footer CTAs */}
-          <div className="p-5 space-y-3 flex-shrink-0 border-t border-gray-100 dark:border-white/5">
-            <Link
-              href="/service-book"
-              onClick={() => setIsMenuOpen(false)}
-              className="group relative flex items-center justify-center gap-2 w-full overflow-hidden rounded-md bg-primary px-5 py-3.5 text-[14px] font-semibold text-white tracking-tight shadow-[0_4px_20px_-4px_rgba(44,181,99,0.4)] transition-all"
-            >
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-              <span className="relative">Contact Us</span>
-              <ArrowRight className="relative w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
-            </Link>
+          <div className="p-5 space-y-3 flex-shrink-0 border-t border-gray-100 dark:border-white/5 flex flex-col">
+            <OutlineButton href="/fresno-electronics-recycling/" testId="button-get-quote">
+              Fresno Public E-waste Drop Off
+            </OutlineButton>
 
-            <Link
-              href="/fresno-electronics-recycling/"
-              onClick={() => setIsMenuOpen(false)}
-              className="group relative flex items-center justify-center gap-2 w-full overflow-hidden rounded-md bg-primary px-5 py-3.5 text-[14px] font-semibold text-white tracking-tight shadow-[0_4px_20px_-4px_rgba(44,181,99,0.4)] transition-all"
-            >
-              <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
-              <span className="relative">Fresno Fresno Public E-waste Drop Off</span>
-              <ArrowRight className="relative w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={2.5} />
-            </Link>
+            <PrimaryButton href="/service-book" testId="button-get-quote">
+              Contact Us
+            </PrimaryButton>
 
             <Link
               href="tel:+15593254813"
-              className="group relative flex items-center justify-center gap-2 w-full overflow-hidden rounded-md border border-primary/30 hover:bg-primary/5 hover:border-primary/50 text-primary px-5 py-3.5 text-[14px] font-medium tracking-tight transition-all"
+              className="group relative flex w-full items-center justify-between overflow-hidden rounded-md border border-primary/30 hover:bg-primary/5 hover:border-primary/50 text-primary px-5 py-2.5 text-[14px] font-medium tracking-tight transition-all"
               onClick={() => setIsMenuOpen(false)}
             >
-              <Phone className="w-4 h-4" strokeWidth={2.2} />
               <span>(559) 325-4813</span>
+
+              <Phone
+                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
+                strokeWidth={2.2}
+              />
             </Link>
           </div>
         </div>

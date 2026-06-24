@@ -59,8 +59,9 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
                   src={certification.image}
                   alt={`${certification.company} ${certification.header} Certificate`}
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-contain p-4 sm:p-6 rounded-md transition-transform duration-300 group-hover/pdf:scale-[1.02]"
-                  priority={index < 2}
+                  priority={index === 0}
                 />
               </div>
             </a>            

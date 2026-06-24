@@ -482,13 +482,15 @@ export default function AboutPage() {
                 </p>
                 {/* CTA Buttons */}
                   <div className="flex flex-col sm:flex-row gap-4 mt-10">
-                      <PrimaryButton href="/service-book" testId="button-get-quote">
-                          Schedule a Tour
-                      </PrimaryButton>
-                
-                      <OutlineButton href="/services" testId="button-learn-more">
-                          Explore Services
-                      </OutlineButton>
+
+                    <OutlineButton href="/services" testId="button-learn-more">
+                      View Service Details
+                    </OutlineButton>
+
+                    <PrimaryButton href="/service-book" testId="button-get-quote">
+                      Schedule a Tour
+                    </PrimaryButton>
+              
                   </div>
               </div>
 

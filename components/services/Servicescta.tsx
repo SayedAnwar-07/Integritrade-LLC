@@ -57,7 +57,7 @@ export default function ServicesCTA() {
               <div className="flex flex-col gap-5">
                   <Link
                     href="/service-book/"
-                    className="group inline-flex items-center justify-between gap-4 bg-primary hover:bg-emerald-600 px-7 py-5 rounded-md font-medium text-base transition-all duration-300 shadow-lg hover:shadow-emerald-500/20"
+                    className="group text-white inline-flex items-center justify-between gap-4 bg-primary hover:bg-primary/90 px-7 py-5 rounded-md font-medium text-base transition-all duration-300 shadow-lg hover:shadow-emerald-500/20"
                   >
                     <span className="flex flex-col items-start">
                       <span className="font-mono text-[10px] uppercase tracking-[0.22em] ">

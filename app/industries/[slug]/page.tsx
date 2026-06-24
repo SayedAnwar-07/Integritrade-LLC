@@ -220,13 +220,14 @@ export default async function IndustryPage(props: {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
+
+                <OutlineButton href="/services" testId="button-learn-more">
+                  See How We Can Help
+                </OutlineButton>
+                
                 <PrimaryButton href="/service-book" testId="button-get-quote">
                   Book a Service
                 </PrimaryButton>
-
-                <OutlineButton href="/services" testId="button-learn-more">
-                  Explore Services
-                </OutlineButton>
               </div>
             </div>
 

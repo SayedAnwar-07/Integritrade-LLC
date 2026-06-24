@@ -45,13 +45,14 @@ export default function Hero() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
-                <PrimaryButton href="/service-book/" testId="button-get-quote">
-                  Get a Free Quote
-                </PrimaryButton>
-
                 <OutlineButton href="/fresno-electronics-recycling/" testId="button-learn-more">
                   See How It Works
                 </OutlineButton>
+
+                <PrimaryButton href="/service-book/" testId="button-get-quote">
+                  Get a Free Quote
+                </PrimaryButton>
+                
               </div>
             </div>
 
