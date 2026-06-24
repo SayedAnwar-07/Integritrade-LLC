@@ -288,7 +288,7 @@ export const sanFranciscoData: ServiceArea = {
       heroHeading:
         "Electronics Recycling in San Francisco: A Business Guide to Secure, Certified IT Disposal",
       heroSubheading:
-        "In a city built on technology and finance, San Francisco organizations retire IT equipment faster than almost anywhere in the country — and every decommissioned device is a potential liability. Whether you are upgrading a data center in SoMa, refreshing an office full of laptops in the Financial District, or simply looking for responsible e-waste disposal, choosing the right electronics recycling partner in San Francisco is essential.",
+        "In a city built on technology and finance, San Francisco organizations retire IT equipment faster than almost anywhere in the country, and every decommissioned device is a potential liability. Whether you are upgrading a data center in SoMa, refreshing an office full of laptops in the Financial District, or simply looking for responsible e-waste disposal, choosing the right electronics recycling partner in San Francisco is essential.",
       ctaText: "Get a Free Quote",
       details: [
         {
@@ -309,12 +309,12 @@ export const sanFranciscoData: ServiceArea = {
         {
           heading: "The Certifications That Actually Protect Your Business",
           body:
-            "When evaluating electronics recycling in San Francisco, the most important factor to look for is third-party certification. The U.S. Environmental Protection Agency (EPA) strongly encourages businesses to use certified electronics recyclers, specifically recognizing the Responsible Recycling (R2) standard. The R2 standard, currently in its rigorous R2v3 iteration, is the premier global certification for electronics reuse and recycling. According to the EPA, certified recyclers have demonstrated through independent audits that they maximize reuse, minimize environmental exposure, ensure safe downstream management, and require the complete destruction of all data on used electronics. When a facility is R2v3 certified, it means their entire process — from the moment an asset leaves your San Francisco location to its final disposition — is heavily regulated, tracked, and audited."
+            "When evaluating electronics recycling in San Francisco, the most important factor to look for is third-party certification. The U.S. Environmental Protection Agency (EPA) strongly encourages businesses to use certified electronics recyclers, specifically recognizing the Responsible Recycling (R2) standard. The R2 standard, currently in its rigorous R2v3 iteration, is the premier global certification for electronics reuse and recycling. According to the EPA, certified recyclers have demonstrated through independent audits that they maximize reuse, minimize environmental exposure, ensure safe downstream management, and require the complete destruction of all data on used electronics. When a facility is R2v3 certified, it means their entire process, from the moment an asset leaves your San Francisco location to its final disposition, is heavily regulated, tracked, and audited."
         },
         {
           heading: "Why San Francisco Businesses Choose Integritrade",
           body:
-            "While some of the largest national electronics recycling corporations focus primarily on high-volume commodity processing, businesses in San Francisco often require a more tailored, accountable, and transparent approach to their ITAD needs. Headquartered in Fresno and serving all of California — including San Francisco and the greater Bay Area, from the Peninsula to the East Bay — Integritrade provides enterprise-grade security and compliance without treating your organization like just another number on a spreadsheet. We hold a comprehensive suite of the industry's most demanding certifications:",
+            "While some of the largest national electronics recycling corporations focus primarily on high-volume commodity processing, businesses in San Francisco often require a more tailored, accountable, and transparent approach to their ITAD needs. Headquartered in Fresno and serving all of California, including San Francisco and the greater Bay Area, from the Peninsula to the East Bay, Integritrade provides enterprise-grade security and compliance without treating your organization like just another number on a spreadsheet. We hold a comprehensive suite of the industry's most demanding certifications:",
           bullets: [
             "R2v3 Certified: Guaranteeing the highest standards in environmental responsibility, data security, and downstream accountability.",
             "ISO 14001 (Environmental Management): Ensuring sustainable operations that minimize environmental footprint.",
@@ -330,7 +330,7 @@ export const sanFranciscoData: ServiceArea = {
           bullets: [
             "Unbroken Chain of Custody: We provide serialized accountability from your loading dock in San Francisco to the downstream processor. For ITAD projects, every asset is scanned, with no black boxes in the audit trail.",
             "100% Data Destruction Guarantee: Whether you require NIST 800-88 compliant wiping, 2mm physical shredding, or videotaped destruction, our data destruction services are built to withstand rigorous audits.",
-            "Comprehensive Reporting: We provide serialized Certificates of Destruction, remarketing reports, and R2v3 recycling documentation — the exact proof your compliance officers need.",
+            "Comprehensive Reporting: We provide serialized Certificates of Destruction, remarketing reports, and R2v3 recycling documentation, the exact proof your compliance officers need.",
             "Value Recovery: For newer assets, our Full ITAD Package includes refurbishment and remarketing, letting your organization recover financial value through revenue splits or upfront buybacks.",
             "Background-Checked Personnel: Your sensitive assets are handled exclusively by verified professionals in our 24/7 video-monitored facility."
           ]
@@ -338,7 +338,7 @@ export const sanFranciscoData: ServiceArea = {
         {
           heading: "Tailored ITAD Solutions for Every Organization",
           body:
-            "Whether your organization needs Basic Recycling for previously sanitized equipment, compliance-grade Data Destruction, or a Full ITAD Package with value recovery, Integritrade has a tailored solution. We even offer Demanufacturing & Prototype Destruction for highly sensitive intellectual property that must be physically destroyed with witnessed oversight. Don't leave your data security and environmental compliance to chance with uncertified vendors — choose the certified, secure, and accountable partner for electronics recycling in San Francisco."
+            "Whether your organization needs Basic Recycling for previously sanitized equipment, compliance-grade Data Destruction, or a Full ITAD Package with value recovery, Integritrade has a tailored solution. We even offer Demanufacturing & Prototype Destruction for highly sensitive intellectual property that must be physically destroyed with witnessed oversight. Don't leave your data security and environmental compliance to chance with uncertified vendors. Choose the certified, secure, and accountable partner for electronics recycling in San Francisco."
         },
         {
           heading: "San Francisco Electronics Recycling: Common Questions",
