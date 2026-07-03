@@ -6,6 +6,8 @@ import Iso14001 from "@/public/ISO/ISO-14001.webp";
 import Iso27001 from "@/public/ISO/ISO-27001.webp";
 import Iso45001 from "@/public/ISO/ISO-45001.webp";
 import R2v3 from "@/public/ISO/R2V3_certified_logo.webp";
+import Nist from "@/public/ISO/nist-800-88.jpg"
+
 import { Separator } from "../ui/separator";
 import ScrollLoader from "../shared/ScrollLoader";
 
@@ -45,6 +47,13 @@ const items = [
     desc: "Safe handling, ergonomics, and incident prevention across every facility.",
     link: "/certifications/",
   },
+  {
+    index: 6,
+    img: Nist,
+    title: "NIST 800-88 Compliance",
+    desc: "Industry-standard media sanitization and secure data destruction following NIST 800-88 guidelines.",
+    link: "/certifications/",
+  },
 ];
 
 export default function Certifications() {
@@ -59,7 +68,7 @@ export default function Certifications() {
           />
         </ScrollLoader>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 mt-16">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
           {items.map(({ img, title, desc, index, link }) => (
             <ScrollLoader key={title} delay={index * 0.08}>
               <a
@@ -78,7 +87,7 @@ export default function Certifications() {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-3 min-h-[4rem] line-clamp-2">
+                <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-3 min-h-[4rem] md:min-h-0 line-clamp-2">
                   {title}
                 </h3>
 

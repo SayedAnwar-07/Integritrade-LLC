@@ -308,6 +308,7 @@ export default function FresnoElectronicsRecyclingPage() {
               <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                   {FREE_CATEGORIES.map(({ icon: Icon, title, blurb, items, index }) => (
                       <article
+                        key={index}
                         className="h-full flex flex-col bg-white dark:bg-dark-secondary rounded-md p-7 lg:p-8 shadow-lg"
                       >
                         <span className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-primary">
@@ -430,6 +431,7 @@ export default function FresnoElectronicsRecyclingPage() {
               <ol className="w-full lg:w-7/12 relative">
                 {NOT_ACCEPTED_ITEMS.map((item, idx) => (
                     <li
+                      key={item.title ?? idx}
                       className="group pl-8 md:pl-10 pr-2 py-6 first:pt-0 last:pb-0 mb-4 md:mb-6"
                     >
                       <div className="flex items-baseline gap-4 md:gap-6">

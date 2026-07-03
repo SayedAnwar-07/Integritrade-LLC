@@ -1,5 +1,7 @@
 import PageHeader from "@/components/shared/PageHeader";
+
 import Image from "next/image"
+
 import Avis_Car_Rental_USA from "@/public/TrustedLogo/Avis_Car_Rental_USA.png"
 import Budget_Rent_Car_USA from "@/public/TrustedLogo/Budget_Rent_Car_USA.png"
 import Department_of_Transportation_USA from "@/public/TrustedLogo/Department_of_Transportation_USA.png"
@@ -8,12 +10,15 @@ import Federal_Aviation_Administration_USA from "@/public/TrustedLogo/Federal_Av
 import Macias_USA from "@/public/TrustedLogo/Macias_USA.svg"
 import National_Park_Service_USA from "@/public/TrustedLogo/National_Park_Service_USA.svg"
 import united_states_cold_storage_USA from "@/public/TrustedLogo/united_states_cold_storage_USA.png"
+import Bluecloud_Pediatric_Surgery_center from "@/public/TrustedLogo/bluecloud_pediatric_surgery_center.png"
+import Lion_Raisins from "@/public/TrustedLogo/lion_raisins.png"
+
 import Industries from "@/components/home/Industries";
 import { Metadata } from "next";
 import SectionHeader from "@/components/shared/SectionHeader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
-import { Clock, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export const metadata: Metadata = {
@@ -88,6 +93,8 @@ const logos = [
   { src: Macias_USA,                          alt: "Macias" },
   { src: National_Park_Service_USA,           alt: "National Park Service" },
   { src: united_states_cold_storage_USA,      alt: "United States Cold Storage" },
+  { src: Bluecloud_Pediatric_Surgery_center,   alt: "Bluecloud Pediatric Surgery Center" },
+  { src: Lion_Raisins,                         alt: "Lion Raisins" },
 ]
 
 const track = [...logos, ...logos]
@@ -110,7 +117,7 @@ export default function IndustriesPage(){
                       />
                     </ScrollLoader>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20">
+                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-20">
 
                         {logos.map((logo, i) => (
                           <ScrollLoader key={i} delay={i * 0.08}>

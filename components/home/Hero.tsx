@@ -3,9 +3,51 @@ import OutlineButton from "../shared/buttons/OutlineButton";
 import ScrollLoader from "../shared/ScrollLoader";
 import { ItadGlobe } from "../ui/globe";
 
+import {
+  ShieldCheck,
+  Award,
+ Users,
+  BadgeCheck,
+  Camera,
+} from "lucide-react";
+
 export default function Hero() {
+
+  const trustItems = [
+    {
+      icon: ShieldCheck,
+      value: "100%",
+      label: "Guaranteed Data Destruction",
+      color: "text-green-600 border-green-300",
+    },
+    {
+      icon: Award,
+      value: "5",
+      label: "Industry Certifications",
+      color: "text-blue-600 border-blue-300",
+    },
+    {
+      icon: Users,
+      value: "40+",
+      label: "Years Combined Experience",
+      color: "text-purple-600 border-purple-300",
+    },
+    {
+      icon: BadgeCheck,
+      value: "Verified",
+      label: "Background-Checked Personnel",
+      color: "text-orange-600 border-orange-300",
+    },
+    {
+      icon: Camera,
+      value: "24/7",
+      label: "Secure Video-Monitored Facility",
+      color: "text-red-600 border-red-300",
+    },
+  ];
+
   return (
-    <section className="relative py-20 lg:py-28 bg-secondary dark:bg-dark transition-colors duration-300 overflow-hidden">
+    <section className="relative pt-20 lg:pt-28 bg-secondary dark:bg-dark transition-colors duration-300 overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
@@ -68,33 +110,35 @@ export default function Hero() {
 
           {/* Data ribbon */}
           <div className="lg:mt-16 border-gray-300 dark:border-white/10">
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-3">
-              {[
-                { value: "100%", label: "Data Destruction Guarantee" },
-                { value: "5 Industry Certifications", label: "Compliance & Audit Ready" },
-                { value: "40+ years", label: "Combined ITAD & Recycling Experience" },
-                { value: "Verified", label: "Background-checked personnel handling sensitive assets" },
-                { value: "24/7", label: "Video-monitored facility and controlled processing areas" },
-              ].map((item, i) => (
-                <div
-                  key={item.label}
-                  className={`py-7 px-5 lg:px-7 rounded-md text-center ${
-                    i !== 0 ? "lg:border-l" : ""
-                  }`}
-                >
-                  <div className="font-serif text-md md:text-2xl lg:text-3xl font-bold text-black dark:text-white tracking-tight min-h-[2.5rem] md:min-h-[5.5rem]">
-                    {item.value}
+            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+              {trustItems.map((item, i) => {
+                const Icon = item.icon;
+
+                return (
+                  <div
+                    key={item.label}
+                    className={`text-center py-7 px-5 rounded-md`}
+                  >
+                    <div
+                      className={`w-11 h-11 mx-auto mb-3 flex items-center justify-center rounded-md border ${item.color}`}
+                    >
+                      <Icon className="w-5 h-5" />
+                    </div>
+
+                    <div className="text-2xl lg:text-3xl font-bold text-black dark:text-white mt-5">
+                      {item.value}
+                    </div>
+
+                    <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 leading-tight">
+                      {item.label}
+                    </p>
                   </div>
-                  <div className="font-mono text-[11px] text-gray-600 dark:text-gray-400 mt-1.5 leading-tight">
-                    {item.label}
-                  </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
-
           <div className="mt-14">
-            <p className="text-xs uppercase tracking-[0.2em] text-gray-700 dark:text-gray-300 text-center">
+            <p className="text-2xl md:text-4xl fob text-center font-serif">
               Organizations we’ve served
             </p>
           </div>

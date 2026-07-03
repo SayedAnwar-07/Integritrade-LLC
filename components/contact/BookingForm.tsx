@@ -12,7 +12,6 @@ import {
 } from '@/components/ui/select'
 import {
   User,
-  MapPin,
   ClipboardList,
   ChevronRight,
   ChevronLeft,
@@ -22,7 +21,6 @@ import {
 } from 'lucide-react'
 import AddressAutocomplete from '@/components/contact/AddressAutocomplete'
 
-// ─── TYPES ──────────────────────────────────────────────────────────────────
 interface FormData {
   name: string
   email: string
@@ -59,7 +57,6 @@ const INITIAL_DATA: FormData = {
   message: '',
 }
 
-// ─── OPTIONS (value = stored/email slug, label = shown to user) ───────────────
 type Option = { value: string; label: string }
 
 const SERVICE_OPTIONS: Option[] = [
@@ -99,12 +96,10 @@ const labelFor = (options: Option[], value: string) =>
   options.find((o) => o.value === value)?.label ?? value
 
 const STEPS = [
-  { id: 0, label: 'Contact', icon: User },
-  { id: 1, label: 'Location', icon: MapPin },
-  { id: 2, label: 'Details', icon: ClipboardList },
+  { id: 0, label: 'Contact & Address', icon: User },
+  { id: 1, label: 'Job Info', icon: ClipboardList },
 ] as const
 
-// ─── SHARED STYLES ────────────────────────────────────────────────────────────
 const baseInput =
   'w-full rounded-md bg-white dark:bg-dark-secondary text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 border transition-all duration-200 outline-none px-3.5 py-2.5 text-sm focus:border-green-400 dark:focus:border-green-500'
 
@@ -116,28 +111,28 @@ const inputBorder = (hasError?: boolean) =>
 const labelClass =
   'block text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2'
 
-// ─── COMPONENT ────────────────────────────────────────────────────────────────
 export default function RequestPickupForm() {
   const [step, setStep] = useState(0)
   const [data, setData] = useState<FormData>(INITIAL_DATA)
   const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
 
-  // Auto-resizing message textarea
   const messageRef = useRef<HTMLTextAreaElement>(null)
+
   const resizeMessage = () => {
     const el = messageRef.current
     if (!el) return
     el.style.height = 'auto'
     el.style.height = `${el.scrollHeight}px`
   }
+
   useEffect(() => {
     resizeMessage()
   }, [data.message, step])
 
   const update = (field: keyof FormData, value: string) => {
     setData((prev) => ({ ...prev, [field]: value }))
-    // Clear the field's error as the user corrects it
+
     if (errors[field]) {
       setErrors((prev) => {
         const next = { ...prev }
@@ -147,28 +142,28 @@ export default function RequestPickupForm() {
     }
   }
 
-  // ─── VALIDATION ─────────────────────────────────────────────────────────────
   const validateStep = (current: number): FormErrors => {
     const e: FormErrors = {}
 
     if (current === 0) {
       if (!data.name.trim()) e.name = 'Full name is required.'
+
       if (!data.email.trim()) {
         e.email = 'Email address is required.'
       } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) {
         e.email = 'Please enter a valid email address.'
       }
+
       if (!data.phone.trim()) {
         e.phone = 'Phone number is required.'
       } else if (!/^[\d\s()+-]{7,}$/.test(data.phone.trim())) {
         e.phone = 'Please enter a valid phone number.'
       }
-    }
 
-    if (current === 1) {
       if (!data.address.trim()) e.address = 'Street address is required.'
       if (!data.city.trim()) e.city = 'City is required.'
       if (!data.state.trim()) e.state = 'State is required.'
+
       if (!data.zip.trim()) {
         e.zip = 'ZIP code is required.'
       } else if (!/^\d{4,10}$/.test(data.zip.trim())) {
@@ -176,7 +171,7 @@ export default function RequestPickupForm() {
       }
     }
 
-    if (current === 2) {
+    if (current === 1) {
       if (!data.service) e.service = 'Please select a service.'
       if (!data.estimatedQuantity) e.estimatedQuantity = 'Please select an estimated quantity.'
       if (!data.deploymentUrgency) e.deploymentUrgency = 'Please select a deployment urgency.'
@@ -188,7 +183,9 @@ export default function RequestPickupForm() {
   const handleNext = () => {
     const e = validateStep(step)
     setErrors(e)
-    if (Object.keys(e).length === 0) setStep((s) => Math.min(s + 1, STEPS.length - 1))
+    if (Object.keys(e).length === 0) {
+      setStep((s) => Math.min(s + 1, STEPS.length - 1))
+    }
   }
 
   const handleBack = () => {
@@ -202,116 +199,90 @@ export default function RequestPickupForm() {
     setStep(0)
   }
 
-  // ─── SUBMIT (EmailJS) ─────────────────────────────────────────────────────────
-const handleSubmit = async () => {
-  const e = validateStep(2)
-  setErrors(e)
-  if (Object.keys(e).length > 0) return
+  const handleSubmit = async () => {
+    const e = validateStep(1)
+    setErrors(e)
+    if (Object.keys(e).length > 0) return
 
-  const serviceId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_SERVICE_ID
-  const templateId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_TEMPLATE_ID
-  const publicKey = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_PUBLIC_KEY
-  const makeWebhookUrl = process.env.NEXT_PUBLIC_MAKE_WEBHOOK_URL
+    const serviceId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_SERVICE_ID
+    const templateId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_TEMPLATE_ID
+    const publicKey = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_PUBLIC_KEY
+    const makeWebhookUrl = process.env.NEXT_PUBLIC_MAKE_WEBHOOK_URL
 
-  const templateParams = {
-    name: data.name,
-    company: data.company || 'N/A',
-    email: data.email,
-    phone: data.phone,
-    address: data.address,
-    address2: data.address2 || 'N/A',
-    city: data.city,
-    state: data.state,
-    zip: data.zip,
-    service: labelFor(SERVICE_OPTIONS, data.service),
-    estimatedQuantity: labelFor(QUANTITY_OPTIONS, data.estimatedQuantity),
-    deploymentUrgency: labelFor(URGENCY_OPTIONS, data.deploymentUrgency),
-    message: data.message || 'No additional message',
-    time: new Date().toLocaleString('en-US', {
-      dateStyle: 'medium',
-      timeStyle: 'short',
-    }),
-  }
+    const templateParams = {
+      name: data.name,
+      company: data.company || 'N/A',
+      email: data.email,
+      phone: data.phone,
+      address: data.address,
+      address2: data.address2 || 'N/A',
+      city: data.city,
+      state: data.state,
+      zip: data.zip,
+      service: labelFor(SERVICE_OPTIONS, data.service),
+      estimatedQuantity: labelFor(QUANTITY_OPTIONS, data.estimatedQuantity),
+      deploymentUrgency: labelFor(URGENCY_OPTIONS, data.deploymentUrgency),
+      message: data.message || 'No additional message',
+      time: new Date().toLocaleString('en-US', {
+        dateStyle: 'medium',
+        timeStyle: 'short',
+      }),
+    }
 
-  console.log('=== FORM DATA ===')
-  console.log(data)
+    const sendMakeAlert = async (errorMessage: string) => {
+      if (!makeWebhookUrl) return
 
-  console.log('=== TEMPLATE PARAMS ===')
-  console.log(templateParams)
+      const payload = {
+        alertType: 'EmailJS Failure',
+        source: 'Integritrade Service Booking Form',
+        error: errorMessage,
+        submittedAt: templateParams.time,
+        ...templateParams,
+      }
 
-  const sendMakeAlert = async (errorMessage: string) => {
-    if (!makeWebhookUrl) {
-      console.error('Missing NEXT_PUBLIC_MAKE_WEBHOOK_URL')
+      try {
+        await fetch(makeWebhookUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        })
+      } catch (webhookError) {
+        console.error('Make webhook alert failed:', webhookError)
+      }
+    }
+
+    if (!serviceId || !templateId || !publicKey) {
+      await sendMakeAlert('Missing EmailJS environment variables')
+      toast.error('Failed to send message. Please try again.')
       return
     }
 
-    const payload = {
-      alertType: 'EmailJS Failure',
-      source: 'Integritrade Service Booking Form',
-      error: errorMessage,
-      submittedAt: templateParams.time,
-      ...templateParams,
-    }
-
-    console.log('=== WEBHOOK PAYLOAD ===')
-    console.log(JSON.stringify(payload, null, 2))
+    setIsSubmitting(true)
 
     try {
-      const response = await fetch(makeWebhookUrl, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(payload),
+      const result = await emailjs.send(serviceId, templateId, templateParams, {
+        publicKey,
       })
 
-      console.log('Webhook status:', response.status)
-      console.log('Webhook ok:', response.ok)
-    } catch (webhookError) {
-      console.error('Make webhook alert failed:', webhookError)
-    }
-  }
-
-  if (!serviceId || !templateId || !publicKey) {
-    console.error('Missing EmailJS env vars. Restart the dev server after editing .env.')
-    await sendMakeAlert('Missing EmailJS environment variables')
-    toast.error('Failed to send message. Please try again.')
-    return
-  }
-
-  setIsSubmitting(true)
-
-  try {
-    console.log('Sending EmailJS request...')
-
-    const result = await emailjs.send(serviceId, templateId, templateParams, {
-      publicKey,
-    })
-
-    console.log('=== EMAILJS RESULT ===')
-    console.log(result)
-
-    if (result.status === 200) {
-      toast.success('Submission successful. Our team will respond soon.')
-      resetForm()
-    } else {
-      await sendMakeAlert(`EmailJS returned non-200 status: ${result.status}`)
+      if (result.status === 200) {
+        toast.success('Submission successful. Our team will respond soon.')
+        resetForm()
+      } else {
+        await sendMakeAlert(`EmailJS returned non-200 status: ${result.status}`)
+        toast.error('Failed to send message. Please try again.')
+      }
+    } catch (err) {
+      await sendMakeAlert(err instanceof Error ? err.message : String(err))
       toast.error('Failed to send message. Please try again.')
+    } finally {
+      setIsSubmitting(false)
     }
-  } catch (err) {
-    console.error('=== EMAILJS ERROR ===')
-    console.error(err)
-
-    await sendMakeAlert(err instanceof Error ? err.message : String(err))
-
-    toast.error('Failed to send message. Please try again.')
-  } finally {
-    setIsSubmitting(false)
   }
-}
 
-  // ─── HELPERS ──────────────────────────────────────────────────────────────────
-  const inputClass = (field: keyof FormData) => `${baseInput} ${inputBorder(!!errors[field])}`
+  const inputClass = (field: keyof FormData) =>
+    `${baseInput} ${inputBorder(!!errors[field])}`
 
   const ErrorMsg = ({ field }: { field: keyof FormData }) =>
     errors[field] ? (
@@ -321,10 +292,8 @@ const handleSubmit = async () => {
       </p>
     ) : null
 
-  // ─── FORM ─────────────────────────────────────────────────────────────────────
   return (
     <div>
-
       {/* Stepper */}
       <div className="mt-8">
         <div className="flex items-center justify-between">
@@ -332,6 +301,7 @@ const handleSubmit = async () => {
             const Icon = s.icon
             const active = i === step
             const complete = i < step
+
             return (
               <div key={s.id} className="flex flex-1 items-center last:flex-none">
                 <div className="flex flex-col items-center">
@@ -344,6 +314,7 @@ const handleSubmit = async () => {
                   >
                     <Icon className="h-4 w-4" />
                   </div>
+
                   <span
                     className={`mt-2 text-xs font-medium ${
                       active || complete
@@ -354,6 +325,7 @@ const handleSubmit = async () => {
                     {s.label}
                   </span>
                 </div>
+
                 {i < STEPS.length - 1 && (
                   <div
                     className={`mx-2 h-px flex-1 transition ${
@@ -365,7 +337,7 @@ const handleSubmit = async () => {
             )
           })}
         </div>
-        {/* Progress bar */}
+
         <div className="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800">
           <div
             className="h-full rounded-full bg-green-600 transition-all duration-300"
@@ -374,74 +346,71 @@ const handleSubmit = async () => {
         </div>
       </div>
 
-      {/* ─── STEP 1: CONTACT ─── */}
+      {/* STEP 1: CONTACT + ADDRESS */}
       {step === 0 && (
-        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
-          <div>
-            <label htmlFor="name" className={labelClass}>
-              Full Name <span className="text-red-500">*</span>
-            </label>
-            <input
-              id="name"
-              type="text"
-              value={data.name}
-              onChange={(e) => update('name', e.target.value)}
-              placeholder="Full Name"
-              className={inputClass('name')}
-            />
-            <ErrorMsg field="name" />
-          </div>
-
-          <div>
-            <label htmlFor="company" className={labelClass}>
-              Company Name
-            </label>
-            <input
-              id="company"
-              type="text"
-              value={data.company}
-              onChange={(e) => update('company', e.target.value)}
-              placeholder="Company Name (optional)"
-              className={inputClass('company')}
-            />
-          </div>
-
-          <div>
-            <label htmlFor="email" className={labelClass}>
-              Email Address <span className="text-red-500">*</span>
-            </label>
-            <input
-              id="email"
-              type="email"
-              value={data.email}
-              onChange={(e) => update('email', e.target.value)}
-              placeholder="Email Address"
-              className={inputClass('email')}
-            />
-            <ErrorMsg field="email" />
-          </div>
-
-          <div>
-            <label htmlFor="phone" className={labelClass}>
-              Phone Number <span className="text-red-500">*</span>
-            </label>
-            <input
-              id="phone"
-              type="tel"
-              value={data.phone}
-              onChange={(e) => update('phone', e.target.value)}
-              placeholder="Phone Number"
-              className={inputClass('phone')}
-            />
-            <ErrorMsg field="phone" />
-          </div>
-        </div>
-      )}
-
-      {/* ─── STEP 2: LOCATION ─── */}
-      {step === 1 && (
         <div className="mt-8 space-y-5">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+            <div>
+              <label htmlFor="name" className={labelClass}>
+                Full Name <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="name"
+                type="text"
+                value={data.name}
+                onChange={(e) => update('name', e.target.value)}
+                placeholder="Full Name"
+                className={inputClass('name')}
+              />
+              <ErrorMsg field="name" />
+            </div>
+
+            <div>
+              <label htmlFor="company" className={labelClass}>
+                Company Name
+              </label>
+              <input
+                id="company"
+                type="text"
+                value={data.company}
+                onChange={(e) => update('company', e.target.value)}
+                placeholder="Company Name"
+                className={inputClass('company')}
+              />
+            </div>
+
+            <div>
+              <label htmlFor="email" className={labelClass}>
+                Email Address <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="email"
+                type="email"
+                value={data.email}
+                onChange={(e) => update('email', e.target.value)}
+                placeholder="Email Address"
+                className={inputClass('email')}
+              />
+              <ErrorMsg field="email" />
+            </div>
+
+            <div>
+              <label htmlFor="phone" className={labelClass}>
+                Phone Number <span className="text-red-500">*</span>
+              </label>
+              <input
+                id="phone"
+                type="tel"
+                value={data.phone}
+                onChange={(e) => update('phone', e.target.value)}
+                placeholder="Phone Number"
+                className={inputClass('phone')}
+              />
+              <ErrorMsg field="phone" />
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
             <div>
               <label htmlFor="address" className={labelClass}>
                 Street Address <span className="text-red-500">*</span>
@@ -451,8 +420,6 @@ const handleSubmit = async () => {
                 value={data.address}
                 onChange={(v) => update('address', v)}
                 onSelect={(s) => {
-                  // Auto-fill the whole location step from the picked address.
-                  // Functional setState in `update` means these merge cleanly.
                   update('address', s.street_line)
                   update('address2', s.secondary)
                   update('city', s.city)
@@ -475,7 +442,7 @@ const handleSubmit = async () => {
                 type="text"
                 value={data.address2}
                 onChange={(e) => update('address2', e.target.value)}
-                placeholder="Apartment, suite, building, floor (optional)"
+                placeholder="Apartment, suite, building, floor"
                 className={inputClass('address2')}
               />
             </div>
@@ -522,7 +489,7 @@ const handleSubmit = async () => {
                 inputMode="numeric"
                 value={data.zip}
                 onChange={(e) => update('zip', e.target.value)}
-                placeholder="Zip Code"
+                placeholder="ZIP Code"
                 className={inputClass('zip')}
               />
               <ErrorMsg field="zip" />
@@ -531,18 +498,20 @@ const handleSubmit = async () => {
         </div>
       )}
 
-      {/* ─── STEP 3: DETAILS ─── */}
-      {step === 2 && (
+      {/* STEP 2: JOB INFO */}
+      {step === 1 && (
         <div className="mt-8 space-y-5">
           <div>
             <label htmlFor="service" className={labelClass}>
               Service Interest <span className="text-red-500">*</span>
             </label>
+
             <Select value={data.service} onValueChange={(v) => update('service', v)}>
               <SelectTrigger id="service" className={inputClass('service')}>
                 <SelectValue placeholder="Select a service" />
               </SelectTrigger>
-              <SelectContent className="dark:bg-dark-secondary dark:text-gray-100 border-gray-200 dark:border-gray-700">
+
+              <SelectContent className="border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
                 {SERVICE_OPTIONS.map((opt) => (
                   <SelectItem key={opt.value} value={opt.value} className="whitespace-normal py-2.5">
                     {opt.label}
@@ -550,6 +519,7 @@ const handleSubmit = async () => {
                 ))}
               </SelectContent>
             </Select>
+
             <ErrorMsg field="service" />
           </div>
 
@@ -558,6 +528,7 @@ const handleSubmit = async () => {
               <label htmlFor="estimatedQuantity" className={labelClass}>
                 Estimated Quantity <span className="text-red-500">*</span>
               </label>
+
               <Select
                 value={data.estimatedQuantity}
                 onValueChange={(v) => update('estimatedQuantity', v)}
@@ -565,7 +536,8 @@ const handleSubmit = async () => {
                 <SelectTrigger id="estimatedQuantity" className={inputClass('estimatedQuantity')}>
                   <SelectValue placeholder="Select quantity" />
                 </SelectTrigger>
-                <SelectContent className="dark:bg-dark-secondary dark:text-gray-100 border-gray-200 dark:border-gray-700">
+
+                <SelectContent className="border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
                   {QUANTITY_OPTIONS.map((opt) => (
                     <SelectItem
                       key={opt.value}
@@ -577,6 +549,7 @@ const handleSubmit = async () => {
                   ))}
                 </SelectContent>
               </Select>
+
               <ErrorMsg field="estimatedQuantity" />
             </div>
 
@@ -584,6 +557,7 @@ const handleSubmit = async () => {
               <label htmlFor="deploymentUrgency" className={labelClass}>
                 Deployment Urgency <span className="text-red-500">*</span>
               </label>
+
               <Select
                 value={data.deploymentUrgency}
                 onValueChange={(v) => update('deploymentUrgency', v)}
@@ -591,7 +565,8 @@ const handleSubmit = async () => {
                 <SelectTrigger id="deploymentUrgency" className={inputClass('deploymentUrgency')}>
                   <SelectValue placeholder="Select urgency" />
                 </SelectTrigger>
-                <SelectContent className="w-[var(--radix-select-trigger-width)] dark:bg-dark-secondary dark:text-gray-100 border-gray-200 dark:border-gray-700">
+
+                <SelectContent className="w-[var(--radix-select-trigger-width)] border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
                   {URGENCY_OPTIONS.map((opt) => (
                     <SelectItem
                       key={opt.value}
@@ -603,6 +578,7 @@ const handleSubmit = async () => {
                   ))}
                 </SelectContent>
               </Select>
+
               <ErrorMsg field="deploymentUrgency" />
             </div>
           </div>
@@ -611,6 +587,7 @@ const handleSubmit = async () => {
             <label htmlFor="message" className={labelClass}>
               Message
             </label>
+
             <textarea
               id="message"
               ref={messageRef}
@@ -618,15 +595,16 @@ const handleSubmit = async () => {
               value={data.message}
               onChange={(e) => update('message', e.target.value)}
               onInput={resizeMessage}
-              placeholder="Tell us anything else about your request (optional)"
+              placeholder="Tell us anything else about your request"
               className={`${inputClass('message')} resize-none overflow-hidden`}
             />
+
             <p className="mt-1 text-xs text-gray-400">{data.message.length} characters</p>
           </div>
         </div>
       )}
 
-      {/* ─── NAVIGATION ─── */}
+      {/* NAVIGATION */}
       <div className="mt-8 flex items-center justify-between">
         {step > 0 ? (
           <button
