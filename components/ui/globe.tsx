@@ -9,6 +9,7 @@ import Iso14001 from "@/public/ISO/ISO-14001.webp"
 import Iso27001 from "@/public/ISO/ISO-27001.webp"
 import Iso45001 from "@/public/ISO/ISO-45001.webp"
 import R2v3 from "@/public/ISO/r2v3.png"
+import Nist from "@/public/ISO/nist-800-88.jpg"
 
 import { cn } from "@/lib/utils"
 
@@ -21,10 +22,11 @@ type Service = {
 
 const SERVICES: Service[] = [
   { image: R2v3, alt: "R2v3 certified", label: "R2v3\nCERTIFIED", angle: -90 },
-  { image: Iso14001, alt: "ISO 14001", label: "ISO 14001\nENVIRONMENT", angle: -32 },
-  { image: Iso27001, alt: "ISO 27001", label: "ISO 27001\nINFO SECURITY", angle: 32 },
-  { image: Iso45001, alt: "ISO 45001", label: "ISO 45001\nHEALTH & SAFETY", angle: 148 },
-  { image: Iso9001, alt: "ISO 9001", label: "ISO 9001\nQUALITY", angle: 212 },
+  { image: Iso14001, alt: "ISO 14001", label: "ISO 14001\nENVIRONMENT", angle: -30 },
+  { image: Iso27001, alt: "ISO 27001", label: "ISO 27001\nINFO SECURITY", angle: 30 },
+  { image: Iso45001, alt: "ISO 45001", label: "ISO 45001\nHEALTH & SAFETY", angle: 90 },
+  { image: Iso9001, alt: "ISO 9001", label: "ISO 9001\nQUALITY", angle: 150 },
+  { image: Nist, alt: "NIST 800-88", label: "NIST 800-88\nDATA SANITIZATION", angle: 210 },
 ]
 
 const BASE_CONFIG: Omit<

@@ -297,7 +297,8 @@ export default function Navbar() {
         { href: '/services/e-waste-recycling', label: 'Basic Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
         { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },        
-        { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },        
+        { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },    
+        { href: '/fresno-electronics-recycling/', label: 'Fresno Public E-Waste Drop Off', icon: Store },    
       ],
     },
     {
@@ -460,10 +461,6 @@ export default function Navbar() {
           {/* ================== RIGHT SIDE (lg+) ================== */}
           <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             <ModeToggle />
-            <OutlineButton href="/fresno-electronics-recycling/" testId="button-get-quote">
-              Fresno Public E-waste Drop Off
-            </OutlineButton>
-
             <PrimaryButton href="/service-book" testId="button-get-quote">
               Contact Us
             </PrimaryButton>
@@ -573,18 +570,11 @@ export default function Navbar() {
           </nav>
 
           {/* Footer CTAs */}
-          <div className="p-5 space-y-3 flex-shrink-0 border-t border-gray-100 dark:border-white/5 flex flex-col">
-            <OutlineButton href="/fresno-electronics-recycling/" testId="button-get-quote">
-              Fresno Public E-waste Drop Off
-            </OutlineButton>
-
-            <PrimaryButton href="/service-book" testId="button-get-quote">
-              Contact Us
-            </PrimaryButton>
+          <div className="p-5 space-y-3 flex-shrink-0 border-t border-gray-100 dark:border-white/5 flex flex-col"> 
 
             <Link
               href="tel:+15593254813"
-              className="group relative flex w-full items-center justify-between overflow-hidden rounded-md border border-primary/30 hover:bg-primary/5 hover:border-primary/50 text-primary px-5 py-2.5 text-[14px] font-medium tracking-tight transition-all"
+              className="group !bg-brand-accent hover:!bg-[hsl(var(--brand-accent-hover))] !text-white relative flex w-full items-center justify-between overflow-hidden rounded-md border border-primary/30 hover:border-primary/50 text-primary px-5 py-2 text-[14px] font-medium tracking-tight transition-all"
               onClick={() => setIsMenuOpen(false)}
             >
               <span>(559) 325-4813</span>
@@ -594,6 +584,10 @@ export default function Navbar() {
                 strokeWidth={2.2}
               />
             </Link>
+
+             <PrimaryButton href="/service-book" testId="button-get-quote">
+              Contact Us
+            </PrimaryButton>
           </div>
         </div>
       </div>

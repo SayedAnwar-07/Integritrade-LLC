@@ -6,6 +6,7 @@ import Iso14001 from "@/public/ISO/ISO-14001.webp";
 import Iso27001 from "@/public/ISO/ISO-27001.webp";
 import Iso45001 from "@/public/ISO/ISO-45001.webp";
 import R2v3 from "@/public/ISO/R2V3_certified_logo.webp";
+import Nist from "@/public/ISO/nist-800-88.jpg"
 
 import {
   Truck,
@@ -72,6 +73,11 @@ const certs = [
     name: "ISO 45001",
     href: "/certifications",
   },
+  {
+    image: Nist,
+    name: "Nist 800-88",
+    href: "/certifications",
+  },
 ];
 
 export default function ContactDescription() {
@@ -89,7 +95,7 @@ export default function ContactDescription() {
               mt-10"
             >
 
-              <div className="grid grid-cols-2 gap-3 sm:grid-cols-5">
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {certs.map(({ image, name, href, external }) => {
                   const content = (
                     <div
@@ -254,6 +260,19 @@ export default function ContactDescription() {
 
                 {/* FORM */}
                 <BookingForm />
+
+                <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300 border-t border-stone-200 dark:border-slate-700/60 text-justify pt-4">
+                  By submitting this form, you acknowledge that you have read and agree to the
+                  {" "}
+                  <Link
+                    href="/privacy/"
+                    className="font-semibold text-blue-500 hover:underline"
+                  >
+                    Integritrade LLC Privacy Policy
+                  </Link>
+                  . We will only use your information to respond to your inquiry or process your
+                  service request.
+                </p>
               </div>
             </div>
           </div>
