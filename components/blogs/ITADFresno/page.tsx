@@ -90,10 +90,10 @@ export default function ITADFresno() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Businesses across Fresno continue to refresh servers, laptops, networking equipment, and data center infrastructure on shorter cycles than ever. Retiring that technology safely, securely, and in a way that holds up to compliance review has become a real operational concern, not a back-office afterthought.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   IT Asset Disposition (ITAD) is the framework that handles it. For organizations across Fresno and the Central Valley, understanding how structured ITAD works helps reduce risk, recover value from retired hardware, and support environmental commitments at the same time.
                 </p>
               </div>
@@ -106,10 +106,10 @@ export default function ITADFresno() {
                   Why ITAD Matters for Fresno Businesses
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Fresno&apos;s business landscape spans healthcare providers, financial institutions, agricultural operations, educational institutions, and a growing tech sector. Most of these organizations manage sensitive data daily and operate under strict data security and compliance requirements.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     When retired IT equipment isn&apos;t handled properly, the consequences fall into four interconnected categories: data security risks from unsanitized devices leaving organizational control, regulatory exposure under HIPAA, GLBA, FERPA, and California state privacy laws, lost recoverable asset value when equipment with residual market demand gets treated as scrap, and environmental compliance issues stemming from improper electronic waste handling. A structured ITAD process closes all four risks at once with documented, auditable controls.
                   </p>
                 </div>
@@ -123,7 +123,7 @@ export default function ITADFresno() {
                   What a Complete ITAD Program Includes
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     A defensible ITAD program brings together several disciplines that work in sequence rather than in isolation. Each stage produces documentation that ties the entire workflow together.
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Secure data destruction
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Certified data sanitization following recognized standards such as NIST 800-88, with physical destruction performed when the situation requires it.
                     </p>
                   </div>
@@ -142,7 +142,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Asset tracking and chain of custody
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Per-device serial-number tracking from pickup through final disposition, with documented transfers at every handoff.
                     </p>
                   </div>
@@ -151,7 +151,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Evaluation for refurbishment and recovery
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Each asset is assessed for resale, redeployment, or refurbishment before recycling becomes the answer recovering meaningful value rather than scrapping by default.
                     </p>
                   </div>
@@ -160,7 +160,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Responsible end-of-life recycling
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       For equipment that genuinely reaches end-of-life, certified recycling under R2v3 standards ensures materials are recovered responsibly and kept out of landfills.
                     </p>
                   </div>
@@ -174,7 +174,7 @@ export default function ITADFresno() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   Compliance Requirements by Industry
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   Different sectors across Fresno operate under different regulatory frameworks. Each one shapes how IT assets must be handled at retirement.
                 </p>
 
@@ -226,7 +226,7 @@ export default function ITADFresno() {
                   Secure Data Destruction and Compliance
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Data-bearing devices such as hard drives and SSDs require proper sanitization before they can be reused or recycled. Many Fresno organizations operate under data protection requirements healthcare regulations, financial oversight, education frameworks, or internal security policies that demand specific, documented destruction methods.
                   </p>
                 </div>
@@ -236,7 +236,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Logical data sanitization
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Software-based erasure aligned with NIST 800-88 and DoD 5220.22-M standards ensures all data is irreversibly removed before devices move to reuse or recycling streams.
                     </p>
                   </div>
@@ -245,7 +245,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Physical destruction when required
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       For high-sensitivity environments or damaged drives that can&apos;t be sanitized through software, physical destruction provides irreversible elimination with documented evidence.
                     </p>
                   </div>
@@ -254,7 +254,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Certificates of erasure and destruction
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Per-device documentation confirming the standard applied and the outcome verified, suitable for audit and regulatory review.
                     </p>
                   </div>
@@ -263,7 +263,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Documented audit trails
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Full chain-of-custody records that support both internal compliance reviews and external audits without requiring reconstruction after the fact.
                     </p>
                   </div>
@@ -278,10 +278,10 @@ export default function ITADFresno() {
                   Asset Recovery and Value Maximization
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Not every retired device belongs in a recycling stream. Many still hold meaningful market value depending on age, configuration, and current demand value that disappears the moment equipment gets defaulted to scrap.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     A recovery-focused ITAD strategy lets Fresno businesses reduce overall disposition costs by recovering returns from resold equipment, capture residual value from devices that still have working life ahead, minimize unnecessary recycling so functional hardware stays in productive use longer, and improve sustainability outcomes through verified reuse and refurbishment. Evaluating recovery potential before recycling is what turns retired IT from a recurring cost into a contributor to the IT budget.
                   </p>
                 </div>
@@ -295,10 +295,10 @@ export default function ITADFresno() {
                   Environmental Responsibility in the Central Valley
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Responsible electronic recycling is a core part of any structured ITAD program. Extending the life of IT equipment through refurbishment and reuse reduces the volume of e-waste entering the disposal stream and lowers the carbon footprint associated with manufacturing replacement hardware.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     When assets do reach genuine end-of-life, certified recycling under R2v3 standards ensures materials are recovered responsibly, hazardous components are handled correctly, and nothing ends up in landfills that shouldn&apos;t. For Central Valley organizations facing California&apos;s strict e-waste regulations, this is the difference between defensible disposition and exposure during environmental compliance reviews.
                   </p>
                 </div>
@@ -312,7 +312,7 @@ export default function ITADFresno() {
                   Choosing the Right ITAD Approach in Fresno
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Selecting an ITAD partner isn&apos;t just a vendor decision it&apos;s an operational choice that affects security, compliance, and recovered value across every refresh cycle. Five practical factors separate the providers worth evaluating from the rest.
                   </p>
                 </div>
@@ -322,7 +322,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Documentation and chain-of-custody controls
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Continuous tracking from pickup through final disposition with serial-level records is what makes the rest of the program defensible.
                     </p>
                   </div>
@@ -331,7 +331,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Data security procedures
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Certified sanitization methods, verified destruction workflows, and per-device certificates that hold up to audit scrutiny are non-negotiable for data-bearing equipment.
                     </p>
                   </div>
@@ -340,7 +340,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Compliance certifications
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       R2v3, ISO 27001, and ISO 14001 certifications demonstrate that the provider operates under recognized standards rather than informal practices.
                     </p>
                   </div>
@@ -349,7 +349,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Asset recovery capabilities
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       A recovery-first evaluation process is what determines whether retired equipment generates returns or simply incurs disposal costs.
                     </p>
                   </div>
@@ -358,7 +358,7 @@ export default function ITADFresno() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Transparent reporting
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Clear breakdowns of what was resold, refurbished, or recycled along with recovered values give you the visibility needed for finance, IT, and compliance teams.
                     </p>
                   </div>
@@ -373,10 +373,10 @@ export default function ITADFresno() {
                   Documentation Your ITAD Provider Should Deliver
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     At project completion, expect documentation that covers every part of the workflow without follow-up requests: asset inventories with valuation reports identifying every device received and its assessed market value, certificates of erasure or destruction confirming the sanitization standard applied per device, data sanitization reports documenting methods, timestamps, and serial-level traceability, and processing and disposition summaries detailing what was resold, refurbished, or recycled along with recovered value and environmental outcomes.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     This documentation is what turns an ITAD engagement into something your audit, finance, and compliance teams can actually use during regulatory reviews and ESG reporting.
                   </p>
                 </div>
@@ -397,7 +397,7 @@ export default function ITADFresno() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -414,10 +414,10 @@ export default function ITADFresno() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     For businesses across Fresno, IT Asset Disposition has moved from a back-office logistics task into a meaningful part of how organizations protect sensitive information, recover value from retired equipment, and meet California&apos;s data protection and environmental requirements.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Following structured ITAD processes that prioritize security, compliance, and recovery is what allows Central Valley organizations to manage the full IT lifecycle with confidence and turn what used to be a quiet liability into a controlled, documented, and increasingly valuable part of every refresh cycle.
                   </p>
                 </div>

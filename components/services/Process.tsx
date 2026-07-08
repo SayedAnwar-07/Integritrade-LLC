@@ -108,7 +108,7 @@ export default function Process() {
                       {title}
                     </h3>
                     <Separator className="my-4 bg-stone-200 dark:bg-slate-700" />
-                    <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+                    <p className="mt-3 text-sm leading-relaxed text-gray-700 dark:text-gray-300 custom-text-center">
                       {desc}
                     </p>
 

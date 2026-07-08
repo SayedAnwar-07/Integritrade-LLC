@@ -54,7 +54,7 @@ export default function Footer() {
               <div className="w-1.5 h-1.5 rounded-full bg-[#2aac61]" />
             </div>
 
-            <p className="text-[13px] leading-7 text-white/80 max-w-sm font-light tracking-wide text-justify">
+            <p className="text-[13px] leading-7 text-white/80 max-w-sm font-light tracking-wide custom-text-center">
               Business ITAD, data destruction, electronics recycling, and asset recovery services built around pickup, tracking, processing, and final documentation.
             </p>
 

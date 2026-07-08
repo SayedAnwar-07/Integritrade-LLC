@@ -119,7 +119,7 @@ export default function Industries() {
                   </h3>
 
                   {/* Description */}
-                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400 min-h-[3.5rem] text-justify">
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400 min-h-[3.5rem] custom-text-center">
                     {desc}
                   </p>
 
@@ -161,7 +161,7 @@ export default function Industries() {
                   </h3>
 
                   {/* Description */}
-                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400 min-h-[3.5rem] text-justify">
+                  <p className="mt-3 text-sm leading-relaxed text-gray-600 dark:text-gray-400 min-h-[3.5rem] custom-text-center">
                     {desc}
                   </p>
 

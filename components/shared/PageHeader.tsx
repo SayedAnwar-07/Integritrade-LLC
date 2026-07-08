@@ -13,8 +13,6 @@ interface PageHeaderProps {
   linkHref?: string;
   align?: "left" | "center";
   className?: string;
-  /** Heading tag. Use "h2" when this header is a section inside a page that
-   *  already has an <h1> (e.g. homepage sections). Defaults to "h1". */
   as?: "h1" | "h2";
 }
 
@@ -25,95 +23,64 @@ export default function PageHeader({
   description,
   linkText,
   linkHref,
-  align = "left",
+  align = "center",
   className = "",
   as: Heading = "h1",
 }: PageHeaderProps) {
   const isCenter = align === "center";
   const hasLink = Boolean(linkText && linkHref);
-  const hasRightBlock = Boolean(description) || hasLink;
 
-  // Reusable CTA link — editorial underlined style
   const cta = hasLink && (
     <Link
       href={linkHref!}
-      className="group font-semibold inline-flex items-center gap-2 self-start text-sm font-mono uppercase tracking-[0.2em] border-b border-stone-900 dark:border-white pb-1 text-primary hover:text-primary/80 hover:border-primary transition-all duration-150 click-feel"
+      className="group inline-flex items-center gap-2 border-b border-stone-900 pb-1 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-primary transition-all duration-150 hover:border-primary hover:text-primary/80 dark:border-white"
     >
       {linkText}
       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
     </Link>
   );
 
-  // Reusable description block — clamped on mobile/tablet, full on desktop
-  const descriptionBlock = description && (
-    <>
-      {/* Mobile / tablet: clamped with Read More */}
-      <div className="lg:hidden">
-          <p className="text-justify text-base leading-relaxed text-stone-700 dark:text-slate-300">
-            {description}
-          </p>
-      </div>
-
-      {/* Desktop: full text, no toggle */}
-      <p className="hidden lg:block text-justify text-base leading-relaxed text-stone-700 dark:text-slate-300">
-        {description}
-      </p>
-    </>
-  );
-
   return (
     <div className={`w-full ${className}`}>
-      {/* Eyebrow */}
       {eyebrow && (
         <div
-          className={`flex items-center gap-4 mb-8 ${
+          className={`mb-8 flex items-center gap-4 ${
             isCenter ? "justify-center" : ""
           }`}
         >
           <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
-          <span className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
+          <span className="font-mono text-[1rem] font-bold uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400">
             {sectionNumber ? `§${sectionNumber} / ${eyebrow}` : eyebrow}
           </span>
+          <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
         </div>
       )}
 
-      {/* CENTERED VARIANT */}
-      {isCenter ? (
-        <div className="flex flex-col items-center text-center">
-          <div className="max-w-2xl">
-            <Heading className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
-              {title}
-            </Heading>
-          </div>
+      <div
+        className={`max-w-6xl ${
+          isCenter ? "mx-auto text-center" : "text-left"
+        }`}
+      >
+        <Heading className="font-serif max-w-4xl mx-auto text-4xl leading-[1.05] tracking-tight text-stone-900 sm:text-5xl lg:text-6xl dark:text-white">
+          {title}
+        </Heading>
 
-          {description && <div className="mt-6 max-w-3xl">{descriptionBlock}</div>}
+        {description && (
+          <p
+            className={`mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 ${
+              isCenter ? "text-center" : "text-left"
+            }`}
+          >
+            {description}
+          </p>
+        )}
 
-          {hasLink && <div className="mt-8">{cta}</div>}
-        </div>
-      ) : hasRightBlock ? (
-        /* LEFT — STANDARD 12-COL SPLIT (title 6 / description 6) */
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 lg:items-end">
-          <div className="lg:col-span-6">
-            <Heading className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
-              {title}
-            </Heading>
-          </div>
-
-          <div className="lg:col-span-6 flex flex-col gap-6">
-            {descriptionBlock}
+        {hasLink && (
+          <div className={`mt-8 flex ${isCenter ? "justify-center" : ""}`}>
             {cta}
           </div>
-        </div>
-      ) : (
-        /* LEFT — TITLE ONLY (no description, no link) */
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
-          <div className="lg:col-span-6">
-            <Heading className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
-              {title}
-            </Heading>
-          </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

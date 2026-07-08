@@ -64,10 +64,10 @@ export default function DataDestructionMethods() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 When the time comes to retire laptops, servers, and storage devices, the central question is rarely whether to destroy the data on board. It&apos;s how. Three established methods dominate the conversation: data erasure, degaussing, and physical destruction. Each has a clear use case, and each has limits that matter.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Choosing correctly depends on the type of media, the level of security required, and whether the asset still has recoverable value. Getting it right protects your data; getting it wrong creates compliance gaps, lost revenue, or both.
               </p>
             </div>
@@ -80,7 +80,7 @@ export default function DataDestructionMethods() {
                 1. Data Erasure (Logical Wiping)
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Data erasure is a software-based method that overwrites every accessible sector of a drive with new data, making the original information unrecoverable. Certified tools follow recognized standards such as NIST 800-88 and produce a verifiable audit record for each device processed.
                 </p>
               </div>
@@ -90,7 +90,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Where it excels
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     The hardware remains intact and fully functional, which means devices can be resold, redeployed, or refurbished after sanitization. Each wipe generates a Certificate of Erasure (COE) suitable for audit, and the process avoids the e-waste created by destruction-first approaches.
                   </p>
                 </div>
@@ -99,7 +99,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Where it falls short
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Erasure software needs a working drive to do its job. If the device is physically damaged or its controller is unresponsive, the software cannot reach every sector and a different method is required.
                   </p>
                 </div>
@@ -114,7 +114,7 @@ export default function DataDestructionMethods() {
                 2. Degaussing
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Degaussing uses a powerful magnetic field to scramble the magnetic domains on a storage device, rendering the stored data unreadable. It is fast and effective for traditional magnetic media, including legacy hard disk drives and magnetic tape.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Where it excels
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Large volumes of magnetic drives can be neutralized quickly, including drives that are damaged or non-functional and therefore impossible to wipe with software.
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Where it falls short
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Degaussing permanently destroys the drive. The device cannot be reused or resold afterward, and any residual asset value is lost in the process.
                   </p>
                 </div>
@@ -142,7 +142,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Important: degaussing does not work on SSDs
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Solid-state drives store data in flash memory cells with no magnetic properties. A degausser has no effect on them. For SSDs, the correct choice is certified data erasure or physical destruction.
                   </p>
                 </div>
@@ -157,7 +157,7 @@ export default function DataDestructionMethods() {
                 3. Physical Destruction
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Physical destruction reduces the storage device to small fragments, typically 20mm or smaller, using industrial shredders. It is the most absolute form of data destruction available.
                 </p>
               </div>
@@ -167,7 +167,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Where it excels
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Physical destruction is the only viable option for media that cannot be sanitized any other way damaged drives, mixed-media batches, or environments where regulation explicitly requires destruction. The result is irreversible and easy to verify.
                   </p>
                 </div>
@@ -176,7 +176,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Where it falls short
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     The asset is destroyed entirely, which eliminates any resale or redeployment value. It also generates more e-waste than methods that preserve the hardware, so it should be reserved for situations where it&apos;s genuinely warranted.
                   </p>
                 </div>
@@ -236,7 +236,7 @@ export default function DataDestructionMethods() {
                 How to Choose the Right Method
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The right choice comes down to two questions: is the drive still functional, and how much security do you need to demonstrate?
                 </p>
               </div>
@@ -246,7 +246,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Choose data erasure when value recovery matters
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     If the drive is operational and the device still has market value, certified erasure preserves the asset for resale or redeployment while producing a defensible audit record.
                   </p>
                 </div>
@@ -255,7 +255,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Choose physical destruction when there&apos;s no alternative
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     For drives that are damaged, end-of-life, or covered by policies that mandate destruction, shredding produces an irreversible outcome. Use it where it&apos;s genuinely necessary rather than as a default.
                   </p>
                 </div>
@@ -264,7 +264,7 @@ export default function DataDestructionMethods() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Combine both for maximum assurance
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     The strongest programs apply certified erasure first, then physical destruction for drives that require it. This dual-method approach closes both software and hardware-level recovery paths and produces complete documentation for audit.
                   </p>
                 </div>
@@ -279,13 +279,13 @@ export default function DataDestructionMethods() {
                 Secure Data Destruction Services in San Francisco
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Looking for certified data destruction in San Francisco? IntegriTrade LLC provides secure hard drive shredding, NIST 800-88 compliant data erasure, and complete IT asset disposal solutions designed to protect your sensitive business data.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Whether you need on-site shredding or compliant data wiping, our services ensure full regulatory compliance, zero data recovery risk, and detailed reporting for audits.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   <Link
                     href="/service-area/san-francisco/data-destruction-services/"
                     className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
@@ -310,7 +310,7 @@ export default function DataDestructionMethods() {
                     What is the difference between data erasure and degaussing?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Data erasure is software-based and overwrites every sector of a drive while leaving the hardware intact and reusable. Degaussing uses a strong magnetic field to disrupt magnetic storage permanently, destroying the drive in the process. Degaussing also does not work on SSDs.
                     </p>
                   </AccordionContent>
@@ -321,7 +321,7 @@ export default function DataDestructionMethods() {
                     Can degaussing be used on SSDs?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       No. Degaussing only affects magnetic media such as traditional HDDs and tape. SSDs store data in flash cells with no magnetic properties, so a degausser has no effect on them. Use certified erasure or physical destruction instead.
                     </p>
                   </AccordionContent>
@@ -332,7 +332,7 @@ export default function DataDestructionMethods() {
                     Which method allows the device to be resold?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Only data erasure preserves the device for resale or redeployment. Both degaussing and physical destruction permanently end the asset&apos;s useful life.
                     </p>
                   </AccordionContent>
@@ -343,7 +343,7 @@ export default function DataDestructionMethods() {
                     What is a Certificate of Destruction or Certificate of Erasure?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       A Certificate of Destruction (COD) documents that a device or drive has been physically destroyed. A Certificate of Erasure (COE) is generated by certified software and confirms that data was securely wiped. Both are important for regulatory compliance and audit trails.
                     </p>
                   </AccordionContent>
@@ -354,7 +354,7 @@ export default function DataDestructionMethods() {
                     What does IntegriTrade recommend for maximum security?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       For the highest assurance, IntegriTrade recommends a combined approach: certified data erasure first, followed by physical destruction where required. This produces both software-level verification and irreversible hardware-level destruction with complete documentation at each step.
                     </p>
                   </AccordionContent>
@@ -370,10 +370,10 @@ export default function DataDestructionMethods() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   There is no single best method for data destruction. The right choice depends on the condition of the drives, the level of security your organization needs to demonstrate, and whether the assets still have recoverable value. The cost of getting it wrong is measured in compliance gaps, lost revenue, or worse and the cost of getting it right is mostly a matter of choosing the right partner.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   IntegriTrade LLC has maintained a clean record with no history of data breach. When data security and asset value both matter, they shouldn&apos;t be a trade-off, and they don&apos;t have to be.
                 </p>
               </div>

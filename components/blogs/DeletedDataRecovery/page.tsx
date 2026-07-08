@@ -64,10 +64,10 @@ export default function DeletedDataRecovery() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 The short answer is yes and in most cases, it&apos;s easier than people expect. When you delete a file or format a drive, the operating system simply removes the address that points to the data. The data itself stays on the drive, fully intact, waiting for new data to overwrite it or for someone with the right tool to come along and read it.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 For organizations retiring laptops, servers, or external storage, that gap between perceived deletion and actual destruction is where the real risk lives.
               </p>
             </div>
@@ -80,10 +80,10 @@ export default function DeletedDataRecovery() {
                 Why &ldquo;Delete&rdquo; and &ldquo;Format&rdquo; Are Not Enough
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   When you delete a file in Windows or macOS, the file is removed from view, but the bits stay where they were until something writes over them. A standard format does roughly the same thing at the volume level: it rebuilds the file system without touching the underlying data. Free recovery utilities can pull most of it back in minutes.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   An old laptop with financial records, customer data, internal credentials, or contracts on it isn&apos;t safe just because it has been wiped to factory settings or formatted before resale. Anyone with basic recovery tools and a few hours can extract what was supposedly gone.
                 </p>
               </div>
@@ -97,10 +97,10 @@ export default function DeletedDataRecovery() {
                 Forensic Recovery Goes Further Than Most People Think
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Modern forensic tools and skilled recovery labs can pull data from drives that have been dropped, water-damaged, partially burned, or otherwise visibly compromised. As long as the magnetic platter or flash memory chip is still intact, the data on it is potentially recoverable.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   In practical terms, this means physical damage alone is not a reliable form of data destruction. A laptop with a smashed casing or a drive that no longer boots can still surrender its contents under the right hands.
                 </p>
               </div>
@@ -113,7 +113,7 @@ export default function DeletedDataRecovery() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 HDD vs SSD: How the Storage Type Changes the Risk
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 custom-text-center">
                 Both HDDs and SSDs carry serious recovery risk when they aren&apos;t properly sanitized. The methods that work on one don&apos;t always apply to the other.
               </p>
 
@@ -165,7 +165,7 @@ export default function DeletedDataRecovery() {
                 Three Methods That Actually Protect Business Data
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   To genuinely protect retired devices from data exposure, organizations need to move beyond delete and format and adopt certified sanitization methods aligned with recognized standards.
                 </p>
               </div>
@@ -175,7 +175,7 @@ export default function DeletedDataRecovery() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Software sanitization (NIST 800-88)
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Certified tools overwrite every accessible sector of a drive with patterned data, leaving no recoverable trace of the original information. This is the primary method for drives that are still operational and the only path that preserves the asset for resale or redeployment.
                   </p>
                 </div>
@@ -184,7 +184,7 @@ export default function DeletedDataRecovery() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Degaussing
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     A powerful magnetic field permanently scrambles the magnetic domains on traditional HDDs, neutralizing the data instantly. It does not work on SSDs, which store data in flash memory rather than magnetic media.
                   </p>
                 </div>
@@ -193,7 +193,7 @@ export default function DeletedDataRecovery() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Physical shredding
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Industrial shredders reduce drives to fragments of typically 20mm or less, providing the most absolute form of data destruction available. It&apos;s the right choice for damaged drives or environments where regulation explicitly requires destruction.
                   </p>
                 </div>
@@ -208,7 +208,7 @@ export default function DeletedDataRecovery() {
                 How IntegriTrade LLC Closes Every Recovery Path
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Data destruction should be transparent, verifiable, and audit-ready by default. The IntegriTrade workflow is built around exactly that principle and goes well beyond simple recycling.
                 </p>
               </div>
@@ -218,7 +218,7 @@ export default function DeletedDataRecovery() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Sealed chain of custody
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Every device is tracked from the moment it leaves your office to the moment it&apos;s processed. Our own logistics team handles the route, so nothing changes hands without documentation.
                   </p>
                 </div>
@@ -227,7 +227,7 @@ export default function DeletedDataRecovery() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Audit-ready sanitization
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Each SSD and HDD is sanitized in line with NIST 800-88. Certified software reads the drive&apos;s serial number directly and produces a tamper-resistant Certificate of Erasure (COE) per device.
                   </p>
                 </div>
@@ -236,7 +236,7 @@ export default function DeletedDataRecovery() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Physical destruction with value recovery
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Drives that can&apos;t be sanitized with software are destroyed using industrial shredding. Drives that pass sanitization keep their value and the host devices are refurbished where possible to maximize ROI.
                   </p>
                 </div>
@@ -245,7 +245,7 @@ export default function DeletedDataRecovery() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Complete inventory and certificates
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Every project closes with a full inventory report and a Certificate of Destruction (COD) where applicable, giving your audit, finance, and compliance teams the documentation they need without follow-up requests.
                   </p>
                 </div>
@@ -260,13 +260,13 @@ export default function DeletedDataRecovery() {
                 Secure Data Destruction Services in San Francisco
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Looking for certified data destruction in San Francisco? IntegriTrade LLC offers secure hard drive shredding, NIST 800-88 compliant data erasure, and complete IT asset disposition (ITAD) solutions to safeguard your sensitive business data.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   From on-site shredding to compliant data wiping, our process ensures zero data recovery risk, full regulatory compliance, and audit-ready reporting with COE and COD.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   <Link
                     href="/service-area/san-francisco/data-destruction-services/"
                     className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
@@ -291,7 +291,7 @@ export default function DeletedDataRecovery() {
                     Can deleted data really be recovered from a formatted drive?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Yes. Formatting only removes the file system index, not the underlying data. Files stay on the drive until something physically overwrites them, and free or commercial recovery software can pull them back in minutes.
                     </p>
                   </AccordionContent>
@@ -302,7 +302,7 @@ export default function DeletedDataRecovery() {
                     Is a physically damaged drive safe from recovery?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Not reliably. Forensic labs can recover data from drives that have been dropped, water-damaged, or partially burned as long as the magnetic platter or memory chip is intact. Visible damage is not the same as verified destruction.
                     </p>
                   </AccordionContent>
@@ -313,7 +313,7 @@ export default function DeletedDataRecovery() {
                     Does the TRIM command permanently delete SSD data?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       TRIM helps SSDs manage storage more efficiently, but it doesn&apos;t guarantee unrecoverability. Without certified sanitization tools aligned with NIST 800-88, SSD data can still be exposed to forensic recovery.
                     </p>
                   </AccordionContent>
@@ -324,7 +324,7 @@ export default function DeletedDataRecovery() {
                     Why does my business need a Certificate of Erasure (COE)?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       A COE is a software-generated, tamper-resistant document that confirms data was securely erased from a specific drive identified by serial number. It&apos;s the evidence your organization needs during audits under HIPAA, GDPR, SOC 2, and other frameworks.
                     </p>
                   </AccordionContent>
@@ -335,7 +335,7 @@ export default function DeletedDataRecovery() {
                     How is IntegriTrade different from formatting devices in-house?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       IntegriTrade follows NIST 800-88 certified sanitization, maintains a sealed chain of custody from collection to final disposition, and provides verifiable documentation including a Certificate of Erasure and a full inventory report. In-house formatting offers none of these protections and leaves organizations exposed.
                     </p>
                   </AccordionContent>
@@ -351,10 +351,10 @@ export default function DeletedDataRecovery() {
                 Trust, but Verify
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   When an internal IT team or local shop says &ldquo;everything is deleted,&rdquo; that reassurance alone isn&apos;t sufficient. What you actually need is a Certificate of Erasure that proves sanitization was completed to a certified standard. Without it, the legal, financial, and reputational risk stays on your books.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   IntegriTrade LLC doesn&apos;t just delete data; we destroy it scientifically and document every step so that recovery isn&apos;t a possibility, no matter who tries or what tools they use.
                 </p>
               </div>

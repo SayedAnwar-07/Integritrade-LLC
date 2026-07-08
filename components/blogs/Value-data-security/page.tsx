@@ -90,10 +90,10 @@ export default function ITAssetRecoveryExplained() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   As organizations retire servers, laptops, networking equipment, and other IT assets, deciding what happens next is a critical part of IT lifecycle management. Many programs focus primarily on data destruction and recycling, missing that IT asset recovery plays an equally important role in a well-executed ITAD strategy.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Done correctly, asset recovery lets organizations recover meaningful value from retired equipment while maintaining the strict data security and compliance standards regulated environments require. The two outcomes aren&apos;t in tension; they&apos;re structurally connected when the program is built right.
                 </p>
               </div>
@@ -106,10 +106,10 @@ export default function ITAssetRecoveryExplained() {
                   What IT Asset Recovery Covers
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IT asset recovery is the process of evaluating decommissioned equipment to determine whether it can be securely reused, refurbished, or resold rather than immediately recycled or destroyed. Within an ITAD program, the workflow combines testing and grading, secure data destruction, refurbishment where appropriate, and resale through approved secondary-market channels.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Not every retired asset suits recovery, but most organizations are surprised by how much recoverable value remains when assets are properly evaluated rather than defaulted to scrap. The default-to-recycling assumption is exactly where most missed recovery value originates.
                   </p>
                 </div>
@@ -123,7 +123,7 @@ export default function ITAssetRecoveryExplained() {
                   Factors That Determine Recovery Potential
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Four variables drive whether an asset is recoverable. They&apos;re often formalized through internal thresholds called cutlines that determine which devices move into recovery streams and which go directly to recycling.
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Device age and generation
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Newer equipment generally has stronger resale demand and better recovery potential in secondary markets. Once devices fall too far past current generations, the economics shift quickly toward recycling.
                     </p>
                   </div>
@@ -142,7 +142,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Functional and cosmetic condition
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Fully functional devices with minimal cosmetic damage recover more value and are easier to resell. Even modest refurbishment can move borderline assets into clearly profitable resale.
                     </p>
                   </div>
@@ -151,7 +151,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Market demand
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Secondary market demand varies meaningfully by device type, configuration, and timing. Providers with active buyer networks consistently capture more value than internal teams handling disposition occasionally.
                     </p>
                   </div>
@@ -160,7 +160,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Refurbishment costs
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Recovery has to make economic sense after testing, refurbishment, and processing expenses. The cutline exists precisely to keep refurbishment investment proportional to expected returns.
                     </p>
                   </div>
@@ -174,7 +174,7 @@ export default function ITAssetRecoveryExplained() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   Recovery vs Default Recycling
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   The same retired equipment can produce very different outcomes depending on whether the program leads with recovery or defaults to recycling.
                 </p>
 
@@ -226,10 +226,10 @@ export default function ITAssetRecoveryExplained() {
                   Security Practices in Asset Recovery
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Security is foundational to any recovery process. Recovery should never happen at the expense of data protection, and a properly designed program ensures the two reinforce rather than compete with each other.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Defensible recovery includes performing certified data wiping before any reuse or resale, applying NIST 800-88 and DoD 5220.22-M compliant sanitization methods, physically destroying data-bearing components when sensitivity demands it, maintaining full chain-of-custody documentation throughout the workflow, and issuing per-device certificates of erasure or destruction. Data security controls remain in place across the entire recovery lifecycle, not just at the start. Cutting corners on any of these steps compromises both the recovery and the compliance posture simultaneously.
                   </p>
                 </div>
@@ -242,7 +242,7 @@ export default function ITAssetRecoveryExplained() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   Compliance Standards for Asset Recovery
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   Industry certifications confirm that recovery activities follow documented, auditable, and secure processes. Look for these explicitly when evaluating providers.
                 </p>
 
@@ -294,10 +294,10 @@ export default function ITAssetRecoveryExplained() {
                   Environmental Benefits of Recovery
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Immediate recycling isn&apos;t always the most sustainable path. Extending the useful life of IT equipment through recovery and reuse reduces the environmental impact tied to manufacturing new devices a footprint that often dwarfs the impact of recycling on a per-device basis.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Recovery-first programs deliver reduced electronic waste, lower demand for raw materials, decreased carbon emissions tied to production, and stronger alignment with corporate sustainability and ESG commitments. When assets genuinely reach end-of-life, R2v3-certified recycling ensures materials are processed in an environmentally sound manner. The combination produces measurably better outcomes than either path alone.
                   </p>
                 </div>
@@ -311,7 +311,7 @@ export default function ITAssetRecoveryExplained() {
                   Mistakes That Reduce Recovery Outcomes
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Most missed recovery value comes from a small set of recurring mistakes. Recognizing them early is the cheapest way to prevent them.
                   </p>
                 </div>
@@ -321,7 +321,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Premature recycling
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Sending all retired assets directly to recycling without per-device evaluation skips recoverable value entirely. The cost shows up as lost revenue that never makes it into the IT budget.
                     </p>
                   </div>
@@ -330,7 +330,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Limited provider capabilities
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Working with ITAD providers that lack refurbishment or active resale networks reduces every recovery project to whatever the provider can do internally. Capable partners with global buyer networks routinely produce meaningfully higher returns.
                     </p>
                   </div>
@@ -339,7 +339,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Poor documentation
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Failing to require documentation and reporting creates compliance gaps that surface during audit. Without serial-level records, even strong recovery work can&apos;t be defended after the fact.
                     </p>
                   </div>
@@ -348,7 +348,7 @@ export default function ITAssetRecoveryExplained() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Recycling-only mindset
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Treating recycling as the only environmentally responsible option overlooks that reuse typically delivers a smaller environmental footprint than recycling and replacement manufacturing combined.
                     </p>
                   </div>
@@ -363,10 +363,10 @@ export default function ITAssetRecoveryExplained() {
                   Recovery Within a Complete ITAD Strategy
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Asset recovery is most effective when integrated into a broader ITAD program covering secure data destruction, compliance oversight, and responsible recycling. Treated as a standalone activity, it tends to compete with other priorities; built into the program, it reinforces them.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     A balanced ITAD strategy prioritizes recovery when it&apos;s economically and operationally viable, ensures data security at every stage regardless of disposition path, treats recycling as the final step rather than the default, and produces transparency and reporting that hold up to audit and ESG review. The combination lets organizations maximize value while minimizing risk an outcome that recovery-only or recycling-only programs rarely match.
                   </p>
                 </div>
@@ -387,7 +387,7 @@ export default function ITAssetRecoveryExplained() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -404,10 +404,10 @@ export default function ITAssetRecoveryExplained() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IT asset recovery isn&apos;t just about resale. It&apos;s about making informed, responsible decisions throughout the disposition process choices that determine whether retired equipment becomes recovered capital or sunk cost.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Following best practices across security, compliance, and sustainability lets organizations recover meaningful value from retired IT assets while protecting sensitive data and supporting environmental goals. Implemented as part of a comprehensive ITAD strategy, asset recovery delivers measurable benefits across financial, operational, and environmental outcomes simultaneously.
                   </p>
                 </div>

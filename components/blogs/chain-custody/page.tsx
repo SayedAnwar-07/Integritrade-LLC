@@ -62,10 +62,10 @@ export default function ChainCustody() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 When organizations retire laptops, servers, and storage devices, attention usually goes to data destruction and recycling. The piece that quietly determines whether the entire process holds up under scrutiny is chain of custody.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 A documented, transparent chain of custody protects sensitive data, supports compliance, and gives leadership confidence that nothing slipped through the cracks.
               </p>
             </div>
@@ -78,7 +78,7 @@ export default function ChainCustody() {
                 What Chain of Custody Means in ITAD
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Chain of custody is the documented tracking of IT assets from the moment they leave an organization&apos;s control through final disposition. Every transfer, handler, and processing step is recorded.
                 </p>
               </div>
@@ -88,7 +88,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Collection and handover
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     The exact time assets are picked up and the personnel responsible for the initial transfer are recorded.
                   </p>
                 </div>
@@ -97,7 +97,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Custody and location
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Every party that handles the assets and every facility where they are stored or processed is logged in sequence.
                   </p>
                 </div>
@@ -106,7 +106,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Actions and final disposition
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Data sanitization, destruction, refurbishment, and recycling activities are documented through to the final outcome of each asset.
                   </p>
                 </div>
@@ -121,10 +121,10 @@ export default function ChainCustody() {
                 Why It Matters for Data Security
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Retired devices often still hold sensitive data. Without clear tracking, the gap between pickup and final disposition becomes a real exposure point one that auditors, regulators, and threat actors all know to look for.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A strong chain of custody confirms that assets remain accounted for in transit, that only authorized personnel handle data-bearing devices, and that destruction activities can be independently verified. For regulated environments, this is a foundational security control rather than a nice-to-have.
                 </p>
               </div>
@@ -138,10 +138,10 @@ export default function ChainCustody() {
                 Compliance and Regulatory Alignment
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Healthcare, financial services, government, and enterprise organizations all operate under regulations that require secure handling of sensitive data. Chain of custody documentation produces the audit-ready records that demonstrate due diligence and reduce legal exposure.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Standards commonly associated with ITAD such as R2 certification and ISO-aligned management systems emphasize documentation, traceability, and controlled processes. A qualified provider builds these requirements into the workflow rather than treating them as an afterthought.
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function ChainCustody() {
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight font-serif">
                 Key Elements of an Effective Process
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                 A defensible chain of custody combines several disciplines that work together to produce a complete record.
               </p>
 
@@ -209,7 +209,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Asset identification
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Serial numbers, asset tags, or unique identifiers are captured at intake so each device can be tracked individually rather than as a batch.
                   </p>
                 </div>
@@ -218,7 +218,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Secure transportation
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Controlled logistics, vetted personnel, and documented transfers protect assets between facilities and close the most common exposure window.
                   </p>
                 </div>
@@ -227,7 +227,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Controlled processing environments
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Restricted-access facilities with monitoring ensure that only authorized staff handle data-bearing equipment.
                   </p>
                 </div>
@@ -236,7 +236,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Action logging and final records
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Sanitization, destruction, and recovery activities are logged at the asset level, with confirmation of recycling, resale, or destruction at completion.
                   </p>
                 </div>
@@ -250,7 +250,7 @@ export default function ChainCustody() {
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight font-serif">
                 Common Gaps to Avoid
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                 Most chain of custody failures come from a small set of recurring mistakes.
               </p>
 
@@ -259,7 +259,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Undocumented handoffs
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Transferring assets without signed records creates blind spots that cannot be reconstructed later.
                   </p>
                 </div>
@@ -268,7 +268,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Unclear vendor accountability
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     When multiple downstream partners are involved, responsibility for each asset must remain explicit at every stage.
                   </p>
                 </div>
@@ -277,7 +277,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Tracking that stops after pickup
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     A chain that ends at the loading dock leaves the most sensitive part of the process the time between pickup and destruction unverified.
                   </p>
                 </div>
@@ -286,7 +286,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Incomplete reporting
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Missing serial numbers, mismatched counts, or inconsistent certificates make audits painful and weaken the entire program.
                   </p>
                 </div>
@@ -300,7 +300,7 @@ export default function ChainCustody() {
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight font-serif">
                 Documentation You Should Receive
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                 A qualified ITAD provider produces clear records at every stage so internal teams and auditors can verify outcomes without guesswork.
               </p>
 
@@ -309,7 +309,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Asset inventory
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     A complete list of every device received, identified by serial number and condition.
                   </p>
                 </div>
@@ -318,7 +318,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Certificates of erasure or destruction
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Verified documentation for each unit confirming the standard applied and the outcome.
                   </p>
                 </div>
@@ -327,7 +327,7 @@ export default function ChainCustody() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Sanitization and processing reports
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Detailed records of the methods used and a summary of how each asset was ultimately resold, refurbished, or recycled.
                   </p>
                 </div>
@@ -348,7 +348,7 @@ export default function ChainCustody() {
                     What is chain of custody in ITAD?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       It is the documented tracking of IT assets from the moment they leave an organization&apos;s control through final disposition, covering every transfer, handler, and processing step.
                     </p>
                   </AccordionContent>
@@ -359,7 +359,7 @@ export default function ChainCustody() {
                     Why does it matter for data security?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       It confirms assets are not lost or mishandled, restricts access to authorized personnel, and allows destruction activities to be independently verified.
                     </p>
                   </AccordionContent>
@@ -370,7 +370,7 @@ export default function ChainCustody() {
                     What documentation should an ITAD provider deliver?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Expect asset inventories, certificates of erasure or destruction, sanitization reports, and a complete chain of custody record from pickup through final disposition.
                     </p>
                   </AccordionContent>
@@ -381,7 +381,7 @@ export default function ChainCustody() {
                     How does it support compliance?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       It provides audit-ready records that demonstrate due diligence, support internal and external reviews, and reduce regulatory and legal risk.
                     </p>
                   </AccordionContent>
@@ -392,7 +392,7 @@ export default function ChainCustody() {
                     What are the most common gaps?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Undocumented handoffs, unclear vendor accountability, tracking that stops after pickup, and inconsistent reporting are the failures we see most often.
                     </p>
                   </AccordionContent>
@@ -408,10 +408,10 @@ export default function ChainCustody() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Chain of custody is what turns IT Asset Disposition from a logistical task into a defensible security and compliance program. Clear tracking, accurate documentation, and unbroken accountability are what separate a reliable ITAD partner from a risky one.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   When evaluating providers, look closely at how they handle the steps between pickup and final disposition. That is where the strength of the program is decided.
                 </p>
               </div>

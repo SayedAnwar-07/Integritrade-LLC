@@ -57,10 +57,10 @@ export default function UnderstandingITasset() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   As organizations digitize operations, upgrade infrastructure, and adopt cloud technologies, one area routinely receives less attention than it deserves: what happens to IT assets at the end of their lifecycle. The gap between active deployment and final disposition is where most preventable security and compliance exposure quietly accumulates.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   IT asset disposition isn&apos;t simply about discarding old hardware. It&apos;s a structured, governed, and security-critical process that protects sensitive data, ensures regulatory compliance, supports environmental responsibility, and reduces organizational risk all at the same time.
                 </p>
               </div>
@@ -73,10 +73,10 @@ export default function UnderstandingITasset() {
                   What ITAD Actually Is
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IT Asset Disposition (ITAD) is the process of securely and responsibly managing IT equipment that&apos;s no longer needed. The scope covers decommissioning, data sanitization, recycling, reuse, and destruction in line with security, legal, and environmental standards.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     The term often gets confused with simple IT asset disposal, but the two aren&apos;t interchangeable. Disposal refers to the physical act of getting rid of equipment. ITAD is a governed, end-to-end strategy that includes data security controls, compliance documentation, chain-of-custody tracking, and verifiable environmental outcomes. The difference matters because regulators, auditors, and increasingly customers expect the second one, not the first.
                   </p>
                 </div>
@@ -89,7 +89,7 @@ export default function UnderstandingITasset() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   IT Assets Covered Under ITAD
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   ITAD scope is broader than most teams initially assume. Any device capable of storing or processing data falls within the framework.
                 </p>
 
@@ -146,7 +146,7 @@ export default function UnderstandingITasset() {
                   Why ITAD Is Critical for Organizations
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Structured ITAD addresses real exposure across four interconnected dimensions, each one capable of producing significant cost or damage on its own.
                   </p>
                 </div>
@@ -156,7 +156,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Data security and breach prevention
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Secure data removal protects sensitive customer and employee information, financial records, and intellectual property. Improper sanitization is one of the most common preventable causes of enterprise data breaches.
                     </p>
                   </div>
@@ -165,7 +165,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Regulatory and legal compliance
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Compliance with GDPR, HIPAA, GLBA, SOX, and CCPA isn&apos;t optional, and ITAD documentation is what makes that compliance defensible during audit. The fines, lawsuits, and audit failures from non-compliance routinely exceed the cost of structured ITAD by orders of magnitude.
                     </p>
                   </div>
@@ -174,7 +174,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Environmental responsibility
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Reuse, remarketing, and certified recycling under R2v3 standards support sustainability commitments and ESG reporting that increasingly shape investor and customer relationships.
                     </p>
                   </div>
@@ -183,7 +183,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Financial and operational benefits
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Beyond risk reduction, ITAD recovers residual value from retired assets, reduces storage costs from accumulated equipment, and improves operational efficiency by replacing ad-hoc handling with predictable workflows.
                     </p>
                   </div>
@@ -198,13 +198,13 @@ export default function UnderstandingITasset() {
                   Certified IT Asset Disposition Services in San Francisco
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Looking for secure IT asset disposition in San Francisco? IntegriTrade LLC helps businesses retire laptops, servers, storage devices, and network equipment through certified ITAD services focused on data security, compliance, and environmental responsibility.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Our process includes asset decommissioning, NIST 800-88 compliant data sanitization, secure chain of custody, value recovery, and responsible recycling so your organization can reduce risk while maximizing the return on retired IT assets.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     <Link
                       href="/service-area/san-francisco/it-asset-disposition/"
                       className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
@@ -223,7 +223,7 @@ export default function UnderstandingITasset() {
                   Key Stages of the ITAD Process
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     A defensible ITAD program runs as a sequence of four connected stages, each one producing the documentation that makes the next stage possible.
                   </p>
                 </div>
@@ -233,7 +233,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       1. Asset decommissioning and inventory control
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Formal retirement from active use, with inventory systems updated to track asset status, ownership, and condition per device. Without accurate inventory, nothing downstream can be verified.
                     </p>
                   </div>
@@ -242,7 +242,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       2. Data sanitization and secure destruction
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Approved data removal methods including logical wiping, cryptographic erasure, or physical destruction following NIST 800-88 guidelines, with per-device certificates documenting the standard applied.
                     </p>
                   </div>
@@ -251,7 +251,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       3. Logistics and chain of custody
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Secure transport with asset tracking, controlled logistics, GPS monitoring, and documented custody transfers at every handoff between facilities.
                     </p>
                   </div>
@@ -260,7 +260,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       4. Recycling, reuse, and final disposal
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Responsible disposition through certified recycling, refurbishment for reuse, or environmentally compliant destruction depending on each asset&apos;s condition and recovery potential.
                     </p>
                   </div>
@@ -274,7 +274,7 @@ export default function UnderstandingITasset() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   ITAD Compliance Standards
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   Several recognized standards together form the framework for defensible ITAD operations. Look for these explicitly when evaluating providers.
                 </p>
 
@@ -321,7 +321,7 @@ export default function UnderstandingITasset() {
                   Common ITAD Mistakes
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Three recurring mistakes account for most ITAD failures. Recognizing them early is the cheapest way to avoid them.
                   </p>
                 </div>
@@ -331,7 +331,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Using uncertified or informal disposal
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Informal handling increases liability and reduces control over sensitive data. The apparent cost savings rarely survive contact with the resulting fines, breach costs, or audit findings.
                     </p>
                   </div>
@@ -340,7 +340,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Inadequate documentation
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Without audit trails, organizations cannot prove compliance regardless of how careful the actual handling was. Documentation is what makes ITAD defensible after the fact, not the workflow alone.
                     </p>
                   </div>
@@ -349,7 +349,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Lack of policy and governance
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Ad-hoc handling fails to integrate ITAD into broader risk management frameworks. Without policy, every disposition project repeats the same gaps and missed controls.
                     </p>
                   </div>
@@ -364,10 +364,10 @@ export default function UnderstandingITasset() {
                   Who Needs a Strong ITAD Strategy
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Any organization handling technology and data benefits from structured ITAD. The list spans small and medium businesses managing growing fleets, large enterprises with substantial compliance obligations, healthcare providers under HIPAA, financial institutions under GLBA and SOX, government agencies under federal data protection requirements, and educational institutions under FERPA.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     As regulatory frameworks tighten and data volumes grow, ITAD has shifted from a nice-to-have to a baseline expectation for any organization handling sensitive information regardless of size. The cost of building a structured program is small compared to the exposure it eliminates.
                   </p>
                 </div>
@@ -381,7 +381,7 @@ export default function UnderstandingITasset() {
                   Best Practices for Effective ITAD
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Three practices separate organizations that consistently produce defensible ITAD outcomes from those that quietly accumulate exposure.
                   </p>
                 </div>
@@ -391,7 +391,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Align ITAD with broader IT governance
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Integrate ITAD policies with information security, risk management, and procurement frameworks. Policies that sit in isolation get ignored; policies woven into existing controls become operational reality.
                     </p>
                   </div>
@@ -400,7 +400,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Review the process regularly
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Update ITAD policies to reflect new regulations, emerging technologies, and changing business needs. Stale policies create their own audit findings.
                     </p>
                   </div>
@@ -409,7 +409,7 @@ export default function UnderstandingITasset() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Train employees consistently
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Employees involved in asset handling need to understand their responsibilities, the security implications of their actions, and the escalation procedures when something goes wrong. Human error remains one of the most common ITAD failure modes.
                     </p>
                   </div>
@@ -424,10 +424,10 @@ export default function UnderstandingITasset() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IT asset disposition is no longer a back-office function it&apos;s a strategic priority that touches data security, regulatory compliance, sustainability commitments, and financial recovery simultaneously. Done well, ITAD turns retirement into a controlled, documented part of the IT lifecycle rather than a recurring source of unmanaged risk.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Understanding the importance of ITAD and implementing a structured approach lets organizations reduce risk, preserve value, and demonstrate responsible IT governance in an increasingly regulated digital world. The investment is small. The exposure it closes is not.
                   </p>
                 </div>

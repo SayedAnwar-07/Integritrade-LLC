@@ -138,7 +138,7 @@ export default function OurCapabilitiesPage() {
                           <h4 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-2 tracking-tight">
                             {bullet.title}
                           </h4>
-                          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                             {bullet.body}
                           </p>
                         </div>
@@ -205,7 +205,7 @@ export default function OurCapabilitiesPage() {
                     <h4 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4 tracking-tight">
                       Degaussing
                     </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 text-justify">
+                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 custom-text-center">
                       The drive is exposed to a high-energy magnetic field that scrambles the platter at the molecular level not a deletion, an erasure of the magnetic orientation itself.
                     </p>
 
@@ -241,7 +241,7 @@ export default function OurCapabilitiesPage() {
                     <h4 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 mb-4 tracking-tight">
                       Shredding
                     </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 text-justify">
+                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 custom-text-center">
                       Once degaussed, the drive moves to our shredder. Platters are reduced to jagged fragments. Even if a fragment were recovered, there is no readable magnetic signature left.
                     </p>
 
@@ -312,7 +312,7 @@ export default function OurCapabilitiesPage() {
                     <h4 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4 tracking-tight">
                       Model 2 SSD-VK
                     </h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 text-justify">
+                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed mb-8 custom-text-center">
                       Designed specifically for solid-state media. Reduces drives, phones, and flash storage to a 2mm particle size small enough that NAND flash chips themselves are destroyed.
                     </p>
 
@@ -333,7 +333,7 @@ export default function OurCapabilitiesPage() {
                           <p className="shrink-0 pt-0.5 text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-widest">
                             {row.label}
                           </p>
-                          <p className="text-sm font-medium text-gray-900 dark:text-gray-100 text-justify leading-relaxed">
+                          <p className="text-sm font-medium text-gray-900 dark:text-gray-100 custom-text-center leading-relaxed">
                             {row.value}
                           </p>
                         </div>
@@ -440,7 +440,7 @@ export default function OurCapabilitiesPage() {
                     <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                       Site visits welcome. Walk the floor before you sign.
                     </h2>
-                    <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl text-justify">
+                    <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl custom-text-center">
                       We host scheduled facility tours for prospective clients and
                       auditors. Bring your compliance lead they&apos;ll see the same
                       process your retired devices will go through.

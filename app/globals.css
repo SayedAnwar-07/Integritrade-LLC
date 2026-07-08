@@ -409,3 +409,7 @@
 .click-feel:active {
   transform: scale(0.96) translateY(1px);
 }
+
+.custom-text-center {
+  text-align: left;
+}

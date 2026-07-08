@@ -90,10 +90,10 @@ export default function ZeroTrustITAD() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Zero-trust has become the benchmark in cybersecurity. Most organizations implement it across software, cloud, and network access controls and stop there. The hardware end-of-life stage typically falls outside the scope, creating a significant blind spot exactly where the real data risk lives.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A genuine zero-trust model applies to deprecated hardware just as much as it does to active devices. That&apos;s where ITAD becomes critical: it&apos;s the discipline that closes the verification gap between when a device leaves the network and when its data is verifiably destroyed.
                 </p>
               </div>
@@ -106,10 +106,10 @@ export default function ZeroTrustITAD() {
                   Verify the Device Through End-of-Life
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     One of zero-trust&apos;s core principles is verifying the identity and data access of every device, continuously. Once a server or laptop is disconnected from the network, it usually drops off the managed-device list entirely exits the MDM, exits the asset register, exits the security perimeter. Yet the data remains on the drive, often for months or years, waiting to be discovered when nobody&apos;s watching.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Professional ITAD closes that gap by tracking the serial number of every device through final disposition. No device disappears from the system; every asset&apos;s final destination is documented and verified. Zero-trust verification extends all the way through end-of-life rather than ending at decommission.
                   </p>
                 </div>
@@ -123,10 +123,10 @@ export default function ZeroTrustITAD() {
                   Verified Data Sanitization
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Zero-trust leaves no room for &ldquo;telling&rdquo; or &ldquo;trusting.&rdquo; The IT team may say they formatted the drives, but verbal confirmation isn&apos;t verification and a standard OS format doesn&apos;t securely erase data. Residual information remains recoverable through forensic tools even after a factory reset or quick format, leaving the organization exposed long after the team believes the work is done.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Software-generated Certificates of Erasure (COE) replace assurance with proof. Every device receives forensic-level documentation confirming the sanitization standard applied typically NIST 800-88 with serialized records that hold up to audit. The audit trail becomes the final verification step in the zero-trust model: documented, tamper-proof, and compliance-ready.
                   </p>
                 </div>
@@ -140,10 +140,10 @@ export default function ZeroTrustITAD() {
                   Supply Chain Security
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Zero-trust treats every third-party vendor as untrusted by default. Handing retired devices to a general recycling company immediately breaks the chain of custody and removes any meaningful control over what happens to the data. Non-certified recyclers have no obligation to document downstream handling, which means hardware and the data on it can end up anywhere in the secondary market without your visibility.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Certified ITAD vendors complement zero-trust by digitally logging every step from device collection through final destruction. Each handoff is documented, each downstream partner is vetted, and each transfer is auditable. Supply chain security holds up because it&apos;s built to and the documentation produced satisfies regulators rather than requiring after-the-fact reconstruction.
                   </p>
                 </div>
@@ -157,10 +157,10 @@ export default function ZeroTrustITAD() {
                   Hardware Resale vs Zero-Trust
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     A common misconception holds that zero-trust requires physically destroying all retiring hardware. It doesn&apos;t. The result of that assumption is unnecessary e-waste and lost asset value, when proper data erasure delivers the same security outcome at a fraction of the environmental and financial cost.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     When data is destroyed to NIST 800-88 standards with verifiable COE documentation, the device itself is safe for reuse or resale without compromising the zero-trust posture. ITAD makes profit and security fully compatible recovering value from retired assets while maintaining the verification rigor that zero-trust demands.
                   </p>
                 </div>
@@ -173,7 +173,7 @@ export default function ZeroTrustITAD() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   Where Zero-Trust Meets ITAD
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   The four foundational principles of zero-trust map directly onto specific ITAD controls. The structural alignment is what makes ITAD an extension of zero-trust rather than a separate concern.
                 </p>
 
@@ -226,7 +226,7 @@ export default function ZeroTrustITAD() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -243,10 +243,10 @@ export default function ZeroTrustITAD() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     A zero-trust security model remains incomplete without the disposal and decommissioning stages of IT assets. Genuine zero-trust requires full control and irrefutable proof of every step from a device&apos;s birth through its final disposition not just the parts of the lifecycle that are easy to monitor.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IntegriTrade closes the last step of the zero-trust journey, where security and transparency stay aligned with the rest of the framework rather than quietly drifting away once devices leave active service.
                   </p>
                 </div>

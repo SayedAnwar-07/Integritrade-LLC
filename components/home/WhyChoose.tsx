@@ -86,7 +86,7 @@ export default function WhyChoose() {
 
                   <div className="my-4 h-px w-full bg-stone-200 dark:bg-slate-700" />
 
-                  <p className="text-[14px] leading-relaxed text-stone-700 dark:text-slate-300 mb-4 text-justify">
+                  <p className="text-[14px] leading-relaxed text-stone-700 dark:text-slate-300 mb-4 custom-text-center">
                     {desc}
                   </p>
                 </div>

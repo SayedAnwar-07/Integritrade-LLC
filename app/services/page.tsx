@@ -139,7 +139,7 @@ export default function ServicesPage() {
                     {row.recommendation}
                   </dd>
 
-                   <dt className="md:col-span-7 text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+                   <dt className="md:col-span-7 text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 custom-text-center">
                     {row.scenario}
                   </dt>
                 </div>
@@ -178,7 +178,7 @@ export default function ServicesPage() {
                         {valueRecoveryDisclaimer.map((para, i) => (
                           <p
                             key={i}
-                            className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify mb-6 last:mb-0"
+                            className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 custom-text-center mb-6 last:mb-0"
                           >
                             {para}
                           </p>
@@ -191,7 +191,7 @@ export default function ServicesPage() {
                       {valueRecoveryDisclaimer.map((para, i) => (
                         <p
                           key={i}
-                          className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify mb-6 last:mb-0"
+                          className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 custom-text-center mb-6 last:mb-0"
                         >
                           {para}
                         </p>

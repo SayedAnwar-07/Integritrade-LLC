@@ -91,10 +91,10 @@ export default function HowITADWorks() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 IT Asset Disposition is often misunderstood as a glorified version of electronics recycling. It isn&apos;t. A legitimate ITAD process runs more like a regulated logistics and security operation, with documented controls, certified destruction, and accountability at every handoff.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Understanding what&apos;s actually happening behind the scenes is the difference between a defensible disposition program and a quiet liability sitting on a vendor invoice.
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function HowITADWorks() {
                 What Goes Into the Cost of Real ITAD
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Professional ITAD has real costs that need to be covered before a single drive is touched. These aren&apos;t markup they&apos;re what separate a credible provider from one that cuts corners on the steps that actually matter.
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Insurance
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Handling expensive hardware and sensitive data requires high-value insurance coverage that protects both the provider and the client across the full chain of custody.
                   </p>
                 </div>
@@ -126,7 +126,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Secure transportation and logistics
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Moving assets while preserving chain of custody requires GPS-tracked vehicles, locked containers, vetted personnel, and documented transfer protocols. None of that is cheap, and none of it is optional.
                   </p>
                 </div>
@@ -135,7 +135,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Certifications and audits
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Maintaining recognized standards such as R2v3, ISO 27001, and HIPAA-aligned workflows requires regular third-party audits, ongoing compliance work, and licensing fees the providers who hold these certifications are paying to keep them current.
                   </p>
                 </div>
@@ -150,10 +150,10 @@ export default function HowITADWorks() {
                 A Simple Question About Trust
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Would you hand an unlocked phone with all your personal data to a roadside repair shop you&apos;ve never used before? Almost certainly not. So the same question applies in reverse: why hand your organization&apos;s laptops, servers, and storage devices full of regulated business data to a vendor offering free recycling with no documentation?
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   When data security is questionable, &ldquo;free&rdquo; can quickly turn into millions of dollars in regulatory fines, breach notification costs, and reputational damage. Free recycling without documentation, chain of custody, or certified destruction isn&apos;t a deal it&apos;s a liability the business agreed to take on without realizing it.
                 </p>
               </div>
@@ -166,7 +166,7 @@ export default function HowITADWorks() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 Free Recycling vs Professional ITAD
               </h2>
-              <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+              <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                 The two services look similar on a quote sheet and behave very differently in practice.
               </p>
 
@@ -223,7 +223,7 @@ export default function HowITADWorks() {
                 Professional ITAD Often Doesn&apos;t Cost the Client Anything
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Here&apos;s the part most teams don&apos;t expect: in a meaningful share of engagements, clients pay nothing out of pocket. In many cases they actually generate revenue from retired assets. Whether ITAD shows up as a cost or as a return depends on three variables.
                 </p>
               </div>
@@ -233,7 +233,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Device age and configuration
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Newer equipment with strong specifications commands real market demand. The closer the fleet is to current generation, the more recovery value sits inside the program.
                   </p>
                 </div>
@@ -242,7 +242,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Volume processed at once
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Larger lots reduce per-unit logistics costs, improving the margin available for value recovery. Bulk disposition is simply more efficient than processing small batches over time.
                   </p>
                 </div>
@@ -251,7 +251,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Sanitization and destruction requirements
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Mandatory physical destruction eliminates the ability to resell the device, which increases manual labor and reduces the recovery side of the equation. The right approach matches the destruction method to the actual security requirement, rather than defaulting to maximum destruction for everything.
                   </p>
                 </div>
@@ -266,7 +266,7 @@ export default function HowITADWorks() {
                 What a Proper ITAD Process Looks Like
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A legitimate provider runs a structured, documented, and accountable workflow from intake through final disposition. The deliverables aren&apos;t marketing extras they&apos;re what makes the program defensible.
                 </p>
               </div>
@@ -276,7 +276,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Asset inventories and condition reports
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Every device received is logged by serial number, with condition, configuration, and assessed market value documented for full visibility.
                   </p>
                 </div>
@@ -285,7 +285,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Certificates of erasure and destruction
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Per-device documentation confirming the sanitization standard applied (NIST 800-88, DoD 5220.22-M) or physical destruction performed, suitable for audit and regulatory review.
                   </p>
                 </div>
@@ -294,7 +294,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Sealed chain-of-custody documentation
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     A continuous record from pickup to final disposition, with every transfer, handler, and processing step accounted for.
                   </p>
                 </div>
@@ -303,7 +303,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Transparent value recovery reporting
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     A clear breakdown of what was resold, refurbished, or recycled along with recovered value, so finance and IT can verify outcomes against expectations.
                   </p>
                 </div>
@@ -318,7 +318,7 @@ export default function HowITADWorks() {
                 The Real Risks of &ldquo;Free Recycling&rdquo;
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Organizations that opt for unverified or free recycling routinely encounter the same pattern of problems and they tend to surface at the worst possible moment, usually during an audit or after a breach.
                 </p>
               </div>
@@ -328,7 +328,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     No documented chain of custody
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Without continuous tracking, there&apos;s no way to verify where assets went, who handled them, or what happened during the gap between pickup and final disposition.
                   </p>
                 </div>
@@ -337,7 +337,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     No certified data destruction
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Sensitive data may remain on devices long after they&apos;ve left your control, creating an exposure that compounds over time and across whoever handles the equipment next.
                   </p>
                 </div>
@@ -346,7 +346,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     No compliance documentation
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Without certificates and audit trails, there&apos;s nothing to show regulators or internal auditors when documentation of disposition is requested.
                   </p>
                 </div>
@@ -355,7 +355,7 @@ export default function HowITADWorks() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     No asset valuation
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Equipment with real recovery value gets treated as scrap, leaving meaningful financial returns on the table that should have offset the cost of new infrastructure.
                   </p>
                 </div>
@@ -377,7 +377,7 @@ export default function HowITADWorks() {
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent>
-                      <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -394,10 +394,10 @@ export default function HowITADWorks() {
                 Why IntegriTrade LLC?
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Choosing the right ITAD partner means keeping your organization&apos;s data secure while genuinely maximizing the value of retired assets. The two outcomes are not in tension when the workflow is built correctly they reinforce each other.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Transparent processes, a zero-data-breach record, and certified destruction aligned with recognized standards are what set IntegriTrade apart. When data security matters, the choice of ITAD vendor matters just as much.
                 </p>
               </div>

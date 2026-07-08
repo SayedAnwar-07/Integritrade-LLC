@@ -91,10 +91,10 @@ export default function LandfillVsCertifiedRecycling() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   When an old laptop or hard drive gets thrown out, it doesn&apos;t just disappear. The path it takes from there determines whether it slowly poisons the soil and groundwater for decades, or whether the materials inside it are recovered and put back into productive use.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The decisions organizations make today about retired electronics shape the environment ahead and there&apos;s a meaningful gap between the worst path and the right one.
                 </p>
               </div>
@@ -107,7 +107,7 @@ export default function LandfillVsCertifiedRecycling() {
                   Why Electronics Don&apos;t Belong in Landfills
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Electronics in general landfills cause damage that&apos;s slow, severe, and difficult to reverse. The harm comes from three connected pathways, each affecting a different part of the environment.
                   </p>
                 </div>
@@ -117,7 +117,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Toxic heavy metals leaching into soil
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Electronics contain lead, mercury, cadmium, and arsenic substances that bind to soil in landfills and contaminate the surrounding ground for decades. The damage doesn&apos;t stop at the landfill boundary.
                     </p>
                   </div>
@@ -126,7 +126,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Groundwater contamination
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Toxic chemicals mix with rainwater and migrate downward into the groundwater table. From there they reach drinking water supplies and agricultural land, far from where the original waste was deposited.
                     </p>
                   </div>
@@ -135,7 +135,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Air pollution from burning
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Landfill waste is often incinerated, which releases dioxins and furans into the air both linked to cancer and serious respiratory illness. The communities downwind from the burn sites carry the public health cost.
                     </p>
                   </div>
@@ -149,7 +149,7 @@ export default function LandfillVsCertifiedRecycling() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   Landfill vs Certified Recycling: Side by Side
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   Comparing the two paths directly makes the operational and environmental gap impossible to ignore.
                 </p>
 
@@ -206,7 +206,7 @@ export default function LandfillVsCertifiedRecycling() {
                   Certified Recycling: A Sustainable Alternative
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     R2v3 and equivalent certified recycling processes do the opposite of landfill disposal: they actively protect the environment while recovering meaningful value from retired electronics. The benefits compound across three dimensions.
                   </p>
                 </div>
@@ -216,7 +216,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Resource recovery from precious metals
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Smartphones, laptops, and servers contain meaningful quantities of gold, silver, copper, and palladium. Certified recycling recovers these metals and feeds them back into manufacturing supply chains, reducing the demand for environmentally destructive raw mining.
                     </p>
                   </div>
@@ -225,7 +225,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Lower carbon footprint
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Recovering metals from existing electronics requires far less energy than extracting new metals from mines. The reduction in energy use translates directly into lower greenhouse gas emissions and a smaller environmental footprint for organizations that choose certified recycling over disposal.
                     </p>
                   </div>
@@ -234,7 +234,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Zero landfill outcomes
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Certified vendors operating zero-landfill policies ensure no part of any device ends up in a landfill. Each component is either refurbished for reuse or separated into raw materials for responsible processing through certified downstream partners.
                     </p>
                   </div>
@@ -249,7 +249,7 @@ export default function LandfillVsCertifiedRecycling() {
                   Why Choose IntegriTrade LLC?
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     E-waste management isn&apos;t just a legal obligation it&apos;s a moral one. IntegriTrade adheres strictly to environmental standards and ensures every device handled goes through an environmentally responsible workflow from intake to final disposition.
                   </p>
                 </div>
@@ -259,7 +259,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       R2v3-certified processes
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Every device passes through R2v3 certified workflows, ensuring the highest environmental and data security standards apply across the full disposition process.
                     </p>
                   </div>
@@ -268,7 +268,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Full accountability and documentation
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Every component is tracked from collection through final disposition, with complete documentation provided to the client at project close.
                     </p>
                   </div>
@@ -277,7 +277,7 @@ export default function LandfillVsCertifiedRecycling() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Nothing goes to landfill
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Materials are refurbished, resold, or responsibly broken down by certified downstream partners. The zero-landfill commitment isn&apos;t marketing language; it&apos;s how the workflow is built.
                     </p>
                   </div>
@@ -292,13 +292,13 @@ export default function LandfillVsCertifiedRecycling() {
                   E-Waste Recycling Services in San Francisco
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Looking for responsible e-waste recycling in San Francisco? IntegriTrade LLC provides certified electronics recycling services that ensure safe disposal of IT equipment without harming the environment.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Our R2v3-certified process focuses on zero landfill, resource recovery, and secure handling of all devices helping your organization reduce environmental impact while staying compliant with industry regulations.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     <Link
                       href="/service-area/san-francisco/e-waste-recycling/"
                       className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
@@ -324,7 +324,7 @@ export default function LandfillVsCertifiedRecycling() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -341,10 +341,10 @@ export default function LandfillVsCertifiedRecycling() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     The choice between landfilling and certified recycling isn&apos;t just an operational decision. It&apos;s an environmental and ethical one. Every device an organization retires is an opportunity either to harm the environment or to keep recoverable materials in productive use and the difference is decided at the point of disposition, not afterward.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IntegriTrade LLC has maintained a clean record with no history of data breach and operates a verified zero-landfill workflow. When data security and environmental responsibility both matter, they shouldn&apos;t be a trade-off and they don&apos;t have to be.
                   </p>
                 </div>

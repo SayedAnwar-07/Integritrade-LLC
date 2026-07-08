@@ -63,10 +63,10 @@ export default function FairFlexibleCutlines() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Most ITAD providers apply rigid age-based cutlines to retired equipment. A laptop crosses a four or five-year mark, gets stamped as scrap, and the residual value disappears with it. The approach is convenient for the provider and expensive for the client.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 IntegriTrade takes a different position. Each device is evaluated on its actual configuration, condition, and current market demand rather than its calendar age. The result is meaningful value recovery from equipment that other providers wouldn&apos;t bother to assess.
               </p>
             </div>
@@ -79,10 +79,10 @@ export default function FairFlexibleCutlines() {
                 Flexible Cutlines and Maximum Value Recovery
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Many ITAD vendors classify devices five years or older as scrap by default. We don&apos;t. Even equipment that&apos;s four years old or beyond goes through a real evaluation rather than an automatic write-off, because configuration and condition often tell a very different story than the original purchase date.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Every device or server is checked against its full specification and the current resale market. A four-year-old workstation with strong specs and clean cosmetic condition can still command meaningful value, and that value belongs to your organization not to a recycler&apos;s revenue stream.
                 </p>
               </div>
@@ -95,7 +95,7 @@ export default function FairFlexibleCutlines() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 Standard Cutlines vs IntegriTrade&apos;s Approach
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 custom-text-center">
                 The difference between rigid and flexible cutlines becomes clear when you look at how each method handles the same retired fleet.
               </p>
 
@@ -147,10 +147,10 @@ export default function FairFlexibleCutlines() {
                 Data Security That Holds Up to Audit
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Strong recovery numbers mean nothing if data security falls short. Our program is built around R2v3 and ISO 27001 certifications, with data erasure and physical destruction performed to NIST 800-88 and DoD 5220.22-M standards. Every project closes with an official Certificate of Data Destruction for legal and compliance protection.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Recovery and security work together rather than against each other. Drives that pass certified erasure stay with the asset for resale; drives that need destruction are physically destroyed with documented evidence. Either way, no recoverable data leaves our custody.
                 </p>
               </div>
@@ -164,10 +164,10 @@ export default function FairFlexibleCutlines() {
                 Scope-Based Assessment, Not Weight-Based
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   We don&apos;t price by the pallet or by the pound. Each engagement is evaluated within its specific scope, with our team auditing the condition of every lot individually. Whether the project involves 50 devices or 5,000, the same per-device discipline applies.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Accurate valuation is the foundation of long-term partnerships, and that requires looking at what&apos;s actually in front of us rather than relying on shortcuts. The result is a number that holds up to scrutiny on both sides.
                 </p>
               </div>
@@ -181,10 +181,10 @@ export default function FairFlexibleCutlines() {
                 Transparent Settlement Reports
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Every project closes with a detailed settlement report covering item-by-item condition, current market valuation, and a clear breakdown of how each price was determined. No black-box numbers, no generic line items.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   This level of transparency is what allows finance, IT, and audit teams to verify outcomes independently and is also what makes recurring partnerships possible. When the math is visible, trust follows.
                 </p>
               </div>
@@ -198,10 +198,10 @@ export default function FairFlexibleCutlines() {
                 Zero Landfill and Sustainability
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Our zero-landfill commitment is built into the workflow rather than added as a marketing line. Devices that can be refurbished are given a second life through verified resale and redeployment channels. Equipment that genuinely reaches end-of-life is recycled responsibly under R2v3 standards, with materials recovered rather than discarded.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Working with IntegriTrade reduces your organization&apos;s environmental footprint while maximizing the financial recovery from retired IT assets two outcomes that no longer have to be a trade-off.
                 </p>
               </div>
@@ -215,10 +215,10 @@ export default function FairFlexibleCutlines() {
                 Full Chain of Custody and Asset Tracking
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Every step from pickup to final disposition is tracked, documented, and available for review. Detailed audit reports and complete inventory lists give your team the visibility needed for both internal review and external compliance.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Audit and tax compliance shouldn&apos;t require chasing your ITAD partner for documentation after the fact. Our process produces the records you need as a routine part of every engagement.
                 </p>
               </div>
@@ -232,7 +232,7 @@ export default function FairFlexibleCutlines() {
                 Why Organizations Choose IntegriTrade
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Our approach combines three things that rarely show up together in the ITAD market: certified compliance, fair valuation, and operational speed.
                 </p>
               </div>
@@ -242,7 +242,7 @@ export default function FairFlexibleCutlines() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Certified excellence
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     R2v3 and ISO 27001 certifications back every step of the process, ensuring data security and regulatory compliance from intake to final disposition.
                   </p>
                 </div>
@@ -251,7 +251,7 @@ export default function FairFlexibleCutlines() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Fair payouts with no hidden charges
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Every line item is documented, every valuation is explainable, and the price you see is the price you get. No surprise deductions or surface-level estimates.
                   </p>
                 </div>
@@ -260,7 +260,7 @@ export default function FairFlexibleCutlines() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Fast turnaround
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     From scheduled pickup through final reporting, our process is built to minimize disruption to your operations and accelerate the recovery cycle.
                   </p>
                 </div>
@@ -275,7 +275,7 @@ export default function FairFlexibleCutlines() {
                 Industries We Support
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Our program is built to handle the regulatory and operational demands of sectors where data sensitivity and compliance documentation matter most.
                 </p>
               </div>
@@ -285,7 +285,7 @@ export default function FairFlexibleCutlines() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Healthcare
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     HIPAA-aligned data security workflows protect patient information through every stage of disposition, with documentation suited for healthcare audits and breach prevention requirements.
                   </p>
                 </div>
@@ -294,7 +294,7 @@ export default function FairFlexibleCutlines() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Finance and banking
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Strict compliance with financial regulations and data protection standards, including the chain-of-custody documentation that audit and risk teams require.
                   </p>
                 </div>
@@ -303,7 +303,7 @@ export default function FairFlexibleCutlines() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Data centers
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Large-scale equipment handling with logistics and processing workflows designed for the volume and complexity of modern data center retirements.
                   </p>
                 </div>
@@ -312,7 +312,7 @@ export default function FairFlexibleCutlines() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Government agencies
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Maximum transparency and accountability aligned with public sector requirements for asset disposition and verified data destruction.
                   </p>
                 </div>
@@ -333,7 +333,7 @@ export default function FairFlexibleCutlines() {
                     What makes IntegriTrade&apos;s cutlines different?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       We don&apos;t retire devices by calendar age. Each unit is evaluated on its configuration, condition, and current market demand, which means meaningful value can still be recovered from equipment four or more years old.
                     </p>
                   </AccordionContent>
@@ -344,7 +344,7 @@ export default function FairFlexibleCutlines() {
                     How do you ensure data security during recovery?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       All work runs through R2v3 and ISO 27001 certified processes. Data erasure and physical destruction follow NIST 800-88 and DoD 5220.22-M standards, and every project closes with an official Certificate of Data Destruction.
                     </p>
                   </AccordionContent>
@@ -355,7 +355,7 @@ export default function FairFlexibleCutlines() {
                     What is a scope-of-job assessment?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Rather than pricing by weight, we audit each lot individually 50 devices or 5,000 to produce accurate per-item valuations grounded in real condition and market data.
                     </p>
                   </AccordionContent>
@@ -366,7 +366,7 @@ export default function FairFlexibleCutlines() {
                     Are there hidden fees?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       No. Every settlement report shows the condition and market value behind each line item. Fair payouts, transparent math, no surprise deductions.
                     </p>
                   </AccordionContent>
@@ -377,7 +377,7 @@ export default function FairFlexibleCutlines() {
                     What happens to devices that can&apos;t be resold?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Under our zero-landfill policy, equipment that genuinely reaches end-of-life is recycled responsibly to R2v3 standards, with materials recovered rather than sent to landfill.
                     </p>
                   </AccordionContent>
@@ -393,10 +393,10 @@ export default function FairFlexibleCutlines() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The cutline policy is one of the clearest signals of how an ITAD provider really operates. Rigid age-based cutoffs are easy to administer and hard to defend financially. Flexible, condition-driven evaluation takes more work and produces measurably better outcomes for the organization retiring the equipment.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   IntegriTrade is built around the second approach. Every device gets a real assessment, every settlement is transparent, and every project closes with the documentation your team needs. That&apos;s how retired IT becomes recovered value rather than written-off scrap.
                 </p>
               </div>

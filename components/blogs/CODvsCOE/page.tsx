@@ -63,10 +63,10 @@ export default function CODvsCOE() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Two documents are commonly used as proof of data destruction in IT Asset Disposition: the Certificate of Destruction (COD) and the Certificate of Erasure (COE). They are often treated as interchangeable, but the difference between them is significant and choosing the wrong one can leave your organization exposed during an audit or after a data breach.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Understanding what each certificate actually proves is the first step toward a defensible data sanitization program.
               </p>
             </div>
@@ -79,7 +79,7 @@ export default function CODvsCOE() {
                 What a Certificate of Destruction (COD) Actually Proves
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A COD is a general declaration issued by a recycling or destruction provider, confirming that hardware was received and physically destroyed. It typically lists the device type, weight, and date of destruction.
                 </p>
               </div>
@@ -89,7 +89,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     A manual, process-based document
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     A COD is generally created by the destruction provider&apos;s staff. It documents that a physical process took place, but it relies on the provider&apos;s word rather than a verifiable, per-device technical record.
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     What it does not confirm
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     A COD does not prove that every data sector on a drive was successfully overwritten or rendered unrecoverable. It confirms that destruction happened, not that data was verifiably eliminated before or during the process.
                   </p>
                 </div>
@@ -113,7 +113,7 @@ export default function CODvsCOE() {
                 Why a Certificate of Erasure (COE) Is More Powerful
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A COE is a technical record produced by certified data sanitization software rather than a hand-written summary. It documents the sanitization of each individual device with verifiable detail.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Software-generated and tamper-resistant
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     COEs are produced directly by sanitization tools such as Blancco or WhiteCanyon and delivered as encrypted PDFs that cannot be edited or forged after generation.
                   </p>
                 </div>
@@ -132,7 +132,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Per-device audit trail
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Each COE captures the device model, unique serial number, timestamp, sanitization standard applied (such as NIST 800-88 or DoD 5220.22-M), and a digital signature confirming a successful wipe.
                   </p>
                 </div>
@@ -141,7 +141,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Verifiable, not declarative
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Where a COD declares that something happened, a COE proves it with cryptographic evidence that holds up to internal review and external audit.
                   </p>
                 </div>
@@ -212,7 +212,7 @@ export default function CODvsCOE() {
                 Why COE Matters for Your Business
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   If your organization operates under HIPAA, GDPR, or R2V3 requirements, a COD on its own rarely satisfies an auditor. A COE provides the verifiable evidence those frameworks expect and offers practical advantages beyond compliance.
                 </p>
               </div>
@@ -222,7 +222,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Transparent, drive-level proof
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Each drive has its own record showing exactly when it was sanitized, by what method, and with what result removing ambiguity from your reporting.
                   </p>
                 </div>
@@ -231,7 +231,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Stronger legal and regulatory position
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     In the event of a breach investigation or audit, a verified COE serves as defensible evidence that your organization performed proper data sanitization on every retired asset.
                   </p>
                 </div>
@@ -240,7 +240,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Higher return on retired assets
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Drives certified clean by COE can be safely resold or redeployed instead of destroyed, keeping working hardware in the value chain and improving overall ROI on your IT refresh.
                   </p>
                 </div>
@@ -255,7 +255,7 @@ export default function CODvsCOE() {
                 The Hybrid Approach: COE + COD
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   For maximum security, the strongest programs combine both certificates in a double-layer process. Each step covers a different risk and produces its own form of evidence.
                 </p>
               </div>
@@ -265,7 +265,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Step one: verified digital wipe
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Data is sanitized using certified software and a COE is generated, confirming that the contents of the drive cannot be recovered through digital means.
                   </p>
                 </div>
@@ -274,7 +274,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Step two: physical destruction when required
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     For environments that mandate physical destruction, the wiped drive is then shredded and a COD is issued to document the final disposition.
                   </p>
                 </div>
@@ -283,7 +283,7 @@ export default function CODvsCOE() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Why wipe before shredding
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Modern forensic techniques can sometimes recover data from drive fragments. Wiping before destruction closes that gap and ensures sensitive information is unrecoverable regardless of what happens downstream.
                   </p>
                 </div>
@@ -304,7 +304,7 @@ export default function CODvsCOE() {
                     What is the difference between COD and COE?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       A COD is a manual document confirming physical destruction of hardware. A COE is a software-generated, tamper-resistant PDF proving that every data sector was digitally wiped and verified at the device level making it far more reliable for compliance and audits.
                     </p>
                   </AccordionContent>
@@ -315,7 +315,7 @@ export default function CODvsCOE() {
                     Is a COD enough for HIPAA or GDPR compliance?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Generally no. HIPAA, GDPR, and R2V3 expect documented proof that data was verifiably erased, which only a software-generated COE with a per-device audit trail can provide.
                     </p>
                   </AccordionContent>
@@ -326,7 +326,7 @@ export default function CODvsCOE() {
                     What sanitization standards appear on a COE?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       COEs from certified tools like Blancco or WhiteCanyon document the standard applied such as NIST 800-88 or DoD 5220.22-M alongside serial numbers, timestamps, and digital verification signatures.
                     </p>
                   </AccordionContent>
@@ -337,7 +337,7 @@ export default function CODvsCOE() {
                     Can a COE help improve my ROI?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Yes. A drive certified clean by COE can be resold or redeployed rather than destroyed, keeping working hardware in the value chain and significantly improving returns compared to mandatory physical destruction.
                     </p>
                   </AccordionContent>
@@ -348,7 +348,7 @@ export default function CODvsCOE() {
                     Does IntegriTrade LLC provide COD, COE, or both?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       IntegriTrade LLC provides software-generated COEs and professional CODs for every device processed. Our double-layer protection approach (digital wipe followed by physical shredding where required) ensures your data sanitization is both secure and audit-friendly.
                     </p>
                   </AccordionContent>
@@ -364,10 +364,10 @@ export default function CODvsCOE() {
                 Why IntegriTrade LLC?
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Would you trust your organization&apos;s critical data to a single paper Certificate of Destruction? At IntegriTrade LLC, every device receives a software-generated COE and a professional COD, giving you both verifiable digital proof and physical disposition records under one process.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Transparent workflows, certified tools, and a zero-data-breach record are what set our program apart. When data security is the priority, the choice of ITAD partner is just as important as the certificates they produce.
                 </p>
               </div>

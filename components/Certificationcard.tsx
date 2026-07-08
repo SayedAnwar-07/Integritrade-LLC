@@ -87,7 +87,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
               <div className="h-px w-12 bg-emerald-700 mt-5 mb-5" />
 
               {/* Description */}
-              <p className="text-[15px] leading-relaxed text-neutral-600 dark:text-gray-300 text-justify">
+              <p className="text-[15px] leading-relaxed text-neutral-600 dark:text-gray-300 custom-text-center">
                 {certification.description}
               </p>
 
@@ -95,7 +95,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
                 <p className="text-neutral-900 dark:text-gray-100 font-medium mt-4 mb-1">
                   What it delivers
                 </p>
-                <p className="text-[15px] leading-relaxed text-neutral-800 dark:text-gray-200 text-justify">
+                <p className="text-[15px] leading-relaxed text-neutral-800 dark:text-gray-200 custom-text-center">
                   {certification.customerBenefit}
                 </p>
               </div>
@@ -110,7 +110,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
                 </div>
                 <div className="flex justify-between gap-4 text-sm pb-3 border-b border-neutral-200">
                   <dt className="text-neutral-500 dark:text-gray-400">Scope</dt>
-                  <dd className="text-neutral-900 dark:text-gray-100 max-w-[60%] text-justify">
+                  <dd className="text-neutral-900 dark:text-gray-100 max-w-[60%] custom-text-center">
                     {certification.company_description}
                   </dd>
                 </div>

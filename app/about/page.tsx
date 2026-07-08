@@ -195,7 +195,7 @@ export default function AboutPage() {
 
                     {/* <div className="my-4 h-px w-full bg-stone-200 dark:bg-slate-700" /> */}
 
-                    <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
+                    <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300 custom-text-center">
                       {p.desc}
                     </p>
                   </div>
@@ -223,11 +223,11 @@ export default function AboutPage() {
                     </h2>
                   </div>
                   <div className="max-w-4xl space-y-5 text-base leading-relaxed text-stone-700 dark:text-slate-300 mt-8">
-                    <p className="text-justify">
+                    <p className="custom-text-center">
                       Integritrade was built to give organizations a more accountable approach to IT asset disposition. Many businesses are forced to choose between basic recycling vendors and overly complicated enterprise contractors. Our goal was to create a process that combines secure handling, operational transparency, and practical service execution without unnecessary complexity.
                       </p>
 
-                    <p className="text-justify">
+                    <p className="custom-text-center">
                       Today, we support businesses, schools, healthcare organizations, public agencies, and enterprise teams with structured IT asset retirement workflows focused on data protection, responsible recycling, asset recovery, and audit-ready reporting.
                     </p>
                   </div>
@@ -301,7 +301,7 @@ export default function AboutPage() {
                       </h3>
                     </div>
                   
-                  <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
+                  <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 custom-text-center">
                     {p.desc}
                   </p>
                 </div>
@@ -372,7 +372,7 @@ export default function AboutPage() {
                         <div className="font-serif text-xl text-gray-900 dark:text-gray-100">
                           {item.title}
                         </div>
-                        <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
+                        <p className="mt-2 text-base leading-relaxed text-stone-700 dark:text-slate-300 custom-text-center">
                           {item.desc}
                         </p>
                       </div>
@@ -403,7 +403,7 @@ export default function AboutPage() {
                 </h2>
               </div>
               <div className="">
-                <p className="text-base leading-relaxed text-stone-700 dark:text-slate-300  text-justify">
+                <p className="text-base leading-relaxed text-stone-700 dark:text-slate-300  custom-text-center">
                   Security, environmental, and operations leads sit at the same
                   table so your retirement plan reflects all three constraints
                   from day one.
@@ -450,7 +450,7 @@ export default function AboutPage() {
 
                   <div className="my-4 h-px w-full bg-stone-200 dark:bg-slate-700" />
 
-                  <p className="mt-4 text-base  text-stone-700 dark:text-slate-300 leading-relaxed text-justify">
+                  <p className="mt-4 text-base  text-stone-700 dark:text-slate-300 leading-relaxed custom-text-center">
                     {p.desc}
                   </p>
                 </div>
@@ -475,7 +475,7 @@ export default function AboutPage() {
                 <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                   Site visits welcome. Walk the floor before you sign.
                 </h2>
-                <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl text-justify">
+                <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl custom-text-center">
                   We host scheduled facility tours for prospective clients and
                   auditors. Bring your compliance lead they&apos;ll see the same
                   process your retired devices will go through.

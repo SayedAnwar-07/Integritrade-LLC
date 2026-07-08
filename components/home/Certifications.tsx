@@ -94,7 +94,7 @@ export default function Certifications() {
                 <Separator className="my-3 sm:my-4 border-stone-200 dark:border-slate-700 max-w-60" />
 
                 {/* Description */}
-                <p className="text-sm text-stone-700 dark:text-slate-300 leading-relaxed min-h-[6rem] text-justify">
+                <p className="text-sm text-stone-700 dark:text-slate-300 leading-relaxed min-h-[6rem] custom-text-center">
                   {desc}
                 </p>
               </a>

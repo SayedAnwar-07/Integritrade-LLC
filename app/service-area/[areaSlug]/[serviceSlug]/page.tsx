@@ -136,7 +136,7 @@ export default async function ServicePage({ params }: PageProps) {
                         </h2>
 
                         {item.body && (
-                          <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 text-justify">
+                          <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300 custom-text-center">
                             {item.body}
                           </p>
                         )}
@@ -146,7 +146,7 @@ export default async function ServicePage({ params }: PageProps) {
                             {item.bullets.map((bullet, bulletIndex) => (
                               <li
                                 key={`${bulletIndex}-${bullet}`}
-                                className="flex text-[15px] items-start gap-3 text-slate-700 dark:text-slate-300 text-justify "
+                                className="flex text-[15px] items-start gap-3 text-slate-700 dark:text-slate-300 custom-text-center "
                               >
                                 <CheckCircle2 className="mt-1.5 h-4 w-4 shrink-0 text-emerald-600" />
                                 <span className="leading-7">{bullet}</span>

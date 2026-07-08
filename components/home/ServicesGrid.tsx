@@ -168,7 +168,7 @@ export default function ServicesGrid() {
                           </h3>
 
                           {/* Subtitle — reserves space for ~4 lines, clamps overflow */}
-                          <p className="text-[14px] leading-relaxed text-stone-700 dark:text-slate-300 mb-5 text-justify line-clamp-4 min-h-[5.5rem]">
+                          <p className="text-[14px] leading-relaxed text-stone-700 dark:text-slate-300 mb-5 custom-text-center line-clamp-4 min-h-[5.5rem]">
                             {truncate(service.pageSubtitle, 160)}
                           </p>
 

@@ -87,7 +87,7 @@ export default function ServiceAreaPage() {
                   <h2 className="font-serif text-3xl leading-tight tracking-tight text-gray-900 dark:text-white">
                     One Controlled Chain of Custody Across Every California Pickup
                   </h2>
-                  <p className="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300 text-justify">
+                  <p className="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300 custom-text-center">
                     Every pickup terminates at our Fresno R2v3 processing floor.
                     No regional partners, no white-label brokers, no transfers
                     between carriers. The same audit trail covers a startup in
@@ -118,7 +118,7 @@ export default function ServiceAreaPage() {
                           <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-emerald-600  dark:text-emerald-400">
                             <Icon className="h-3.5 w-3.5" strokeWidth={2.25} />
                           </span>
-                          <span className="text-sm leading-6 text-gray-700 dark:text-gray-300 text-justify">
+                          <span className="text-sm leading-6 text-gray-700 dark:text-gray-300 custom-text-center">
                             {text}
                           </span>
                         </li>
