@@ -90,10 +90,10 @@ export default function NvmeDrives() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Modern NVMe solid-state drives deliver exceptional speed, performance, and reliability. They also introduce a problem that catches a lot of organizations off guard: NVMe drives are extremely difficult to erase securely. Traditional data wiping methods that worked reliably for spinning HDDs simply don&apos;t produce the same outcome on NVMe technology.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   For organizations handling sensitive data healthcare, finance, government, and enterprise environments this gap creates real compliance and security exposure. Understanding why NVMe is so hard to sanitize, and what actually works, is the foundation of a defensible data destruction program.
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function NvmeDrives() {
                   Why NVMe Drives Are Hard to Erase
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Four architectural realities of NVMe make complete software-based erasure unreliable in ways that traditional HDD techniques never had to account for.
                   </p>
                 </div>
@@ -116,7 +116,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Complex flash memory architecture
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       NVMe drives use NAND flash memory governed by firmware that handles wear-leveling, garbage collection, dynamic remapping, and over-provisioned storage. Data moves around constantly under the hood, which is excellent for performance and longevity but makes complete software-based erasure nearly impossible to verify.
                     </p>
                   </div>
@@ -125,7 +125,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Hidden and over-provisioned blocks
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       NVMe drives contain spare memory blocks that are inaccessible to the operating system. These blocks frequently hold fragments of deleted files or system metadata, and they remain untouched by formatting and most wipe utilities even after the drive appears clean.
                     </p>
                   </div>
@@ -134,7 +134,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Wear-leveling defeats overwrites
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Wear-leveling redistributes writes across memory cells to extend the drive&apos;s lifespan. The side effect at end-of-life is that overwrite commands often never reach the original physical locations of the data they&apos;re meant to destroy. Forensic recovery remains possible even after secure erase commands appear to complete successfully.
                     </p>
                   </div>
@@ -143,7 +143,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       TRIM has limits
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       TRIM marks blocks as available for reuse it does not physically erase data. Hidden or remapped blocks may remain intact long after TRIM has done its job, leaving recoverable data in places software-level commands can&apos;t reach.
                     </p>
                   </div>
@@ -157,7 +157,7 @@ export default function NvmeDrives() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   HDD vs NVMe: Why the Old Methods Don&apos;t Apply
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   The differences between traditional spinning drives and NVMe go well beyond performance. They fundamentally change what data destruction has to accomplish.
                 </p>
 
@@ -214,10 +214,10 @@ export default function NvmeDrives() {
                   Why Software Wipes Fall Short on NVMe
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Even well-established methods that worked dependably on HDDs encounter real problems on NVMe. Multi-pass overwrite techniques like DoD 5220.22-M and the basic NIST 800-88 sanitization paths cannot guarantee complete sanitization on NVMe because they have no way to reach the blocks the firmware has hidden, remapped, or reserved.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Firmware-level secure erase commands are theoretically the right answer, but in practice they fail with surprising frequency due to firmware bugs, drive-level issues, or inconsistent vendor implementations. Forensic tools can still recover data from hidden or remapped memory blocks. Self-encrypting drive features sometimes aren&apos;t properly implemented or fully activated. And manufacturer-specific firmware behaviors mean what works for one drive may not work for another even within the same product family.
                   </p>
                 </div>
@@ -231,10 +231,10 @@ export default function NvmeDrives() {
                   Legal and Compliance Requirements
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Improper NVMe disposal doesn&apos;t just create technical exposure. It directly violates security standards and industry regulations including NIST 800-88, ISO 27001, HIPAA, GDPR, PCI-DSS, and SOX. The consequences range from regulatory fines and legal liability to audit failures and lasting reputational damage.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     For organizations operating under any of these frameworks, certified destruction with documented evidence isn&apos;t a recommendation it&apos;s the only defensible path forward when NVMe drives reach end-of-life.
                   </p>
                 </div>
@@ -248,7 +248,7 @@ export default function NvmeDrives() {
                   Why Certified Physical Destruction Is the Answer
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Given the architectural challenges, the only reliable way to ensure NVMe data is unrecoverable is certified physical destruction. Done correctly, it closes every recovery path that software-based methods leave open.
                   </p>
                 </div>
@@ -258,7 +258,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Irreversible physical destruction
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Industrial shredders and pulverizers reduce drives to particle sizes small enough to destroy NAND chips, controllers, and the hidden over-provisioned memory along with everything else. IntegriTrade shreds drives to a 3mm particle size, ensuring complete irrecoverability across the entire device including the blocks that defeated software methods.
                     </p>
                   </div>
@@ -267,7 +267,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Sealed chain of custody and documentation
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Asset tracking, sealed transport containers, GPS-monitored logistics, and per-device Certificates of Destruction provide the legal and audit protection that internal handling can&apos;t produce. The documentation is what makes the destruction defensible during regulatory review.
                     </p>
                   </div>
@@ -282,7 +282,7 @@ export default function NvmeDrives() {
                   IntegriTrade: R2v3 and Appendix B Certified
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IntegriTrade operates a destruction program built specifically to handle the challenges that NVMe and modern flash media create. The certifications and operational model align directly with what regulated industries actually need from a destruction partner.
                   </p>
                 </div>
@@ -292,7 +292,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Certifications and standards
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       R2v3 and Appendix B certified, with 3mm particle-size physical destruction, full chain of custody, and GPS-tracked secure transport from your facility through the destruction process.
                     </p>
                   </div>
@@ -301,7 +301,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Compliance and security
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Certificates of Destruction issued for every device processed, ISO-compliant environmentally responsible recycling for all material recovered, and both on-site and off-site destruction options for environments with specific operational requirements.
                     </p>
                   </div>
@@ -316,7 +316,7 @@ export default function NvmeDrives() {
                   Best Practices Before Disposal
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Two preparation phases set the foundation for compliant, audit-ready NVMe destruction.
                   </p>
                 </div>
@@ -326,7 +326,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Preparation
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Encrypt drives from initial deployment so that even residual data on hidden blocks remains useless without keys. Record serial numbers and asset tags during decommissioning to support inventory matching at intake. Maintain chain-of-custody logs from the moment a drive is taken out of service.
                     </p>
                   </div>
@@ -335,7 +335,7 @@ export default function NvmeDrives() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Destruction process
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Use a certified provider with NVMe-specific destruction capability, retain Certificates of Destruction for every device for audit and regulatory review, and schedule regular destruction cycles rather than letting drives accumulate the longer they sit, the more risk and depreciation builds up.
                     </p>
                   </div>
@@ -357,7 +357,7 @@ export default function NvmeDrives() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -374,10 +374,10 @@ export default function NvmeDrives() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     NVMe drives are difficult to sanitize because of wear-leveling, hidden over-provisioned blocks, and dynamic remapping factors that make traditional software wipes unreliable in ways that matter for regulated environments. The same architecture that makes NVMe so fast is exactly what makes it so hard to clean.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Certified physical destruction is the only guaranteed answer. Working with R2v3 and Appendix B certified providers like IntegriTrade ensures secure, compliant, and environmentally responsible disposal with the documentation regulated industries actually need. Protecting sensitive data, maintaining compliance, and avoiding liability all converge on the same decision: choose certified NVMe destruction.
                   </p>
                 </div>

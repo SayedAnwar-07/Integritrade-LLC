@@ -88,7 +88,7 @@ export default function ServicePaths() {
                     {title}
                   </h3>
 
-                  <p className="text-[14px] leading-relaxed text-stone-700 dark:text-slate-300 mb-5 text-justify">
+                  <p className="text-[14px] leading-relaxed text-stone-700 dark:text-slate-300 mb-5 custom-text-center">
                     {desc}
                   </p>
 

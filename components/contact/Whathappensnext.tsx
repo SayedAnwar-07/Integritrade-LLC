@@ -78,7 +78,7 @@ export default function WhatHappensNext() {
                             {title}
                           </h3>
 
-                          <p className="text-sm leading-relaxed text-stone-600 dark:text-slate-300 text-justify">
+                          <p className="text-sm leading-relaxed text-stone-600 dark:text-slate-300 custom-text-center">
                             {text}
                           </p>
                         </div>

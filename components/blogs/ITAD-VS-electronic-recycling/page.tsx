@@ -91,10 +91,10 @@ export default function ITADVSElectronicRecycling() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 When organizations retire laptops, servers, and networking equipment, the terms IT Asset Disposition (ITAD) and electronic recycling get used as if they mean the same thing. They don&apos;t. The two processes overlap in places, but their objectives, controls, and outcomes diverge in ways that matter directly to data security, compliance, and the financial return on retired assets.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Understanding the distinction is the difference between a defensible disposition program and one that quietly accumulates risk on the back end.
               </p>
             </div>
@@ -107,10 +107,10 @@ export default function ITADVSElectronicRecycling() {
                 What IT Asset Disposition Covers
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   ITAD is a comprehensive process that manages retired IT equipment from decommissioning through final disposition. It&apos;s built around four priorities working in parallel: security, compliance, asset recovery, and responsible end-of-life handling.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A complete ITAD program covers secure data destruction or sanitization, asset tracking with documented chain of custody, evaluation for reuse, refurbishment, or resale, full reporting and certification for audit purposes, and responsible recycling for the assets that genuinely reach end-of-life. The result is a workflow designed to reduce risk, capture residual value, and produce the documentation regulators and auditors expect.
                 </p>
               </div>
@@ -124,10 +124,10 @@ export default function ITADVSElectronicRecycling() {
                 What Electronic Recycling Covers
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Electronic recycling focuses on the physical processing of electronic waste. Devices are collected, dismantled, and broken down so that materials such as metals, plastics, and components can be recovered and fed back into manufacturing supply chains.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Responsible recycling matters and it&apos;s essential for sustainability. But on its own, electronic recycling does not necessarily address data security, chain-of-custody documentation, or asset value recovery. A device handed to a recycler with no ITAD framework around it may end up shredded with sensitive data still on board, or scrapped despite holding meaningful resale value.
                 </p>
               </div>
@@ -140,7 +140,7 @@ export default function ITADVSElectronicRecycling() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 ITAD vs Electronic Recycling: Side by Side
               </h2>
-              <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+              <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                 Although the two processes overlap, their objectives, controls, and deliverables produce very different outcomes for the organization retiring the equipment.
               </p>
 
@@ -188,7 +188,7 @@ export default function ITADVSElectronicRecycling() {
                 </table>
               </div>
 
-              <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
+              <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
                 The cleanest way to think about it: electronic recycling is often the final step within an ITAD process, not a replacement for it.
               </p>
             </section>
@@ -201,10 +201,10 @@ export default function ITADVSElectronicRecycling() {
                 Why ITAD Goes Beyond Recycling
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Sending devices straight to a recycler without an ITAD framework around them creates real exposure. Data-bearing assets may still hold sensitive information if sanitization isn&apos;t performed correctly or documented to a recognized standard. Equipment with meaningful resale value gets scrapped because no one was looking. And there&apos;s no audit trail for any of it when the question eventually comes up.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   ITAD ensures that data is securely wiped or physically destroyed before recycling ever happens, that assets are tracked throughout the disposition process, that reusable equipment is recovered rather than prematurely scrapped, and that organizations receive audit-ready documentation at the end of every project.
                 </p>
               </div>
@@ -218,10 +218,10 @@ export default function ITADVSElectronicRecycling() {
                 Security and Compliance Considerations
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Regulatory frameworks across industries dictate exactly how sensitive data must be handled when IT assets are retired. Healthcare, financial services, government, and enterprise environments face strict obligations under HIPAA, GLBA, SOX, and various state privacy laws.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   ITAD providers typically operate under R2 certification for responsible electronics reuse and recycling, data sanitization standards aligned with NIST 800-88 and DoD 5220.22-M, and information security management frameworks such as ISO 27001. Standard electronic recyclers may not provide the same level of security controls, certifications, or comprehensive reporting which is exactly why the distinction matters for data-bearing equipment.
                 </p>
               </div>
@@ -235,10 +235,10 @@ export default function ITADVSElectronicRecycling() {
                 The Role of Asset Recovery
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   One of the clearest distinctions between the two approaches is asset recovery. Many retired IT assets retain real market value if they&apos;re properly tested, sanitized, and refurbished value that disappears the moment a device enters a recycling stream by default.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   ITAD programs evaluate every asset for reuse within the organization, refurbishment and resale through verified channels, or responsible recycling only when recovery is no longer viable. This recovery-first approach can offset disposition costs entirely and often turns the program into a net positive for the business, rather than treating all retired equipment as scrap by default.
                 </p>
               </div>
@@ -252,10 +252,10 @@ export default function ITADVSElectronicRecycling() {
                 Environmental Impact: Recovery First, Recycling When Necessary
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   From a sustainability perspective, extending the life of IT equipment through reuse or resale is almost always more environmentally beneficial than immediate recycling. Recovery reduces electronic waste, lowers demand for new manufacturing and the emissions that go with it, and keeps materials in productive use for longer.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Electronic recycling remains essential for genuine end-of-life assets. It&apos;s most effective when it sits inside a broader ITAD strategy that triages each device for the highest-value outcome first.
                 </p>
               </div>
@@ -269,7 +269,7 @@ export default function ITADVSElectronicRecycling() {
                 Choosing the Right Approach
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   For most organizations, the choice isn&apos;t ITAD or electronic recycling it&apos;s ITAD with recycling built in as the final step for assets that genuinely warrant it. The right framework depends on a handful of practical factors.
                 </p>
               </div>
@@ -279,7 +279,7 @@ export default function ITADVSElectronicRecycling() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Data sensitivity and regulatory exposure
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Equipment that has held PHI, financial records, or other regulated data needs the security and documentation that only structured ITAD provides.
                   </p>
                 </div>
@@ -288,7 +288,7 @@ export default function ITADVSElectronicRecycling() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Documentation and audit requirements
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     If audit trails, certificates, and chain-of-custody records will be requested at any point, those need to be produced as part of the disposition process not reconstructed afterward.
                   </p>
                 </div>
@@ -297,7 +297,7 @@ export default function ITADVSElectronicRecycling() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Asset recovery potential
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     For fleets with meaningful residual value, recovery-first ITAD can offset much of the disposition cost or generate net returns that recycling-only approaches simply leave on the table.
                   </p>
                 </div>
@@ -306,7 +306,7 @@ export default function ITADVSElectronicRecycling() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Sustainability and ESG goals
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Verified outcomes whether through reuse, refurbishment, or certified recycling produce the documented sustainability data that increasingly appears in ESG reporting and investor disclosures.
                   </p>
                 </div>
@@ -328,7 +328,7 @@ export default function ITADVSElectronicRecycling() {
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent>
-                      <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -345,10 +345,10 @@ export default function ITADVSElectronicRecycling() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   ITAD and electronic recycling serve different purposes, and treating them as interchangeable is where most disposition programs go wrong. Electronic recycling is essential for true end-of-life materials. ITAD is the framework that protects data, captures recoverable value, produces audit-ready documentation, and decides when recycling is actually the right answer.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Choosing the right approach turns IT asset disposition from a quiet liability into a controlled, defensible part of the IT lifecycle one that protects the business, recovers real value, and supports both compliance and sustainability outcomes at the same time.
                 </p>
               </div>

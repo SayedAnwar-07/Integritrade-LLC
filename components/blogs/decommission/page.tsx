@@ -63,10 +63,10 @@ export default function Decommission() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Most organizations replace computers, servers, and office electronics every few years. What surprises many is that retiring this equipment is rarely as simple as unplugging it and sending it out the door. Modern devices store sensitive data, contain hazardous materials, and fall under strict state and federal regulations.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Done poorly, decommissioning exposes the business to data breaches, legal violations, environmental liability, and meaningful fines. Done properly, it&apos;s a structured process that protects information, recovers value where possible, and produces the documentation auditors expect.
               </p>
             </div>
@@ -79,10 +79,10 @@ export default function Decommission() {
                 What IT Equipment Decommissioning Actually Involves
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Decommissioning is the structured removal of outdated or unused technology from a business environment. It covers data backup, certified data wiping or destruction, removal of internal storage components, secure packing and labeling, certified recycling or refurbishment, and the documentation that ties the entire process together for compliance.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The scope is broader than most teams initially assume. Desktops, laptops, servers, monitors, networking equipment, VoIP phones, storage arrays, POS systems, and multifunction printers and copiers all fall within scope because every one of them stores or processes data.
                 </p>
               </div>
@@ -96,7 +96,7 @@ export default function Decommission() {
                 Why Proper Decommissioning Matters
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The risks of mishandled decommissioning fall into four interconnected categories, each capable of causing serious harm on its own.
                 </p>
               </div>
@@ -106,7 +106,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Preventing data breaches
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Retired computers, servers, printers, and copiers routinely contain employee records, customer data, financial documents, internal communications, and credentials. A single overlooked hard drive can lead to identity theft, fraud, and direct regulatory exposure.
                   </p>
                 </div>
@@ -115,7 +115,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Avoiding legal violations
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Electronics are banned from landfills in 25+ states, including California, New York, Illinois, Colorado, Massachusetts, and Minnesota. Frameworks such as HIPAA, SOX, FERPA, FACTA, and state privacy laws require defensible handling of data-bearing devices, with clear penalties for non-compliance.
                   </p>
                 </div>
@@ -124,7 +124,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Limiting environmental damage
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Lead, mercury, cadmium, and arsenic are common inside everyday office electronics. Improper disposal allows these substances to leach into soil and groundwater, contributing to one of the fastest-growing pollution categories in the world.
                   </p>
                 </div>
@@ -133,7 +133,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Reducing corporate liability
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Beyond regulatory fines, mishandled disposal can trigger civil litigation, loss of certifications, and lasting damage to brand reputation. Strong decommissioning is, in practical terms, a risk-management discipline.
                   </p>
                 </div>
@@ -193,7 +193,7 @@ export default function Decommission() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 A Step-by-Step Decommissioning Process
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                 A repeatable process is what turns decommissioning from a stressful event into a routine operation. Each stage below contributes a specific control, and together they form a defensible chain of custody from intake to final disposition.
               </p>
 
@@ -202,7 +202,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     1. Build a complete IT asset inventory
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Before anything moves, capture asset numbers, serial numbers, device types, assigned users, condition, hard drive status, and any special handling notes. A complete inventory ensures traceability, prevents loss, and makes downstream reporting straightforward.
                   </p>
                 </div>
@@ -211,7 +211,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     2. Back up and migrate critical data
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Confirm that everything important has been backed up to cloud platforms, network storage, or relevant business systems before any device is wiped. A zero-data-loss policy keeps operations running smoothly through the transition.
                   </p>
                 </div>
@@ -220,7 +220,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     3. Sanitize, wipe, or destroy data securely
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     This is the most critical stage. Data should be eliminated using methods aligned with NIST 800-88, DoD 5220.22-M, HIPAA/HITECH, or GLBA depending on the regulatory environment. Certified wiping suits reusable drives, degaussing handles legacy magnetic media, and physical destruction covers damaged drives or environments that mandate it.
                   </p>
                 </div>
@@ -229,7 +229,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     4. Remove sensitive components from office equipment
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Multifunction printers, copiers, fax machines, and high-volume office printers commonly hold internal storage. Hard drives and memory modules should be extracted and sanitized before the host device is recycled.
                   </p>
                 </div>
@@ -238,7 +238,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     5. Disconnect, label, and prepare for pickup
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Cables come off, devices are labeled by department or user, similar units are grouped, accessories are bagged, and fragile equipment is properly packed. Organized handoff reduces in-transit damage and accelerates downstream processing.
                   </p>
                 </div>
@@ -247,7 +247,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     6. Choose a certified e-waste recycling partner
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Uncertified haulers carry real risk illegal export, security violations, or unsafe overseas dumping. Look for R2v3, e-Stewards, ISO 14001, ISO 45001, and which together cover responsible recycling, environmental management, worker safety, and data destruction.
                   </p>
                 </div>
@@ -256,7 +256,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     7. Arrange secure transport and chain of custody
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     A qualified ITAD partner uses GPS-tracked vehicles, locked transport containers, sealed bins, digital asset tracking, and scan-in/scan-out logs. This continuity is especially important for healthcare, finance, education, government, and enterprise environments.
                   </p>
                 </div>
@@ -265,7 +265,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     8. Receive certificates of destruction and recycling
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     At completion, expect a Certificate of Data Destruction, an equipment serial number report, and a recycling or refurbishment summary. These three documents together support audits, compliance reviews, ESG reporting, and any legal requirement to prove how data and assets were handled.
                   </p>
                 </div>
@@ -279,7 +279,7 @@ export default function Decommission() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 Special Considerations by Equipment Type
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                 Different categories of office equipment carry different risks and need slightly different handling.
               </p>
 
@@ -288,7 +288,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Printers and copiers
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Modern multifunction devices store printed documents, scanned files, copy jobs, and user credentials on internal drives. The drive should be removed and sanitized or destroyed before the device is disconnected, packed, and sent for certified recycling.
                   </p>
                 </div>
@@ -297,7 +297,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Servers and networking equipment
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Servers commonly hold customer databases, employee records, financial data, and administrative credentials. Back up everything required, wipe RAID arrays, remove SSD and HDD media, decommission switches and firewalls, and prepare the hardware for secure recycling with full documentation.
                   </p>
                 </div>
@@ -306,7 +306,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Monitors (LCD, LED, and CRT)
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Displays require special handling because of their internal materials. LED backlights contain mercury and CRT monitors contain leaded glass, both of which require certified facilities equipped to manage hazardous components responsibly.
                   </p>
                 </div>
@@ -321,7 +321,7 @@ export default function Decommission() {
                 The Sustainability Case for Proper IT Recycling
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Beyond compliance, structured decommissioning delivers measurable environmental and economic benefits that increasingly matter for ESG reporting and corporate sustainability goals.
                 </p>
               </div>
@@ -331,7 +331,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Less landfill waste
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Electronics are one of the fastest-growing toxic waste streams worldwide. Certified recycling keeps hazardous materials out of soil and groundwater and away from communities near disposal sites.
                   </p>
                 </div>
@@ -340,7 +340,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Recovery of raw materials
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Recycling reclaims gold, silver, copper, palladium, and aluminum, reducing demand for new mining and the environmental footprint that comes with it.
                   </p>
                 </div>
@@ -349,7 +349,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Lower carbon emissions
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Reusing components and recovering materials avoids the energy-intensive manufacturing required to build replacements from scratch, lowering total emissions across the asset lifecycle.
                   </p>
                 </div>
@@ -364,10 +364,10 @@ export default function Decommission() {
                 Costs and How to Choose the Right ITAD Partner
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Decommissioning costs vary based on the number of devices, the type of data destruction required, pickup distance, whether processing is on-site or off-site, and the certification level needed. Most pricing scales reasonably with volume, and value recovery from resold assets often offsets a portion of the cost.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Selecting the right partner is what determines whether the program is genuinely defensible or merely cost-effective. The questions below separate qualified providers from the rest.
                 </p>
               </div>
@@ -377,7 +377,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Are they R2v3 certified?
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     R2v3 is the recognized standard for responsible electronics recycling and a baseline expectation for any serious ITAD provider.
                   </p>
                 </div>
@@ -386,7 +386,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Do they offer on-site data destruction?
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     For sensitive environments, performing destruction at your location eliminates the in-transit risk window entirely.
                   </p>
                 </div>
@@ -395,7 +395,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Do they provide chain-of-custody documentation?
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Without continuous tracking from pickup to final disposition, the rest of the program loses much of its audit value.
                   </p>
                 </div>
@@ -404,7 +404,7 @@ export default function Decommission() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Are they insured and compliant with state laws?
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Verified insurance and clear adherence to state-level e-waste and privacy regulations protect your organization from inheriting a partner&apos;s exposure.
                   </p>
                 </div>
@@ -425,7 +425,7 @@ export default function Decommission() {
                     How long does decommissioning take?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Most projects complete in one to five business days depending on volume. Many ITAD providers offer scheduled or same-week pickup for routine decommissioning work.
                     </p>
                   </AccordionContent>
@@ -436,7 +436,7 @@ export default function Decommission() {
                     Can we observe the shredding process?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Yes. Certified providers commonly offer in-person witnessing or video-verified shredding, providing transparency and an additional layer of audit assurance.
                     </p>
                   </AccordionContent>
@@ -447,7 +447,7 @@ export default function Decommission() {
                     Do printers and copiers really store data?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Almost all modern office printers contain internal memory that retains printed, scanned, and copied documents along with user credentials. Treating them as data-bearing devices is the safe default.
                     </p>
                   </AccordionContent>
@@ -458,7 +458,7 @@ export default function Decommission() {
                     Are we required to destroy data?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       For most organizations, yes. HIPAA, SOX, FERPA, GDPR, and various industry-specific frameworks require defensible data sanitization before retired devices leave organizational control.
                     </p>
                   </AccordionContent>
@@ -469,7 +469,7 @@ export default function Decommission() {
                     What certifications should we look for?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       R2v3 for responsible recycling, e-Stewards for environmental excellence, ISO 14001 for environmental management, ISO 45001 for worker safety, and for data destruction are the recognized standards to expect from a qualified partner.
                     </p>
                   </AccordionContent>
@@ -485,10 +485,10 @@ export default function Decommission() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Properly decommissioning old computers and office electronics is not optional. The risks of doing it informally data breaches, regulatory penalties, environmental harm, and corporate liability are too well-documented to ignore.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A repeatable process and a certified ITAD partner turn decommissioning into a controlled, predictable part of the IT lifecycle. The result is stronger security, cleaner compliance, measurable sustainability outcomes, and a smoother transition every time the business upgrades its technology.
                 </p>
               </div>

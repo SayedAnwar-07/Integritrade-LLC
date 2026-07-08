@@ -141,12 +141,12 @@ export default function OurPartnersPage() {
               <h2 className="font-serif text-4xl leading-[1.05] tracking-tight text-stone-900 dark:text-white mb-3">
                 Education and Leadership Foundation (ELF)
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 text-justify mb-3">
+              <p className="text-gray-700 dark:text-gray-300 custom-text-center mb-3">
                 Partnering with ELF, we extend the lifecycle of technology while
                 ensuring equitable access to education and resources for
                 underrepresented communities.
               </p>
-              <p className="text-gray-700 dark:text-gray-300 text-justify">
+              <p className="text-gray-700 dark:text-gray-300 custom-text-center">
                 Together, we transform recovered devices into tools for learning,
                 growth, and opportunity bridging the digital divide one device at
                 a time.

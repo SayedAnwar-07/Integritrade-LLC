@@ -90,10 +90,10 @@ export default function OfficeDevicesRisk() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Many organizations assume that storing retired laptops, phones, and hard drives in an office closet is the safe option. The reality is the opposite: a supply closet quietly turns into a data liability and a recurring source of financial loss the longer equipment sits there.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The damage shows up in four ways at once asset depreciation, data exposure, physical hazards from aging batteries, and hidden inventory costs. Each one is preventable when retired equipment moves promptly into a structured ITAD process.
                 </p>
               </div>
@@ -106,10 +106,10 @@ export default function OfficeDevicesRisk() {
                   Asset Depreciation
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Electronics lose market value daily. A laptop left in storage for six months can lose up to half its resale value, simply because the secondary market keeps moving while the device sits idle. The longer disposition is delayed, the smaller the recoverable return becomes.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Retired assets sitting in storage generate zero return and continue eroding the balance sheet through ongoing depreciation. Acting promptly on refresh cycles is the single biggest factor in capturing recoverable value before it&apos;s gone.
                   </p>
                 </div>
@@ -123,10 +123,10 @@ export default function OfficeDevicesRisk() {
                   Data Liability Risk
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Every hard drive, laptop, and smartphone in storage may still hold confidential information employee records, customer data, financial documents, and internal communications. An office closet provides none of the access control, audit logging, or chain-of-custody documentation that data protection actually requires.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     If even one device leaves the closet without proper sanitization, the organization faces a corporate data breach with regulatory, legal, and reputational consequences. Office storage typically lacks access control over who enters, doesn&apos;t track which devices were handled by whom, leaves theft and unauthorized access undetected, and produces no audit trail when one is needed for HIPAA, GLBA, or GDPR review.
                   </p>
                 </div>
@@ -140,10 +140,10 @@ export default function OfficeDevicesRisk() {
                   Lithium-Ion Battery Fire Hazard
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Lithium-ion batteries inside old laptops and smartphones don&apos;t age gracefully. Left unused for extended periods, they can swell, rupture, leak toxic gas, or short-circuit each one a real fire risk in an office storage area. The longer the equipment sits, the higher the probability of failure.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Swollen batteries can ignite if stored improperly. Degraded cells release toxic gases that pose health risks to staff working nearby. Short circuits in aging hardware are a documented cause of office fires. Insurance carriers increasingly treat unmanaged e-waste storage as a flagged risk during commercial property reviews.
                   </p>
                 </div>
@@ -157,10 +157,10 @@ export default function OfficeDevicesRisk() {
                   Hidden Inventory Storage Costs
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Every square foot of office space carries a cost. Filling closets with retired electronics consumes space that could be repurposed productively, and the costs don&apos;t stop at floor area: management overhead to track idle inventory, insurance and liability exposure for stored equipment, and the lost opportunity cost from value that could have been recovered all add up to a meaningful recurring expense.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     None of those costs appear on a single line item, which is exactly what makes them easy to overlook. Combined, they often exceed the cost of professional ITAD pickup several times over within the same calendar year.
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export default function OfficeDevicesRisk() {
                   How IntegriTrade Helps
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IntegriTrade&apos;s supply closet cleanout service turns retired equipment from a liability into a recoverable asset, with each step documented for audit and compliance review.
                   </p>
                 </div>
@@ -184,7 +184,7 @@ export default function OfficeDevicesRisk() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Systematic cleanout and inventory
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Every device is collected, inventoried, and accounted for, returning a complete record of what came out of storage and where it&apos;s headed in the disposition workflow.
                     </p>
                   </div>
@@ -193,7 +193,7 @@ export default function OfficeDevicesRisk() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Certified data destruction
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Data is destroyed using both logical sanitization and physical destruction methods aligned with R2v3 Appendix B standards, with a Certificate of Destruction issued for every device processed.
                     </p>
                   </div>
@@ -202,7 +202,7 @@ export default function OfficeDevicesRisk() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Sealed chain of custody
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Continuous tracking from pickup through final disposition, with documented transfers at every handoff makes the workflow defensible during audit and regulatory review.
                     </p>
                   </div>
@@ -211,7 +211,7 @@ export default function OfficeDevicesRisk() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Maximum value recovery
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Every device is evaluated for resale, refurbishment, or recycling so the assets you&apos;ve already paid for can help fund your next technology investment rather than continuing to depreciate in storage.
                     </p>
                   </div>
@@ -233,7 +233,7 @@ export default function OfficeDevicesRisk() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -250,10 +250,10 @@ export default function OfficeDevicesRisk() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Storing old devices isn&apos;t a neutral decision. Every month equipment sits in a closet, value depreciates, data exposure compounds, and physical risks build all while professional disposition could turn the same equipment into recovered capital.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IntegriTrade LLC has maintained a clean record with no history of data breach. When data security, compliance, and asset recovery all need to land in the same place, working with a certified ITAD partner is what makes that possible.
                   </p>
                 </div>

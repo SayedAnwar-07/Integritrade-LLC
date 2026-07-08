@@ -21,7 +21,7 @@ export default function ServicesCTA() {
               
 
                 {/* Description */}
-                <p className="text-[15px] lg:text-base leading-relaxed text-gray-700 dark:text-gray-300 max-w-2xl mt-6 text-justify">
+                <p className="text-[15px] lg:text-base leading-relaxed text-gray-700 dark:text-gray-300 max-w-2xl mt-6 custom-text-center">
                   Whether you&apos;re relocating a data center, refreshing a fleet of laptops, or
                   clearing a warehouse before lease return, our team will walk the site, scope the
                   work, and give you a fixed plan. No guesswork, no surprises just a clear path

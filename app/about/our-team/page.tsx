@@ -108,7 +108,7 @@ export default function OurTeamPage() {
                     Ian Ziyar
                   </h2>
 
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify max-w-xl">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center max-w-xl">
                     A scientist with a peer-reviewed publication record and ten years inside electronics repair, data recovery, and secure destruction. The person who personally signs off on every project that leaves the facility.
                   </p>
 
@@ -146,7 +146,7 @@ export default function OurTeamPage() {
                               </p>
                             </div>
                             <div className="col-span-12 md:col-span-6 mt-1 md:mt-0">
-                              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                                 {item.body}
                               </p>
                             </div>
@@ -197,7 +197,7 @@ export default function OurTeamPage() {
                 </div>
                 <div className="lg:col-span-8">
                   
-                  <p className=" text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                  <p className=" text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                     Ian built his early career in biomedical research, where his work led to publications in <strong className="text-gray-900 dark:text-gray-100 font-semibold">Nature</strong> and <strong className="text-gray-900 dark:text-gray-100 font-semibold">Cell</strong>. The same precision that shaped that research now shapes how he runs Integritrade. After a decade in electronics repair, data recovery, and secure data destruction, he watched too many recycling programs cut corners, lose chain of custody, and pass risk back to their clients. He founded Integritrade in 2023 to do the opposite.
                   </p>
                 </div>
@@ -214,7 +214,7 @@ export default function OurTeamPage() {
                   </h3>
                 </div>
                 <div className="lg:col-span-8">
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                     Under Ian&rsquo;s leadership, Integritrade achieved R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications inside its first operating year. Within six months of opening to commercial clients, the company had earned recurring work from Fortune 500 enterprises and federal organizations relationships built on the simple promise that Ian personally reviews every project before sign-off.
                   </p>
                 </div>
@@ -231,7 +231,7 @@ export default function OurTeamPage() {
                   </h3>
                 </div>
                 <div className="lg:col-span-8">              
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                     Ian partners with nonprofits to route refurbished electronics to students and families who would not otherwise have access to technology. The same downstream chain that protects your data also extends the useful life of devices that still have years of value left in them.
                   </p>
                 </div>
@@ -262,7 +262,7 @@ export default function OurTeamPage() {
                     Masood Burhani
                   </h2>
 
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify max-w-xl">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center max-w-xl">
                     A cybersecurity engineer from Fortune 500 enterprise environments. The person who designs the chain-of-custody, the sanitization workflows, and the audit trail your auditors will eventually read.
                   </p>
 
@@ -307,7 +307,7 @@ export default function OurTeamPage() {
                               </p>
                             </div>
                             <div className="col-span-12 md:col-span-7 mt-1 md:mt-0">
-                              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                                 {item.body}
                               </p>
                             </div>
@@ -370,7 +370,7 @@ export default function OurTeamPage() {
                 </div>
                 <div className="lg:col-span-8">
                   
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                     Before joining Integritrade, Masood spent over a decade as a security engineer inside Fortune 500 enterprise environments the same operational standards your CISO, your internal audit team, and your third-party risk reviewers use as their baseline. He has worked across large-scale infrastructure, data governance frameworks, and the cybersecurity protocols that global organizations expect when sensitive data is in motion.
                   </p>
                 </div>
@@ -388,7 +388,7 @@ export default function OurTeamPage() {
                 </div>
                 <div className="lg:col-span-8">
                   
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                     As COO, Masood owns the operational side of Integritrade chain-of-custody design, sanitization workflows, audit-trail architecture, and the controls that translate certifications into day-to-day execution. His credentials span the spectrum compliance teams care about: (ISC)² CC, CompTIA Security+, (ISC)² GRC, API Security, and advanced working knowledge of CISSP domains. The result is an ITAD operation that holds up to scrutiny from the same security frameworks your organization is already governed by.
                   </p>
                 </div>
@@ -406,7 +406,7 @@ export default function OurTeamPage() {
                 </div>
                 <div className="lg:col-span-8">
                   
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed text-justify">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
                     Masood&rsquo;s discipline shows up in the details: serialized inventory before assets leave your dock, NIST-aligned sanitization methods chosen based on data sensitivity, downstream verification documented to the final processor. The work is meticulous on purpose because in regulated environments, &ldquo;mostly secure&rdquo; is the same as &ldquo;not secure.&rdquo;
                   </p>
                 </div>
@@ -439,7 +439,7 @@ export default function OurTeamPage() {
                         <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                           Site visits welcome. Walk the floor before you sign.
                         </h2>
-                        <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl text-justify">
+                        <p className="mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 max-w-xl custom-text-center">
                           We host scheduled facility tours for prospective clients and
                           auditors. Bring your compliance lead they&apos;ll see the same
                           process your retired devices will go through.

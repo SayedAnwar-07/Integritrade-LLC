@@ -86,10 +86,10 @@ export default function R2Certified() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Managing electronic waste responsibly has moved from a sustainability talking point to a real operational obligation. Improper disposal creates environmental damage, data breach exposure, and legal liability that can surface years after the original handoff and the path to avoiding all three runs through certified recyclers operating under recognized standards.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   For businesses generating e-waste, choosing an R2-certified recycler ensures electronic equipment is handled safely, ethically, and in compliance with international regulations. It&apos;s the single most reliable filter for separating defensible disposition from quietly risky alternatives.
                 </p>
               </div>
@@ -102,10 +102,10 @@ export default function R2Certified() {
                   What R2 Certification Actually Means
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     R2 is a globally recognized standard for responsible electronics recycling, managed by Sustainable Electronics Recycling International (SERI) and recognized by the U.S. Environmental Protection Agency. It enforces strict guidelines covering data security, environmental safety, worker health and safety, and downstream vendor transparency four areas where most informal recycling fails.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Partnering with an R2-certified recycler reduces operational risk, protects brand reputation, and ensures compliance with international standards that increasingly shape commercial relationships and regulatory exposure. The full list of certified recyclers is published by the EPA at the{' '}
                     <Link
                       href="https://www.epa.gov/electronics-batteries-management/certified-electronics-recyclers"
@@ -125,7 +125,7 @@ export default function R2Certified() {
                   Key Requirements of R2 Certification
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     R2 isn&apos;t a checklist; it&apos;s a rigorous, audited standard that only a small percentage of recyclers achieve and maintain. Certified facilities must build and demonstrate full systems for environmental protection, data security, and traceability across every step of the recycling process.
                   </p>
                 </div>
@@ -135,7 +135,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Environmental, health, and safety controls
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Robust written procedures, employee training, PPE programs, and ongoing monitoring protect workers and the environment. R2 facilities are audited against strict EHS criteria continuously, not just at certification.
                     </p>
                   </div>
@@ -144,7 +144,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Verified data destruction aligned with NIST 800-88
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       R2 demands documented, auditable processes for media sanitization and destruction. This includes serial-level tracking, proof of wiping or physical destruction, and secure handling of data-bearing devices from pickup through final disposition.
                     </p>
                   </div>
@@ -153,7 +153,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Reuse first, then responsible recovery
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       R2 prioritizes extending the life of electronics through testing, refurbishment, and resale before any material moves into recycling. Where reuse isn&apos;t possible, materials must be processed through qualified recyclers to maximize recovery and minimize landfill.
                     </p>
                   </div>
@@ -162,7 +162,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Downstream due diligence and full traceability
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Every downstream partner shredders, smelters, refurbishers, brokers must be vetted, approved, and reviewed regularly. R2 requires documented downstream due diligence to prevent illegal export, unsafe processing, or dumping, with records maintained for all inbound and outbound shipments.
                     </p>
                   </div>
@@ -171,7 +171,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Recordkeeping and independent audits
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Detailed records cover all incoming equipment and outgoing materials including weights, device classifications, serial numbers, processing methods, destinations, and vendor approvals. Independent third-party auditors review these records year after year to verify continued compliance.
                     </p>
                   </div>
@@ -185,7 +185,7 @@ export default function R2Certified() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   R2-Certified vs Non-Certified Recyclers
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   The operational and compliance gap between certified and non-certified providers is wider than most procurement teams realize.
                 </p>
 
@@ -242,7 +242,7 @@ export default function R2Certified() {
                   Risks of Using Non-Certified Recyclers
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Non-certified recyclers especially those exporting e-waste create exposure across four interconnected categories that often only become visible after damage is done.
                   </p>
                 </div>
@@ -252,7 +252,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Environmental risks
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Unregulated recyclers frequently burn electronics or dump hazardous materials, creating air, water, and soil pollution that can be traced back to the original generator during environmental review.
                     </p>
                   </div>
@@ -261,7 +261,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Legal and compliance risks
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Exporting waste to non-Basel countries through non-certified recyclers can violate international conventions and U.S. regulations, resulting in fines and reputational damage that show up long after the disposal contract ends.
                     </p>
                   </div>
@@ -270,7 +270,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Data security risks
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Without verified destruction protocols, sensitive information may be stolen, mishandled, or recovered from devices that should have been sanitized. The breach exposure remains attached to the data owner, regardless of where the failure occurred.
                     </p>
                   </div>
@@ -279,7 +279,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Brand reputation damage
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Investors, customers, and regulators are increasingly attentive to ESG practices. Mismanaged e-waste can permanently damage corporate reputation in ways that disposal cost savings will never recoup.
                     </p>
                   </div>
@@ -294,7 +294,7 @@ export default function R2Certified() {
                   How to Verify an R2-Certified Recycler
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Three steps separate genuine R2-certified providers from those who merely claim certification.
                   </p>
                 </div>
@@ -304,7 +304,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       1. Confirm certification status directly
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Verify the recycler&apos;s certification number and expiration via the official SERI directory before signing anything. You can review IntegriTrade&apos;s active certifications on our{' '}
                       <Link
                         href="/certifications"
@@ -319,7 +319,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       2. Request downstream vendor disclosure
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Ensure all downstream partners are compliant and properly vetted. A certified recycler should be able to produce this list on request without hesitation.
                     </p>
                   </div>
@@ -328,7 +328,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       3. Confirm data destruction standards
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Verify adherence to NIST 800-88 and other recognized protocols, with serial-level documentation per device available at project close.
                     </p>
                   </div>
@@ -343,7 +343,7 @@ export default function R2Certified() {
                   Best Practices for Businesses Handling E-Waste
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Three practices separate organizations that consistently produce defensible e-waste outcomes from those that quietly accumulate exposure.
                   </p>
                 </div>
@@ -353,7 +353,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Work only with R2-certified recyclers
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       For any organization handling sensitive data or operating in regulated industries, this is non-negotiable. The certification requirement filters out the majority of providers whose practices wouldn&apos;t survive an audit.
                     </p>
                   </div>
@@ -362,7 +362,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Establish a trust-but-verify reconciliation protocol
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Don&apos;t rely solely on the ITAD partner&apos;s audit. For high-risk data-bearing assets like laptops, servers, and desktops, maintain an internal serial-number log prior to pickup and require mandatory reconciliation between your internal list and the vendor&apos;s final Certificate of Destruction. Discrepancies discovered at this stage are the difference between a clean program and a future audit finding.
                     </p>
                   </div>
@@ -371,7 +371,7 @@ export default function R2Certified() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Avoid lowest-cost recyclers
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Recyclers that compete primarily on price almost always compromise on safety, compliance, or downstream verification somewhere. Apparent savings rarely survive contact with the resulting fines, breach costs, or reputational damage.
                     </p>
                   </div>
@@ -393,7 +393,7 @@ export default function R2Certified() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -410,10 +410,10 @@ export default function R2Certified() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Choosing an R2-certified recycler is no longer optional for businesses handling e-waste responsibly especially when exports outside Basel Agreement countries are part of the supply chain. R2 ensures environmental safety, legal compliance, data security, and ethical recycling practices that protect the company, its data, and the environment simultaneously.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Done right, certified recycling stops being a procurement question and becomes a structural part of how the organization manages risk, reputation, and end-of-life IT in a way that holds up under audit and regulatory review.
                   </p>
                 </div>

@@ -80,7 +80,7 @@ export default function Hero() {
                   md:text-[18px] md:leading-8
                   lg:text-[19px] lg:leading-9
                   text-gray-700 dark:text-gray-300
-                  text-justify"
+                  custom-text-center"
                 >
                   End-to-end IT asset disposition and electronics recycling you can trust. We manage the removal, tracking, secure erasure, and physical destruction of your retired devices. You receive detailed, serialized reports and comprehensive chain-of-custody documentation built to withstand rigorous audits.
                 </p>

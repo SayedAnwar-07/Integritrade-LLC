@@ -133,10 +133,10 @@ export default function HIPAACompliance() {
 
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Data breaches in healthcare are rarely treated as simple technical mistakes. When retired computers, servers, hard drives, or storage devices still contain patient data, the issue can quickly become a HIPAA compliance concern.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 That is why IT asset disposition should be handled as a security process. A qualified ITAD partner must protect PHI, document every step, and provide proof that data-bearing assets were properly sanitized or destroyed.
               </p>
             </div>
@@ -149,7 +149,7 @@ export default function HIPAACompliance() {
                   <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-5 tracking-tight">
                     {block.title}
                   </h2>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     {block.details}
                   </p>
                 </section>
@@ -170,7 +170,7 @@ export default function HIPAACompliance() {
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent>
-                      <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -186,10 +186,10 @@ export default function HIPAACompliance() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   HIPAA-compliant ITAD is about more than removing old equipment from a facility. It requires secure custody, verified destruction, and documentation that proves your organization handled PHI responsibly.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   By working with a certified ITAD provider like IntegriTrade, healthcare teams can reduce data exposure risk, support audit readiness, and retire assets with confidence.
                 </p>
               </div>

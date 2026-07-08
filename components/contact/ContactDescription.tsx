@@ -213,7 +213,7 @@ export default function ContactDescription() {
                     text-slate-900 dark:text-white
                   "
                   >
-                    Request Your Pickup
+                    Contact Us for a Free Consultation
                   </h2>
 
                   <p
@@ -224,8 +224,7 @@ export default function ContactDescription() {
                       text-slate-600 dark:text-slate-300
                     "
                   >
-                    Submit your details and our team will contact you within one business day
-                    with the next steps. Alternatively, feel free to email us at
+                    Submit your details and a brief description of your project and our team will contact you within one business day with the next steps. Alternatively, feel free to email us at
                     {" "}
                     <a
                       href="mailto:info@integritradeLLC.com"
@@ -261,7 +260,7 @@ export default function ContactDescription() {
                 {/* FORM */}
                 <BookingForm />
 
-                <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300 border-t border-stone-200 dark:border-slate-700/60 text-justify pt-4">
+                <p className="mt-5 text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300 border-t border-stone-200 dark:border-slate-700/60 custom-text-center pt-4">
                   By submitting this form, you acknowledge that you have read and agree to the
                   {" "}
                   <Link

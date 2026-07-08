@@ -167,7 +167,7 @@ export default function PrivacyPage() {
                         <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 font-serif mb-4 leading-tight">
                           {section.title}
                         </h2>
-                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                        <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                           {section.content}
                         </p>
                       </div>
@@ -185,7 +185,7 @@ export default function PrivacyPage() {
                   <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 font-serif mb-4 leading-tight">
                     Your Trust, Documented
                   </h2>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     By using this website, requesting a quote, or engaging
                     Integritrade for any service, you acknowledge that you have
                     read and understood this Privacy Policy and our Terms of

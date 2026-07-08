@@ -65,7 +65,7 @@ export default function About() {
                 </div>
 
                 <div className="lg:col-span-5 lg:pb-3">
-                  <p className="text-base sm:text-lg text-gray-300 leading-relaxed text-justify">
+                  <p className="text-base sm:text-lg text-gray-300 leading-relaxed custom-text-center">
                     Integritrade helps organizations and local customers remove,
                     track, process, recycle, and recover value from unwanted
                     electronics with a clear workflow and documented outcomes.
@@ -99,7 +99,7 @@ export default function About() {
 
                       <Separator className="my-4 border-stone-200 dark:border-slate-700" />
 
-                      <p className="text-[15px] leading-relaxed text-stone-600 dark:text-slate-400 max-w-sm text-justify min-h-[98px]">
+                      <p className="text-[15px] leading-relaxed text-stone-600 dark:text-slate-400 max-w-sm custom-text-center min-h-[98px]">
                         {desc}
                       </p>
                     </div>

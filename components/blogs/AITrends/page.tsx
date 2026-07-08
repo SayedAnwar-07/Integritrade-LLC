@@ -68,10 +68,10 @@ export default function AITrends() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="prose-content space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Artificial intelligence is reshaping the IT landscape at a pace few organizations anticipated. Hardware that comfortably ran enterprise workloads for five or six years is now being retired in half that time, driven by the computational demands of modern AI tools, machine learning models, and data analytics platforms.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 For IT leaders, this raises a critical question: when your hardware can no longer keep up with AI workloads, what happens to those still-functional devices and how do you recover their value responsibly?
               </p>
             </div>
@@ -84,10 +84,10 @@ export default function AITrends() {
                 AI Workloads Demand a New Class of Hardware
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Traditional business software runs comfortably on standard CPUs, but AI inference and training rely on dedicated accelerators. GPUs and Neural Processing Units (NPUs) handle the parallel computations that machine learning models require, while higher memory bandwidth and faster storage tiers keep large datasets accessible in real time.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   This shift has compressed the typical hardware refresh cycle from five or six years down to two or three. Legacy laptops, workstations, and servers that once had years of useful life ahead of them are now being phased out to accommodate AI-capable infrastructure.
                 </p>
               </div>
@@ -97,7 +97,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Accelerated computing requirements
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Modern AI workflows expect dedicated GPU acceleration for inference and training, alongside NPUs that offload neural network operations from the main processor.
                   </p>
                 </div>
@@ -106,7 +106,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Higher memory and storage demands
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Large language models and analytics pipelines consume significant RAM and require fast NVMe storage to perform well, pushing older systems past their practical limits.
                   </p>
                 </div>
@@ -115,7 +115,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Shorter refresh cycles
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Where five-year cycles were once standard, many organizations now plan for a refresh every two to three years to remain competitive with AI-driven workflows.
                   </p>
                 </div>
@@ -130,13 +130,13 @@ export default function AITrends() {
                 The Data Center Is Changing Even Faster
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   At the infrastructure level, the transformation is even more pronounced. Training large AI models consumes enormous amounts of power, prompting operators to replace older servers with denser, more energy-efficient platforms designed specifically for high-performance computing.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The result is a steady stream of decommissioned servers, networking equipment, and storage arrays leaving data centers each quarter. Without a structured plan for these assets, organizations face two compounding problems: lost residual value and a growing volume of regulated electronic waste.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Proper disposition is no longer a back-office afterthought. It has become a strategic concern that touches finance, security, compliance, and sustainability reporting all at once.
                 </p>
               </div>
@@ -201,10 +201,10 @@ export default function AITrends() {
                 Faster Refresh Cycles, Smarter Disposition
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   When an organization retires a three-year-old laptop or server because of evolving AI requirements, that device rarely belongs in a recycling bin. In most cases, it still has meaningful market value and years of productive life ahead of it for non-AI workloads.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   This is where IT Asset Disposition (ITAD) becomes essential. Integritrade evaluates each device on its own merits, identifies the best path forward whether resale, redeployment, or responsible recycling and ensures every transition is documented for compliance and audit purposes.
                 </p>
               </div>
@@ -214,7 +214,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Fair value recovery
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Devices that no longer meet AI performance thresholds often perform exceptionally well for general office tasks, education, or secondary deployment. We assess each asset against current market conditions to recover the fair value it still holds.
                   </p>
                 </div>
@@ -223,7 +223,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Sustainability through circular practices
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Refurbishment and resale extend the working life of equipment that would otherwise enter the waste stream. Where reuse is not viable, certified recycling ensures materials are recovered responsibly and compliantly.
                   </p>
                 </div>
@@ -232,7 +232,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Certified data security
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Every device passes through a verified data sanitization or destruction workflow before leaving our custody, with documentation provided for each unit processed.
                   </p>
                 </div>
@@ -247,10 +247,10 @@ export default function AITrends() {
                 Why a Structured Refresh Plan Matters
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Adopting AI is rarely a single project. It&apos;s an ongoing investment that touches procurement, operations, and finance. Treating retired hardware as a recoverable asset rather than scrap can meaningfully offset the cost of new infrastructure while reducing environmental and security risk.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Organizations that work with a structured ITAD partner consistently report stronger budget outcomes, cleaner audit trails, and fewer surprises during transitions.
                 </p>
               </div>
@@ -260,7 +260,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Offset capital expenditure
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Recovered value from retired assets can be applied directly toward new AI-ready hardware, easing the financial impact of accelerated refresh cycles.
                   </p>
                 </div>
@@ -269,7 +269,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Reduce compliance and security exposure
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Documented chain of custody and certified data destruction protect against the regulatory and reputational consequences of mishandled equipment.
                   </p>
                 </div>
@@ -278,7 +278,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Strengthen sustainability reporting
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Verified refurbishment and recycling outcomes contribute to ESG metrics and demonstrate measurable progress toward environmental commitments.
                   </p>
                 </div>
@@ -293,7 +293,7 @@ export default function AITrends() {
                 Mistakes to Avoid During an AI-Era Refresh
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Organizations moving quickly to adopt AI sometimes treat the hardware on the way out as an afterthought. The consequences can be costly.
                 </p>
               </div>
@@ -303,7 +303,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Discarding equipment without valuation
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Sending functional devices straight to recycling forfeits revenue that could have funded part of the new deployment.
                   </p>
                 </div>
@@ -312,7 +312,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Skipping verified data sanitization
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Informal wipes leave residual data and create real liability under privacy and industry regulations. Certified erasure with documentation is the only defensible standard.
                   </p>
                 </div>
@@ -321,7 +321,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Misaligning refresh and adoption timelines
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Refreshing too early wastes capital, while refreshing too late slows AI initiatives. A structured plan keeps the two in sync.
                   </p>
                 </div>
@@ -330,7 +330,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Ignoring environmental compliance
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     High-volume disposition without certified recycling partners can quietly create regulatory exposure, especially across multi-jurisdictional operations.
                   </p>
                 </div>
@@ -345,7 +345,7 @@ export default function AITrends() {
                 What Integritrade Delivers
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Every engagement is supported by clear documentation so finance, IT, and compliance teams have what they need at every stage of the process.
                 </p>
               </div>
@@ -355,7 +355,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Asset inventory and valuation reports
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     A complete record of every device received, its condition, and its assessed market value before processing.
                   </p>
                 </div>
@@ -364,7 +364,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Certificates of erasure and destruction
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Verified documentation for each unit covering data sanitization or physical destruction, suitable for audit and regulatory review.
                   </p>
                 </div>
@@ -373,7 +373,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Data sanitization reporting
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Detailed records of the sanitization standard applied, serial-level traceability, and confirmation of completion.
                   </p>
                 </div>
@@ -382,7 +382,7 @@ export default function AITrends() {
                   <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2 font-serif">
                     Disposition summaries
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     A clear breakdown of what was resold, refurbished, or recycled, along with recovered value and environmental outcomes.
                   </p>
                 </div>
@@ -403,7 +403,7 @@ export default function AITrends() {
                     How is AI changing IT refresh cycles?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       AI workloads depend on GPUs and NPUs that most legacy systems lack. To keep pace, organizations are now refreshing hardware every two to three years rather than every five to six.
                     </p>
                   </AccordionContent>
@@ -414,7 +414,7 @@ export default function AITrends() {
                     What happens to old hardware when companies upgrade for AI?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Devices that fall short of AI performance requirements often remain well-suited for general business tasks. Integritrade evaluates each unit, recovers fair market value, and helps offset the cost of new infrastructure.
                     </p>
                   </AccordionContent>
@@ -425,7 +425,7 @@ export default function AITrends() {
                     How does Integritrade support an AI-driven hardware refresh?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       We provide value recovery, certified data destruction, and responsible recycling so organizations can transition to AI-ready hardware while protecting data and reducing waste.
                     </p>
                   </AccordionContent>
@@ -436,7 +436,7 @@ export default function AITrends() {
                     Is rapid hardware turnover harmful to the environment?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       It can be when assets are mishandled. Refurbishment and circular-economy practices keep functional devices in service longer and ensure that genuine end-of-life equipment is recycled to recognized standards.
                     </p>
                   </AccordionContent>
@@ -447,7 +447,7 @@ export default function AITrends() {
                     Can value still be recovered from three-year-old laptops or servers?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Yes. Many devices retired from AI-focused environments retain strong residual value for general use cases. A proper assessment ensures that value is captured rather than lost to premature disposal.
                     </p>
                   </AccordionContent>
@@ -463,10 +463,10 @@ export default function AITrends() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   AI is not just changing how organizations work. It&apos;s changing how quickly the underlying tools need to evolve. As refresh cycles tighten, the difference between a costly transition and a strategic one often comes down to what happens to the hardware on the way out.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   With a trusted ITAD partner, retired equipment becomes a source of recovered capital, measurable sustainability impact, and verified data security rather than an operational liability. That&apos;s the foundation Integritrade is built on, and it&apos;s how forward-looking organizations are funding their next generation of AI-ready infrastructure.
                 </p>
               </div>

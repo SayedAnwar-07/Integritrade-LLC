@@ -90,10 +90,10 @@ export default function ITADCutlines() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   ITAD cutlines are the eligibility thresholds providers use to decide whether retired devices are suitable for resale and revenue recovery, or whether they should move straight to responsible recycling. Cutlines reflect device age, hardware specifications, market demand, and resale value trends — the practical signals that determine whether a piece of hardware still has a buyer waiting for it.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Devices above the cutline qualify for resale programs and revenue sharing. Devices below it typically move to recycling or parts recovery. Understanding where the line sits before decommissioning is what turns disposition from a cost center into a recovery opportunity.
                 </p>
               </div>
@@ -106,10 +106,10 @@ export default function ITADCutlines() {
                   How Cutlines Affect Revenue Sharing
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Cutlines directly determine whether retired assets earn money or simply cost money to dispose of. Devices above the threshold are resold in secondary markets and the proceeds are shared with the originating organization. Devices below it are securely recycled — environmentally and compliantly handled, but with no resale revenue attached.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Knowing where current cutlines sit before refresh cycles begin allows organizations to time decommissioning strategically, prioritize fleets that still hold value, and avoid scrapping equipment that could have generated meaningful return.
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export default function ITADCutlines() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   Revenue Sharing vs Accelerated Buy-Back
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   Two payment structures dominate the recovery side of ITAD. They serve different priorities — one optimizes for absolute return, the other for speed and predictability.
                 </p>
 
@@ -160,7 +160,7 @@ export default function ITADCutlines() {
                   </table>
                 </div>
 
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mt-8">
                   Many organizations now lean toward accelerated buy-back because the certainty of immediate payment outweighs the modest upside that resale timing might capture.
                 </p>
               </section>
@@ -173,7 +173,7 @@ export default function ITADCutlines() {
                   How Integritrade&apos;s Accelerated Buy-Back Works
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     The buy-back process is designed to remove the uncertainty that comes with resale-dependent payouts. Each engagement follows the same four steps, in sequence.
                   </p>
                 </div>
@@ -183,7 +183,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       1. Quote
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Integritrade reviews the asset list and quotes a purchase price for eligible material upfront, before any logistics begin.
                     </p>
                   </div>
@@ -192,7 +192,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       2. Evaluate
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Once received, devices are evaluated and processed against the agreed specifications and condition expectations.
                     </p>
                   </div>
@@ -201,7 +201,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       3. Process
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       The full ITAD package is delivered alongside the buy-back: secure logistics, certified data destruction, and complete reporting for audit and compliance purposes.
                     </p>
                   </div>
@@ -210,7 +210,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       4. Payment
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Payment is issued without waiting for the items to sell. Speed, predictability, and immediate value recovery are the design goals.
                     </p>
                   </div>
@@ -225,7 +225,7 @@ export default function ITADCutlines() {
                   Laptop Cutlines: Which Models Qualify?
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Laptops are typically the highest-value asset class in ITAD programs, and their cutlines are correspondingly clear. The thresholds reflect what the secondary market is actually buying right now.
                   </p>
                 </div>
@@ -235,7 +235,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Apple MacBooks: M1 chip or newer
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Apple Silicon devices hold strong resale demand because of their performance, battery longevity, and continuing OS support. Intel-based MacBooks fall outside most current cutlines as macOS support narrows.
                     </p>
                   </div>
@@ -244,7 +244,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Intel laptops: 10th-generation processors or newer
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Older generations typically fall below the cutline as performance limitations and weakening demand make them unattractive to refurbishers and end buyers.
                     </p>
                   </div>
@@ -253,7 +253,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Minimum quantity: 25 laptops
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Revenue-sharing and buy-back programs typically require at least 25 laptops to qualify. There&apos;s flexibility for high-end models or mixed lots with strong overall value, so smaller volumes can still be considered when the asset mix justifies it.
                     </p>
                   </div>
@@ -268,7 +268,7 @@ export default function ITADCutlines() {
                   Smartphone and Tablet Cutlines
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Mobile devices retain resale value within a narrower window than laptops. Both phones and tablets generally need to be no more than four years old to qualify, with condition and OS support determining where individual devices land.
                   </p>
                 </div>
@@ -278,7 +278,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Cell phones: four years old or newer
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Older devices typically fall below the cutline due to reduced OS support, battery degradation, and lower secondary market demand. Flagship models often hold value slightly longer than mid-tier devices in the same age band.
                     </p>
                   </div>
@@ -287,7 +287,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Tablets: similar window, brand-dependent
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Tablets follow resale patterns close to smartphones but vary noticeably by brand and model line. They generally qualify if they&apos;re four years old or newer, in functional condition, and supported by current operating systems.
                     </p>
                   </div>
@@ -302,10 +302,10 @@ export default function ITADCutlines() {
                   Server Cutlines: Why They Vary
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Servers don&apos;t carry fixed cutlines the way laptops or phones do. Their value depends on a combination of factors that shift with market conditions and use case, which is why every server lot is assessed individually rather than against a standard threshold.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Key evaluation factors include CPU generation and core count, RAM and storage configuration, intended use case — enterprise, lab, or cloud — and current secondary market demand at the time of disposition. Performance specifications, scalability, and timing all feed into the final assessment, which is why a custom evaluation is the only honest way to price retired server hardware.
                   </p>
                 </div>
@@ -319,10 +319,10 @@ export default function ITADCutlines() {
                   What Happens to Devices Below the Cutline
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Devices that fall below the cutline don&apos;t simply disappear into a recycling stream. They move through certified data destruction, responsible recycling, and parts harvesting where applicable — the same security and environmental controls that apply to higher-value assets.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Data security and compliance are non-negotiable regardless of resale value: secure data wiping aligned with NIST 800-88, complete chain-of-custody documentation, and regulatory compliance reporting are produced for every device. Below-cutline simply means no resale revenue attached, not reduced security or accountability.
                   </p>
                 </div>
@@ -336,7 +336,7 @@ export default function ITADCutlines() {
                   Flexibility in ITAD Cutlines
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Cutlines are guidelines, not rigid rules. Several factors can extend eligibility beyond the standard thresholds, which is why a quick conversation often reveals more recoverable value than a strict reading of the specs would suggest.
                   </p>
                 </div>
@@ -346,7 +346,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Large-volume projects
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Bulk quantities can warrant special consideration even when individual devices sit close to the threshold, because the aggregate value of the lot justifies the processing.
                     </p>
                   </div>
@@ -355,7 +355,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Premium device models
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       High-end or specialized equipment often carries extended eligibility because secondary demand for these models holds longer than for mainstream hardware.
                     </p>
                   </div>
@@ -364,7 +364,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Mixed asset lots
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Combinations that include enough strong assets to anchor the lot can qualify as a whole, even when individual items sit on the wrong side of the line.
                     </p>
                   </div>
@@ -379,7 +379,7 @@ export default function ITADCutlines() {
                   How to Know If Your Devices Qualify
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Determining eligibility doesn&apos;t require deep ITAD expertise — it requires good inventory data and a willingness to ask the right questions early. The process breaks down into four straightforward steps.
                   </p>
                 </div>
@@ -389,7 +389,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       1. Inventory your assets
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Document every device by make, model, and specifications. Accurate inventory is the foundation for everything that follows.
                     </p>
                   </div>
@@ -398,7 +398,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       2. Check specifications
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Verify processor type and generation, age, and overall condition. These are the data points cutlines are built around.
                     </p>
                   </div>
@@ -407,7 +407,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       3. Assess quantity
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Determine total volume and the mix of devices. The composition of the lot often matters as much as the individual devices in it.
                     </p>
                   </div>
@@ -416,7 +416,7 @@ export default function ITADCutlines() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       4. Request expert evaluation
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       A professional ITAD assessment confirms cutline status, identifies the optimal program, and produces a complete recovery plan including asset valuation, secure logistics, and data destruction reporting.
                     </p>
                   </div>
@@ -438,7 +438,7 @@ export default function ITADCutlines() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -455,10 +455,10 @@ export default function ITADCutlines() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Cutlines aren&apos;t arbitrary lines drawn through an inventory list — they&apos;re a reflection of what the secondary market values right now. Understanding where they sit before refresh cycles begin is what separates organizations that recover meaningful value from those that treat all retired equipment as scrap.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     The right ITAD partnership turns the question of eligibility into a concrete recovery plan: accurate valuation upfront, secure handling throughout, audit-ready documentation at the end, and a payment structure that fits how the business actually wants to recognize the value.
                   </p>
                 </div>

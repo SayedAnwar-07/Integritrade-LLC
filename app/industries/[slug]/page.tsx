@@ -155,7 +155,7 @@ export default async function IndustryPage(props: {
                         {section.paragraphs?.map((paragraph, paragraphIndex) => (
                           <p
                             key={paragraphIndex}
-                            className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
+                            className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] custom-text-center"
                           >
                             {paragraph}
                           </p>
@@ -166,7 +166,7 @@ export default async function IndustryPage(props: {
                             {section.bullets.map((bullet, bulletIndex) => (
                               <li
                                 key={bulletIndex}
-                                className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify"
+                                className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] custom-text-center"
                               >
                                 <span className="mt-3 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#2aac61]" />
 
@@ -191,7 +191,7 @@ export default async function IndustryPage(props: {
                 </ReadMore>
                 ) : (
                 <ReadMore previewLines={6} expandAt="lg">
-                  <p className="whitespace-pre-line text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] text-justify">
+                  <p className="whitespace-pre-line text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] custom-text-center">
                     {industry.content.join("\n\n")}
                   </p>
                 </ReadMore>

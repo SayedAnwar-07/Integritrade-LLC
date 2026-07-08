@@ -91,10 +91,10 @@ export default function ServerDataCenterDisposal() {
             {/* Introduction */}
             <ScrollLoader>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Decommissioning a modern data center is more involved than most teams initially plan for. Servers, storage arrays (SAN/NAS), and networking gear contain an organization&apos;s most valuable asset its data and when these systems reach end-of-life, improper handling creates real financial, security, and compliance risk.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A practical EOL server program covers four disciplines that work together: data sanitization, hardware value recovery, secure logistics, and certified recycling. Each one matters on its own, and skipping any of them undermines the rest.
                 </p>
               </div>
@@ -107,10 +107,10 @@ export default function ServerDataCenterDisposal() {
                   Data Sanitization and Security
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Server drives are typically configured in RAID arrays, which makes standard formatting and disk utilities completely ineffective for secure data removal. The data isn&apos;t where the operating system thinks it is, and consumer-grade wipe tools can&apos;t reach the locations that matter.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Proper sanitization follows the NIST 800-88 standard. Each drive must be sanitized individually with a complete audit trail and per-drive Certificate of Erasure documenting the method applied and the outcome verified. For drives containing highly sensitive data, in-rack physical shredding using industrial-grade equipment ensures 100 percent destruction before hardware ever leaves the facility removing the chain-of-custody risk that transport always introduces.
                   </p>
                 </div>
@@ -124,10 +124,10 @@ export default function ServerDataCenterDisposal() {
                   Hardware Value Recovery
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Many data center components hold significant value in the secondary market high-end CPUs, ECC RAM modules, enterprise SSDs, GPUs, and power supplies routinely outperform whole-server resale on a per-component basis. The whole server may be retired, but the parts inside frequently aren&apos;t.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     A skilled ITAD partner evaluates which assets sell better as complete units versus harvested components, and uses access to global buyer networks to time resale strategically. Component pricing fluctuates with market supply and demand cycles, and an experienced vendor with active secondary-market presence can capture meaningfully higher returns than internal teams handling disposition occasionally.
                   </p>
                 </div>
@@ -141,10 +141,10 @@ export default function ServerDataCenterDisposal() {
                   Safe Transportation and Logistics
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Servers and racks are heavy, expensive, and data-bearing all at once. Standard couriers provide no chain-of-custody documentation, no GPS tracking, and no accountability if a device goes missing in transit. The lack of documented handoffs is exactly where most disposition exposures originate.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Certified ITAD logistics close that gap. Every item travels in sealed containers tracked via GPS, with documented transfers at every handoff between your facility and the processing center. Using a vendor with its own dedicated logistics team rather than a third-party courier eliminates the gaps that introduce risk in the first place.
                   </p>
                 </div>
@@ -158,10 +158,10 @@ export default function ServerDataCenterDisposal() {
                   Environmental Recycling
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Servers contain meaningful quantities of recoverable copper, gold, and palladium alongside hazardous elements like lead and cadmium. Both characteristics matter at end-of-life: the precious metals represent recovery opportunity, and the hazardous materials require responsible handling to prevent soil and groundwater contamination.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     R2v3-certified recycling routes every component to qualified downstream processors with full documentation of the recycling chain. Precious metals are recovered and reused; hazardous materials are processed safely; nothing is sent to landfill. The certification is what makes the environmental claim defensible, not just the workflow.
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export default function ServerDataCenterDisposal() {
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                   DIY Disposal vs Certified ITAD
                 </h2>
-                <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+                <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                   Internal handling and certified ITAD share the same starting point a rack of retired servers but produce very different outcomes across the four disciplines that matter.
                 </p>
 
@@ -231,10 +231,10 @@ export default function ServerDataCenterDisposal() {
                   Serving Fresno Businesses: On-Site Hard Drive Shredding
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     For Fresno businesses handling sensitive data, physical shredding remains the only method that guarantees 100 percent destruction. Industrial-grade shredding pulverizes hard drives and SSDs into unrecoverable fragments, meeting strict NIST 800-88 security standards and producing audit-ready documentation per device.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     For compliant{' '}
                     <Link
                       href="/hard-drive-shredding-fresno"
@@ -255,7 +255,7 @@ export default function ServerDataCenterDisposal() {
                   How IntegriTrade Handles Data Center Decommissioning
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IntegriTrade operates a specialized team built for large-scale data center decommissioning projects, from initial inventory through final reporting.
                   </p>
                 </div>
@@ -265,7 +265,7 @@ export default function ServerDataCenterDisposal() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       On-site and off-site sanitization
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Data destruction happens at your facility or at our processing center, depending on what fits your security and operational requirements. The choice is yours; the certified workflow stays the same either way.
                     </p>
                   </div>
@@ -274,7 +274,7 @@ export default function ServerDataCenterDisposal() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Per-asset tracking
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Detailed inventory reports cover every server and every drive from collection through final disposition, with serial-level documentation that holds up to audit. Nothing goes unaccounted for.
                     </p>
                   </div>
@@ -283,7 +283,7 @@ export default function ServerDataCenterDisposal() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Maximum value recovery
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       A global buyer network ensures the strongest available market prices for enterprise equipment, turning decommissioned assets into capital that can offset the cost of the next refresh cycle.
                     </p>
                   </div>
@@ -292,7 +292,7 @@ export default function ServerDataCenterDisposal() {
                     <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                       Transparent reporting
                     </h3>
-                    <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                    <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                       Every project closes with a full Certificate of Destruction, per-drive Certificates of Erasure, and a comprehensive inventory report documents your audit and compliance teams can use directly without follow-up requests.
                     </p>
                   </div>
@@ -314,7 +314,7 @@ export default function ServerDataCenterDisposal() {
                         {faq.question}
                       </AccordionTrigger>
                       <AccordionContent>
-                        <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                        <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                           {faq.answer}
                         </p>
                       </AccordionContent>
@@ -331,10 +331,10 @@ export default function ServerDataCenterDisposal() {
                   Final Thoughts
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     Decommissioning a data center without a structured plan puts data, finances, and compliance standing at serious risk simultaneously. Every retired server is either a liability or an opportunity, and the difference is decided entirely by how the disposition is handled not by the equipment itself.
                   </p>
-                  <p className="text-justify">
+                  <p className="custom-text-center">
                     IntegriTrade LLC has maintained a clean record with no history of data breach. When data security, asset value, and environmental responsibility all need to land in the same place, working with a certified ITAD partner is what makes that possible at the scale data center retirement actually requires.
                   </p>
                 </div>

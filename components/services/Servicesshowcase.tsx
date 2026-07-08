@@ -134,7 +134,7 @@ function ServiceTierArticle({
             <dt className="font-mono text-[10px] uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400 pt-1">
               {primaryRow.label}
             </dt>
-            <dd className="sm:col-span-3 text-[14.5px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+            <dd className="sm:col-span-3 text-[14.5px] leading-relaxed text-gray-700 dark:text-gray-300 custom-text-center">
               {primaryRow.value}
             </dd>
           </div>
@@ -149,7 +149,7 @@ function ServiceTierArticle({
                 <dt className="font-mono text-[10px] uppercase tracking-[0.22em] text-gray-500 dark:text-gray-400 pt-1">
                   {row.label}
                 </dt>
-                <dd className="sm:col-span-3 text-[14.5px] leading-relaxed text-gray-700 dark:text-gray-300 text-justify">
+                <dd className="sm:col-span-3 text-[14.5px] leading-relaxed text-gray-700 dark:text-gray-300 custom-text-center">
                   {row.value}
                 </dd>
               </div>
@@ -159,7 +159,7 @@ function ServiceTierArticle({
 
         {/* "When to Choose" callout — part of the collapsible block */}
         <div className={`${collapsibleCls} mt-4`}>
-          <p className="text-[15px] leading-relaxed text-gray-800 dark:text-gray-200 text-justify">
+          <p className="text-[15px] leading-relaxed text-gray-800 dark:text-gray-200 custom-text-center">
             {sl.whenToChoose}
           </p>
         </div>

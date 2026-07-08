@@ -91,10 +91,10 @@ export default function ITADBlogs() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 As digital transformation accelerates, the volume of retired IT equipment continues to climb. How an organization handles end-of-life technology has become a meaningful factor in environmental responsibility, data security, and regulatory compliance and that&apos;s where IT Asset Disposition (ITAD) sustainability earns its place in the conversation.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Sustainable ITAD is no longer optional. It reduces e-waste, protects sensitive data, supports ESG commitments, and demonstrates responsible corporate behavior across the full IT lifecycle. A well-designed program supports business objectives and environmental stewardship at the same time, without forcing a trade-off between them.
               </p>
             </div>
@@ -107,10 +107,10 @@ export default function ITADBlogs() {
                 What IT Asset Disposition Actually Covers
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   IT Asset Disposition is the structured process of safely and responsibly managing IT equipment at the end of its useful life. It applies to servers, laptops, desktops, networking devices, and storage media everything that goes through a refresh cycle and eventually needs to leave organizational control.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A complete ITAD process covers asset inventory and tracking, secure data sanitization or destruction, device reuse or refurbishment, responsible recycling of materials that can&apos;t be reused, and the documentation that ties the entire workflow together for compliance. When sustainability is built into each of these stages, ITAD shifts from a back-office function into a measurable driver of environmental and business value.
                 </p>
               </div>
@@ -124,7 +124,7 @@ export default function ITADBlogs() {
                 What Sustainability Means in ITAD
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Sustainability in ITAD focuses on minimizing environmental impact while maximizing resource efficiency and ethical responsibility. It maps directly onto Environmental, Social, and Governance (ESG) principles three areas that increasingly determine how organizations are evaluated by investors, customers, and regulators.
                 </p>
               </div>
@@ -134,7 +134,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Environmental protection
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Minimizing e-waste through certified recycling, recovering raw materials, and extending the working life of functional equipment whenever possible.
                   </p>
                 </div>
@@ -143,7 +143,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Social responsibility
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Verified ethical recycling practices, safe working conditions across the disposition chain, and accountability for the downstream partners that handle materials further.
                   </p>
                 </div>
@@ -152,7 +152,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Governance and compliance
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Transparent reporting, certified destruction documentation, and adherence to recognized standards that hold up to internal and external audit.
                   </p>
                 </div>
@@ -166,7 +166,7 @@ export default function ITADBlogs() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 Standards That Support Sustainable ITAD
               </h2>
-              <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
+              <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                 Sustainable ITAD doesn&apos;t rely on good intentions. It runs on recognized standards that produce measurable, auditable outcomes.
               </p>
 
@@ -218,10 +218,10 @@ export default function ITADBlogs() {
                 Environmental Impact of Sustainable ITAD
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Electronic waste is one of the fastest-growing waste streams globally. Sustainable ITAD reduces landfill volume through certified recycling, recovers valuable raw materials such as gold, silver, copper, and palladium, lowers carbon emissions by extending device life through reuse, and prevents hazardous substances from reaching soil and groundwater.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   These outcomes aren&apos;t marketing metrics. They&apos;re measurable values that increasingly appear in ESG reporting, customer contracts, and regulatory filings.
                 </p>
               </div>
@@ -235,7 +235,7 @@ export default function ITADBlogs() {
                 Why ITAD Sustainability Matters for Modern Businesses
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Modern organizations face growing pressure from regulators, customers, and investors to operate responsibly. Sustainable ITAD addresses several priorities at once that would otherwise require separate programs.
                 </p>
               </div>
@@ -245,7 +245,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Supporting ESG and CSR commitments
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     ITAD sustainability feeds directly into ESG performance metrics, Corporate Social Responsibility programs, and the documentation auditors expect during sustainability reporting. Verified outcomes are what turn ESG language into evidence.
                   </p>
                 </div>
@@ -254,7 +254,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Integrating data security with sustainability
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Sustainable ITAD includes certified data destruction methods such as NIST 800-88 wiping, physical shredding, and verified chain-of-custody documentation. Environmental responsibility doesn&apos;t replace security it sits alongside it.
                   </p>
                 </div>
@@ -263,7 +263,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Compliance and audit readiness
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Reputable ITAD partners operate under recognized standards including R2, ISO 14001, and ISO 27001, producing the certificates and audit trails required for regulatory review and internal governance.
                   </p>
                 </div>
@@ -278,7 +278,7 @@ export default function ITADBlogs() {
                 The Cost of Ignoring ITAD Sustainability
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Skipping sustainable ITAD doesn&apos;t make the risks disappear. It just shifts them onto your balance sheet, where they tend to compound over time.
                 </p>
               </div>
@@ -288,7 +288,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Legal and regulatory consequences
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Improper IT asset disposal can result in regulatory fines, data breach liabilities, non-compliance findings under GDPR or HIPAA, and exposure to import or export restrictions on hazardous materials.
                   </p>
                 </div>
@@ -297,7 +297,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Brand reputation and trust
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Environmental negligence or data mishandling damages brand credibility quickly and recovers slowly. Customer confidence, investor relationships, and competitive positioning all take measurable hits when these stories surface publicly.
                   </p>
                 </div>
@@ -312,7 +312,7 @@ export default function ITADBlogs() {
                 Best Practices for Sustainable ITAD
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A defensible sustainable ITAD program comes down to three priorities, executed consistently.
                 </p>
               </div>
@@ -322,7 +322,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Choose a certified ITAD partner
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Look for industry certifications such as R2 and e-Stewards, transparent reporting and audit trails, proven data security protocols, and verified ethical recycling processes. The certificate is a baseline, not a guarantee verifying active status and reviewing prior project documentation matters more than the logo on the website.
                   </p>
                 </div>
@@ -331,7 +331,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Prioritize reuse, refurbishment, and remarketing
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Before recycling, organizations should consider redeployment within the business, refurbishment for resale, donation programs where appropriate, and harvesting components from devices that can&apos;t be redeployed whole. Recycling is the last step, not the first.
                   </p>
                 </div>
@@ -340,7 +340,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Document everything
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Proper documentation supports regulatory compliance, accurate ESG reporting, full visibility into asset disposition, carbon footprint tracking, due-diligence audit trails, and stakeholder transparency. Documentation is what turns sustainability into something you can prove.
                   </p>
                 </div>
@@ -355,10 +355,10 @@ export default function ITADBlogs() {
                 The Circular Economy Connection
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   A circular economy keeps resources in productive use for as long as possible, and ITAD plays a central role in making that possible for IT assets specifically. The progression matters: reuse extends asset life through redeployment, refurbishment restores devices for secondary markets, and recycling recovers materials when reuse is no longer viable.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Each step further along the chain reduces environmental impact and recovers more value than would otherwise be lost. The combined effect is meaningful cost savings alongside measurable sustainability outcomes.
                 </p>
               </div>
@@ -372,7 +372,7 @@ export default function ITADBlogs() {
                 Where Sustainable ITAD Is Heading
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Two forces are reshaping sustainable ITAD over the next several years.
                 </p>
               </div>
@@ -382,7 +382,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Stricter regulations and ESG reporting
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Governments and regulators are tightening e-waste and data protection laws across most major markets, while investor-led ESG reporting requirements continue to expand. Organizations that adapt early gain a clear advantage; those that wait face increasingly expensive catch-up.
                   </p>
                 </div>
@@ -391,7 +391,7 @@ export default function ITADBlogs() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Technology improvements
                   </h3>
-                  <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                  <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                     Automated asset tracking and lifecycle management, AI-driven refurbishment quality assessment, blockchain-based supply chain transparency, and carbon footprint analytics for IT assets are all moving from pilot programs into mainstream ITAD operations producing more accurate and verifiable sustainability data than was possible even a few years ago.
                   </p>
                 </div>
@@ -413,7 +413,7 @@ export default function ITADBlogs() {
                       {faq.question}
                     </AccordionTrigger>
                     <AccordionContent>
-                      <p className="text-justify text-gray-700 dark:text-gray-300 leading-relaxed">
+                      <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
                         {faq.answer}
                       </p>
                     </AccordionContent>
@@ -430,10 +430,10 @@ export default function ITADBlogs() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   ITAD sustainability is becoming a defining capability for modern enterprise IT. Organizations that get it right reduce e-waste, safeguard sensitive data, support ESG objectives, and strengthen corporate reputation simultaneously outcomes that used to require separate, competing programs.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Partnering with certified ITAD providers and embracing circular economy principles is what turns end-of-life IT from a recurring liability into a strategic advantage. The benefit accrues to both the organization and the planet, and the documentation supports both audit and reporting on the way through.
                 </p>
               </div>

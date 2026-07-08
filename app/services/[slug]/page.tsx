@@ -178,7 +178,7 @@ export default async function ServicePage(props: {
                   {service.heroTitle}
                 </h2>
 
-                <p className="text-[15px] lg:text-base text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                <p className="text-[15px] lg:text-base text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                   {service.heroDescription}
                 </p>
               </article>
@@ -201,7 +201,7 @@ export default async function ServicePage(props: {
                     </h2>
 
                     {section.intro && (
-                      <p className="text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify mb-10 max-w-3xl">
+                      <p className="text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center mb-10 max-w-3xl">
                         {section.intro}
                       </p>
                     )}
@@ -247,7 +247,7 @@ export default async function ServicePage(props: {
                     )}
 
                     {section.content && (
-                      <div className="space-y-5 text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                      <div className="space-y-5 text-[15px] text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                         {section.content.map((paragraph, pIndex) => (
                           <p
                             key={pIndex}
@@ -283,7 +283,7 @@ export default async function ServicePage(props: {
                         <dt className="font-serif text-lg font-semibold text-gray-900 dark:text-white tracking-tight mb-3">
                           {item.title}
                         </dt>
-                        <dd className="text-[14px] text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                        <dd className="text-[14px] text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                           {item.description}
                         </dd>
                       </div>

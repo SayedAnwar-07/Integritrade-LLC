@@ -90,7 +90,7 @@ export default function BlogHomeSection() {
                       {blog.title}
                     </h2>
 
-                    <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-gray-400 line-clamp-3 text-justify">
+                    <p className="mb-6 text-sm leading-relaxed text-gray-600 dark:text-gray-400 line-clamp-3 custom-text-center">
                       {truncate(blog.description, 70)}
                     </p>
 

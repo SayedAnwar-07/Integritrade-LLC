@@ -63,10 +63,10 @@ export default function RemoveDEPProtection() {
             {/* Introduction */}
             <ScrollLoader>
             <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed mb-16">
-              <p className="text-justify">
+              <p className="custom-text-center">
                 When organizations retire Apple devices iPhones, iPads, MacBooks, or Mac desktops the data wipe is rarely the issue. The problem is that the devices remain enrolled in DEP and quietly re-enroll into MDM the moment a new owner sets them up. The Remote Management screen appears, the device asks for credentials no buyer has, and the asset effectively becomes scrap.
               </p>
-              <p className="text-justify">
+              <p className="custom-text-center">
                 Removing DEP protection isn&apos;t complicated, but it has to happen through the right channel and in the right order. This guide explains what DEP is, why it must be removed before disposition, and the exact steps to release devices through Apple Business Manager.
               </p>
             </div>
@@ -79,10 +79,10 @@ export default function RemoveDEPProtection() {
                 What DEP Actually Does
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The Apple Device Enrollment Program (DEP) is a feature within Apple Business Manager (ABM) and Apple School Manager (ASM) that automatically enrolls Apple devices into an organization&apos;s MDM solution during initial setup. It allows IT teams to enforce security policies, configure devices remotely, prevent unauthorized use, and standardize provisioning at scale.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The detail that matters at end-of-life: once a device is enrolled in DEP, it stays linked to the organization indefinitely. Factory resets do not break that link. Only an administrator with ABM access can release the device through the proper channel.
                 </p>
               </div>
@@ -95,7 +95,7 @@ export default function RemoveDEPProtection() {
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
                 DEP vs MDM: Two Different Things
               </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 custom-text-center">
                 Most disposition issues come from confusing DEP with MDM. They work together, but they do different jobs and removing one does not remove the other.
               </p>
 
@@ -138,7 +138,7 @@ export default function RemoveDEPProtection() {
                 </table>
               </div>
 
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-8 text-justify">
+              <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-8 custom-text-center">
                 The practical implication is clear: removing MDM without removing DEP is insufficient. The device will re-enroll into MDM after a factory reset as long as DEP remains active.
               </p>
             </section>
@@ -151,7 +151,7 @@ export default function RemoveDEPProtection() {
                 What Goes Wrong When DEP Stays Active
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Skipping DEP removal at end-of-life creates immediate operational and financial problems for whoever ends up with the device next.
                 </p>
               </div>
@@ -161,7 +161,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Device activation is blocked
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     The Remote Management screen appears during setup, asks for the original organization&apos;s credentials, and refuses to proceed. The new owner cannot use the device.
                   </p>
                 </div>
@@ -170,7 +170,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Resale value collapses
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Certified recyclers and ITAD partners cannot resell DEP-locked hardware. Equipment that should have generated meaningful recovery value gets treated as scrap or refused outright.
                   </p>
                 </div>
@@ -179,7 +179,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Compliance and security exposure
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Orphaned devices that remain associated with your organization can create audit findings, brand exposure, and lingering questions about how data-bearing assets were handled at retirement.
                   </p>
                 </div>
@@ -194,10 +194,10 @@ export default function RemoveDEPProtection() {
                 When DEP Removal Is Required
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Any time ownership is leaving your organization, DEP removal needs to be part of the process. The most common scenarios include selling devices to a third party, donating equipment to schools or nonprofits, recycling or decommissioning hardware, reassigning ownership outside the organization, and completing IT Asset Disposition (ITAD) workflows.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   All Apple devices managed through ABM or ASM are subject to DEP iPhone, iPad, MacBook, iMac, Mac mini, and Mac Studio. The release process is the same across the entire fleet.
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function RemoveDEPProtection() {
                 Before You Begin
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Two things need to be in place before starting the removal workflow.
                 </p>
               </div>
@@ -221,7 +221,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Administrator access to Apple Business Manager
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     DEP removal requires admin-level access to ABM or ASM. There is no official path to releasing a device without it, which is why maintaining ABM access during organizational transitions matters more than most teams realize.
                   </p>
                 </div>
@@ -230,7 +230,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Backup, sign-out, and data sanitization plan
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Back up any user or business data that needs to be preserved, ensure devices are signed out of iCloud, and plan certified data sanitization aligned with relevant standards (NIST 800-88, GDPR, internal IT policies). DEP removal is the ownership step; data protection runs alongside it.
                   </p>
                 </div>
@@ -245,7 +245,7 @@ export default function RemoveDEPProtection() {
                 Removing DEP Through Apple Business Manager
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   This is the only officially supported method for releasing devices from DEP. The workflow is straightforward, but the action is irreversible once devices are released, they cannot be re-added to the same DEP program.
                 </p>
               </div>
@@ -255,7 +255,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     1. Log in to Apple Business Manager
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Sign in at business.apple.com with administrator credentials.
                   </p>
                 </div>
@@ -264,7 +264,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     2. Navigate to the Devices section
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Open the Devices area from the ABM dashboard to view all enrolled hardware.
                   </p>
                 </div>
@@ -273,7 +273,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     3. Locate the device by serial number
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Search for the specific device using its serial number to ensure you&apos;re acting on the correct unit.
                   </p>
                 </div>
@@ -282,7 +282,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     4. Select Release Device
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Open the device record and choose the release option from the device action menu.
                   </p>
                 </div>
@@ -291,7 +291,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     5. Confirm the release
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Verify the action when prompted. Once confirmed, the device is no longer associated with your organization and DEP auto-enrollment is permanently disabled for that unit.
                   </p>
                 </div>
@@ -306,7 +306,7 @@ export default function RemoveDEPProtection() {
                 Completing the Process: MDM Removal and Factory Reset
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Releasing the device from DEP is the critical step, but the workflow isn&apos;t complete until MDM is removed and the device is reset cleanly.
                 </p>
               </div>
@@ -316,7 +316,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Unassign the device in your MDM console
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Remove the device from your MDM platform (Jamf, Intune, Kandji, or whichever solution your organization uses) so it no longer receives policies or commands.
                   </p>
                 </div>
@@ -325,7 +325,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Perform a full factory reset
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Wipe the device completely so the next owner sees a fresh setup experience without any residual configuration or accounts.
                   </p>
                 </div>
@@ -334,7 +334,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Verify a clean setup flow
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Walk through the setup process and confirm that no Remote Management screen appears. If the device proceeds to the standard onboarding flow, DEP and MDM have been removed successfully and the device is ready to transfer.
                   </p>
                 </div>
@@ -349,7 +349,7 @@ export default function RemoveDEPProtection() {
                 Common Issues and How to Resolve Them
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Two situations cause most of the difficulty teams encounter during DEP removal.
                 </p>
               </div>
@@ -359,7 +359,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     The Remote Management screen still appears
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     This typically means DEP was not fully removed before the reset, the device was reset before being released in ABM, or only MDM was unassigned while DEP remained active. Return to ABM, confirm the device has been released, then reset again.
                   </p>
                 </div>
@@ -368,7 +368,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     No access to the original ABM account
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     This is the harder case. Without ABM access, Apple will not remove DEP ownership, and the device may be considered non-transferable. Recyclers may only accept it as non-functional hardware. The lesson is preventive: maintain ABM access through every organizational transition, including divestitures, mergers, and IT vendor changes.
                   </p>
                 </div>
@@ -383,7 +383,7 @@ export default function RemoveDEPProtection() {
                 Why DEP Removal Matters for ITAD and Recycling
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   For certified ITAD partners, DEP status often determines whether an Apple device can be recovered for resale or has to be processed as scrap. Properly released devices extend their useful lifecycle, generate recovery value, and reduce e-waste. Locked devices do none of those things.
                 </p>
               </div>
@@ -393,7 +393,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Maintain an accurate ABM inventory
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Keep your DEP records in sync with your physical fleet so retirements can be processed without delay or missing records.
                   </p>
                 </div>
@@ -402,7 +402,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Remove DEP at employee exit
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Build DEP release into your offboarding process so devices returned at separation are ready for redeployment or disposition immediately.
                   </p>
                 </div>
@@ -411,7 +411,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Verify status before resale
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Confirm that DEP and MDM are both clear before any device leaves your control. A 30-second check prevents costly returns and customer disputes.
                   </p>
                 </div>
@@ -420,7 +420,7 @@ export default function RemoveDEPProtection() {
                   <h3 className="font-serif text-lg font-medium text-gray-900 dark:text-white mb-2">
                     Partner with certified ITAD providers
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                     Work with providers experienced in Apple device disposition who can validate DEP status, document the lifecycle, and handle the rare cases where access has been lost.
                   </p>
                 </div>
@@ -441,7 +441,7 @@ export default function RemoveDEPProtection() {
                     Can DEP be removed without Apple Business Manager?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       No. DEP removal requires official administrator access to ABM or ASM. Without it, there is no supported method to release the device.
                     </p>
                   </AccordionContent>
@@ -452,7 +452,7 @@ export default function RemoveDEPProtection() {
                     Is DEP removal permanent?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Yes. Once a device is released from DEP, it cannot be re-added to the same DEP program. The action is irreversible, which is why confirmation matters.
                     </p>
                   </AccordionContent>
@@ -463,7 +463,7 @@ export default function RemoveDEPProtection() {
                     Can a factory reset remove DEP?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       No. A factory reset alone does not affect DEP enrollment. The device will re-enroll into MDM during setup as long as DEP remains active in ABM.
                     </p>
                   </AccordionContent>
@@ -474,7 +474,7 @@ export default function RemoveDEPProtection() {
                     What happens if I lose access to the original ABM account?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       Apple will not transfer DEP ownership without verified administrator access. The device may become non-transferable for resale, and certified recyclers may only accept it as non-functional hardware.
                     </p>
                   </AccordionContent>
@@ -485,7 +485,7 @@ export default function RemoveDEPProtection() {
                     Does DEP apply to personally owned Apple devices?
                   </AccordionTrigger>
                   <AccordionContent>
-                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
+                    <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
                       No. DEP applies only to devices purchased through approved channels and enrolled in an organization&apos;s ABM or ASM account. Personally purchased devices are not subject to DEP enrollment.
                     </p>
                   </AccordionContent>
@@ -501,10 +501,10 @@ export default function RemoveDEPProtection() {
                 Final Thoughts
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                <p className="text-justify">
+                <p className="custom-text-center">
                   Removing DEP protection is a small step with a large downstream impact. Skip it, and Apple devices come back as locked, unsellable inventory. Handle it correctly, and the same hardware moves smoothly into resale, redeployment, or certified recycling with no friction for the next owner.
                 </p>
-                <p className="text-justify">
+                <p className="custom-text-center">
                   The right approach is straightforward: release the device through Apple Business Manager, unassign it from MDM, perform a verified factory reset, and document the action as part of the asset&apos;s disposition record. Done consistently, this becomes a routine part of Apple device lifecycle management rather than a point of friction at end-of-life.
                 </p>
               </div>
