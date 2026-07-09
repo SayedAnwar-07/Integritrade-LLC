@@ -183,6 +183,7 @@ export default function RequestPickupForm() {
   const handleNext = () => {
     const e = validateStep(step)
     setErrors(e)
+
     if (Object.keys(e).length === 0) {
       setStep((s) => Math.min(s + 1, STEPS.length - 1))
     }
@@ -202,6 +203,7 @@ export default function RequestPickupForm() {
   const handleSubmit = async () => {
     const e = validateStep(1)
     setErrors(e)
+
     if (Object.keys(e).length > 0) return
 
     const serviceId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_SERVICE_ID
@@ -209,24 +211,57 @@ export default function RequestPickupForm() {
     const publicKey = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_PUBLIC_KEY
     const makeWebhookUrl = process.env.NEXT_PUBLIC_MAKE_WEBHOOK_URL
 
+    const submittedAt = new Date().toLocaleString('en-US', {
+      dateStyle: 'medium',
+      timeStyle: 'short',
+    })
+
+    const requestId = `ITR-${Date.now().toString().slice(-6)}` 
+
+    const fullPickupAddress = [
+      data.address,
+      data.address2,
+      data.city,
+      data.state,
+      data.zip,
+    ]
+      .filter(Boolean)
+      .join(', ')
+
+    const selectedService = labelFor(SERVICE_OPTIONS, data.service)
+
+    const selectedQuantity = labelFor(QUANTITY_OPTIONS, data.estimatedQuantity)
+
+    const selectedUrgency = labelFor(URGENCY_OPTIONS, data.deploymentUrgency)
+
     const templateParams = {
       name: data.name,
       company: data.company || 'N/A',
       email: data.email,
       phone: data.phone,
+
       address: data.address,
+      pickupAddress: fullPickupAddress,
+
       address2: data.address2 || 'N/A',
       city: data.city,
       state: data.state,
       zip: data.zip,
-      service: labelFor(SERVICE_OPTIONS, data.service),
-      estimatedQuantity: labelFor(QUANTITY_OPTIONS, data.estimatedQuantity),
-      deploymentUrgency: labelFor(URGENCY_OPTIONS, data.deploymentUrgency),
+
+      service: selectedService,
+      estimatedQuantity: selectedQuantity,
+      deploymentUrgency: selectedUrgency,
+      estimatedEquipment: selectedQuantity,
+
       message: data.message || 'No additional message',
-      time: new Date().toLocaleString('en-US', {
-        dateStyle: 'medium',
-        timeStyle: 'short',
-      }),
+
+      requestId,
+      date: submittedAt,
+      time: submittedAt,
+      reply_to: data.email,
+      from_name: data.name,
+      from_email: data.email,
+      to_email: data.email,
     }
 
     const sendMakeAlert = async (errorMessage: string) => {
@@ -236,7 +271,7 @@ export default function RequestPickupForm() {
         alertType: 'EmailJS Failure',
         source: 'Integritrade Service Booking Form',
         error: errorMessage,
-        submittedAt: templateParams.time,
+        submittedAt,
         ...templateParams,
       }
 
@@ -346,7 +381,7 @@ export default function RequestPickupForm() {
         </div>
       </div>
 
-      {/* STEP 1: CONTACT + ADDRESS */}
+      {/* STEP 1 */}
       {step === 0 && (
         <div className="mt-8 space-y-5">
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -498,7 +533,7 @@ export default function RequestPickupForm() {
         </div>
       )}
 
-      {/* STEP 2: JOB INFO */}
+      {/* STEP 2 */}
       {step === 1 && (
         <div className="mt-8 space-y-5">
           <div>
@@ -539,11 +574,7 @@ export default function RequestPickupForm() {
 
                 <SelectContent className="border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
                   {QUANTITY_OPTIONS.map((opt) => (
-                    <SelectItem
-                      key={opt.value}
-                      value={opt.value}
-                      className="whitespace-normal py-2.5"
-                    >
+                    <SelectItem key={opt.value} value={opt.value} className="whitespace-normal py-2.5">
                       {opt.label}
                     </SelectItem>
                   ))}
@@ -568,11 +599,7 @@ export default function RequestPickupForm() {
 
                 <SelectContent className="w-[var(--radix-select-trigger-width)] border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
                   {URGENCY_OPTIONS.map((opt) => (
-                    <SelectItem
-                      key={opt.value}
-                      value={opt.value}
-                      className="whitespace-normal py-2.5"
-                    >
+                    <SelectItem key={opt.value} value={opt.value} className="whitespace-normal py-2.5">
                       {opt.label}
                     </SelectItem>
                   ))}
@@ -599,7 +626,9 @@ export default function RequestPickupForm() {
               className={`${inputClass('message')} resize-none overflow-hidden`}
             />
 
-            <p className="mt-1 text-xs text-gray-400">{data.message.length} characters</p>
+            <p className="mt-1 text-xs text-gray-400">
+              {data.message.length} characters
+            </p>
           </div>
         </div>
       )}
