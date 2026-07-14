@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: 'https://integritradellc.com/og-contact.jpg',
+        url: 'https://integritradellc.com/logo/integritrade-logo.png',
         width: 1200,
         height: 630,
         alt: 'Contact Integritrade LLC Certified ITAD & Electronic Recycling',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: 'Contact Integritrade LLC | R2v3 Certified ITAD & Data Destruction',
     description:
       'Free ITAD & e-waste recycling quote in 24 hours. R2v3, ISO 27001 & ISO 14001 certified. Zero data breaches. Serving all of California.',
-    images: ['https://integritradellc.com/og-contact.jpg'],
+    images: ['https://integritradellc.com/logo/integritrade-logo.png'],
   },
   alternates: {
     canonical: 'https://integritradellc.com/service-book',
@@ -88,11 +88,11 @@ const localBusinessSchema = {
   url: 'https://integritradellc.com',
   logo: {
     '@type': 'ImageObject',
-    url: 'https://integritradellc.com/logo.png',
+    url: 'https://integritradellc.com/logo/integritrade-logo.png',
     width: 400,
     height: 120,
   },
-  image: 'https://integritradellc.com/og-contact.jpg',
+  image: 'https://integritradellc.com/logo/integritrade-logo.png',
   description:
     'Integritrade LLC is a California-based, R2v3-certified IT Asset Disposition (ITAD) and electronic recycling company. We provide NIST 800-88 compliant data destruction, certified e-waste recycling, and white-glove asset recovery services with a zero data breach record. Proudly serving Fresno, Sacramento, the San Francisco Bay Area, and San Diego.',
   telephone: '+15593254813',

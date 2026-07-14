@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/main-logo.png",
+        url: "https://integritradellc.com/logo/integritrade-logo.png",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC | ITAD & Recycling Services",
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
     title: "About Integritrade LLC | Trusted ITAD & Recycling Partner",
     description:
       "Integritrade LLC is a trusted ITAD and e-waste recycling company, ensuring secure data destruction and environmental compliance.",
-    images: ["https://integritradellc.com/main-logo.png"],
+    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
   },
   robots: {
     index: true,
@@ -81,7 +81,7 @@ export default function AboutPage() {
     "@type": "Organization",
     name: "Integritrade LLC",
     url: "https://integritradellc.com/",
-    logo: "https://integritradellc.com/main-logo.png",
+    logo: "https://integritradellc.com/logo/integritrade-logo.png",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+1-559-325-4813",

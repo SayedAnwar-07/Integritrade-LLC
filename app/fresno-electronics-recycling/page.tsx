@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://integritradellc.com/main-logo.png',
+        url: 'https://integritradellc.com/logo/integritrade-logo.png',
         width: 1200,
         height: 630,
         alt: 'Accepted E-Waste Items | Integritrade LLC',
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
         title: 'Fresno Electronics Recycling | Integritrade LLC',
     description:
       'Free electronics drop-off and certified e-waste recycling services in Fresno, CA.',
-    images: ['https://integritradellc.com/main-logo.png'],
+    images: ['https://integritradellc.com/logo/integritrade-logo.png'],
   },
   robots: { index: true, follow: true },
 }

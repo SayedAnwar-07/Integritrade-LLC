@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://integritradellc.com/main-logo.png",
+        url: "https://integritradellc.com/logo/integritrade-logo.png",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Partners",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "Meet your trusted partners at Integritrade LLC. You work with vetted suppliers and service providers who support quality, reliability, and long term business growth.",
 
     // ✅ FIXED (stable image)
-    images: ["https://integritradellc.com/main-logo.png"],
+    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
   },
 
   robots: {

@@ -12,21 +12,34 @@ import Navbar from "@/components/shared/Navbar"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
+
   title: {
     default: siteConfig.title,
     template: `%s | ${siteConfig.siteName}`,
   },
+
   description: siteConfig.description,
-  keywords: siteConfig.keywords,
+
   icons: {
-    icon: "/logo/integritrade-favicon.svg",
+    icon: [
+      {
+        url: "/logo/integritrade-favicon.png",
+        type: "image/png",
+        sizes: "96x96",
+      },
+    ],
+    shortcut: "/logo/integritrade-favicon.png",
+    apple: "/logo/integritrade-favicon.png",
   },
+
   verification: {
     google: "qsfyTTMiUnf1Eai5hEW017rJ__8a7dxZxGRmJWKsvzU",
   },
+
   alternates: {
     canonical: "/",
   },
+
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,
@@ -43,11 +56,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+
   robots: {
     index: true,
     follow: true,
   },
-}
+};
 
 export default function RootLayout({
   children,
