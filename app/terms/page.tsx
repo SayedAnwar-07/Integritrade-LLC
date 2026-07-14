@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/main-logo.png",
+        url: "https://integritradellc.com/logo/integritrade-logo.png",
         width: 1200,
         height: 630,
         alt: "Terms and Conditions | Integritrade LLC",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Terms and Conditions | Integritrade LLC",
     description:
       "Understand Integritrade LLC terms and conditions before using our services.",
-    images: ["https://integritradellc.com/main-logo.png"],
+    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
   },
 
   robots: {

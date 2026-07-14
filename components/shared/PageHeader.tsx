@@ -30,45 +30,52 @@ export default function PageHeader({
   const isCenter = align === "center";
   const hasLink = Boolean(linkText && linkHref);
 
-  const cta = hasLink && (
+  const cta = hasLink ? (
     <Link
       href={linkHref!}
       className="group inline-flex items-center gap-2 border-b border-stone-900 pb-1 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-primary transition-all duration-150 hover:border-primary hover:text-primary/80 dark:border-white"
     >
       {linkText}
+
       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
     </Link>
-  );
+  ) : null;
 
   return (
-    <div className={`w-full ${className}`}>
+    <header className={`w-full ${className}`}>
       {eyebrow && (
         <div
           className={`mb-8 flex items-center gap-4 ${
-            isCenter ? "justify-center" : ""
+            isCenter ? "justify-center" : "justify-start"
           }`}
         >
           <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
+
           <span className="font-mono text-[1rem] font-bold uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400">
             {sectionNumber ? `§${sectionNumber} / ${eyebrow}` : eyebrow}
           </span>
+
           <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
         </div>
       )}
 
       <div
-        className={`max-w-6xl ${
-          isCenter ? "mx-auto text-center" : "text-left"
+        className={`w-full max-w-6xl ${
+          isCenter ? "mx-auto text-center" : "mr-auto text-left"
         }`}
       >
-        <Heading className="font-serif max-w-4xl mx-auto text-4xl leading-[1.05] tracking-tight text-stone-900 sm:text-5xl lg:text-6xl dark:text-white">
+        <Heading
+          className={`max-w-4xl font-serif text-4xl leading-[1.05] tracking-tight text-stone-900 sm:text-5xl lg:text-6xl dark:text-white ${
+            isCenter ? "mx-auto" : "mr-auto"
+          }`}
+        >
           {title}
         </Heading>
 
         {description && (
           <p
-            className={`mt-6 text-base leading-relaxed text-stone-700 dark:text-slate-300 ${
-              isCenter ? "text-center" : "text-left"
+            className={`mt-6 max-w-4xl text-base leading-relaxed text-stone-700 dark:text-slate-300 ${
+              isCenter ? "mx-auto text-center" : "mr-auto text-left"
             }`}
           >
             {description}
@@ -76,11 +83,15 @@ export default function PageHeader({
         )}
 
         {hasLink && (
-          <div className={`mt-8 flex ${isCenter ? "justify-center" : ""}`}>
+          <div
+            className={`mt-8 flex ${
+              isCenter ? "justify-center" : "justify-start"
+            }`}
+          >
             {cta}
           </div>
         )}
       </div>
-    </div>
+    </header>
   );
 }

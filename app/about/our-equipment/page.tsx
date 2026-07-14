@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/main-logo.png",
+        url: "https://integritradellc.com/logo/integritrade-logo.png",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Capabilities",

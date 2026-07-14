@@ -3,12 +3,14 @@
 import React from "react"
 
 const SchemaMarkup: React.FC = () => {
+  const LOGO_URL = "https://integritradellc.com/logo/integritrade-logo.png"
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Integritrade LLC",
     url: "https://integritradellc.com/",
-    logo: "https://integritradellc.com/_next/static/media/main-logo.d956176c.png",
+    logo: LOGO_URL,
     description:
       "Integritrade LLC offers certified ITAD, data destruction, and e-waste recycling solutions to keep your business secure and environmentally responsible.",
     address: {
@@ -28,39 +30,11 @@ const SchemaMarkup: React.FC = () => {
     ],
   }
 
-  const ratingSchema = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    name: "Integritrade LLC",
-    url: "https://integritradellc.com/",
-    logo: "https://integritradellc.com/_next/static/media/main-logo.d956176c.png",
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      bestRating: "5",
-      worstRating: "1",
-      ratingCount: "126",
-      reviewCount: "45",
-    },
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: "1945 N Fine Ave, STE 111",
-      addressLocality: "Fresno",
-      addressRegion: "CA",
-      postalCode: "93727",
-      addressCountry: "US",
-    },
-    telephone: "+1(559) 325-4813",
-    email: "info@integritradeLLC.com",
-    description:
-      "Integritrade LLC provides certified ITAD, secure data destruction, and eco-friendly e-waste recycling solutions for businesses.",
-  }
-
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Integritrade LLC",
-    image: "https://integritradellc.com/_next/static/media/main-logo.d956176c.png",
+    image: LOGO_URL,
     "@id": "https://integritradellc.com/",
     url: "https://integritradellc.com/",
     telephone: "+1(559) 325-4813",
@@ -106,7 +80,7 @@ const SchemaMarkup: React.FC = () => {
       "@type": "Organization",
       name: "Integritrade LLC",
       url: "https://integritradellc.com/",
-      logo: "https://integritradellc.com/_next/static/media/main-logo.d956176c.png",
+      logo: LOGO_URL,
       address: {
         "@type": "PostalAddress",
         streetAddress: "1945 N Fine Ave, STE 111",
@@ -132,7 +106,7 @@ const SchemaMarkup: React.FC = () => {
     name: "How to Recycle E-Waste Safely",
     description:
       "A step-by-step guide by Integritrade LLC to recycle your old electronics securely and responsibly.",
-    image: "https://integritradellc.com/_next/static/media/main-logo.d956176c.png",
+    image: LOGO_URL,
     totalTime: "PT10M",
     estimatedCost: {
       "@type": "MonetaryAmount",
@@ -228,10 +202,6 @@ const SchemaMarkup: React.FC = () => {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(ratingSchema) }}
       />
       <script
         type="application/ld+json"

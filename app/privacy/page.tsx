@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/main-logo.png",
+        url: "https://integritradellc.com/logo/integritrade-logo.png",
         width: 1200,
         height: 630,
         alt: "Privacy Policy | Integritrade LLC",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Privacy Policy | Integritrade LLC",
     description:
       "Learn how Integritrade LLC protects your data and ensures privacy compliance.",
-    images: ["https://integritradellc.com/main-logo.png"],
+    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
   },
 
   robots: {

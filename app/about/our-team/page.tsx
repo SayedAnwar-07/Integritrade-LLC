@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/main-logo.png",
+        url: "https://integritradellc.com/logo/integritrade-logo.png",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Leadership Team",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     title: "Leadership | The People Accountable for Your Data | Integritrade LLC",
     description:
       "Meet the founders who personally oversee every ITAD project at Integritrade.",
-    images: ["https://integritradellc.com/main-logo.png"],
+    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
   },
   robots: {
     index: true,

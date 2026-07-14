@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://integritradellc.com/main-logo.png",
+        url: "https://integritradellc.com/logo/integritrade-logo.png",
         width: 1200,
         height: 630,
         alt: "Industries Served by Integritrade LLC ITAD Services",
@@ -75,7 +75,7 @@ export const metadata: Metadata = {
     description:
       "Explore industry-specific IT asset disposition solutions tailored for compliance-heavy sectors across the USA.",
 
-    images: ["https://integritradellc.com/main-logo.png"],
+    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
   },
 
   robots: {

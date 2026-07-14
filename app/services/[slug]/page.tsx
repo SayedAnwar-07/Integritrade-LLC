@@ -37,7 +37,7 @@ export async function generateMetadata(props: {
       type: "website",
       images: [
         {
-          url: "https://integritradellc.com/main-logo.png",
+          url: "https://integritradellc.com/logo/integritrade-logo.png",
           width: 1200,
           height: 630,
           alt: `${service.pageTitle} | Integritrade LLC`,
@@ -48,7 +48,7 @@ export async function generateMetadata(props: {
       card: "summary_large_image",
       title: service.metaTitle,
       description: service.metaDescription,
-      images: ["https://integritradellc.com/main-logo.png"],
+      images: ["https://integritradellc.com/logo/integritrade-logo.png"],
     },
     robots: { index: true, follow: true },
   };
