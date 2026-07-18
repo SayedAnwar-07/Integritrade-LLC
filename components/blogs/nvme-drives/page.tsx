@@ -161,8 +161,8 @@ export default function NvmeDrives() {
                   The differences between traditional spinning drives and NVMe go well beyond performance. They fundamentally change what data destruction has to accomplish.
                 </p>
 
-                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
-                  <table className="w-full text-left bg-white dark:bg-dark-secondary">
+                <div className="overflow-x-auto rounded-md border border-gray-200 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden dark:border-gray-800">
+<table className="w-full bg-white text-left dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
                         <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Aspect</th>

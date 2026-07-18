@@ -93,8 +93,8 @@ export default function UnderstandingITasset() {
                   ITAD scope is broader than most teams initially assume. Any device capable of storing or processing data falls within the framework.
                 </p>
 
-                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
-                  <table className="w-full text-left bg-white dark:bg-dark-secondary">
+                <div className="overflow-x-auto rounded-md border border-gray-200 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden dark:border-gray-800">
+<table className="w-full bg-white text-left dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
                         <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Asset Category</th>
@@ -278,8 +278,8 @@ export default function UnderstandingITasset() {
                   Several recognized standards together form the framework for defensible ITAD operations. Look for these explicitly when evaluating providers.
                 </p>
 
-                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
-                  <table className="w-full text-left bg-white dark:bg-dark-secondary">
+                <div className="overflow-x-auto rounded-md border border-gray-200 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden dark:border-gray-800">
+<table className="w-full bg-white text-left dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
                         <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Standard</th>
