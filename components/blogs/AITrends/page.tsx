@@ -153,8 +153,8 @@ export default function AITrends() {
                 The contrast between traditional and AI-era hardware planning is significant. The table below illustrates how priorities and timelines have changed across key categories.
               </p>
 
-              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
-                <table className="w-full text-left bg-white dark:bg-dark-secondary">
+              <div className="overflow-x-auto rounded-md border border-gray-200 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden dark:border-gray-800">
+<table className="w-full bg-white text-left dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">
                       <th className="px-6 py-4 text-sm font-semibold text-gray-900 dark:text-white">Category</th>

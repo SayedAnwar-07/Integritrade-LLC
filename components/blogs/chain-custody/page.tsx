@@ -158,8 +158,8 @@ export default function ChainCustody() {
                 The difference between a documented chain of custody and informal handling becomes clear during an audit or incident.
               </p>
 
-              <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
-                <table className="w-full text-left bg-white dark:bg-dark-secondary">
+              <div className="overflow-x-auto rounded-md border border-gray-200 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden dark:border-gray-800">
+<table className="w-full bg-white text-left dark:bg-dark-secondary">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-800">
                       <th className="px-6 py-4 text-sm font-semibold text-gray-900 dark:text-white">Aspect</th>

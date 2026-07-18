@@ -125,6 +125,7 @@ export const fresnoData: ServiceArea = {
         }
       ]
     },
+
     {
       slug: "it-asset-disposition",
       title: "IT Asset Disposition in Fresno",
@@ -203,38 +204,38 @@ export const fresnoData: ServiceArea = {
           heading: "Frequently Asked Questions About IT Asset Disposition",
           body:
             "Here are some common questions businesses ask about our Fresno IT asset disposition services.",
-          qna: [
-            {
-              question: "How long does the IT Asset Disposition process take?",
-              answer:
-                "Emergency disposals can be completed within 24-48 hours. Standard services typically require 5-10 business days from pickup to documentation completion."
-            },
-            {
-              question: "Will I receive documentation proving data destruction?",
-              answer:
-                "Absolutely. Every client receives detailed certificates of destruction with unique tracking numbers for each device processed."
-            },
-            {
-              question: "Can you refurbish some equipment while recycling others?",
-              answer:
-                "Yes. We assess each device and maximize refurbishment opportunities to recover value while ensuring proper disposal of unrepairable equipment."
-            },
-            {
-              question: "What types of equipment do you accept?",
-              answer:
-                "We handle servers, workstations, laptops, desktops, monitors, printers, networking equipment, data storage devices, and most other IT hardware."
-            },
-            {
-              question: "Is my data really completely destroyed?",
-              answer:
-                "Yes. We use certified destruction methods that make data recovery impossible, verified through independent auditing and comprehensive documentation."
-            },
-            {
-              question: "Will I be liable if data is breached after ITAD services?",
-              answer:
-                "By using certified ITAD providers, you demonstrate due diligence in data protection and significantly reduce liability. Our documentation protects you in compliance audits and legal proceedings."
-            }
-          ]
+         qna: [
+          {
+            question: "How long does the IT Asset Disposition process take?",
+            answer:
+              "The timeline depends on the volume and type of equipment, pickup location, data destruction requirements, and documentation needs. We provide an estimated completion schedule after reviewing your project."
+          },
+          {
+            question: "Will I receive documentation proving data destruction?",
+            answer:
+              "Absolutely. Every client receives detailed certificates of destruction with unique tracking numbers for each device processed."
+          },
+          {
+            question: "Can you refurbish some equipment while recycling others?",
+            answer:
+              "Yes. We assess each device and maximize refurbishment opportunities to recover value while ensuring proper disposal of unrepairable equipment."
+          },
+          {
+            question: "What types of equipment do you accept?",
+            answer:
+              "We handle servers, workstations, laptops, desktops, monitors, printers, networking equipment, data storage devices, and most other IT hardware."
+          },
+          {
+            question: "Is my data really completely destroyed?",
+            answer:
+              "Yes. We use certified destruction methods that make data recovery impossible, verified through independent auditing and comprehensive documentation."
+          },
+          {
+            question: "Will I be liable if data is breached after ITAD services?",
+            answer:
+              "Our audit-ready documentation provides the verifiable chain of custody you need to demonstrate regulatory compliance and defend your due diligence."
+          }
+        ]
         },
         {
           heading: "Conclusion",

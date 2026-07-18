@@ -92,8 +92,8 @@ export default function ServersManage() {
                   Most resale programs cover the standard enterprise form factors, with resale strength varying by configuration, age, and current market demand.
                 </p>
 
-                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
-                  <table className="w-full text-left bg-white dark:bg-dark-secondary">
+                <div className="overflow-x-auto rounded-md border border-gray-200 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden dark:border-gray-800">
+<table className="w-full bg-white text-left dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
                         <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Server Type</th>
@@ -245,8 +245,8 @@ export default function ServersManage() {
                   The right disposition path is rarely ambiguous when the indicators are reviewed honestly. A few clear signals separate resale candidates from recycling candidates.
                 </p>
 
-                <div className="overflow-x-auto rounded-md border border-gray-200 dark:border-gray-800">
-                  <table className="w-full text-left bg-white dark:bg-dark-secondary">
+                <div className="overflow-x-auto rounded-md border border-gray-200 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden dark:border-gray-800">
+<table className="w-full bg-white text-left dark:bg-dark-secondary">
                     <thead>
                       <tr className="border-b border-gray-200 dark:border-gray-800">
                         <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Indicator</th>

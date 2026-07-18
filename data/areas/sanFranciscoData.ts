@@ -102,6 +102,7 @@ export const sanFranciscoData: ServiceArea = {
         }
       ]
     },
+    
     {
       slug: "it-asset-disposition",
       title: "IT Asset Disposition in San Francisco",
@@ -122,7 +123,7 @@ export const sanFranciscoData: ServiceArea = {
         {
           heading: "Introduction",
           body:
-            "Running a business in San Francisco means constantly handling sensitive data, retiring outdated hardware, and managing growing compliance risks. Simply discarding old laptops, servers, storage devices, and networking gear is not a safe option. Without a secure IT asset disposition process, your company could face data breaches, regulatory exposure, and unnecessary financial loss. A professional ITAD partner helps your business dispose of retired technology securely, responsibly, and efficiently."
+            "Retired IT equipment can remain a business risk long after it leaves active use. Laptops, servers, storage devices, and networking hardware may still contain confidential information, while undocumented disposal can create compliance gaps, environmental liability, and unnecessary costs. A structured IT asset disposition program ensures every device is inventoried, securely sanitized or destroyed, and directed to remarketing or certified recycling based on its condition."
         },
         {
           heading: "Why ITAD is Important for San Francisco Businesses",
