@@ -20,24 +20,25 @@ export const sanFranciscoData: ServiceArea = {
   services: [
     {
       slug: "data-destruction-services",
-      title: "Data Destruction in San Francisco",
-      shortDescription:
-        "Certified data destruction services in San Francisco with NIST-compliant sanitization, on-site shredding, and full audit documentation.",
       icon: "Monitor",
-
-      metaTitle:
-        "Data Destruction in San Francisco | Safe Data Destruction | IntegriTrade",
-
-      metaDescription:
-        "Looking for reliable data destruction services in San Francisco? We provide NIST standard sanitization and hard drive shredding. Get a quote today!",
-
       image: dataDestruction,
 
+      title: "Electronics Data Destruction in San Francisco",
+
+      shortDescription:
+        "R2v3-certified electronics data destruction in San Francisco with NIST SP 800-88-compliant sanitization, secure shredding, chain-of-custody tracking, and audit-ready documentation.",
+
+      metaTitle:
+        "R2v3-Certified NIST SP 800-88 Electronics Data Destruction San Francisco | IntegriTrade",
+
+      metaDescription:
+        "R2v3-certified electronics data destruction in San Francisco with NIST SP 800-88 sanitization, secure shredding, and documented chain of custody.",
+
       heroHeading:
-        "Secure Data Destruction in San Francisco: Is Your Company's Data Deleted for Real?",
+        "R2v3-Certified NIST SP 800-88-Compliant Electronics Data Destruction in San Francisco",
 
       heroSubheading:
-        "Running a business in San Francisco means handling sensitive data daily. Simply deleting or formatting devices is not enough data can still be recovered. Our certified data destruction services ensure your information is permanently erased and fully compliant.",
+        "Our certified data destruction services ensure your information is permanently erased and fully compliant. NIST SP 800-88-compliant sanitization permanently erases sensitive data while allowing eligible devices to be safely reused.",
 
       ctaText: "Get a Free Quote",
 
@@ -69,9 +70,11 @@ export const sanFranciscoData: ServiceArea = {
 
           qna: [
             {
-              question: "What is the most secure method of data destruction in San Francisco?",
+              question:
+                "Is NIST SP 800-88 data sanitization as secure as physical shredding?",
+
               answer:
-                "The most secure method is physical hard drive shredding combined with NIST 800-88 compliant data sanitization. Businesses in San Francisco often choose on-site shredding to ensure data is destroyed before leaving their premises."
+                "Verified NIST SP 800-88 sanitization can provide an appropriate secure outcome for supported devices intended for reuse. Physical destruction is generally selected when media is damaged, unsupported, subject to a destruction-only policy, or too sensitive to be reused. Integritrade recommends a sanitization method based on the media type, information sensitivity, internal policy, and applicable compliance requirements."
             },
             {
               question: "Do you provide a certificate of data destruction?",
