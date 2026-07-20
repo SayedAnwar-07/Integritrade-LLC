@@ -322,9 +322,9 @@ export const fresnoData: ServiceArea = {
                 "No. Deleted or reset data can often be recovered with forensic tools. We use NIST 800-88 compliant wiping or physical shredding so data is permanently unrecoverable."
             },
             {
-              question: "Do you provide proof of recycling and data destruction?",
+              question: "Can you provide proof of recycling and data destruction?",
               answer:
-                "Yes. Every project includes a serialized Certificate of Destruction and R2v3 recycling documentation for your audit and compliance records."
+                "Yes. Every data destruction or ITAD project includes serialized Certificates of Destruction and R2v3 recycling documentation for your audit and compliance records."
             },
             {
               question: "What types of electronics do you accept from Fresno businesses?",
