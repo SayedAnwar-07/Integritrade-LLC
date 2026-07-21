@@ -150,15 +150,21 @@ export default async function ServicePage({ params }: PageProps) {
                     key={`${item.heading}-${sectionIndex}`}
                     className="mt-12"
                   >
-                    <h2 className="text-left text-2xl font-semibold leading-tight text-slate-950 dark:text-gray-100">
-                      {item.heading}
-                    </h2>
-
-                    {item.body && (
-                      <p className="mt-4 text-left text-base leading-7 text-stone-700 dark:text-slate-300">
-                        {item.body}
-                      </p>
+                    {item.heading && (
+                      <h2 className="text-left text-2xl font-semibold leading-tight text-slate-950 dark:text-gray-100">
+                        {item.heading}
+                      </h2>
                     )}
+
+                    {item.body &&
+                      item.body.split(/\n\n+/).map((paragraph, paragraphIndex) => (
+                        <p
+                          key={`${sectionIndex}-p-${paragraphIndex}`}
+                          className="mt-4 text-left text-base leading-7 text-stone-700 dark:text-slate-300"
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
 
                     {item.bullets && item.bullets.length > 0 && (
                       <ul className="mt-6 space-y-3">
