@@ -80,7 +80,7 @@
   <url><loc>https://integritradellc.com/service-area/mountain-view/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/los-gatos/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/sunnyvale/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://integritradellc.com/service-area/palo-alto/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/palo-alto/asset-recovery-palo-alto/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/milpitas/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/campbell/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/menlo-park/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -107,7 +107,7 @@
   <url><loc>https://integritradellc.com/service-area/mountain-view/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/los-gatos/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/sunnyvale/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://integritradellc.com/service-area/palo-alto/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/palo-alto/it-asset-disposition-palo-alto/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/milpitas/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/campbell/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/service-area/menlo-park/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -189,4 +189,27 @@
   <url><loc>https://integritradellc.com/blogs/is-it-possible-to-recover-deleted-data/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://integritradellc.com/blogs/server-data-center-equipment-disposal-guide/</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
 
+  <url><loc>https://integritradellc.com/service-area/bakersfield/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/bakersfield/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/bakersfield/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/clovis/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/clovis/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/clovis/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/fresno/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/merced/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/merced/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/merced/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/modesto/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/modesto/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/modesto/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/sacramento/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/sacramento/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/sacramento/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/san-francisco/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/stockton/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/stockton/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/stockton/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/visalia/data-destruction-services/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/visalia/it-asset-disposition/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://integritradellc.com/service-area/visalia/asset-recovery/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

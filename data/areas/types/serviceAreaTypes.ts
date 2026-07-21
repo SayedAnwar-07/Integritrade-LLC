@@ -7,7 +7,7 @@ export interface FAQItem {
 
 export interface ServiceDetail {
   heading: string;
-  body: string;
+  body?: string;
   bullets?: string[];
   qna?: FAQItem[];
 }
