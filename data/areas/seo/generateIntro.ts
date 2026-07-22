@@ -1,0 +1,3 @@
+export const generateCityIntro = (city: string) => {
+  return `Integritrade delivers certified IT asset disposition, enterprise hard drive shredding, electronics recycling, and hardware buyback programs for organizations across ${city}. Audited and verified against five independent standards including R2v3, ISO 27001 information security, ISO 9001 quality management, ISO 14001 environmental safety, and ISO 45001 occupational safety, we provide local ${city} enterprises with complete chain of custody protection and audit ready Certificates of Destruction.`;
+};
