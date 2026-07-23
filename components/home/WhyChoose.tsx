@@ -1,8 +1,7 @@
 import {
   ClipboardCheck,
   Route,
-  ArrowUpRight,
-  SplitSquareHorizontal,
+  Recycle,
 } from "lucide-react";
 import SectionHeader from "../shared/SectionHeader";
 import ScrollLoader from "../shared/ScrollLoader";
@@ -18,36 +17,28 @@ type Item = {
 
 const items: Item[] = [
   {
-    index:1,
-    icon: ClipboardCheck,
+    index: 1,
+    icon: Route,
     iconColor: "text-amber-700 dark:text-amber-300",
     iconBorder: "border-amber-200/80 dark:border-amber-700/40",
-    title: "Documented Chain of Custody",
-    desc: "Every asset is tracked from pickup to final processing, giving your team clear records of where devices went, how they were handled, and what happened next.",
+    title: "End-to-End Tracking",
+    desc: "Flawless chain-of-custody documentation from your door to our facility.",
   },
   {
-    index:2,
-    icon: Route,
+    index: 2,
+    icon: ClipboardCheck,
     iconColor: "text-blue-700 dark:text-blue-300",
     iconBorder: "border-blue-200/80 dark:border-blue-700/40",
-    title: "Pickup-to-Report Workflow",
-    desc: "We do more than remove equipment. Our process connects scheduling, collection, sorting, data handling, recycling, resale, and final reporting in one organized workflow.",
+    title: "Rigorous Compliance",
+    desc: "Serialized destruction reports built to withstand the strictest audits.",
   },
   {
-    index:3,
-    icon: ArrowUpRight,
+    index: 3,
+    icon: Recycle,
     iconColor: "text-emerald-700 dark:text-emerald-300",
     iconBorder: "border-emerald-200/80 dark:border-emerald-700/40",
-    title: "Value Recovery When Possible",
-    desc: "Usable assets are evaluated for resale or recovery value before recycling, helping businesses reduce disposal costs and recover more from surplus IT equipment.",
-  },
-  {
-    index:4,
-    icon: SplitSquareHorizontal,
-    iconColor: "text-rose-700 dark:text-rose-300",
-    iconBorder: "border-rose-200/80 dark:border-rose-700/40",
-    title: "Separate Paths for Every User",
-    desc: "Business ITAD projects, commercial cleanouts, and local electronics recycling are handled with different workflows, so each customer gets the right service and documentation.",
+    title: "Zero-Worry Recycling",
+    desc: "Environmentally responsible electronics recycling that protects your bottom line and your reputation.",
   },
 ];
 
@@ -58,13 +49,13 @@ export default function WhyChoose() {
         
          <ScrollLoader>
             <SectionHeader
-              eyebrow="Why Integritrade"
+              eyebrow="Why Choose Integritrade"
               title="More than equipment removal a clear process your team can verify."
               description="We help businesses and local customers move from pickup to final outcome with organized tracking, responsible handling, value recovery, and the right documentation for each service."
             />
         </ScrollLoader>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-20">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-20">
           {items.map(({ icon: Icon, iconColor, iconBorder, title, desc, index }) => (
              <ScrollLoader key={title} delay={index * 0.08}>
               <article

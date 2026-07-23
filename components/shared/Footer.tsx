@@ -7,10 +7,26 @@ import integritradeLogo from "@/public/logo/integritrade-logo.svg"
 import { usePathname } from "next/navigation";
 
 const footerServices = [
-  { href: "/services/e-waste-recycling/", label: "Electronic Recycling" },
-  { href: '/services/data-destruction-services/', label: "Data Destruction" },
-  { href: "/services/it-asset-disposition/", label: "ITAD Services" },
-  { href: "/services/asset-recovery-services/", label: "Asset Recovery" },
+  { 
+    href: "/services/basic-electronics-recycling/", 
+    label: "Basic Electronics Recycling" 
+  },
+  { 
+    href: "/services/data-destruction-services/", 
+    label: "Data Destruction Services" 
+  },
+  { 
+    href: "/services/it-asset-disposition/", 
+    label: "Full ITAD Package" 
+  },
+  { 
+    href: "/services/demanufacturing-prototype-destruction/", 
+    label: "Demanufacturing & Prototype Destruction" 
+  },
+  { 
+    href: "/fresno-electronics-recycling/", 
+    label: "Fresno Public E-Waste Drop Off" 
+  },
 ];
 
 export default function Footer() {

@@ -16,7 +16,7 @@ export const petalumaData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Petaluma",
       "shortDescription": "Certified electronics recycling in Petaluma, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

@@ -16,7 +16,7 @@ export const santaRosaData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Santa Rosa",
       "shortDescription": "Certified electronics recycling in Santa Rosa, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

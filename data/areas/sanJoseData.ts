@@ -16,7 +16,7 @@ export const sanJoseData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in San Jose",
       "shortDescription": "Certified electronics recycling in San Jose, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

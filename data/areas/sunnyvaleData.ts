@@ -16,7 +16,7 @@ export const sunnyvaleData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Sunnyvale",
       "shortDescription": "Certified electronics recycling in Sunnyvale, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

@@ -16,7 +16,7 @@ export const berkeleyData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Berkeley",
       "shortDescription": "Certified electronics recycling in Berkeley, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

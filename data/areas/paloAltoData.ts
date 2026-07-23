@@ -16,7 +16,7 @@ export const paloAltoData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Palo Alto",
       "shortDescription": "Certified electronics recycling in Palo Alto, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

@@ -16,7 +16,7 @@ export const losGatosData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Los Gatos",
       "shortDescription": "Certified electronics recycling in Los Gatos, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

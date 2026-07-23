@@ -16,7 +16,7 @@ export const walnutCreekData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Walnut Creek",
       "shortDescription": "Certified electronics recycling in Walnut Creek, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

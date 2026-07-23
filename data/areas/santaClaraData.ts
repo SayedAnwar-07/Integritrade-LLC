@@ -16,7 +16,7 @@ export const santaClaraData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Santa Clara",
       "shortDescription": "Certified electronics recycling in Santa Clara, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",
