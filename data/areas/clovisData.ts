@@ -16,7 +16,7 @@ export const clovisData: ServiceArea = {
 
   services: [
     {
-      "slug": "electronics-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Clovis",
       "shortDescription": "Certified electronics recycling in Clovis, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

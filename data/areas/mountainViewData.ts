@@ -16,7 +16,7 @@ export const mountainViewData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Mountain View",
       "shortDescription": "Certified electronics recycling in Mountain View, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

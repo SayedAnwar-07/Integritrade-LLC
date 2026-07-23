@@ -16,7 +16,7 @@ export const sanBrunoData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in San Bruno",
       "shortDescription": "Certified electronics recycling in San Bruno, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

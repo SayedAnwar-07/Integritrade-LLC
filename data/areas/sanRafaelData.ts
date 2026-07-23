@@ -16,7 +16,7 @@ export const sanRafaelData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in San Rafael",
       "shortDescription": "Certified electronics recycling in San Rafael, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

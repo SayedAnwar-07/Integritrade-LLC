@@ -16,7 +16,7 @@ export const cupertinoData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Cupertino",
       "shortDescription": "Certified electronics recycling in Cupertino, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

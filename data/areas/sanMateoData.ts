@@ -16,7 +16,7 @@ export const sanMateoData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in San Mateo",
       "shortDescription": "Certified electronics recycling in San Mateo, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

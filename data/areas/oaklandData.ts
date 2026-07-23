@@ -16,7 +16,7 @@ export const oaklandData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Oakland",
       "shortDescription": "Certified electronics recycling in Oakland, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

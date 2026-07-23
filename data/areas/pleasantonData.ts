@@ -16,7 +16,7 @@ export const pleasantonData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Pleasanton",
       "shortDescription": "Certified electronics recycling in Pleasanton, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

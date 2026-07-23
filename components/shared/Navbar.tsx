@@ -294,7 +294,7 @@ export default function Navbar() {
       label: 'Services',
       dropdown: [
         { href: '/services/', label: 'Compare Our Service Levels', icon: Scale },
-        { href: '/services/e-waste-recycling', label: 'Basic Recycling', icon: Recycle },
+        { href: '/services/basic-electronics-recycling', label: 'Basic Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
         { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },        
         { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },    

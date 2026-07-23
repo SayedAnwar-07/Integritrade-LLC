@@ -16,7 +16,7 @@ export const fosterCityData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Foster City",
       "shortDescription": "Certified electronics recycling in Foster City, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

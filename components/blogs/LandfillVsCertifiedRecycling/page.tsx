@@ -300,7 +300,7 @@ export default function LandfillVsCertifiedRecycling() {
                   </p>
                   <p className="custom-text-center">
                     <Link
-                      href="/service-area/san-francisco/e-waste-recycling/"
+                      href="/service-area/san-francisco/basic-electronics-recycling/"
                       className="inline-block text-blue-600 dark:text-blue-400 font-medium hover:underline"
                     >
                       Explore E-Waste Recycling Services in San Francisco →

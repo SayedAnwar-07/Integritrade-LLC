@@ -16,7 +16,7 @@ export const milpitasData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Milpitas",
       "shortDescription": "Certified electronics recycling in Milpitas, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

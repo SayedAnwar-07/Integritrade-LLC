@@ -137,7 +137,7 @@ export const servicesData: Service[] = [
   // 1. BASIC RECYCLING  (slug: e-waste-recycling)
   // ==========================================================================
   {
-    slug: "e-waste-recycling",
+    slug: "basic-electronics-recycling",
     image: eRecycling,
     metaTitle: "Basic Electronics Recycling Services Nationwide | Integritrade",
     metaDescription:

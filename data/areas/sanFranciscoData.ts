@@ -195,7 +195,7 @@ export const sanFranciscoData: ServiceArea = {
       ]
     },
     {
-      "slug": "electronics-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in San Francisco",
       "shortDescription": "Certified electronics recycling in San Francisco, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

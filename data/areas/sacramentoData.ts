@@ -16,7 +16,7 @@ export const sacramentoData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Sacramento",
       "shortDescription": "Certified electronics recycling in Sacramento, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",

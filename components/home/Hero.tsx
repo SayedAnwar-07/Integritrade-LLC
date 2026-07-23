@@ -66,12 +66,11 @@ export default function Hero() {
                   sm:text-[2.75rem] sm:leading-[1.15]
                   md:text-[3.25rem] md:leading-[1.12]
                   lg:text-[4rem] lg:leading-[1.08]
-                  xl:text-[4.5rem] xl:leading-[1.05]
                   tracking-[-0.02em]
                   text-black dark:text-white
                   max-w-[16ch]"
               >
-                Integritrade helps organizations securely retire IT assets
+                Bulletproof IT Asset Disposition & Electronics Data Destruction.
               </h1>
 
               <div className="mt-8 max-w-2xl">
@@ -82,7 +81,7 @@ export default function Hero() {
                   text-gray-700 dark:text-gray-300
                   custom-text-center"
                 >
-                  End-to-end IT asset disposition and electronics recycling you can trust. We manage the removal, tracking, secure erasure, and physical destruction of your retired devices. You receive detailed, serialized reports and comprehensive chain-of-custody documentation built to withstand rigorous audits.
+                  Protect your data and the environment. We manage the removal, secure erasure, and physical destruction of your retired electronics across California.
                 </p>
               </div>
 

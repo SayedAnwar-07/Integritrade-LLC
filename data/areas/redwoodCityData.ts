@@ -16,7 +16,7 @@ export const redwoodCityData: ServiceArea = {
 
   services: [
     {
-      "slug": "e-waste-recycling",
+      "slug": "basic-electronics-recycling",
       "title": "Electronics Recycling in Redwood City",
       "shortDescription": "Certified electronics recycling in Redwood City, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
       "icon": "Recycle",
