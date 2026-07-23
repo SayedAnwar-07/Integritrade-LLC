@@ -110,7 +110,7 @@ export default function IndustriesPage(){
                   <ScrollLoader>
                       <PageHeader
                           eyebrow="Industries"
-                          title="Compliance is industry-specific.So is our process."
+                          title="Compliance is industry-specific. So is our process."
                           description="Regulated sectors run on different compliance models. Our architecture keeps workflows separate, so hospital retirements and federal decommissions never share a chain of custody."
                           linkText="Get in touch"
                           linkHref="/service-book/"
