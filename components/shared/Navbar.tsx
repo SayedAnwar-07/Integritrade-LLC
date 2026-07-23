@@ -29,6 +29,7 @@ import {
   Hammer,
   Scale,
   ChevronRight,
+  Info,
 } from 'lucide-react'
 import { ModeToggle } from './ModeToggle'
 import PrimaryButton from './buttons/PrimaryButton'
@@ -320,6 +321,7 @@ export default function Navbar() {
       href: '/about',
       label: 'About',
       dropdown: [
+        { href: '/about/', label: 'About IntegriTrade', icon: Info },
         { href: '/about/our-team', label: 'Our Team', icon: Users },
         { href: '/about/our-equipment', label: 'Our Equipment', icon: ShieldCheck },
       ],

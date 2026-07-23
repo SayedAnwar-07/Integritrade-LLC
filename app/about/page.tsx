@@ -218,7 +218,7 @@ export default function AboutPage() {
           {/* Left column */}
           <div className="grid grid-cols-1 gap-5">
             <ScrollLoader delay={0}>
-              <article className="h-full rounded-md border border-stone-200 bg-white p-2 sm:p-5 dark:border-white/10 dark:bg-dark-secondary">
+              <article className="h-full rounded-md border border-stone-200 bg-white p-5 dark:border-white/10 dark:bg-dark-secondary">
                 <div className="flex items-center gap-4">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-emerald-300  dark:border-emerald-400">
                     <TrendingUp className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
@@ -236,7 +236,7 @@ export default function AboutPage() {
             </ScrollLoader>
 
             <ScrollLoader delay={0.08}>
-              <article className="h-full rounded-md border border-stone-200 bg-white p-2 sm:p-5 dark:border-white/10 dark:bg-dark-secondary">
+              <article className="h-full rounded-md border border-stone-200 bg-white p-5 dark:border-white/10 dark:bg-dark-secondary">
                 <div className="flex items-center gap-4">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-amber-300 dark:border-amber-500">
                     <BadgeDollarSign className="h-5 w-5 text-amber-700 dark:text-amber-400" />
@@ -257,7 +257,7 @@ export default function AboutPage() {
           {/* Right column */}
           <div className="h-full">
             <ScrollLoader delay={0.16} className="h-full">
-              <article className="flex h-full flex-col rounded-md border border-stone-200 bg-white p-2 sm:p-5 dark:border-white/10 dark:bg-dark-secondary">
+              <article className="flex h-full flex-col rounded-md border border-stone-200 bg-white p-5 dark:border-white/10 dark:bg-dark-secondary">
                 <div className="flex items-center gap-4">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-md border border-sky-500 dark:border-sky-400">
                     <HandHeart className="h-5 w-5 text-sky-700 dark:text-sky-400" />
@@ -327,7 +327,7 @@ export default function AboutPage() {
             </h2>
           </ScrollLoader>
 
-          <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 rounded-md overflow-hidden">
+          <div className="mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 rounded-md overflow-hidden">
             {[
               {
                 Icon: FileCheck,
@@ -352,7 +352,7 @@ export default function AboutPage() {
               },
             ].map((item, index) => (
               <ScrollLoader key={item.title} delay={index * 0.08}>
-                <div className="h-full rounded-md border border-stone-200 bg-white p-2 sm:p-5 dark:border-white/10 dark:bg-dark-secondary">
+                <div className="h-full rounded-md border border-stone-200 bg-white p-5 dark:border-white/10 dark:bg-dark-secondary">
                   <div className="flex flex-col gap-2">
                     <div
                       className={`flex h-11 w-11 items-center justify-center mb-2 rounded-md border ${item.borderColor}`}
