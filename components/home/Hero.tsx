@@ -64,13 +64,10 @@ export default function Hero() {
                   font-serif font-bold
                   text-[2rem] leading-[1.2]
                   sm:text-[2.75rem] sm:leading-[1.15]
-                  md:text-[3.25rem] md:leading-[1.12]
-                  lg:text-[4rem] lg:leading-[1.08]
                   tracking-[-0.02em]
-                  text-black dark:text-white
-                  max-w-[16ch]"
+                  text-black dark:text-white"
               >
-                Bulletproof IT Asset Disposition & Electronics Data Destruction.
+                California's trusted partner for ITAD and ITAM  - done with full accountability, every time.
               </h1>
 
               <div className="mt-8 max-w-2xl">
@@ -81,12 +78,12 @@ export default function Hero() {
                   text-gray-700 dark:text-gray-300
                   custom-text-center"
                 >
-                  Protect your data and the environment. We manage the removal, secure erasure, and physical destruction of your retired electronics across California.
+                  Integritrade manages the complete lifecycle of your retired electronics - secure data destruction, responsible recycling, and certified asset disposition -  all backed by documentation you can stand behind. Whether you're retiring 10 devices or 10,000, we give you the chain-of-custody reporting and compliance confidence your organization demands.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
-                <OutlineButton href="/fresno-electronics-recycling/" testId="button-learn-more">
+                <OutlineButton href="/services/" testId="button-learn-more">
                   See How It Works
                 </OutlineButton>
 

@@ -72,13 +72,11 @@ export default function OurTeamPage() {
           />
         </ScrollLoader>
 
-
         {/* ═══════════════════════════════════════════════════════════════ */}
-        {/* FOUNDER 01 — IAN ZIYAR                                           */}
+        {/* FOUNDER 01 — IAN ZIYAR                                         */}
         {/* ═══════════════════════════════════════════════════════════════ */}
         <ScrollLoader>
           <article className="pt-24 lg:pt-32 px-4 md:px-6">
-
             {/* Founder Header — large editorial portrait + meta */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mb-20 lg:mb-24">
               {/* Portrait */}
@@ -109,50 +107,59 @@ export default function OurTeamPage() {
                   </h2>
 
                   <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center max-w-xl">
-                    A scientist with a peer-reviewed publication record and ten years inside electronics repair, data recovery, and secure destruction. The person who personally signs off on every project that leaves the facility.
+                    Ian&apos;s career started not in recycling, but in precision. As a
+                    researcher at UC San Diego, he co-developed AI-driven diagnostic
+                    systems published in{" "}
+                    <strong className="font-semibold text-gray-900 dark:text-gray-100">
+                      Cell
+                    </strong>{" "}
+                    and{" "}
+                    <strong className="font-semibold text-gray-900 dark:text-gray-100">
+                      Nature Biomedical Engineering
+                    </strong>
+                    .
                   </p>
 
                   {/* Personal Background credentials block */}
                   <div className="mt-4">
-
-                    <div className="">
-                      <div className="">
-                        {[
-                          {
-                            title: "Published in Nature & Cell",
-                            body: "Peer-reviewed biomedical research",
-                          },
-                          {
-                            title: "10+ years in data recovery",
-                            body: "Hands-on electronics & storage media",
-                          },
-                          {
-                            title: "Personally signs every project",
-                            body: "Reviews chain-of-custody on each shipment",
-                          },
-                        ].map((item, i) => (
-                          <div
-                            key={i}
-                            className="grid grid-cols-12 gap-4 py-6 lg:py-7 border-b border-gray-200 dark:border-gray-800"
-                          >
-                            <div className="col-span-1">
-                              <span className="text-sm font-light text-gray-300 dark:text-gray-700 tabular-nums">
-                                0{i + 1}
-                              </span>
-                            </div>
-                            <div className="col-span-11 md:col-span-5">
-                              <p className="text-base font-semibold text-gray-900 dark:text-gray-100">
-                                {item.title}
-                              </p>
-                            </div>
-                            <div className="col-span-12 md:col-span-6 mt-1 md:mt-0">
-                              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
-                                {item.body}
-                              </p>
-                            </div>
+                    <div>
+                      {[
+                        {
+                          title: "Published Research",
+                          body: "Cell and Nature Biomedical Engineering",
+                        },
+                        {
+                          title: "6,000+ Research Citations",
+                          body: "Cited by scientists and engineers worldwide",
+                        },
+                        {
+                          title: "10+ Years of Experience",
+                          body: "Electronics repair, data recovery, and secure destruction",
+                        },
+                      ].map((item, i) => (
+                        <div
+                          key={i}
+                          className="grid grid-cols-12 gap-4 py-6 lg:py-7 border-b border-gray-200 dark:border-gray-800"
+                        >
+                          <div className="col-span-1">
+                            <span className="text-sm font-light text-gray-300 dark:text-gray-700 tabular-nums">
+                              0{i + 1}
+                            </span>
                           </div>
-                        ))}
-                      </div>
+
+                          <div className="col-span-11 md:col-span-5">
+                            <p className="text-base font-semibold text-gray-900 dark:text-gray-100">
+                              {item.title}
+                            </p>
+                          </div>
+
+                          <div className="col-span-12 md:col-span-6 mt-1 md:mt-0">
+                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
+                              {item.body}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
                 </div>
@@ -161,44 +168,93 @@ export default function OurTeamPage() {
                 <div className="grid grid-cols-3 gap-6 mt-12">
                   <div>
                     <p className="text-3xl md:text-4xl font-light text-gray-900 dark:text-gray-100 tracking-tight mb-1">
-                      10<span className="text-emerald-700 dark:text-[#34d399]">+</span>
+                      10
+                      <span className="text-emerald-700 dark:text-[#34d399]">+</span>
                     </p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">Years</p>
+
+                    <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">
+                      Years
+                    </p>
                   </div>
+
+                  <div>
+                    <p className="text-3xl md:text-4xl font-light text-gray-900 dark:text-gray-100 tracking-tight mb-1">
+                      6,000
+                      <span className="text-emerald-700 dark:text-[#34d399]">+</span>
+                    </p>
+
+                    <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">
+                      Citations
+                    </p>
+                  </div>
+
                   <div>
                     <p className="text-3xl md:text-4xl font-light text-gray-900 dark:text-gray-100 tracking-tight mb-1">
                       2023
                     </p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">Founded</p>
-                  </div>
-                  <div>
-                    <p className="text-3xl md:text-4xl font-light text-gray-900 dark:text-gray-100 tracking-tight mb-1">
-                      Nature
+
+                    <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">
+                      Founded
                     </p>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-widest">Published</p>
                   </div>
                 </div>
               </div>
             </div>
 
-
             {/* Bio Sections — editorial narrative */}
             <div className="space-y-20 lg:space-y-24">
-
               {/* Background */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
                 <div className="lg:col-span-4">
                   <p className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
                     — BACKGROUND
                   </p>
+
                   <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15] mt-3">
-                    A scientist who refused to trust the box-checkers.
+                    A career built on precision and process integrity.
                   </h3>
                 </div>
+
                 <div className="lg:col-span-8">
-                  
-                  <p className=" text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
-                    Ian built his early career in biomedical research, where his work led to publications in <strong className="text-gray-900 dark:text-gray-100 font-semibold">Nature</strong> and <strong className="text-gray-900 dark:text-gray-100 font-semibold">Cell</strong>. The same precision that shaped that research now shapes how he runs Integritrade. After a decade in electronics repair, data recovery, and secure data destruction, he watched too many recycling programs cut corners, lose chain of custody, and pass risk back to their clients. He founded Integritrade in 2023 to do the opposite.
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
+                    Ian&apos;s career started not in recycling, but in precision. As a
+                    researcher at UC San Diego, he co-developed AI-driven diagnostic
+                    systems published in{" "}
+                    <strong className="text-gray-900 dark:text-gray-100 font-semibold">
+                      Cell
+                    </strong>{" "}
+                    and{" "}
+                    <strong className="text-gray-900 dark:text-gray-100 font-semibold">
+                      Nature Biomedical Engineering
+                    </strong>
+                    {" "}work that has since been cited over 6,000 times by scientists and
+                    engineers worldwide. In fields where a missed data point means a
+                    missed diagnosis, you learn quickly that process integrity is not
+                    optional.
+                  </p>
+                </div>
+              </div>
+
+              {/* Experience */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+                <div className="lg:col-span-4">
+                  <p className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
+                    — EXPERIENCE
+                  </p>
+
+                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15] mt-3">
+                    Bringing research-grade precision to IT asset disposition.
+                  </h3>
+                </div>
+
+                <div className="lg:col-span-8">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
+                    After a decade in electronics repair, data recovery, and secure
+                    data destruction, Ian watched too many recycling programs cut
+                    corners, lose chain of custody, and pass risk back to their
+                    clients. He founded Integritrade in 2023 to do the opposite and
+                    brought the same precision that defined his research career into
+                    every workflow, certification, and line of code behind TraceTech.
                   </p>
                 </div>
               </div>
@@ -209,35 +265,25 @@ export default function OurTeamPage() {
                   <p className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
                     — TRACK RECORD
                   </p>
+
                   <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15] mt-3">
-                    Five certifications. Two hundred audits.Zero shortcuts.
+                    Five certifications. Enterprise trust. Zero shortcuts.
                   </h3>
                 </div>
+
                 <div className="lg:col-span-8">
                   <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
-                    Under Ian&rsquo;s leadership, Integritrade achieved R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications inside its first operating year. Within six months of opening to commercial clients, the company had earned recurring work from Fortune 500 enterprises and federal organizations relationships built on the simple promise that Ian personally reviews every project before sign-off.
-                  </p>
-                </div>
-              </div>
-
-              {/* Beyond the Contract */}
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
-                <div className="lg:col-span-4">
-                  <p className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
-                    — BEYOND THE CONTRACT
-                  </p>
-                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15] mt-3">
-                    Refurbished devices that end up in classrooms not landfills.
-                  </h3>
-                </div>
-                <div className="lg:col-span-8">              
-                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
-                    Ian partners with nonprofits to route refurbished electronics to students and families who would not otherwise have access to technology. The same downstream chain that protects your data also extends the useful life of devices that still have years of value left in them.
+                    Under his leadership, Integritrade achieved R2v3, ISO 9001, ISO
+                    14001, ISO 45001, and ISO 27001 certifications inside its first
+                    operating year. Within six months of opening to commercial clients,
+                    the company had earned recurring work from Fortune 500 enterprises
+                    and federal organizations relationships built on the promise that
+                    every project is handled with the same uncompromising standard,
+                    every time.
                   </p>
                 </div>
               </div>
             </div>
-
           </article>
         </ScrollLoader>
 

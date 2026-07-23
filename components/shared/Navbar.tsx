@@ -321,7 +321,6 @@ export default function Navbar() {
       label: 'About',
       dropdown: [
         { href: '/about/our-team', label: 'Our Team', icon: Users },
-        { href: '/about/our-partners', label: 'Our Partners', icon: Handshake },
         { href: '/about/our-equipment', label: 'Our Equipment', icon: ShieldCheck },
       ],
     },
