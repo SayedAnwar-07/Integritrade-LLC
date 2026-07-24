@@ -61,7 +61,7 @@ export default function ServiceAreaPage() {
   return (
     <main className="overflow-x-hidden bg-secondary text-gray-900 transition-colors duration-300 dark:bg-dark dark:text-gray-100">
       {/* ─────────── HERO ─────────── */}
-      <section className="relative px-4 pt-16 pb-20 sm:pt-24 sm:pb-28  mx-auto max-w-7xl">
+      <section className="relative px-4 pt-16 pb-10 sm:pt-24 mx-auto max-w-7xl">
         <ScrollLoader>
           <PageHeader
                 eyebrow="Service Area"
@@ -77,102 +77,100 @@ export default function ServiceAreaPage() {
       </section>
 
       {/* ─────────── MAP — EDITORIAL SPLIT ─────────── */}
-      <section className="px-4 py-12 ">
+      <section className="">
         <div className="mx-auto max-w-7xl">
           <ScrollLoader>
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-center">
-              {/* Sticky column */}
-              <div className="lg:col-span-5">
-                <div className="lg:sticky lg:top-28">
-                  <h2 className="font-serif text-3xl leading-tight tracking-tight text-gray-900 dark:text-white">
+            <section className="">
+
+              <div className="relative grid grid-cols-1 lg:grid-cols-12">
+                {/* Content column */}
+                <div className="flex flex-col justify-center md:border-b border-gray-200 px-6 sm:px-8 sm:py-12 lg:col-span-7 lg:border-b-0 lg:border-r lg:px-10 lg:py-14 dark:border-white/10">
+                  <h2 className="max-w-xl font-serif text-3xl leading-[1.15] tracking-tight text-gray-900 sm:text-4xl dark:text-white mb-3">
                     One Controlled Chain of Custody Across Every California Pickup
                   </h2>
-                  <p className="mt-6 text-base leading-7 text-gray-600 dark:text-gray-300 custom-text-center">
-                    Every pickup terminates at our Fresno R2v3 processing floor.
-                    No regional partners, no white-label brokers, no transfers
-                    between carriers. The same audit trail covers a startup in
-                    SoMa and a school district in Bakersfield.
+
+                  <p className="max-w-2xl text-base leading-7 text-gray-600 dark:text-gray-300">
+                    Every pickup terminates at our Fresno R2v3 processing floor. No
+                    regional partners, no white-label brokers, no transfers between
+                    carriers. The same audit trail covers a startup in SoMa and a school
+                    district in Bakersfield.
                   </p>
+                </div>
 
-                  {/* Icon bullet list */}
-                    <ul className="mt-8 space-y-4">
+                {/* Features column */}
+                <div className="px-6 md:py-10 sm:px-8 lg:col-span-5 lg:px-10">
+                  <ul className="divide-y divide-gray-100 dark:divide-white/10">
+                    {[
+                      {
+                        icon: Check,
+                        text: "Same-week pickup windows across all six service zones",
+                      },
+                      {
+                        icon: Check,
+                        text: "Scheduled pickups within 24–72 hours of quote approval",
+                      },
+                      {
+                        icon: Check,
+                        text: "No mileage surcharges or fuel fees inside California",
+                      },
+                      {
+                        icon: Check,
+                        text: "Direct line to your project lead, not a routing queue",
+                      },
+                    ].map(({ icon: Icon, text }) => (
+                      <li
+                        key={text}
+                        className="group flex items-center gap-4 py-4 first:pt-0 last:pb-0"
+                      >
+                        <span className="flex h-9 w-9 shrink-0 items-center justify-center">
+                          <Icon className="h-4 w-4 text-primary" strokeWidth={2.4} />
+                        </span>
+
+                        <span className="text-sm font-medium leading-6 text-gray-700 sm:text-base dark:text-gray-200">
+                          {text}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <div className="mt-4">
+                    <div className="flex flex-wrap gap-2">
                       {[
-                        {
-                          icon: Check,
-                          text: "Same-week pickup windows across all six service zones",
-                        },
-                        {
-                          icon: Check,
-                          text: "Scheduled pickups within 24–72 hours of quote approval",
-                        },
-                        {
-                          icon: Check,
-                          text: "No mileage surcharges or fuel fees inside California",
-                        },
-                        {
-                          icon: Check,
-                          text: "Direct line to your project lead, not a routing queue",
-                        },
-                      ].map(({ icon: Icon, text }) => (
-                        <li key={text} className="flex items-start gap-3">
-                          <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-emerald-600  dark:text-emerald-400">
-                            <Icon className="h-3.5 w-3.5" strokeWidth={2.25} />
-                          </span>
-                          <span className="text-sm leading-6 text-gray-700 dark:text-gray-300 custom-text-center">
-                            {text}
-                          </span>
-                        </li>
+                        "R2v3 Certified",
+                        "ISO 27001",
+                        "ISO 45001",
+                        "Certificate of Destruction",
+                      ].map((badge) => (
+                        <span
+                          key={badge}
+                          className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100 dark:border-white/10 dark:bg-white/[0.04] dark:text-gray-300 dark:hover:bg-white/[0.08]"
+                        >
+                          {badge}
+                        </span>
                       ))}
-                    </ul>
-
-                      <div className="mt-6 flex flex-wrap gap-2 text-xs text-gray-700 ">
-                        {[
-                          "R2v3 Certified",
-                          "ISO 27001",
-                          "ISO 45001",
-                          "Certificate of Destruction",
-                        ].map((badge) => (
-                          <span
-                            key={badge}
-                            className="rounded-full border border-gray-200 bg-white px-3 py-1.5 shadow-sm backdrop-blur"
-                          >
-                            {badge}
-                          </span>
-                        ))}
-                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              {/* Map column */}
-              <div className="lg:col-span-7">
-                <figure className="group">
-                  <ServiceMap />
-                </figure>
-              </div>
-            </div>
-          </ScrollLoader>
+            </section>
+          </ScrollLoader>          
         </div>
       </section>
 
-      {/* ─────────── HOW LOCAL COVERAGE WORKS ─────────── */}
-      <section className="mx-auto max-w-7xl">
-         <WhyChoose />
-      </section>
-
       {/* ─────────── CITY DIRECTORY ─────────── */}
-      <section className="px-4 py-20">
+      <section className="p-2">
         <div className="mx-auto max-w-7xl">
-          <div className="mt-14">
+          <div className="">
             <ServicingArea />
           </div>
         </div>
       </section>
 
       {/* ─────────── CTA ─────────── */}
-      <section className="px-4 pb-20 sm:pb-28">
+      <section className="px-4 pb-10">
         <div className="mx-auto max-w-7xl">
           <ScrollLoader>
-            <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:p-16">
+            <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:p-8">
               <div className="lg:col-span-7">
                 <div className="flex items-center gap-3 text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
                   <span className="h-px w-8 bg-primary" />
