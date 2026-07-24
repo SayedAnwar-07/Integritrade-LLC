@@ -96,7 +96,7 @@ export default function ServicingArea() {
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (
-    <section className="bg-secondary py-20 dark:bg-dark md:py-24">
+    <section className="bg-secondary py-6 md:py-10 dark:bg-dark">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ── Section header ── */}
         <ScrollLoader>
@@ -129,13 +129,6 @@ export default function ServicingArea() {
                     onClick={() => setOpenIndex(isOpen ? -1 : ri)}
                     className="group grid w-full grid-cols-12 items-center gap-4 py-7 text-left transition sm:py-9"
                   >
-                    {/* Number */}
-                    <div className="col-span-2 sm:col-span-1">
-                      <span className="font-serif text-sm tabular-nums text-gray-400 dark:text-gray-600">
-                        {String(ri + 1).padStart(2, "0")}
-                      </span>
-                    </div>
-
                     {/* Title */}
                     <div className="col-span-10 sm:col-span-5 lg:col-span-4">
                       <h3
