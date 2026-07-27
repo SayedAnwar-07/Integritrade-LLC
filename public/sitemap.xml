@@ -196,7 +196,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.integritradellc.com/service-area/fresno/electronics-recycling/</loc>
+    <loc>https://www.integritradellc.com/service-area/fresno/basic-electronics-recycling/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -232,7 +232,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.integritradellc.com/service-area/san-francisco/electronics-recycling/</loc>
+    <loc>https://www.integritradellc.com/service-area/san-francisco/basic-electronics-recycling/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -844,7 +844,7 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.integritradellc.com/service-area/clovis/electronics-recycling/</loc>
+    <loc>https://www.integritradellc.com/service-area/clovis/basic-electronics-recycling/</loc>
     <lastmod>2026-07-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1194,6 +1194,210 @@
   <url>
     <loc>https://www.integritradellc.com/blogs/server-data-center-equipment-disposal-guide/</loc>
     <lastmod>2026-07-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/alameda/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/bakersfield/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/berkeley/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/campbell/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/clovis/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/cupertino/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/emeryville/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/foster-city/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/fremont/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/fresno/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/los-gatos/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/menlo-park/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/merced/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/milpitas/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/modesto/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/mountain-view/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/oakland/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/palo-alto/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/petaluma/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/pleasanton/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/redwood-city/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/sacramento/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/san-bruno/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/san-francisco/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/san-jose/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/san-mateo/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/san-rafael/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/santa-clara/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/santa-rosa/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/south-san-francisco/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/stockton/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/sunnyvale/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/visalia/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.integritradellc.com/service-area/walnut-creek/certificates-of-destruction/</loc>
+    <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
