@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ── 301s for renamed recycling slugs (2026-07-22 rename) ──
+RewriteRule ^service-area/([^/]+)/e-waste-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]
+RewriteRule ^service-area/(fresno|san-francisco|clovis)/electronics-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]
+
+# ── Palo Alto legacy URLs from old sitemap ──
+RewriteRule ^service-area/palo-alto/it-asset-disposition/?$ /service-area/palo-alto/it-asset-disposition-palo-alto/ [R=301,L]
+RewriteRule ^service-area/palo-alto/asset-recovery/?$ /service-area/palo-alto/asset-recovery-palo-alto/ [R=301,L]
