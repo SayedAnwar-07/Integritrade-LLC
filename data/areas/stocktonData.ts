@@ -5,6 +5,7 @@ import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpe
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg";
 import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
+import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 
 export const stocktonData: ServiceArea = {
   slug: "stockton",
@@ -372,6 +373,65 @@ export const stocktonData: ServiceArea = {
         {
           "heading": "Conclusion",
           "body": "Your retired technology still holds significant financial value. By partnering with Integritrade for IT equipment remarketing and hardware buybacks, your organization can securely liquidate outdated assets, fund future technology investments, and maintain absolute data security.\n\nStop letting depreciating hardware take up space in your Stockton facility. Contact our IT asset value recovery specialists today for a free equipment valuation and discover how much capital you can reclaim from your retired enterprise technology."
+        }
+      ]
+    },
+    {
+      "slug": "certificates-of-destruction",
+      "title": "Certificates of Destruction in Stockton",
+      "shortDescription": "Need a legally binding Certificate of Destruction in Stockton? Integritrade delivers R2v3 and ISO certified IT asset disposition and secure data shredding.",
+      "icon": "FileCheck",
+      "metaTitle": "Secure Certificates of Destruction for IT Assets in Stockton",
+      "metaDescription": "Need a legally binding Certificate of Destruction in Stockton? Integritrade delivers R2v3 and ISO certified IT asset disposition and secure data shredding.",
+      "ctaText": "Get a Free Quote",
+      "image": dataDestruction,
+      "heroHeading": "Secure Certificates of Destruction for IT Assets in Stockton",
+      "heroSubheading": "When organizations in Stockton retire their aging technology, simple disposal is never an option. Corporate data breaches, regulatory fines, and intellectual property theft are severe risks associated with improper electronics recycling. To protect your enterprise, you need verifiable, audit ready documentation proving that your proprietary data no longer exists.",
+      "details": [
+        {
+          "heading": "",
+          "body": "At Integritrade, we provide Stockton businesses with fully compliant IT asset disposition and secure data destruction services, culminating in a legally binding Certificate of Destruction for every processed device."
+        },
+        {
+          "heading": "What is a Certificate of Destruction?",
+          "body": "A Certificate of Destruction is an official audit document that logs the complete, irreversible eradication of data from electronic storage media. It serves as your primary defense during a regulatory audit or compliance review, legally transferring the liability of data destruction from your organization to your certified IT asset disposition partner.\n\nWhether you manage a small, medium, or larger enterprise, a healthcare network, or a massive data center in Stockton, retaining these certificates is a mandatory component of responsible information governance."
+        },
+        {
+          "heading": "The Integritrade Chain of Custody in Stockton",
+          "body": "A Certificate of Destruction is only as reliable as the security protocols supporting it. From the moment our team arrives at your Stockton facility, we maintain strict control of your assets.",
+          "bullets": [
+            "Secure Transport: We supply locked, tamper evident bins and transport your retired IT assets using GPS monitored vehicles.",
+            "Verified Personnel: Every handler is thoroughly background checked and trained in strict information security protocols.",
+            "Asset Tracking: We utilize detailed piece counts and comprehensive serialized scanning to align perfectly with your internal decommissioned equipment manifests.",
+            "Facility Security: Our processing environments maintain continuous video surveillance and restricted access controls to ensure total security during the destruction phase."
+          ]
+        },
+        {
+          "heading": "Compliance Driven Data Erasure and Shredding",
+          "body": "We tailor our destruction methods to your specific organizational security requirements and regulatory frameworks."
+        },
+        {
+          "heading": "Logical Data Sanitization",
+          "body": "For hardware slated for value recovery and remarketing, we utilize enterprise grade software to perform rigorous NIST 800-88 compliant data wiping. This overwrites every sector of the drive, permanently removing the data while preserving the physical hardware for resale. Our software automatically generates a Certificate of Destruction upon a successful wipe."
+        },
+        {
+          "heading": "Physical Hard Drive Shredding",
+          "body": "When internal corporate policies demand absolute physical destruction, or if a drive fails the logical sanitization process, we employ industrial shredding. Our specialized equipment pulverizes hard drives, solid state drives, and magnetic media into tiny fragments, making data recovery physically impossible. Following the shredding process, our enterprise management system generates a final Certificate of Destruction."
+        },
+        {
+          "heading": "Why Stockton Businesses Demand Certified ITAD",
+          "body": "Relying on uncertified vendors exposes your Stockton organization to catastrophic legal and financial risks. Integritrade protects your business by operating under the most stringent, independently audited frameworks in the electronics recycling industry.\n\nWhen you receive a Certificate of Destruction from our team, it is backed by five distinct third party certifications:",
+          "bullets": [
+            "R2v3: The premier global standard for responsible recycling, downstream accountability, and data security.",
+            "ISO 27001: Validating our strict information security management systems and data handling protocols.",
+            "ISO 9001: Guaranteeing consistent quality, precise execution, and audit ready reporting.",
+            "ISO 14001: Ensuring environmentally responsible zero landfill practices and ecological protection.",
+            "ISO 45001: Protecting worker health and safety throughout the entire asset disposition process."
+          ]
+        },
+        {
+          "heading": "Secure Your Retired Technology Today",
+          "body": "Do not leave your enterprise data vulnerable when decommissioning hardware. Partner with Integritrade for secure IT asset disposition and receive the ironclad Certificates of Destruction your compliance officers require. Contact our Stockton team today to schedule a secure pickup, request transport containers, or discuss your customized data destruction requirements."
         }
       ]
     }

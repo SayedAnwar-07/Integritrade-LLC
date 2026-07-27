@@ -1,0 +1,16 @@
+# ── 301 redirects for renamed recycling slugs (added 2026-07-27) ─────────────
+# Paste this block into the server .htaccess on Hostinger, directly AFTER the
+# "RewriteEngine On" / HTTPS lines and BEFORE the ".html routing" rules.
+# Reason: 2026-07-22 deploy renamed every city's recycling page URL
+# (e-waste-recycling / electronics-recycling -> basic-electronics-recycling),
+# which left the old Google-indexed URLs returning 404.
+
+# 31 cities that used /e-waste-recycling/
+RewriteRule ^service-area/([^/]+)/e-waste-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]
+
+# 3 cities that used /electronics-recycling/
+RewriteRule ^service-area/(fresno|san-francisco|clovis)/electronics-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]
+
+# Palo Alto legacy: old sitemap pointed at unsuffixed URLs that never existed
+RewriteRule ^service-area/palo-alto/it-asset-disposition/?$ /service-area/palo-alto/it-asset-disposition-palo-alto/ [R=301,L]
+RewriteRule ^service-area/palo-alto/asset-recovery/?$ /service-area/palo-alto/asset-recovery-palo-alto/ [R=301,L]
