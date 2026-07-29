@@ -270,11 +270,11 @@ export default function AboutPage() {
 
                 <div className="mt-6 space-y-5 text-base leading-relaxed text-stone-700 dark:text-slate-300">
                   <p className="custom-text-center">
-                    Some providers charge you disposition fees just to scrap every aging device. We see our clients as partners.
+                    Some providers charge you disposition fees just to scrap every aging or end-of-life device. We see our clients as partners.
                   </p>
 
                   <p className="custom-text-center">
-                    When your equipment falls below resale cutlines, we take a different route: we securely sanitize and donate it. We completely waive the destruction fees on those items. It's a team effort that helps the community, saves you money, and ensures your bottom line remains unaffected.
+                    When your equipment falls below resale cutlines, we take a different route: we securely sanitize the data bearing component and attempt to donate it. We completely waive the recycling fees on those items, if eligible. It's a team effort that helps the community, saves you money, and ensures your bottom line remains unaffected.
                   </p>
                 </div>
               </article>

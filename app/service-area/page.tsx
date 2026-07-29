@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import {
-  Check,
-} from "lucide-react";
 import ServicingArea from "@/components/service-area/ServicingArea";
 import PageHeader from "@/components/shared/PageHeader";
-import WhyChoose from "@/components/home/WhyChoose";
-import ServiceMap from "@/components/service-area/ServiceMap";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
@@ -66,95 +61,14 @@ export default function ServiceAreaPage() {
           <PageHeader
                 eyebrow="Service Area"
                 title="Local pickups,statewide and accountability."
-                description="Integritrade serves California businesses with R2v3-certified IT
-                  asset disposition and data destruction. From San Francisco
-                  offices to Central Valley distribution centers, every retirement
-                  runs on the same chain of custody."
+                description="Every pickup terminates at our Fresno R2v3 processing floor. No
+                  regional partners, no white-label brokers, no transfers between
+                  carriers. The same audit trail covers a startup in SoMa and a school
+                  district in Bakersfield."
                 linkText="Get in touch"
                 linkHref="/service-book/"
           />
          </ScrollLoader>
-      </section>
-
-      {/* ─────────── MAP — EDITORIAL SPLIT ─────────── */}
-      <section className="">
-        <div className="mx-auto max-w-7xl">
-          <ScrollLoader>
-            <section className="">
-
-              <div className="relative grid grid-cols-1 lg:grid-cols-12">
-                {/* Content column */}
-                <div className="flex flex-col justify-center md:border-b border-gray-200 px-6 sm:px-8 sm:py-12 lg:col-span-7 lg:border-b-0 lg:border-r lg:px-10 lg:py-14 dark:border-white/10">
-                  <h2 className="max-w-xl font-serif text-3xl leading-[1.15] tracking-tight text-gray-900 sm:text-4xl dark:text-white mb-3">
-                    One Controlled Chain of Custody Across Every California Pickup
-                  </h2>
-
-                  <p className="max-w-2xl text-base leading-7 text-gray-600 dark:text-gray-300">
-                    Every pickup terminates at our Fresno R2v3 processing floor. No
-                    regional partners, no white-label brokers, no transfers between
-                    carriers. The same audit trail covers a startup in SoMa and a school
-                    district in Bakersfield.
-                  </p>
-                </div>
-
-                {/* Features column */}
-                <div className="px-6 md:py-10 sm:px-8 lg:col-span-5 lg:px-10">
-                  <ul className="divide-y divide-gray-100 dark:divide-white/10">
-                    {[
-                      {
-                        icon: Check,
-                        text: "Same-week pickup windows across all six service zones",
-                      },
-                      {
-                        icon: Check,
-                        text: "Scheduled pickups within 24–72 hours of quote approval",
-                      },
-                      {
-                        icon: Check,
-                        text: "No mileage surcharges or fuel fees inside California",
-                      },
-                      {
-                        icon: Check,
-                        text: "Direct line to your project lead, not a routing queue",
-                      },
-                    ].map(({ icon: Icon, text }) => (
-                      <li
-                        key={text}
-                        className="group flex items-center gap-4 py-4 first:pt-0 last:pb-0"
-                      >
-                        <span className="flex h-9 w-9 shrink-0 items-center justify-center">
-                          <Icon className="h-4 w-4 text-primary" strokeWidth={2.4} />
-                        </span>
-
-                        <span className="text-sm font-medium leading-6 text-gray-700 sm:text-base dark:text-gray-200">
-                          {text}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-4">
-                    <div className="flex flex-wrap gap-2">
-                      {[
-                        "R2v3 Certified",
-                        "ISO 27001",
-                        "ISO 45001",
-                        "Certificate of Destruction",
-                      ].map((badge) => (
-                        <span
-                          key={badge}
-                          className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1.5 text-xs font-medium text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100 dark:border-white/10 dark:bg-white/[0.04] dark:text-gray-300 dark:hover:bg-white/[0.08]"
-                        >
-                          {badge}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </ScrollLoader>          
-        </div>
       </section>
 
       {/* ─────────── CITY DIRECTORY ─────────── */}

@@ -96,21 +96,11 @@ export default function ServicingArea() {
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (
-    <section className="bg-secondary py-6 md:py-10 dark:bg-dark">
+    <section className="bg-secondary pb-6 md:pb-10 dark:bg-dark">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* ── Section header ── */}
-        <ScrollLoader>
-            <SectionHeader
-              eyebrow="Cities & Regions"
-              title="Find your local team"
-              description="Select a region to view its full coverage. Cities marked with a link include local pickup details and recent retirement projects."
-              linkText=""
-              linkHref=""
-            />
-        </ScrollLoader>
 
         {/* ── Editorial accordion ── */}
-        <div className="mt-16 border-t border-gray-300 dark:border-gray-700">
+        <div className="">
           {SERVICE_REGIONS.map((region, ri) => {
             const isOpen = openIndex === ri;
             const linkedCount = region.cities.filter((c) =>
