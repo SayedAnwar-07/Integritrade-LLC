@@ -11,41 +11,29 @@ import ServicePaths from "@/components/home/ServicePaths"
 import BlogHomeSection from "@/components/home/BlogHomeSection"
 
 export const metadata: Metadata = {
+  title:
+    "Certified ITAD, Hard Drive Shredding & E-Waste Recycling | Integritrade LLC",
+
+  description:
+    "Need secure e-waste recycling? Integritrade offers R2v3 certified data destruction and ITAD services in Fresno, CA. Call (559) 325-4813 to schedule.",
+
+  openGraph: {
     title:
-      "ITAD, Hard Drive Shredding & E-Waste Recycling | Integritrade CA",
+      "Certified ITAD, Hard Drive Shredding & E-Waste Recycling | Integritrade LLC",
 
     description:
-      "Integritrade LLC provides certified IT asset disposition (ITAD), hard drive shredding, secure data destruction, and e-waste recycling services for businesses across California including Fresno, Sacramento, and San Francisco.",
+      "Need secure e-waste recycling? Integritrade offers R2v3 certified data destruction and ITAD services in Fresno, CA. Call (559) 325-4813 to schedule.",
 
-    keywords: [
-      "IT Asset Disposition California",
-      "ITAD services",
-      "hard drive shredding",
-      "secure data destruction",
-      "e waste recycling California",
-      "data center decommissioning",
-      "IT equipment recycling",
-      "on site hard drive shredding",
-      "Integritrade LLC"
-    ],
+    url: "https://integritradellc.com",
+    siteName: "Integritrade LLC",
+    locale: "en_US",
+    type: "website",
+  },
 
-    openGraph: {
-      title:
-        "Certified ITAD, Hard Drive Shredding & E-Waste Recycling | Integritrade LLC",
-
-      description:
-        "Secure IT asset disposition, certified data destruction, and responsible electronics recycling services for businesses throughout California.",
-
-      url: "https://integritradellc.com",
-      siteName: "Integritrade LLC",
-      locale: "en_US",
-      type: "website",
-    },
-
-    alternates: {
-      canonical: "https://integritradellc.com",
-    },
-}
+  alternates: {
+    canonical: "https://integritradellc.com",
+  },
+};
 
 export default function Page() {
   return (
