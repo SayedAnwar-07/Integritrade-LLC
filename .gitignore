@@ -11,3 +11,5 @@ out.zip
 out.zip
 .env
 out/
+.env
+.htaccess
