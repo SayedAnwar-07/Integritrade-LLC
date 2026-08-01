@@ -1,7 +1,6 @@
 import decommissionBanner from "@/public/blogs/decommission-computers.jpg";
 import videoTape from "@/public/blogs/video-tape.jpg";
 import rohsImage from "@/public/blogs/rohs-compliance.jpg";
-import ewasteImage from "@/public/blogs/E-Waste-Disposal.jpg";
 import r2_certified from "@/public/blogs/R2-Certified1.jpg";
 import nvmBanner from "@/public/blogs/NVMe_drives.jpg";
 import depProtection from "@/public/blogs/DEP-Protection.jpg";
@@ -9,7 +8,6 @@ import itad from "@/public/blogs/itad.jpg";
 import assetRecoveryBanner from "@/public/blogs/asset-recovery.jpg";
 import ITADCutlines from "@/public/blogs/itadCutlines.jpg";
 import itadPolicyImportance from "@/public/blogs/itad-policy.jpg";
-import serverManagement from "@/public/blogs/Servers-Manage-Server.jpg";
 import understandingITasset from "@/public/blogs/Understanding-Importance.png";
 import cutlinesBanner from "@/public/blogs/maximize-sset-recovery.png";
 import ValueDataSecurity from "@/public/blogs/value-data-security.png";
@@ -67,13 +65,6 @@ export const AllBlogCards: BlogCard[] = [
     description: "Learn the key differences between IT Asset Disposition (ITAD) and electronic recycling, and why choosing the right approach is critical for data security, compliance, asset recovery, and sustainability.",
     date: "February 11, 2026",
     slug: "itad-vs-e-waste-recycling",
-  },
-  {
-    image: ewasteImage,
-    title: "Why Choosing a Certified E-Waste Disposal Vendor Is Critical for Compliance, Data Security, and Environmental Safety",
-    description: "In today's fast-paced digital world, electronics are a cornerstone of business operations. From laptops and desktops to servers, mobile devices, and industrial equipment, organizations constantly upgrade technology to stay competitive. However, these devices eventually become electronic waste (e-waste), which, if not disposed of properly, can result in environmental harm, data security breaches, and legal consequences.",
-    date: "December 22, 2025",
-    slug: "certified-e-waste-disposal-services-data-destruction",
   },
   {
     image: decommissionBanner,
@@ -176,13 +167,6 @@ export const AllBlogCards: BlogCard[] = [
     description: "Get more than just scrap value. IntegriTrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets.",
     date: "February 11, 2026",
     slug: "fair-flexible-itad-cutlines",
-  },
-  {
-    image: serverManagement,
-    title: "How to Sell Used Servers & Manage Server Recycling: The ITAMG Process for Maximum Value & Security",
-    description: "As organizations modernize infrastructure and refresh data centers, a critical question often arises: What is the best way to sell used servers while maintaining data security and compliance?",
-    date: "January 01, 2026",
-    slug: "sell-used-servers-it-recycling-services",
   },
 
   // ─── 4. SUSTAINABILITY & SPECIALIZED (supporting SEO pillars) ─────────────

@@ -11,3 +11,11 @@ RewriteRule ^service-area/(fresno|san-francisco|clovis)/electronics-recycling/?$
 # ── Palo Alto legacy URLs from old sitemap ──
 RewriteRule ^service-area/palo-alto/it-asset-disposition/?$ /service-area/palo-alto/it-asset-disposition-palo-alto/ [R=301,L]
 RewriteRule ^service-area/palo-alto/asset-recovery/?$ /service-area/palo-alto/asset-recovery-palo-alto/ [R=301,L]
+
+# ── Removed blogs, deleted 2026-08-01 ──
+# 301 each indexed URL to the closest legitimate article so it doesn't 404.
+RewriteRule ^blogs/sell-used-servers-it-recycling-services/?$ /blogs/server-data-center-equipment-disposal-guide/ [R=301,L]
+RewriteRule ^blogs/certified-e-waste-disposal-services-data-destruction/?$ /blogs/r2-certified-e-waste-recycling-services/ [R=301,L]
+# Return 410 Gone for the removed images if they linger on the server.
+RewriteRule ^blogs/Servers-Manage-Server\.jpg$ - [G,L]
+RewriteRule ^blogs/E-Waste-Disposal\.jpg$ - [G,L]

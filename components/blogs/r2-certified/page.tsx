@@ -31,9 +31,9 @@ const faqs = [
       "The Basel Convention regulates the international movement of hazardous waste. Exporting electronics to non-signatory countries without proper controls can violate U.S. regulations and international law, creating legal liability that often surfaces years later.",
   },
   {
-    question: "How does R2 differ from e-Stewards?",
+    question: "How can I verify an R2 certification is legitimate?",
     answer:
-      "Both are recognized certifications for responsible electronics recycling. R2 (managed by SERI) emphasizes downstream traceability and reuse-first prioritization, while e-Stewards (managed by the Basel Action Network) takes stricter positions on export and landfill prohibition. Many providers hold both.",
+      "Check the official R2 directory maintained by SERI (Sustainable Electronics Recycling International). An active listing confirms the recycler currently holds the certification and is in good standing, rather than relying on a logo displayed on a website.",
   },
 ];
 

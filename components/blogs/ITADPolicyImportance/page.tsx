@@ -336,7 +336,7 @@ export default function ITADPolicyImportance() {
                     Ignoring vendor certifications
                   </h3>
                   <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Using uncertified providers or skipping compliance verification doesn&apos;t reduce liability, it shifts the entire exposure back onto the organization. Always verify vendor certifications directly through R2 or e-Stewards directories and maintain compliance documentation for every engagement.
+                    Using uncertified providers or skipping compliance verification doesn&apos;t reduce liability, it shifts the entire exposure back onto the organization. Always verify vendor certifications directly through the official R2 certification directory and maintain compliance documentation for every engagement.
                   </p>
                 </div>
 

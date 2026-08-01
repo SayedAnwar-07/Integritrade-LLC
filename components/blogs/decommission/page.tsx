@@ -248,7 +248,7 @@ export default function Decommission() {
                     6. Choose a certified e-waste recycling partner
                   </h3>
                   <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
-                    Uncertified haulers carry real risk illegal export, security violations, or unsafe overseas dumping. Look for R2v3, e-Stewards, ISO 14001, ISO 45001, and which together cover responsible recycling, environmental management, worker safety, and data destruction.
+                    Uncertified haulers carry real risk illegal export, security violations, or unsafe overseas dumping. Look for R2v3, ISO 14001, and ISO 45001, which together cover responsible recycling, environmental management, and worker safety.
                   </p>
                 </div>
 
@@ -470,7 +470,7 @@ export default function Decommission() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
-                      R2v3 for responsible recycling, e-Stewards for environmental excellence, ISO 14001 for environmental management, ISO 45001 for worker safety, and for data destruction are the recognized standards to expect from a qualified partner.
+                      R2v3 for responsible recycling, ISO 14001 for environmental management, and ISO 45001 for worker safety are the recognized standards to expect from a qualified partner.
                     </p>
                   </AccordionContent>
                 </AccordionItem>

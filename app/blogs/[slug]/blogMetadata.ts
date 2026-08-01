@@ -45,39 +45,6 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
   },
 
-  "certified-e-waste-disposal-services-data-destruction":
-    {
-      title: "Certified E-Waste Disposal: Ensure Compliance & Data Security",
-      description:
-        "Discover why R2v3 and e-Stewards certified e-waste vendors protect your business from data breaches, legal risks, and environmental harm.",
-      alternates: {
-        canonical: `${BASE_URL}/blogs/certified-e-waste-disposal-services-data-destruction`,
-      },
-      openGraph: {
-        title:
-          "Certified E-Waste Disposal: Ensure Compliance & Data Security",
-        description:
-          "Discover why R2v3 and e-Stewards certified e-waste vendors protect your business from data breaches, legal risks, and environmental harm.",
-        url: `${BASE_URL}/blogs/certified-e-waste-disposal-services-data-destruction`,
-        siteName: SITE_NAME,
-        locale: "en_US",
-        type: "article",
-        images: [{ url: OG_IMAGE, width: 1200, height: 630 }],
-      },
-      twitter: {
-        card: "summary_large_image",
-        title:
-          "Certified E-Waste Disposal: Ensure Compliance & Data Security",
-        description:
-          "Discover why R2v3 and e-Stewards certified e-waste vendors protect your business from data breaches, legal risks, and environmental harm.",
-        images: [OG_IMAGE],
-      },
-      robots: {
-        index: true,
-        follow: true,
-      },
-    },
-
   "nvme-data-destruction-methods":
     {
       title:
@@ -384,42 +351,6 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       title: "What Is an ITAD Policy & Why It Matters for Businesses",
       description:
         "Learn what an ITAD policy is, why it’s critical for data security, compliance, and e-waste management, and how it protects your business.",
-      images: [OG_IMAGE],
-    },
-    robots: {
-      index: true,
-      follow: true,
-    },
-  },
-  "sell-used-servers-it-recycling-services": {
-    title: "How to Sell Used Servers & Manage Server Recycling",
-    description:
-      "Learn how to sell used servers, maximize resale value, ensure data security, and manage server recycling using a secure ITAMG process.",
-    alternates: {
-      canonical: `${BASE_URL}/blogs/sell-used-servers-it-recycling-services`,
-    },
-    openGraph: {
-      title: "How to Sell Used Servers & Manage Server Recycling",
-      description:
-        "Learn how to sell used servers, maximize resale value, ensure data security, and manage server recycling using a secure ITAMG process.",
-      url: `${BASE_URL}/blogs/sell-used-servers-it-recycling-services`,
-      siteName: SITE_NAME,
-      locale: "en_US",
-      type: "article",
-      images: [
-        {
-          url: OG_IMAGE,
-          width: 1200,
-          height: 630,
-          alt: "Selling Used Servers and Secure Recycling",
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: "How to Sell Used Servers & Manage Server Recycling",
-      description:
-        "Learn how to sell used servers, maximize resale value, ensure data security, and manage server recycling using a secure ITAMG process.",
       images: [OG_IMAGE],
     },
     robots: {

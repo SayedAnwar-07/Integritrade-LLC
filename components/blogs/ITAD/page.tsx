@@ -31,7 +31,7 @@ const faqs = [
   {
     question: "What certifications should a sustainable ITAD provider hold?",
     answer:
-      "The recognized standards are R2v3 and e-Stewards for responsible recycling, ISO 14001 for environmental management, ISO 27001 for information security, and NIST 800-88 alignment for data sanitization.",
+      "The recognized standards are R2v3 for responsible recycling, ISO 14001 for environmental management, ISO 27001 for information security, and NIST 800-88 alignment for data sanitization.",
   },
   {
     question: "Can sustainable ITAD actually generate value?",
@@ -186,11 +186,6 @@ export default function ITADBlogs() {
                       <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Data security, downstream accountability, environmental processes</td>
                     </tr>
                     <tr>
-                      <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">e-Stewards</td>
-                      <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Environmental and ethical practices</td>
-                      <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Zero landfill, no-export rules, verified labor practices</td>
-                    </tr>
-                    <tr>
                       <td className="px-6 py-4 text-sm font-medium text-gray-900 dark:text-white">ISO 14001</td>
                       <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Environmental management</td>
                       <td className="px-6 py-4 text-sm text-gray-700 dark:text-gray-300">Systematic environmental performance and improvement</td>
@@ -323,7 +318,7 @@ export default function ITADBlogs() {
                     Choose a certified ITAD partner
                   </h3>
                   <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Look for industry certifications such as R2 and e-Stewards, transparent reporting and audit trails, proven data security protocols, and verified ethical recycling processes. The certificate is a baseline, not a guarantee verifying active status and reviewing prior project documentation matters more than the logo on the website.
+                    Look for industry certifications such as R2v3, transparent reporting and audit trails, proven data security protocols, and verified ethical recycling processes. The certificate is a baseline, not a guarantee verifying active status and reviewing prior project documentation matters more than the logo on the website.
                   </p>
                 </div>
 
