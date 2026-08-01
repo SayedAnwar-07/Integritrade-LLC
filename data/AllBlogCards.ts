@@ -1,7 +1,6 @@
 import videoTape from "@/public/blogs/video-tape.jpg";
 import r2_certified from "@/public/blogs/R2-Certified1.jpg";
 import nvmBanner from "@/public/blogs/NVMe_drives.jpg";
-import serverManagement from "@/public/blogs/Servers-Manage-Server.jpg";
 import FairFlexible from "@/public/blogs/Fair-flexible.jpg";
 import ChainCustodyImage from "@/public/blogs/chain-custody.png";
 import AITrendsImage from "@/public/blogs/AITrendsImage.png";
@@ -36,13 +35,6 @@ export const AllBlogCards: BlogCard[] = [
     description: "Learn why NVMe drives are difficult to sanitize and how certified physical destruction ensures security, compliance, and data irrecoverability.",
     date: "December 21, 2025",
     slug: "nvme-data-destruction-methods",
-  },
-  {
-    image: serverManagement,
-    title: "How to Sell Used Servers & Manage Server Recycling: The ITAMG Process for Maximum Value & Security",
-    description: "As organizations modernize infrastructure and refresh data centers, a critical question often arises: What is the best way to sell used servers while maintaining data security and compliance?",
-    date: "January 01, 2026",
-    slug: "sell-used-servers-it-recycling-services",
   },
   {
     image: FairFlexible,

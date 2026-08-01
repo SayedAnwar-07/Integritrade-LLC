@@ -268,7 +268,7 @@ export default function MaximizeAssetRecovery() {
                       2. Choose certified ITAD partners
                     </h3>
                     <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Work with vendors holding R2v3, e-Stewards, or equivalent certifications. Certified partners deliver compliance, transparency, and stronger recovery yields. IntegriTrade holds R2v3 and ISO 9001, 14001, 45001, and 27001 certifications, ensuring every project runs through audited, documented workflows.
+                      Work with vendors holding R2v3 or equivalent certifications. Certified partners deliver compliance, transparency, and stronger recovery yields. IntegriTrade holds R2v3 and ISO 9001, 14001, 45001, and 27001 certifications, ensuring every project runs through audited, documented workflows.
                     </p>
                   </div>
 

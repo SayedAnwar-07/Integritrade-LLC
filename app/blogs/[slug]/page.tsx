@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import { BLOG_METADATA } from "./blogMetadata";
 
 import Decommission from "@/components/blogs/decommission/page";
-import EWasteDisposal from "@/components/blogs/eWaste-disposal/page";
 import NvmeDrives from "@/components/blogs/nvme-drives/page";
 import R2Certified from "@/components/blogs/r2-certified/page";
 import RohsCompliance from "@/components/blogs/rohs-compliance/page";
@@ -13,7 +12,6 @@ import ITADBlogs from "@/components/blogs/ITAD/page";
 import MaximizeAssetRecovery from "@/components/blogs/maximizeAssetRecovery/page";
 import ITADCutlines from "@/components/blogs/ITADCutlines/page";
 import ITADPolicyImportance from "@/components/blogs/ITADPolicyImportance/page";
-import ServersManage from "@/components/blogs/serversManage/page";
 import UnderstandingITasset from "@/components/blogs/understandingITasset/page";
 import FairFlexibleCutlines from "@/components/blogs/FairFlexible/page";
 import HIPAACompliance from "@/components/blogs/HIPAA/page";
@@ -44,7 +42,6 @@ const BLOG_SLUGS = [
   "decommission-old-computers-it-equipment",
   "video-tape-data-destruction-services",
   "rohs-compliance-electronics-recycling-services",
-  "certified-e-waste-disposal-services-data-destruction",
   "r2-certified-e-waste-recycling-services",
   "nvme-data-destruction-methods",
   "remove-apple-dep-mdm-lock-devices",
@@ -52,7 +49,6 @@ const BLOG_SLUGS = [
   "it-asset-recovery-services-maximize-value",
   "itad-cutlines-revenue-sharing-devices",
   "itad-compliance-and-data-destruction-policies",
-  "sell-used-servers-it-recycling-services",
   "it-asset-disposition-explained",
   "itad-cutlines-asset-recovery-value-services",
   "it-asset-recovery-process-and-best-practices",
@@ -82,8 +78,6 @@ const BLOG_COMPONENTS: Record<string, React.ReactElement> = {
   "decommission-old-computers-it-equipment": <Decommission />,
   "video-tape-data-destruction-services": <VideoTape />,
   "rohs-compliance-electronics-recycling-services": <RohsCompliance />,
-  "certified-e-waste-disposal-services-data-destruction":
-    <EWasteDisposal />,
   "r2-certified-e-waste-recycling-services": <R2Certified />,
   "nvme-data-destruction-methods":
     <NvmeDrives />,
@@ -92,7 +86,6 @@ const BLOG_COMPONENTS: Record<string, React.ReactElement> = {
   "it-asset-recovery-services-maximize-value": <MaximizeAssetRecovery />,
   "itad-cutlines-revenue-sharing-devices": <ITADCutlines />,
   "itad-compliance-and-data-destruction-policies": <ITADPolicyImportance />,
-  "sell-used-servers-it-recycling-services": <ServersManage />,
   "it-asset-disposition-explained": <UnderstandingITasset />,
   "itad-cutlines-asset-recovery-value-services": <CutlinesInITAD />,
   "it-asset-recovery-process-and-best-practices": <MaximizeAssetRecovery />,
