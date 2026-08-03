@@ -5,6 +5,7 @@ import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpe
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg";
 import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
+import itBuyback from "@/public/services/serviceArea/itBuyback.jpg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 
 export const sanBrunoData: ServiceArea = {
@@ -280,99 +281,173 @@ export const sanBrunoData: ServiceArea = {
     },
     {
       "slug": "asset-recovery",
-      "title": "IT Equipment Remarketing in San Bruno",
-      "shortDescription": "Maximize your return on investment and offset technology refresh costs with secure R2v3-certified enterprise hardware liquidation and IT asset buyback programs for San Bruno organizations.",
-      "icon": "BadgeDollarSign",
-      "metaTitle": "IT Equipment Remarketing & Hardware Buyback San Bruno CA",
-      "metaDescription": "Turn retired IT assets into recovered capital. R2v3-certified IT equipment remarketing and hardware buyback programs for San Bruno organizations, with NIST 800-88 certified data sanitization.",
-      "image": assetRecovery,
-      "heroHeading": "IT Equipment Remarketing and Hardware Buyback in San Bruno",
-      "heroSubheading": "Maximize your return on investment and offset technology refresh costs with secure R2v3-certified enterprise hardware liquidation and IT asset buyback programs for San Bruno organizations.",
+      "title": "Sell Your IT Equipment in San Bruno: Get the Best Value with Secure, Certified Buyback",
+      "shortDescription": "Sell your retired IT equipment in San Bruno through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
+      "icon": "RefreshCw",
+      "metaTitle": "Sell Your IT Equipment in San Bruno: Certified IT Equipment Buyback | Integritrade",
+      "metaDescription": "Sell your retired IT equipment in San Bruno through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
       "ctaText": "Get a Free Quote",
+      "image": itBuyback,
+      "heroHeading": "Sell Your IT Equipment in San Bruno: Get the Best Value with Secure, Certified Buyback",
+      "heroSubheading": "When your San Bruno business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [
         {
-          "heading": "Introduction",
-          "body": "When organizations upgrade their technology infrastructure, decommissioned servers, laptops, and networking gear are often relegated to a storage closet where they rapidly lose value. Instead of letting depreciating assets take up valuable real estate, forward thinking businesses turn to IT equipment remarketing. If you manage an enterprise in San Bruno, professional hardware buyback programs allow you to transform idle technology into recovered capital.\n\nAt Integritrade, we provide comprehensive IT asset value recovery and hardware liquidation services for organizations across San Bruno. We evaluate, refurbish, and remarket your retired equipment, returning revenue directly to your bottom line while ensuring complete data security and regulatory compliance."
+          "heading": "",
+          "body": "Integritrade offers IT equipment buyback and asset recovery services for businesses throughout San Bruno and all of California. If you are searching for where to sell IT equipment in San Bruno, this guide explains exactly how the process works, what your equipment is worth, and why choosing a certified partner protects both your bottom line and your organization's data security."
         },
         {
-          "heading": "What is IT Equipment Remarketing?",
-          "body": "IT equipment remarketing is the strategic process of testing, refurbishing, and reselling retired corporate technology on the secondary hardware market. Unlike standard electronic waste recycling which focuses on breaking down equipment for raw materials, remarketing extends the usable lifespan of the hardware.\n\nBy partnering with an enterprise hardware liquidation specialist in San Bruno, your organization can participate in the circular economy. This sustainable approach prevents functional technology from entering local landfills while providing your finance department with a direct financial return on depreciated IT assets."
+          "heading": "More Than a Recycler: A Reused IT Asset Management Company",
+          "body": "Most electronics recyclers in San Bruno treat your retired equipment as scrap. The moment a device falls outside a narrow resale window, it gets processed for materials recovery and that is the end of the story.\n\nIntegritrade was built on a fundamentally different philosophy. Since our founding, our mission has been to extend the life cycle of electronic devices for as long as responsibly possible. We are not a scrap operation - we are a reuse-focused IT asset management company. That distinction matters enormously for your organization and for the communities around us.\n\nWhen devices are older than the typical resale cutline, we do not immediately route them to materials recovery. Instead, we explore every available avenue to keep them in productive use. That includes donation programs that place functional technology into the hands of communities, schools, and nonprofits that would otherwise not have access to it. A laptop that cannot be remarketed for profit can still power a student's education or support a small nonprofit's operations. We pursue those outcomes because they align with the core purpose of responsible IT asset disposition.\n\nCritically, we do not penalize you as the customer for choosing to extend the lifecycle of an end-of-life device. There are no unnecessary recycling fees, no surprise processing charges, and no hidden costs attached to older devices that fall outside the buyback window. If your equipment qualifies for donation or alternative lifecycle extension, we handle it at no additional cost to your organization. At the end of the day, we are your partner, not just a vendor."
         },
         {
-          "heading": "Why San Bruno Businesses Choose Hardware Buyback Programs",
-          "body": "Strategic IT asset value recovery offers critical financial and operational advantages:",
+          "heading": "Our ITAD Guarantee: Net Positive or It Does Not Cost You",
+          "body": "For qualifying ITAD projects in San Bruno, Integritrade stands behind a straightforward commitment: your project will either generate you money or be net positive at minimum. For organizations with 50 or more eligible devices, this means your pickup is free, your data destruction is covered, and your Certificates of Destruction or erasure documentation are included - at no charge. You walk away with verified compliance documentation and, in most cases, recovered revenue on top of it.\n\nThis is not a promotional offer. It is how a properly run ITAD program should work. When a certified partner manages your asset evaluation, data sanitization, and remarketing correctly, the value recovered from your equipment should more than offset the cost of the service. If it does not, something is wrong with the program - and that is a problem you will not encounter with Integritrade."
+        },
+        {
+          "heading": "What IT Equipment Can You Sell in San Bruno?",
+          "body": "Not all retired technology is past its useful life. A significant portion of the equipment that businesses in San Bruno retire each year still carries strong secondary market demand. Integritrade evaluates and purchases a wide range of IT assets, including:",
           "bullets": [
-            "Offset IT Budgets: The capital recovered from selling used corporate laptops, servers, and networking gear can be directly applied to your next technology refresh, significantly lowering your net upgrade costs.",
-            "Reclaim Facility Space: Decommissioned hardware consumes expensive facility space. Our logistics team clears out your San Bruno storage rooms, loading docks, and data centers quickly and efficiently.",
-            "Corporate Sustainability: Remarketing functional equipment is the highest form of recycling. It lowers your carbon footprint and helps your organization meet internal Environmental, Social, and Governance (ESG) goals.",
-            "Zero Security Compromise: Value recovery never comes at the expense of data privacy. Every device slated for resale undergoes rigorous logical data sanitization before it ever leaves our control."
+            "Laptops & Notebooks: MacBooks, ThinkPads, Dell XPS, HP EliteBooks, Surface devices",
+            "Desktop Computers: Workstations, all-in-ones, mini PCs",
+            "Servers & Rack Equipment: Dell PowerEdge, HPE ProLiant, Supermicro, blade chassis",
+            "Smartphones: iPhones, Samsung Galaxy, Google Pixel, corporate-issued handsets",
+            "Tablets: iPads, Surface Pro, Android tablets",
+            "GPUs & Compute Cards: NVIDIA, AMD, enterprise AI and ML accelerator cards",
+            "Networking Equipment: Managed switches, enterprise routers, access points, firewalls",
+            "Storage Arrays & NAS: SAN systems, NAS enclosures, enterprise SSDs and HDDs",
+            "Monitors & Displays: Commercial-grade monitors, video walls, large-format displays"
           ]
         },
         {
-          "heading": "Types of Enterprise Equipment We Buy Back",
-          "body": "We focus on enterprise grade hardware that retains market value. Our team processes and remarkets a wide range of corporate technology including:",
+          "heading": "",
+          "body": "As a general guideline, devices that are approximately four years old or newer are the strongest candidates for direct value recovery. However, age alone does not determine how we handle your equipment. Older devices are evaluated for refurbishment, donation, or alternative lifecycle pathways before materials recovery is ever considered. The best way to know how your San Bruno equipment will be handled is to contact Integritrade for a free evaluation."
+        },
+        {
+          "heading": "How the IT Equipment Buyback Process Works",
+          "body": "Selling your IT equipment in San Bruno through Integritrade is straightforward and fully documented from start to finish."
+        },
+        {
+          "heading": "1. Submit Your Asset List",
+          "body": "Reach out to our team with a basic inventory of the equipment you are looking to sell - make, model, approximate age, quantity, and any known condition issues. We will review the list and provide a preliminary value assessment within 24 hours."
+        },
+        {
+          "heading": "2. Free On-Site Pickup - No Fees for Qualifying Batches",
+          "body": "For organizations in San Bruno with 50 or more devices, Integritrade waives pickup fees entirely. Our team coordinates GPS-tracked transport directly from your location, handles all loading and logistics, and brings sealed containers to ensure your assets are secured from the moment they leave your facility."
+        },
+        {
+          "heading": "3. Secure Data Destruction",
+          "body": "Before any device is evaluated for resale, every data-bearing asset goes through certified data destruction. Integritrade performs NIST 800-88 compliant erasure or physical destruction depending on the device type and your documentation requirements. You receive serialized Certificates of Destruction for every asset, giving your compliance team the exact proof needed for audits. This step is non-negotiable — we never remarket a device without verified data sanitization."
+        },
+        {
+          "heading": "4. Asset Evaluation and Value Recovery",
+          "body": "Once sanitized, devices are graded, tested, and evaluated for refurbishment and remarketing. Integritrade offers two distinct recovery models so your San Bruno organization can choose the option that best fits your timeline and financial goals."
+        },
+        {
+          "heading": "Option 1 - Direct Buyback (Accelerated Revenue)",
+          "body": "For organizations that want certainty and speed, Integritrade provides a buyback quote upfront based on your submitted asset list. Once your devices arrive at our facility and we confirm they are free of corporate management locks, activation locks, and are functional as represented, we process your data destruction, issue your serialized Certificates of Destruction, and pay you based on the agreed quote. There is no waiting, no per-unit uncertainty, and no surprises just a clean transaction with full documentation."
+        },
+        {
+          "heading": "Option 2 - Remarketing (Maximum Return)",
+          "body": "For organizations that are less time-sensitive and want to maximize the return on their retired assets, Integritrade can remarket your devices through our established resale channels. Because we handle refurbishment, grading, and sales directly, your organization captures a higher overall return compared to the direct buyback rate. This option does take longer as recovery is tied to individual device sales, but for larger or higher-value batches it can meaningfully increase the total amount recovered."
+        },
+        {
+          "heading": "5. Final Reporting",
+          "body": "You receive a complete recovery report detailing every asset, its disposition outcome, the data destruction method applied, and the financial recovery summary. This documentation is audit-ready and built to satisfy the most demanding compliance requirements."
+        },
+        {
+          "heading": "6. Ongoing Access Through TraceTech",
+          "body": "Every Integritrade client receives complimentary access to TraceTech, our proprietary asset tracking platform included at no additional cost. Through TraceTech, your San Bruno organization can monitor exactly what stage of processing each device is in, download your Certificates of Destruction and erasure documentation on demand, and manage or schedule future pickups - all from a single dashboard. There is no guessing, no waiting on email threads, and no chasing down paperwork. Your compliance records and project status are available whenever you need them."
+        },
+        {
+          "heading": "",
+          "body": "Our operations are backed by a 30,000 square foot processing facility equipped with 24/7 video monitoring and controlled processing areas staffed exclusively by background-checked personnel. This is not a small-scale operation - it is the infrastructure required to handle large enterprise decommissions, multi-site IT refreshes, and data center teardowns with the speed, security, and documentation accuracy that San Bruno organizations demand."
+        },
+        {
+          "heading": "Why Data Security Cannot Be an Afterthought When Selling IT Equipment",
+          "body": "Many businesses in San Bruno make the mistake of selling retired IT equipment through general resellers, online marketplaces, or uncertified buyback vendors without ensuring that data has been properly destroyed first. This is one of the most common and costly data security oversights in corporate IT management.\n\nA laptop that still contains cached credentials, a server with an unwiped RAID array, or a smartphone with a logged-in corporate email account can expose your organization to serious legal and financial liability. Under regulations such as HIPAA, FACTA, and various state-level data privacy laws, the responsibility for data destruction does not transfer when you hand a device to a third party - it remains with your organization until destruction is documented and verified.\n\nThis is precisely why working with a certified partner matters. Integritrade holds R2v3 certification, the highest global standard for electronics reuse and recycling, which is formally recognized by the U.S. Environmental Protection Agency (EPA) as the benchmark for responsible data destruction and downstream accountability. Our ISO 27001 certification - the internationally recognized standard for information security management - further guarantees that your data is handled under a rigorously audited security framework throughout every stage of the buyback process."
+        },
+        {
+          "heading": "The Integritrade Advantage: Certifications That Protect Your Business",
+          "body": "When you sell IT equipment in San Bruno through Integritrade, you are not just getting a check. You are getting a fully documented, independently audited disposition process backed by the industry's most comprehensive certification stack:",
           "bullets": [
-            "Corporate Computing: Employee laptops, desktop workstations, and high performance CAD machines.",
-            "Data Center Hardware: Rack mount servers, blade servers, and enterprise storage arrays (SAN and NAS).",
-            "Networking Equipment: High capacity enterprise switches, routers, firewalls, and wireless access points.",
-            "Mobile Devices: Corporate issued smartphones and tablets.",
-            "Office Electronics: VoIP phone systems and high volume enterprise printers."
+            "R2v3 Certified - EPA-recognized standard ensuring responsible recycling, data security, and downstream accountability across the entire supply chain.",
+            "ISO 27001 - Information security management certification guaranteeing your data is protected at every step.",
+            "ISO 14001 - Environmental management certification ensuring sustainable, compliant processing of all materials.",
+            "ISO 9001 - Quality management certification ensuring consistent, reliable service and reporting.",
+            "ISO 45001 - Occupational health and safety certification ensuring safe facility operations"
           ]
         },
         {
-          "heading": "Data Security During the Remarketing Process",
-          "body": "The greatest hesitation organizations face when reselling old equipment is the fear of a data breach. Integritrade eliminates this risk entirely.\n\nWhile enterprise grade logical data sanitization is an excellent choice for preserving equipment lifecycle value without compromising security, physical hard drive shredding delivers complete, irreversible destruction. For our remarketing clients, we utilize NIST 800 88 compliant wiping software to purge all data while keeping the hardware intact for resale. If a drive fails the software wipe or if your internal policy dictates it, the drive is removed and physically shredded. We provide a serialized Certificate of Destruction for every data bearing device we process, guaranteeing your intellectual property and customer data remain secure."
+          "heading": "",
+          "body": "No uncertified local buyback vendor, general reseller, or online marketplace can offer this level of verified accountability. When your organization's compliance, reputation, and financial recovery are all on the line, certifications are not a bonus - they are the baseline."
         },
         {
-          "heading": "Our Step by Step Value Recovery Workflow",
+          "heading": "Protecting Your Bottom Line: Value Recovery Done Right",
+          "body": "The financial case for a certified IT equipment buyback program is straightforward. Equipment that sits in a storage room depreciates every month it goes unsold. Technology markets move quickly, and a server or fleet of laptops that is worth a meaningful sum today may be worth significantly less in six months. Acting promptly on a buyback evaluation ensures your San Bruno organization captures the maximum available recovery value before market conditions shift.\n\nAt the same time, the cost of a data breach - legal fees, regulatory fines, reputational damage, and customer notification requirements - can dwarf the value of any equipment sale many times over. Integritrade's buyback program is specifically designed so that financial recovery and data security are never in conflict. You get both: maximum value from your retired assets and absolute certainty that your data has been destroyed to the highest certified standard."
+        },
+        {
+          "heading": "Who We Serve in San Bruno",
+          "body": "Integritrade works with organizations of all sizes across San Bruno and throughout California, including:",
           "bullets": [
-            "Inventory Audit and Valuation: We review your decommissioned asset manifest and provide a market valuation based on current secondary market demand for your specific hardware.",
-            "Secure Logistics and Pickup: Our background checked personnel arrive at your San Bruno facility to pack, palletize, and transport your equipment using GPS monitored vehicles.",
-            "Testing and Grading: Upon arrival at our facility, technicians boot and test every unit, grading them based on cosmetic condition and hardware functionality.",
-            "Data Sanitization: All storage media undergoes verified NIST 800-88 logical wiping. Any media that fails wiping is immediately sent for physical shredding.",
-            "Refurbishment and Resale: We perform minor repairs and cosmetic restoration to maximize the resale value of the hardware through our global buyer network.",
-            "Financial Settlement: Once the hardware is processed, we issue your financial return via an upfront buyout or a revenue split agreement, accompanied by complete audit ready reporting."
+            "Corporate and Enterprise teams managing large-scale IT refreshes and data center decommissions",
+            "Healthcare organizations requiring HIPAA-compliant data destruction documentation",
+            "Banking and financial services firms with strict data governance and audit requirements",
+            "Educational institutions retiring student and faculty devices at scale",
+            "Government and public sector agencies requiring documented chain-of-custody and certified destruction",
+            "Legal and professional services firms handling sensitive client data"
           ]
         },
         {
-          "heading": "Industry Recognized Certifications for Your Protection",
-          "body": "When you release your retired hardware for resale, you are also transferring the liability attached to it. Choosing an uncertified vendor to buy your old equipment exposes your organization to downstream data breaches and environmental fines. That is why San Bruno organizations must demand rigorous third party certifications from their IT asset value recovery partner.\n\nIntegritrade operates under a comprehensive suite of global standards, ensuring your enterprise hardware is processed legally, securely, and sustainably:",
-          "bullets": [
-            "R2v3 Certified: The premier global standard for electronics repair and recycling, guaranteeing downstream accountability and responsible handling for any hardware that cannot be remarketed.",
-            "ISO 27001 (Information Security Management): A globally recognized framework ensuring your proprietary data is protected throughout the entire value recovery and testing process.",
-            "ISO 14001 (Environmental Management): Demonstrating our strict commitment to sustainable operations and zero landfill policies.",
-            "ISO 45001 (Occupational Health and Safety): Guaranteeing secure and safe facility operations for our background checked personnel.",
-            "ISO 9001 (Quality Management): Ensuring consistent service delivery, accurate hardware grading, and audit ready financial reporting."
-          ]
+          "heading": "",
+          "body": "Whether you have 50 devices or 5,000, Integritrade has the capacity, certifications, and logistics infrastructure to manage your San Bruno IT equipment buyback from first contact to final report."
         },
         {
-          "heading": "Frequently Asked Questions About IT Hardware Buyback in San Bruno",
-          "qna": [
-            {
-              "question": "How much is our old corporate IT equipment worth?",
-              "answer": "Hardware value depends heavily on the device age, brand, specifications, and cosmetic condition. Equipment that is three years old or newer typically retains the best resale value. Contact our San Bruno team with your equipment manifest for a customized market valuation."
-            },
-            {
-              "question": "What happens to our data when equipment is resold?",
-              "answer": "Security is our highest priority. Every data bearing device undergoes certified NIST 800-88 logical data sanitization, which overwrites every sector of the drive. You receive a serialized Certificate of Destruction proving the data was permanently erased before the hardware was remarketed."
-            },
-            {
-              "question": "Do you buy back broken or non-functioning hardware?",
-              "answer": "We primarily offer financial returns for functional, reusable enterprise hardware. However, if your equipment is broken or too old for resale, we will securely process it through our certified electronic waste recycling channels to ensure environmentally responsible disposal."
-            },
-            {
-              "question": "How does the financial settlement work?",
-              "answer": "We offer flexible financial structures tailored to your corporate preferences. We can provide a direct upfront buyout based on our initial audit, or we can establish a revenue split model where you receive a percentage of the final sale price once the assets are remarketed."
-            },
-            {
-              "question": "Who handles the packing and shipping from our San Bruno office?",
-              "answer": "Integritrade manages the entire logistics process. Our local team will arrive at your San Bruno location with the necessary packing materials, secure bins, and pallets to safely load and transport your hardware, requiring zero heavy lifting from your internal IT staff."
-            }
-          ]
+          "heading": "Frequently Asked Questions",
+          "body": ""
         },
         {
-          "heading": "Conclusion",
-          "body": "Your retired technology still holds significant financial value. By partnering with Integritrade for IT equipment remarketing and hardware buybacks, your organization can securely liquidate outdated assets, fund future technology investments, and maintain absolute data security.\n\nStop letting depreciating hardware take up space in your San Bruno facility. Contact our IT asset value recovery specialists today for a free equipment valuation and discover how much capital you can reclaim from your retired enterprise technology."
+          "heading": "What types of IT equipment does Integritrade buy back in San Bruno?",
+          "body": "Integritrade purchases a wide range of IT assets including laptops, desktops, servers, smartphones, tablets, GPUs, networking equipment, storage arrays, and some higher-end monitors. As a general guideline, devices that are approximately four years old or newer are the strongest candidates for direct value recovery. Older devices are evaluated for refurbishment, donation, or lifecycle extension before materials recovery is considered."
+        },
+        {
+          "heading": "How much will I get for my IT equipment?",
+          "body": "The value of your equipment depends on the make, model, age, condition, quantity, and current market demand. Integritrade provides a preliminary assessment within 24 hours of receiving your asset list and a buyback quote before any devices are picked up. There are no surprises after the fact."
+        },
+        {
+          "heading": "Is there a minimum quantity to use Integritrade's buyback or ITAD services?",
+          "body": "There is no strict minimum to request a quote or evaluation. However, for organizations with 50 or more devices, Integritrade waives pickup fees entirely and includes data destruction and Certificates of Destruction at no additional charge, making the project net positive or better for qualifying batches."
+        },
+        {
+          "heading": "How does Integritrade protect my data when buying back IT equipment?",
+          "body": "Every data-bearing device is processed through certified data destruction before any evaluation for resale or remarketing. Integritrade performs NIST 800-88 compliant erasure or physical destruction depending on the device type, and issues serialized Certificates of Destruction for every asset. We never remarket a device without verified, documented data sanitization."
+        },
+        {
+          "heading": "What is the difference between the Direct Buyback and Remarketing options?",
+          "body": "With the Direct Buyback option, Integritrade provides a firm upfront quote based on your asset list. Once devices are received and confirmed to be free of locks and functional as represented, we issue your destruction certificates and pay you immediately based on the agreed amount. With the Remarketing option, Integritrade handles refurbishment, grading, and resale through its own channels, which typically yields a higher total return but takes longer since recovery is tied to individual device sales."
+        },
+        {
+          "heading": "What is TraceTech and is it included?",
+          "body": "TraceTech is Integritrade's proprietary asset tracking and management platform - and yes, it is included for every client at no additional cost. Developed in-house over several years to solve the transparency problems that have long plagued the ITAD industry, TraceTech is the most advanced asset tracking software available from any electronics recycling or ITAD provider in the market today.\n\nMost ITAD programs are a black box. You hand over your equipment, receive a certificate weeks later, and have no visibility into what actually happened in between. TraceTech was purpose-built to eliminate that problem entirely. Through a single dashboard, your team can see the real-time processing status of every device, download Certificates of Destruction and erasure documentation on demand, and schedule or manage future pickups without a single phone call or email thread.\n\nWhat truly sets TraceTech apart is its AI-integrated workflow engine, which is designed to minimize human touchpoints throughout the disposition process. In ITAD, every unnecessary hand that touches a device is a potential point of failure - a risk of data exposure, a gap in the chain of custody, or a documentation error. By automating the tracking, logging, and reporting functions that other companies handle manually, TraceTech dramatically reduces those risk points and delivers a level of process integrity that no competitor can replicate. Less human intervention means less risk. Less risk means your organization is protected. No other ITAD company in San Bruno or California offers anything close to this level of built-in transparency and AI-driven process control as a standard, included feature."
+        },
+        {
+          "heading": "What happens to devices that are too old to resell?",
+          "body": "Integritrade is a reuse-focused IT asset management company, not a scrap operation. Devices that fall outside the resale cutline are evaluated for donation to schools, nonprofits, and underserved communities before materials recovery is considered. Customers are never charged unnecessary recycling fees for older devices that take an alternative lifecycle path."
+        },
+        {
+          "heading": "Is Integritrade certified to handle sensitive data destruction?",
+          "body": "Yes. Integritrade holds R2v3 certification the EPA-recognized global standard for responsible electronics recycling and data destruction, as well as ISO 27001 for information security management, ISO 14001 for environmental management, ISO 9001 for quality management, and ISO 45001 for occupational health and safety. Every process is independently audited and fully documented."
+        },
+        {
+          "heading": "Does Integritrade serve businesses outside of San Bruno?",
+          "body": "Yes. Integritrade serves businesses throughout California, including San Bruno and the surrounding region. We offer GPS-tracked pickup logistics, free site walkthroughs for larger decommissions, and California-wide coverage for enterprise and multi-site projects."
+        },
+        {
+          "heading": "How do I get started selling my IT equipment in San Bruno?",
+          "body": "Simply contact Integritrade through our website to submit your asset list and request a free evaluation. Our team responds within 24 hours with a preliminary assessment and will walk you through the right service level for your project."
+        },
+        {
+          "heading": "Ready to Sell Your IT Equipment in San Bruno?",
+          "body": "Find out what your retired technology is worth. Contact Integritrade today for a free asset evaluation, a no-obligation quote, and a fixed plan for secure pickup and value recovery from your San Bruno location. Our team responds within 24 hours and offers free site walkthroughs for larger decommissions. Turn your retired IT assets into recovered revenue - without compromising on data security or compliance."
         }
       ]
     },

@@ -30,7 +30,8 @@ const HARD_DRIVE_SHREDDING = {
   shortDescription:
     "Certified hard drive shredding in {{CITY}}, CA for businesses. Secure data destruction, compliant disposal, and full protection against data breaches.",
   icon: "HardDrive",
-  metaTitle: "Hard Drive Shredding {{CITY}} CA | Secure Data Destruction Services",
+  metaTitle:
+    "Hard Drive Shredding {{CITY}} CA | Secure Data Destruction Services",
   metaDescription:
     "Looking for hard drive shredding in {{CITY}}, CA? We provide certified data destruction, secure chain of custody, and eco-friendly disposal for businesses. Get a free quote today.",
   ctaText: "Get a Free Quote",
@@ -97,25 +98,30 @@ When a device is processed through an industrial shredder, extreme shearing forc
       body: "Our data destruction practices adhere strictly to the NIST 800 88 Guidelines for Media Sanitization. Aligning with these guidelines ensures your hard drive disposal meets the rigorous auditing criteria required for HIPAA, HITECH, FACTA, PCI DSS, SOX, and CCPA compliance.",
     },
     {
-      heading: "Frequently Asked Questions About Hard Drive Shredding in {{CITY}}",
+      heading:
+        "Frequently Asked Questions About Hard Drive Shredding in {{CITY}}",
       qna: [
         {
-          question: "Is deleting files or reformatting hard drives enough before disposal?",
+          question:
+            "Is deleting files or reformatting hard drives enough before disposal?",
           answer:
             "No. File deletion and drive reformatting only clear file pointers, leaving the actual data readable with standard forensic recovery software. Physical shredding is the only method that guarantees complete data destruction.",
         },
         {
-          question: "Do you provide proof of hard drive destruction for compliance audits?",
+          question:
+            "Do you provide proof of hard drive destruction for compliance audits?",
           answer:
             "Yes. We can issue a formal, serialized Certificate of Destruction for every data destruction or ITAD project in {{CITY}}. This document includes a complete inventory of scanned drive serial numbers, timestamps, and method of destruction for your legal and regulatory compliance records.",
         },
         {
-          question: "Can you shred Solid State Drives (SSDs) as effectively as traditional hard drives?",
+          question:
+            "Can you shred Solid State Drives (SSDs) as effectively as traditional hard drives?",
           answer:
             "Yes. SSDs require smaller shred sizes because data is stored on small NAND flash memory chips. We utilize 2mm precision shredding to physically fracture every individual chip, making flash data recovery impossible.",
         },
         {
-          question: "What happens to the hard drive materials after they are shredded?",
+          question:
+            "What happens to the hard drive materials after they are shredded?",
           answer:
             "After shredding, the remaining shredded particles are sent to our vetted downstream recycling partners so they can further be separated into ferrous metals, non ferrous metals, and shredded circuit boards. Our certified recycling partners are experts in refining the precious metals so they can be reused in sustainable manufacturing.",
         },
@@ -208,17 +214,20 @@ Professional ITAD goes beyond basic recycling. It combines NIST 800-88 compliant
       heading: "Frequently Asked Questions",
       qna: [
         {
-          question: "How do I get a serialized certificate of destruction in {{CITY}}?",
+          question:
+            "How do I get a serialized certificate of destruction in {{CITY}}?",
           answer:
             "Integritrade provides a serialized certificate of destruction for every project. This audit ready document lists individual serial numbers, destruction methods, and timestamps for full legal compliance.",
         },
         {
-          question: "What is the difference between NIST 800-88 data wiping and physical shredding?",
+          question:
+            "What is the difference between NIST 800-88 data wiping and physical shredding?",
           answer:
             "NIST 800-88 data wiping overwrites every storage sector with enterprise-grade software algorithms, leaving the drive functional for resale. A sample of each batch of the devices we process, undergoes forensic data recovery to ensure all data is permanently irretrievable. On the other hand, physical destruction encompasses methods such as shredding or crushing, which physically destroys the drive into tiny fragments, making data recovery impossible. Different types of media are better suited for different types of destruction methods.",
         },
         {
-          question: "How does data center decommissioning work for local enterprises?",
+          question:
+            "How does data center decommissioning work for local enterprises?",
           answer:
             "Our team manages the entire shutdown process in {{CITY}}, including equipment unmapping, rack removal, drive destruction, logistics, and site cleanout.",
         },
@@ -228,7 +237,8 @@ Professional ITAD goes beyond basic recycling. It combines NIST 800-88 compliant
             "Yes. Our end to end chain of custody, background checked staff, and serialized certificates of destruction strictly adhere to HIPAA and HITECH requirements for healthcare data sanitization.",
         },
         {
-          question: "Can our organization recover financial value through server buyback programs?",
+          question:
+            "Can our organization recover financial value through server buyback programs?",
           answer:
             "Yes. If your retired enterprise hardware meets current market demand, our refurbishment program evaluates the equipment and offers direct buybacks or revenue splits to offset your IT asset decommissioning costs.",
         },
@@ -243,7 +253,8 @@ const ELECTRONICS_RECYCLING = {
   shortDescription:
     "Certified electronics recycling in {{CITY}}, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
   icon: "Recycle",
-  metaTitle: "Electronics Recycling {{CITY}} CA | R2v3 Certified E-Waste Recycling",
+  metaTitle:
+    "Electronics Recycling {{CITY}} CA | R2v3 Certified E-Waste Recycling",
   metaDescription:
     "R2v3 certified electronics recycling in {{CITY}}, CA. Secure IT asset disposition and e-waste recycling with full compliance documentation.",
   ctaText: "Get a Free Quote",
@@ -296,11 +307,13 @@ const ELECTRONICS_RECYCLING = {
       body: "Whether your organization needs Basic Recycling for previously sanitized equipment, compliance grade Data Destruction, or a Full ITAD Package with value recovery, Integritrade has a tailored solution. We also offer Demanufacturing and Prototype Destruction for highly sensitive intellectual property requiring physical destruction with witnessed oversight. Choose the certified, secure, and accountable partner for electronics recycling in {{CITY}}.",
     },
     {
-      heading: "Frequently Asked Questions About Electronics Recycling in {{CITY}}",
+      heading:
+        "Frequently Asked Questions About Electronics Recycling in {{CITY}}",
       body: "Here are some common questions {{CITY}} businesses ask about certified electronics recycling and data destruction.",
       qna: [
         {
-          question: "Is deleting files or factory-resetting a device enough before recycling?",
+          question:
+            "Is deleting files or factory-resetting a device enough before recycling?",
           answer:
             "No. Improperly deleted or reset data can often be recovered with forensic tools, exposing your organization to unnecessary risks. We use NIST 800 88 compliant logical data sanitization software or physical destruction equipment such as shredders, so that your data is permanently unrecoverable.",
         },
@@ -310,12 +323,14 @@ const ELECTRONICS_RECYCLING = {
             "We can provide serialized Certificates of Destruction and comprehensive recycling documentation for data destruction and ITAD projects in {{CITY}}. This reporting can give your compliance officers the exact proof they need for internal corporate governance and data security requirements.",
         },
         {
-          question: "Can our organization recover financial value from retired technology?",
+          question:
+            "Can our organization recover financial value from retired technology?",
           answer:
             "Yes. For newer IT assets with remaining market value, our Full ITAD Package includes secure data destruction, refurbishment and remarketing all in one convenient package. We offer revenue splits or upfront buybacks to help offset your technology refresh costs while ensuring complete data security and environmental compliance.",
         },
         {
-          question: "What types of electronics do you accept from {{CITY}} businesses?",
+          question:
+            "What types of electronics do you accept from {{CITY}} businesses?",
           answer:
             "We process a wide range of corporate technology including but not limited to: servers, networking gear, laptops, desktops, enterprise storage arrays, and mobile devices as well as standard IT equipment such as copy machines, printers, televisions and monitors. If the device plugs into a wall, we can likely help your organization with recycling it. Whether you are refreshing a small office in {{CITY}} or decommissioning a massive local data center, Integritrade is equipped to handle your volume securely.",
         },
@@ -329,119 +344,206 @@ const ELECTRONICS_RECYCLING = {
   ],
 };
 
-const IT_EQUIPMENT_REMARKETING = {
-  slug: "asset-recovery", // matches the existing asset-recovery pages; existing slug is preserved per city
-  title: "IT Equipment Remarketing in {{CITY}}",
+const IT_EQUIPMENT_BUYBACK = {
+  slug: "asset-recovery",
+  title:
+    "Sell Your IT Equipment in {{CITY}}: Get the Best Value with Secure, Certified Buyback",
   shortDescription:
-    "Maximize your return on investment and offset technology refresh costs with secure R2v3-certified enterprise hardware liquidation and IT asset buyback programs for {{CITY}} organizations.",
-  icon: "BadgeDollarSign",
-  metaTitle: "IT Equipment Remarketing & Hardware Buyback {{CITY}} CA",
+    "Sell your retired IT equipment in {{CITY}} through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
+  icon: "RefreshCw",
+  metaTitle:
+    "Sell Your IT Equipment in {{CITY}}: Certified IT Equipment Buyback | Integritrade",
   metaDescription:
-    "Turn retired IT assets into recovered capital. R2v3-certified IT equipment remarketing and hardware buyback programs for {{CITY}} organizations, with NIST 800-88 certified data sanitization.",
-  image: "__IMG_assetRecovery__",
-  heroHeading: "IT Equipment Remarketing and Hardware Buyback in {{CITY}}",
-  heroSubheading:
-    "Maximize your return on investment and offset technology refresh costs with secure R2v3-certified enterprise hardware liquidation and IT asset buyback programs for {{CITY}} organizations.",
+    "Sell your retired IT equipment in {{CITY}} through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
   ctaText: "Get a Free Quote",
+  image: "__IMG_itBuyback__",
+  heroHeading:
+    "Sell Your IT Equipment in {{CITY}}: Get the Best Value with Secure, Certified Buyback",
+  heroSubheading:
+    "When your {{CITY}} business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
   details: [
     {
-      heading: "Introduction",
-      body: `When organizations upgrade their technology infrastructure, decommissioned servers, laptops, and networking gear are often relegated to a storage closet where they rapidly lose value. Instead of letting depreciating assets take up valuable real estate, forward thinking businesses turn to IT equipment remarketing. If you manage an enterprise in {{CITY}}, professional hardware buyback programs allow you to transform idle technology into recovered capital.
-
-At Integritrade, we provide comprehensive IT asset value recovery and hardware liquidation services for organizations across {{CITY}}. We evaluate, refurbish, and remarket your retired equipment, returning revenue directly to your bottom line while ensuring complete data security and regulatory compliance.`,
+      heading: "",
+      body: "Integritrade offers IT equipment buyback and asset recovery services for businesses throughout {{CITY}} and all of California. If you are searching for where to sell IT equipment in {{CITY}}, this guide explains exactly how the process works, what your equipment is worth, and why choosing a certified partner protects both your bottom line and your organization's data security.",
     },
     {
-      heading: "What is IT Equipment Remarketing?",
-      body: `IT equipment remarketing is the strategic process of testing, refurbishing, and reselling retired corporate technology on the secondary hardware market. Unlike standard electronic waste recycling which focuses on breaking down equipment for raw materials, remarketing extends the usable lifespan of the hardware.
+      heading: "More Than a Recycler: A Reused IT Asset Management Company",
+      body: `Most electronics recyclers in {{CITY}} treat your retired equipment as scrap. The moment a device falls outside a narrow resale window, it gets processed for materials recovery and that is the end of the story.
 
-By partnering with an enterprise hardware liquidation specialist in {{CITY}}, your organization can participate in the circular economy. This sustainable approach prevents functional technology from entering local landfills while providing your finance department with a direct financial return on depreciated IT assets.`,
+Integritrade was built on a fundamentally different philosophy. Since our founding, our mission has been to extend the life cycle of electronic devices for as long as responsibly possible. We are not a scrap operation - we are a reuse-focused IT asset management company. That distinction matters enormously for your organization and for the communities around us.
+
+When devices are older than the typical resale cutline, we do not immediately route them to materials recovery. Instead, we explore every available avenue to keep them in productive use. That includes donation programs that place functional technology into the hands of communities, schools, and nonprofits that would otherwise not have access to it. A laptop that cannot be remarketed for profit can still power a student's education or support a small nonprofit's operations. We pursue those outcomes because they align with the core purpose of responsible IT asset disposition.
+
+Critically, we do not penalize you as the customer for choosing to extend the lifecycle of an end-of-life device. There are no unnecessary recycling fees, no surprise processing charges, and no hidden costs attached to older devices that fall outside the buyback window. If your equipment qualifies for donation or alternative lifecycle extension, we handle it at no additional cost to your organization. At the end of the day, we are your partner, not just a vendor.`,
     },
     {
-      heading: "Why {{CITY}} Businesses Choose Hardware Buyback Programs",
-      body: "Strategic IT asset value recovery offers critical financial and operational advantages:",
+      heading: "Our ITAD Guarantee: Net Positive or It Does Not Cost You",
+      body: `For qualifying ITAD projects in {{CITY}}, Integritrade stands behind a straightforward commitment: your project will either generate you money or be net positive at minimum. For organizations with 50 or more eligible devices, this means your pickup is free, your data destruction is covered, and your Certificates of Destruction or erasure documentation are included - at no charge. You walk away with verified compliance documentation and, in most cases, recovered revenue on top of it.
+
+This is not a promotional offer. It is how a properly run ITAD program should work. When a certified partner manages your asset evaluation, data sanitization, and remarketing correctly, the value recovered from your equipment should more than offset the cost of the service. If it does not, something is wrong with the program - and that is a problem you will not encounter with Integritrade.`,
+    },
+    {
+      heading: "What IT Equipment Can You Sell in {{CITY}}?",
+      body: "Not all retired technology is past its useful life. A significant portion of the equipment that businesses in {{CITY}} retire each year still carries strong secondary market demand. Integritrade evaluates and purchases a wide range of IT assets, including:",
       bullets: [
-        "Offset IT Budgets: The capital recovered from selling used corporate laptops, servers, and networking gear can be directly applied to your next technology refresh, significantly lowering your net upgrade costs.",
-        "Reclaim Facility Space: Decommissioned hardware consumes expensive facility space. Our logistics team clears out your {{CITY}} storage rooms, loading docks, and data centers quickly and efficiently.",
-        "Corporate Sustainability: Remarketing functional equipment is the highest form of recycling. It lowers your carbon footprint and helps your organization meet internal Environmental, Social, and Governance (ESG) goals.",
-        "Zero Security Compromise: Value recovery never comes at the expense of data privacy. Every device slated for resale undergoes rigorous logical data sanitization before it ever leaves our control.",
+        "Laptops & Notebooks: MacBooks, ThinkPads, Dell XPS, HP EliteBooks, Surface devices",
+        "Desktop Computers: Workstations, all-in-ones, mini PCs",
+        "Servers & Rack Equipment: Dell PowerEdge, HPE ProLiant, Supermicro, blade chassis",
+        "Smartphones: iPhones, Samsung Galaxy, Google Pixel, corporate-issued handsets",
+        "Tablets: iPads, Surface Pro, Android tablets",
+        "GPUs & Compute Cards: NVIDIA, AMD, enterprise AI and ML accelerator cards",
+        "Networking Equipment: Managed switches, enterprise routers, access points, firewalls",
+        "Storage Arrays & NAS: SAN systems, NAS enclosures, enterprise SSDs and HDDs",
+        "Monitors & Displays: Commercial-grade monitors, video walls, large-format displays",
       ],
     },
     {
-      heading: "Types of Enterprise Equipment We Buy Back",
-      body: "We focus on enterprise grade hardware that retains market value. Our team processes and remarkets a wide range of corporate technology including:",
-      bullets: [
-        "Corporate Computing: Employee laptops, desktop workstations, and high performance CAD machines.",
-        "Data Center Hardware: Rack mount servers, blade servers, and enterprise storage arrays (SAN and NAS).",
-        "Networking Equipment: High capacity enterprise switches, routers, firewalls, and wireless access points.",
-        "Mobile Devices: Corporate issued smartphones and tablets.",
-        "Office Electronics: VoIP phone systems and high volume enterprise printers.",
-      ],
+      heading: "",
+      body: "As a general guideline, devices that are approximately four years old or newer are the strongest candidates for direct value recovery. However, age alone does not determine how we handle your equipment. Older devices are evaluated for refurbishment, donation, or alternative lifecycle pathways before materials recovery is ever considered. The best way to know how your {{CITY}} equipment will be handled is to contact Integritrade for a free evaluation.",
     },
     {
-      heading: "Data Security During the Remarketing Process",
-      body: `The greatest hesitation organizations face when reselling old equipment is the fear of a data breach. Integritrade eliminates this risk entirely.
+      heading: "How the IT Equipment Buyback Process Works",
+      body: "Selling your IT equipment in {{CITY}} through Integritrade is straightforward and fully documented from start to finish.",
+    },
+    {
+      heading: "1. Submit Your Asset List",
+      body: "Reach out to our team with a basic inventory of the equipment you are looking to sell - make, model, approximate age, quantity, and any known condition issues. We will review the list and provide a preliminary value assessment within 24 hours.",
+    },
+    {
+      heading: "2. Free On-Site Pickup - No Fees for Qualifying Batches",
+      body: "For organizations in {{CITY}} with 50 or more devices, Integritrade waives pickup fees entirely. Our team coordinates GPS-tracked transport directly from your location, handles all loading and logistics, and brings sealed containers to ensure your assets are secured from the moment they leave your facility.",
+    },
+    {
+      heading: "3. Secure Data Destruction",
+      body: "Before any device is evaluated for resale, every data-bearing asset goes through certified data destruction. Integritrade performs NIST 800-88 compliant erasure or physical destruction depending on the device type and your documentation requirements. You receive serialized Certificates of Destruction for every asset, giving your compliance team the exact proof needed for audits. This step is non-negotiable — we never remarket a device without verified data sanitization.",
+    },
+    {
+      heading: "4. Asset Evaluation and Value Recovery",
+      body: "Once sanitized, devices are graded, tested, and evaluated for refurbishment and remarketing. Integritrade offers two distinct recovery models so your {{CITY}} organization can choose the option that best fits your timeline and financial goals.",
+    },
+    {
+      heading: "Option 1 - Direct Buyback (Accelerated Revenue)",
+      body: "For organizations that want certainty and speed, Integritrade provides a buyback quote upfront based on your submitted asset list. Once your devices arrive at our facility and we confirm they are free of corporate management locks, activation locks, and are functional as represented, we process your data destruction, issue your serialized Certificates of Destruction, and pay you based on the agreed quote. There is no waiting, no per-unit uncertainty, and no surprises just a clean transaction with full documentation.",
+    },
+    {
+      heading: "Option 2 - Remarketing (Maximum Return)",
+      body: "For organizations that are less time-sensitive and want to maximize the return on their retired assets, Integritrade can remarket your devices through our established resale channels. Because we handle refurbishment, grading, and sales directly, your organization captures a higher overall return compared to the direct buyback rate. This option does take longer as recovery is tied to individual device sales, but for larger or higher-value batches it can meaningfully increase the total amount recovered.",
+    },
+    {
+      heading: "5. Final Reporting",
+      body: "You receive a complete recovery report detailing every asset, its disposition outcome, the data destruction method applied, and the financial recovery summary. This documentation is audit-ready and built to satisfy the most demanding compliance requirements.",
+    },
+    {
+      heading: "6. Ongoing Access Through TraceTech",
+      body: "Every Integritrade client receives complimentary access to TraceTech, our proprietary asset tracking platform included at no additional cost. Through TraceTech, your {{CITY}} organization can monitor exactly what stage of processing each device is in, download your Certificates of Destruction and erasure documentation on demand, and manage or schedule future pickups - all from a single dashboard. There is no guessing, no waiting on email threads, and no chasing down paperwork. Your compliance records and project status are available whenever you need them.",
+    },
+    {
+      heading: "",
+      body: "Our operations are backed by a 30,000 square foot processing facility equipped with 24/7 video monitoring and controlled processing areas staffed exclusively by background-checked personnel. This is not a small-scale operation - it is the infrastructure required to handle large enterprise decommissions, multi-site IT refreshes, and data center teardowns with the speed, security, and documentation accuracy that {{CITY}} organizations demand.",
+    },
+    {
+      heading:
+        "Why Data Security Cannot Be an Afterthought When Selling IT Equipment",
+      body: `Many businesses in {{CITY}} make the mistake of selling retired IT equipment through general resellers, online marketplaces, or uncertified buyback vendors without ensuring that data has been properly destroyed first. This is one of the most common and costly data security oversights in corporate IT management.
 
-While enterprise grade logical data sanitization is an excellent choice for preserving equipment lifecycle value without compromising security, physical hard drive shredding delivers complete, irreversible destruction. For our remarketing clients, we utilize NIST 800 88 compliant wiping software to purge all data while keeping the hardware intact for resale. If a drive fails the software wipe or if your internal policy dictates it, the drive is removed and physically shredded. We provide a serialized Certificate of Destruction for every data bearing device we process, guaranteeing your intellectual property and customer data remain secure.`,
-    },
-    {
-      heading: "Our Step by Step Value Recovery Workflow",
-      bullets: [
-        "Inventory Audit and Valuation: We review your decommissioned asset manifest and provide a market valuation based on current secondary market demand for your specific hardware.",
-        "Secure Logistics and Pickup: Our background checked personnel arrive at your {{CITY}} facility to pack, palletize, and transport your equipment using GPS monitored vehicles.",
-        "Testing and Grading: Upon arrival at our facility, technicians boot and test every unit, grading them based on cosmetic condition and hardware functionality.",
-        "Data Sanitization: All storage media undergoes verified NIST 800-88 logical wiping. Any media that fails wiping is immediately sent for physical shredding.",
-        "Refurbishment and Resale: We perform minor repairs and cosmetic restoration to maximize the resale value of the hardware through our global buyer network.",
-        "Financial Settlement: Once the hardware is processed, we issue your financial return via an upfront buyout or a revenue split agreement, accompanied by complete audit ready reporting.",
-      ],
-    },
-    {
-      heading: "Industry Recognized Certifications for Your Protection",
-      body: `When you release your retired hardware for resale, you are also transferring the liability attached to it. Choosing an uncertified vendor to buy your old equipment exposes your organization to downstream data breaches and environmental fines. That is why {{CITY}} organizations must demand rigorous third party certifications from their IT asset value recovery partner.
+A laptop that still contains cached credentials, a server with an unwiped RAID array, or a smartphone with a logged-in corporate email account can expose your organization to serious legal and financial liability. Under regulations such as HIPAA, FACTA, and various state-level data privacy laws, the responsibility for data destruction does not transfer when you hand a device to a third party - it remains with your organization until destruction is documented and verified.
 
-Integritrade operates under a comprehensive suite of global standards, ensuring your enterprise hardware is processed legally, securely, and sustainably:`,
+This is precisely why working with a certified partner matters. Integritrade holds R2v3 certification, the highest global standard for electronics reuse and recycling, which is formally recognized by the U.S. Environmental Protection Agency (EPA) as the benchmark for responsible data destruction and downstream accountability. Our ISO 27001 certification - the internationally recognized standard for information security management - further guarantees that your data is handled under a rigorously audited security framework throughout every stage of the buyback process.`,
+    },
+    {
+      heading:
+        "The Integritrade Advantage: Certifications That Protect Your Business",
+      body: "When you sell IT equipment in {{CITY}} through Integritrade, you are not just getting a check. You are getting a fully documented, independently audited disposition process backed by the industry's most comprehensive certification stack:",
       bullets: [
-        "R2v3 Certified: The premier global standard for electronics repair and recycling, guaranteeing downstream accountability and responsible handling for any hardware that cannot be remarketed.",
-        "ISO 27001 (Information Security Management): A globally recognized framework ensuring your proprietary data is protected throughout the entire value recovery and testing process.",
-        "ISO 14001 (Environmental Management): Demonstrating our strict commitment to sustainable operations and zero landfill policies.",
-        "ISO 45001 (Occupational Health and Safety): Guaranteeing secure and safe facility operations for our background checked personnel.",
-        "ISO 9001 (Quality Management): Ensuring consistent service delivery, accurate hardware grading, and audit ready financial reporting.",
+        "R2v3 Certified - EPA-recognized standard ensuring responsible recycling, data security, and downstream accountability across the entire supply chain.",
+        "ISO 27001 - Information security management certification guaranteeing your data is protected at every step.",
+        "ISO 14001 - Environmental management certification ensuring sustainable, compliant processing of all materials.",
+        "ISO 9001 - Quality management certification ensuring consistent, reliable service and reporting.",
+        "ISO 45001 - Occupational health and safety certification ensuring safe facility operations",
       ],
     },
     {
-      heading: "Frequently Asked Questions About IT Hardware Buyback in {{CITY}}",
-      qna: [
-        {
-          question: "How much is our old corporate IT equipment worth?",
-          answer:
-            "Hardware value depends heavily on the device age, brand, specifications, and cosmetic condition. Equipment that is three years old or newer typically retains the best resale value. Contact our {{CITY}} team with your equipment manifest for a customized market valuation.",
-        },
-        {
-          question: "What happens to our data when equipment is resold?",
-          answer:
-            "Security is our highest priority. Every data bearing device undergoes certified NIST 800-88 logical data sanitization, which overwrites every sector of the drive. You receive a serialized Certificate of Destruction proving the data was permanently erased before the hardware was remarketed.",
-        },
-        {
-          question: "Do you buy back broken or non-functioning hardware?",
-          answer:
-            "We primarily offer financial returns for functional, reusable enterprise hardware. However, if your equipment is broken or too old for resale, we will securely process it through our certified electronic waste recycling channels to ensure environmentally responsible disposal.",
-        },
-        {
-          question: "How does the financial settlement work?",
-          answer:
-            "We offer flexible financial structures tailored to your corporate preferences. We can provide a direct upfront buyout based on our initial audit, or we can establish a revenue split model where you receive a percentage of the final sale price once the assets are remarketed.",
-        },
-        {
-          question: "Who handles the packing and shipping from our {{CITY}} office?",
-          answer:
-            "Integritrade manages the entire logistics process. Our local team will arrive at your {{CITY}} location with the necessary packing materials, secure bins, and pallets to safely load and transport your hardware, requiring zero heavy lifting from your internal IT staff.",
-        },
-      ],
+      heading: "",
+      body: "No uncertified local buyback vendor, general reseller, or online marketplace can offer this level of verified accountability. When your organization's compliance, reputation, and financial recovery are all on the line, certifications are not a bonus - they are the baseline.",
     },
     {
-      heading: "Conclusion",
-      body: `Your retired technology still holds significant financial value. By partnering with Integritrade for IT equipment remarketing and hardware buybacks, your organization can securely liquidate outdated assets, fund future technology investments, and maintain absolute data security.
+      heading: "Protecting Your Bottom Line: Value Recovery Done Right",
+      body: `The financial case for a certified IT equipment buyback program is straightforward. Equipment that sits in a storage room depreciates every month it goes unsold. Technology markets move quickly, and a server or fleet of laptops that is worth a meaningful sum today may be worth significantly less in six months. Acting promptly on a buyback evaluation ensures your {{CITY}} organization captures the maximum available recovery value before market conditions shift.
 
-Stop letting depreciating hardware take up space in your {{CITY}} facility. Contact our IT asset value recovery specialists today for a free equipment valuation and discover how much capital you can reclaim from your retired enterprise technology.`,
+At the same time, the cost of a data breach - legal fees, regulatory fines, reputational damage, and customer notification requirements - can dwarf the value of any equipment sale many times over. Integritrade's buyback program is specifically designed so that financial recovery and data security are never in conflict. You get both: maximum value from your retired assets and absolute certainty that your data has been destroyed to the highest certified standard.`,
+    },
+    {
+      heading: "Who We Serve in {{CITY}}",
+      body: "Integritrade works with organizations of all sizes across {{CITY}} and throughout California, including:",
+      bullets: [
+        "Corporate and Enterprise teams managing large-scale IT refreshes and data center decommissions",
+        "Healthcare organizations requiring HIPAA-compliant data destruction documentation",
+        "Banking and financial services firms with strict data governance and audit requirements",
+        "Educational institutions retiring student and faculty devices at scale",
+        "Government and public sector agencies requiring documented chain-of-custody and certified destruction",
+        "Legal and professional services firms handling sensitive client data",
+      ],
+    },
+    {
+      heading: "",
+      body: "Whether you have 50 devices or 5,000, Integritrade has the capacity, certifications, and logistics infrastructure to manage your {{CITY}} IT equipment buyback from first contact to final report.",
+    },
+    {
+      heading: "Frequently Asked Questions",
+      body: "",
+    },
+    {
+      heading:
+        "What types of IT equipment does Integritrade buy back in {{CITY}}?",
+      body: "Integritrade purchases a wide range of IT assets including laptops, desktops, servers, smartphones, tablets, GPUs, networking equipment, storage arrays, and some higher-end monitors. As a general guideline, devices that are approximately four years old or newer are the strongest candidates for direct value recovery. Older devices are evaluated for refurbishment, donation, or lifecycle extension before materials recovery is considered.",
+    },
+    {
+      heading: "How much will I get for my IT equipment?",
+      body: "The value of your equipment depends on the make, model, age, condition, quantity, and current market demand. Integritrade provides a preliminary assessment within 24 hours of receiving your asset list and a buyback quote before any devices are picked up. There are no surprises after the fact.",
+    },
+    {
+      heading:
+        "Is there a minimum quantity to use Integritrade's buyback or ITAD services?",
+      body: "There is no strict minimum to request a quote or evaluation. However, for organizations with 50 or more devices, Integritrade waives pickup fees entirely and includes data destruction and Certificates of Destruction at no additional charge, making the project net positive or better for qualifying batches.",
+    },
+    {
+      heading:
+        "How does Integritrade protect my data when buying back IT equipment?",
+      body: "Every data-bearing device is processed through certified data destruction before any evaluation for resale or remarketing. Integritrade performs NIST 800-88 compliant erasure or physical destruction depending on the device type, and issues serialized Certificates of Destruction for every asset. We never remarket a device without verified, documented data sanitization.",
+    },
+    {
+      heading:
+        "What is the difference between the Direct Buyback and Remarketing options?",
+      body: "With the Direct Buyback option, Integritrade provides a firm upfront quote based on your asset list. Once devices are received and confirmed to be free of locks and functional as represented, we issue your destruction certificates and pay you immediately based on the agreed amount. With the Remarketing option, Integritrade handles refurbishment, grading, and resale through its own channels, which typically yields a higher total return but takes longer since recovery is tied to individual device sales.",
+    },
+    {
+      heading: "What is TraceTech and is it included?",
+      body: `TraceTech is Integritrade's proprietary asset tracking and management platform - and yes, it is included for every client at no additional cost. Developed in-house over several years to solve the transparency problems that have long plagued the ITAD industry, TraceTech is the most advanced asset tracking software available from any electronics recycling or ITAD provider in the market today.
+
+Most ITAD programs are a black box. You hand over your equipment, receive a certificate weeks later, and have no visibility into what actually happened in between. TraceTech was purpose-built to eliminate that problem entirely. Through a single dashboard, your team can see the real-time processing status of every device, download Certificates of Destruction and erasure documentation on demand, and schedule or manage future pickups without a single phone call or email thread.
+
+What truly sets TraceTech apart is its AI-integrated workflow engine, which is designed to minimize human touchpoints throughout the disposition process. In ITAD, every unnecessary hand that touches a device is a potential point of failure - a risk of data exposure, a gap in the chain of custody, or a documentation error. By automating the tracking, logging, and reporting functions that other companies handle manually, TraceTech dramatically reduces those risk points and delivers a level of process integrity that no competitor can replicate. Less human intervention means less risk. Less risk means your organization is protected. No other ITAD company in {{CITY}} or California offers anything close to this level of built-in transparency and AI-driven process control as a standard, included feature.`,
+    },
+    {
+      heading: "What happens to devices that are too old to resell?",
+      body: "Integritrade is a reuse-focused IT asset management company, not a scrap operation. Devices that fall outside the resale cutline are evaluated for donation to schools, nonprofits, and underserved communities before materials recovery is considered. Customers are never charged unnecessary recycling fees for older devices that take an alternative lifecycle path.",
+    },
+    {
+      heading:
+        "Is Integritrade certified to handle sensitive data destruction?",
+      body: "Yes. Integritrade holds R2v3 certification the EPA-recognized global standard for responsible electronics recycling and data destruction, as well as ISO 27001 for information security management, ISO 14001 for environmental management, ISO 9001 for quality management, and ISO 45001 for occupational health and safety. Every process is independently audited and fully documented.",
+    },
+    {
+      heading: "Does Integritrade serve businesses outside of {{CITY}}?",
+      body: "Yes. Integritrade serves businesses throughout California, including {{CITY}} and the surrounding region. We offer GPS-tracked pickup logistics, free site walkthroughs for larger decommissions, and California-wide coverage for enterprise and multi-site projects.",
+    },
+    {
+      heading: "How do I get started selling my IT equipment in {{CITY}}?",
+      body: "Simply contact Integritrade through our website to submit your asset list and request a free evaluation. Our team responds within 24 hours with a preliminary assessment and will walk you through the right service level for your project.",
+    },
+    {
+      heading: "Ready to Sell Your IT Equipment in {{CITY}}?",
+      body: "Find out what your retired technology is worth. Contact Integritrade today for a free asset evaluation, a no-obligation quote, and a fixed plan for secure pickup and value recovery from your {{CITY}} location. Our team responds within 24 hours and offers free site walkthroughs for larger decommissions. Turn your retired IT assets into recovered revenue - without compromising on data security or compliance.",
     },
   ],
 };
@@ -531,7 +633,9 @@ function fillCity(value, cityName) {
 
 /** Extract the first `field: "value"` occurrence inside a source slice. */
 function extractField(src, field) {
-  const re = new RegExp(`(?<![\\w])${field}:\\s*\\r?\\n?\\s*"((?:[^"\\\\]|\\\\.)*)"`);
+  const re = new RegExp(
+    `(?<![\\w])${field}:\\s*\\r?\\n?\\s*"((?:[^"\\\\]|\\\\.)*)"`,
+  );
   const m = src.match(re);
   return m ? m[1] : null;
 }
@@ -544,7 +648,8 @@ function extractField(src, field) {
 const CATEGORIES = [
   {
     template: HARD_DRIVE_SHREDDING,
-    match: (s) => s === "hard-drive-shredding" || s === "data-destruction-services",
+    match: (s) =>
+      s === "hard-drive-shredding" || s === "data-destruction-services",
   },
   {
     template: IT_ASSET_DISPOSITION,
@@ -558,7 +663,7 @@ const CATEGORIES = [
       s === "basic-electronics-recycling",
   },
   {
-    template: IT_EQUIPMENT_REMARKETING,
+    template: IT_EQUIPMENT_BUYBACK,
     match: (s) => s.startsWith("asset-recovery"),
   },
   {
@@ -586,9 +691,7 @@ function emitQuoted(str) {
 // Main
 // ─────────────────────────────────────────────────────────────────────────────
 
-const files = fs
-  .readdirSync(AREAS_DIR)
-  .filter((f) => f.endsWith("Data.ts"));
+const files = fs.readdirSync(AREAS_DIR).filter((f) => f.endsWith("Data.ts"));
 
 let generated = 0;
 const warnings = [];
@@ -627,14 +730,18 @@ for (const file of files) {
 
   // Existing service slugs in this city's file (skip the first — the area slug).
   // Key may be bare (hand-written files) or quoted (files this script generated).
-  const originalSlugs = [...servicesSrc.matchAll(/"?slug"?\s*:\s*"([^"]+)"/g)].map((m) => m[1]);
+  const originalSlugs = [
+    ...servicesSrc.matchAll(/"?slug"?\s*:\s*"([^"]+)"/g),
+  ].map((m) => m[1]);
 
   // Match each original slug to its article category, preserving city order
   const assigned = [];
   for (const orig of originalSlugs) {
     const cat = CATEGORIES.find((c) => c.match(orig));
     if (!cat) {
-      warnings.push(`${file}: unrecognized service slug "${orig}" — DROPPED, review manually`);
+      warnings.push(
+        `${file}: unrecognized service slug "${orig}" — DROPPED, review manually`,
+      );
       continue;
     }
     if (assigned.some((a) => a.cat === cat)) {
@@ -664,12 +771,18 @@ for (const file of files) {
   const headerFields = [
     `  slug: ${emitQuoted(area.slug)},`,
     `  name: ${emitQuoted(area.name)},`,
-    area.tagline !== null ? `  tagline: ${emitQuoted(JSON.parse(`"${area.tagline}"`))},` : null,
-    area.metaTitle !== null ? `  metaTitle: ${emitQuoted(JSON.parse(`"${area.metaTitle}"`))},` : null,
+    area.tagline !== null
+      ? `  tagline: ${emitQuoted(JSON.parse(`"${area.tagline}"`))},`
+      : null,
+    area.metaTitle !== null
+      ? `  metaTitle: ${emitQuoted(JSON.parse(`"${area.metaTitle}"`))},`
+      : null,
     area.metaDescription !== null
       ? `  metaDescription: ${emitQuoted(JSON.parse(`"${area.metaDescription}"`))},`
       : null,
-    area.intro !== null ? `  intro: ${emitQuoted(JSON.parse(`"${area.intro}"`))},` : null,
+    area.intro !== null
+      ? `  intro: ${emitQuoted(JSON.parse(`"${area.intro}"`))},`
+      : null,
   ]
     .filter(Boolean)
     .join("\n");
@@ -681,6 +794,7 @@ import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpe
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg";
 import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
+import itBuyback from "@/public/services/serviceArea/itBuyback.jpg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 
 export const ${exportName}: ServiceArea = {

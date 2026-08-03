@@ -5,6 +5,7 @@ import Image from "next/image";
 import ServicingAreaMenu from "../service-area/ServicingAreaMenu";
 import integritradeLogo from "@/public/logo/integritrade-logo.svg"
 import { usePathname } from "next/navigation";
+import SocialAddress from "../SocialAddress";
 
 const footerServices = [
   { 
@@ -235,15 +236,15 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[11px] text-white/40 tracking-widest uppercase">
+          <p className="text-[11px] text-white/80 tracking-widest uppercase">
             &copy; {new Date().getFullYear()} Integritrade LLC. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            <div className="w-px h-3 bg-white/30 hidden md:block" />
-            <span className="text-[11px] text-white/25 tracking-widest uppercase">
+            <span className="text-[11px] text-white/80 tracking-widest uppercase">
               Pickup &nbsp;·&nbsp; Tracking &nbsp;·&nbsp; Data Destruction &nbsp;·&nbsp; Reporting
             </span>
           </div>
+          <SocialAddress />
         </div>
       </div>
 

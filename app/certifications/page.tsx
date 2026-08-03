@@ -90,7 +90,7 @@ export default function CertificationsPage() {
       "ISO 14001 Environmental Management",
       "ISO 27001 Information Security Management",
       "ISO 45001 Occupational Health & Safety",
-      " Certified ITAD",
+      "Certified ITAD",
     ],
     description:
       "View Integritrade LLC certifications including R2v3 and ISO 27001 proving our commitment to secure, compliant and sustainable IT asset management",
@@ -104,8 +104,23 @@ export default function CertificationsPage() {
           <PageHeader
               eyebrow="Trusted & Compliant"
               title="Certifications & Compliance"
-              description="Certified IT asset disposition (ITAD) and e-waste recycling solutions that ensure security, compliance, and environmental responsibility for businesses of all sizes."
+               description="Any e-waste vendor can claim to be certified but who actually audits them? At Integritrade, our operations undergo rigorous annual audits by accredited third-party certification bodies to maintain R2v3, ISO 27001, ISO 9001, ISO 14001, and ISO 45001 standards."
           />
+          {/* Certification trust statement */}
+            <div className="mx-auto mt-3 max-w-4xl text-center">
+              <p className="text-base leading-relaxed text-stone-700 dark:text-slate-300">
+                We don’t rely on self-attestation or unverified promises. Backed by a
+                spotless track record and zero data breaches in our history, Integritrade
+                provides enterprise-grade IT Asset Disposition (ITAD) and secure e-waste
+                recycling across California, including frequent service routes in San
+                Francisco / the Bay Area, Los Angeles, San Diego, and surrounding states.
+              </p>
+
+              <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300">
+                When your data security, brand reputation, and ESG commitments are on the
+                line, we deliver defensible, audit-ready proof not just claims.
+              </p>
+            </div>
         </ScrollLoader>
 
         {/* Certification cards stack */}
