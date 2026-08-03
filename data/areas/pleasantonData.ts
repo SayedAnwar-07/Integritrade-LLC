@@ -7,6 +7,7 @@ import electronicRecyclingWarehouse from "@/public/services/serviceArea/electron
 import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
 import itBuyback from "@/public/services/serviceArea/itBuyback.jpg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
+import dataCenterDecommissioning from "@/public/services/serviceArea/dataCenterDecommissioning.png";
 
 export const pleasantonData: ServiceArea = {
   slug: "pleasanton",
@@ -507,6 +508,163 @@ export const pleasantonData: ServiceArea = {
         {
           "heading": "Secure Your Retired Technology Today",
           "body": "Do not leave your enterprise data vulnerable when decommissioning hardware. Partner with Integritrade for secure IT asset disposition and receive the ironclad Certificates of Destruction your compliance officers require. Contact our Pleasanton team today to schedule a secure pickup, request transport containers, or discuss your customized data destruction requirements."
+        }
+      ]
+    },
+    {
+      "slug": "data-center-decommissioning",
+      "title": "Data Center Decommissioning in Pleasanton: Secure, Certified Cleanouts for Every Scale",
+      "shortDescription": "End-to-end data center decommissioning and cleanout services in Pleasanton - certified data destruction, unbroken chain of custody, and asset value recovery, from a single rack to a full facility teardown.",
+      "icon": "Server",
+      "metaTitle": "Data Center Decommissioning in Pleasanton | Secure, Certified Cleanouts | Integritrade",
+      "metaDescription": "Certified data center decommissioning in Pleasanton - secure data destruction, full chain-of-custody documentation, and asset value recovery for every scale, from a single rack to a full facility teardown.",
+      "ctaText": "Get a Free Quote",
+      "image": dataCenterDecommissioning,
+      "heroHeading": "Data Center Decommissioning in Pleasanton: Secure, Certified Cleanouts for Every Scale",
+      "heroSubheading": "A data center decommission is one of the most operationally complex and data-sensitive projects an organization can undertake. Whether you are clearing a single cage in a colocation facility, retiring a dedicated server room, or decommissioning an entire multi-floor enterprise data center in Pleasanton, the stakes are high on every front - data security, regulatory compliance, asset recovery, logistics, and timeline.",
+      "details": [
+        {
+          "heading": "",
+          "body": "Most organizations only do this a handful of times. We at Integritrade provide end-to-end data center decommissioning and cleanout services for businesses, healthcare systems, financial institutions, government agencies, colocation facilities, and enterprises throughout Pleasanton and all of California - from a single rack to a full facility teardown.\n\nThis guide covers what a proper data center decommission involves, what to look for in a decommissioning partner, and how Integritrade manages every phase of the process from the first site walkthrough to the final compliance report."
+        },
+        {
+          "heading": "What Is Data Center Decommissioning?",
+          "body": "Data center decommissioning is the structured process of retiring, removing, and disposing of IT infrastructure from a data center environment. This includes servers, storage arrays, networking equipment, rack enclosures, cabling, power distribution units (PDUs), uninterruptible power supplies (UPS), and in some cases physical infrastructure such as raised flooring and cooling systems.\n\nA decommission is not the same as a standard IT pickup. The environment is more complex, the equipment is heavier and more valuable, the data security requirements are more demanding, and the documentation expectations are more rigorous. A data center that is being retired or consolidated contains some of the most sensitive data an organization holds - and that data lives across dozens or hundreds of individual storage devices, many of which are not immediately obvious.\n\nDone correctly, a data center decommission recovers significant financial value from the equipment being retired, produces a complete and auditable chain-of-custody record, and leaves the facility clean, documented, and ready for its next use. Done incorrectly, it creates data liability, missed recovery value, and compliance gaps that can surface months or years later."
+        },
+        {
+          "heading": "Who Needs Data Center Decommissioning Services in Pleasanton?",
+          "body": "Data center cleanouts are not limited to large enterprises. Integritrade handles decommissioning projects of every scale for organizations across Pleasanton and California, including:",
+          "bullets": [
+            "Enterprise and corporate organizations consolidating data centers, migrating to cloud infrastructure, or refreshing aging on-premise environments",
+            "Colocation facilities clearing out vacated cages, suites, or full floors following tenant departures or facility upgrades",
+            "Healthcare systems retiring on-premise server infrastructure subject to HIPAA data destruction requirements",
+            "Financial institutions decommissioning trading floors, branch server rooms, or legacy data centers under GLBA and SOC 2 compliance frameworks",
+            "Government agencies and public sector organizations with strict chain-of-custody and certified destruction requirements",
+            "Defense contractors handling classified or sensitive infrastructure with witnessed destruction requirements",
+            "Educational institutions retiring campus data centers or consolidating distributed server infrastructure",
+            "Law firms and professional services organizations managing sensitive client data at end of infrastructure life",
+            "Technology companies and startups downsizing physical infrastructure as cloud adoption increases"
+          ]
+        },
+        {
+          "heading": "",
+          "body": "Whether your Pleasanton data center is a 10-rack server room or a 10,000 square foot facility, Integritrade has the equipment, personnel, and certified processes to manage the full decommission."
+        },
+        {
+          "heading": "The Integritrade Data Center Decommissioning Process",
+          "body": "Every data center decommission Integritrade manages follows a structured, fully documented process from initial assessment through final reporting."
+        },
+        {
+          "heading": "Phase 1 - Site Assessment and Project Scoping",
+          "body": "Before any work begins, our team conducts a free assessment of your Pleasanton data center. We assess the full scope of equipment to be removed, identify data-bearing assets requiring certified destruction, evaluate logistics requirements including loading dock access, elevator constraints, raised flooring, and power considerations, and develop a fixed project plan with a clear timeline and deliverables. No guesswork, no surprises."
+        },
+        {
+          "heading": "Phase 2 - Asset Inventory and Tagging",
+          "body": "Every asset in the decommission scope is inventoried and tagged with an Integritrade tracking identifier before it is moved. This creates the foundation of the chain-of-custody record and ensures that every piece of equipment is accounted for from the moment it leaves its rack. Servers, storage arrays, networking equipment, and all other data-bearing devices are logged individually with make, model, and serial number."
+        },
+        {
+          "heading": "Phase 3 - Data Destruction",
+          "body": "Data destruction is the most critical phase of any data center decommission, and it is where the choice of provider matters most. Integritrade offers multiple destruction approaches depending on your security requirements, timeline, and project logistics:"
+        },
+        {
+          "heading": "Transport to Integritrade's Fresno Facility (Preferred)",
+          "body": "For most data center decommissions, equipment is transported via GPS-tracked vehicles to Integritrade's dedicated 30,000 square foot ITAD facility in Fresno, where data destruction is performed under controlled conditions with 24/7 video monitoring. This approach allows for the most thorough and documented destruction process, including NIST 800-88 compliant erasure with Certificates of Erasure, physical shredding to 2mm for SSDs, and degaussing followed by shredding for HDDs. Power constraints at many data center and colocation facilities make on-site shredding impractical, and transport to our facility ensures the full destruction process can be executed without those limitations."
+        },
+        {
+          "heading": "On-Site Data Destruction",
+          "body": "For organizations that require destruction to occur at the Pleasanton data center location - whether for security policy reasons, contractual requirements, or timeline constraints - Integritrade provides on-site destruction services including degaussing, manual crushing, and hard drive destruction at your facility. For equipment requiring full shredding, on-site crushing can be performed to render drives inoperable before transport to our Fresno facility for final shredding and documentation."
+        },
+        {
+          "heading": "Witnessed and Videotaped Destruction",
+          "body": "For high-security decommissions, Integritrade offers witnessed destruction with a client representative present, videotaped destruction with secure recording delivery, and live video destruction where your team watches the process in real time. Every destruction event is documented with serialized Certificates of Destruction or Certificates of Erasure for every individual asset."
+        },
+        {
+          "heading": "Phase 4 - Equipment Removal and Transport",
+          "body": "Once data destruction is complete or assets are staged for transport, Integritrade manages all physical removal from the data center floor. Our team handles rack deinstallation, cable management, equipment staging, palletization, and GPS-tracked transport to our facility. We work around your facility's access requirements, loading dock schedules, and operational constraints to minimize disruption to any remaining live infrastructure."
+        },
+        {
+          "heading": "Phase 5 - Asset Evaluation and Value Recovery",
+          "body": "At our Fresno facility, all equipment is evaluated for refurbishment and remarketing. Servers, networking equipment, storage arrays, and other data center assets often carry significant secondary market value - particularly for equipment that is four years old or newer. Integritrade offers two recovery models:",
+          "bullets": [
+            "Direct Buyback - A firm upfront quote based on your asset inventory, with payment issued after devices are received and verified. Fast, certain, and fully documented.",
+            "Remarketing - Integritrade handles refurbishment, grading, and resale through its own channels for organizations that want to maximize total recovery value over a longer timeline."
+          ]
+        },
+        {
+          "heading": "",
+          "body": "For qualifying decommissions, the value recovered from remarketing and buyback offsets the cost of handling lower-value and end-of-life equipment - making the overall project free or revenue-generating for your organization."
+        },
+        {
+          "heading": "Phase 6 - Final Reporting and Documentation",
+          "body": "Every Integritrade data center decommission concludes with a complete project documentation package including chain-of-custody records for every asset, serialized Certificates of Destruction and Certificates of Erasure, asset recovery and remarketing reports, weight tickets for recycled materials, and any additional documentation required by your compliance framework. All documentation is available immediately through TraceTech, Integritrade's AI-integrated client portal."
+        },
+        {
+          "heading": "TraceTech: Real-Time Visibility Across Your Entire Decommission",
+          "body": "A data center decommission can involve hundreds or thousands of individual assets moving through multiple phases of processing simultaneously. Keeping track of all of it - and being able to demonstrate to auditors that every asset was handled correctly - is a documentation challenge that most ITAD providers handle with spreadsheets and emailed PDFs.\n\nIntegritrade built TraceTech to solve this problem. TraceTech is our proprietary AI-integrated asset tracking platform, developed in-house over several years and included at no additional cost for every client. Every asset tagged during your Pleasanton data center decommission is tracked through TraceTech from inventory through final disposition. Your team can log in at any time and see exactly where every device is in the process - staged for erasure, in the destruction queue, awaiting grading, or completed and documented.\n\nWhen certificates are ready, they are available for immediate download directly from TraceTech. No waiting, no chasing down paperwork, no generic batch certificates. Every certificate is serialized, tied to a specific asset's serial number, and generated by our processing systems.\n\nFor large data center decommissions with complex documentation requirements, TraceTech transforms what is typically a painful post-project reconciliation process into a real-time, on-demand compliance record."
+        },
+        {
+          "heading": "Why Certification Matters More in Data Center Decommissioning",
+          "body": "The data security stakes in a data center decommission are categorically higher than in a standard IT refresh. A single server in a data center may contain terabytes of data across multiple drives - customer records, financial transactions, healthcare information, intellectual property, or classified government data. The chain of custody for that server, from the moment it is powered down to the moment its drives are verified as destroyed, must be unbroken and documented.\n\nIntegritrade holds the industry's most comprehensive certification stack for this work:",
+          "bullets": [
+            "R2v3 Certified - The EPA-recognized global standard for responsible electronics recycling, requiring certified downstream management of every asset and every material",
+            "ISO 27001 - International information security management standard, ensuring your data is protected under a rigorously audited framework throughout the entire decommission process",
+            "ISO 14001 - Environmental management certification ensuring sustainable, compliant processing of all materials including hazardous components",
+            "ISO 9001 - Quality management certification ensuring consistent, reliable service and documentation across every project",
+            "ISO 45001 - Occupational health and safety certification ensuring safe operations during complex physical decommissioning work"
+          ]
+        },
+        {
+          "heading": "",
+          "body": "Every certification is independently audited. Every process is documented. And every asset that passes through our 30,000 square foot facility is handled by background-checked personnel under 24/7 video monitoring."
+        },
+        {
+          "heading": "The In-House Destruction Advantage",
+          "body": "When evaluating data center decommissioning providers in Pleasanton, one of the most important questions to ask is whether data destruction is performed in-house or outsourced to a downstream vendor.\n\nMany ITAD providers do not own their own destruction equipment. They collect your assets, transport them to a third-party shredding facility, and issue a certificate based on that vendor's documentation. Your chain of custody is only as strong as that vendor's practices - and you have no direct visibility into what happens at that facility.\n\nIntegritrade performs data destruction in-house at our Fresno facility. When we issue a Certificate of Destruction, the destruction was performed at our facility, under our certified processes, documented by our systems, and verifiable through our chain-of-custody records. For large equipment requiring partner-facility shredding, we use witnessed destruction at certified partner facilities with full photo, weight, and witness documentation included in your project record."
+        },
+        {
+          "heading": "Serving Pleasanton and All of California",
+          "body": "Data center decommissions do not wait for convenient timing. Lease expirations, infrastructure consolidations, and cloud migrations happen on fixed schedules, and the decommission has to happen on time regardless of complexity. Integritrade provides California-wide coverage with GPS-tracked logistics, free site walkthroughs, and a rapid response commitment for new project inquiries.\n\nWhether your data center is in San Francisco, San Jose, Oakland, or Palo Alto in the Bay Area - in Los Angeles, Irvine, Anaheim, or Long Beach in Southern California - in San Diego, Chula Vista, or Escondido - in Sacramento, Elk Grove, or Roseville - or in Fresno, Bakersfield, Stockton, or Modesto in the Central Valley - Integritrade comes to you with a fixed plan, a certified process, and a documentation package that holds up under any audit."
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "qna": [
+            {
+              "question": "What is data center decommissioning?",
+              "answer": "Data center decommissioning is the structured process of retiring, removing, and securely disposing of IT infrastructure from a data center environment. It includes servers, storage arrays, networking equipment, rack enclosures, cabling, power systems, and other hardware, along with certified data destruction and full chain-of-custody documentation for every asset."
+            },
+            {
+              "question": "How long does a data center decommission take?",
+              "answer": "Timeline depends on the scale and complexity of the project. A single server room or cage can typically be completed in one to two days. A full data center decommission may take several days to several weeks depending on asset volume, access requirements, and documentation scope. Integritrade provides a timeline as part of the project scoping process."
+            },
+            {
+              "question": "Does Integritrade perform data destruction on-site at the data center?",
+              "answer": "Yes. Integritrade offers on-site data destruction including degaussing, manual crushing, and hard drive destruction at your Pleasanton facility. For equipment requiring full shredding, on-site crushing renders drives inoperable before transport to our Fresno facility for final shredding and documentation. Transport to our facility is preferred for most projects due to power constraints that limit on-site shredding capability at many data center locations."
+            },
+            {
+              "question": "What documentation will I receive after the decommission?",
+              "answer": "Every Integritrade data center decommission produces a complete documentation package including serialized Certificates of Destruction and Certificates of Erasure for every data-bearing asset, chain-of-custody records, asset recovery and remarketing reports, and weight tickets for recycled materials. All documentation is available through TraceTech, our client portal, immediately upon completion."
+            },
+            {
+              "question": "Can Integritrade recover value from data center equipment?",
+              "answer": "Yes. Data center equipment - particularly servers, networking gear, and storage arrays that are four years old or newer - often carries significant secondary market value. Integritrade offers direct buyback and remarketing options, and for qualifying projects the value recovered offsets the cost of the full decommission, making the project free or revenue-generating for your organization."
+            },
+            {
+              "question": "Does Integritrade handle colocation facility decommissions?",
+              "answer": "Yes. Integritrade works with colocation tenants clearing vacated cages, suites, or floors, as well as with colocation facility operators managing tenant departures or facility upgrades. We coordinate directly with facility management on access requirements, loading dock scheduling, and any specific facility protocols."
+            },
+            {
+              "question": "What certifications does Integritrade hold for data center decommissioning?",
+              "answer": "Integritrade holds R2v3 certification, ISO 27001, ISO 14001, ISO 9001, and ISO 45001. R2v3 is recognized by the U.S. Environmental Protection Agency as the benchmark standard for responsible electronics recycling and data destruction. ISO 27001 specifically covers information security management throughout the disposition process."
+            },
+            {
+              "question": "How do I get started with a data center decommission in Pleasanton?",
+              "answer": "Contact Integritrade to schedule a free site walkthrough. Our team will assess the full scope of the project, identify data-bearing assets, evaluate logistics requirements, and provide a fixed project plan with a clear timeline and deliverables. We respond within 24 hours."
+            }
+          ]
+        },
+        {
+          "heading": "Ready to Decommission Your Pleasanton Data Center?",
+          "body": "Whether you are clearing a single server room or decommissioning an entire data center facility, Integritrade has the certifications, equipment, and experience to manage every phase of the project - securely, completely, and on your timeline.\n\nContact Integritrade today to schedule your free site walkthrough and get a fixed plan for your Pleasanton data center decommission. Our team typically responds within 24 hours."
         }
       ]
     }
