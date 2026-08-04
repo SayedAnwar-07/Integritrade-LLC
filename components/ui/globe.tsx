@@ -48,6 +48,12 @@ const [FRESNO_PHI, FRESNO_THETA] = locationToAngles(
   FRESNO_HEADQUARTERS.location[1]
 )
 
+// Auto-rotation is a gentle wobble bounded to the North America region
+// (centered on Fresno HQ) instead of a full 360° spin, so the view stays on
+// the service area rather than rotating around the whole planet.
+const NA_WOBBLE_AMPLITUDE = 0.3 // radians (~17°) of sway to each side of Fresno
+const NA_WOBBLE_SPEED = 0.004 // radians per frame (~26s full back-and-forth)
+
 const SERVICES: Service[] = [
   {
     image: R2v3,
@@ -165,6 +171,7 @@ export function ItadGlobe({ className }: { className?: string }) {
   const pointerInteracting = useRef<number | null>(null)
   const pointerMovement = useRef(0)
   const r = useRef(0)
+  const wobbleT = useRef(0)
   const isDark = useIsDark()
 
   useEffect(() => {
@@ -185,7 +192,11 @@ export function ItadGlobe({ className }: { className?: string }) {
     let rafId = 0
     const tick = () => {
       if (pointerInteracting.current === null) {
-        phi.current += 0.003
+        // Gentle back-and-forth sway bounded to North America (centered on
+        // Fresno), instead of an unbounded full-globe spin.
+        wobbleT.current += NA_WOBBLE_SPEED
+        phi.current =
+          FRESNO_PHI + NA_WOBBLE_AMPLITUDE * Math.sin(wobbleT.current)
       }
       globe.update({
         phi: phi.current + r.current,

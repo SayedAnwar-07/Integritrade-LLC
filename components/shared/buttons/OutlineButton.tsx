@@ -76,7 +76,7 @@ export default function OutlineButton({
           href={href}
           target={external ? "_blank" : undefined}
           rel={external ? "noopener noreferrer" : undefined}
-          className="inline-flex items-center justify-between w-full lg:w-auto lg:justify-center gap-2" // inline-flex items-center gap-2
+          className="inline-flex items-center justify-center w-full lg:w-auto gap-2" // inline-flex items-center gap-2
         >
           {content}
         </Link>
@@ -89,7 +89,7 @@ export default function OutlineButton({
       type={type}
       onClick={onClick}
       disabled={isDisabled}
-      className={cn(classes, "inline-flex items-center justify-between w-full lg:w-auto lg:justify-center gap-2")}
+      className={cn(classes, "inline-flex items-center justify-center w-full lg:w-auto gap-2")}
       data-testid={testId}
     >
       {content}

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { ArrowUpRight } from 'lucide-react'
 import { servicesData } from '@/data/servicesData'
 import ScrollLoader from '../shared/ScrollLoader'
@@ -72,14 +72,15 @@ type ServiceItem = (typeof servicesData)[number]
 function ServiceTierArticle({
   service,
   idx,
+  articleRef,
 }: {
   service: ServiceItem
   idx: number
+  articleRef?: (el: HTMLElement | null) => void
 }) {
   const [expanded, setExpanded] = useState(false)
   const sl = service.serviceLevel!
   const theme = themeConfig[service.slug]
-  const isEven = idx % 2 === 0
 
   const primaryRow = { label: 'Best For', value: sl.bestFor }
   const secondaryRows = [
@@ -93,14 +94,19 @@ function ServiceTierArticle({
     .join(' ')
 
   return (
-    <article className="grid lg:grid-cols-12 gap-y-10 lg:gap-x-12 py-20 items-start">
+    <article
+      ref={articleRef}
+      id={service.slug}
+      data-idx={idx}
+      className="scroll-mt-28 grid lg:grid-cols-12 gap-y-10 lg:gap-x-12 py-20 items-start"
+    >
       {/* ─── IMAGE PANEL ───────────────────────────────── */}
       <div
         className={[
           'lg:col-span-5 relative min-h-[320px] lg:min-h-[520px] overflow-hidden rounded-md',
           theme?.accentLight,
           theme?.accentDark,
-          isEven ? 'lg:order-1' : 'lg:order-2',
+          'lg:order-2',
         ]
           .filter(Boolean)
           .join(' ')}
@@ -121,7 +127,7 @@ function ServiceTierArticle({
       <div
         className={[
           'lg:col-span-7',
-          isEven ? 'lg:order-2' : 'lg:order-1',
+          'lg:order-1',
         ].join(' ')}
       >
         <h3 className="font-serif text-2xl md:text-3xl lg:text-4xl font-semibold text-gray-900 dark:text-white tracking-tight leading-[1.15] mb-8">
@@ -220,14 +226,105 @@ function ServiceTierArticle({
 ────────────────────────────────────────────────────────────────────────── */
 export default function ServicesShowcase() {
   const tiers = servicesData.filter(s => s.serviceLevel)
+  const [activeIdx, setActiveIdx] = useState(0)
+  const articleRefs = useRef<Array<HTMLElement | null>>([])
+
+  // Scroll-spy: highlight whichever tier is currently in the middle of the viewport
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        const visible = entries
+          .filter(e => e.isIntersecting)
+          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+        if (visible.length > 0) {
+          const idx = Number((visible[0].target as HTMLElement).dataset.idx)
+          if (!Number.isNaN(idx)) setActiveIdx(idx)
+        }
+      },
+      { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+    )
+    articleRefs.current.forEach(el => el && observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
+  const scrollTo = (idx: number) => {
+    articleRefs.current[idx]?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   return (
     <section className="bg-secondary dark:bg-dark transition-colors duration-300">
-      <div className="max-w-7xl mx-auto mt-12">
-        <div>
+      <div className="mx-auto mt-12 max-w-7xl lg:grid lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-12">
+        {/* Vertical scroll-spy rail — sticky on the left, desktop only */}
+        <aside className="hidden lg:block">
+          <div className="sticky top-28">
+            <p className="mb-6 font-mono text-[10px] uppercase tracking-[0.22em] text-gray-400 dark:text-gray-500">
+              Service Levels
+            </p>
+            <ol className="relative">
+              {/* Connecting line, centered on the dots (12px from left) */}
+              <div className="absolute left-3 top-3 bottom-3 w-px -translate-x-1/2 bg-gray-200 dark:bg-gray-800" />
+              {/* Progress fill up to the active step */}
+              <div
+                className="absolute left-3 top-3 w-px -translate-x-1/2 bg-primary transition-all duration-500 ease-out"
+                style={{
+                  height:
+                    tiers.length > 1
+                      ? `${(activeIdx / (tiers.length - 1)) * 100}%`
+                      : '0%',
+                }}
+              />
+              {tiers.map((t, i) => {
+                const active = i === activeIdx
+                const done = i < activeIdx
+                return (
+                  <li key={t.slug} className="mb-9 last:mb-0">
+                    <button
+                      type="button"
+                      onClick={() => scrollTo(i)}
+                      aria-current={active ? 'true' : undefined}
+                      className="group flex items-center gap-3 text-left"
+                    >
+                      <span
+                        className={[
+                          'relative z-10 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 text-[11px] font-bold transition-colors',
+                          active
+                            ? 'border-primary bg-primary text-white'
+                            : done
+                              ? 'border-primary bg-primary text-white'
+                              : 'border-gray-300 bg-secondary text-gray-400 dark:border-gray-700 dark:bg-dark',
+                        ].join(' ')}
+                      >
+                        {i + 1}
+                      </span>
+                      <span
+                        className={[
+                          'text-[13px] font-semibold leading-snug transition-colors',
+                          active
+                            ? 'text-gray-900 dark:text-white'
+                            : 'text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-gray-200',
+                        ].join(' ')}
+                      >
+                        {t.serviceLevel!.label}
+                      </span>
+                    </button>
+                  </li>
+                )
+              })}
+            </ol>
+          </div>
+        </aside>
+
+        {/* Tiers */}
+        <div className="min-w-0">
           {tiers.map((service, idx) => (
             <ScrollLoader key={service.slug} delay={idx * 0.05}>
-              <ServiceTierArticle service={service} idx={idx} />
+              <ServiceTierArticle
+                service={service}
+                idx={idx}
+                articleRef={el => {
+                  articleRefs.current[idx] = el
+                }}
+              />
             </ScrollLoader>
           ))}
         </div>
