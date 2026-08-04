@@ -113,7 +113,7 @@ export default function ServicesPage() {
           <PageHeader
             eyebrow="Service Level Comparison"
             title="Choose the Right Service Level for Your Retired IT Assets"
-            description="Not every electronics recycling project needs the same level of handling. Some clients have already completed data destruction and simply need responsible e-waste recycling. Others need documented destruction for compliance. Many need a complete ITAD program that includes data sanitization, reporting, recycling, refurbishment, remarketing, and value recovery. Integritrade makes it easy to choose the right service level based on your risk, equipment age, documentation needs, and recovery goals."
+            description="Not every retired-electronics project needs the same handling. Integritrade offers ITAD service levels across California, from responsible e-waste recycling to certified data destruction to a full ITAD program with value recovery, so you can match your compliance, data security, and recovery goals to the right package."
           />
         </ScrollLoader>
 
@@ -129,22 +129,55 @@ export default function ServicesPage() {
           />
 
           <ScrollLoader>
-            <dl className="mt-12 border-t border-gray-200 dark:border-gray-800">
+            {/* Mobile: each row as a stacked card (no horizontal scroll) */}
+            <div className="mt-12 space-y-4 md:hidden">
               {decisionGuide.map((row, i) => (
                 <div
                   key={i}
-                  className="grid grid-cols-1 md:grid-cols-12 gap-x-10 gap-y-3 py-7 border-b border-gray-200 dark:border-gray-800"
-                >               
-                  <dd className="md:col-span-5 font-serif text-[15px] font-semibold text-gray-900 dark:text-white tracking-tight self-center">
-                    {row.recommendation}
-                  </dd>
-
-                   <dt className="md:col-span-7 text-[15px] leading-relaxed text-gray-700 dark:text-gray-300 custom-text-center">
+                  className="rounded-md border border-gray-200 p-5 dark:border-gray-800"
+                >
+                  <p className="text-[15px] leading-relaxed text-gray-700 dark:text-gray-300">
                     {row.scenario}
-                  </dt>
+                  </p>
+                  <div className="mt-4 border-t border-gray-200 pt-4 dark:border-gray-800">
+                    <span className="mb-1 block font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
+                      Recommended Service Level
+                    </span>
+                    <span className="font-serif text-[15px] font-semibold text-gray-900 dark:text-white">
+                      {row.recommendation}
+                    </span>
+                  </div>
                 </div>
               ))}
-            </dl>
+            </div>
+
+            {/* Desktop / tablet: full table */}
+            <div className="mt-12 hidden overflow-hidden rounded-md border border-gray-200 dark:border-gray-800 md:block">
+              <table className="w-full text-left">
+                <thead>
+                  <tr className="border-b border-gray-200 bg-gray-50 dark:border-gray-800 dark:bg-white/5">
+                    <th className="w-1/2 px-6 py-4 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
+                      Your Situation
+                    </th>
+                    <th className="px-6 py-4 font-mono text-[11px] font-semibold uppercase tracking-[0.18em] text-gray-500 dark:text-gray-400">
+                      Recommended Service Level
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 dark:divide-gray-800">
+                  {decisionGuide.map((row, i) => (
+                    <tr key={i} className="align-top">
+                      <td className="px-6 py-5 text-[15px] leading-relaxed text-gray-700 dark:text-gray-300">
+                        {row.scenario}
+                      </td>
+                      <td className="px-6 py-5 font-serif text-[15px] font-semibold tracking-tight text-gray-900 dark:text-white">
+                        {row.recommendation}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </ScrollLoader>
         </section>
 

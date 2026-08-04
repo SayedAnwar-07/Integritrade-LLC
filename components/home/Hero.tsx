@@ -60,22 +60,30 @@ export default function Hero() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7 lg:pt-4">
-              <h1  className="
-                  font-serif font-bold
-                  text-[2rem] leading-[1.2]
-                  sm:text-[2.75rem] sm:leading-[1.15]
+              <p className="mb-4 text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+                California ITAD &amp; ITAM Partner
+              </p>
+
+              <h1
+                className="
+                  font-serif font-bold [text-wrap:balance]
+                  text-[2rem] leading-[1.15]
+                  sm:text-[2.75rem] sm:leading-[1.1]
+                  lg:text-[3.25rem] lg:leading-[1.08]
+                  xl:text-[3.5rem]
                   tracking-[-0.02em]
                   text-black dark:text-white"
               >
-                California's trusted partner for ITAD and ITAM  - done with full accountability, every time.
+                California&apos;s trusted partner for ITAD and ITAM - done with full accountability, every time.
               </h1>
 
-              <div className="mt-8 max-w-2xl">
+              <div className="mt-6 max-w-2xl">
                 <p className="text-[15px] leading-7
                   sm:text-[17px] sm:leading-8
                   md:text-[18px] md:leading-8
                   lg:text-[19px] lg:leading-9
-                  text-gray-700 dark:text-gray-300
+                  text-gray-600 dark:text-gray-300
+                  [text-wrap:pretty]
                   custom-text-center"
                 >
                   Integritrade manages the complete lifecycle of your retired electronics - secure data destruction, responsible recycling, and certified asset disposition -  all backed by documentation you can stand behind. Whether you're retiring 10 devices or 10,000, we give you the chain-of-custody reporting and compliance confidence your organization demands.
@@ -83,14 +91,22 @@ export default function Hero() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4 mt-10">
-                <OutlineButton href="/services/" testId="button-learn-more">
+                <OutlineButton
+                  href="/services/"
+                  testId="button-learn-more"
+                  className="text-sm py-3 sm:flex-1 lg:flex-none"
+                >
                   See How It Works
                 </OutlineButton>
 
-                <PrimaryButton href="/service-book/" testId="button-get-quote">
+                <PrimaryButton
+                  href="/service-book/"
+                  testId="button-get-quote"
+                  className="text-sm py-3 sm:flex-1 lg:flex-none"
+                >
                   Get a Free Quote
                 </PrimaryButton>
-                
+
               </div>
             </div>
 

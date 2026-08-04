@@ -12,14 +12,14 @@ import BlogHomeSection from "@/components/home/BlogHomeSection"
 
 export const metadata: Metadata = {
   title:
-    "Certified ITAD, Hard Drive Shredding & E-Waste Recycling | Integritrade LLC",
+    "Integritrade: ITAD, Data Destruction & Recycling in California",
 
   description:
     "Need secure e-waste recycling? Integritrade offers R2v3 certified data destruction and ITAD services in Fresno, CA. Call (559) 325-4813 to schedule.",
 
   openGraph: {
     title:
-      "Certified ITAD, Hard Drive Shredding & E-Waste Recycling | Integritrade LLC",
+      "Integritrade: ITAD, Data Destruction & Recycling in California",
 
     description:
       "Need secure e-waste recycling? Integritrade offers R2v3 certified data destruction and ITAD services in Fresno, CA. Call (559) 325-4813 to schedule.",
