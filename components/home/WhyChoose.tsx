@@ -50,7 +50,7 @@ export default function WhyChoose() {
          <ScrollLoader>
             <SectionHeader
               eyebrow="Why Choose Integritrade"
-              title="More than equipment removal a clear process your team can verify."
+              title="More than equipment removal, a clear process your team can verify."
               description="We help businesses and local customers move from pickup to final outcome with organized tracking, responsible handling, value recovery, and the right documentation for each service."
             />
         </ScrollLoader>

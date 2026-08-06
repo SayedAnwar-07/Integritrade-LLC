@@ -42,6 +42,30 @@ interface NavItem {
   dropdown?: Array<{ href: string; label: string; icon?: React.ComponentType<any> }>
 }
 
+/* -------- Colorful dropdown icon colors (keyed by href) -------- */
+const DROPDOWN_ICON_COLORS: Record<string, string> = {
+  // Services
+  '/services/': 'text-slate-600 dark:text-slate-300',
+  '/services/basic-electronics-recycling': 'text-emerald-600 dark:text-emerald-400',
+  '/services/data-destruction-services': 'text-rose-600 dark:text-rose-400',
+  '/services/it-asset-disposition': 'text-blue-600 dark:text-blue-400',
+  '/services/demanufacturing-prototype-destruction': 'text-amber-600 dark:text-amber-400',
+  '/fresno-electronics-recycling/': 'text-teal-600 dark:text-teal-400',
+  // Industries
+  '/industries/business-corporate': 'text-blue-600 dark:text-blue-400',
+  '/industries/healthcare': 'text-rose-600 dark:text-rose-400',
+  '/industries/education': 'text-emerald-600 dark:text-emerald-400',
+  '/industries/finance': 'text-amber-600 dark:text-amber-400',
+  '/industries/legal-professional-services': 'text-indigo-600 dark:text-indigo-400',
+  '/industries/retail-hospitality': 'text-orange-600 dark:text-orange-400',
+  '/industries/government-public-sector': 'text-violet-600 dark:text-violet-400',
+  '/industries/defense-contractors': 'text-slate-600 dark:text-slate-300',
+  // About
+  '/about/': 'text-blue-600 dark:text-blue-400',
+  '/about/our-team': 'text-emerald-600 dark:text-emerald-400',
+  '/about/our-equipment': 'text-amber-600 dark:text-amber-400',
+}
+
 interface DesktopDropdownProps {
   item: NavItem
   isActive: boolean
@@ -103,51 +127,49 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
             : 'opacity-0 -translate-y-1 pointer-events-none'
         }`}
       >
-        <div className="w-[320px] overflow-hidden rounded-md border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
-          {/* Menu Items */}
-          <div className="">
-            {item.dropdown?.map((dropdownItem, idx) => {
+        <div className="overflow-hidden rounded-xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)] p-2.5">
+          {/* Mega-menu grid — wider, icon + label, 2 cols for larger menus */}
+          <div
+            className={`grid gap-1 ${
+              (item.dropdown?.length ?? 0) > 4
+                ? 'grid-cols-2 w-[580px]'
+                : 'grid-cols-1 w-[300px]'
+            }`}
+          >
+            {item.dropdown?.map((dropdownItem) => {
               const isSubActive = isSubItemActive(dropdownItem.href, pathname, item.href)
-              const isLast = idx === (item.dropdown?.length ?? 0) - 1
+              const Icon = dropdownItem.icon
 
               return (
                 <Link
                   key={dropdownItem.href}
                   href={dropdownItem.href}
-                  className={`group/item relative flex items-center justify-between px-5 py-5 transition-all duration-200 ${
-                    !isLast
-                      ? 'border-b border-gray-100 dark:border-white/10'
-                      : ''
-                  } ${
+                  className={`group/item flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-200 click-feel ${
                     isSubActive
-                      ? 'bg-gray-50 dark:bg-white/[0.03] text-primary'
-                      : 'text-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-white/[0.03] hover:text-gray-900 dark:hover:text-white'
+                      ? 'bg-gray-50 dark:bg-white/[0.05]'
+                      : 'hover:bg-gray-50 dark:hover:bg-white/[0.05]'
                   }`}
                 >
+                  {Icon && (
+                    <span
+                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-gray-50 transition-colors duration-200 dark:border-white/10 dark:bg-white/[0.04] ${
+                        DROPDOWN_ICON_COLORS[dropdownItem.href] ??
+                        'text-gray-500 dark:text-gray-400'
+                      }`}
+                    >
+                      <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
+                    </span>
+                  )}
 
-                  {/* Left active line */}
                   <span
-                    className={`absolute left-0 top-0 h-full w-[2px] bg-primary transition-opacity duration-200 ${
+                    className={`text-[13px] font-medium leading-snug tracking-tight transition-colors duration-150 ${
                       isSubActive
-                        ? 'opacity-100'
-                        : 'opacity-0 group-hover/item:opacity-100'
+                        ? 'text-primary'
+                        : 'text-gray-700 dark:text-gray-200 group-hover/item:text-gray-900 dark:group-hover/item:text-white'
                     }`}
-                  />
-
-                  {/* Label */}
-                  <span className="text-[13px] font-medium tracking-tight transition-all duration-150 click-feel">
+                  >
                     {dropdownItem.label}
                   </span>
-
-                  {/* Arrow */}
-                  <ArrowRight
-                    className={`w-3.5 h-3.5 transition-all duration-200 ${
-                      isSubActive
-                        ? 'opacity-100 text-primary'
-                        : 'opacity-0 -translate-x-1 text-gray-400 group-hover/item:opacity-100 group-hover/item:translate-x-0'
-                    }`}
-                    strokeWidth={2.2}
-                  />
                 </Link>
               )
             })}
@@ -295,7 +317,7 @@ export default function Navbar() {
       label: 'Services',
       dropdown: [
         { href: '/services/', label: 'Compare Our Service Levels', icon: Scale },
-        { href: '/services/basic-electronics-recycling', label: 'Basic Recycling', icon: Recycle },
+        { href: '/services/basic-electronics-recycling', label: 'Basic Electronics Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
         { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },        
         { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },    

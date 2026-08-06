@@ -11,6 +11,7 @@ const industries = [
     icon: Building2,
     name: "Corporate & Enterprise",
     slug: "business-corporate",
+    cta: "Corporate Solutions",
     desc: "Secure enterprise ITAD workflows for corporate devices, offices, and data centers.",
     iconBorder: "border-blue-200 dark:border-blue-900/40",
     iconColor: "text-blue-600 dark:text-blue-400",
@@ -20,6 +21,7 @@ const industries = [
     icon: HeartPulse,
     name: "Healthcare",
     slug: "healthcare",
+    cta: "Healthcare Solutions",
     desc: "Compliant IT asset disposal protecting PHI under strict HIPAA regulations.",
     iconBorder: "border-rose-200 dark:border-rose-900/40",
     iconColor: "text-rose-600 dark:text-rose-400",
@@ -29,6 +31,7 @@ const industries = [
     icon: GraduationCap,
     name: "Education",
     slug: "education",
+    cta: "Education Solutions",
     desc: "Safe IT disposal protecting student data under FERPA compliance requirements.",
     iconBorder: "border-emerald-200 dark:border-emerald-900/40",
     iconColor: "text-emerald-600 dark:text-emerald-400",
@@ -38,6 +41,7 @@ const industries = [
     icon: Landmark,
     name: "Banking & Finance",
     slug: "finance",
+    cta: "Finance Solutions",
     desc: "Secure disposal services ensuring GLBA and SOX compliance standards.",
     iconBorder: "border-amber-200 dark:border-amber-900/40",
     iconColor: "text-amber-600 dark:text-amber-400",
@@ -47,6 +51,7 @@ const industries = [
     icon: Store,
     name: "Retail & Hospitality",
     slug: "retail-hospitality",
+    cta: "Retail Solutions",
     desc: "Secure POS and device disposal supporting PCI DSS payment data compliance.",
     iconBorder: "border-orange-200 dark:border-orange-900/40",
     iconColor: "text-orange-600 dark:text-orange-400",
@@ -56,6 +61,7 @@ const industries = [
     icon: ShieldCheck,
     name: "Government & Public Sector",
     slug: "government-public-sector",
+    cta: "Government Solutions",
     desc: "Certified IT asset disposition supporting secure public sector compliance requirements.",
     iconBorder: "border-violet-200 dark:border-violet-900/40",
     iconColor: "text-violet-600 dark:text-violet-400",
@@ -65,6 +71,7 @@ const industries = [
     icon: Shield,
     name: "Defense Contractors",
     slug: "defense-contractors",
+    cta: "Defense Solutions",
     desc: "Classified-grade media sanitization meeting NIST 800-88, DFARS, and CMMC standards.",
     iconBorder: "border-slate-300 dark:border-slate-700",
     iconColor: "text-slate-600 dark:text-slate-300",
@@ -102,7 +109,7 @@ export default function Industries() {
 
           {/* Cards — right side, 2x2 grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 order-1 lg:order-2">
-            {industries.slice(0, 4).map(({ icon: Icon, name, slug, desc, iconBorder, iconColor,index }) => (
+            {industries.slice(0, 4).map(({ icon: Icon, name, slug, desc, cta, iconBorder, iconColor,index }) => (
                <ScrollLoader key={name} delay={index * 0.08}>
                 <div
                   key={name}
@@ -130,10 +137,10 @@ export default function Industries() {
                   <div className="pt-5">
                     <Link
                       href={`/industries/${slug}/`}
-                      className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-stone-900 dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary click-feel"
+                      className="group/btn inline-flex w-full items-center justify-center gap-1.5 rounded-md border border-gray-200 dark:border-gray-700 px-4 py-2.5 font-mono text-[11px] uppercase tracking-[0.18em] text-stone-800 dark:text-gray-200 transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white click-feel"
                     >
-                      Explore Industry
-                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      {cta}
+                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                     </Link>
                   </div>
                 </div>
@@ -144,7 +151,7 @@ export default function Industries() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 lg:mt-20">
           {industries.slice(4, 8).map(
-            ({ icon: Icon, name, slug, desc, iconBorder, iconColor, index }) => (
+            ({ icon: Icon, name, slug, desc, cta, iconBorder, iconColor, index }) => (
               <ScrollLoader key={name} delay={index * 0.08}>
                 <div className="h-full group bg-white dark:bg-dark-secondary rounded-md p-7 transition-all duration-300 shadow-lg hover:shadow-xl">
                   
@@ -172,10 +179,10 @@ export default function Industries() {
                   <div className="pt-5">
                     <Link
                       href={`/industries/${slug}/`}
-                      className="inline-flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.18em] text-stone-900 dark:text-white transition-colors duration-300 hover:text-primary dark:hover:text-primary click-feel"
+                      className="group/btn inline-flex w-full items-center justify-center gap-1.5 rounded-md border border-gray-200 dark:border-gray-700 px-4 py-2.5 font-mono text-[11px] uppercase tracking-[0.18em] text-stone-800 dark:text-gray-200 transition-all duration-300 hover:border-primary hover:bg-primary hover:text-white click-feel"
                     >
-                      Explore Industry
-                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      {cta}
+                      <ArrowUpRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5" />
                     </Link>
                   </div>
                 </div>
