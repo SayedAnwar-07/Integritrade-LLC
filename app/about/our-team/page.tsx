@@ -7,6 +7,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import Certifications from "@/components/home/Certifications";
 import ian from "@/public/ian.jpg";
 import masood from "@/public/masood.jpg";
+import adnan from "@/public/adnan.jpg";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export const metadata: Metadata = {
@@ -460,6 +461,131 @@ export default function OurTeamPage() {
             </div>
 
                     
+          </article>
+        </ScrollLoader>
+
+        {/* ═══════════════════════════════════════════════════════════════ */}
+        {/* LEADERSHIP 03 — MUHAMMAD ADNAN                                    */}
+        {/* ═══════════════════════════════════════════════════════════════ */}
+        <ScrollLoader>
+          <article className="pt-24 lg:pt-32 px-4 md:px-6">
+
+            {/* Header — portrait left, meta right */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 mb-20 lg:mb-24">
+              {/* Portrait */}
+              <div className="lg:col-span-5 lg:order-1">
+                <div className="relative aspect-[4/5] w-full rounded-md overflow-hidden bg-white dark:bg-dark-secondary">
+                  <Image
+                    src={adnan}
+                    alt="M. Adnan, Director of Engineering at Integritrade LLC"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 40vw"
+                  />
+                </div>
+              </div>
+
+              {/* Meta + Name */}
+              <div className="lg:col-span-7 lg:order-2 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-baseline gap-6 mb-6">
+                    <p className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
+                      — Director of Engineering
+                    </p>
+                  </div>
+
+                  <h2 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[0.95] mb-6 whitespace-nowrap">
+                    M. Adnan
+                  </h2>
+
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center max-w-xl">
+                    The engineer behind Integritrade&rsquo;s technology, the person who built and runs TraceTech, the platform that tracks every asset from pickup to final disposition.
+                  </p>
+
+                  {/* Strengths list */}
+                  <div className="mt-2">
+                    {[
+                      {
+                        code: "TraceTech Platform",
+                        body: "Built and maintains Integritrade's proprietary asset-tracking platform",
+                      },
+                      {
+                        code: "Full Ownership",
+                        body: "Takes work from the first idea to the day it ships",
+                      },
+                      {
+                        code: "Team Leadership",
+                        body: "Comfortable presenting work and leading small teams",
+                      },
+                      {
+                        code: "Practical & Reliable",
+                        body: "Always focused on the simpler, more dependable solution",
+                      },
+                    ].map((item, i) => (
+                      <div
+                        key={i}
+                        className="grid grid-cols-12 gap-4 py-6 lg:py-7 border-b border-gray-200 dark:border-gray-800"
+                      >
+                        <div className="col-span-1">
+                          <span className="text-sm font-light text-gray-300 dark:text-gray-700 tabular-nums">
+                            0{i + 1}
+                          </span>
+                        </div>
+                        <div className="col-span-11 md:col-span-4">
+                          <p className="text-base font-semibold text-gray-900 dark:text-gray-100">
+                            {item.code}
+                          </p>
+                        </div>
+                        <div className="col-span-12 md:col-span-7 mt-1 md:mt-0">
+                          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
+                            {item.body}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bio Sections — editorial narrative */}
+            <div className="space-y-20 lg:space-y-24">
+
+              {/* Background */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+                <div className="lg:col-span-4">
+                  <p className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
+                    — BACKGROUND
+                  </p>
+                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15] mt-3">
+                    An engineer who cares about the details others overlook.
+                  </h3>
+                </div>
+                <div className="lg:col-span-8">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
+                    Adnan is a software engineer with a Computer Science degree from COMSATS University Islamabad. His experience spans a wide range of environments, and that breadth shapes how he works. He gives as much attention to the parts people never see as the parts they do, because what a business relies on is only ever as dependable as the foundation beneath it.
+                  </p>
+                </div>
+              </div>
+
+              {/* At Integritrade */}
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+                <div className="lg:col-span-4">
+                  <p className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
+                    — AT INTEGRITRADE
+                  </p>
+                  <h3 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15] mt-3">
+                    The person who built the platform behind the promise.
+                  </h3>
+                </div>
+                <div className="lg:col-span-8">
+                  <p className="text-base lg:text-lg text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
+                    At Integritrade, Adnan built and maintains TraceTech, the company&rsquo;s proprietary asset-tracking platform and the internal systems the business runs on every day. TraceTech is what turns chain-of-custody from a claim into a real-time record, with every asset tracked from pickup through final disposition and every certificate available on demand. He owns that technology end to end and keeps it dependable, so the rest of the team can stay focused on the work in front of them.
+                  </p>
+                </div>
+              </div>
+            </div>
+
           </article>
         </ScrollLoader>
 

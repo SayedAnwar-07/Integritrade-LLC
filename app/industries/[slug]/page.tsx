@@ -8,6 +8,7 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import Image from "next/image";
+import ConsultationForm from "@/components/contact/ConsultationForm";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import ReadMore from "@/components/shared/buttons/ReadMore";
 
@@ -140,8 +141,9 @@ export default async function IndustryPage(props: {
               </div>
             </div>
 
-            {/* Content */}
-            <div className="space-y-8">
+            {/* Content + consultation form */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+              <div className="lg:col-span-7 space-y-8">
               {industry.contentSections?.length ? (
                 <ReadMore previewLines={6} expandAt="lg">
                     {industry.contentSections.map((section, sectionIndex) => (
@@ -196,6 +198,14 @@ export default async function IndustryPage(props: {
                   </p>
                 </ReadMore>
               )}
+              </div>
+
+              {/* Consultation form — sticky on desktop, stacks below the copy on mobile */}
+              <aside className="lg:col-span-5">
+                <div className="lg:sticky lg:top-28">
+                  <ConsultationForm industry={industry.title} />
+                </div>
+              </aside>
             </div>
           </div>
         </ScrollLoader>
