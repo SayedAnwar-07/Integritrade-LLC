@@ -10,7 +10,7 @@ RewriteRule ^service-area/(fresno|san-francisco|clovis)/electronics-recycling/?$
 
 # ── Palo Alto legacy URLs from old sitemap ──
 RewriteRule ^service-area/palo-alto/it-asset-disposition/?$ /service-area/palo-alto/it-asset-disposition-palo-alto/ [R=301,L]
-RewriteRule ^service-area/palo-alto/asset-recovery/?$ /service-area/palo-alto/asset-recovery-palo-alto/ [R=301,L]
+RewriteRule ^service-area/palo-alto/asset-recovery-palo-alto/?$ /service-area/palo-alto/asset-recovery/ [R=301,L]
 
 # ── Removed blogs, deleted 2026-08-01 ──
 # 301 each indexed URL to the closest legitimate article so it doesn't 404.
