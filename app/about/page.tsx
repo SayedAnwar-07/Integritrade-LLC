@@ -21,7 +21,7 @@ import type { ReactNode } from "react"
 import Image from "next/image"
 import itadWarehouse from "@/public/about/itadWarehouse.jpeg"
 import itadAssemblyLine from "@/public/about/itadAssemblyLine.png"
-import degausser from "@/public/about/degausser.jpeg"
+import recyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg"
 import tracetech from "@/public/about/tracetech.png"
 import ScrollLoader from "@/components/shared/ScrollLoader"
 import OutlineButton from "@/components/shared/buttons/OutlineButton"
@@ -103,7 +103,7 @@ function Eyebrow({
 }
 
 const stats = [
-  { Icon: Building2, value: "30,000 sq ft", label: "Secure Fresno facility" },
+  { Icon: Building2, value: "30,000 sq ft", label: "Secure Fresno facility — coming soon" },
   { Icon: Award, value: "5", label: "Industry certifications" },
   { Icon: Users, value: "40+ yrs", label: "Combined experience" },
   { Icon: ShieldCheck, value: "24/7", label: "Video-monitored" },
@@ -415,8 +415,8 @@ export default function AboutPage() {
           <ScrollLoader>
             <div className="relative h-[300px] w-full overflow-hidden rounded-md sm:h-[380px] lg:h-[440px]">
               <Image
-                src={degausser}
-                alt="Integritrade technician operating a hard-drive degausser during secure data destruction"
+                src={recyclingWarehouse}
+                alt="Electronics recycling operations inside Integritrade's processing warehouse"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
