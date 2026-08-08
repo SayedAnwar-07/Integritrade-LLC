@@ -12,14 +12,14 @@ import Image from "next/image"
 import ReadMore from "@/components/shared/buttons/ReadMore"
 
 export const metadata: Metadata = {
-  title: "Enterprise ITAD, Data Destruction & E-Waste Recycling | Integritrade",
+  title: "Enterprise ITAD, Data Destruction & E-Waste Recycling",
   description:
     "R2v3 certified IT asset disposition, NIST 800-88 data destruction, and electronics recycling for enterprises retiring 500+ assets. Nationwide pickup from our Fresno, CA facility.",
   alternates: {
     canonical: "/services/",
   },
   openGraph: {
-    title: "Enterprise ITAD & Recycling Services | Integritrade LLC",
+    title: "Enterprise ITAD & Recycling Services",
     description:
       "R2v3 certified IT asset disposition, NIST 800-88 data destruction, and electronics recycling for enterprises. Serialized chain of custody. Nationwide pickup from Fresno, CA.",
     url: "https://integritradellc.com/services/",

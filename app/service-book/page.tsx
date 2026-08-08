@@ -6,7 +6,7 @@ import ScrollLoader from '@/components/shared/ScrollLoader'
 
 // ─── SEO METADATA ─────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
-  title: 'Contact Integritrade LLC | Certified ITAD & Electronic Recycling Fresno, CA',
+  title: 'Contact Us | Certified ITAD & Electronic Recycling Fresno, CA',
   description:
     'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our 30,000 sq ft Fresno facility. Call (559) 325-4813 today.',
   keywords: [

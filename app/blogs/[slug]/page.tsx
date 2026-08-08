@@ -112,7 +112,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!BLOG_SLUGS.includes(slug as (typeof BLOG_SLUGS)[number])) {
     return {
-      title: "Blog Not Found | Integritrade LLC",
+      title: "Blog Not Found",
       description: "The requested blog post does not exist.",
       robots: {
         index: false,

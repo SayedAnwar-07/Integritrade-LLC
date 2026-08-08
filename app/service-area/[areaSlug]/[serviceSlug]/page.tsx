@@ -220,6 +220,7 @@ export default async function ServicePage({ params }: PageProps) {
             <ServiceDetailSidebar
               area={area}
               otherServices={otherServices}
+              serviceTitle={service.title}
             />
           </aside>
         </div>

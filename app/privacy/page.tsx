@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Privacy Policy | Integritrade LLC",
+    title: "Privacy Policy",
     description:
       "Learn how Integritrade LLC protects your data and manages personal information securely.",
     url: "https://integritradellc.com/privacy/",

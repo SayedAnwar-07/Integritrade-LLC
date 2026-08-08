@@ -75,7 +75,7 @@ const certs = [
   },
   {
     image: Nist,
-    name: "Nist 800-88",
+    name: "NIST 800-88",
     href: "/certifications",
   },
 ];
@@ -94,6 +94,9 @@ export default function ContactDescription() {
               className="
               mt-10"
             >
+              <h3 className="mb-6 text-2xl sm:text-3xl font-bold text-slate-900 dark:text-white">
+                Our Certifications &amp; Standards
+              </h3>
 
               <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {certs.map(({ image, name, href, external }) => {
@@ -236,7 +239,7 @@ export default function ContactDescription() {
                 </div>
 
                 {/* Trust indicators */}
-                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-4 pb-8 border-b border-stone-200 dark:border-slate-700/60">
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mb-4">
                   <div className="flex items-center gap-1.5 text-xs text-stone-600 dark:text-slate-400">
                     <svg className="h-4 w-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -254,6 +257,16 @@ export default function ContactDescription() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                     <span className="font-medium">Fully certified team</span>
+                  </div>
+                </div>
+
+                {/* Guarantee */}
+                <div className="mb-8 pb-8 border-b border-stone-200 dark:border-slate-700/60">
+                  <div className="inline-flex items-center gap-2 rounded-md border border-emerald-200 bg-emerald-50 px-4 py-2.5 dark:border-emerald-500/25 dark:bg-emerald-500/10">
+                    <svg className="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-sm font-bold text-emerald-800 dark:text-emerald-300">100% Data Destruction Guarantee!</span>
                   </div>
                 </div>
 

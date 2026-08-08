@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import Hero from '@/components/home/Hero'
 import WhyChoose from '@/components/home/WhyChoose'
-import ServicesGrid from '@/components/home/ServicesGrid'
 import About from '@/components/home/About'
 import SchemaMarkup from "@/components/home/SchemaMarkup"
 import TrustedLogos from "@/components/home/TrustedLogo"
@@ -42,8 +41,6 @@ export default function Page() {
       <Hero />
 
       <TrustedLogos />
-
-      <ServicesGrid />   
 
       <WhyChoose />
 

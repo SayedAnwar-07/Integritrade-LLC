@@ -15,7 +15,7 @@ import { Mail, MapPin, Phone } from "lucide-react";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export const metadata: Metadata = {
-  title: "How We Destroy Data | Capabilities | Integritrade LLC",
+  title: "How We Destroy Data | Capabilities",
   description:
     "The machinery, methods, and standards behind every Integritrade destruction project NIST 800-88 software sanitization, magnetic degaussing, and 2mm SSD micro-shredding, with a Certificate for every drive.",
   alternates: { canonical: "/about/our-equipment/" },

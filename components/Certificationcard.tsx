@@ -39,7 +39,7 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
     <article className="group">
       {/* Uniform structure: text always on the LEFT, certificate image on the RIGHT.
           On mobile, order follows the DOM: cert name + text first, then the image. */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-stretch">
         {/* DETAILS — first on mobile (name → paragraphs → covers), left on desktop */}
         <div className="lg:col-span-6 lg:order-1">
           <ScrollLoader>
@@ -99,16 +99,16 @@ const CertificationCard: React.FC<CertificationCardProps> = ({
 
         {/* IMAGE — after the text on mobile, right on desktop */}
         <div className="lg:col-span-6 lg:order-2 relative">
-          <ScrollLoader>
+          <ScrollLoader className="lg:h-full">
             <a
               href={certification.pdf}
               target="_blank"
               rel="noopener noreferrer"
               title={`View ${certification.header} Certificate PDF`}
               aria-label={`View ${certification.header} Certificate PDF`}
-              className="group/pdf block bg-secondary dark:bg-dark rounded-md overflow-hidden cursor-pointer"
+              className="group/pdf block bg-secondary dark:bg-dark rounded-md overflow-hidden cursor-pointer lg:h-full"
             >
-              <div className="aspect-[4/5] w-full">
+              <div className="aspect-[4/5] lg:aspect-auto lg:h-full w-full">
                 <Image
                   src={certification.image}
                   alt={`${certification.company} ${certification.header} Certificate`}
