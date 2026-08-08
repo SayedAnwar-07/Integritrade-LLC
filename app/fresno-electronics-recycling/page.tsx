@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'Secure and certified electronics recycling in Fresno, CA. Free public e-waste drop-off, business pickup for 50+ qualifying devices, and certified data destruction services.',
   alternates: { canonical: '/fresno-electronics-recycling/' },
   openGraph: {
-    title: 'Fresno Electronics Recycling | Integritrade LLC',
+    title: 'Fresno Electronics Recycling',
     description:
       'Secure and certified e-waste recycling in Fresno, CA with free public drop-off, commercial pickup, and data destruction documentation.',
     url: 'https://integritradellc.com/fresno-electronics-recycling/',

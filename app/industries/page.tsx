@@ -23,7 +23,7 @@ import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export const metadata: Metadata = {
   title:
-    "Industries We Serve | IT Asset Disposition (ITAD) by Industry | Integritrade LLC",
+    "Industries We Serve | IT Asset Disposition (ITAD) by Industry",
 
   description:
     "Integritrade LLC provides industry-specific IT asset disposition (ITAD), secure data destruction, and e-waste recycling services for healthcare, finance, government, logistics, and more across the USA.",

@@ -4,6 +4,7 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
 import { AlertCircle, Loader2, Send } from 'lucide-react'
+import Link from 'next/link'
 
 type Fields = {
   name: string
@@ -175,7 +176,9 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
 
       <form onSubmit={handleSubmit} className="mt-6 space-y-4" noValidate>
         <div>
-          <label className={labelClass}>Full Name</label>
+          <label className={labelClass}>
+            Full Name <span className="text-red-500">*</span>
+          </label>
           <input
             type="text"
             value={data.name}
@@ -187,7 +190,9 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
         </div>
 
         <div>
-          <label className={labelClass}>Email</label>
+          <label className={labelClass}>
+            Email <span className="text-red-500">*</span>
+          </label>
           <input
             type="email"
             value={data.email}
@@ -205,7 +210,7 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
               type="tel"
               value={data.phone}
               onChange={(e) => set('phone', e.target.value)}
-              placeholder="(559) 000-0000"
+              placeholder="(555) 555-5555"
               className={`${baseInput} ${inputBorder(false)}`}
             />
           </div>
@@ -237,7 +242,9 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
         </div>
 
         <div>
-          <label className={labelClass}>Message</label>
+          <label className={labelClass}>
+            Message <span className="text-red-500">*</span>
+          </label>
           <textarea
             value={data.message}
             onChange={(e) => set('message', e.target.value)}
@@ -264,8 +271,16 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
           )}
         </button>
 
-        <p className="text-center text-[11px] text-gray-400 dark:text-gray-500">
-          We&apos;ll never share your information.
+        <p className="border-t border-gray-200 pt-4 text-[12px] leading-relaxed text-gray-500 dark:border-gray-700/60 dark:text-gray-400">
+          By submitting this form, you acknowledge that you have read and agree to the{" "}
+          <Link
+            href="/privacy/"
+            className="font-semibold text-blue-500 hover:underline"
+          >
+            Integritrade LLC Privacy Policy
+          </Link>
+          . We will only use your information to respond to your inquiry or
+          process your service request.
         </p>
       </form>
     </div>

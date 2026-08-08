@@ -48,22 +48,10 @@ export default function Hero() {
 
   return (
     <section className="relative pt-20 lg:pt-28 bg-secondary dark:bg-dark transition-colors duration-300 overflow-hidden">
-      <div
-        className="absolute inset-0 opacity-[0.03] pointer-events-none"
-        style={{
-          backgroundImage: `linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)`,
-          backgroundSize: "64px 64px",
-        }}
-      />
-
       <ScrollLoader>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7 lg:pt-4">
-              <p className="mb-4 text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] text-primary">
-                California ITAD &amp; ITAM Partner
-              </p>
-
               <h1
                 className="
                   font-serif font-bold [text-wrap:balance]
@@ -104,7 +92,7 @@ export default function Hero() {
                   testId="button-get-quote"
                   className="text-sm py-3 sm:flex-1 lg:flex-none"
                 >
-                  Get a Free Quote
+                  Get a Free Consultation
                 </PrimaryButton>
 
               </div>
@@ -150,7 +138,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="mt-14">
-            <p className="text-2xl md:text-4xl fob text-center font-serif">
+            <p className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-center text-stone-900 dark:text-white">
               Organizations we’ve served
             </p>
           </div>

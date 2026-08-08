@@ -8,6 +8,7 @@ import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
 import itBuyback from "@/public/services/serviceArea/itBuyback.jpg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 import dataCenterDecommissioning from "@/public/services/serviceArea/dataCenterDecommissioning.png";
+import appleEquipment from "@/public/services/serviceArea/appleEquipment.jpeg";
 
 export const fosterCityData: ServiceArea = {
   slug: "foster-city",
@@ -285,7 +286,7 @@ export const fosterCityData: ServiceArea = {
       "title": "Sell Your IT Equipment in Foster City: Get the Best Value with Secure, Certified Buyback",
       "shortDescription": "Sell your retired IT equipment in Foster City through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
       "icon": "RefreshCw",
-      "metaTitle": "Sell Your IT Equipment in Foster City: Certified IT Equipment Buyback | Integritrade",
+      "metaTitle": "Sell Your IT Equipment in Foster City: Certified IT Equipment Buyback",
       "metaDescription": "Sell your retired IT equipment in Foster City through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
       "ctaText": "Get a Free Quote",
       "image": itBuyback,
@@ -516,7 +517,7 @@ export const fosterCityData: ServiceArea = {
       "title": "Data Center Decommissioning in Foster City: Secure, Certified Cleanouts for Every Scale",
       "shortDescription": "End-to-end data center decommissioning and cleanout services in Foster City - certified data destruction, unbroken chain of custody, and asset value recovery, from a single rack to a full facility teardown.",
       "icon": "Server",
-      "metaTitle": "Data Center Decommissioning in Foster City | Secure, Certified Cleanouts | Integritrade",
+      "metaTitle": "Data Center Decommissioning in Foster City | Secure, Certified Cleanouts",
       "metaDescription": "Certified data center decommissioning in Foster City - secure data destruction, full chain-of-custody documentation, and asset value recovery for every scale, from a single rack to a full facility teardown.",
       "ctaText": "Get a Free Quote",
       "image": dataCenterDecommissioning,
@@ -665,6 +666,70 @@ export const fosterCityData: ServiceArea = {
         {
           "heading": "Ready to Decommission Your Foster City Data Center?",
           "body": "Whether you are clearing a single server room or decommissioning an entire data center facility, Integritrade has the certifications, equipment, and experience to manage every phase of the project - securely, completely, and on your timeline.\n\nContact Integritrade today to schedule your free site walkthrough and get a fixed plan for your Foster City data center decommission. Our team typically responds within 24 hours."
+        }
+      ]
+    },
+    {
+      "slug": "sell-used-apple-equipment",
+      "title": "Sell Used Apple Equipment in Foster City",
+      "shortDescription": "Sell used corporate Apple equipment in Foster City, CA. Highest buyback rates for MacBooks, iMacs, iPads, and iPhone fleets, with NIST 800-88 certified data erasure and full chain-of-custody documentation.",
+      "icon": "Laptop",
+      "metaTitle": "Sell Used Apple Equipment in Foster City | Highest Buyback Rates for Mac Fleets",
+      "metaDescription": "Upgrading your Foster City office's Macs? Integritrade pays more for corporate MacBooks, iMacs, and iPads and provides certified data erasure. Fast payment. Zero hassle.",
+      "ctaText": "Get a Free Quote",
+      "image": appleEquipment,
+      "heroHeading": "Sell Used Apple Equipment in Foster City: Maximum Value for Your Mac Fleet",
+      "heroSubheading": "Upgrading your company's MacBooks, iMacs, or iPhone fleet in Foster City? Don't settle for trade-in prices or hand your devices to an uncertified buyer. Integritrade is California's most certified buyer of corporate Apple equipment - offering superior buyback rates, NIST 800-88 compliant data erasure, and full chain-of-custody documentation on every single device.",
+      "details": [
+        {
+          "heading": "",
+          "body": "Apple products hold their value longer than almost any other IT asset class. We make sure your Foster City organization captures that value - securely, completely, and with the compliance documentation to prove it."
+        },
+        {
+          "heading": "We Buy All Corporate Apple Assets in Foster City",
+          "bullets": [
+            "MacBooks: MacBook Pro, MacBook Air (M1, M2, M3, and Intel models).",
+            "Desktops: iMac, Mac mini, Mac Studio, and Mac Pro.",
+            "Mobile: iPhone and iPad corporate fleets.",
+            "Displays: Studio Display and Pro Display XDR."
+          ]
+        },
+        {
+          "heading": "What Happens to Your Apple Devices at Integritrade?",
+          "body": "Every Apple device that enters our facility undergoes a structured, certified process:",
+          "bullets": [
+            "Intake & Verification: Every device is inventoried, tagged, and confirmed against your asset list. Devices are checked for functionality and confirmed free of iCloud and activation locks before processing begins. Locked devices cannot be sanitized or remarketed - we flag them immediately and work with your Foster City IT team to resolve them before the project moves forward, protecting you from downstream liability.",
+            "NIST 800-88 Certified Erasure: Unlocked, functional Apple devices are processed through NIST 800-88 compliant logical sanitization. This generates a tamper-proof Certificate of Erasure tied to each device's unique serial number - not a generic batch report.",
+            "Physical Destruction for Failed Devices: Any device that fails the erasure process is physically destroyed. You receive a serialized Certificate of Destruction. No device leaves our facility without verified, documented data destruction.",
+            "Refurbishment & Remarketing: Devices that pass sanitization are graded, refurbished, and remarketed through Integritrade's resale channels - maximizing the recovery value returned to your Foster City organization."
+          ]
+        },
+        {
+          "heading": "Why Integritrade for Apple - Not Just Any Buyer?",
+          "body": "Most recyclers just want the aluminum. We want the technology. By focusing on reuse and remarketing, we consistently return higher value to Foster City businesses than traditional e-waste vendors who default to commodity scrapping.\n\nBut value recovery is only half the story. The certifications behind our process are what protect your organization:",
+          "bullets": [
+            "R2v3 Certified - The EPA-recognized standard for responsible electronics recycling and data destruction, requiring audited downstream accountability for every asset.",
+            "ISO 27001 - Information security management certification ensuring your data is protected at every stage of the disposition process.",
+            "ISO 14001 - Environmental management certification ensuring responsible, compliant processing of all materials.",
+            "ISO 9001 - Quality management certification ensuring consistent, reliable service delivery on every project.",
+            "ISO 45001 - Occupational health and safety certification ensuring safe, professional facility operations."
+          ]
+        },
+        {
+          "heading": "",
+          "body": "Not many Apple equipment buyers in Foster City or California hold this certification stack."
+        },
+        {
+          "heading": "TraceTech: Real-Time Visibility on Every Apple Device",
+          "body": "Every Integritrade client receives access to TraceTech, our proprietary AI-integrated asset tracking platform - included at no additional cost. From the moment your Apple devices are picked up in Foster City, your team can monitor their processing status in real time, download Certificates of Erasure and Destruction on demand, and maintain a complete audit-ready compliance record. No waiting on emailed PDFs. No guessing."
+        },
+        {
+          "heading": "The Net-Positive Guarantee",
+          "body": "For Foster City organizations with 50 or more qualifying devices, Integritrade guarantees a net-positive outcome. Pickup is covered. Data destruction and certification are included. The recovery value from your Apple assets offsets all project costs - meaning your organization gets paid, not billed."
+        },
+        {
+          "heading": "Get the Best Return on Your Apple Investment",
+          "body": "Ready to sell your Apple equipment in Foster City? Request an Apple asset evaluation today. Our team responds within 24 hours with a no-obligation quote and a fixed plan for secure pickup, certified data destruction, and maximum value recovery from your Foster City location."
         }
       ]
     }

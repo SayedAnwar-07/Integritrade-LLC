@@ -20,7 +20,7 @@ export async function generateMetadata(props: {
 
   if (!industry) {
     return {
-      title: "Industry Not Found | Integritrade LLC",
+      title: "Industry Not Found",
       description: "The requested industry page could not be found.",
       robots: { index: false, follow: false },
     };

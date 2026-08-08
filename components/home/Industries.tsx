@@ -92,10 +92,10 @@ export default function Industries() {
             />
         </ScrollLoader>
 
-        <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+        <div className="mt-14 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           {/* Image — left side */}
-           <ScrollLoader>
-              <div className="relative w-full h-[420px] lg:h-[560px] rounded-md overflow-hidden order-2 lg:order-1">
+           <ScrollLoader className="h-full">
+              <div className="relative w-full h-[420px] lg:h-full rounded-md overflow-hidden order-2 lg:order-1">
                 <Image
                   src={IndustriesCover}
                   alt="Industries we serve"

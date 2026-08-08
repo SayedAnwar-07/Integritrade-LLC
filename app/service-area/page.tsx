@@ -7,8 +7,7 @@ import OutlineButton from "@/components/shared/buttons/OutlineButton";
 
 
 export const metadata: Metadata = {
-  title:
-    "ITAD & E-Waste Recycling Service Area | Integritrade LLC California Coverage",
+  title: "ITAD & E-Waste Recycling Service Area | California Coverage",
   description:
     "Integritrade LLC serves businesses across California with R2v3-certified IT asset disposition, secure data destruction, and responsible e-waste recycling. Find local coverage in San Francisco, Silicon Valley, the Peninsula, the East Bay, North Bay, and Central Valley.",
   keywords: [
@@ -25,7 +24,7 @@ export const metadata: Metadata = {
     canonical: "/services/it-asset-disposition/",
   },
   openGraph: {
-    title: "ITAD & E-Waste Recycling Service Area | Integritrade LLC",
+    title: "ITAD & E-Waste Recycling Service Area",
     description:
       "R2v3-certified IT asset disposition and data destruction across California. Local coverage from the Bay Area to the Central Valley.",
     url: "https://integritradellc.com/services/it-asset-disposition/",

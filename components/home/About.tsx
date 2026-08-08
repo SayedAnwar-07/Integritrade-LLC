@@ -131,7 +131,7 @@ export default function About() {
               </OutlineButton>
 
               <PrimaryButton href="/service-book" testId="button-get-quote">
-                Get a Free Quote
+                Get a Free Consultation
               </PrimaryButton>
             </div>
           </div>

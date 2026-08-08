@@ -16,7 +16,7 @@ export async function generateMetadata(props: {
 
   if (!service) {
     return {
-      title: "Service Not Found | Integritrade LLC",
+      title: "Service Not Found",
       description: "The requested service page could not be found.",
       robots: { index: false, follow: false },
     };

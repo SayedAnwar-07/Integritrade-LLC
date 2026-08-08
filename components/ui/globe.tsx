@@ -14,7 +14,6 @@ import R2v3 from "@/public/ISO/r2v3.png"
 import Nist from "@/public/ISO/nist-800-88.jpg"
 
 import { cn } from "@/lib/utils"
-import Link from "next/link"
 
 type Service = {
   image: StaticImageData
@@ -22,6 +21,7 @@ type Service = {
   label: string
   angle: number
   description: string
+  pdf?: string
 }
 
 type MarkerAnchorStyle = CSSProperties & {
@@ -62,6 +62,7 @@ const SERVICES: Service[] = [
     angle: -90,
     description:
       "Responsible Recycling (R2v3) certification verifies secure electronics reuse, recycling practices, and responsible downstream management.",
+    pdf: "/certificates/Integritrade%20LLC%20R2v3%20Electronics%20Recycling%20Data%20Security%20and%20ITAD.pdf",
   },
   {
     image: Iso14001,
@@ -70,6 +71,7 @@ const SERVICES: Service[] = [
     angle: -30,
     description:
       "ISO 14001 certification demonstrates our commitment to environmental management and sustainable electronics recycling practices.",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%2014001%20Electronics%20Recycling%20and%20ITAD%20EMS.pdf",
   },
   {
     image: Iso27001,
@@ -78,6 +80,7 @@ const SERVICES: Service[] = [
     angle: 30,
     description:
       "ISO 27001 certification confirms our information security management system protects sensitive data throughout our processes.",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%20IEC%2027001%20Electronics%20Recycling%20and%20ITAD%20ISMS.pdf",
   },
   {
     image: Iso45001,
@@ -86,6 +89,7 @@ const SERVICES: Service[] = [
     angle: 90,
     description:
       "ISO 45001 certification ensures a structured occupational health and safety management system for our workplace.",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%2045001%20Electronics%20Recycling%20and%20ITAD%20OHS.pdf",
   },
   {
     image: Iso9001,
@@ -94,6 +98,7 @@ const SERVICES: Service[] = [
     angle: 150,
     description:
       "ISO 9001 certification confirms our quality management system focuses on consistent service delivery and continual improvement.",
+    pdf: "/certificates/Integritrade%20LLC%20ISO%209001%20Electronics%20Recycling%20and%20ITAD%20QMS.pdf",
   },
   {
     image: Nist,
@@ -342,8 +347,15 @@ export function ItadGlobe({ className }: { className?: string }) {
             >
               <TooltipPrimitive.Root>
                 <TooltipPrimitive.Trigger asChild>
-                  <button
-                    type="button"
+                  <a
+                    href={service.pdf ?? "/certifications/"}
+                    target={service.pdf ? "_blank" : undefined}
+                    rel={service.pdf ? "noopener noreferrer" : undefined}
+                    aria-label={
+                      service.pdf
+                        ? `View ${name} certificate`
+                        : "View all certifications"
+                    }
                     className="
                       relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full
                       border border-gray-200 bg-white
@@ -356,19 +368,14 @@ export function ItadGlobe({ className }: { className?: string }) {
                       sm:h-16 sm:w-16
                     "
                   >
-<Link
-  href="/certifications/"
-  className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-gray-200 bg-white sm:h-16 sm:w-16"
->
-  <Image
-    src={service.image}
-    alt={service.alt}
-    fill
-    sizes="64px"
-    className="object-contain p-1.5"
-  />
-</Link>
-                  </button>
+                    <Image
+                      src={service.image}
+                      alt={service.alt}
+                      fill
+                      sizes="64px"
+                      className="object-contain p-1.5"
+                    />
+                  </a>
                 </TooltipPrimitive.Trigger>
 
                 <TooltipPrimitive.Portal>

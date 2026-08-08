@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Terms and Conditions | Integritrade LLC",
+    title: "Terms and Conditions",
     description:
       "Review Integritrade LLC terms and conditions including service usage, responsibilities, and legal policies.",
     url: "https://integritradellc.com/terms/",

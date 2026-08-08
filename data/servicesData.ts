@@ -139,7 +139,7 @@ export const servicesData: Service[] = [
   {
     slug: "basic-electronics-recycling",
     image: eRecycling,
-    metaTitle: "Basic Electronics Recycling Services Nationwide | Integritrade",
+    metaTitle: "Basic Electronics Recycling Services Nationwide",
     metaDescription:
       "Responsible e-waste recycling for organizations that have already handled data destruction internally. Weight tickets and recycling confirmation included. R2v3-aligned domestic processing.",
     pageTitle: "Basic Recycling",
@@ -237,7 +237,7 @@ export const servicesData: Service[] = [
     slug: "data-destruction-services",
     image: certifiedDataDestruction,
     metaTitle:
-      "Certified Data Destruction Services Nationwide | Integritrade",
+      "Certified Data Destruction Services Nationwide",
     metaDescription:
       "Compliance-grade data destruction with serialized certificates, 2mm mandated destruction, videotaped destruction, and media-specific handling. For data-bearing assets that are not eligible for value recovery.",
     pageTitle: "Data Destruction Services",
@@ -340,7 +340,7 @@ export const servicesData: Service[] = [
     slug: "it-asset-disposition",
     image: assetDisposition,
     metaTitle:
-      "Full ITAD Package with Value Recovery | Integritrade",
+      "Full ITAD Package with Value Recovery",
     metaDescription:
       "Complete ITAD program: data sanitization, asset registration, refurbishment, remarketing, EOL recycling, and value recovery reporting. Percentage-based recovery or accelerated revenue split / buyback.",
     pageTitle: "Full ITAD Package",
@@ -460,7 +460,7 @@ export const servicesData: Service[] = [
   // {
   //   slug: "asset-recovery-services",
   //   image: assetRecovery,
-  //   metaTitle: "Enterprise IT Asset Recovery & Remarketing Services | Integritrade",
+  //   metaTitle: "Enterprise IT Asset Recovery & Remarketing Services",
   //   metaDescription:
   //     "Recover value from retired enterprise IT through certified remarketing not consumer marketplaces. Net recovery credited against your invoice. R2v3 certified, nationwide pickup from Fresno, CA.",
   //   pageTitle: "Asset Recovery",

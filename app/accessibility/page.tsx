@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: "/accessibility/",
   },
   openGraph: {
-    title: "Accessibility Statement | Integritrade LLC",
+    title: "Accessibility Statement",
     description:
       "Our commitment to making integritradellc.com accessible to everyone, in line with WCAG 2.1 Level AA.",
     url: "https://integritradellc.com/accessibility/",

@@ -5,7 +5,7 @@ import ScrollLoader from "@/components/shared/ScrollLoader";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Integritrade LLC Blog – ITAD & E-Waste Recycling Insights",
+  title: "Blog – ITAD & E-Waste Recycling Insights",
   description:
     "Expert guides on IT asset disposition, secure data destruction, electronics recycling, and environmentally responsible IT practices from Integritrade LLC.",
   keywords: [
