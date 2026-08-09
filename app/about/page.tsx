@@ -103,7 +103,7 @@ function Eyebrow({
 }
 
 const stats = [
-  { Icon: Building2, value: "30,000 sq ft", label: "Secure Fresno facility — coming soon" },
+  { Icon: Building2, value: "Fresno, CA", label: "Secure processing facility" },
   { Icon: Award, value: "5", label: "Industry certifications" },
   { Icon: Users, value: "40+ yrs", label: "Combined experience" },
   { Icon: ShieldCheck, value: "24/7", label: "Video-monitored" },
@@ -148,7 +148,7 @@ const principles = [
   {
     Icon: Wrench,
     title: "End-to-end, owner-operated security",
-    desc: "We never use subcontracted shred trucks or white-label brokers. Every project is handled exclusively by vetted Integritrade professionals inside our secure, access-restricted, fully surveilled 30,000 sq ft facility. Your security is never outsourced.",
+    desc: "We never use subcontracted shred trucks or white-label brokers. Every project is handled exclusively by vetted Integritrade professionals inside our secure, access-restricted, fully surveilled facility. Your security is never outsourced.",
     iconColor: "text-amber-700 dark:text-amber-400",
     borderColor: "border-amber-700 dark:border-amber-400",
   },

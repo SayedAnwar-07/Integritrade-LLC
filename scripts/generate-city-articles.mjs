@@ -439,7 +439,7 @@ This is not a promotional offer. It is how a properly run ITAD program should wo
     },
     {
       heading: "",
-      body: "Our operations are backed by a 30,000 square foot processing facility equipped with 24/7 video monitoring and controlled processing areas staffed exclusively by background-checked personnel. This is not a small-scale operation - it is the infrastructure required to handle large enterprise decommissions, multi-site IT refreshes, and data center teardowns with the speed, security, and documentation accuracy that {{CITY}} organizations demand.",
+      body: "Our operations are backed by a dedicated processing facility equipped with 24/7 video monitoring and controlled processing areas staffed exclusively by background-checked personnel. This is not a small-scale operation - it is the infrastructure required to handle large enterprise decommissions, multi-site IT refreshes, and data center teardowns with the speed, security, and documentation accuracy that {{CITY}} organizations demand.",
     },
     {
       heading:
@@ -714,7 +714,7 @@ Done correctly, a data center decommission recovers significant financial value 
     },
     {
       heading: "Transport to Integritrade's Fresno Facility (Preferred)",
-      body: "For most data center decommissions, equipment is transported via GPS-tracked vehicles to Integritrade's dedicated 30,000 square foot ITAD facility in Fresno, where data destruction is performed under controlled conditions with 24/7 video monitoring. This approach allows for the most thorough and documented destruction process, including NIST 800-88 compliant erasure with Certificates of Erasure, physical shredding to 2mm for SSDs, and degaussing followed by shredding for HDDs. Power constraints at many data center and colocation facilities make on-site shredding impractical, and transport to our facility ensures the full destruction process can be executed without those limitations.",
+      body: "For most data center decommissions, equipment is transported via GPS-tracked vehicles to Integritrade's dedicated ITAD facility in Fresno, where data destruction is performed under controlled conditions with 24/7 video monitoring. This approach allows for the most thorough and documented destruction process, including NIST 800-88 compliant erasure with Certificates of Erasure, physical shredding to 2mm for SSDs, and degaussing followed by shredding for HDDs. Power constraints at many data center and colocation facilities make on-site shredding impractical, and transport to our facility ensures the full destruction process can be executed without those limitations.",
     },
     {
       heading: "On-Site Data Destruction",
@@ -769,7 +769,7 @@ Integritrade holds the industry's most comprehensive certification stack for thi
     },
     {
       heading: "",
-      body: "Every certification is independently audited. Every process is documented. And every asset that passes through our 30,000 square foot facility is handled by background-checked personnel under 24/7 video monitoring.",
+      body: "Every certification is independently audited. Every process is documented. And every asset that passes through our facility is handled by background-checked personnel under 24/7 video monitoring.",
     },
     {
       heading: "The In-House Destruction Advantage",
