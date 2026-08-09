@@ -6,6 +6,7 @@ import { usePathname } from 'next/navigation'
 
 import Image from 'next/image'
 import integritradeLogo from "@/public/logo/integritrade-logo.svg"
+import tracetechCurved from "@/public/nav/tracetech-curved.png"
 
 import {
   ChevronDown,
@@ -173,6 +174,95 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                 </Link>
               )
             })}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/* ----------------------- TraceTech promo item ----------------------- */
+const TRACETECH_HREF = '/about/#tracetech'
+
+function TraceTechNavItem({
+  registerRef,
+}: {
+  registerRef: (el: HTMLDivElement | null) => void
+}) {
+  const [open, setOpen] = useState(false)
+  const wrapperRef = useRef<HTMLDivElement | null>(null)
+
+  useEffect(() => {
+    registerRef(wrapperRef.current)
+  }, [registerRef])
+
+  return (
+    <div
+      ref={wrapperRef}
+      className="relative flex items-center"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <Link
+        href={TRACETECH_HREF}
+        className="relative z-10 inline-flex items-center gap-1.5 px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+      >
+        <span>TraceTech</span>
+        <ChevronDown
+          className={`w-3 h-3 transition-transform duration-300 ${open ? 'rotate-180' : ''} opacity-60`}
+          strokeWidth={2.5}
+        />
+      </Link>
+
+      {/* Hover promo panel — anchored right so it never overflows the viewport */}
+      <div
+        className={`absolute top-full right-0 pt-3 z-50 transition-all duration-200 ${
+          open
+            ? 'opacity-100 translate-y-0 pointer-events-auto'
+            : 'opacity-0 -translate-y-1 pointer-events-none'
+        }`}
+      >
+        <div className="w-[820px] overflow-hidden rounded-xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
+          <div className="grid grid-cols-[1fr_440px]">
+            {/* Copy */}
+            <div className="flex flex-col justify-center p-7">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Our Technology
+              </p>
+
+              <h3 className="mt-2 font-serif text-[22px] font-semibold leading-tight text-gray-900 dark:text-white">
+                AI-Integrated ITAD with TraceTech
+              </h3>
+
+              <p className="mt-3 text-[13px] leading-6 text-gray-600 dark:text-gray-300">
+                TraceTech is Integritrade&apos;s proprietary AI-integrated ERP
+                platform. It provides real-time transparency into your account
+                activity tracking every asset from pickup through final
+                disposition, with Certificates of Destruction and audit-ready
+                reports available on demand.
+              </p>
+
+              <div className="mt-5">
+                <Link
+                  href={TRACETECH_HREF}
+                  className="group/tt inline-flex items-center gap-2 rounded-md border border-primary px-4 py-2.5 text-[13px] font-semibold text-primary transition-all duration-300 hover:bg-primary hover:text-white click-feel"
+                >
+                  Learn More
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/tt:translate-x-0.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* Screenshot — transparent PNG, zoomed with the right edge (login
+                screen) pinned so it never gets cropped */}
+            <div className="flex items-center justify-center overflow-hidden">
+              <Image
+                src={tracetechCurved}
+                alt="TraceTech ERP platform login"
+                className="h-auto w-full scale-[0.94] translate-x-6"
+                sizes="440px"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -479,6 +569,13 @@ export default function Navbar() {
                 </Link>
               )
             })}
+
+            {/* TraceTech promo — always last */}
+            <div onMouseEnter={() => setHoveredHref(TRACETECH_HREF)}>
+              <TraceTechNavItem
+                registerRef={(el) => linkRefs.current.set(TRACETECH_HREF, el)}
+              />
+            </div>
           </nav>
 
           {/* ================== RIGHT SIDE (lg+) ================== */}
@@ -590,6 +687,15 @@ export default function Navbar() {
                 </Link>
               )
             })}
+
+            {/* TraceTech — always last */}
+            <Link
+              href={TRACETECH_HREF}
+              onClick={() => setIsMenuOpen(false)}
+              className="block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-medium tracking-tight transition-all active:scale-[0.97] active:duration-75 text-gray-700 dark:text-gray-200 hover:text-primary"
+            >
+              TraceTech
+            </Link>
           </nav>
 
           {/* Footer CTAs */}

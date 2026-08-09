@@ -330,7 +330,7 @@ export default function AboutPage() {
       </div>
 
       {/* ───────────────── OUR TECHNOLOGY — text on top, screenshot showcase below ───────────────── */}
-      <div className="bg-white dark:bg-dark-secondary">
+      <div id="tracetech" className="scroll-mt-20 bg-white dark:bg-dark-secondary">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <ScrollLoader>
             <div>
@@ -370,9 +370,7 @@ export default function AboutPage() {
 
           {/* Screenshot showcase */}
           <ScrollLoader delay={0.1}>
-            {/* Capped at the image's practical sharpness width — rendering the
-                1437px source near-native keeps the screenshot crisp on retina. */}
-            <div className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-lg border border-stone-200 shadow-[0_20px_60px_rgba(15,23,42,0.10)] dark:border-white/10 dark:shadow-[0_20px_60px_rgba(0,0,0,0.45)] lg:mt-16">
+            <div className="mx-auto mt-12 max-w-5xl lg:mt-16">
               <Image
                 src={tracetech}
                 alt="Integritrade TraceTech AI ERP — proprietary AI-integrated ITAD asset tracking platform"
