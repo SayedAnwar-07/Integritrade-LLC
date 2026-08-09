@@ -8,7 +8,7 @@ import ScrollLoader from '@/components/shared/ScrollLoader'
 export const metadata: Metadata = {
   title: 'Contact Us | Certified ITAD & Electronic Recycling Fresno, CA',
   description:
-    'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our 30,000 sq ft Fresno facility. Call (559) 325-4813 today.',
+    'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our secure Fresno facility. Call (559) 325-4813 today.',
   keywords: [
     'contact Integritrade LLC',
     'ITAD company Fresno CA',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     title:
       'Contact Integritrade LLC | R2v3 Certified ITAD & Data Destruction California',
     description:
-      'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our 30,000 sq ft Fresno facility. Call (559) 325-4813 today.',
+      'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our secure Fresno facility. Call (559) 325-4813 today.',
     siteName: 'Integritrade LLC',
     locale: 'en_US',
     images: [
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Contact Integritrade LLC | R2v3 Certified ITAD & Data Destruction',
     description:
-      'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our 30,000 sq ft Fresno facility.',
+      'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our secure Fresno facility.',
     images: ['https://integritradellc.com/logo/integritrade-logo.png'],
   },
   alternates: {
