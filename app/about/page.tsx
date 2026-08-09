@@ -22,7 +22,7 @@ import Image from "next/image"
 import itadWarehouse from "@/public/about/itadWarehouse.jpeg"
 import itadAssemblyLine from "@/public/about/itadAssemblyLine.png"
 import recyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg"
-import tracetech from "@/public/about/tracetech.png"
+import tracetech from "@/public/about/Integritrade_Tracetech_AI_ERP.png"
 import ScrollLoader from "@/components/shared/ScrollLoader"
 import OutlineButton from "@/components/shared/buttons/OutlineButton"
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton"
@@ -115,7 +115,7 @@ const valueRecovery = [
     iconColor: "text-emerald-600 dark:text-emerald-400",
     borderColor: "border-emerald-300 dark:border-emerald-400",
     title: "Value Recovery Focused",
-    desc: "Whenever possible, we prioritize refurbishment, parts harvesting, and responsible reuse workflows to help offset retirement costs before recycling is even considered.",
+    desc: "We prioritize refurbishment, parts harvesting, and responsible reuse workflows to offset your retirement costs before recycling is ever considered. In fact, the vast majority of our clients pay $0 for ITAD or actually generate revenue. We even offer a net-positive guarantee on qualifying batches before work begins, ensuring zero financial risk.",
   },
   {
     Icon: BadgeDollarSign,
@@ -123,13 +123,17 @@ const valueRecovery = [
     borderColor: "border-amber-300 dark:border-amber-500",
     title: "Revenue Assurance Guarantee",
     desc: "On qualifying batches, we guarantee zero out-of-pocket costs, even if processing fees surpass the asset value.",
+    points: [
+      "Eligible Equipment: Mix or match at least 50 units of computers, servers, desktops, laptops, tablets, or cell phones.",
+      "Age Requirement: Equipment up to ~6 years old or newer.",
+    ],
   },
   {
     Icon: HandHeart,
     iconColor: "text-sky-700 dark:text-sky-400",
     borderColor: "border-sky-500 dark:border-sky-400",
     title: "A True Partnership Approach",
-    desc: "When your equipment falls below resale cutlines, we securely sanitize the data-bearing components and attempt to donate them, waiving recycling fees on eligible items. It helps the community, saves you money, and keeps your bottom line unaffected.",
+    desc: "When your equipment falls below resale cutlines, your data is always securely sanitized. We route this hardware to its best possible second life by selling select pieces to fund our operations and attempting to donate others to those in need. For these eligible items, we waive the COD fees entirely - ensuring your data is destroyed, the community is helped, and your bottom line is protected.",
   },
 ]
 
@@ -164,7 +168,7 @@ const trustReasons = [
   },
   {
     title: "Industry-Leading Data Security",
-    desc: "Destruction processes that exceed NIST 800-88 standards, with certified documentation on every project. Optional video-witnessed destruction available upon request.",
+    desc: "NIST 800-88 compliant destruction backed by the rigorous security protocols of our R2-certified facility. We provide certified documentation on every ITAD or data destruction project, with optional video-witnessed destruction or video-taped destruction available upon request.",
   },
   {
     title: "Value Maximization",
@@ -350,7 +354,7 @@ export default function AboutPage() {
                 {[
                   "Automated tracking, auditing, and processing so fewer human hands ever touch your devices.",
                   "Fewer touchpoints mean less risk, zero bottlenecks, and unparalleled security.",
-                  "Faster, more secure, and more cost-effective than legacy providers.",
+                  "Advanced tracking and analytics designed to yield faster and higher returns on your retired IT assets.",
                   "Every efficiency gain is passed directly back to you.",
                 ].map((point) => (
                   <li key={point} className="flex items-start gap-3">
@@ -366,12 +370,15 @@ export default function AboutPage() {
 
           {/* Screenshot showcase */}
           <ScrollLoader delay={0.1}>
-            <div className="mt-12 lg:mt-16 overflow-hidden rounded-lg border border-stone-200 shadow-[0_20px_60px_rgba(15,23,42,0.10)] dark:border-white/10 dark:shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+            {/* Capped at the image's practical sharpness width — rendering the
+                1437px source near-native keeps the screenshot crisp on retina. */}
+            <div className="mx-auto mt-12 max-w-5xl overflow-hidden rounded-lg border border-stone-200 shadow-[0_20px_60px_rgba(15,23,42,0.10)] dark:border-white/10 dark:shadow-[0_20px_60px_rgba(0,0,0,0.45)] lg:mt-16">
               <Image
                 src={tracetech}
-                alt="TraceTech — Integritrade's proprietary AI-integrated ITAD tracking platform"
+                alt="Integritrade TraceTech AI ERP — proprietary AI-integrated ITAD asset tracking platform"
                 className="h-auto w-full"
-                sizes="(max-width: 1280px) 100vw, 1280px"
+                sizes="(max-width: 1024px) 100vw, 1024px"
+                quality={100}
                 placeholder="blur"
               />
             </div>
@@ -494,6 +501,19 @@ export default function AboutPage() {
                 <p className="mt-3 text-base leading-relaxed text-stone-700 dark:text-slate-300">
                   {item.desc}
                 </p>
+
+                {"points" in item && item.points && (
+                  <ul className="mt-4 space-y-2.5 border-t border-stone-200 pt-4 dark:border-white/10">
+                    {item.points.map((point) => (
+                      <li key={point} className="flex items-start gap-2.5">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                        <span className="text-sm leading-relaxed text-stone-700 dark:text-slate-300">
+                          {point}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </ScrollLoader>
           ))}
@@ -561,10 +581,10 @@ export default function AboutPage() {
 
               <p className="mt-6 max-w-xl text-base leading-relaxed text-stone-700 dark:text-slate-300">
                 We host scheduled facility tours for prospective clients and
-                auditors at our 30,000 sq ft secure processing facility in
-                Fresno. Bring your compliance lead they&apos;ll see the exact
-                TraceTech-driven process your retired devices will go through,
-                from intake to final disposition.
+                auditors at our secure processing facility in Fresno. Bring
+                your compliance lead they&apos;ll see the exact TraceTech-driven
+                process your retired devices will go through, from intake to
+                final disposition.
               </p>
 
               <div className="mt-10 flex flex-col sm:flex-row gap-4">
