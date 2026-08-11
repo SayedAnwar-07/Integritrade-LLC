@@ -9,6 +9,7 @@ import {
  Users,
   BadgeCheck,
   Camera,
+  Lock,
 } from "lucide-react";
 
 export default function Hero() {
@@ -43,6 +44,12 @@ export default function Hero() {
       value: "24/7",
       label: "Secure Video-Monitored Facility",
       color: "text-red-600 border-red-300",
+    },
+    {
+      icon: Lock,
+      value: "Zero",
+      label: "Data Breaches in Our History",
+      color: "text-teal-600 border-teal-300",
     },
   ];
 
@@ -84,7 +91,7 @@ export default function Hero() {
                   testId="button-learn-more"
                   className="text-sm py-3 sm:flex-1 lg:flex-none"
                 >
-                  See How It Works
+                  View Our Service Levels
                 </OutlineButton>
 
                 <PrimaryButton
@@ -108,9 +115,10 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Data ribbon */}
-          <div className="lg:mt-16 border-gray-300 dark:border-white/10">
-            <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+          {/* Data ribbon — needs its own top gap on mobile, where the globe
+              sits directly above it instead of beside it. */}
+          <div className="mt-12 lg:mt-16 border-gray-300 dark:border-white/10">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
               {trustItems.map((item, i) => {
                 const Icon = item.icon;
 

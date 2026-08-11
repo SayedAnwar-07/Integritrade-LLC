@@ -224,8 +224,10 @@ function TraceTechNavItem({
       >
         <div className="w-[820px] overflow-hidden rounded-xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
           <div className="grid grid-cols-[1fr_440px]">
-            {/* Copy */}
-            <div className="flex flex-col justify-center p-7">
+            {/* Copy — data-nosnippet keeps this chrome out of Google's search
+                snippets; without it the panel text (present on every page)
+                gets scraped as the page description. */}
+            <div className="flex flex-col justify-center p-7" data-nosnippet>
               <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
                 Our Technology
               </p>

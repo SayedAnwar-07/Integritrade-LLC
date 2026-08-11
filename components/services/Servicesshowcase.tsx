@@ -87,6 +87,7 @@ function ServiceTierArticle({
     { label: 'Includes', value: sl.includes },
     { label: 'Documentation', value: sl.documentation },
     { label: 'Value Recovery', value: sl.valueRecovery },
+    { label: 'Scenario', value: sl.whenToChoose },
   ]
 
   // Visibility class shared by the collapsed block (rows + callout)
@@ -162,13 +163,6 @@ function ServiceTierArticle({
             ))}
           </div>
         </dl>
-
-        {/* "When to Choose" callout — part of the collapsible block */}
-        <div className={`${collapsibleCls} mt-4`}>
-          <p className="text-[15px] leading-relaxed text-gray-800 dark:text-gray-200 custom-text-center">
-            {sl.whenToChoose}
-          </p>
-        </div>
 
         {/* Read More toggle — visible only on tablet & mobile */}
         <div className='text-end lg:hidden'>

@@ -33,7 +33,12 @@ const footerServices = [
 export default function Footer() {
   const pathname = usePathname();
   return (
-    <footer className="relative bg-[#0A0E0F] text-white overflow-hidden">
+    // data-nosnippet: the footer address/links are boilerplate on every page and
+    // Google was pulling them in as search descriptions instead of the meta tag.
+    <footer
+      className="relative bg-[#0A0E0F] text-white overflow-hidden"
+      data-nosnippet
+    >
       {/* Top accent line */}
       <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#2aac61] to-transparent" />
 

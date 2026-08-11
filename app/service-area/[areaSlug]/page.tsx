@@ -33,11 +33,16 @@ export async function generateMetadata({
     return {};
   }
 
-  const cityIntro = generateCityIntro(area.name);
+  // Use the city's purpose-written metaDescription. The full intro paragraph
+  // runs 500+ characters, which Google truncates and often discards entirely
+  // in favour of scraping page text.
+  const description =
+    area.metaDescription ??
+    `Certified IT asset disposition, secure data destruction, and e-waste recycling for ${area.name}, CA businesses. R2v3 and ISO certified with audit-ready documentation.`;
 
   return {
     title: `${area.name} IT Asset Disposition Services`,
-    description: cityIntro,
+    description,
   };
 }
 
