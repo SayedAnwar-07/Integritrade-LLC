@@ -19,3 +19,44 @@ RewriteRule ^blogs/certified-e-waste-disposal-services-data-destruction/?$ /blog
 # Return 410 Gone for the removed images if they linger on the server.
 RewriteRule ^blogs/Servers-Manage-Server\.jpg$ - [G,L]
 RewriteRule ^blogs/E-Waste-Disposal\.jpg$ - [G,L]
+
+# ── Legacy service slugs (GSC "Not found (404)" cleanup, 2026-08-11) ──
+RewriteRule ^services/e-waste-recycling/?$ /services/basic-electronics-recycling/ [R=301,L]
+RewriteRule ^services/electronic-recycling/?$ /services/basic-electronics-recycling/ [R=301,L]
+RewriteRule ^services/itad-services/?$ /services/it-asset-disposition/ [R=301,L]
+RewriteRule ^services/asset-recovery-services/?$ /services/it-asset-disposition/ [R=301,L]
+RewriteRule ^services/asset-recovery/?$ /services/it-asset-disposition/ [R=301,L]
+RewriteRule ^services/junk-removal/?$ /services/ [R=301,L]
+RewriteRule ^services/junk-removal-cleanouts/?$ /services/ [R=301,L]
+RewriteRule ^services/business-liquidation/?$ /services/ [R=301,L]
+RewriteRule ^services/commercial-liquidation-asset-recovery/?$ /services/ [R=301,L]
+
+# ── Legacy top-level pages ──
+RewriteRule ^contact/?$ /service-book/ [R=301,L]
+RewriteRule ^resources/?$ /blogs/ [R=301,L]
+RewriteRule ^accepted-items/?$ /services/ [R=301,L]
+RewriteRule ^hard-drive-shredding-fresno/?$ /service-area/fresno/hard-drive-shredding/ [R=301,L]
+# /home/ is an image folder, not a route — directory listing returns 403.
+# Redirect the bare directory only, so /home/<file> keeps resolving.
+RewriteRule ^home/$ / [R=301,L]
+
+# ── Renamed blog posts ──
+RewriteRule ^blogs/why-choosing-an-r2-certified-recycler-matters/?$ /blogs/r2-certified-e-waste-recycling-services/ [R=301,L]
+RewriteRule ^blogs/why-choosing-a-certified-e-waste-disposal-vendor-is-critical-for-compliance-data-security-and-environmental-safety/?$ /blogs/r2-certified-e-waste-recycling-services/ [R=301,L]
+RewriteRule ^blogs/what-is-rohs-compliance-understanding-toxic-metals-in-electronics-manufacturing/?$ /blogs/rohs-compliance-electronics-recycling-services/ [R=301,L]
+RewriteRule ^blogs/how-to-properly-decommission-old-computers-and-office-equipment/?$ /blogs/decommission-old-computers-it-equipment/ [R=301,L]
+RewriteRule ^blogs/remove-dep-protection-apple-devices/?$ /blogs/remove-apple-dep-mdm-lock-devices/ [R=301,L]
+RewriteRule ^blogs/introduction-to-video-tape-data-destruction/?$ /blogs/video-tape-data-destruction-services/ [R=301,L]
+RewriteRule ^blogs/why-nvme-drives-are-hard-to-erase-and-why-you-need-a-certified-data-destruction-company/?$ /blogs/nvme-data-destruction-methods/ [R=301,L]
+RewriteRule ^blogs/how-to-sell-used-servers-and-manage-server-recycling/?$ /blogs/server-data-center-equipment-disposal-guide/ [R=301,L]
+RewriteRule ^blogs/itad-cutlines-explained-device-eligibility-for-revenue-sharing/?$ /blogs/itad-cutlines-revenue-sharing-devices/ [R=301,L]
+RewriteRule ^blogs/cutlines-in-itad-why-fair-cutlines-matter/?$ /blogs/fair-flexible-itad-cutlines/ [R=301,L]
+RewriteRule ^blogs/what-is-an-itad-policy-and-why-is-it-important/?$ /blogs/itad-compliance-and-data-destruction-policies/ [R=301,L]
+RewriteRule ^blogs/it-asset-recovery-explained-best-practices/?$ /blogs/it-asset-recovery-process-and-best-practices/ [R=301,L]
+RewriteRule ^blogs/risk-depreciation-old-office-devices/?$ /blogs/it-equipment-depreciation-and-risks/ [R=301,L]
+RewriteRule ^blogs/hipaa-compliance-itad-vendor-legal-necessity/?$ /blogs/hipaa-compliant-itad-data-destruction-services/ [R=301,L]
+RewriteRule ^blogs/zero-trust-security-and-itad/?$ /blogs/zero-trust-security-in-it-asset-disposition/ [R=301,L]
+RewriteRule ^blogs/itad-vs-electronic-recycling/?$ /blogs/itad-vs-e-waste-recycling/ [R=301,L]
+RewriteRule ^blogs/itad-sustainability-importance/?$ /blogs/landfill-vs-certified-recycling-environment/ [R=301,L]
+RewriteRule ^blogs/how-to-maximize-your-it-asset-recovery-value/?$ /blogs/it-asset-recovery-services-maximize-value/ [R=301,L]
+RewriteRule ^blogs/understanding-the-importance-of-it-asset-disposition/?$ /blogs/why-it-asset-disposition-is-important/ [R=301,L]
