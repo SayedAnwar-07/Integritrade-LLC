@@ -1,25 +1,9 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
-import {
-  Select,
-  SelectTrigger,
-  SelectValue,
-  SelectContent,
-  SelectItem,
-} from '@/components/ui/select'
-import {
-  User,
-  ClipboardList,
-  ChevronRight,
-  ChevronLeft,
-  Send,
-  AlertCircle,
-  Loader2,
-} from 'lucide-react'
-import AddressAutocomplete from '@/components/contact/AddressAutocomplete'
+import { AlertCircle, Loader2, Send } from 'lucide-react'
 
 interface FormData {
   name: string
@@ -27,12 +11,6 @@ interface FormData {
   phone: string
   company: string
   service: string
-  address: string
-  address2: string
-  city: string
-  state: string
-  zip: string
-  preferredDate: string
   estimatedQuantity: string
   deploymentUrgency: string
   message: string
@@ -46,12 +24,6 @@ const INITIAL_DATA: FormData = {
   phone: '',
   company: '',
   service: '',
-  address: '',
-  address2: '',
-  city: '',
-  state: '',
-  zip: '',
-  preferredDate: '',
   estimatedQuantity: '',
   deploymentUrgency: '',
   message: '',
@@ -95,24 +67,18 @@ const URGENCY_OPTIONS: Option[] = [
 const labelFor = (options: Option[], value: string) =>
   options.find((o) => o.value === value)?.label ?? value
 
-const STEPS = [
-  { id: 0, label: 'Contact & Address', icon: User },
-  { id: 1, label: 'Job Info', icon: ClipboardList },
-] as const
-
 const baseInput =
   'w-full rounded-md bg-white dark:bg-dark-secondary text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 border transition-all duration-200 outline-none px-3.5 py-2.5 text-sm focus:border-green-400 dark:focus:border-green-500'
 
 const inputBorder = (hasError?: boolean) =>
   hasError
-    ? 'border-red-400 dark:border-red-500/70 focus:ring-red-100 dark:focus:ring-red-900/40 focus:border-red-400'
+    ? 'border-red-400 dark:border-red-500/70 focus:border-red-400'
     : 'border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
 
 const labelClass =
   'block text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2'
 
 export default function RequestPickupForm() {
-  const [step, setStep] = useState(0)
   const [data, setData] = useState<FormData>(INITIAL_DATA)
   const [errors, setErrors] = useState<FormErrors>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -128,7 +94,7 @@ export default function RequestPickupForm() {
 
   useEffect(() => {
     resizeMessage()
-  }, [data.message, step])
+  }, [data.message])
 
   const update = (field: keyof FormData, value: string) => {
     setData((prev) => ({ ...prev, [field]: value }))
@@ -142,68 +108,38 @@ export default function RequestPickupForm() {
     }
   }
 
-  const validateStep = (current: number): FormErrors => {
+  const validate = (): FormErrors => {
     const e: FormErrors = {}
 
-    if (current === 0) {
-      if (!data.name.trim()) e.name = 'Full name is required.'
+    if (!data.name.trim()) e.name = 'Full name is required.'
 
-      if (!data.email.trim()) {
-        e.email = 'Email address is required.'
-      } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) {
-        e.email = 'Please enter a valid email address.'
-      }
-
-      if (!data.phone.trim()) {
-        e.phone = 'Phone number is required.'
-      } else if (!/^[\d\s()+-]{7,}$/.test(data.phone.trim())) {
-        e.phone = 'Please enter a valid phone number.'
-      }
-
-      if (!data.address.trim()) e.address = 'Street address is required.'
-      if (!data.city.trim()) e.city = 'City is required.'
-      if (!data.state.trim()) e.state = 'State is required.'
-
-      if (!data.zip.trim()) {
-        e.zip = 'ZIP code is required.'
-      } else if (!/^\d{4,10}$/.test(data.zip.trim())) {
-        e.zip = 'Please enter a valid ZIP code.'
-      }
+    if (!data.email.trim()) {
+      e.email = 'Email address is required.'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email.trim())) {
+      e.email = 'Please enter a valid email address.'
     }
 
-    if (current === 1) {
-      if (!data.service) e.service = 'Please select a service.'
-      if (!data.estimatedQuantity) e.estimatedQuantity = 'Please select an estimated quantity.'
-      if (!data.deploymentUrgency) e.deploymentUrgency = 'Please select a deployment urgency.'
+    if (!data.phone.trim()) {
+      e.phone = 'Phone number is required.'
+    } else if (!/^[\d\s()+-]{7,}$/.test(data.phone.trim())) {
+      e.phone = 'Please enter a valid phone number.'
     }
+
+    if (!data.service) e.service = 'Please select a service.'
 
     return e
-  }
-
-  const handleNext = () => {
-    const e = validateStep(step)
-    setErrors(e)
-
-    if (Object.keys(e).length === 0) {
-      setStep((s) => Math.min(s + 1, STEPS.length - 1))
-    }
-  }
-
-  const handleBack = () => {
-    setErrors({})
-    setStep((s) => Math.max(s - 1, 0))
   }
 
   const resetForm = () => {
     setData(INITIAL_DATA)
     setErrors({})
-    setStep(0)
   }
 
-  const handleSubmit = async () => {
-    const e = validateStep(1)
-    setErrors(e)
+  const handleSubmit = async (ev: React.FormEvent) => {
+    ev.preventDefault()
 
+    const e = validate()
+    setErrors(e)
     if (Object.keys(e).length > 0) return
 
     const serviceId = process.env.NEXT_PUBLIC_BOOKING_EMAILJS_SERVICE_ID
@@ -216,37 +152,30 @@ export default function RequestPickupForm() {
       timeStyle: 'short',
     })
 
-    const requestId = `ITR-${Date.now().toString().slice(-6)}` 
-
-    const fullPickupAddress = [
-      data.address,
-      data.address2,
-      data.city,
-      data.state,
-      data.zip,
-    ]
-      .filter(Boolean)
-      .join(', ')
+    const requestId = `ITR-${Date.now().toString().slice(-6)}`
 
     const selectedService = labelFor(SERVICE_OPTIONS, data.service)
+    const selectedQuantity = data.estimatedQuantity
+      ? labelFor(QUANTITY_OPTIONS, data.estimatedQuantity)
+      : 'Not specified'
+    const selectedUrgency = data.deploymentUrgency
+      ? labelFor(URGENCY_OPTIONS, data.deploymentUrgency)
+      : 'Not specified'
 
-    const selectedQuantity = labelFor(QUANTITY_OPTIONS, data.estimatedQuantity)
-
-    const selectedUrgency = labelFor(URGENCY_OPTIONS, data.deploymentUrgency)
-
+    // Address fields are retained as N/A so the existing EmailJS template,
+    // which still references them, keeps rendering correctly.
     const templateParams = {
       name: data.name,
       company: data.company || 'N/A',
       email: data.email,
       phone: data.phone,
 
-      address: data.address,
-      pickupAddress: fullPickupAddress,
-
-      address2: data.address2 || 'N/A',
-      city: data.city,
-      state: data.state,
-      zip: data.zip,
+      address: 'N/A',
+      pickupAddress: 'Not collected — team will confirm on follow-up',
+      address2: 'N/A',
+      city: 'N/A',
+      state: 'N/A',
+      zip: 'N/A',
 
       service: selectedService,
       estimatedQuantity: selectedQuantity,
@@ -278,9 +207,7 @@ export default function RequestPickupForm() {
       try {
         await fetch(makeWebhookUrl, {
           method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
         })
       } catch (webhookError) {
@@ -316,10 +243,7 @@ export default function RequestPickupForm() {
     }
   }
 
-  const inputClass = (field: keyof FormData) =>
-    `${baseInput} ${inputBorder(!!errors[field])}`
-
-  const ErrorMsg = ({ field }: { field: keyof FormData }) =>
+  const Err = ({ field }: { field: keyof FormData }) =>
     errors[field] ? (
       <p className="mt-1.5 flex items-center gap-1.5 text-xs font-medium text-red-500">
         <AlertCircle className="h-3.5 w-3.5 shrink-0" />
@@ -328,357 +252,149 @@ export default function RequestPickupForm() {
     ) : null
 
   return (
-    <div>
-      {/* Stepper */}
-      <div className="mt-8">
-        <div className="flex items-center justify-between">
-          {STEPS.map((s, i) => {
-            const Icon = s.icon
-            const active = i === step
-            const complete = i < step
-
-            return (
-              <div key={s.id} className="flex flex-1 items-center last:flex-none">
-                <div className="flex flex-col items-center">
-                  <div
-                    className={`flex h-10 w-10 items-center justify-center rounded-full border-2 transition ${
-                      active || complete
-                        ? 'border-green-600 bg-green-600 text-white'
-                        : 'border-gray-300 bg-white text-gray-400 dark:border-gray-700 dark:bg-dark'
-                    }`}
-                  >
-                    <Icon className="h-4 w-4" />
-                  </div>
-
-                  <span
-                    className={`mt-2 text-xs font-medium ${
-                      active || complete
-                        ? 'text-gray-900 dark:text-white'
-                        : 'text-gray-400 dark:text-gray-500'
-                    }`}
-                  >
-                    {s.label}
-                  </span>
-                </div>
-
-                {i < STEPS.length - 1 && (
-                  <div
-                    className={`mx-2 h-px flex-1 transition ${
-                      complete ? 'bg-green-600' : 'bg-gray-200 dark:bg-gray-700'
-                    }`}
-                  />
-                )}
-              </div>
-            )
-          })}
+    <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+      {/* Name + Email */}
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div>
+          <label className={labelClass}>
+            Full Name <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            value={data.name}
+            onChange={(e) => update('name', e.target.value)}
+            placeholder="Jane Doe"
+            className={`${baseInput} ${inputBorder(!!errors.name)}`}
+          />
+          <Err field="name" />
         </div>
 
-        <div className="mt-4 h-1.5 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-gray-800">
-          <div
-            className="h-full rounded-full bg-green-600 transition-all duration-300"
-            style={{ width: `${((step + 1) / STEPS.length) * 100}%` }}
+        <div>
+          <label className={labelClass}>
+            Email <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="email"
+            value={data.email}
+            onChange={(e) => update('email', e.target.value)}
+            placeholder="jane@company.com"
+            className={`${baseInput} ${inputBorder(!!errors.email)}`}
+          />
+          <Err field="email" />
+        </div>
+      </div>
+
+      {/* Phone + Company */}
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div>
+          <label className={labelClass}>
+            Phone <span className="text-red-500">*</span>
+          </label>
+          <input
+            type="tel"
+            value={data.phone}
+            onChange={(e) => update('phone', e.target.value)}
+            placeholder="(555) 555-5555"
+            className={`${baseInput} ${inputBorder(!!errors.phone)}`}
+          />
+          <Err field="phone" />
+        </div>
+
+        <div>
+          <label className={labelClass}>Company</label>
+          <input
+            type="text"
+            value={data.company}
+            onChange={(e) => update('company', e.target.value)}
+            placeholder="Company name"
+            className={`${baseInput} ${inputBorder(false)}`}
           />
         </div>
       </div>
 
-      {/* STEP 1 */}
-      {step === 0 && (
-        <div className="mt-8 space-y-5">
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            <div>
-              <label htmlFor="name" className={labelClass}>
-                Full Name <span className="text-red-500">*</span>
-              </label>
-              <input
-                id="name"
-                type="text"
-                value={data.name}
-                onChange={(e) => update('name', e.target.value)}
-                placeholder="Full Name"
-                className={inputClass('name')}
-              />
-              <ErrorMsg field="name" />
-            </div>
-
-            <div>
-              <label htmlFor="company" className={labelClass}>
-                Company Name
-              </label>
-              <input
-                id="company"
-                type="text"
-                value={data.company}
-                onChange={(e) => update('company', e.target.value)}
-                placeholder="Company Name"
-                className={inputClass('company')}
-              />
-            </div>
-
-            <div>
-              <label htmlFor="email" className={labelClass}>
-                Email Address <span className="text-red-500">*</span>
-              </label>
-              <input
-                id="email"
-                type="email"
-                value={data.email}
-                onChange={(e) => update('email', e.target.value)}
-                placeholder="Email Address"
-                className={inputClass('email')}
-              />
-              <ErrorMsg field="email" />
-            </div>
-
-            <div>
-              <label htmlFor="phone" className={labelClass}>
-                Phone Number <span className="text-red-500">*</span>
-              </label>
-              <input
-                id="phone"
-                type="tel"
-                value={data.phone}
-                onChange={(e) => update('phone', e.target.value)}
-                placeholder="Phone Number"
-                className={inputClass('phone')}
-              />
-              <ErrorMsg field="phone" />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
-            <div>
-              <label htmlFor="address" className={labelClass}>
-                Street Address <span className="text-red-500">*</span>
-              </label>
-              <AddressAutocomplete
-                id="address"
-                value={data.address}
-                onChange={(v) => update('address', v)}
-                onSelect={(s) => {
-                  update('address', s.street_line)
-                  update('address2', s.secondary)
-                  update('city', s.city)
-                  update('state', s.state)
-                  update('zip', s.zipcode)
-                }}
-                placeholder="Start typing your address…"
-                inputClassName={inputClass('address')}
-                aria-invalid={!!errors.address}
-              />
-              <ErrorMsg field="address" />
-            </div>
-
-            <div>
-              <label htmlFor="address2" className={labelClass}>
-                Address Line 2
-              </label>
-              <input
-                id="address2"
-                type="text"
-                value={data.address2}
-                onChange={(e) => update('address2', e.target.value)}
-                placeholder="Apartment, suite, building, floor"
-                className={inputClass('address2')}
-              />
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-3">
-            <div>
-              <label htmlFor="city" className={labelClass}>
-                City <span className="text-red-500">*</span>
-              </label>
-              <input
-                id="city"
-                type="text"
-                value={data.city}
-                onChange={(e) => update('city', e.target.value)}
-                placeholder="City"
-                className={inputClass('city')}
-              />
-              <ErrorMsg field="city" />
-            </div>
-
-            <div>
-              <label htmlFor="state" className={labelClass}>
-                State <span className="text-red-500">*</span>
-              </label>
-              <input
-                id="state"
-                type="text"
-                value={data.state}
-                onChange={(e) => update('state', e.target.value)}
-                placeholder="State"
-                className={inputClass('state')}
-              />
-              <ErrorMsg field="state" />
-            </div>
-
-            <div>
-              <label htmlFor="zip" className={labelClass}>
-                ZIP Code <span className="text-red-500">*</span>
-              </label>
-              <input
-                id="zip"
-                type="text"
-                inputMode="numeric"
-                value={data.zip}
-                onChange={(e) => update('zip', e.target.value)}
-                placeholder="ZIP Code"
-                className={inputClass('zip')}
-              />
-              <ErrorMsg field="zip" />
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* STEP 2 */}
-      {step === 1 && (
-        <div className="mt-8 space-y-5">
-          <div>
-            <label htmlFor="service" className={labelClass}>
-              Service Interest <span className="text-red-500">*</span>
-            </label>
-
-            <Select value={data.service} onValueChange={(v) => update('service', v)}>
-              <SelectTrigger id="service" className={inputClass('service')}>
-                <SelectValue placeholder="Select a service" />
-              </SelectTrigger>
-
-              <SelectContent className="border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
-                {SERVICE_OPTIONS.map((opt) => (
-                  <SelectItem key={opt.value} value={opt.value} className="whitespace-normal py-2.5">
-                    {opt.label}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
-
-            <ErrorMsg field="service" />
-          </div>
-
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
-            <div>
-              <label htmlFor="estimatedQuantity" className={labelClass}>
-                Estimated Quantity <span className="text-red-500">*</span>
-              </label>
-
-              <Select
-                value={data.estimatedQuantity}
-                onValueChange={(v) => update('estimatedQuantity', v)}
-              >
-                <SelectTrigger id="estimatedQuantity" className={inputClass('estimatedQuantity')}>
-                  <SelectValue placeholder="Select quantity" />
-                </SelectTrigger>
-
-                <SelectContent className="border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
-                  {QUANTITY_OPTIONS.map((opt) => (
-                    <SelectItem key={opt.value} value={opt.value} className="whitespace-normal py-2.5">
-                      {opt.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-
-              <ErrorMsg field="estimatedQuantity" />
-            </div>
-
-            <div>
-              <label htmlFor="deploymentUrgency" className={labelClass}>
-                Deployment Urgency <span className="text-red-500">*</span>
-              </label>
-
-              <Select
-                value={data.deploymentUrgency}
-                onValueChange={(v) => update('deploymentUrgency', v)}
-              >
-                <SelectTrigger id="deploymentUrgency" className={inputClass('deploymentUrgency')}>
-                  <SelectValue placeholder="Select urgency" />
-                </SelectTrigger>
-
-                <SelectContent className="w-[var(--radix-select-trigger-width)] border-gray-200 dark:border-gray-700 dark:bg-dark-secondary dark:text-gray-100">
-                  {URGENCY_OPTIONS.map((opt) => (
-                    <SelectItem key={opt.value} value={opt.value} className="whitespace-normal py-2.5">
-                      {opt.label}
-                    </SelectItem>
-                  ))}
-                </SelectContent>
-              </Select>
-
-              <ErrorMsg field="deploymentUrgency" />
-            </div>
-          </div>
-
-          <div>
-            <label htmlFor="message" className={labelClass}>
-              Message
-            </label>
-
-            <textarea
-              id="message"
-              ref={messageRef}
-              rows={4}
-              value={data.message}
-              onChange={(e) => update('message', e.target.value)}
-              onInput={resizeMessage}
-              placeholder="Tell us anything else about your request"
-              className={`${inputClass('message')} resize-none overflow-hidden`}
-            />
-
-            <p className="mt-1 text-xs text-gray-400">
-              {data.message.length} characters
-            </p>
-          </div>
-        </div>
-      )}
-
-      {/* NAVIGATION */}
-      <div className="mt-8 flex items-center justify-between">
-        {step > 0 ? (
-          <button
-            type="button"
-            onClick={handleBack}
-            disabled={isSubmitting}
-            className="inline-flex items-center gap-2 rounded-md border border-gray-300 bg-white px-5 py-2.5 text-sm font-semibold text-gray-700 transition hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:bg-dark dark:text-gray-200 dark:hover:bg-gray-800"
-          >
-            <ChevronLeft className="h-4 w-4" />
-            Back
-          </button>
-        ) : (
-          <span />
-        )}
-
-        {step < STEPS.length - 1 ? (
-          <button
-            type="button"
-            onClick={handleNext}
-            className="inline-flex items-center gap-2 rounded-md bg-green-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-green-700"
-          >
-            Continue
-            <ChevronRight className="h-4 w-4" />
-          </button>
-        ) : (
-          <button
-            type="button"
-            onClick={handleSubmit}
-            disabled={isSubmitting}
-            className="inline-flex items-center gap-2 rounded-md bg-green-600 px-6 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-70"
-          >
-            {isSubmitting ? (
-              <>
-                <Loader2 className="h-4 w-4 animate-spin" />
-                Sending...
-              </>
-            ) : (
-              <>
-                Submit Service Request
-                <Send className="h-4 w-4" />
-              </>
-            )}
-          </button>
-        )}
+      {/* Service */}
+      <div>
+        <label className={labelClass}>
+          Service Needed <span className="text-red-500">*</span>
+        </label>
+        <select
+          value={data.service}
+          onChange={(e) => update('service', e.target.value)}
+          className={`${baseInput} ${inputBorder(!!errors.service)}`}
+        >
+          <option value="">Select a service</option>
+          {SERVICE_OPTIONS.map((o) => (
+            <option key={o.value} value={o.value}>
+              {o.label}
+            </option>
+          ))}
+        </select>
+        <Err field="service" />
       </div>
-    </div>
+
+      {/* Quantity + Timeline — optional, so nobody stalls on them */}
+      <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
+        <div>
+          <label className={labelClass}>Estimated Quantity</label>
+          <select
+            value={data.estimatedQuantity}
+            onChange={(e) => update('estimatedQuantity', e.target.value)}
+            className={`${baseInput} ${inputBorder(false)}`}
+          >
+            <option value="">Not sure yet</option>
+            {QUANTITY_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        <div>
+          <label className={labelClass}>Timeline</label>
+          <select
+            value={data.deploymentUrgency}
+            onChange={(e) => update('deploymentUrgency', e.target.value)}
+            className={`${baseInput} ${inputBorder(false)}`}
+          >
+            <option value="">Not sure yet</option>
+            {URGENCY_OPTIONS.map((o) => (
+              <option key={o.value} value={o.value}>
+                {o.label}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {/* Message */}
+      <div>
+        <label className={labelClass}>Message</label>
+        <textarea
+          ref={messageRef}
+          value={data.message}
+          onChange={(e) => update('message', e.target.value)}
+          rows={4}
+          placeholder="Describe the equipment you need retired, approximate volume, and the site location."
+          className={`${baseInput} ${inputBorder(false)} resize-none overflow-hidden`}
+        />
+      </div>
+
+      <button
+        type="submit"
+        disabled={isSubmitting}
+        className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary px-4 py-3.5 text-sm font-semibold text-white transition-all hover:bg-[hsl(var(--brand-primary-hover))] hover:scale-[1.01] active:scale-[0.99] disabled:cursor-not-allowed disabled:opacity-70 disabled:hover:scale-100"
+      >
+        {isSubmitting ? (
+          <>
+            <Loader2 className="h-4 w-4 animate-spin" /> Sending…
+          </>
+        ) : (
+          <>
+            <Send className="h-4 w-4" /> Request Free Consultation
+          </>
+        )}
+      </button>
+    </form>
   )
 }

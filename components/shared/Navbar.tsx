@@ -31,6 +31,7 @@ import {
   Scale,
   ChevronRight,
   Info,
+  MessageSquare,
 } from 'lucide-react'
 import { ModeToggle } from './ModeToggle'
 import PrimaryButton from './buttons/PrimaryButton'
@@ -703,20 +704,29 @@ export default function Navbar() {
           {/* Footer CTAs */}
           <div className="p-5 space-y-3 flex-shrink-0 border-t border-gray-100 dark:border-white/5 flex flex-col"> 
 
-            <Link
-              href="tel:+15593254813"
-              className="group !bg-brand-accent hover:!bg-[hsl(var(--brand-accent-hover))] !text-white relative flex w-full items-center justify-between overflow-hidden rounded-md border border-primary/30 hover:border-primary/50 text-primary px-5 py-2 text-[14px] font-medium tracking-tight transition-all"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              <span>(559) 325-4813</span>
+            {/* Call / Text share one row so the phone number reads once,
+                with the action split into two equal, centred boxes. */}
+            <div className="grid grid-cols-2 gap-3">
+              <Link
+                href="tel:+15593254813"
+                onClick={() => setIsMenuOpen(false)}
+                className="!bg-brand-accent hover:!bg-[hsl(var(--brand-accent-hover))] !text-white flex w-full items-center justify-center gap-2 rounded-md border border-primary/30 px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all"
+              >
+                <Phone className="h-4 w-4 shrink-0" strokeWidth={2.2} />
+                <span>Call</span>
+              </Link>
 
-              <Phone
-                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5"
-                strokeWidth={2.2}
-              />
-            </Link>
+              <Link
+                href="sms:+15593254813"
+                onClick={() => setIsMenuOpen(false)}
+                className="flex w-full items-center justify-center gap-2 rounded-md border border-primary/40 px-4 py-2.5 text-[14px] font-medium tracking-tight text-primary transition-all hover:bg-primary/5"
+              >
+                <MessageSquare className="h-4 w-4 shrink-0" strokeWidth={2.2} />
+                <span>Text</span>
+              </Link>
+            </div>
 
-             <PrimaryButton href="/service-book" testId="button-get-quote">
+            <PrimaryButton href="/service-book" testId="button-get-quote">
               Contact Us
             </PrimaryButton>
           </div>

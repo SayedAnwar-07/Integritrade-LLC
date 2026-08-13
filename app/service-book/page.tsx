@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
 import Script from 'next/script'
 import ContactDescription from '@/components/contact/ContactDescription'
-import PageHeader from '@/components/shared/PageHeader'
 import ScrollLoader from '@/components/shared/ScrollLoader'
 
 // ─── SEO METADATA ─────────────────────────────────────────────────────────────
@@ -228,16 +227,8 @@ export default function ContactPage() {
         aria-label="Service Booking and Information"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <ScrollLoader>
-            <PageHeader
-              eyebrow="Get Started"
-              title="Contact Certified IT Asset Disposition Experts"
-              description="Ready to safely retire your technology? Fill out the form below to connect with Integritrade. Whether you need a basic e-waste pickup or a comprehensive, white-glove IT asset disposition strategy anywhere in California (or surrounding states), we integrate seamlessly with your team to protect your data and the planet."
-            />
-          </ScrollLoader>
-
-          {/* Form + Trust Signals */}
+          {/* Heading now lives beside the form inside ContactDescription,
+              so the page no longer opens with two competing headlines. */}
           <ScrollLoader>
             <ContactDescription />
           </ScrollLoader>
