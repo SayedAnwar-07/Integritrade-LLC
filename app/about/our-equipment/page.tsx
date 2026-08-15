@@ -7,7 +7,7 @@ import PageHeader from "@/components/shared/PageHeader";
 import ssdShredderImg from "../../../public/about/ssd-shredder.jpeg";
 import hddShredderImg from "../../../public/about/hdd-shredder.jpeg";
 import degausserImg from "../../../public/about/degausser.jpeg";
-import aboutData from '../../../public/about/aboutData.png'
+import softwareSanitizationImg from "../../../public/about/software-sanitization.jpg";
 
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
@@ -92,8 +92,8 @@ export default function OurCapabilitiesPage() {
                 <div className="lg:col-span-7">
                   <div className="mb-8 max-w-lg">
                       <SectionHeader
-                      eyebrow="Software sanitizatio"
-                      title=" For drives with a second life ahead of them."
+                      eyebrow="Software sanitization"
+                      title="For drives with a second life ahead of them."
                       description=""
                       linkText=""
                       linkHref=""
@@ -150,7 +150,7 @@ export default function OurCapabilitiesPage() {
                 <div className="lg:col-span-5">
                   <div className="relative aspect-[4/5] w-full rounded-md overflow-hidden bg-white dark:bg-dark-secondary">
                     <Image
-                      src={aboutData}
+                      src={softwareSanitizationImg}
                       alt="Integritrade software sanitization workflow"
                       fill
                       className="object-cover"
@@ -216,7 +216,7 @@ export default function OurCapabilitiesPage() {
                       </div>
                       <div className="flex items-baseline gap-4 py-3 border-t border-gray-300 dark:border-gray-800">
                         <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-widest min-w-[90px]">Operated</p>
-                        <p className="text-sm text-gray-900 dark:text-gray-100">On-site, owned outright</p>
+                        <p className="text-sm text-gray-900 dark:text-gray-100">On-site at our Fresno facility</p>
                       </div>
                       <div className="flex items-baseline gap-4 py-3 border-t border-gray-300 dark:border-gray-800">
                         <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-widest min-w-[90px]">Effect</p>
@@ -252,7 +252,7 @@ export default function OurCapabilitiesPage() {
                       </div>
                       <div className="flex items-baseline gap-4 py-3 border-t border-gray-300 dark:border-gray-800">
                         <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-widest min-w-[90px]">Operated</p>
-                        <p className="text-sm text-gray-900 dark:text-gray-100">On-site, owned outright</p>
+                        <p className="text-sm text-gray-900 dark:text-gray-100">On-site at our Fresno facility</p>
                       </div>
                       <div className="flex items-baseline gap-4 py-3 border-t border-gray-300 dark:border-gray-800">
                         <p className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-widest min-w-[90px]">Output</p>
@@ -352,8 +352,8 @@ export default function OurCapabilitiesPage() {
             <div className="py-24">
               <SectionHeader
                 eyebrow="EQUIPMENT INVENTORY"
-                title="The machinery we own, by name and model."
-                description="We list specific equipment because vague claims like industrial-grade machinery are not verifiable. These units operate in our Fresno facility owned outright, not leased, not subcontracted."
+                title="The machinery we operate, by name and model."
+                description="We list specific equipment because vague claims like industrial-grade machinery are not verifiable. These units operate inside our Fresno facility and are run by our own trained personnel, never subcontracted."
                 linkText=""
                 linkHref=""
               />
