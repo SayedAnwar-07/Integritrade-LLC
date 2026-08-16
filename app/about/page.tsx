@@ -147,8 +147,8 @@ const principles = [
   },
   {
     Icon: Wrench,
-    title: "End-to-end, owner-operated security",
-    desc: "We never use subcontracted shred trucks or white-label brokers. Every project is handled exclusively by vetted Integritrade professionals inside our secure, access-restricted, fully surveilled facility. Your security is never outsourced.",
+    title: "End-to-End, In-House Security",
+    desc: "We never use subcontracted shred trucks or white-label brokers. Every ITAD project is managed by trained, vetted Integritrade professionals through our secure, access-restricted, fully surveilled facility. Your assets, data, and documentation remain under Integritrade’s direct control from pickup through final processing.",
     iconColor: "text-amber-700 dark:text-amber-400",
     borderColor: "border-amber-700 dark:border-amber-400",
   },
