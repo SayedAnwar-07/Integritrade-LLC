@@ -4,7 +4,6 @@ import { ServiceArea } from "./types/serviceAreaTypes";
 import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpeg";
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg";
-import assetRecovery from "@/public/services/serviceArea/assetRecovery.png";
 import itBuyback from "@/public/services/serviceArea/itBuyback.jpg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.png";
 import dataCenterDecommissioning from "@/public/services/serviceArea/dataCenterDecommissioning.png";
@@ -15,7 +14,7 @@ export const southSanFranciscoData: ServiceArea = {
   name: "South San Francisco",
   tagline: "Certified Electronics Disposal, Secure Data Destruction & Corporate IT Asset Management in South San Francisco, CA",
   metaTitle: "E-Waste Recycling in South San Francisco, CA | Trusted Corporate E-Waste Recycling",
-  metaDescription: "Looking for e-waste recycling in South San Francisco? IntegriTrade LLC provides secure data destruction and environmentally friendly electronics recycling services in compliance with California law.",
+  metaDescription: "Certified IT Asset Disposition (ITAD) in South San Francisco, CA. R2v3 and ISO 27001 secure data destruction, hard drive shredding, and asset recovery.",
   intro: "IntegriTrade LLC delivers certified electronics disposal and IT asset management services in South San Francisco, CA, helping enterprises and life science companies retire outdated technology with confidence. Our offerings cover secure data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, tracked chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
 
   services: [

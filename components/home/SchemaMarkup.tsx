@@ -180,14 +180,6 @@ const SchemaMarkup: React.FC = () => {
       },
       {
         "@type": "Question",
-        name: "Where is Integritrade LLC located?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Integritrade LLC is located at 1945 N Fine Ave, STE 111, Fresno, California, United States, 93727.",
-        },
-      },
-      {
-        "@type": "Question",
         name: "How can I contact Integritrade LLC?",
         acceptedAnswer: {
           "@type": "Answer",

@@ -5,7 +5,6 @@ import Footer from "@/components/shared/Footer"
 import { Providers } from "./providers"
 import { siteConfig } from "@/lib/seoConfig"
 import { ThemeProvider } from "@/components/theme-provider"
-import SchemaMarkup from "@/components/home/SchemaMarkup"
 import { Suspense } from "react"
 import RouteLoader from "@/components/shared/RouteLoader"
 import Navbar from "@/components/shared/Navbar"
@@ -125,7 +124,6 @@ export default function RootLayout({
               },
             }}
           />
-          <SchemaMarkup />
         </Providers>
       </body>
     </html>
