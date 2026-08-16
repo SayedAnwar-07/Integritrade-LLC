@@ -4,7 +4,6 @@ import WhyChoose from '@/components/home/WhyChoose'
 import About from '@/components/home/About'
 import SchemaMarkup from "@/components/home/SchemaMarkup"
 import TrustedLogos from "@/components/home/TrustedLogo"
-import Industries from "@/components/home/Industries"
 import WhatHappensNext from "@/components/contact/Whathappensnext"
 import ServicePaths from "@/components/home/ServicePaths"
 import BlogHomeSection from "@/components/home/BlogHomeSection"
@@ -44,7 +43,6 @@ export default function Page() {
 
       <WhyChoose />
 
-      <Industries />
 
       <ServicePaths />
 
