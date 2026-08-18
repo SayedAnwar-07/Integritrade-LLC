@@ -21,26 +21,26 @@ const items: Item[] = [
     icon: Route,
     iconColor: "text-amber-700 dark:text-amber-300",
     iconBorder: "border-amber-200/80 dark:border-amber-700/40",
-    title: "End-to-End Tracking",
-    desc: "Flawless chain-of-custody documentation from your door to our facility.",
+    title: "TraceTech Visibility",
+    desc: "Track each project from pickup through final disposition. Manage future pickups and download Certificates of Destruction and Erasure on demand.",
   },
   {
     index: 2,
     icon: ClipboardCheck,
     iconColor: "text-blue-700 dark:text-blue-300",
     iconBorder: "border-blue-200/80 dark:border-blue-700/40",
-    title: "Rigorous Compliance",
-    desc: "Serialized destruction reports built to withstand the strictest audits.",
+    title: "Certified Data Security",
+    desc: "R2v3 and ISO 27001 certified processes, access-controlled handling, and verified NIST 800-88 erasure or physical destruction when needed.",
   },
   {
     index: 3,
     icon: Recycle,
     iconColor: "text-emerald-700 dark:text-emerald-300",
     iconBorder: "border-emerald-200/80 dark:border-emerald-700/40",
-    title: "Zero-Worry Recycling",
-    desc: "Environmentally responsible electronics recycling that protects your bottom line and your reputation.",
+    title: "Value-First Asset Recovery",
+    desc: "We evaluate reuse and remarketing before materials recovery, helping qualifying ITAD projects recover value or remain net-positive.",
   },
-];
+];;
 
 export default function WhyChoose() {
   return (
