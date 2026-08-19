@@ -32,7 +32,9 @@ import {
   ChevronRight,
   Info,
   MessageSquare,
-} from 'lucide-react'
+  Laptop,
+} from "lucide-react";
+
 import { ModeToggle } from './ModeToggle'
 import PrimaryButton from './buttons/PrimaryButton'
 import OutlineButton from './buttons/OutlineButton'
@@ -51,6 +53,7 @@ const DROPDOWN_ICON_COLORS: Record<string, string> = {
   '/services/basic-electronics-recycling': 'text-emerald-600 dark:text-emerald-400',
   '/services/data-destruction-services': 'text-rose-600 dark:text-rose-400',
   '/services/it-asset-disposition': 'text-blue-600 dark:text-blue-400',
+  "/services/remote-it-asset-recovery": 'text-violet-600 dark:text-violet-400',
   '/services/demanufacturing-prototype-destruction': 'text-amber-600 dark:text-amber-400',
   '/fresno-electronics-recycling/': 'text-teal-600 dark:text-teal-400',
   // Industries
@@ -412,7 +415,8 @@ export default function Navbar() {
         { href: '/services/', label: 'Compare Our Service Levels', icon: Scale },
         { href: '/services/basic-electronics-recycling', label: 'Basic Electronics Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
-        { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },        
+        { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },  
+        {href: "/services/remote-it-asset-recovery",label: "Remote IT Asset Recovery",icon: Laptop,},      
         { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },    
         { href: '/fresno-electronics-recycling/', label: 'Fresno Public E-Waste Drop Off', icon: Store },    
       ],

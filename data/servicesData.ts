@@ -5,6 +5,7 @@ import assetRecovery from "@/public/services/assetRecovery.png"
 import eRecycling from "@/public/services/E-Recycling.jpeg"
 import certifiedDataDestruction from "@/public/services/dataDestruction.png"
 import demanufacturing from "@/public/services/demanufacturing.jpeg"
+import remoteITAssetRecovery from "@/public/services/RemoteITAssetRecovery.jpg"
 
 export interface GalleryItem {
   image: StaticImageData
@@ -25,31 +26,33 @@ export interface ServiceLevel {
 }
 
 export interface Service {
-  slug: string
-  image: StaticImageData
-  metaTitle: string
-  metaDescription: string
-  pageTitle: string
-  pageSubtitle: string
-  heroTitle: string
-  heroDescription: string
-  sections: ServiceSection[]
-  whyChoose: WhyChooseItem[]
+  slug: string;
+  image: StaticImageData;
+  metaTitle: string;
+  metaDescription: string;
+  pageTitle: string;
+  pageSubtitle: string;
+  heroTitle: string;
+  heroDescription: string;
+  sections: ServiceSection[];
+  whyChoose: WhyChooseItem[];
   industries: {
-    label: string
-    href: string
-  }[]
+    label: string;
+    href: string;
+  }[];
   gallery?: {
-    mainCaption: string
-    items: GalleryItem[]
-  }
+    mainCaption: string;
+    items: GalleryItem[];
+  };
   cta: {
-    title: string
-    description: string
-    contact: string
-    buttonText: string
-  }
-  serviceLevel?: ServiceLevel
+    title: string;
+    description: string;
+    contact: string;
+    buttonText: string;
+  };
+  serviceLevel?: ServiceLevel;
+
+  customContentType?: "remote-it-asset-recovery";
 }
 
 export interface ServiceSection {
@@ -761,6 +764,81 @@ export const servicesData: Service[] = [
         "If you have prototypes, branded electronics, recalled products, or data-bearing assets that must be physically destroyed under a witnessed, documented chain of custody, we can build the workflow around your requirements.",
       contact: "559-325-4813  |  info@integritradellc.com",
       buttonText: "Request a Demanufacturing Quote",
+    },
+  },
+
+  {
+    slug: "remote-it-asset-recovery",
+    image: remoteITAssetRecovery,
+
+    metaTitle:
+      "Remote IT Asset Recovery | Secure Mail-In ITAD Kits | Integritrade",
+
+    metaDescription:
+      "Securely recover remote employee laptops with guided bootable USB erasure kits, mail-in logistics, TraceTech tracking, and documented ITAD disposition.",
+
+    pageTitle: "Remote IT Asset Recovery",
+
+    pageSubtitle:
+      "Secure mail-in recovery for remote employees and distributed teams.",
+
+    heroTitle:
+      "Secure mail-in recovery for remote employees and distributed teams",
+
+    heroDescription:
+      "When an employee works from home, leaves the company, or sits outside a scheduled pickup route, their laptop should not become an unmanaged exception. Integritrade Remote Recovery gives organizations a simple way to recover retired computers from anywhere while keeping data security, chain of custody, and value recovery at the center of the process.",
+
+    customContentType: "remote-it-asset-recovery",
+
+    sections: [],
+
+    whyChoose: [],
+
+    industries: [
+      {
+        label: "Corporate & Enterprise",
+        href: "/industries/business-corporate",
+      },
+      {
+        label: "Healthcare",
+        href: "/industries/healthcare",
+      },
+      {
+        label: "Banking & Finance",
+        href: "/industries/finance",
+      },
+      {
+        label: "Government & Public Sector",
+        href: "/industries/government-public-sector",
+      },
+      {
+        label: "Education",
+        href: "/industries/education",
+      },
+    ],
+
+    serviceLevel: {
+      tier: "04",
+      label: "Remote IT Asset Recovery",
+      bestFor:
+        "Organizations that need to collect laptops and related IT equipment from home offices, satellite locations, former employees, traveling staff, and distributed teams.",
+      includes:
+        "Recovery kit shipping, guided bootable USB erasure, protective return packaging, return-shipping materials, secure intake, processing, and TraceTech tracking.",
+      documentation:
+        "TraceTech project records and available Certificates of Erasure or Destruction.",
+      valueRecovery:
+        "Eligible equipment may be evaluated for reuse, buyback, or remarketing after verification.",
+      whenToChoose:
+        "Your organization needs a repeatable, trackable way to recover IT equipment from remote employees without relying on improvised shipping labels, email chains, or unsecured device returns.",
+      linkText: "Explore Remote Recovery",
+    },
+
+    cta: {
+      title: "Bring remote assets back under control",
+      description:
+        "Your company should not have to choose between data security, employee convenience, and value recovery.",
+      contact: "559-325-4813  |  info@integritradellc.com",
+      buttonText: "Start a Remote Recovery Program",
     },
   },
 ]
