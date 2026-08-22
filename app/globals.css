@@ -21,6 +21,18 @@
     --brand-accent-hover: 209 57% 44%;
     --brand-accent-border: 209 45% 40%;
 
+    /* Integritrade logo gradient: blue -> teal -> green.
+       Used for accent text/rules on the leadership cards. */
+    --brand-gradient-from: 217 92% 57%;
+    --brand-gradient-mid: 178 68% 38%;
+    --brand-gradient-to: 142 71% 45%;
+    --brand-gradient: linear-gradient(
+      105deg,
+      hsl(var(--brand-gradient-from)) 0%,
+      hsl(var(--brand-gradient-mid)) 48%,
+      hsl(var(--brand-gradient-to)) 100%
+    );
+
     /* Dark system */
     --dark-bg: 0 0% 5%;
     --dark-secondary: 0 0% 10%;
@@ -412,4 +424,560 @@
 
 .custom-text-center {
   text-align: left;
+}
+
+/* ============================================================
+   Leadership cards (/about/our-team)
+   Colours resolve from the existing tokens, so the nav
+   light/dark toggle drives this section with no duplication.
+
+   Interaction model:
+   - Pointer devices (hover: hover): portrait collapses on
+     hover/focus-within and the bio expands in place.
+   - Touch devices (hover: none): NO hover behaviour. Portrait
+     stays put; an explicit "Read more" button expands the bio.
+   ============================================================ */
+
+.lead {
+  --lead-ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Light mode surface */
+  --lead-card-bg: 0 0% 100%;
+  --lead-fg: 24 10% 10%;
+  --lead-muted: 24 8% 26%;
+  --lead-hair: 24 10% 10%;
+  --lead-hair-a: 0.12;
+  --lead-shadow: 0 26px 60px -26px hsl(24 10% 10% / 0.3);
+  --lead-spot-color: var(--brand-gradient-to);
+}
+
+.dark .lead {
+  --lead-card-bg: var(--dark-secondary);
+  --lead-fg: 0 0% 100%;
+  --lead-muted: 0 0% 100%;
+  --lead-hair: 0 0% 100%;
+  --lead-hair-a: 0.14;
+  --lead-shadow: 0 26px 60px -22px hsl(var(--brand-gradient-from) / 0.45);
+  --lead-spot-color: var(--brand-gradient-from);
+}
+
+/* Intro */
+.lead-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 22px;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 10.5px;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: hsl(var(--lead-muted) / 0.85);
+}
+.lead-eyebrow::before {
+  content: "";
+  width: 32px;
+  height: 1px;
+  background: var(--brand-gradient);
+}
+
+.lead-h1 {
+  margin: 0 0 26px;
+  max-width: 16ch;
+  font-size: clamp(38px, 5.6vw, 68px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+  color: hsl(var(--lead-fg));
+}
+.lead-word {
+  display: inline-block;
+  margin-right: 0.28em; /* inline-block trims the trailing text space */
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(6px);
+  animation: leadWordIn 0.9s var(--lead-ease) forwards;
+}
+@keyframes leadWordIn {
+  to {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+  }
+}
+.lead-grad {
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.lead-sub {
+  margin: 0 0 56px;
+  max-width: 58ch;
+  font-size: 16.5px;
+  line-height: 1.7;
+  font-weight: 300;
+  color: hsl(var(--lead-muted) / 0.9);
+}
+
+/* Grid */
+.lead-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.lead-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  background: hsl(var(--lead-card-bg));
+  opacity: 0;
+  transform: translateY(38px);
+  transition: transform 0.75s var(--lead-ease), opacity 0.75s var(--lead-ease),
+    box-shadow 0.5s var(--lead-ease);
+}
+.lead-card.is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hairline border + animated conic ring */
+.lead-ring {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  border-radius: 16px;
+  padding: 1px;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    hsl(var(--lead-hair) / var(--lead-hair-a)),
+    hsl(var(--lead-hair) / 0.05)
+  );
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  transition: opacity 0.45s;
+}
+.lead-ring-lit {
+  opacity: 0;
+  background: conic-gradient(
+    from var(--lead-ang, 0deg),
+    hsl(var(--brand-gradient-from)),
+    hsl(var(--brand-gradient-mid)),
+    hsl(var(--brand-gradient-to)),
+    hsl(var(--brand-gradient-from))
+  );
+  animation: leadSpin 4s linear infinite paused;
+}
+.lead-card.is-open .lead-ring-lit {
+  opacity: 1;
+  animation-play-state: running;
+}
+@property --lead-ang {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes leadSpin {
+  to {
+    --lead-ang: 360deg;
+  }
+}
+
+/* Cursor spotlight (pointer devices only, wired below) */
+.lead-spot {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+  background: radial-gradient(
+    340px circle at var(--mx, 50%) var(--my, 50%),
+    hsl(var(--lead-spot-color) / 0.14),
+    transparent 62%
+  );
+}
+
+/* Portrait */
+.lead-media {
+  position: relative;
+  z-index: 2;
+  height: 384px;
+  flex: 0 0 384px;
+  overflow: hidden;
+  transition: flex-basis 0.72s var(--lead-ease), height 0.72s var(--lead-ease),
+    opacity 0.45s ease, filter 0.5s;
+}
+.lead-img {
+  width: 100%;
+  height: 384px;
+  object-fit: cover;
+  transform: scale(var(--img-zoom, 1));
+  transform-origin: center top;
+  transition: transform 0.8s var(--lead-ease);
+}
+.lead-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  /* Light mode: subtle fade starting low, so the white wash stops
+     eating the portraits. Dark mode keeps the stronger blend. */
+  background: linear-gradient(
+    to bottom,
+    transparent 88%,
+    hsl(var(--lead-card-bg) / 0.6) 97%,
+    hsl(var(--lead-card-bg))
+  );
+}
+.dark .lead-media::after {
+  background: linear-gradient(
+    to bottom,
+    transparent 45%,
+    hsl(var(--lead-card-bg))
+  );
+}
+
+/* LinkedIn button — direct child of the card so it never collapses
+   with the portrait */
+.lead-li {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 6;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 7px;
+  background: hsl(var(--lead-hair) / 0.08);
+  border: 1px solid hsl(var(--lead-hair) / 0.16);
+  backdrop-filter: blur(8px);
+  color: hsl(var(--lead-fg) / 0.75);
+  transition: 0.3s;
+}
+.lead-li svg {
+  width: 15px;
+  height: 15px;
+}
+.lead-li:focus-visible {
+  outline: 2px solid hsl(var(--brand-gradient-from));
+  outline-offset: 2px;
+}
+
+/* Body */
+.lead-body {
+  position: relative;
+  z-index: 3;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 26px 26px 28px;
+}
+.lead-role {
+  margin: 0 0 12px;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lead-name {
+  margin: 0 0 16px;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: hsl(var(--lead-fg));
+}
+.lead-rule {
+  position: relative;
+  display: block;
+  height: 1px;
+  margin: 0 0 18px;
+  overflow: hidden;
+  background: hsl(var(--lead-hair) / var(--lead-hair-a));
+}
+.lead-rule::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--brand-gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.7s var(--lead-ease);
+}
+.lead-card.is-open .lead-rule::after {
+  transform: scaleX(1);
+}
+
+/* Bio — rendered once, revealed progressively */
+.lead-bio {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+.lead-p {
+  margin: 0 0 13px;
+  font-size: 13.5px;
+  line-height: 1.75;
+  font-weight: 300;
+  color: hsl(var(--lead-muted) / 0.88);
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(12px);
+  filter: blur(4px);
+  transition: opacity 0.6s var(--lead-ease), transform 0.6s var(--lead-ease),
+    filter 0.6s var(--lead-ease), max-height 0.6s var(--lead-ease);
+}
+/* Collapsed state: first paragraph visible but clamped */
+.lead-p-first {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+  max-height: 74px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.lead-card.is-open .lead-p {
+  opacity: 1;
+  transform: none;
+  filter: blur(0);
+  max-height: 340px;
+  -webkit-line-clamp: unset;
+  display: block;
+}
+
+.lead-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 14px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s var(--lead-ease) 0.5s,
+    transform 0.6s var(--lead-ease) 0.5s;
+}
+.lead-card.is-open .lead-tags {
+  opacity: 1;
+  transform: none;
+}
+.lead-tag {
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: hsl(var(--lead-hair) / 0.06);
+  border: 1px solid hsl(var(--lead-hair) / 0.12);
+  color: hsl(var(--lead-muted) / 0.75);
+}
+
+/* Read more — only shown on touch devices */
+.lead-more {
+  display: none;
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: hsl(var(--brand-gradient-from));
+  cursor: pointer;
+}
+.lead-more:focus-visible {
+  outline: 2px solid hsl(var(--brand-gradient-from));
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+.lead-foot {
+  margin-top: auto;
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: 0.5s var(--lead-ease) 0.55s;
+}
+.lead-card.is-open .lead-foot {
+  opacity: 1;
+  transform: none;
+}
+.lead-lnk {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: hsl(var(--lead-fg));
+}
+.lead-lnk span {
+  transition: transform 0.35s var(--lead-ease);
+}
+.lead-lnk:focus-visible {
+  outline: 2px solid hsl(var(--brand-gradient-from));
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+.lead-idx {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 10px;
+  color: hsl(var(--lead-muted) / 0.45);
+}
+
+/* ── Pointer devices only: the full hover choreography ── */
+@media (hover: hover) {
+  .lead-card {
+    height: 640px;
+    cursor: pointer;
+  }
+  .lead-card:hover,
+  .lead-card:focus-within {
+    box-shadow: var(--lead-shadow);
+  }
+  .lead-card:hover .lead-ring-lit,
+  .lead-card:focus-within .lead-ring-lit {
+    opacity: 1;
+    animation-play-state: running;
+  }
+  /* Cursor spotlight reads as a smudge on light surfaces — dark mode only */
+  .dark .lead-card:hover .lead-spot {
+    opacity: 1;
+  }
+  .lead-card:hover .lead-media,
+  .lead-card:focus-within .lead-media {
+    flex-basis: 0;
+    height: 0;
+    opacity: 0;
+    filter: blur(8px);
+  }
+  .lead-card:hover .lead-img {
+    transform: scale(calc(var(--img-zoom, 1) * 1.06));
+  }
+  .lead-card:hover .lead-li,
+  .lead-card:focus-within .lead-li {
+    background: hsl(var(--brand-gradient-from));
+    border-color: hsl(var(--brand-gradient-from));
+    color: #fff;
+  }
+  .lead-card:hover .lead-rule::after,
+  .lead-card:focus-within .lead-rule::after {
+    transform: scaleX(1);
+  }
+  .lead-card:hover .lead-p,
+  .lead-card:focus-within .lead-p {
+    opacity: 1;
+    transform: none;
+    filter: blur(0);
+    max-height: 340px;
+    -webkit-line-clamp: unset;
+    display: block;
+  }
+  .lead-card:hover .lead-tags,
+  .lead-card:focus-within .lead-tags {
+    opacity: 1;
+    transform: none;
+  }
+  .lead-card:hover .lead-foot,
+  .lead-card:focus-within .lead-foot {
+    opacity: 1;
+    transform: none;
+  }
+  .lead-card:hover .lead-lnk span {
+    transform: translateX(5px);
+  }
+}
+
+/* ── Touch devices: static card, portrait always visible ── */
+@media (hover: none) {
+  .lead-card {
+    height: auto;
+  }
+  .lead-more {
+    display: inline-flex;
+  }
+  /* Bio paragraphs get no motion styling when opened via the button */
+  .lead-p {
+    transform: none;
+    filter: none;
+  }
+  .lead-foot {
+    transition-delay: 0.1s;
+  }
+}
+
+/* Stat strip */
+.lead-strip {
+  margin-top: 26px;
+  padding-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  border-top: 1px solid hsl(var(--lead-hair) / var(--lead-hair-a));
+}
+.lead-stat b {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.lead-stat span {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: hsl(var(--lead-muted) / 0.55);
+}
+
+@media (max-width: 1080px) {
+  .lead-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lead-strip {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+}
+@media (max-width: 720px) {
+  .lead-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lead *,
+  .lead *::before,
+  .lead *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+  .lead-word {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
 }

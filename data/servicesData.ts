@@ -772,7 +772,7 @@ export const servicesData: Service[] = [
     image: remoteITAssetRecovery,
 
     metaTitle:
-      "Remote IT Asset Recovery | Secure Mail-In ITAD Kits | Integritrade",
+      "Remote IT Asset Recovery | Secure Mail-In ITAD Kits",
 
     metaDescription:
       "Securely recover remote employee laptops with guided bootable USB erasure kits, mail-in logistics, TraceTech tracking, and documented ITAD disposition.",
