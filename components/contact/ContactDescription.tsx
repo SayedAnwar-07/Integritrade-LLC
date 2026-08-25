@@ -18,6 +18,21 @@ import {
   Mail,
 } from "lucide-react";
 
+/** lucide-react ships no brand marks, so the WhatsApp glyph lives here. */
+function WhatsAppGlyph({ className }: { className?: string }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+      focusable="false"
+      className={className}
+    >
+      <path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.47 9.47 0 01-4.83-1.32l-.35-.21-3.59.94.96-3.5-.23-.36a9.44 9.44 0 01-1.45-5.05c0-5.22 4.26-9.47 9.5-9.47a9.42 9.42 0 016.71 2.78 9.38 9.38 0 012.78 6.7c0 5.22-4.26 9.47-9.49 9.47zM20.46 3.53A11.83 11.83 0 0012.05.05C5.5.05.18 5.36.18 11.9c0 2.09.55 4.13 1.59 5.93L.08 24l6.32-1.65a11.9 11.9 0 005.65 1.44h.01c6.54 0 11.86-5.32 11.86-11.85a11.77 11.77 0 00-3.46-8.4z" />
+    </svg>
+  );
+}
+
 import BookingForm from "./BookingForm";
 
 const processSteps = [
@@ -92,10 +107,6 @@ export default function ContactDescription() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           {/* LEFT — headline + short pitch */}
           <div className="lg:col-span-5">
-            <p className="mb-5 font-mono text-[0.95rem] font-bold uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400">
-              Get Started
-            </p>
-
             <h1 className="font-serif text-4xl leading-[1.08] tracking-tight text-slate-900 dark:text-white sm:text-5xl">
               Let&apos;s start the conversation.
             </h1>
@@ -173,6 +184,18 @@ export default function ContactDescription() {
                 <Mail className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
                 <span className="text-sm font-semibold">
                   info@integritradeLLC.com
+                </span>
+              </a>
+
+              <a
+                href="https://wa.me/message/C67JNSG2GFHBA1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-slate-800 transition-colors hover:text-primary dark:text-slate-200"
+              >
+                <WhatsAppGlyph className="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400" />
+                <span className="text-sm font-semibold">
+                  Message us on WhatsApp
                 </span>
               </a>
             </div>
