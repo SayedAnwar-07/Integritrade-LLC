@@ -15,9 +15,8 @@ export const metadata: Metadata = {
   description:
     "Need secure electronics recycling and ITAD for California businesses? Integritrade offers R2v3-certified processing, data destruction, and asset management services.",
 
-  verification: {
-    google: "R6ZdGtecG2HcceKKPmLryGBdZ58WG-blqrMGwe8T9UI",
-  },
+  // Verification tags live in app/layout.tsx for ALL owners. A block here would
+  // override the layout's and strip every token but this one from the homepage.
 
   openGraph: {
     title: "Integritrade: ITAD, Data Destruction & Recycling in California",

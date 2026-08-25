@@ -31,8 +31,21 @@ export const metadata: Metadata = {
     apple: "/logo/integritrade-favicon.png",
   },
 
+  // Both Search Console owners are verified here, in the root layout, so the
+  // tags render on every page INCLUDING the homepage — the URL Google actually
+  // fetches to confirm a URL-prefix property.
+  //
+  // Do not move a `verification` block into a page's metadata: page metadata
+  // REPLACES the layout's rather than merging with it, which silently strips
+  // every other owner's tag from that page. That is what de-verified the
+  // client's account in August 2026.
+  //
+  // First entry is the site owner (Ian). Second is the contract developer.
   verification: {
-    google: "qsfyTTMiUnf1Eai5hEW017rJ__8a7dxZxGRmJWKsvzU",
+    google: [
+      "qsfyTTMiUnf1Eai5hEW017rJ__8a7dxZxGRmJWKsvzU",
+      "R6ZdGtecG2HcceKKPmLryGBdZ58WG-blqrMGwe8T9UI",
+    ],
   },
 
   alternates: {
