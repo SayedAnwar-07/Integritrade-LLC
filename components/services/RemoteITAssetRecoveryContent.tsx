@@ -96,7 +96,7 @@ export default function RemoteITAssetRecoveryContent() {
         <Step
           title="5. Integritrade verifies, processes, and documents the asset"
           paragraphs={[
-            "At our dedicated 30,000 square foot secured ITAD facility, Integritrade confirms receipt and evaluates the asset. Eligible devices may be directed to reuse, buyback, or remarketing. If a device cannot complete logical data sanitization or does not qualify for reuse, it is routed for the appropriate physical data-destruction process and documented accordingly.",
+            "At our secured ITAD facility, Integritrade confirms receipt and evaluates the asset. Eligible devices may be directed to reuse, buyback, or remarketing. If a device cannot complete logical data sanitization or does not qualify for reuse, it is routed for the appropriate physical data-destruction process and documented accordingly.",
           ]}
         />
 

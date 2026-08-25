@@ -78,10 +78,10 @@ export default function CertificationsPage() {
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1945 N Fine Ave, STE 111",
+      streetAddress: "944 S Topeka Ave",
       addressLocality: "Fresno",
       addressRegion: "CA",
-      postalCode: "93727",
+      postalCode: "93721",
       addressCountry: "US",
     },
     award: [

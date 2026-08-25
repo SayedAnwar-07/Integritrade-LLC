@@ -133,10 +133,10 @@ export default function ServiceAreaPage() {
               name: "Integritrade LLC",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "1945 N Fine Ave, STE 111",
+                streetAddress: "944 S Topeka Ave",
                 addressLocality: "Fresno",
                 addressRegion: "CA",
-                postalCode: "93727",
+                postalCode: "93721",
                 addressCountry: "US",
               },
               telephone: "+1-559-325-4813",

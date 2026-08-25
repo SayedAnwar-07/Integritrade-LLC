@@ -87,7 +87,7 @@ export default function Footer() {
                   icon: <LocationIcon />,
                   content: (
                     <span className="text-white/90 text-[13px] tracking-wide">
-                      1945 N Fine Ave, STE 111 · Fresno, CA 93727
+                      944 S Topeka Ave · Fresno, CA 93721
                     </span>
                   ),
                 },

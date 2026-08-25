@@ -111,10 +111,10 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
     >
       <Link
         href={item.href}
-        className={`relative z-10 inline-flex items-center gap-1.5 px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel ${
+        className={`relative z-10 inline-flex items-center gap-1.5 rounded-md px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
           isActive
             ? 'text-primary'
-            : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+            : 'text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white'
         }`}
       >
         <span>{item.label}</span>
@@ -149,15 +149,15 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                 <Link
                   key={dropdownItem.href}
                   href={dropdownItem.href}
-                  className={`group/item flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-200 click-feel ${
+                  className={`group/item flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-200 click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark-secondary ${
                     isSubActive
-                      ? 'bg-gray-50 dark:bg-white/[0.05]'
-                      : 'hover:bg-gray-50 dark:hover:bg-white/[0.05]'
+                      ? 'bg-primary/10 dark:bg-white/[0.10]'
+                      : 'hover:bg-primary/10 focus-visible:bg-primary/10 dark:hover:bg-white/[0.10] dark:focus-visible:bg-white/[0.10]'
                   }`}
                 >
                   {Icon && (
                     <span
-                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-gray-50 transition-colors duration-200 dark:border-white/10 dark:bg-white/[0.04] ${
+                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-gray-50 transition-colors duration-200 group-hover/item:border-primary/40 group-hover/item:bg-primary/10 group-focus-visible/item:border-primary/40 group-focus-visible/item:bg-primary/10 dark:border-white/10 dark:bg-white/[0.04] dark:group-hover/item:border-white/25 dark:group-hover/item:bg-white/[0.10] ${
                         DROPDOWN_ICON_COLORS[dropdownItem.href] ??
                         'text-gray-500 dark:text-gray-400'
                       }`}
@@ -169,8 +169,8 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                   <span
                     className={`text-[13px] font-medium leading-snug tracking-tight transition-colors duration-150 ${
                       isSubActive
-                        ? 'text-primary'
-                        : 'text-gray-700 dark:text-gray-200 group-hover/item:text-gray-900 dark:group-hover/item:text-white'
+                        ? 'text-primary dark:text-white'
+                        : 'text-gray-700 dark:text-gray-200 group-hover/item:text-primary group-focus-visible/item:text-primary dark:group-hover/item:text-white dark:group-focus-visible/item:text-white'
                     }`}
                   >
                     {dropdownItem.label}
@@ -209,7 +209,7 @@ function TraceTechNavItem({
     >
       <Link
         href={TRACETECH_HREF}
-        className="relative z-10 inline-flex items-center gap-1.5 px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+        className="relative z-10 inline-flex items-center gap-1.5 rounded-md px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white"
       >
         <span>TraceTech</span>
         <ChevronDown
@@ -330,10 +330,10 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
                 href={dropdownItem.href}
                 onClick={onItemClick}
                 style={{ transitionDelay: isOpen ? `${idx * 40}ms` : '0ms' }}
-                className={`flex items-center gap-3 px-3 py-3  text-[14px] transition-all duration-300 click-feel ${
+                className={`flex items-center gap-3 rounded-md px-3 py-3 text-[14px] transition-all duration-300 click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
                   isSubActive
-                    ? 'bg-white dark:bg-dark text-primary rounded-md font-semibold shadow-md active:bg-gray-50 dark:active:bg-white/10 '
-                    : 'text-gray-600 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-white/5 active:bg-gray-100 dark:active:bg-white/10'
+                    ? 'bg-white dark:bg-dark text-primary font-semibold shadow-md active:bg-gray-50 dark:active:bg-white/10 '
+                    : 'text-gray-600 hover:bg-primary/10 hover:text-primary focus-visible:bg-primary/10 active:bg-primary/15 dark:text-gray-300 dark:hover:bg-white/[0.10] dark:hover:text-white dark:focus-visible:bg-white/[0.10] dark:active:bg-white/15'
                 } ${isOpen ? 'translate-x-0 opacity-100' : '-translate-x-2 opacity-0'}`}
               >
                 {Icon && (
@@ -566,10 +566,10 @@ export default function Navbar() {
                     if (el) linkRefs.current.set(item.href, el)
                   }}
                   onMouseEnter={() => setHoveredHref(item.href)}
-                  className={`relative z-10 px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight click-feel ${
+                  className={`relative z-10 rounded-md px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
                     isActive
                       ? 'text-primary'
-                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+                      : 'text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white'
                   }`}
                 >
                   {item.label}

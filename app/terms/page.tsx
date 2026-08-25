@@ -249,9 +249,9 @@ export default function TermsPage() {
                         Office
                       </p>
                       <p className="text-gray-700 dark:text-gray-300 font-medium leading-relaxed">
-                        1945 N Fine Ave, STE 111
+                        944 S Topeka Ave
                         <br />
-                        Fresno, CA 93727
+                        Fresno, CA 93721
                       </p>
                     </div>                    
                   </div>

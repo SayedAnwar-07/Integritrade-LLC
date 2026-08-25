@@ -255,10 +255,10 @@ export default function FresnoElectronicsRecyclingPage() {
     },
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '1945 N Fine Ave, STE 111',
+      streetAddress: '944 S Topeka Ave',
       addressLocality: 'Fresno',
       addressRegion: 'CA',
-      postalCode: '93727',
+      postalCode: '93721',
       addressCountry: 'US',
     },
     makesOffer: [
@@ -273,7 +273,7 @@ export default function FresnoElectronicsRecyclingPage() {
         },
       })),
     ],
-    hasMap: 'https://maps.google.com/?q=1945+N+Fine+Ave+STE+111+Fresno+CA+93727',
+    hasMap: 'https://maps.google.com/?q=944+S+Topeka+Ave+Fresno+CA+93721',
     sameAs: ['https://integritradellc.com'],
   }
 
@@ -514,9 +514,9 @@ export default function FresnoElectronicsRecyclingPage() {
                           Address
                         </dt>
                         <dd className="mt-1.5 text-gray-900 dark:text-gray-100">
-                          1945 N Fine Ave, STE 111
+                          944 S Topeka Ave
                           <br />
-                          Fresno, CA 93727
+                          Fresno, CA 93721
                         </dd>
                       </div>
                     </dl>

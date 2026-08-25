@@ -32,8 +32,8 @@ type MarkerAnchorStyle = CSSProperties & {
 const FRESNO_HEADQUARTERS = {
   id: "fresno-headquarters",
   label: "Fresno Headquarters",
-  address: "1945 N Fine Ave, STE 111",
-  location: [36.7686, -119.7303] as [number, number],
+  address: "944 S Topeka Ave",
+  location: [36.7321, -119.7747] as [number, number],
 }
 
 function locationToAngles(latitude: number, longitude: number) {

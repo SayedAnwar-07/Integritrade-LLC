@@ -98,16 +98,16 @@ const localBusinessSchema = {
   email: 'info@integritradeLLC.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '1945 N Fine Ave, STE 111',
+    streetAddress: '944 S Topeka Ave',
     addressLocality: 'Fresno',
     addressRegion: 'CA',
-    postalCode: '93727',
+    postalCode: '93721',
     addressCountry: 'US',
   },
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 36.7881,
-    longitude: -119.7717,
+    latitude: 36.7321,
+    longitude: -119.7747,
   },
   openingHoursSpecification: [
     {

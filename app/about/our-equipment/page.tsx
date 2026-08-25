@@ -471,9 +471,9 @@ export default function OurCapabilitiesPage() {
                               Facility
                             </dt>
                             <dd className="text-sm text-gray-900 dark:text-gray-100">
-                              1945 N Fine Ave, STE 111
+                              944 S Topeka Ave
                               <br />
-                              Fresno, CA 93727
+                              Fresno, CA 93721
                             </dd>
                           </div>
                         </div>

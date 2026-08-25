@@ -15,10 +15,10 @@ const SchemaMarkup: React.FC = () => {
       "Integritrade LLC offers certified ITAD, data destruction, and e-waste recycling solutions to keep your business secure and environmentally responsible.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1945 N Fine Ave, STE 111",
+      streetAddress: "944 S Topeka Ave",
       addressLocality: "Fresno",
       addressRegion: "California",
-      postalCode: "93727",
+      postalCode: "93721",
       addressCountry: "US",
     },
     telephone: "+1(559) 325-4813",
@@ -43,16 +43,16 @@ const SchemaMarkup: React.FC = () => {
       "Integritrade LLC provides certified ITAD, secure data destruction, and e-waste recycling services to help businesses dispose of electronic assets responsibly and safely.",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1945 N Fine Ave, STE 111",
+      streetAddress: "944 S Topeka Ave",
       addressLocality: "Fresno",
       addressRegion: "CA",
-      postalCode: "93727",
+      postalCode: "93721",
       addressCountry: "US",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: "36.7515",
-      longitude: "-119.7400",
+      latitude: "36.7321",
+      longitude: "-119.7747",
     },
     openingHoursSpecification: [
       {
@@ -83,10 +83,10 @@ const SchemaMarkup: React.FC = () => {
       logo: LOGO_URL,
       address: {
         "@type": "PostalAddress",
-        streetAddress: "1945 N Fine Ave, STE 111",
+        streetAddress: "944 S Topeka Ave",
         addressLocality: "Fresno",
         addressRegion: "CA",
-        postalCode: "93727",
+        postalCode: "93721",
         addressCountry: "US",
       },
       telephone: "+1(559) 325-4813",
