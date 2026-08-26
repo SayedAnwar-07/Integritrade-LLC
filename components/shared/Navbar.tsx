@@ -415,7 +415,7 @@ export default function Navbar() {
         { href: '/services/', label: 'Compare Our Service Levels', icon: Scale },
         { href: '/services/basic-electronics-recycling', label: 'Basic Electronics Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
-        { href: '/services/it-asset-disposition', label: 'Full ITAD Package', icon: Monitor },  
+        { href: '/services/it-asset-disposition', label: 'IT Asset Disposition & Value Recovery', icon: Monitor },  
         {href: "/services/remote-it-asset-recovery",label: "Remote IT Asset Recovery",icon: Laptop,},      
         { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },    
         { href: '/fresno-electronics-recycling/', label: 'Fresno Public E-Waste Drop Off', icon: Store },    

@@ -112,16 +112,16 @@ export const decisionGuide: DecisionGuideEntry[] = [
   {
     scenario:
       "We have newer laptops, desktops, servers, or networking equipment that may still have resale value.",
-    recommendation: "Full ITAD Package",
+    recommendation: "IT Asset Disposition & Value Recovery",
   },
   {
     scenario:
       "We want data destruction, recycling for EOL items, remarketing for eligible assets, and a recovery report.",
-    recommendation: "Full ITAD Package",
+    recommendation: "IT Asset Disposition & Value Recovery",
   },
   {
     scenario: "We want cash value quickly instead of waiting for each item to sell.",
-    recommendation: "Full ITAD Package with Accelerated Revenue Split / Buyback",
+    recommendation: "IT Asset Disposition & Value Recovery (Accelerated Revenue Split / Buyback)",
   },
 ]
 
@@ -343,23 +343,23 @@ export const servicesData: Service[] = [
     slug: "it-asset-disposition",
     image: assetDisposition,
     metaTitle:
-      "Full ITAD Package with Value Recovery",
+      "IT Asset Disposition & Value Recovery",
     metaDescription:
       "Complete ITAD program: data sanitization, asset registration, refurbishment, remarketing, EOL recycling, and value recovery reporting. Percentage-based recovery or accelerated revenue split / buyback.",
-    pageTitle: "Full ITAD Package",
+    pageTitle: "IT Asset Disposition & Value Recovery",
     pageSubtitle:
       "For organizations with newer or higher-value assets that need secure data handling, reporting, resale, refurbishment, recycling, and financial recovery all under one chain of custody.",
     heroTitle:
       "The Complete Disposition Program for Assets That Still Have Value Left in Them",
     heroDescription:
-      "The Full ITAD Package is the most complete option for organizations that want secure disposition and financial recovery from eligible assets. This service level includes everything in the Data Destruction Services package, plus asset registration, data sanitization, testing, refurbishment, remarketing, resale support, recycling of end-of-life assets, and value recovery reporting. Instead of treating every device as scrap, Integritrade evaluates eligible assets for recovery potential and routes everything else into responsible destruction or recycling.",
+      "IT Asset Disposition & Value Recovery is the most complete option for organizations that want secure disposition and financial recovery from eligible assets. This service level includes everything in the Data Destruction Services package, plus asset registration, data sanitization, testing, refurbishment, remarketing, resale support, recycling of end-of-life assets, and value recovery reporting. Instead of treating every device as scrap, Integritrade evaluates eligible assets for recovery potential and routes everything else into responsible destruction or recycling.",
     sections: [
       {
         title: "Built for Newer Assets That Still Meet the Recovery Cutline",
         content: [
           "This package is ideal for newer or higher-demand equipment that meets the current technology cutline for resale. Instead of treating every device as scrap, Integritrade evaluates eligible assets for recovery potential.",
           "Devices that can be reused may be sanitized, refurbished, and remarketed, while assets that are too old, damaged, or non-recoverable are routed into responsible recycling or destruction workflows.",
-          "Choose the Full ITAD Package if your assets are newer, your organization wants secure data handling and full reporting, and you want to recover value through remarketing or an upfront buyback instead of treating eligible equipment as scrap.",
+          "Choose IT Asset Disposition & Value Recovery if your assets are newer, your organization wants secure data handling and full reporting, and you want to recover value through remarketing or an upfront buyback instead of treating eligible equipment as scrap.",
         ],
       },
       {
@@ -435,7 +435,7 @@ export const servicesData: Service[] = [
 
     serviceLevel: {
       tier: "03",
-      label: "Full ITAD Package",
+      label: "IT Asset Disposition & Value Recovery",
       bestFor:
         "Organizations with newer or higher-value assets that need secure data handling, reporting, resale, refurbishment, recycling, and financial recovery.",
       includes:
@@ -446,12 +446,12 @@ export const servicesData: Service[] = [
         "Included through percentage-based recovery or accelerated revenue split / buyback.",
       whenToChoose:
         "Your assets are newer, your organization wants secure data handling and full reporting, and you want to recover value through remarketing or an upfront buyback instead of treating eligible equipment as scrap.",
-      linkText: "Explore Full ITAD",
+      linkText: "Explore IT Asset Disposition",
     },
     cta: {
       title: "Want to Recover Value Instead of Treating Assets as Scrap?",
       description:
-        "If your retired equipment is newer and meets the recovery cutline, the Full ITAD Package gives you secure data handling, full reporting, and either percentage-based recovery or an upfront buyback.",
+        "If your retired equipment is newer and meets the recovery cutline, IT Asset Disposition & Value Recovery gives you secure data handling, full reporting, and either percentage-based recovery or an upfront buyback.",
       contact: "559-325-4813  |  info@integritradellc.com",
       buttonText: "Request a Recovery Quote",
     },

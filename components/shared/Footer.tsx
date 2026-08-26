@@ -18,7 +18,7 @@ const footerServices = [
   },
   { 
     href: "/services/it-asset-disposition/", 
-    label: "Full ITAD Package" 
+    label: "IT Asset Disposition & Value Recovery" 
   },
   { 
     href: "/services/demanufacturing-prototype-destruction/", 
