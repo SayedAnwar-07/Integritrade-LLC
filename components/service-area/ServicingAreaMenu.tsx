@@ -3,155 +3,312 @@
 import Link from "next/link";
 import { useState, useRef, useCallback, useEffect } from "react";
 import { serviceAreas } from "@/data/serviceAreas";
-import { MapPin, ChevronDown, ChevronRight, X, Menu } from "lucide-react";
-
+import {
+  MapPin,
+  ChevronDown,
+  ChevronRight,
+  X,
+  Menu,
+} from "lucide-react";
 
 const SERVICE_REGIONS = [
-  { name: "San Francisco",              cities: ["San Francisco"] },
-  { name: "Silicon Valley & South Bay", cities: ["San Jose","Mountain View","Cupertino","Santa Clara","Palo Alto","Sunnyvale","Los Gatos","Milpitas","Campbell"] },
-  { name: "The Peninsula",              cities: ["Menlo Park","Redwood City","San Mateo","San Bruno","South San Francisco","Foster City"] },
-  { name: "The East Bay",               cities: ["Berkeley","Oakland","Fremont","Emeryville","Alameda","Pleasanton","Walnut Creek"] },
-  { name: "North Bay",                  cities: ["San Rafael","Santa Rosa","Petaluma"] },
-  { name: "Central Valley",             cities: ["Fresno","Clovis","Sacramento","Bakersfield","Stockton","Modesto","Merced","Visalia"] },
+  {
+    name: "San Francisco",
+    cities: ["San Francisco"],
+  },
+  {
+    name: "Silicon Valley & South Bay",
+    cities: [
+      "San Jose",
+      "Mountain View",
+      "Cupertino",
+      "Santa Clara",
+      "Palo Alto",
+      "Sunnyvale",
+      "Los Gatos",
+      "Milpitas",
+      "Campbell",
+    ],
+  },
+  {
+    name: "The Peninsula",
+    cities: [
+      "Menlo Park",
+      "Redwood City",
+      "San Mateo",
+      "San Bruno",
+      "South San Francisco",
+      "Foster City",
+    ],
+  },
+  {
+    name: "The East Bay",
+    cities: [
+      "Berkeley",
+      "Oakland",
+      "Fremont",
+      "Emeryville",
+      "Alameda",
+      "Pleasanton",
+      "Walnut Creek",
+    ],
+  },
+  {
+    name: "North Bay",
+    cities: ["San Rafael", "Santa Rosa", "Petaluma"],
+  },
+  {
+    name: "Central Valley",
+    cities: [
+      "Fresno",
+      "Clovis",
+      "Sacramento",
+      "Bakersfield",
+      "Stockton",
+      "Modesto",
+      "Merced",
+      "Visalia",
+    ],
+  },
+
+  // Southern California coverage added from the latest client request.
+  // Cities remain grouped by county/region to match the main service-area page.
+  {
+    name: "Los Angeles County",
+    cities: [
+      "Los Angeles",
+      "Santa Monica",
+      "Culver City",
+      "El Segundo",
+      "Torrance",
+      "Pasadena",
+      "Glendale",
+      "Burbank",
+      "Long Beach",
+    ],
+  },
+  {
+    name: "Orange County",
+    cities: [
+      "Irvine",
+      "Newport Beach",
+      "Costa Mesa",
+      "Anaheim",
+      "Santa Ana",
+      "Huntington Beach",
+    ],
+  },
+  {
+    name: "San Diego County",
+    cities: [
+      "San Diego",
+      "La Jolla",
+      "Sorrento Valley",
+      "Carlsbad",
+      "Oceanside",
+      "Chula Vista",
+    ],
+  },
+  {
+    name: "Inland Empire",
+    cities: [
+      "Ontario",
+      "Rancho Cucamonga",
+      "Riverside",
+      "San Bernardino",
+      "Corona",
+    ],
+  },
 ];
 
 const REGION_COLORS = [
   { accent: "#1D9E75", label: "text-emerald-400" },
-  { accent: "#378ADD", label: "text-blue-400"    },
-  { accent: "#9F7AEA", label: "text-violet-400"  },
-  { accent: "#ED64A6", label: "text-pink-400"    },
-  { accent: "#38B2AC", label: "text-teal-400"    },
-  { accent: "#ECC94B", label: "text-amber-400"   },
+  { accent: "#378ADD", label: "text-blue-400" },
+  { accent: "#9F7AEA", label: "text-violet-400" },
+  { accent: "#ED64A6", label: "text-pink-400" },
+  { accent: "#38B2AC", label: "text-teal-400" },
+  { accent: "#ECC94B", label: "text-amber-400" },
 ];
-
 
 function buildCityLookup() {
   const map = new Map<string, { slug: string; serviceCount: number }>();
-  for (const area of serviceAreas)
-    map.set(area.name.toLowerCase(), { slug: area.slug, serviceCount: area.services.length });
+
+  for (const area of serviceAreas) {
+    map.set(area.name.toLowerCase(), {
+      slug: area.slug,
+      serviceCount: area.services.length,
+    });
+  }
+
   return map;
 }
 
 /* ──────────────────────── desktop nav item ─────────────────────────── */
 
 interface DesktopItemProps {
-  region:     (typeof SERVICE_REGIONS)[number];
-  col:        (typeof REGION_COLORS)[number];
+  region: (typeof SERVICE_REGIONS)[number];
+  col: (typeof REGION_COLORS)[number];
   cityLookup: Map<string, { slug: string; serviceCount: number }>;
 }
 
 function DesktopItem({ region, col, cityLookup }: DesktopItemProps) {
-  const [open,    setOpen]    = useState(false);
-  const [subCity, setSubCity] = useState<string | null>(null);
+  const [open, setOpen] = useState(false);
+
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const enter = useCallback(() => { if (timer.current) clearTimeout(timer.current); setOpen(true); }, []);
+  const enter = useCallback(() => {
+    if (timer.current) {
+      clearTimeout(timer.current);
+    }
+
+    setOpen(true);
+  }, []);
+
   const leave = useCallback(() => {
     timer.current = setTimeout(() => {
       setOpen(false);
-      setSubCity(null);
     }, 100);
   }, []);
 
   useEffect(() => {
     return () => {
-      if (timer.current) clearTimeout(timer.current)
-    }
-  }, [])
+      if (timer.current) {
+        clearTimeout(timer.current);
+      }
+    };
+  }, []);
 
-  const linked   = region.cities.filter(c =>  cityLookup.has(c.toLowerCase()));
-  const unlinked = region.cities.filter(c => !cityLookup.has(c.toLowerCase()));
+  // A city becomes clickable automatically once it exists in serviceAreas.
+  // Until then it stays visible under the "Coming soon" section.
+  const linked = region.cities.filter((city) =>
+    cityLookup.has(city.toLowerCase()),
+  );
+
+  const unlinked = region.cities.filter(
+    (city) => !cityLookup.has(city.toLowerCase()),
+  );
 
   return (
-    <div className="relative" onMouseEnter={enter} onMouseLeave={leave}>
-
-      {/* ── trigger ── */}
+    <div
+      className="relative"
+      onMouseEnter={enter}
+      onMouseLeave={leave}
+    >
+      {/* Region trigger */}
       <button
-          type="button"
-          aria-haspopup="true"
-          aria-expanded={open}
-          onClick={() => {
-            if (timer.current) clearTimeout(timer.current)
-            setOpen((prev) => !prev)
-          }}
-          className={`
-            flex items-center gap-1 py-4 text-[13px] font-medium tracking-wide
-            transition-colors duration-75 cursor-pointer select-none
-            ${open ? "text-white" : "text-gray-400 hover:text-gray-200"}
-          `}
-        >
-          {region.name}
+        type="button"
+        aria-haspopup="true"
+        aria-expanded={open}
+        onClick={() => {
+          if (timer.current) {
+            clearTimeout(timer.current);
+          }
+
+          setOpen((prev) => !prev);
+        }}
+        className={`
+          flex cursor-pointer select-none items-center gap-1 py-4
+          text-[13px] font-medium tracking-wide
+          transition-colors duration-75
+          ${
+            open
+              ? "text-white"
+              : "text-gray-400 hover:text-gray-200"
+          }
+        `}
+      >
+        {region.name}
+
         <ChevronDown
-          className={`w-3 h-3 mt-px transition-transform duration-200 ${open ? "rotate-180" : ""}`}
+          className={`mt-px h-3 w-3 transition-transform duration-200 ${
+            open ? "rotate-180" : ""
+          }`}
           style={{ color: col.accent }}
         />
       </button>
 
-      {/* ── dropdown (opens ABOVE) ── */}
+      {/* Desktop dropdown opens above the navigation */}
       {open && (
         <div
-          className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 z-50 min-w-[215px]"
-          style={{ filter: "drop-shadow(0 -6px 28px rgba(0,0,0,.7))" }}
+          className="absolute bottom-full left-1/2 z-50 mb-2 min-w-[215px] -translate-x-1/2"
+          style={{
+            filter: "drop-shadow(0 -6px 28px rgba(0,0,0,.7))",
+          }}
         >
-          {/* panel */}
           <div
-            className="rounded-md overflow-visible border border-white/[0.08] bg-[#0a0e0f]"
-            style={{ borderTopColor: col.accent, borderTopWidth: "2px" }}
+            className="overflow-visible rounded-md border border-white/[0.08] bg-[#0a0e0f]"
+            style={{
+              borderTopColor: col.accent,
+              borderTopWidth: "2px",
+            }}
           >
-            {/* header */}
-            <div className="px-3 py-2 flex items-center gap-2 border-b border-white/[0.06]">
-              <span className="w-[3px] h-4 rounded-full flex-shrink-0" style={{ background: col.accent }} />
-              <span className="text-[0.8rem] font-bold uppercase tracking-[0.14em] text-gray-300 truncate">
+            {/* Region header */}
+            <div className="flex items-center gap-2 border-b border-white/[0.06] px-3 py-2">
+              <span
+                className="h-4 w-[3px] flex-shrink-0 rounded-full"
+                style={{ background: col.accent }}
+              />
+
+              <span className="truncate text-[0.8rem] font-bold uppercase tracking-[0.14em] text-gray-300">
                 {region.name}
               </span>
+
               {linked.length > 0 && (
-                <span className={`ml-auto text-[10px] font-bold shrink-0 ${col.label}`}>
+                <span
+                  className={`ml-auto shrink-0 text-[10px] font-bold ${col.label}`}
+                >
                   {linked.length} cities
                 </span>
               )}
             </div>
 
-            {/* linked cities */}
-            {linked.map(city => {
-              const m = cityLookup.get(city.toLowerCase())!;
+            {/* Cities that already have service-area detail pages */}
+            {linked.map((city) => {
+              const match = cityLookup.get(city.toLowerCase())!;
+
               return (
-                <div
-                  key={city}
-                  className="relative"
-                  onMouseEnter={() => setSubCity(city)}
-                  onMouseLeave={() => setSubCity(null)}
-                >
+                <div key={city} className="relative">
                   <Link
-                    href={`/service-area/${m.slug}`}
-                    className="flex items-center justify-between gap-3 px-3 py-[7px] text-[13px] text-gray-300 hover:text-white hover:bg-white/[0.04] transition-colors border-b border-white/[0.04] last:border-0"
+                    href={`/service-area/${match.slug}`}
+                    className="flex items-center justify-between gap-3 border-b border-white/[0.04] px-3 py-[7px] text-[13px] text-gray-300 transition-colors last:border-0 hover:bg-white/[0.04] hover:text-white"
                   >
                     <span className="flex items-center gap-2">
-                      <MapPin className="w-3.5 h-3.5 shrink-0" style={{ color: col.accent }} />
+                      <MapPin
+                        className="h-3.5 w-3.5 shrink-0"
+                        style={{ color: col.accent }}
+                      />
+
                       {city}
                     </span>
-                    <span className={`flex items-center gap-0.5 text-[10px] font-bold shrink-0 ${col.label}`}>
-                      {m.serviceCount}
-                      <ChevronRight className="w-3 h-3" />
+
+                    <span
+                      className={`flex shrink-0 items-center gap-0.5 text-[10px] font-bold ${col.label}`}
+                    >
+                      {match.serviceCount}
+
+                      <ChevronRight className="h-3 w-3" />
                     </span>
                   </Link>
-
-                  
                 </div>
               );
             })}
 
-            {/* unlinked */}
+            {/* Keep requested cities visible while their detail pages are being added */}
             {unlinked.length > 0 && (
               <>
-                <div className="px-3 pt-2 pb-1">
-                  <span className="text-[9px] uppercase tracking-widest text-gray-400">Coming soon</span>
+                <div className="px-3 pb-1 pt-2">
+                  <span className="text-[9px] uppercase tracking-widest text-gray-400">
+                    Coming soon
+                  </span>
                 </div>
-                {unlinked.map(city => (
+
+                {unlinked.map((city) => (
                   <div
                     key={city}
-                    className="flex items-center gap-2 px-3 py-[6px] text-[12px] text-gray-400 cursor-default border-b border-white/[0.03] last:border-0"
+                    className="flex cursor-default items-center gap-2 border-b border-white/[0.03] px-3 py-[6px] text-[12px] text-gray-400 last:border-0"
                   >
-                    <MapPin className="w-3 h-3 shrink-0 text-gray-700" />
+                    <MapPin className="h-3 w-3 shrink-0 text-gray-700" />
+
                     {city}
                   </div>
                 ))}
@@ -159,14 +316,14 @@ function DesktopItem({ region, col, cityLookup }: DesktopItemProps) {
             )}
           </div>
 
-          {/* ── downward caret ── */}
+          {/* Dropdown caret */}
           <div className="flex justify-center">
             <div
-              className="w-0 h-0"
+              className="h-0 w-0"
               style={{
-                borderLeft:  "7px solid transparent",
+                borderLeft: "7px solid transparent",
                 borderRight: "7px solid transparent",
-                borderTop:   "7px solid #0d1f27",
+                borderTop: "7px solid #0d1f27",
               }}
             />
           </div>
@@ -180,81 +337,140 @@ function DesktopItem({ region, col, cityLookup }: DesktopItemProps) {
 
 interface MobileDrawerProps {
   cityLookup: Map<string, { slug: string; serviceCount: number }>;
-  onClose:    () => void;
+  onClose: () => void;
 }
 
-function MobileDrawer({ cityLookup, onClose }: MobileDrawerProps) {
+function MobileDrawer({
+  cityLookup,
+  onClose,
+}: MobileDrawerProps) {
   const [openRegion, setOpenRegion] = useState<string | null>(null);
-  const [openCity,   setOpenCity]   = useState<string | null>(null);
 
   return (
-    <div className="w-full fixed inset-0 z-[100] flex flex-col bg-[#080f14]">
+    <div className="fixed inset-0 z-[100] flex w-full flex-col bg-[#080f14]">
+      {/* Drawer header */}
+      <div className="flex items-center justify-between border-b border-white/[0.07] px-4 py-3">
+        <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-emerald-500">
+          Service Areas
+        </span>
 
-      {/* top bar */}
-      <div className="flex items-center justify-between px-4 py-3 border-b border-white/[0.07]">
-        <span className="text-[11px] font-bold uppercase tracking-[0.18em] text-emerald-500">Service Areas</span>
-        <button onClick={onClose} className="p-1.5 rounded-md hover:bg-white/[0.06] text-gray-400 hover:text-white transition-colors">
-          <X className="w-4 h-4" />
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Close service areas"
+          className="rounded-md p-1.5 text-gray-400 transition-colors hover:bg-white/[0.06] hover:text-white"
+        >
+          <X className="h-4 w-4" />
         </button>
       </div>
 
       <div className="flex-1 overflow-y-auto">
         {SERVICE_REGIONS.map((region, ri) => {
-          const col          = REGION_COLORS[ri % REGION_COLORS.length];
-          const isRegionOpen = openRegion === region.name;
-          const linked       = region.cities.filter(c =>  cityLookup.has(c.toLowerCase()));
-          const unlinked     = region.cities.filter(c => !cityLookup.has(c.toLowerCase()));
+          const col =
+            REGION_COLORS[ri % REGION_COLORS.length];
+
+          const isRegionOpen =
+            openRegion === region.name;
+
+          const linked = region.cities.filter((city) =>
+            cityLookup.has(city.toLowerCase()),
+          );
+
+          const unlinked = region.cities.filter(
+            (city) =>
+              !cityLookup.has(city.toLowerCase()),
+          );
 
           return (
-            <div key={region.name} className="border-b border-white/[0.06]">
-
-              {/* region row */}
+            <div
+              key={region.name}
+              className="border-b border-white/[0.06]"
+            >
+              {/* Region accordion row */}
               <button
-                onClick={() => { setOpenRegion(prev => prev === region.name ? null : region.name); setOpenCity(null); }}
-                className="w-full flex items-center justify-between px-4 py-3.5 text-left"
+                type="button"
+                onClick={() =>
+                  setOpenRegion((prev) =>
+                    prev === region.name
+                      ? null
+                      : region.name,
+                  )
+                }
+                className="flex w-full items-center justify-between px-4 py-3.5 text-left"
               >
                 <span className="flex items-center gap-3">
-                  <span className="w-[3px] h-5 rounded-full shrink-0" style={{ background: col.accent }} />
-                  <span className="text-[14px] font-semibold text-gray-200">{region.name}</span>
+                  <span
+                    className="h-5 w-[3px] shrink-0 rounded-full"
+                    style={{
+                      background: col.accent,
+                    }}
+                  />
+
+                  <span className="text-[14px] font-semibold text-gray-200">
+                    {region.name}
+                  </span>
                 </span>
+
                 <ChevronDown
-                  className={`w-4 h-4 shrink-0 transition-transform duration-200 ${isRegionOpen ? "rotate-180" : ""}`}
-                  style={{ color: col.accent }}
+                  className={`h-4 w-4 shrink-0 transition-transform duration-200 ${
+                    isRegionOpen
+                      ? "rotate-180"
+                      : ""
+                  }`}
+                  style={{
+                    color: col.accent,
+                  }}
                 />
               </button>
 
-              {/* cities accordion */}
+              {/* Region cities */}
               {isRegionOpen && (
                 <div className="bg-[#0a171e] pb-1">
-
-                  {linked.map(city => {
-                    const m          = cityLookup.get(city.toLowerCase())!;
-                    const isCityOpen = openCity === city;
+                  {linked.map((city) => {
+                    const match = cityLookup.get(
+                      city.toLowerCase(),
+                    )!;
 
                     return (
-                      <div key={city}>
-                        <Link
-                            href={`/service-area/${m.slug}`}
-                            onClick={onClose}
-                            className="w-full flex items-center justify-between px-5 py-2.5 text-left hover:bg-white/[0.03] transition-colors"
-                            >
-                            <span className="flex items-center gap-2 text-[13px] text-gray-300">
-                                <MapPin className="w-3.5 h-3.5 shrink-0" style={{ color: col.accent }} />
-                                {city}
-                            </span>
-                            <span className={`flex items-center gap-1 text-[10px] font-bold shrink-0 ${col.label}`}>
-                                {m.serviceCount} svcs
-                            </span>
-                        </Link>                      
-                      </div>
+                      <Link
+                        key={city}
+                        href={`/service-area/${match.slug}`}
+                        onClick={onClose}
+                        className="flex w-full items-center justify-between px-5 py-2.5 text-left transition-colors hover:bg-white/[0.03]"
+                      >
+                        <span className="flex items-center gap-2 text-[13px] text-gray-300">
+                          <MapPin
+                            className="h-3.5 w-3.5 shrink-0"
+                            style={{
+                              color: col.accent,
+                            }}
+                          />
+
+                          {city}
+                        </span>
+
+                        <span
+                          className={`flex shrink-0 items-center gap-1 text-[10px] font-bold ${col.label}`}
+                        >
+                          {match.serviceCount} svcs
+                        </span>
+                      </Link>
                     );
                   })}
 
-                  {unlinked.map(city => (
-                    <div key={city} className="flex items-center gap-2 px-5 py-2 text-[12px] text-gray-600">
-                      <MapPin className="w-3.5 h-3.5 shrink-0 text-gray-700" />
+                  {/* Requested cities without detail pages stay visible as coming soon */}
+                  {unlinked.map((city) => (
+                    <div
+                      key={city}
+                      className="flex items-center gap-2 px-5 py-2 text-[12px] text-gray-600"
+                    >
+                      <MapPin className="h-3.5 w-3.5 shrink-0 text-gray-700" />
+
                       {city}
-                      <span className="ml-auto text-[10px] text-gray-700">Soon</span>
+
+                      <span className="ml-auto text-[10px] text-gray-700">
+                        Soon
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -263,7 +479,6 @@ function MobileDrawer({ cityLookup, onClose }: MobileDrawerProps) {
           );
         })}
       </div>
-       
     </div>
   );
 }
@@ -271,54 +486,89 @@ function MobileDrawer({ cityLookup, onClose }: MobileDrawerProps) {
 /* ──────────────────────────── main export ──────────────────────────── */
 
 export default function ServicingAreaNav() {
-  const cityLookup  = buildCityLookup();
-  const [mob, setMob] = useState(false);
+  const cityLookup = buildCityLookup();
+  const [mobileOpen, setMobileOpen] =
+    useState(false);
 
   return (
-    <nav aria-label="Service areas" className="w-full lg:flex lg:items-center lg:justify-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        {/* ── Desktop ── */}
-        <div className="hidden lg:flex items-center">
-          {/* label */}
-          <Link href="/service-area" className="shrink-0 text-[10px] font-bold uppercase tracking-[0.18em] text-emerald-500 pr-4 mr-4 py-4 border-r border-white/[0.12] select-none">
+    <nav
+      aria-label="Service areas"
+      className="w-full lg:flex lg:items-center lg:justify-center"
+    >
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* Desktop service-area navigation */}
+        <div className="hidden items-center lg:flex">
+          <Link
+            href="/service-area"
+            className="mr-4 shrink-0 select-none border-r border-white/[0.12] py-4 pr-4 text-[10px] font-bold uppercase tracking-[0.18em] text-emerald-500"
+          >
             Service Area
-          </Link >
+          </Link>
 
-          {/* regions */}
-          <div className="flex items-center flex-wrap">
-            {SERVICE_REGIONS.map((region, ri) => (
-              <div key={region.name} className="flex items-center">
-                <DesktopItem
-                  region={region}
-                  col={REGION_COLORS[ri % REGION_COLORS.length]}
-                  cityLookup={cityLookup}
-                />
-                {ri < SERVICE_REGIONS.length - 1 && (
-                  <span className="text-gray-700 mx-3 select-none">·</span>
-                )}
-              </div>
-            ))}
+          <div className="flex flex-wrap items-center">
+            {SERVICE_REGIONS.map(
+              (region, ri) => (
+                <div
+                  key={region.name}
+                  className="flex items-center"
+                >
+                  <DesktopItem
+                    region={region}
+                    col={
+                      REGION_COLORS[
+                        ri % REGION_COLORS.length
+                      ]
+                    }
+                    cityLookup={cityLookup}
+                  />
+
+                  {ri <
+                    SERVICE_REGIONS.length -
+                      1 && (
+                    <span className="mx-3 select-none text-gray-700">
+                      ·
+                    </span>
+                  )}
+                </div>
+              ),
+            )}
           </div>
         </div>
 
-        {/* ── Mobile trigger bar ── */}
-        <div className="flex lg:hidden items-center justify-between py-3">
-          <Link href="/service-area" className="text-[10px] font-bold uppercase tracking-[0.18em] text-emerald-500 select-none">
-            Service Area
-          </Link >
-          <button
-            onClick={() => setMob(true)}
-            className="flex items-center gap-1.5 text-[12px] text-gray-400 hover:text-white transition-colors"
+        {/* Mobile service-area navigation */}
+        <div className="flex items-center justify-between py-3 lg:hidden">
+          <Link
+            href="/service-area"
+            className="select-none text-[10px] font-bold uppercase tracking-[0.18em] text-emerald-500"
           >
-            <Menu className="w-4 h-4" />
-            <span className="font-medium">All Regions</span>
+            Service Area
+          </Link>
+
+          <button
+            type="button"
+            onClick={() =>
+              setMobileOpen(true)
+            }
+            className="flex items-center gap-1.5 text-[12px] text-gray-400 transition-colors hover:text-white"
+          >
+            <Menu className="h-4 w-4" />
+
+            <span className="font-medium">
+              All Regions
+            </span>
           </button>
         </div>
       </div>
 
-      {/* ── Mobile drawer ── */}
-      {mob && <MobileDrawer cityLookup={cityLookup} onClose={() => setMob(false)} />}
+      {/* Full-screen service-area drawer on mobile */}
+      {mobileOpen && (
+        <MobileDrawer
+          cityLookup={cityLookup}
+          onClose={() =>
+            setMobileOpen(false)
+          }
+        />
+      )}
     </nav>
   );
 }

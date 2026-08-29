@@ -1,7 +1,11 @@
-import { ServiceArea, AreaService } from "./areas/types/serviceAreaTypes";
+import {
+  ServiceArea,
+  AreaService,
+} from "./areas/types/serviceAreaTypes";
 
-// ── Import city data files ────────────────────────────────────
-import { fresnoData }       from "./areas/fresnoData";
+// ── Existing city data ───────────────────────────────────────
+
+import { fresnoData } from "./areas/fresnoData";
 import { sanFranciscoData } from "./areas/sanFranciscoData";
 import { sanJoseData } from "./areas/sanJoseData";
 import { mountainViewData } from "./areas/mountainViewData";
@@ -36,8 +40,49 @@ import { walnutCreekData } from "./areas/walnutCreekData";
 import { santaClaraData } from "./areas/santaClaraData";
 import { cupertinoData } from "./areas/cupertinoData";
 
-// ── Master list ───────────────────────────────────────────────
+// ── Southern California expansion ────────────────────────────
+// Added from the latest client request.
+// Each city is registered here so Next.js can generate its
+// /service-area/[areaSlug] page and related service pages.
+
+// Los Angeles County
+import { losAngelesData } from "./areas/losAngelesData";
+import { santaMonicaData } from "./areas/santaMonicaData";
+import { culverCityData } from "./areas/culverCityData";
+import { elSegundoData } from "./areas/elSegundoData";
+import { torranceData } from "./areas/torranceData";
+import { pasadenaData } from "./areas/pasadenaData";
+import { glendaleData } from "./areas/glendaleData";
+import { burbankData } from "./areas/burbankData";
+import { longBeachData } from "./areas/longBeachData";
+
+// Orange County
+import { irvineData } from "./areas/irvineData";
+import { newportBeachData } from "./areas/newportBeachData";
+import { costaMesaData } from "./areas/costaMesaData";
+import { anaheimData } from "./areas/anaheimData";
+import { santaAnaData } from "./areas/santaAnaData";
+import { huntingtonBeachData } from "./areas/huntingtonBeachData";
+
+// San Diego County
+import { sanDiegoData } from "./areas/sanDiegoData";
+import { laJollaData } from "./areas/laJollaData";
+import { sorrentoValleyData } from "./areas/sorrentoValleyData";
+import { carlsbadData } from "./areas/carlsbadData";
+import { oceansideData } from "./areas/oceansideData";
+import { chulaVistaData } from "./areas/chulaVistaData";
+
+// Inland Empire — San Bernardino & Riverside Counties
+import { ontarioData } from "./areas/ontarioData";
+import { ranchoCucamongaData } from "./areas/ranchoCucamongaData";
+import { riversideData } from "./areas/riversideData";
+import { sanBernardinoData } from "./areas/sanBernardinoData";
+import { coronaData } from "./areas/coronaData";
+
+// ── Master service-area registry ──────────────────────────────
+
 export const serviceAreas: ServiceArea[] = [
+  // Existing service areas
   fresnoData,
   sanFranciscoData,
   sanJoseData,
@@ -72,15 +117,55 @@ export const serviceAreas: ServiceArea[] = [
   walnutCreekData,
   santaClaraData,
   cupertinoData,
+
+  // ── Los Angeles County ─────────────────────────────────────
+  losAngelesData,
+  santaMonicaData,
+  culverCityData,
+  elSegundoData,
+  torranceData,
+  pasadenaData,
+  glendaleData,
+  burbankData,
+  longBeachData,
+
+  // ── Orange County ──────────────────────────────────────────
+  irvineData,
+  newportBeachData,
+  costaMesaData,
+  anaheimData,
+  santaAnaData,
+  huntingtonBeachData,
+
+  // ── San Diego County ───────────────────────────────────────
+  sanDiegoData,
+  laJollaData,
+  sorrentoValleyData,
+  carlsbadData,
+  oceansideData,
+  chulaVistaData,
+
+  // ── Inland Empire ──────────────────────────────────────────
+  ontarioData,
+  ranchoCucamongaData,
+  riversideData,
+  sanBernardinoData,
+  coronaData,
 ];
 
-// ── Re-export types ───────────────────────────────────────────
-export type { ServiceArea, AreaService };
+// ── Re-export shared types ───────────────────────────────────
 
-// ── Helper functions ─────────────────────────────────────────
+export type {
+  ServiceArea,
+  AreaService,
+};
+
+// ── Static route helpers ─────────────────────────────────────
 
 export function getAllAreaSlugs() {
-  return serviceAreas.map((a) => ({ areaSlug: a.slug }));
+  return serviceAreas.map((area) => ({
+    areaSlug: area.slug,
+  }));
 }
 
 export function getAllServiceParams() {
@@ -88,21 +173,43 @@ export function getAllServiceParams() {
     area.services.map((service) => ({
       areaSlug: area.slug,
       serviceSlug: service.slug,
-    }))
+    })),
   );
 }
 
-export function getAreaBySlug(slug: string): ServiceArea | undefined {
-  return serviceAreas.find((a) => a.slug === slug);
+// ── Lookup helpers ───────────────────────────────────────────
+
+export function getAreaBySlug(
+  slug: string,
+): ServiceArea | undefined {
+  return serviceAreas.find(
+    (area) => area.slug === slug,
+  );
 }
 
 export function getServiceBySlug(
   areaSlug: string,
-  serviceSlug: string
-): { area: ServiceArea; service: AreaService } | undefined {
+  serviceSlug: string,
+): {
+  area: ServiceArea;
+  service: AreaService;
+} | undefined {
   const area = getAreaBySlug(areaSlug);
-  if (!area) return undefined;
-  const service = area.services.find((s) => s.slug === serviceSlug);
-  if (!service) return undefined;
-  return { area, service };
+
+  if (!area) {
+    return undefined;
+  }
+
+  const service = area.services.find(
+    (item) => item.slug === serviceSlug,
+  );
+
+  if (!service) {
+    return undefined;
+  }
+
+  return {
+    area,
+    service,
+  };
 }
