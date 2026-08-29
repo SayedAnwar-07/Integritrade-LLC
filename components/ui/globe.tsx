@@ -6,6 +6,9 @@ import Image, { type StaticImageData } from "next/image"
 import * as TooltipPrimitive from "@radix-ui/react-tooltip"
 import logo from "@/public/logo/integritrade-favicon.png"
 
+// Shared certificate PDF paths used across the site.
+import { CERTIFICATE_PDFS } from "@/data/certificates";
+
 import Iso9001 from "@/public/ISO/ISO-9001.webp"
 import Iso14001 from "@/public/ISO/ISO-14001.webp"
 import Iso27001 from "@/public/ISO/ISO-27001.webp"
@@ -54,6 +57,12 @@ const [FRESNO_PHI, FRESNO_THETA] = locationToAngles(
 const NA_WOBBLE_AMPLITUDE = 0.3 // radians (~17°) of sway to each side of Fresno
 const NA_WOBBLE_SPEED = 0.004 // radians per frame (~26s full back-and-forth)
 
+
+// Certificate cards shown around the globe.
+// PDF links are centralized in `@/data/certificates` so the Home page
+// and Certifications page always use the same certificate URLs.
+// When certificates are renewed, replace the files in `/public/certificates`
+// using the same filenames to avoid breaking existing links.
 const SERVICES: Service[] = [
   {
     image: R2v3,
@@ -62,7 +71,7 @@ const SERVICES: Service[] = [
     angle: -90,
     description:
       "Responsible Recycling (R2v3) certification verifies secure electronics reuse, recycling practices, and responsible downstream management.",
-    pdf: "/certificates/Integritrade%20LLC%20R2v3%20Electronics%20Recycling%20Data%20Security%20and%20ITAD.pdf",
+    pdf: CERTIFICATE_PDFS.r2v3,
   },
   {
     image: Iso14001,
@@ -71,7 +80,7 @@ const SERVICES: Service[] = [
     angle: -30,
     description:
       "ISO 14001 certification demonstrates our commitment to environmental management and sustainable electronics recycling practices.",
-    pdf: "/certificates/Integritrade%20LLC%20ISO%2014001%20Electronics%20Recycling%20and%20ITAD%20EMS.pdf",
+    pdf: CERTIFICATE_PDFS.iso14001,
   },
   {
     image: Iso27001,
@@ -80,7 +89,7 @@ const SERVICES: Service[] = [
     angle: 30,
     description:
       "ISO 27001 certification confirms our information security management system protects sensitive data throughout our processes.",
-    pdf: "/certificates/Integritrade%20LLC%20ISO%20IEC%2027001%20Electronics%20Recycling%20and%20ITAD%20ISMS.pdf",
+    pdf: CERTIFICATE_PDFS.iso27001,
   },
   {
     image: Iso45001,
@@ -89,7 +98,7 @@ const SERVICES: Service[] = [
     angle: 90,
     description:
       "ISO 45001 certification ensures a structured occupational health and safety management system for our workplace.",
-    pdf: "/certificates/Integritrade%20LLC%20ISO%2045001%20Electronics%20Recycling%20and%20ITAD%20OHS.pdf",
+    pdf: CERTIFICATE_PDFS.iso45001,
   },
   {
     image: Iso9001,
@@ -98,7 +107,7 @@ const SERVICES: Service[] = [
     angle: 150,
     description:
       "ISO 9001 certification confirms our quality management system focuses on consistent service delivery and continual improvement.",
-    pdf: "/certificates/Integritrade%20LLC%20ISO%209001%20Electronics%20Recycling%20and%20ITAD%20QMS.pdf",
+    pdf: CERTIFICATE_PDFS.iso9001,
   },
   {
     image: Nist,
@@ -108,7 +117,7 @@ const SERVICES: Service[] = [
     description:
       "NIST 800-88 provides recognized guidelines for secure data sanitization and permanent information removal.",
   },
-]
+];
 
 const BASE_CONFIG: Omit<
   COBEOptions,
