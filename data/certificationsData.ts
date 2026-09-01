@@ -77,7 +77,7 @@ export const certificationsData = [
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for quality management in electronic goods recycling, including repair, testing, data sanitization, and resale operations.",
     image: iso9001,
-    pdf: "/certificates/Integritrade%20LLC%20ISO%209001%20Electronics%20Recycling%20and%20ITAD%20QMS.pdf",
+    pdf: "/certificates/Integritrade_ISO_9001_QMS_Certification_2026.pdf",
   },
   {
     id: 3,
@@ -114,7 +114,7 @@ export const certificationsData = [
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for environmental management in electronic goods recycling, repair, testing, data sanitization, and resale operations.",
     image: iso14001,
-    pdf: "/certificates/Integritrade%20LLC%20ISO%2014001%20Electronics%20Recycling%20and%20ITAD%20EMS.pdf",
+    pdf: "/certificates/Integritrade_ISO_14001_EMS_Certification_2026.pdf",
   },
   {
     id: 4,
@@ -151,7 +151,7 @@ export const certificationsData = [
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for occupational health and safety management in electronic goods recycling operations.",
     image: iso45001,
-    pdf: "/certificates/Integritrade%20LLC%20ISO%2045001%20Electronics%20Recycling%20and%20ITAD%20OHS.pdf",
+    pdf: "/certificates/Integritrade_ISO_45001_Certification_2026.pdf",
   },
   {
     id: 5,
