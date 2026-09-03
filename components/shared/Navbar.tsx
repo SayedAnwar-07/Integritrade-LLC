@@ -186,7 +186,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
 }
 
 /* ----------------------- TraceTech promo item ----------------------- */
-const TRACETECH_HREF = '/about/#tracetech'
+const TRACETECH_HREF = '/tracetech'
 
 function TraceTechNavItem({
   registerRef,
@@ -502,7 +502,7 @@ export default function Navbar() {
             : ''
         }`}
       >
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-2">
+        <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-2">
           {/* ================== LOGO with subtle scale ================== */}
           <Link href="/" className="group flex items-center gap-3 flex-shrink-0">
             <div className="flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.03] w-52 md:w-64">

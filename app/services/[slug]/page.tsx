@@ -99,7 +99,7 @@ export default async function ServicePage(props: {
       ========================================================= */}
 
       <section>
-        <div className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8 lg:pb-12 lg:pt-10">
+        <div className="mx-auto max-w-[1400px] px-4 pb-10 pt-8 sm:px-6 lg:px-8 lg:pb-12 lg:pt-10">
           {/* Breadcrumb */}
 
           <nav
@@ -151,7 +151,7 @@ export default async function ServicePage(props: {
           HERO IMAGE
       ========================================================= */}
 
-      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         <ScrollLoader>
           <figure className="relative h-[320px] overflow-hidden rounded-md md:h-[440px]">
             <Image
@@ -169,7 +169,7 @@ export default async function ServicePage(props: {
           MAIN
       ========================================================= */}
 
-      <section className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
+      <section className="mx-auto max-w-[1400px] px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
           {/* =====================================================
               SIDEBAR

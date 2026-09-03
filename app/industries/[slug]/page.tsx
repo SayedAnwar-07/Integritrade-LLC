@@ -92,7 +92,7 @@ export default async function IndustryPage(props: {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-12 lg:px-16 pt-8 pb-16">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-12 lg:px-16 pt-8 pb-16">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs font-medium tracking-widest uppercase text-gray-500 dark:text-gray-400 mb-10">
           <Link href="/" className="hover:text-[#2aac61] transition-colors">

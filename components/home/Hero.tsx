@@ -56,7 +56,7 @@ export default function Hero() {
   return (
     <section className="relative pt-20 lg:pt-28 bg-secondary dark:bg-dark transition-colors duration-300 overflow-hidden">
       <ScrollLoader>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-7 lg:pt-4">
               <h1
@@ -144,11 +144,6 @@ export default function Hero() {
                 );
               })}
             </div>
-          </div>
-          <div className="mt-14">
-            <p className="font-serif font-bold text-3xl sm:text-4xl lg:text-5xl text-center text-stone-900 dark:text-white">
-              Organizations we’ve served
-            </p>
           </div>
         </div>
       </ScrollLoader>

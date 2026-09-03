@@ -16,7 +16,7 @@ export default function BlogBreadcrumb({ slug }: BlogBreadcrumbProps) {
 
   return (
     <div className="bg-secondary dark:bg-dark">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4 pt-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pb-4 pt-8">
         <nav
           aria-label="Breadcrumb"
           className="flex flex-wrap items-center gap-2 text-sm text-gray-500 dark:text-gray-400"

@@ -102,7 +102,7 @@ function Check() {
 export default function ContactDescription() {
   return (
     <section>
-      <div className="relative mx-auto max-w-7xl">
+      <div className="relative mx-auto max-w-[1400px]">
         {/* ── Intro left, form right ───────────────────────────── */}
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
           {/* LEFT — headline + short pitch */}

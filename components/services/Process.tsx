@@ -35,7 +35,7 @@ export default function Process() {
       id="how-it-works"
       className="py-24 bg-secondary dark:bg-dark transition-colors duration-300 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative">
         {/* Header */}
         <ScrollLoader>
           <SectionHeader

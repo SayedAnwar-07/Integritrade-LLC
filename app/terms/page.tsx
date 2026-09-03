@@ -134,7 +134,7 @@ export default function TermsPage() {
   return (
     <div className="bg-secondary dark:bg-dark pt-10 md:py-16">
       {/* Header */}
-      <div className="max-w-7xl mx-auto mb-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto mb-10 px-4 sm:px-6 lg:px-8">
         <ScrollLoader>
           <PageHeader
             eyebrow="Legal"
@@ -146,7 +146,7 @@ export default function TermsPage() {
       </div>
       {/* Content */}
       <div className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1400px] mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-16">
               {/* Main Content */}
               <div className="lg:col-span-2">

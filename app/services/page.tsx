@@ -108,7 +108,7 @@ export default function ServicesPage() {
 
   return (
     <main className="bg-secondary dark:bg-dark py-10 md:py-24">
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10">
         <ScrollLoader>
           <PageHeader
             eyebrow="Service Level Comparison"

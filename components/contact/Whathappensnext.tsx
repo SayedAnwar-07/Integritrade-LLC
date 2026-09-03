@@ -39,7 +39,7 @@ const processSteps = [
 
 export default function WhatHappensNext() {
   return (
-    <section className="pt-24" aria-labelledby="next-steps-heading">
+    <section className="pt-16" aria-labelledby="next-steps-heading">
        {/* Header */}
         <ScrollLoader>
             <SectionHeader
@@ -53,10 +53,10 @@ export default function WhatHappensNext() {
         </ScrollLoader>
 
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end sm:mt-12">
           {/* Left: Process steps */}
           <div className="lg:col-span-6">
-            <div className="mt-20">
+            <div className="mt-10">
               <ScrollLoader>
                 {/* Wrap the timeline line + list in a positioned container so the
                     decorative <span> is a sibling of <ol>, not an invalid child. */}

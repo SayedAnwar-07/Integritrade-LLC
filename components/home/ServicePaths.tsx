@@ -50,8 +50,8 @@ const paths: Path[] = [
 
 export default function ServicePaths() {
   return (
-    <section className="bg-secondary dark:bg-dark pt-24 lg:pt-32 lg:pb-10 transition-colors duration-300 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+    <section className="bg-secondary dark:bg-dark pt-8 lg:pt-16 lg:pb-10 transition-colors duration-300 overflow-hidden">
+      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10">
          <ScrollLoader>
             <SectionHeader
               eyebrow="Choose Your Path"

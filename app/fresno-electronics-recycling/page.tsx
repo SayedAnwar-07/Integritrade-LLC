@@ -283,7 +283,7 @@ export default function FresnoElectronicsRecyclingPage() {
 
         {/* ── Page Header ──────────────────────────────────────────────────── */}
         <ScrollLoader>
-          <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <div className='max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8'>
               <PageHeader
                 eyebrow="FRESNO ELECTRONICS RECYCLING"
                 title="E-Waste Recycling in Fresno, CA: Secure & Certified Electronics Disposal"
@@ -296,7 +296,7 @@ export default function FresnoElectronicsRecyclingPage() {
 
         {/* ── Free Recycling────────────────── */}
         <ScrollLoader>
-          <div className="mt-20 md:mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mt-20 md:mt-28 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
               <SectionHeader
                 eyebrow="FREE PUBLIC ELECTRONICS DROP-OFF IN FRESNO"
                 title="Recycle your electronics at no cost."
@@ -341,7 +341,7 @@ export default function FresnoElectronicsRecyclingPage() {
 
         {/* ── Items With Processing Fees ───────────── */}
         <ScrollLoader>
-          <div className="mt-20 md:mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mt-20 md:mt-28 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeader
               eyebrow="PROCESSING FEES"
               title="Items with special handling requirements."
@@ -391,7 +391,7 @@ export default function FresnoElectronicsRecyclingPage() {
         
         {/* Not Accepted */}
         <ScrollLoader>
-          <div className="mt-20 md:mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mt-20 md:mt-28 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 justify-between">
 
               {/* ── Left column: heading + image + inline contact ──── */}
@@ -460,14 +460,14 @@ export default function FresnoElectronicsRecyclingPage() {
 
         {/* ── Drop-off Process ─────────────────────── */}
         <ScrollLoader>
-          <div className="mt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mt-20 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <Process />
           </div>
         </ScrollLoader>
 
         {/* ── CTA ───────────────────── */}
         <ScrollLoader>
-          <div className="pb-20 sm:pb-0 md:mt-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="pb-20 sm:pb-0 md:mt-28 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="overflow-hidden grid lg:grid-cols-2">
                 <div className="p-8 md:p-12 lg:border-r border-gray-100 dark:border-gray-800">
                   <h2 className="mt-6 font-serif text-2xl md:text-3xl text-gray-900 dark:text-gray-100 tracking-tight leading-[1.15]">

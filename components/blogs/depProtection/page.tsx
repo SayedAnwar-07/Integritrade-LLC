@@ -16,7 +16,7 @@ import ScrollLoader from '@/components/shared/ScrollLoader';
 export default function RemoveDEPProtection() {
   return (
     <section className="bg-secondary dark:bg-dark pb-16 pt-10 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <ScrollLoader>
         <PageHeader

@@ -226,7 +226,7 @@ export default function ContactPage() {
         className="bg-secondary dark:bg-dark py-10 md:py-24 transition-colors duration-300"
         aria-label="Service Booking and Information"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading now lives beside the form inside ContactDescription,
               so the page no longer opens with two competing headlines. */}
           <ScrollLoader>

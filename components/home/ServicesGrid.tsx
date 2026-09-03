@@ -117,7 +117,7 @@ const iconConfig: Record<string, IconTheme> = {
 export default function ServicesGrid() {
   return (
     <section className="bg-secondary dark:bg-dark py-24 transition-colors duration-300 overflow-hidden">
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-10">
+      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10">
          <ScrollLoader>
             {/* Header */}
             <SectionHeader

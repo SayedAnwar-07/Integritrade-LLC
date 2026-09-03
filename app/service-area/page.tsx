@@ -55,7 +55,7 @@ export default function ServiceAreaPage() {
   return (
     <main className="overflow-x-hidden bg-secondary text-gray-900 transition-colors duration-300 dark:bg-dark dark:text-gray-100">
       {/* ─────────── HERO ─────────── */}
-      <section className="relative px-4 pt-16 pb-10 sm:pt-24 mx-auto max-w-7xl">
+      <section className="relative px-4 pt-16 pb-10 sm:lg:pt-16 mx-auto max-w-[1400px]">
         <ScrollLoader>
           <PageHeader
                 eyebrow="Service Area"
@@ -72,7 +72,7 @@ export default function ServiceAreaPage() {
 
       {/* ─────────── CITY DIRECTORY ─────────── */}
       <section className="p-2">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1400px]">
           <div className="">
             <ServicingArea />
           </div>
@@ -81,7 +81,7 @@ export default function ServiceAreaPage() {
 
       {/* ─────────── CTA ─────────── */}
       <section className="px-4 pb-10">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1400px]">
           <ScrollLoader>
             <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 lg:p-8">
               <div className="lg:col-span-7">

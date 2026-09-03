@@ -247,7 +247,7 @@ export default function ServicesShowcase() {
 
   return (
     <section className="bg-secondary dark:bg-dark transition-colors duration-300">
-      <div className="mx-auto mt-12 max-w-7xl lg:grid lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-12">
+      <div className="mx-auto mt-12 max-w-[1400px] lg:grid lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-12">
         {/* Vertical scroll-spy rail — sticky on the left, desktop only */}
         <aside className="hidden lg:block">
           <div className="sticky top-28">

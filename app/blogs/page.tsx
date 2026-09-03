@@ -56,7 +56,7 @@ export const metadata: Metadata = {
 export default function BlogPage() {
   return (
     <section className="bg-secondary dark:bg-dark transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-6 py-10 md:py-24">
+      <div className="max-w-[1400px] mx-auto px-6 py-10 md:py-24">
         {/* Header — matches site editorial style */}
         <ScrollLoader>
           <PageHeader

@@ -9,7 +9,8 @@ export const certificationsData = [
     id: 1,
     header: "R2v3 Standard",
     title: "R2v3 Standard : Sustainable Electronics Recycling & Data Security",
-    description: "Certification for sustainable electronics recycling, downstream vendor management, data sanitization, testing, and repair of mobile devices and consumer electronics.",
+    description:
+      "Integritrade is R2v3 certified, a recognized standard for responsible electronics recycling, data security, downstream vendor management, and environmental, health, and safety controls. The U.S. EPA identifies R2 as one of the accredited certification standards for electronics recyclers. Without certification, there is no comparable independent verification that the provider has the systems, controls, and downstream accountability needed to manage retired IT assets responsibly.",
     customerBenefit:
       "Your devices are tracked end-to-end, data is verifiably destroyed, and nothing is dumped in a landfill or shipped overseas illegally. You get the audit trail your compliance and sustainability teams need.",
     keyPoints: [

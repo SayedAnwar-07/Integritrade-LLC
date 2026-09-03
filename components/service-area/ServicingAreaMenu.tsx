@@ -495,7 +495,7 @@ export default function ServicingAreaNav() {
       aria-label="Service areas"
       className="w-full lg:flex lg:items-center lg:justify-center"
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         {/* Desktop service-area navigation */}
         <div className="hidden items-center lg:flex">
           <Link

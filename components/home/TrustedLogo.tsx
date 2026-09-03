@@ -14,6 +14,7 @@ import Bluecloud_Pediatric_Surgery_center from "@/public/TrustedLogo/bluecloud_p
 import Lion_Raisins from "@/public/TrustedLogo/lion_raisins.png"
 
 import ScrollLoader from "../shared/ScrollLoader"
+import SectionHeader from "../shared/SectionHeader"
 
 const logos = [
   { src: Avis_Car_Rental_USA,                 alt: "Avis Car Rental" },
@@ -33,10 +34,14 @@ const track = [...logos, ...logos]
 export default function TrustedLogos() {
   return (
     <section className="pt-20 bg-secondary dark:bg-dark transition-colors duration-300">
-      <div className="max-w-7xl mx-auto overflow-hidden">
+      <div className="max-w-[1400px] mx-auto overflow-hidden">
          <ScrollLoader>
+          <SectionHeader
+            title="Organizations We’ve Served"
+          />
+
             {/* Carousel */}
-            <div className="relative overflow-hidden"> 
+            <div className="relative overflow-hidden mt-10"> 
               {/* Fade edges */}
               <div className="absolute left-0 top-0 bottom-0 w-16 md:w-24 z-10
                 bg-gradient-to-r from-gray-50 dark:from-[#013242] to-transparent pointer-events-none" />

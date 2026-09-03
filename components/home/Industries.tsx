@@ -81,7 +81,7 @@ const industries = [
 export default function Industries() {
   return (
     <section className="pt-20 bg-secondary dark:bg-dark">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
          <ScrollLoader>
             <SectionHeader
               eyebrow="Industries We Serve"

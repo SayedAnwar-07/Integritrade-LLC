@@ -156,7 +156,7 @@ export default function ServicingArea() {
 
   return (
     <section className="bg-secondary pb-6 md:pb-10 dark:bg-dark">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
         {/* Service regions are displayed as an accordion.
             Any city found inside serviceAreas automatically links to its detail page. */}
         <div>

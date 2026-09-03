@@ -87,7 +87,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
       </div>
 
       {/* Hero */}
-      <section className="mx-auto max-w-7xl px-4 py-8">
+      <section className="mx-auto max-w-[1400px] px-4 py-8">
         <ScrollLoader>
           <PageHeader
             eyebrow="Service Area"
@@ -98,7 +98,7 @@ export default async function AreaPage({ params }: AreaPageProps) {
       </section>
 
       {/* Services */}
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:py-16">
+      <section className="mx-auto max-w-[1400px] px-4 py-12 sm:py-16">
         <ScrollLoader>
           {hasServices ? (
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -138,13 +138,13 @@ export default async function AreaPage({ params }: AreaPageProps) {
       </section>
 
       {/* Certificates */}
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:py-16">
+      <section className="mx-auto max-w-[1400px] px-4 py-12 sm:py-16">
         <ServicesCertificate />
       </section>
 
       {/* CTA */}
       <section>
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-[1400px]">
           <ScrollLoader>
             <div className="grid grid-cols-1 gap-12 p-4 lg:grid-cols-12 lg:gap-16 lg:p-12">
               <div className="lg:col-span-7">

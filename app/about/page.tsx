@@ -79,6 +79,29 @@ export const metadata: Metadata = {
   },
 }
 
+const traceTechPoints = [
+  {
+    title: "Real-time project visibility",
+    description:
+      "Follow asset and project status after pickup instead of losing visibility when equipment leaves your site.",
+  },
+  {
+    title: "Job-specific handling controls",
+    description:
+      "Client requirements are connected to the project and asset record, then surfaced when the asset tag is scanned.",
+  },
+  {
+    title: "SOPs at the point of work",
+    description:
+      "Technicians can access the applicable instructions and verification steps before processing devices, media, printers, MFPs, and other data-risk equipment.",
+  },
+  {
+    title: "Service, certificates, and sustainability reporting",
+    description:
+      "Manage service requests, retrieve available documentation, and view estimated CO2e impact by documented disposition pathway.",
+  },
+];
+
 /** Consistent section label used across every section for a unified rhythm. */
 function Eyebrow({
   children,
@@ -264,7 +287,7 @@ export default function AboutPage() {
       />
 
       {/* ───────────────── HERO — mission first (text left, image right) ───────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:pt-24 pb-16 lg:pb-24">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-16 lg:lg:pt-16 pb-16 lg:pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <ScrollLoader>
             <div>
@@ -331,7 +354,7 @@ export default function AboutPage() {
 
       {/* ───────────────── OUR TECHNOLOGY — text on top, screenshot showcase below ───────────────── */}
       <div id="tracetech" className="scroll-mt-20 bg-white dark:bg-dark-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <ScrollLoader>
             <div>
               <Eyebrow>Our Technology</Eyebrow>
@@ -351,19 +374,24 @@ export default function AboutPage() {
               </div>
 
               <ul className="mt-8 grid gap-x-12 gap-y-4 sm:grid-cols-2">
-                {[
-                  "Automated tracking, auditing, and processing so fewer human hands ever touch your devices.",
-                  "Fewer touchpoints mean less risk, zero bottlenecks, and unparalleled security.",
-                  "Advanced tracking and analytics designed to yield faster and higher returns on your retired IT assets.",
-                  "Every efficiency gain is passed directly back to you.",
-                ].map((point) => (
-                  <li key={point} className="flex items-start gap-3">
+
+                {traceTechPoints.map((point) => (
+                  <li key={point.title} className="flex items-start gap-3">
                     <CheckCircle2 className="mt-1 h-5 w-5 shrink-0 text-emerald-600 dark:text-emerald-400" />
-                    <span className="text-base leading-7 text-stone-700 dark:text-slate-300">
-                      {point}
-                    </span>
+
+                    <div>
+                      <span className="font-semibold text-stone-900 dark:text-white">
+                        {point.title}
+                      </span>
+
+                      <span className="text-base leading-7 text-stone-700 dark:text-slate-300">
+                        {" - "}
+                        {point.description}
+                      </span>
+                    </div>
                   </li>
                 ))}
+                
               </ul>
             </div>
           </ScrollLoader>
@@ -385,7 +413,7 @@ export default function AboutPage() {
       </div>
 
       {/* ───────────────── OUR STORY (text left, image right) ───────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <ScrollLoader>
             <div>
@@ -433,7 +461,7 @@ export default function AboutPage() {
 
       {/* ───────────────── PRINCIPLES ───────────────── */}
       <div className="bg-white dark:bg-dark-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <ScrollLoader>
             <div className="text-center">
               <Eyebrow center>How We Work</Eyebrow>
@@ -472,7 +500,7 @@ export default function AboutPage() {
       </div>
 
       {/* ───────────────── VALUE RECOVERY ───────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <ScrollLoader>
           <div className="text-center">
             <Eyebrow center>The Integritrade Difference</Eyebrow>
@@ -520,7 +548,7 @@ export default function AboutPage() {
 
       {/* ───────────────── WHY TRUST US (text left, image right) ───────────────── */}
       <div className="bg-white dark:bg-dark-secondary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
           <ScrollLoader>
             <Eyebrow>Why Teams Trust Us</Eyebrow>
             <h2 className="max-w-4xl font-serif text-3xl sm:text-4xl leading-[1.1] tracking-tight text-stone-900 dark:text-white">
@@ -567,7 +595,7 @@ export default function AboutPage() {
       </div>
 
       {/* ───────────────── VISIT / CTA ───────────────── */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <ScrollLoader>
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7">

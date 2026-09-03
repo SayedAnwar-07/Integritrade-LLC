@@ -63,7 +63,7 @@ export default function OurCapabilitiesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
       />
 
-      <div className="container mx-auto px-4 md:px-6 pt-10 md:pt-24">
+      <div className="container mx-auto px-4 md:px-6 pt-10 md:lg:pt-16">
 
         {/* ════════════════════════════════════════════════════════════════ */}
         {/* HERO editorial, confident, lots of breathing room              */}
@@ -427,7 +427,7 @@ export default function OurCapabilitiesPage() {
 
         {/* ───────────────── VISIT / CTA ───────────────── */}
         <div className="">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+          <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pb-20">
             <ScrollLoader>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                   <div className="lg:col-span-7">
