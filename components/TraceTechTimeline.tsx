@@ -20,9 +20,9 @@ const timelineItems = [
   {
     stage: "Scan",
     icon: ScanLine,
-    title: "Instructions that follow the asset",
+    title: "Customer instructions attached to every asset",
     content:
-      "Client requirements are linked to the correct project and asset record. If a project requires all MacBooks to be physically destroyed, that rule is surfaced to the technician when the asset tag is scanned. The workflow helps keep processing aligned with the customer's approved disposition instructions.",
+      "TraceTech links each asset to the customer, project, and approved disposition instructions. When a technician scans the asset tag, the system shows the required next step, whether that is physical destruction for specified media or devices, remarketing for eligible assets, basic recycling, reuse evaluation, or another customer-approved workflow.",
   },
   {
     stage: "Verify",

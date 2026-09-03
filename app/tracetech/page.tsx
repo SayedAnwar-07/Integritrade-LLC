@@ -35,7 +35,6 @@ export default function TraceTechPage() {
       <section className="px-4 pb-10 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
           <SectionHeader
-            eyebrow="Best headline and CTA"
             title=""
             description="TraceTech gives you visibility, control, and documented accountability after pickup."
             className="items-start text-start"
