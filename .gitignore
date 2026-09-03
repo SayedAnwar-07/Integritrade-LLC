@@ -13,3 +13,4 @@ out.zip
 out/
 .env
 .htaccess
+ftp-deploy.sh
