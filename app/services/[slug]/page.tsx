@@ -22,9 +22,17 @@ export async function generateMetadata(props: {
       title: "Service Not Found",
       description: "The requested service page could not be found.",
       robots: {
-        index: false,
-        follow: false,
-      },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
     };
   }
 
@@ -64,9 +72,17 @@ export async function generateMetadata(props: {
     },
 
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   };
 }
 

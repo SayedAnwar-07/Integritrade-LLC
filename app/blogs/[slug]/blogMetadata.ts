@@ -40,9 +40,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
 
   "nvme-data-destruction-methods":
@@ -107,9 +115,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
 
   "rohs-compliance-electronics-recycling-services":
@@ -174,9 +190,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "remove-apple-dep-mdm-lock-devices": {
     title: "How to Remove DEP Protection from Apple Devices?",
@@ -210,9 +234,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "why-it-asset-disposition-is-important": {
     title: "The Importance of IT Asset Disposition (ITAD) Sustainability",
@@ -246,9 +278,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "it-asset-recovery-services-maximize-value": {
     title: "How to Maximize Your IT Asset Recovery Value",
@@ -282,9 +322,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "itad-cutlines-revenue-sharing-devices": {
     title: "ITAD Cutlines Explained | Device Eligibility for Revenue Sharing",
@@ -318,9 +366,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "itad-compliance-and-data-destruction-policies": {
     title: "What Is an ITAD Policy & Why It Matters for Businesses",
@@ -354,9 +410,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "it-asset-disposition-explained": {
     title: "Understanding the Importance of IT Asset Disposition",
@@ -390,9 +454,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "itad-cutlines-asset-recovery-value-services": {
     title: "Cutlines in ITAD: How Fair Cutlines Maximize IT Asset Recovery",
@@ -426,9 +498,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "it-asset-recovery-process-and-best-practices": {
     title: "IT Asset Recovery Explained: Best Practices for Maximizing Value and Data Security",
@@ -462,9 +542,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "fair-flexible-itad-cutlines": {
     title: "Flexible ITAD Cutlines & Asset Recovery",
@@ -498,9 +586,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "hipaa-compliant-itad-data-destruction-services": {
     title: "HIPAA Compliant ITAD & R2v3 Data Destruction",
@@ -534,9 +630,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "itad-vs-e-waste-recycling": {
     title: "ITAD vs Electronic Recycling: Understanding the Difference and Why It Matters",
@@ -570,9 +674,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "chain-of-custody-in-itad": {
     title: "Chain of Custody in ITAD: Why Tracking and Documentation Matter",
@@ -606,9 +718,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "ai-trends-in-it-refresh-hardware-recovery": {
     title: "AI Trends in IT Refresh & Hardware Recovery",
@@ -642,9 +762,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "it-equipment-depreciation-and-risks": {
     title: "The Risk & Depreciation of Old Office Devices",
@@ -678,9 +806,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "it-asset-disposition-fresno-ca": {
     title: "IT Asset Disposition in Fresno, CA: Secure and Compliant ITAD for Local Businesses",
@@ -714,9 +850,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "it-asset-disposition-sacramento-ca": {
     title: "IT Asset Disposition in Sacramento, CA: Secure and Compliant ITAD for Local Businesses",
@@ -750,9 +894,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "itad-vs-free-e-waste-recycling-risks": {
     title: "How does ITAD work? Why choosing the right vendor is important",
@@ -786,9 +938,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "cod-vs-coe-data-destruction-certification-services": {
     title: "COD vs COE: Which is better for your Data Security?",
@@ -822,9 +982,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "data-erasure-vs-degaussing-vs-physical-destruction": {
     title: "Data erasure, Degaussing or Shredding which one is better?",
@@ -858,9 +1026,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "zero-trust-security-in-it-asset-disposition": {
     title: "The Relationship Between Zero-Trust Security and ITAD",
@@ -894,9 +1070,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "risk-of-storing-old-hard-drives-vs-recycling": {
     title: "The risk of Storing Old Hard Drives vs Recycling them",
@@ -930,9 +1114,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "landfill-vs-certified-recycling-environment": {
     title: "Landfill vs Certified Recycling; Which one is better for the Environment?",
@@ -966,9 +1158,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "is-it-possible-to-recover-deleted-data": {
     title: "Is it possible to recover deleted data? Know the risks to your business.",
@@ -1009,9 +1209,17 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
   "server-data-center-equipment-disposal-guide": {
     title: "Server and Data Center Equipment Disposal Guide | IntegriTrade",
@@ -1045,8 +1253,16 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   },
 };

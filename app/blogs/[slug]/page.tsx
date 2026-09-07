@@ -115,9 +115,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: "Blog Not Found",
       description: "The requested blog post does not exist.",
       robots: {
-        index: false,
-        follow: false,
-      },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
     };
   }
 
@@ -129,9 +137,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://integritradellc.com/blogs/${slug}/`,
     },
     robots: {
-      index: true,
-      follow: true,
-    },
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
   };
 }
 

@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import Hero from "@/components/home/Hero";
 import WhyChoose from "@/components/home/WhyChoose";
 import About from "@/components/home/About";
-import SchemaMarkup from "@/components/home/SchemaMarkup";
 import TrustedLogos from "@/components/home/TrustedLogo";
 import WhatHappensNext from "@/components/contact/Whathappensnext";
 import ServicePaths from "@/components/home/ServicePaths";
@@ -44,8 +43,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
    <div className="bg-secondary dark:bg-dark">
-      <SchemaMarkup />
-
       {/* Hero stays full width */}
       <section id="hero">
         <Hero />
@@ -87,15 +84,13 @@ export default function Page() {
                 <WhatHappensNext />
               </div>
             </section>
-
+            
+            <section id="about">
+              <About />
+            </section>
 
             <section id="blogs">
               <BlogHomeSection />
-            </section>
-
-
-            <section id="about">
-              <About />
             </section>
 
           </main>

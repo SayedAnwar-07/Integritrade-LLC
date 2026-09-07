@@ -2,19 +2,33 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { industriesData, getIndustryBySlug } from "@/data/industriesData";
 import Link from "next/link";
+import Image from "next/image";
+import dynamic from "next/dynamic";
 import { ChevronRight, Mail, Phone } from "lucide-react";
+
 import PageHeader from "@/components/shared/PageHeader";
 import SectionHeader from "@/components/shared/SectionHeader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
-import Image from "next/image";
-import ConsultationForm from "@/components/contact/ConsultationForm";
 import ScrollLoader from "@/components/shared/ScrollLoader";
-import ReadMore from "@/components/shared/buttons/ReadMore";
+import IndustryFAQ from "@/components/industries/IndustryFAQ";
+import FAQSchema from "@/components/industries/FAQSchema";
+
+
+const ConsultationForm = dynamic(
+  () => import("@/components/contact/ConsultationForm"),
+  {
+    loading: () => (
+      <div className="h-[500px] rounded-md bg-gray-100 animate-pulse" />
+    ),
+  }
+);
+
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+
   const params = await props.params;
   const industry = getIndustryBySlug(params.slug);
 
@@ -22,16 +36,21 @@ export async function generateMetadata(props: {
     return {
       title: "Industry Not Found",
       description: "The requested industry page could not be found.",
-      robots: { index: false, follow: false },
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
   return {
     title: industry.metaTitle,
     description: industry.metaDescription,
+
     alternates: {
       canonical: `/industries/${params.slug}/`,
     },
+
     openGraph: {
       title: industry.metaTitle,
       description: industry.metaDescription,
@@ -48,246 +67,289 @@ export async function generateMetadata(props: {
         },
       ],
     },
+
     twitter: {
       card: "summary_large_image",
       title: industry.metaTitle,
       description: industry.metaDescription,
-      images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+      images: [
+        "https://integritradellc.com/logo/integritrade-logo.png",
+      ],
     },
-    robots: { index: true, follow: true },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
   };
 }
 
+
 export async function generateStaticParams() {
+
   return industriesData.map((item) => ({
     slug: item.slug,
   }));
+
 }
 
-export default async function IndustryPage(props: {
-  params: Promise<{ slug: string }>;
-}) {
+
+export default async function IndustryPage(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+
   const params = await props.params;
   const industry = getIndustryBySlug(params.slug);
 
   if (!industry) return notFound();
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: industry.faqs.map((faq) => ({
-      "@type": "Question",
-      name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
-    })),
-  };
 
   return (
     <section className="bg-secondary dark:bg-dark transition-colors duration-300">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+
+      <FAQSchema faqs={industry.faqs}/>
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-12 lg:px-16 pt-8 pb-16">
+
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs font-medium tracking-widest uppercase text-gray-500 dark:text-gray-400 mb-10">
+
           <Link href="/" className="hover:text-[#2aac61] transition-colors">
             Home
           </Link>
 
-          <ChevronRight className="h-3 w-3" />
+          <ChevronRight className="h-3 w-3"/>
 
-          <Link
-            href="/industries/"
-            className="hover:text-[#2aac61] transition-colors"
-          >
+          <Link href="/industries/" className="hover:text-[#2aac61] transition-colors">
             Industries
           </Link>
 
-          <ChevronRight className="h-3 w-3" />
+          <ChevronRight className="h-3 w-3"/>
 
           <span className="text-gray-700 dark:text-gray-300">
             {industry.title}
           </span>
+
         </nav>
 
-        {/* header — description removed so the right-side orphan no longer appears.
-            The description now leads the content column below. */}
+
+        {/* Page Header */}
         <ScrollLoader>
+
           <PageHeader
             eyebrow={industry.eyebrow}
             title={industry.title}
             description={industry.description}
           />
+
         </ScrollLoader>
 
-        <ScrollLoader>
-          <div className="mt-20">
-            {/* Image */}
-            <div className="mb-10">
-              <div className="relative w-full overflow-hidden rounded-md shadow-sm">
-                <Image
-                  src={industry.image}
-                  alt={industry.imageAlt}
-                  className="w-full h-[300px] md:h-[500px] object-cover object-center"
-                  placeholder="blur"
-                  priority
-                  sizes="(max-width: 1280px) 100vw, 1152px"
-                />
-              </div>
-            </div>
 
-            {/* Content + consultation form */}
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
-              <div className="lg:col-span-7 space-y-8">
-              {industry.contentSections?.length ? (
-                <ReadMore previewLines={6} expandAt="lg">
-                    {industry.contentSections.map((section, sectionIndex) => (
-                      <div key={sectionIndex} className="space-y-4">
-                        {section.heading && (
-                          <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mt-6">
-                            {section.heading}
-                          </h2>
-                        )}
+        {/* Hero Image */}
+        <div className="mt-20 mb-10 aspect-[2/1] overflow-hidden rounded-md shadow-sm">
+          <Image
+            src={industry.image}
+            alt={industry.imageAlt}
+            width={1200}
+            height={600}
+            priority
+            placeholder="blur"
+            sizes="(max-width:768px)100vw,(max-width:1280px)90vw,1200px"
+            className="h-full w-full object-cover object-center"
+            quality={75}
+          />
+        </div>
 
-                        {section.paragraphs?.map((paragraph, paragraphIndex) => (
-                          <p
-                            key={paragraphIndex}
-                            className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] custom-text-center"
-                          >
-                            {paragraph}
-                          </p>
+
+        {/* Content + Consultation */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+
+
+          {/* Content */}
+          <div className="lg:col-span-7 space-y-8">
+
+            {industry.contentSections?.length ? (
+
+              <div className="space-y-8">
+
+                {industry.contentSections.map((section,index)=>(
+
+                  <div key={index} className="space-y-4">
+
+                    {section.heading && (
+
+                      <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                        {section.heading}
+                      </h2>
+
+                    )}
+
+
+                    {section.paragraphs?.map((paragraph,i)=>(
+
+                      <p key={i} className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8]">
+                        {paragraph}
+                      </p>
+
+                    ))}
+
+
+                    {section.bullets?.length ? (
+
+                      <ul className="space-y-3">
+
+                        {section.bullets.map((bullet,i)=>(
+
+                          <li key={i} className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8]">
+
+                            <span className="mt-3 h-1.5 w-1.5 rounded-full bg-[#2aac61]"/>
+
+                            <span>
+
+                              {typeof bullet==="string"
+                              ? bullet
+                              :
+                              <>
+                                <strong className="font-semibold text-gray-900 dark:text-white">
+                                  {bullet.title}:
+                                </strong>{" "}
+                                {bullet.text}
+                              </>
+                              }
+
+                            </span>
+
+                          </li>
+
                         ))}
 
-                        {section.bullets?.length ? (
-                          <ul className="space-y-3 pt-1">
-                            {section.bullets.map((bullet, bulletIndex) => (
-                              <li
-                                key={bulletIndex}
-                                className="flex items-start gap-3 text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] custom-text-center"
-                              >
-                                <span className="mt-3 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-[#2aac61]" />
+                      </ul>
 
-                                <span>
-                                  {typeof bullet === "string" ? (
-                                    bullet
-                                  ) : (
-                                    <>
-                                      <strong className="font-semibold text-gray-900 dark:text-white">
-                                        {bullet.title}:
-                                      </strong>{" "}
-                                      {bullet.text}
-                                    </>
-                                  )}
-                                </span>
-                              </li>
-                            ))}
-                          </ul>
-                        ) : null}
-                      </div>
-                    ))}
-                </ReadMore>
-                ) : (
-                <ReadMore previewLines={6} expandAt="lg">
-                  <p className="whitespace-pre-line text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8] custom-text-center">
-                    {industry.content.join("\n\n")}
-                  </p>
-                </ReadMore>
-              )}
+                    ):null}
+
+                  </div>
+
+                ))}
+
               </div>
 
-              {/* Consultation form — sticky on desktop, stacks below the copy on mobile */}
-              <aside className="lg:col-span-5">
-                <div className="lg:sticky lg:top-28">
-                  <ConsultationForm industry={industry.title} />
-                </div>
-              </aside>
-            </div>
+            ):(
+
+              <div className="space-y-6">
+
+                {industry.content.map((text,index)=>(
+
+                  <p key={index} className="text-[15px] text-gray-600 dark:text-gray-300 leading-[1.8]">
+                    {text}
+                  </p>
+
+                ))}
+
+              </div>
+
+            )}
+
           </div>
-        </ScrollLoader>
 
 
+          {/* Consultation */}
+          <aside className="lg:col-span-5">
 
-        {/* ─────────────────────────────────────────────
-            Contact CTA
-        ───────────────────────────────────────────── */}
+            <div className="lg:sticky lg:top-28">
+
+              <ConsultationForm industry={industry.title}/>
+
+            </div>
+
+          </aside>
+
+
+        </div>
+
+
+        {/* FAQ */}
+        <IndustryFAQ faqs={industry.faqs}/>
+
+
+        {/* Contact CTA */}
         <ScrollLoader>
+
           <div className="mt-20 lg:mt-28 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
-            {/* Left: Lead copy + primary CTA */}
+
+
             <div className="lg:col-span-7">
-              <SectionHeader
-                eyebrow="Get In Touch"
-                title="Ready to retire your IT assets responsibly?"
-              />
+              <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-4">Ready to retire your IT assets responsibly?</h3>
+
               <p className="text-[17px] text-gray-600 dark:text-gray-300 leading-[1.75] max-w-xl mt-4">
-                Schedule a pickup, request a quote, or talk to our team about a custom
-                ITAD program tailored to your facility, compliance requirements, and
-                data security standards.
+                Schedule a pickup, request a quote, or talk to our team about a custom ITAD program tailored to your facility, compliance requirements, and data security standards.
               </p>
+
 
               <div className="flex flex-col sm:flex-row gap-4 mt-4">
 
                 <OutlineButton href="/services" testId="button-learn-more">
                   See How We Can Help
                 </OutlineButton>
-                
+
                 <PrimaryButton href="/service-book" testId="button-get-quote">
                   Book a Service
                 </PrimaryButton>
+
               </div>
+
             </div>
 
-            {/* Right: Detached white shadow card with contact details */}
+
             <div className="lg:col-span-5">
+
               <div className="bg-white dark:bg-dark-secondary rounded-md shadow-sm p-8 lg:p-10">
+
                 <div className="space-y-7">
-                  {/* Phone */}
+
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 mt-0.5">
-                      <Phone className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-[10px] font-medium tracking-[0.18em] uppercase text-gray-500 dark:text-gray-400 mb-1.5">
-                        Call
-                      </p>
-                      <a
-                        href="tel:+15593254813"
-                        className="block text-[15px] text-gray-800 dark:text-gray-100 hover:text-[#2aac61] dark:hover:text-[#2aac61] transition-colors"
-                      >
-                        (559) 325-4813
-                      </a>
-                    </div>
+
+                    <Phone className="h-4 w-4 text-emerald-700 dark:text-emerald-400 mt-1"/>
+
+                    <a href="tel:+15593254813" className="text-[15px] text-gray-800 dark:text-gray-100">
+                      (559)325-4813
+                    </a>
+
                   </div>
 
-                  {/* Hairline divider */}
-                  <div className="h-px bg-gray-200 dark:bg-gray-700/60" />
 
-                  {/* Email */}
+                  <div className="h-px bg-gray-200 dark:bg-gray-700/60"/>
+
+
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 mt-0.5">
-                      <Mail className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <p className="text-[10px] font-medium tracking-[0.18em] uppercase text-gray-500 dark:text-gray-400 mb-1.5">
-                        Email
-                      </p>
-                      <a
-                        href="mailto:info@integritradeLLC.com"
-                        className="block text-[15px] text-gray-800 dark:text-gray-100 hover:text-[#2aac61] dark:hover:text-[#2aac61] transition-colors break-all"
-                      >
-                        info@integritradeLLC.com
-                      </a>
-                    </div>
+
+                    <Mail className="h-4 w-4 text-emerald-700 dark:text-emerald-400 mt-1"/>
+
+                    <a href="mailto:info@integritradeLLC.com" className="text-[15px] text-gray-800 dark:text-gray-100 break-all">
+                      info@integritradeLLC.com
+                    </a>
+
                   </div>
+
                 </div>
+
               </div>
+
             </div>
+
+
           </div>
+
         </ScrollLoader>
+
       </div>
     </section>
   );

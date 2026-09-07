@@ -8,6 +8,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Suspense } from "react"
 import RouteLoader from "@/components/shared/RouteLoader"
 import Navbar from "@/components/shared/Navbar"
+import SchemaMarkup from "@/components/home/SchemaMarkup"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -70,9 +71,17 @@ export const metadata: Metadata = {
   },
 
   robots: {
+  index: true,
+  follow: true,
+
+  googleBot: {
     index: true,
     follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
   },
+},
 };
 
 export default function RootLayout({
@@ -84,6 +93,7 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <Providers>
+          <SchemaMarkup />
           <ThemeProvider
             attribute="class"
             defaultTheme="light"

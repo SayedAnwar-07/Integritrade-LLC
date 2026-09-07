@@ -6,10 +6,10 @@ import { cn } from "@/lib/utils";
 const sections = [
   { id: "certifications", label: "Certifications" },
   { id: "why-choose", label: "Why Choose Us" },
-  { id: "services", label: "Services" },
+  { id: "services", label: "Solutions" },
   { id: "process", label: "Process" },
-  { id: "blogs", label: "Blogs" },
   { id: "about", label: "About" },
+  { id: "blogs", label: "Insights" },
 ];
 
 export default function HomeSectionNav() {

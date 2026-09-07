@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image";
-import Education from "@/public/industries/education.jpeg";
-import Finance from "@/public/industries/finance.jpeg";
-import BusinessCorporate from "@/public/industries/business-corporate.jpeg";
-import Healthcare from "@/public/industries/healthcare.png";
-import GovernmentITEquipment from "@/public/industries/government-IT-equipment.png";
-import LawFirmData from "@/public/industries/law-firm-data.png";
-import SecureRetailPOS from "@/public/industries/secure-retail-POS.png";
-import SecureDefenseServer from "@/public/industries/secure-defense-server.png";
+import Education from "@/public/industries/education.webp";
+import Finance from "@/public/industries/finance.webp";
+import BusinessCorporate from "@/public/industries/business-corporate.webp";
+import Healthcare from "@/public/industries/healthcare.webp";
+import GovernmentITEquipment from "@/public/industries/government-IT-equipment.webp";
+import LawFirmData from "@/public/industries/law-firm-data.webp";
+import SecureRetailPOS from "@/public/industries/secure-retail-POS.webp";
+import SecureDefenseServer from "@/public/industries/secure-defense-server.webp";
 
 export type FAQItem = {
   question: string;

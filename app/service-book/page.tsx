@@ -37,16 +37,17 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Integritrade LLC', url: 'https://integritradellc.com' }],
   robots: {
+  index: true,
+  follow: true,
+
+  googleBot: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-snippet': -1,
-      'max-image-preview': 'large',
-      'max-video-preview': -1,
-    },
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
   },
+},
   openGraph: {
     type: 'website',
     url: 'https://integritradellc.com/service-book',

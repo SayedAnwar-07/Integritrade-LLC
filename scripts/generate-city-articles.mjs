@@ -24,16 +24,42 @@ const AREAS_DIR = path.join(__dirname, "..", "data", "areas");
 // MASTER TEMPLATES — Ian's approved drafts, verbatim, with {{CITY}} placeholders
 // ─────────────────────────────────────────────────────────────────────────────
 
+// Replace the single metaTitle/metaDescription string in each ────────
+// template with a *Variants array. Keep everything else the same.
+
+// HARD DRIVE SHREDDING
+const HARD_DRIVE_SHREDDING_META = {
+  metaTitleVariants: [
+    "Certified Hard Drive Shredding in {{CITY}}, CA",
+    "{{CITY}} Hard Drive Destruction Services | Certified Disposal",
+    "Hard Drive Shredding {{CITY}} | Prevent Data Breaches",
+    "Secure Media Destruction Services Near {{CITY}}",
+    "{{CITY}} Businesses Trust Certified Hard Drive Shredding",
+    "On-Site Hard Drive Shredding in {{CITY}} CA",
+  ],
+
+  metaDescriptionVariants: [
+    "Protect confidential data with certified hard drive shredding in {{CITY}}. Secure pickup, chain of custody tracking, and destruction certificates included.",
+
+    "Retiring old computers? {{CITY}} organizations use our HDD and SSD destruction services to eliminate data recovery risks.",
+
+    "Deleting files is not enough. Get professional hard drive destruction in {{CITY}} with compliance documentation and secure processing.",
+  ],
+};
 const HARD_DRIVE_SHREDDING = {
   slug: "data-destruction-services",
+
+  // SEO META VARIANTS:
+  // Provides multiple unique meta title and meta description options
+  // for Hard Drive Shredding service pages.
+  // The generator will automatically select one variant per city + service
+  // to avoid duplicate SEO snippets across location pages.
+  ...HARD_DRIVE_SHREDDING_META,
+
+  icon: "HardDrive",
   title: "Hard Drive Shredding in {{CITY}}",
   shortDescription:
     "Certified hard drive shredding in {{CITY}}, CA for businesses. Secure data destruction, compliant disposal, and full protection against data breaches.",
-  icon: "HardDrive",
-  metaTitle:
-    "Hard Drive Shredding {{CITY}} CA | Secure Data Destruction Services",
-  metaDescription:
-    "Looking for hard drive shredding in {{CITY}}, CA? We provide certified data destruction, secure chain of custody, and eco-friendly disposal for businesses. Get a free quote today.",
   ctaText: "Get a Free Quote",
   image: "__IMG_hardDriveShredding__",
   heroHeading: "Secure Hard Drive Shredding Services in {{CITY}}",
@@ -143,15 +169,31 @@ Contact our {{CITY}} data destruction team today for a quote or to schedule cert
   ],
 };
 
+// IT ASSET DISPOSITION
+const IT_ASSET_DISPOSITION_META = {
+  metaTitleVariants: [
+    "IT Asset Disposition in {{CITY}}, CA | Certified ITAD & Data Wiping",
+    "{{CITY}} ITAD Services: Data Destruction + Hardware Value Recovery",
+    "Retiring IT Equipment in {{CITY}}? Certified, Compliant Disposal Here",
+    "ITAD {{CITY}} — NIST 800-88 Erasure, Buybacks & Recycling",
+  ],
+  metaDescriptionVariants: [
+    "Decommissioning servers or laptops in {{CITY}}? Get NIST 800-88 certified erasure, chain-of-custody logistics, and buyback value recovery. Free evaluation within 24 hours.",
+    "{{CITY}} enterprises rely on Integritrade for compliant IT asset disposition — data center decommissioning, HIPAA-ready destruction, and R2v3 recycling. Get a quote.",
+    "Turn retired IT equipment into revenue. Certified ITAD services for {{CITY}} businesses with full compliance documentation. Contact us today.",
+  ],
+};
 const IT_ASSET_DISPOSITION = {
   slug: "it-asset-disposition",
+  // SEO META VARIANTS:
+  // Provides unique SEO titles and descriptions for IT Asset Disposition (ITAD)
+  // pages including data wiping, hardware recovery, compliance, and recycling.
+  // Prevents duplicate metadata across different city landing pages.
+  ...IT_ASSET_DISPOSITION_META,
+  icon: "Monitor",
   title: "IT Asset Disposition in {{CITY}}",
   shortDescription:
     "Enterprise IT asset disposition in {{CITY}}, CA. Secure data destruction, hardware liquidation, and compliant IT asset disposal for organizations.",
-  icon: "Monitor",
-  metaTitle: "IT Asset Disposition {{CITY}} CA | Certified ITAD Services",
-  metaDescription:
-    "Certified IT Asset Disposition (ITAD) services in {{CITY}}, CA. Secure data destruction, data center decommissioning, and hardware value recovery.",
   ctaText: "Get a Free Quote",
   image: "__IMG_itAssetDisposition__",
   heroHeading: "Enterprise IT Asset Disposition Services in {{CITY}}",
@@ -247,16 +289,31 @@ Professional ITAD goes beyond basic recycling. It combines NIST 800-88 compliant
   ],
 };
 
+// ELECTRONICS RECYCLING
+const ELECTRONICS_RECYCLING_META = {
+  metaTitleVariants: [
+    "R2v3 Certified Electronics Recycling in {{CITY}}, CA",
+    "{{CITY}} E-Waste Recycling: Secure, Compliant & Documented",
+    "Electronics Recycling {{CITY}} — Is Your Vendor Actually Certified?",
+    "Responsible E-Waste Disposal in {{CITY}} | R2v3 & ISO Certified",
+  ],
+  metaDescriptionVariants: [
+    "Not all recyclers are equal. Integritrade offers R2v3, ISO 27001 and ISO 14001 certified electronics recycling in {{CITY}}, with full data security guarantees. Request a pickup.",
+    "Protect your {{CITY}} business from data breaches and environmental liability. Certified e-waste recycling with audit-ready reporting. Get started free.",
+    "From servers to smartphones, we responsibly recycle it all for {{CITY}} organizations — securely, sustainably, and with proof. See how it works.",
+  ],
+};
 const ELECTRONICS_RECYCLING = {
   slug: "basic-electronics-recycling",
+  // SEO META VARIANTS:
+  // Creates different search-focused metadata for Electronics Recycling pages.
+  // Variants target e-waste recycling, certification, sustainability,
+  // compliance, and secure disposal search intents.
+  ...ELECTRONICS_RECYCLING_META,
+  icon: "Recycle",
   title: "Electronics Recycling in {{CITY}}",
   shortDescription:
     "Certified electronics recycling in {{CITY}}, CA. Secure, compliant, and environmentally responsible e-waste recycling for businesses.",
-  icon: "Recycle",
-  metaTitle:
-    "Electronics Recycling {{CITY}} CA | R2v3 Certified E-Waste Recycling",
-  metaDescription:
-    "R2v3 certified electronics recycling in {{CITY}}, CA. Secure IT asset disposition and e-waste recycling with full compliance documentation.",
   ctaText: "Get a Free Quote",
   image: "__IMG_electronicRecyclingWarehouse__",
   heroHeading: "Electronics Recycling in {{CITY}}: Why Certification Matters",
@@ -344,16 +401,31 @@ const ELECTRONICS_RECYCLING = {
   ],
 };
 
+// IT EQUIPMENT BUYBACK
+const IT_EQUIPMENT_BUYBACK_META = {
+  metaTitleVariants: [
+    "Sell IT Equipment in {{CITY}}, CA | Get Paid, Not Billed",
+    "{{CITY}} IT Equipment Buyback — Free Pickup on 50+ Devices",
+    "Turn Retired Tech Into Cash in {{CITY}} | Certified Buyback Program",
+    "IT Asset Buyback {{CITY}}: Secure Erasure + Maximum Payout",
+  ],
+  metaDescriptionVariants: [
+    "Stop paying to haul away old IT equipment. {{CITY}} businesses can sell laptops, servers, and phones through our certified buyback program — free pickup, certified data wiping. Get your quote.",
+    "Your retired tech still has value. Integritrade buys back IT equipment from {{CITY}} organizations with a net-positive guarantee on qualifying batches. Find out what it's worth.",
+    "Sell your fleet, not just recycle it. Certified data destruction plus real payouts for {{CITY}} companies upgrading their IT. Request a free evaluation today.",
+  ],
+};
 const IT_EQUIPMENT_BUYBACK = {
   slug: "asset-recovery",
+  // SEO META VARIANTS:
+  // Generates unique metadata for IT Equipment Buyback pages.
+  // Focuses on value recovery, selling retired technology, payouts,
+  // certified data destruction, and business asset recovery.
+  ...IT_EQUIPMENT_BUYBACK_META,
+  icon: "RefreshCw",
   title:
     "Sell Your IT Equipment in {{CITY}}: Get the Best Value with Secure, Certified Buyback",
   shortDescription:
-    "Sell your retired IT equipment in {{CITY}} through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
-  icon: "RefreshCw",
-  metaTitle:
-    "Sell Your IT Equipment in {{CITY}}: Certified IT Equipment Buyback",
-  metaDescription:
     "Sell your retired IT equipment in {{CITY}} through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
   ctaText: "Get a Free Quote",
   image: "__IMG_itBuyback__",
@@ -548,14 +620,30 @@ What truly sets TraceTech apart is its AI-integrated workflow engine, which is d
   ],
 };
 
+// CERTIFICATES OF DESTRUCTION
+const CERTIFICATES_OF_DESTRUCTION_META = {
+  metaTitleVariants: [
+    "Certificates of Destruction in {{CITY}}, CA | Audit-Ready Proof",
+    "{{CITY}} Certificate of Destruction — R2v3 & ISO 27001 Backed",
+    "Need Proof of Data Destruction in {{CITY}}? Start Here",
+    "Legally Binding Certificates of Destruction for {{CITY}} Businesses",
+  ],
+  metaDescriptionVariants: [
+    "Protect your {{CITY}} organization during a compliance audit. Get a serialized, legally binding Certificate of Destruction for every device we process. Request service now.",
+    "Simple deletion isn't proof. Integritrade issues audit-ready Certificates of Destruction for {{CITY}} businesses, backed by R2v3 and ISO 27001 certification. Learn more.",
+    "HIPAA, FACTA, and CCPA compliance starts with documentation. Get certified proof of destruction for your {{CITY}} IT assets. Contact our team.",
+  ],
+};
 const CERTIFICATES_OF_DESTRUCTION = {
   slug: "certificates-of-destruction",
+  // SEO META VARIANTS:
+  // Provides multiple metadata versions for Certificate of Destruction pages.
+  // Targets compliance, audit requirements, proof of destruction,
+  // regulatory documentation, and secure data disposal searches.
+  ...CERTIFICATES_OF_DESTRUCTION_META,
+  icon: "FileCheck",
   title: "Certificates of Destruction in {{CITY}}",
   shortDescription:
-    "Need a legally binding Certificate of Destruction in {{CITY}}? Integritrade delivers R2v3 and ISO certified IT asset disposition and secure data shredding.",
-  icon: "FileCheck",
-  metaTitle: "Secure Certificates of Destruction for IT Assets in {{CITY}}",
-  metaDescription:
     "Need a legally binding Certificate of Destruction in {{CITY}}? Integritrade delivers R2v3 and ISO certified IT asset disposition and secure data shredding.",
   ctaText: "Get a Free Quote",
   image: "__IMG_dataDestruction__",
@@ -615,21 +703,32 @@ When you receive a Certificate of Destruction from our team, it is backed by fiv
   ],
 };
 
-// ─────────────────────────────────────────────────────────────────────────────
 // DATA CENTER DECOMMISSIONING
-// ─────────────────────────────────────────────────────────────────────────────
-
+const DATA_CENTER_DECOMMISSIONING_META = {
+  metaTitleVariants: [
+    "Data Center Decommissioning in {{CITY}}, CA | Full-Service Teardowns",
+    "{{CITY}} Data Center Cleanout — Certified Destruction, Free Quote",
+    "Decommissioning a Data Center in {{CITY}}? Do It Right the First Time",
+    "Server Room & Data Center Removal Services in {{CITY}}",
+  ],
+  metaDescriptionVariants: [
+    "From a single rack to a full facility teardown, Integritrade handles data center decommissioning in {{CITY}} with certified destruction and chain-of-custody documentation. Schedule a walkthrough.",
+    "{{CITY}} colocation and enterprise data centers trust us for secure teardown, asset recovery, and compliance reporting. Get a free site assessment.",
+    "Don't let a data center decommission become a data breach. Certified, documented, and value-recovering service for {{CITY}} organizations. Contact us today.",
+  ],
+};
 const DATA_CENTER_DECOMMISSIONING = {
   slug: "data-center-decommissioning",
+  // SEO META VARIANTS:
+  // Generates unique SEO metadata for Data Center Decommissioning pages.
+  // Covers enterprise teardown, server removal, secure destruction,
+  // asset recovery, and compliance-focused search intent.
+  ...DATA_CENTER_DECOMMISSIONING_META,
+  icon: "Server",
   title:
     "Data Center Decommissioning in {{CITY}}: Secure, Certified Cleanouts for Every Scale",
   shortDescription:
     "End-to-end data center decommissioning and cleanout services in {{CITY}} - certified data destruction, unbroken chain of custody, and asset value recovery, from a single rack to a full facility teardown.",
-  icon: "Server",
-  metaTitle:
-    "Data Center Decommissioning in {{CITY}} | Secure, Certified Cleanouts",
-  metaDescription:
-    "Certified data center decommissioning in {{CITY}} - secure data destruction, full chain-of-custody documentation, and asset value recovery for every scale, from a single rack to a full facility teardown.",
   ctaText: "Get a Free Quote",
   image: "__IMG_dataCenterDecommissioning__",
   heroHeading:
@@ -819,20 +918,31 @@ Contact Integritrade today to schedule your free site walkthrough and get a fixe
   ],
 };
 
-// ─────────────────────────────────────────────────────────────────────────────
-// APPLE EQUIPMENT BUYBACK
-// ─────────────────────────────────────────────────────────────────────────────
-
+// APPLE EQUIPMENT
+const APPLE_EQUIPMENT_META = {
+  metaTitleVariants: [
+    "Sell Used Apple Equipment in {{CITY}}, CA | Top Buyback Rates",
+    "{{CITY}} MacBook & iPhone Fleet Buyback — Certified Data Wiping",
+    "Upgrading Your Mac Fleet in {{CITY}}? Sell It the Smart Way",
+    "Corporate Apple Buyback in {{CITY}} | Get More Than Trade-In",
+  ],
+  metaDescriptionVariants: [
+    "Don't settle for Apple trade-in prices. {{CITY}} businesses get top buyback rates for MacBooks, iMacs, and iPhones with certified data erasure included. Get a quote.",
+    "Selling your {{CITY}} company's Apple fleet? We pay more than trade-in and provide NIST 800-88 certified erasure on every device. Find out what it's worth.",
+    "MacBooks, iPads, iPhones — we buy it all from {{CITY}} organizations, with full chain-of-custody and fast payment. Request your free evaluation.",
+  ],
+};
 const APPLE_EQUIPMENT = {
   slug: "sell-used-apple-equipment",
+  // SEO META VARIANTS:
+  // Creates unique metadata for Apple Equipment Buyback pages.
+  // Targets MacBook, iPhone, iPad fleet disposal, corporate Apple upgrades,
+  // certified erasure, and maximum recovery value searches.
+  ...APPLE_EQUIPMENT_META,
+  icon: "Laptop",
   title: "Sell Used Apple Equipment in {{CITY}}",
   shortDescription:
     "Sell used corporate Apple equipment in {{CITY}}, CA. Highest buyback rates for MacBooks, iMacs, iPads, and iPhone fleets, with NIST 800-88 certified data erasure and full chain-of-custody documentation.",
-  icon: "Laptop",
-  metaTitle:
-    "Sell Used Apple Equipment in {{CITY}} | Highest Buyback Rates for Mac Fleets",
-  metaDescription:
-    "Upgrading your {{CITY}} office's Macs? Integritrade pays more for corporate MacBooks, iMacs, and iPads and provides certified data erasure. Fast payment. Zero hassle.",
   ctaText: "Get a Free Quote",
   image: "__IMG_appleEquipment__",
   heroHeading:
@@ -894,6 +1004,44 @@ But value recovery is only half the story. The certifications behind our process
     },
   ],
 };
+
+/**
+ * meta-variants-patch.mjs
+ *
+ * Drop-in changes for generate-city-articles.mjs to fix duplicate
+ * metaTitle / metaDescription across city pages.
+ *
+ * PROBLEM: every city gets the exact same title/description template with
+ * only {{CITY}} swapped in. Google detects this as templated/thin content
+ * and starts rewriting or suppressing the snippet (see the Integritrade LLC
+ * results — identical "As data privacy mandates..." description repeated
+ * across Huntington Beach, Glendale, Pasadena, Costa Mesa, Chula Vista).
+ *
+ * FIX: give each service 3-4 structurally different title/description
+ * variants (different hook, different word order, different CTA), then
+ * deterministically pick one per (city, service) pair using a hash. Same
+ * city always gets the same copy on re-run, but different cities/services
+ * get visibly different snippets — which also reads as more "written for
+ * a human" and more clickable (numbers, questions, urgency, CTAs).
+ */
+
+// ── 1. Add this hash + picker anywhere above the CATEGORIES array ─────────
+
+function hashString(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    hash = (hash << 5) - hash + str.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function pickVariant(variants, key) {
+  if (!Array.isArray(variants) || variants.length === 0) {
+    return "";
+  }
+  return variants[hashString(key) % variants.length];
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // SERVICE CATEGORIES
@@ -1370,7 +1518,20 @@ for (const file of files) {
   }
 
   const services = assigned.map(({ category, slug }) => {
-    const filled = fillCity(category.template, cityName);
+    const key = `${area.slug}::${slug}`; // stable unique key per city + service
+
+    const resolvedTemplate = {
+      ...category.template,
+
+      metaTitle: pickVariant(category.template.metaTitleVariants, key),
+
+      metaDescription: pickVariant(
+        category.template.metaDescriptionVariants,
+        key,
+      ),
+    };
+
+    const filled = fillCity(resolvedTemplate, cityName);
 
     return {
       ...filled,

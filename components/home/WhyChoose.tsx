@@ -21,26 +21,26 @@ const items: Item[] = [
     icon: Route,
     iconColor: "text-amber-700 dark:text-amber-300",
     iconBorder: "border-amber-200/80 dark:border-amber-700/40",
-    title: "TraceTech Visibility",
-    desc: "Track each project from pickup through final disposition. Manage future pickups and download Certificates of Destruction and Erasure on demand.",
+    title: "TraceTech Control & Visibility",
+    desc: "Authorized clients can follow project and device status after pickup, manage future service requests, and access available Certificates of Erasure and Destruction. When an asset tag is scanned, TraceTech displays the job's approved handling instructions and applicable SOP prompts, ensuring client-specific requirements are addressed.",
   },
   {
     index: 2,
     icon: ClipboardCheck,
     iconColor: "text-blue-700 dark:text-blue-300",
     iconBorder: "border-blue-200/80 dark:border-blue-700/40",
-    title: "Certified Data Security",
-    desc: "R2v3 and ISO 27001 certified processes, access-controlled handling, and verified NIST 800-88 erasure or physical destruction when needed.",
+    title: "Data Security by Design",
+    desc: "R2v3 and ISO 27001-certified management systems, access-controlled handling, background-checked personnel, and documented data workflows help keep sensitive assets under control. Each project is processed according to the client's approved data-handling requirements. Where a client does not specify a method, Integritrade follows its documented NIST 800-88-based sanitization process, with physical destruction available when required.",
   },
   {
     index: 3,
     icon: Recycle,
     iconColor: "text-emerald-700 dark:text-emerald-300",
     iconBorder: "border-emerald-200/80 dark:border-emerald-700/40",
-    title: "Value-First Asset Recovery",
-    desc: "We evaluate reuse and remarketing before materials recovery, helping qualifying ITAD projects recover value or remain net-positive.",
+    title: "Value First. Recovery Before Recycling.",
+    desc: "We evaluate eligible equipment for reuse, direct buyback, remarketing, and parts harvesting before materials recovery. For qualifying ITAD projects, recovered value can offset disposition costs or generate a positive financial return. Contact us to discuss your specific needs.",
   },
-];;
+];
 
 export default function WhyChoose() {
   return (
@@ -50,8 +50,8 @@ export default function WhyChoose() {
          <ScrollLoader>
             <SectionHeader
               eyebrow="Why Choose Integritrade"
-              title="More than equipment removal, a clear process your team can verify."
-              description="We help businesses and local customers move from pickup to final outcome with organized tracking, responsible handling, value recovery, and the right documentation for each service."
+              title="More than equipment removal. A process built for visibility, security, and value"
+              description="Integritrade helps organizations manage retired IT from pickup through documented disposition with TraceTech visibility, secure data-handling workflows, reuse and value recovery, and qualified downstream recycling when recycling is required."
             />
         </ScrollLoader>
 

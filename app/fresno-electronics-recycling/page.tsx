@@ -53,7 +53,18 @@ export const metadata: Metadata = {
       'Free electronics drop-off and certified e-waste recycling services in Fresno, CA.',
     images: ['https://integritradellc.com/logo/integritrade-logo.png'],
   },
-  robots: { index: true, follow: true },
+  robots: {
+  index: true,
+  follow: true,
+
+  googleBot: {
+    index: true,
+    follow: true,
+    "max-image-preview": "large",
+    "max-snippet": -1,
+    "max-video-preview": -1,
+  },
+},
 }
 
 const FREE_CATEGORIES: Array<{

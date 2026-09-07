@@ -46,15 +46,15 @@ const blogs = [
 
 export default function BlogHomeSection() {
   return (
-    <section className="bg-secondary dark:bg-dark py-16 transition-colors duration-300">
+    <section className="bg-secondary dark:bg-dark mt-16 md:mt-32 pb-16 transition-colors duration-300">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollLoader>
-          <SectionHeader
+         <SectionHeader
             as="h2"
-            eyebrow="From the Blog"
+            eyebrow="From the Insights"
             title="ITAD insights, guides, and compliance resources"
             description="Expert guidance on certified data destruction, secure chain of custody, and asset recovery so you know exactly what happens to your retired IT equipment."
-            linkText="View all articles"
+            linkText="View all insights"
             linkHref="/blogs/"
           />
         </ScrollLoader>

@@ -78,7 +78,7 @@ export default function TraceTechTimeline() {
   }, []);
 
   return (
-    <section className="mx-auto max-w-6xl px-4 py-20 sm:px-6 lg:px-8">
+    <section className="mx-auto max-w-6xl px-4 pt-20 sm:px-6 lg:px-8">
       <div className="flex flex-col">
         {timelineItems.map((item, i) => {
           const Icon = item.icon;
