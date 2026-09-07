@@ -139,7 +139,6 @@ export default function ServicesGrid() {
               <ScrollLoader
                 key={service.slug}
                 delay={idx * 0.08}
-                y={30}
               >
                 <article
                   key={service.slug}
