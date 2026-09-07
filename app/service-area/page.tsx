@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Silicon Valley ITAD",
   ],
   alternates: {
-    canonical: "/services/it-asset-disposition/",
+    canonical: "/service-area/",
   },
   openGraph: {
     title: "ITAD & E-Waste Recycling Service Area",

@@ -15,7 +15,7 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 
 export const metadata: Metadata = {
   title:
-    "TraceTech | ITAD Client Portal & Real-Time Asset Tracking | Integritrade",
+    "TraceTech | ITAD Client Portal & Asset Tracking",
 
   description:
     "TraceTech is Integritrade's ITAD client portal for real-time asset tracking, job-specific handling controls, Certificates of Destruction/Erasure, service requests, and CO2e sustainability reporting.",
@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "ITAD service request management",
     "ITAD sustainability reporting",
   ],
+
+  alternates: {
+    canonical: "/tracetech/",
+  },
 
   openGraph: {
     title: "TraceTech | ITAD Client Portal & Real-Time Asset Tracking",

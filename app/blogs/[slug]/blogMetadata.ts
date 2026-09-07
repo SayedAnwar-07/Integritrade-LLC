@@ -1222,14 +1222,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
 },
   },
   "server-data-center-equipment-disposal-guide": {
-    title: "Server and Data Center Equipment Disposal Guide | IntegriTrade",
+    title: "Server and Data Center Equipment Disposal Guide",
     description:
       "Are your office's old servers and data center equipment becoming a burden? Learn how to securely destroy data and get the right return on investment (ROI).",
     alternates: {
       canonical: `${BASE_URL}/blogs/server-data-center-equipment-disposal-guide`,
     },
     openGraph: {
-      title: "Server and Data Center Equipment Disposal Guide | IntegriTrade",
+      title: "Server and Data Center Equipment Disposal Guide",
       description:
         "Are your office's old servers and data center equipment becoming a burden? Learn how to securely destroy data and get the right return on investment (ROI).",
       url: `${BASE_URL}/blogs/server-data-center-equipment-disposal-guide`,
@@ -1247,7 +1247,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Server and Data Center Equipment Disposal Guide | IntegriTrade",
+      title: "Server and Data Center Equipment Disposal Guide",
       description:
         "Are your office's old servers and data center equipment becoming a burden? Learn how to securely destroy data and get the right return on investment (ROI).",
       images: [OG_IMAGE],

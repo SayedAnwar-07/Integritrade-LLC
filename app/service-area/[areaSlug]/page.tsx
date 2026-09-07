@@ -43,6 +43,11 @@ export async function generateMetadata({
   return {
     title: `${area.name} IT Asset Disposition Services`,
     description,
+    // Without this the page inherits the root layout's canonical of "/", which
+    // tells Google every city hub is a duplicate of the homepage.
+    alternates: {
+      canonical: `/service-area/${areaSlug}/`,
+    },
   };
 }
 

@@ -115,7 +115,7 @@ export const certificationsData = [
     company: "Royal Impact Certification Ltd.",
     company_description: "Certification for environmental management in electronic goods recycling, repair, testing, data sanitization, and resale operations.",
     image: iso14001,
-    pdf: "/certificates/Integritrade_ISO_14001_EMS_Certification_2026.pdf",
+    pdf: "/certificates/Integritrade_ISO_14001_EHS_Certification_2026.pdf",
   },
   {
     id: 4,

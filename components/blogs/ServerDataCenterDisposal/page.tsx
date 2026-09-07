@@ -237,7 +237,7 @@ export default function ServerDataCenterDisposal() {
                   <p className="custom-text-center">
                     For compliant{' '}
                     <Link
-                      href="/hard-drive-shredding-fresno"
+                      href="/service-area/fresno/hard-drive-shredding/"
                       className="text-blue-600 dark:text-blue-400 font-medium hover:underline"
                     >
                       hard drive shredding in Fresno
