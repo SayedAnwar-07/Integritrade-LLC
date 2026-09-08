@@ -7,6 +7,7 @@ import GovernmentITEquipment from "@/public/industries/government-IT-equipment.w
 import LawFirmData from "@/public/industries/law-firm-data.webp";
 import SecureRetailPOS from "@/public/industries/secure-retail-POS.webp";
 import SecureDefenseServer from "@/public/industries/secure-defense-server.webp";
+import { CERTIFICATE_PDFS } from "./certificates";
 
 export type FAQItem = {
   question: string;
@@ -25,12 +26,17 @@ export type BulletPoint =
   | {
       title: string;
       text: string;
+      link?: {
+        text:string;
+        href:string;
+      };
     };
 
 export type ContentSection = {
   heading?: string;
   paragraphs?: string[];
   bullets?: BulletPoint[];
+  className?: string;
 };
 
 export type Industry = {
@@ -452,7 +458,12 @@ export const industriesData: Industry[] = [
           },
           {
             title: "Responsible Electronics Recycling",
-            text: "R2v3-certified processing to ensure environmentally compliant downstream recycling for all end-of-life business equipment.",
+            text:
+            "R2v3-certified processing to ensure environmentally compliant downstream recycling for all end-of-life business equipment.",
+            link:{
+              text:"R2v3-certified",
+              href:CERTIFICATE_PDFS.r2v3
+            }
           },
         ],
       },
@@ -460,6 +471,7 @@ export const industriesData: Industry[] = [
         paragraphs: [
           `Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
         ],
+        className: "mt-8",
       },
     ],
     closingCallout: {

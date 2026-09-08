@@ -7,7 +7,7 @@ interface IndustryFAQProps {
 
 export default function IndustryFAQ({ faqs }: IndustryFAQProps) {
   return (
-    <section className="mt-16">
+    <section className="mt-6 md:mt-10">
       <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Frequently Asked Questions</h2>
 
       <Accordion type="single" collapsible className="w-full">

@@ -392,7 +392,7 @@ export function ItadGlobe({ className }: { className?: string }) {
                     side="top"
                     sideOffset={8}
                     className="
-                      z-50 max-w-xs rounded-lg border border-gray-200 bg-white p-3
+                      z-50 max-w-xs rounded-md border border-gray-200 bg-white p-3
                       shadow-lg
                       dark:border-gray-600 dark:bg-dark-secondary
                       data-[state=delayed-open]:animate-in data-[state=delayed-open]:fade-in-0 data-[state=delayed-open]:zoom-in-95

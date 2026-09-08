@@ -162,7 +162,7 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
     ) : null
 
   return (
-    <div className="rounded-lg border border-gray-200 dark:border-gray-700/60 bg-white dark:bg-dark-secondary p-6 shadow-sm">
+    <div className="rounded-md border border-gray-200 dark:border-gray-700/60 bg-white dark:bg-dark-secondary p-6 shadow-sm">
       <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
         Free Consultation
       </p>

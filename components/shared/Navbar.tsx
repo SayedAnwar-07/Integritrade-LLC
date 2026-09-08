@@ -149,7 +149,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                 <Link
                   key={dropdownItem.href}
                   href={dropdownItem.href}
-                  className={`group/item flex items-center gap-3 rounded-lg px-3 py-2.5 transition-colors duration-200 click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark-secondary ${
+                  className={`group/item flex items-center gap-3 rounded-md px-3 py-2.5 transition-colors duration-200 click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark-secondary ${
                     isSubActive
                       ? 'bg-primary/10 dark:bg-white/[0.10]'
                       : 'hover:bg-primary/10 focus-visible:bg-primary/10 dark:hover:bg-white/[0.10] dark:focus-visible:bg-white/[0.10]'

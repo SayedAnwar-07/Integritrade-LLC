@@ -222,7 +222,21 @@ export default async function IndustryPage(
                                 <strong className="font-semibold text-gray-900 dark:text-white">
                                   {bullet.title}:
                                 </strong>{" "}
-                                {bullet.text}
+                                {bullet.link ? (
+                                  <>
+                                    <a
+                                      href={bullet.link.href}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-[#19723e] underline"
+                                    >
+                                      {bullet.link.text}
+                                    </a>
+                                    {bullet.text.replace(bullet.link.text, "")}
+                                  </>
+                                ) : (
+                                  bullet.text
+                                )}
                               </>
                               }
 
@@ -283,7 +297,7 @@ export default async function IndustryPage(
         {/* Contact CTA */}
         <ScrollLoader>
 
-          <div className="mt-20 lg:mt-28 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+          <div className="mt-8 lg:mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
 
 
             <div className="lg:col-span-7">
