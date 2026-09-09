@@ -5,6 +5,16 @@ import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
 import { AlertCircle, Loader2, Send } from 'lucide-react'
 
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectLabel,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+
 interface FormData {
   name: string
   email: string
@@ -42,11 +52,7 @@ const SERVICE_OPTIONS: Option[] = [
 ]
 
 const QUANTITY_OPTIONS: Option[] = [
-  { value: '1-9-units-standard-secure-pickup', label: '1-9 Units (Standard Secure Pickup)' },
-  {
-    value: '10-49-units-priority-asset-recovery-tier',
-    label: '10-49 Units (Priority Asset Recovery Tier)',
-  },
+  { value: '1-49-units-standard-secure-pickup', label: '1-49 Units (Standard Secure Pickup)' },
   { value: '50-100-units-enterprise-volume', label: '50-100 Units (Enterprise Volume)' },
   {
     value: '100-plus-units-full-office-or-data-center-cleanout',
@@ -317,53 +323,88 @@ export default function RequestPickupForm() {
         <label className={labelClass}>
           Service Needed <span className="text-red-500">*</span>
         </label>
-        <select
+
+        <Select
           value={data.service}
-          onChange={(e) => update('service', e.target.value)}
-          className={`${baseInput} ${inputBorder(!!errors.service)}`}
+          onValueChange={(value) => update('service', value)}
         >
-          <option value="">Select a service</option>
-          {SERVICE_OPTIONS.map((o) => (
-            <option key={o.value} value={o.value}>
-              {o.label}
-            </option>
-          ))}
-        </select>
+          <SelectTrigger
+            className={`${baseInput} ${inputBorder(!!errors.service)}`}
+          >
+            <SelectValue placeholder="Select a service" />
+          </SelectTrigger>
+
+          <SelectContent>
+            <SelectGroup>
+              <SelectLabel>Services</SelectLabel>
+
+              {SERVICE_OPTIONS.map((o) => (
+                <SelectItem key={o.value} value={o.value}>
+                  {o.label}
+                </SelectItem>
+              ))}
+            </SelectGroup>
+          </SelectContent>
+        </Select>
+
         <Err field="service" />
       </div>
+
 
       {/* Quantity + Timeline — optional, so nobody stalls on them */}
       <div className="grid grid-cols-1 gap-5 sm:grid-cols-2">
         <div>
           <label className={labelClass}>Estimated Quantity</label>
-          <select
+
+          <Select
             value={data.estimatedQuantity}
-            onChange={(e) => update('estimatedQuantity', e.target.value)}
-            className={`${baseInput} ${inputBorder(false)}`}
+            onValueChange={(value) => update('estimatedQuantity', value)}
           >
-            <option value="">Not sure yet</option>
-            {QUANTITY_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value}>
-                {o.label}
-              </option>
-            ))}
-          </select>
+            <SelectTrigger
+              className={`${baseInput} ${inputBorder(false)}`}
+            >
+              <SelectValue placeholder="Not sure yet" />
+            </SelectTrigger>
+
+            <SelectContent>
+              <SelectGroup>
+                <SelectLabel>Estimated Quantity</SelectLabel>
+
+                {QUANTITY_OPTIONS.map((o) => (
+                  <SelectItem key={o.value} value={o.value}>
+                    {o.label}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
         </div>
 
         <div>
           <label className={labelClass}>Timeline</label>
-          <select
+
+          <Select
             value={data.deploymentUrgency}
-            onChange={(e) => update('deploymentUrgency', e.target.value)}
-            className={`${baseInput} ${inputBorder(false)}`}
+            onValueChange={(value) => update('deploymentUrgency', value)}
           >
-            <option value="">Not sure yet</option>
-            {URGENCY_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value}>
-                {o.label}
-              </option>
-            ))}
-          </select>
+            <SelectTrigger
+              className={`${baseInput} ${inputBorder(false)}`}
+            >
+              <SelectValue placeholder="Not sure yet" />
+            </SelectTrigger>
+
+            <SelectContent>
+              <SelectGroup>
+                <SelectLabel>Timeline</SelectLabel>
+
+                {URGENCY_OPTIONS.map((o) => (
+                  <SelectItem key={o.value} value={o.value}>
+                    {o.label}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
         </div>
       </div>
 
