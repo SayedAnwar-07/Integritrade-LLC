@@ -40,7 +40,7 @@ export default function AITrends() {
                     <span>AI Trends</span>
                   </div>
                   <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-                  <span>8 min read</span>
+                  <span>6 min read</span>
                 </div>
         </div>
         </ScrollLoader>

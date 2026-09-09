@@ -8,6 +8,7 @@ import ScrollLoader from "../shared/ScrollLoader";
 import assetRecoveryBanner from "@/public/blogs/asset-recovery.jpg";
 import r2_certified from "@/public/blogs/R2-Certified1.jpg";
 import ITADFresnoImage from "@/public/blogs/ITADFresnoImage.png";
+import { readTimeFor } from "@/data/blogReadTimes";
 
 
 const truncate = (text: string, words: number) => {
@@ -79,12 +80,21 @@ export default function BlogHomeSection() {
 
                   {/* Content */}
                   <div className="flex flex-1 flex-col p-6">
-                    <time
-                      dateTime={new Date(blog.date).toISOString()}
-                      className="mb-4 text-xs font-medium uppercase tracking-[0.15em] text-emerald-600 dark:text-emerald-500"
-                    >
-                      {blog.date}
-                    </time>
+                    <div className="mb-4 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.15em] text-emerald-600 dark:text-emerald-500">
+                      <time dateTime={new Date(blog.date).toISOString()}>
+                        {blog.date}
+                      </time>
+                      {readTimeFor(blog.slug) && (
+                        <>
+                          <span aria-hidden="true" className="text-gray-300 dark:text-gray-700">
+                            •
+                          </span>
+                          <span className="text-gray-500 dark:text-gray-400">
+                            {`${readTimeFor(blog.slug)} min read`}
+                          </span>
+                        </>
+                      )}
+                    </div>
 
                     <h2 className="mb-3 font-serif text-xl leading-snug text-gray-900 transition-colors group-hover:text-emerald-700 dark:text-gray-50 dark:group-hover:text-emerald-400 line-clamp-2 min-h-[3.5rem]">
                       {blog.title}

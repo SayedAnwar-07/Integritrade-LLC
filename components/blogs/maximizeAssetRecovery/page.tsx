@@ -68,7 +68,7 @@ export default function MaximizeAssetRecovery() {
               <span>Asset Recovery</span>
             </div>
             <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-            <span>9 min read</span>
+            <span>7 min read</span>
           </div>
         </ScrollLoader>
 

@@ -34,7 +34,7 @@ export default function VideoTape() {
               <span>Compliance & Security</span>
             </div>
             <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-            <span>8 min read</span>
+            <span>7 min read</span>
           </div>
         </ScrollLoader>
 

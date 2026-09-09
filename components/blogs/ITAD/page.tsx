@@ -67,7 +67,7 @@ export default function ITADBlogs() {
             <span>IT Asset Management</span>
           </div>
           <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-          <span>9 min read</span>
+          <span>6 min read</span>
         </div>
         </ScrollLoader>
 

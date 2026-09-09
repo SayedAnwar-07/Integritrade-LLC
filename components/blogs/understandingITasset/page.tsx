@@ -35,7 +35,7 @@ export default function UnderstandingITasset() {
               <span>Data Security & Compliance</span>
             </div>
             <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-            <span>8 min read</span>
+            <span>6 min read</span>
           </div>
         </ScrollLoader>
 

@@ -69,7 +69,7 @@ export default function ServerDataCenterDisposal() {
               <span>Data Center ITAD</span>
             </div>
             <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-            <span>7 min read</span>
+            <span>5 min read</span>
           </div>
         </ScrollLoader>
 
