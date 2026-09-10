@@ -14,7 +14,7 @@ import {
   Recycle,
   ShieldOff,
   Users,
-  Handshake,
+  MapPin,
   ShieldCheck,
   ArrowRight,
   Phone,
@@ -69,6 +69,7 @@ const DROPDOWN_ICON_COLORS: Record<string, string> = {
   '/about/': 'text-blue-600 dark:text-blue-400',
   '/about/our-team': 'text-emerald-600 dark:text-emerald-400',
   '/about/our-equipment': 'text-amber-600 dark:text-amber-400',
+  '/about/our-locations': 'text-teal-600 dark:text-teal-400',
 }
 
 interface DesktopDropdownProps {
@@ -443,6 +444,7 @@ export default function Navbar() {
         { href: '/about/', label: 'About IntegriTrade', icon: Info },
         { href: '/about/our-team', label: 'Our Team', icon: Users },
         { href: '/about/our-equipment', label: 'Our Equipment', icon: ShieldCheck },
+        { href: '/about/our-locations',label: 'Our Locations',icon: MapPin },
       ],
     },
   ]

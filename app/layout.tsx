@@ -21,15 +21,24 @@ export const metadata: Metadata = {
   description: siteConfig.description,
 
   icons: {
+
     icon: [
       {
-        url: "/logo/integritrade-favicon.png",
+        url: "/logo/integritradellc-favicon.png",
         type: "image/png",
         sizes: "96x96",
       },
     ],
-    shortcut: "/logo/integritrade-favicon.png",
-    apple: "/logo/integritrade-favicon.png",
+
+    shortcut: "/logo/integritradellc-favicon.png",
+
+    apple: [
+      {
+        url: "/logo/integritradellc-favicon.png",
+        type: "image/png",
+        sizes: "180x180",
+      },
+    ],
   },
 
   // Both Search Console owners are verified here, in the root layout, so the

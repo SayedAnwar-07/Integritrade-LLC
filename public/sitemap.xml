@@ -28,6 +28,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://integritradellc.com/about/our-locations/</loc>
+    <lastmod>2026-08-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://integritradellc.com/accessibility/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>yearly</changefreq>
