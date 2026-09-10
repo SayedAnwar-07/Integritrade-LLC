@@ -91,22 +91,37 @@ const traceTechPoints = [
   {
     title: "Real-time project visibility",
     description:
-      "Follow asset and project status after pickup instead of losing visibility when equipment leaves your site.",
+      "Follow your project and asset status after pickup, so your ITAD program does not become a black box once equipment leaves your site.",
   },
+
   {
-    title: "Job-specific handling controls",
+    title: "Your requirements follow every asset",
     description:
-      "Client requirements are connected to the project and asset record, then surfaced when the asset tag is scanned.",
+      "Approved instructions are tied to the project and asset record, helping ensure each item follows your selected path for erasure, physical destruction, remarketing, reuse evaluation, recycling, or another approved outcome.",
   },
+
   {
-    title: "SOPs at the point of work",
+    title: "Client asset-tag reconciliation",
     description:
-      "Technicians can access the applicable instructions and verification steps before processing devices, media, printers, MFPs, and other data-risk equipment.",
+      "Connect your existing asset tags with Integritrade tracking tags for clearer reconciliation, reporting, and accountability throughout the project.",
   },
+
   {
-    title: "Service, certificates, and sustainability reporting",
+    title: "Fewer avoidable processing errors",
     description:
-      "Manage service requests, retrieve available documentation, and view estimated CO2e impact by documented disposition pathway.",
+      "Job-specific requirements and verification prompts are surfaced during processing to help ensure retired equipment is handled according to your instructions.",
+  },
+
+  {
+    title: "On-demand service requests & documentation",
+    description:
+      "Manage future pickups and access available Certificates of Erasure, serialized Certificates of Destruction, manifests, and project records from one place.",
+  },
+
+  {
+    title: "Value recovery & sustainability reporting",
+    description:
+      "See which documented disposition pathway was assigned to your assets, including reuse, remarketing, recycling, or destruction, along with estimated CO2e impact reporting where applicable.",
   },
 ];
 
@@ -368,16 +383,16 @@ export default function AboutPage() {
               <Eyebrow>Our Technology</Eyebrow>
 
               <h2 className="max-w-4xl font-serif text-3xl sm:text-4xl leading-[1.1] tracking-tight text-stone-900 dark:text-white">
-                Driven by TraceTech: security and efficiency you can&apos;t
-                match.
+                TraceTech gives you visibility and control after pickup.
               </h2>
 
               <div className="mt-6 max-w-3xl text-base sm:text-lg leading-8 text-stone-700 dark:text-slate-300">
                 <p>
-                  Better value and ironclad security aren&apos;t mutually
-                  exclusive they just require better technology. That&apos;s why
-                  we developed TraceTech, our proprietary AI-integrated ERP
-                  software that fundamentally changes how ITAD is processed.
+                  Once equipment leaves your site, TraceTech keeps your ITAD program
+                  visible, controlled, and accountable. Our AI-integrated ERP platform
+                  connects assets, project requirements, processing workflows, and
+                  documentation in one system helping ensure every asset follows the
+                  correct approved outcome.
                 </p>
               </div>
 
@@ -393,7 +408,7 @@ export default function AboutPage() {
                       </span>
 
                       <span className="text-base leading-7 text-stone-700 dark:text-slate-300">
-                        {" - "}
+                        {" – "}
                         {point.description}
                       </span>
                     </div>
@@ -401,6 +416,19 @@ export default function AboutPage() {
                 ))}
                 
               </ul>
+
+              {/* TraceTech Callout Bar */}
+              <div className="mt-12 rounded-md border border-emerald-200 bg-emerald-50/60 dark:border-emerald-900/40 dark:bg-emerald-950/20 p-6 sm:p-8">
+                <h3 className="text-xl font-semibold text-stone-900 dark:text-white">
+                  One project. Different approved outcomes.
+                </h3>
+
+                <p className="mt-3 text-base sm:text-lg leading-8 text-stone-700 dark:text-slate-300">
+                  TraceTech can associate each asset with client-approved requirements such as
+                  erasure, physical destruction, remarketing, reuse evaluation, or recycling –
+                  then show the correct next step when the asset tag is scanned.
+                </p>
+              </div>
             </div>
           </ScrollLoader>
 
@@ -409,7 +437,7 @@ export default function AboutPage() {
             <div className="mx-auto mt-12 max-w-5xl lg:mt-16">
               <Image
                 src={tracetech}
-                alt="Integritrade TraceTech AI ERP — proprietary AI-integrated ITAD asset tracking platform"
+                alt="Integritrade TraceTech AI ERP platform providing ITAD asset visibility, control, and reporting"
                 className="h-auto w-full"
                 sizes="(max-width: 1024px) 100vw, 1024px"
                 quality={100}
