@@ -416,19 +416,6 @@ export default function AboutPage() {
                 ))}
                 
               </ul>
-
-              {/* TraceTech Callout Bar */}
-              <div className="mt-12 rounded-md border border-emerald-200 bg-emerald-50/60 dark:border-emerald-900/40 dark:bg-emerald-950/20 p-6 sm:p-8">
-                <h3 className="text-xl font-semibold text-stone-900 dark:text-white">
-                  One project. Different approved outcomes.
-                </h3>
-
-                <p className="mt-3 text-base sm:text-lg leading-8 text-stone-700 dark:text-slate-300">
-                  TraceTech can associate each asset with client-approved requirements such as
-                  erasure, physical destruction, remarketing, reuse evaluation, or recycling –
-                  then show the correct next step when the asset tag is scanned.
-                </p>
-              </div>
             </div>
           </ScrollLoader>
 
