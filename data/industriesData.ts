@@ -418,7 +418,7 @@ export const industriesData: Industry[] = [
     title: "Legal & Professional Services",
     description:
       "Confidential ITAD for office refreshes, firm relocations, partner departures, and end-of-life business equipment.",
-    metaTitle: "Legal ITAD | Law Firm Data Destruction & Electronics Recycling",
+    metaTitle: "Legal ITAD & Law Firm Data Destruction",
     metaDescription:
       "Confidential ITAD for law firms, accounting firms, consultants, and professional service providers. Secure data destruction, asset recovery, and electronics recycling.",
     content: [

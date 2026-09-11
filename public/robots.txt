@@ -26,5 +26,4 @@ User-agent: PerplexityBot
 Allow: /
 
 
-Host: https://integritradellc.com
 Sitemap: https://integritradellc.com/sitemap.xml
