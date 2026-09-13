@@ -27,6 +27,7 @@ import HardDriveRiskImage from "@/public/blogs/HardDriveRiskImage.png";
 import LandfillRecyclingImage from "@/public/blogs/LandfillRecyclingImage.jpg";
 import DataRecoveredImage from "@/public/blogs/DataRecovered.jpg";
 import ServerDisposalImage from "@/public/blogs/ServerDisposalImage.png";
+import DeceptiveAdvertisingImage from "@/public/blogs/deceptive-advertising-certifications.webp";
 
 export interface BlogCard {
   image: any;
@@ -255,5 +256,21 @@ export const AllBlogCards: BlogCard[] = [
       "Are your office's old servers and data center equipment becoming a burden? Learn how to securely destroy data and get the right return on investment (ROI).",
     date: "March 15, 2026",
     slug: "server-data-center-equipment-disposal-guide",
+  },
+
+  {
+    image: DeceptiveAdvertisingImage,
+
+    title:
+      "Certified ITAD and Electronics Recycling: How to Verify a Provider",
+
+    description:
+      "Learn how to verify ITAD and electronics recycling certification claims, evaluate data destruction capability, and choose a secure provider for reuse, buyback, recycling, and decommissioning.",
+
+    date:
+      "September 12, 2026",
+
+    slug:
+      "deceptive-advertising-itad-electronics-recycling-certifications",
   },
 ];

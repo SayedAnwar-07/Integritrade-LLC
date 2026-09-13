@@ -31,6 +31,7 @@ import DeletedDataRecovery from "@/components/blogs/DeletedDataRecovery/page";
 import ServerDataCenterDisposal from "@/components/blogs/ServerDataCenterDisposal/page";
 import CutlinesInITAD from "@/components/blogs/cutlines-in-itad/page";
 import BlogBreadcrumb from "@/components/shared/BlogBreadcrumb";
+import DeceptiveAdvertisingCertifications from "@/components/blogs/DeceptiveAdvertisingCertifications/page";
 
 type Props = {
   params: Promise<{
@@ -68,6 +69,7 @@ const BLOG_SLUGS = [
   "landfill-vs-certified-recycling-environment",
   "is-it-possible-to-recover-deleted-data",
   "server-data-center-equipment-disposal-guide",
+   "deceptive-advertising-itad-electronics-recycling-certifications",
 ] as const;
 
 export function generateStaticParams() {
@@ -105,6 +107,7 @@ const BLOG_COMPONENTS: Record<string, React.ReactElement> = {
   "landfill-vs-certified-recycling-environment": <LandfillVsCertifiedRecycling />,
   "is-it-possible-to-recover-deleted-data": <DeletedDataRecovery />,
   "server-data-center-equipment-disposal-guide": <ServerDataCenterDisposal />,
+  "deceptive-advertising-itad-electronics-recycling-certifications":<DeceptiveAdvertisingCertifications />,
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
