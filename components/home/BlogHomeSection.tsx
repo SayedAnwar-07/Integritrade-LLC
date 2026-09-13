@@ -7,7 +7,7 @@ import ScrollLoader from "../shared/ScrollLoader";
 
 import assetRecoveryBanner from "@/public/blogs/asset-recovery.jpg";
 import r2_certified from "@/public/blogs/R2-Certified1.jpg";
-import ITADFresnoImage from "@/public/blogs/ITADFresnoImage.png";
+import ITADFresnoImage from "@/public/blogs/ITADFresnoImage.webp";
 import { readTimeFor } from "@/data/blogReadTimes";
 
 

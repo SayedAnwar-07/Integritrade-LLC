@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import AITrendsImage from "@/public/blogs/AITrendsImage.png";
+import AITrendsImage from "@/public/blogs/AITrendsImage.webp";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export default function AITrends() {

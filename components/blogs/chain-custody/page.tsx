@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import ChainCustodyImage from "@/public/blogs/chain-custody.png";
+import ChainCustodyImage from "@/public/blogs/chain-custody.webp";
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
 export default function ChainCustody() {

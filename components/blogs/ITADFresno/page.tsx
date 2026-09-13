@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
-import ITADFresnoImage from '@/public/blogs/ITADFresnoImage.png';
+import ITADFresnoImage from '@/public/blogs/ITADFresnoImage.webp';
 
 const faqs = [
   {

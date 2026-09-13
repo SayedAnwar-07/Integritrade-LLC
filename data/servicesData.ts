@@ -1,9 +1,9 @@
 import { StaticImageData } from "next/image"
 
 import assetDisposition from "@/public/services/assetDispositionWarehouse.jpeg"
-import assetRecovery from "@/public/services/assetRecovery.png"
+import assetRecovery from "@/public/services/assetRecovery.webp"
 import eRecycling from "@/public/services/E-Recycling.jpeg"
-import certifiedDataDestruction from "@/public/services/dataDestruction.png"
+import certifiedDataDestruction from "@/public/services/dataDestruction.webp"
 import demanufacturing from "@/public/services/demanufacturing.jpeg"
 import remoteITAssetRecovery from "@/public/services/RemoteITAssetRecovery.jpg"
 

@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import ITADVSElectronicRecyclingImage from "@/public/blogs/ITAD-VS-electronic-recycling.png";
+import ITADVSElectronicRecyclingImage from "@/public/blogs/ITAD-VS-electronic-recycling.webp";
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
 const faqs = [

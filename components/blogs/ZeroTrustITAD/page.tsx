@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
-import ZeroTrustITADImage from "@/public/blogs/ZeroTrustITADImage.png";
+import ZeroTrustITADImage from "@/public/blogs/ZeroTrustITADImage.webp";
 
 const faqs = [
   {

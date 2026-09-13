@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/accordion';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
-import ServerDisposalImage from "@/public/blogs/ServerDisposalImage.png";
+import ServerDisposalImage from "@/public/blogs/ServerDisposalImage.webp";
 
 const faqs = [
   {

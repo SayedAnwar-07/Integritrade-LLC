@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
-import ITADSacramentoImage from "@/public/blogs/ITADSacramentoImage.png";
+import ITADSacramentoImage from "@/public/blogs/ITADSacramentoImage.webp";
 
 const faqs = [
   {

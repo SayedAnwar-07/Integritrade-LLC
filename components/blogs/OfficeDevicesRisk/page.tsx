@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
-import OfficeDevicesRiskImage from "@/public/blogs/OfficeDevicesRiskImage.png";
+import OfficeDevicesRiskImage from "@/public/blogs/OfficeDevicesRiskImage.webp";
 
 const faqs = [
   {

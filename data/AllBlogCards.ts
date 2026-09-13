@@ -2,9 +2,9 @@ import videoTape from "@/public/blogs/video-tape.jpg";
 import r2_certified from "@/public/blogs/R2-Certified1.jpg";
 import nvmBanner from "@/public/blogs/NVMe_drives.jpg";
 import FairFlexible from "@/public/blogs/Fair-flexible.jpg";
-import ChainCustodyImage from "@/public/blogs/chain-custody.png";
-import AITrendsImage from "@/public/blogs/AITrendsImage.png";
-import ITADFresnoImage from "@/public/blogs/ITADFresnoImage.png";
+import ChainCustodyImage from "@/public/blogs/chain-custody.webp";
+import AITrendsImage from "@/public/blogs/AITrendsImage.webp";
+import ITADFresnoImage from "@/public/blogs/ITADFresnoImage.webp";
 
 export interface BlogCard {
   image: any;

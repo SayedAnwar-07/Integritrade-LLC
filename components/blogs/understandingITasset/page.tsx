@@ -6,7 +6,7 @@ import PageHeader from "@/components/shared/PageHeader";
 import AllBlogCardsComponent from '@/components/EightBlogCards';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
-import understandingITasset from "@/public/blogs/Understanding-Importance.png";
+import understandingITasset from "@/public/blogs/Understanding-Importance.webp";
 
 export default function UnderstandingITasset() {
   return (

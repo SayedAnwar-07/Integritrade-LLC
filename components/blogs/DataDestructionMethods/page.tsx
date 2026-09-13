@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import DataDestructionImage from "@/public/blogs/DataDestructionImage.png";
+import DataDestructionImage from "@/public/blogs/DataDestructionImage.webp";
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
 export default function DataDestructionMethods() {

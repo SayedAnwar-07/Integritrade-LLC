@@ -22,7 +22,7 @@ import Process from '@/components/services/Process'
 import ScrollLoader from '@/components/shared/ScrollLoader'
 
 import Image from 'next/image'
-import wasteManagement from '@/public/wasteManagement.png'
+import wasteManagement from '@/public/wasteManagement.webp'
 
 export const metadata: Metadata = {
    title: 'Fresno Electronics Recycling | E-Waste Recycling in Fresno, CA',

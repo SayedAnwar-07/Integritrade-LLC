@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import cutlinesBanner from "@/public/blogs/maximize-sset-recovery.png";
+import cutlinesBanner from "@/public/blogs/maximize-sset-recovery.webp";
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
 export default function CutlinesInITAD() {

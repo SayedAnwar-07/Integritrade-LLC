@@ -4,7 +4,7 @@ import Image from 'next/image';
 import PageHeader from "@/components/shared/PageHeader";
 import AllBlogCardsComponent from '@/components/EightBlogCards';
 
-import HardDriveRiskImage from "@/public/blogs/HardDriveRiskImage.png";
+import HardDriveRiskImage from "@/public/blogs/HardDriveRiskImage.webp";
 import {
   Accordion,
   AccordionContent,

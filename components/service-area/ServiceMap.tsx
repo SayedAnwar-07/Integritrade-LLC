@@ -4,8 +4,8 @@ import { useTheme } from "next-themes"
 import { useEffect, useState } from "react"
 import Image from "next/image"
 
-import serviceAreaMap from "@/public/services/serviceAreaMap.png"
-import serviceAreaMapDark from "@/public/services/serviceAreaMapDark.png"
+import serviceAreaMap from "@/public/services/serviceAreaMap.webp"
+import serviceAreaMapDark from "@/public/services/serviceAreaMapDark.webp"
 
 export default function ServiceMap() {
   const { resolvedTheme } = useTheme()

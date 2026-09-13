@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'
 
 import Image from 'next/image'
 import integritradeLogo from "@/public/logo/integritrade-logo.svg"
-import tracetechCurved from "@/public/nav/tracetech-curved.png"
+import tracetechCurved from "@/public/nav/tracetech-curved.webp"
 
 import {
   ChevronDown,

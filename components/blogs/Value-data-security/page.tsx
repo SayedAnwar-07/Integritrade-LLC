@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/accordion';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
-import ValueDataSecurity from "@/public/blogs/value-data-security.png";
+import ValueDataSecurity from "@/public/blogs/value-data-security.webp";
 
 const faqs = [
   {

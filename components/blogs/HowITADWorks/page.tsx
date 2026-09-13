@@ -10,7 +10,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 
-import HowITADWorksImage from '@/public/blogs/HowITADWorksImage.png';
+import HowITADWorksImage from '@/public/blogs/HowITADWorksImage.webp';
 import ScrollLoader from '@/components/shared/ScrollLoader';
 
 const faqs = [
