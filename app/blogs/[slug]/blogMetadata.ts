@@ -1292,7 +1292,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
 
   "deceptive-advertising-itad-electronics-recycling-certifications": {
     title:
-      "Certified ITAD and Electronics Recycling: How to Verify a Provider | Integritrade",
+      "Certified ITAD and Electronics Recycling: How to Verify a Provider",
 
     description:
       "Learn how to verify ITAD and electronics recycling certification claims, evaluate data destruction capability, and choose a secure provider for reuse, buyback, recycling, and decommissioning.",
@@ -1304,7 +1304,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
 
     openGraph: {
       title:
-        "Certified ITAD and Electronics Recycling: How to Verify a Provider | Integritrade",
+        "Certified ITAD and Electronics Recycling: How to Verify a Provider | Integritrade LLC",
 
       description:
         "Learn how to verify ITAD and electronics recycling certification claims, evaluate data destruction capability, and choose a secure provider.",
@@ -1333,7 +1333,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       card: "summary_large_image",
 
       title:
-        "Certified ITAD and Electronics Recycling: How to Verify a Provider | Integritrade",
+        "Certified ITAD and Electronics Recycling: How to Verify a Provider | Integritrade LLC",
 
       description:
         "Learn how to verify ITAD certification claims, data destruction capability, and secure electronics recycling practices.",
