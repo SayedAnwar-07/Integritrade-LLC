@@ -48,7 +48,7 @@ export default function Page() {
         <Hero />
       </section>
 
-      <section id="certifications">
+      <section id="clients">
         <TrustedLogos />
       </section>
 

@@ -1,10 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 
+// `href` items navigate to another page; the rest scroll to a same-page section.
+// Certifications live on their own page (and in the hero badge ring), so that
+// item links out rather than scrolling to the client-logos band.
 const sections = [
-  { id: "certifications", label: "Certifications" },
+  { id: "certifications", label: "Certifications", href: "/certifications/" },
   { id: "why-choose", label: "Why Choose Us" },
   { id: "services", label: "Solutions" },
   { id: "process", label: "Process" },
@@ -25,6 +29,7 @@ export default function HomeSectionNav() {
     const observers: IntersectionObserver[] = [];
 
     sections.forEach((section) => {
+      if (section.href) return; // link items have no same-page section to observe
       const element = document.getElementById(section.id);
       if (!element) return;
 
@@ -94,14 +99,11 @@ export default function HomeSectionNav() {
         {sections.map((section, index) => {
           const isActive = index === activeIndex;
           const isCompleted = index < activeIndex;
+          const rowClass =
+            "group relative z-10 flex items-center gap-4 py-6 text-left outline-none";
 
-          return (
-            <button
-              key={section.id}
-              onClick={() => scrollToSection(section.id)}
-              aria-current={isActive ? "true" : undefined}
-              className="group relative z-10 flex items-center gap-4 py-6 text-left outline-none"
-            >
+          const inner = (
+            <>
               {/* Circle */}
               <span
                 ref={(el) => {
@@ -130,6 +132,23 @@ export default function HomeSectionNav() {
                       >
                 {section.label}
               </span>
+            </>
+          );
+
+          // Certifications (and any href item) navigates to its own page;
+          // the rest smooth-scroll to a same-page section.
+          return section.href ? (
+            <Link key={section.id} href={section.href} className={rowClass}>
+              {inner}
+            </Link>
+          ) : (
+            <button
+              key={section.id}
+              onClick={() => scrollToSection(section.id)}
+              aria-current={isActive ? "true" : undefined}
+              className={rowClass}
+            >
+              {inner}
             </button>
           );
         })}
