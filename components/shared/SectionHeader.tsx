@@ -40,19 +40,18 @@ export default function SectionHeader({
 
   return (
     <div className={`w-full ${className}`}>
-      {eyebrow && (
-        <div
-          className={`mb-8 flex items-center gap-4 ${
-            isCenter ? "justify-center" : ""
-          }`}
-        >
-          <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
-          <span className="font-mono text-[1rem] font-bold uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400">
-            {sectionNumber ? `§${sectionNumber} / ${eyebrow}` : eyebrow}
-          </span>
-          <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
-        </div>
-      )}
+    {/* Section eyebrow label */}
+    {eyebrow && (
+      <div className={`mb-8 flex items-center gap-3 sm:gap-4 ${isCenter ? "justify-center" : "justify-start"}`}>
+        <span className="h-px w-8 shrink-0 bg-emerald-700 sm:w-12 dark:bg-emerald-500" />
+
+        <span className="max-w-[150px] text-center font-mono text-[0.7rem] font-bold uppercase leading-[1.8] tracking-[0.22em] text-emerald-800 sm:max-w-none sm:text-[1rem] sm:leading-normal sm:tracking-[0.25em] dark:text-emerald-400">
+          {sectionNumber ? `§${sectionNumber} / ${eyebrow}` : eyebrow}
+        </span>
+
+        <span className="h-px w-8 shrink-0 bg-emerald-700 sm:w-12 dark:bg-emerald-500" />
+      </div>
+    )}
 
       <div
         className={`max-w-6xl ${

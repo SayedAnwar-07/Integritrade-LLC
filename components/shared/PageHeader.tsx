@@ -43,19 +43,16 @@ export default function PageHeader({
 
   return (
     <header className={`w-full ${className}`}>
+      {/* Section eyebrow label */}
       {eyebrow && (
-        <div
-          className={`mb-8 flex items-center gap-4 ${
-            isCenter ? "justify-center" : "justify-start"
-          }`}
-        >
-          <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
+        <div className={`mb-8 flex items-center gap-3 sm:gap-4 ${isCenter ? "justify-center" : "justify-start"}`}>
+          <span className="h-px w-8 shrink-0 bg-emerald-700 sm:w-12 dark:bg-emerald-500" />
 
-          <span className="font-mono text-[1rem] font-bold uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400">
+          <span className="max-w-[150px] text-center font-mono text-[0.7rem] font-extrabold uppercase leading-[1.8] tracking-[0.22em] text-emerald-800 sm:max-w-none sm:text-[1rem] sm:leading-normal sm:tracking-[0.25em] dark:text-emerald-400">
             {sectionNumber ? `§${sectionNumber} / ${eyebrow}` : eyebrow}
           </span>
 
-          <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
+          <span className="h-px w-8 shrink-0 bg-emerald-700 sm:w-12 dark:bg-emerald-500" />
         </div>
       )}
 
@@ -65,7 +62,7 @@ export default function PageHeader({
         }`}
       >
         <Heading
-          className={`max-w-4xl font-serif text-4xl leading-[1.05] tracking-tight text-stone-900 sm:text-5xl lg:text-6xl dark:text-white ${
+          className={`max-w-4xl font-serif text-4xl leading-[1.1] tracking-tight text-stone-900 sm:text-5xl lg:text-6xl dark:text-white ${
             isCenter ? "mx-auto" : "mr-auto"
           }`}
         >

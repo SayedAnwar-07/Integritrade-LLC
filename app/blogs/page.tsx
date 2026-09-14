@@ -83,8 +83,6 @@ export default function BlogPage() {
         <section className="mt-20">
            <ServicesCTA />
         </section>
-
-
       </div>
     </section>
   );
