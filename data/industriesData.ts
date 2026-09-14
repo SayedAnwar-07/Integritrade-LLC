@@ -383,29 +383,62 @@ export const industriesData: Industry[] = [
     },
     faqs: [
       {
-        question: "Do you sign Business Associate Agreements?",
+        question: "What healthcare ITAD services does Integritrade provide?",
         answer:
-          "Yes. A BAA is signed before any project begins. Send us your template and our compliance team will review and execute, or we can provide ours if you prefer.",
+          "Integritrade provides healthcare IT asset disposition services for hospitals, medical groups, clinics, dental offices, laboratories, imaging centers, long-term-care providers, and other healthcare organizations. Services can include secure pickup, chain-of-custody documentation, asset inventory, data sanitization, physical data destruction, IT equipment buyback, remarketing, responsible electronics recycling, and final project reporting.",
       },
       {
-        question: "How do you handle ePHI on biomedical and clinical equipment?",
+        question: "Why should a healthcare organization use a certified ITAD provider?",
         answer:
-          "Any device that stores or transmits ePHI is treated as PHI-bearing regardless of whether it's traditional IT or clinical hardware. We sanitize or destroy the data-bearing components and document the work to HIPAA Security Rule standards. For equipment that requires biomedical decontamination, we coordinate with your biomed team before pickup.",
+          "Healthcare organizations should choose an ITAD provider with independently audited management systems and documented data-security controls because retired equipment may retain protected health information, billing records, credentials, imaging data, employee records, and other confidential information. Integritrade is R2v3 certified and maintains ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications. These certifications support structured controls for quality, environmental management, health and safety, information security, and qualified downstream vendor management within the applicable certification scope.",
       },
       {
-        question: "Can you coordinate around Joint Commission or CMS surveys?",
+        question:
+          "Can Integritrade handle devices that may contain PHI or other patient information?",
         answer:
-          "Yes. Survey timelines drive a lot of healthcare ITAD scheduling both the rush before and the cleanup after. Tell us your survey window when you scope the project and we'll plan around it.",
+          "Yes. Integritrade manages projects involving equipment that may contain PHI, ePHI, PII, credentials, patient images, billing information, or other confidential records. Each project can be processed according to the healthcare organization’s approved data-handling requirements. When the client does not designate a method, Integritrade follows its documented NIST 800-88-based sanitization process, with physical destruction available when required by the device, media type, project scope, or client instruction.",
       },
       {
-        question: "What documentation do we receive for HIPAA compliance?",
+        question:
+          "Does Integritrade sign a Business Associate Agreement for healthcare ITAD projects?",
         answer:
-          "Per project, you receive a Certificate of Data Destruction, an asset-level disposition report (serial number, sanitization method, final disposition), and chain-of-custody signatures from intake through destruction. The package is structured to satisfy HIPAA Security Rule documentation requirements and survive an OCR audit.",
+          "A Business Associate Agreement may be appropriate when the scope of work and the parties’ responsibilities require one. Healthcare organizations should discuss BAA requirements, project scope, data-handling instructions, and documentation expectations with Integritrade before service begins so the correct contractual and operational controls can be confirmed.",
       },
       {
-        question: "Do you handle pickups outside business hours?",
+        question:
+          "What happens if a healthcare device cannot be erased successfully?",
         answer:
-          "For hospitals and 24/7 facilities, yes. We schedule around clinical operations, including evenings, weekends, and shift changes when that's what the floor needs.",
+          "When a data-bearing device does not complete approved logical sanitization, Integritrade routes the device or media to the approved physical-destruction pathway. Integritrade uses 2 mm shredding for SSD and NVMe media. Hard disk drives may be degaussed and shredded. The final method is selected according to the client’s approved requirements, the media technology, and the project scope.",
+      },
+      {
+        question:
+          "Does Integritrade only handle computers, or can it process printers, copiers, and MFPs too?",
+        answer:
+          "Integritrade can process printers, copiers, multifunction printers, scanners, and other office electronics in addition to computers and servers. These devices deserve attention because internal storage, scanner beds, document feeders, paper trays, and removable media can create data or document-control risks. Integritrade can include inspection, data-bearing component review, approved sanitization or destruction, and electronics-recycling coordination in the project plan.",
+      },
+      {
+        question:
+          "Can Integritrade support a healthcare IT refresh, office closure, or multi-site decommissioning project?",
+        answer:
+          "Yes. Integritrade supports single-site and multi-location healthcare technology retirement projects across California. The 31,000 sq ft controlled-access, video-monitored Fresno ITAD facility supports secure staging, processing, and project coordination for workstation refreshes, server-room cleanouts, storage-room clearances, clinic relocations, office closures, and larger decommissioning programs.",
+      },
+      {
+        question:
+          "How can a healthcare organization track assets after pickup?",
+        answer:
+          "Integritrade provides TraceTech, its proprietary ITAD tracking platform, to give authorized clients visibility after pickup. Depending on project scope and permissions, clients can review processing status, manage future service requests, access available Certificates of Erasure and serialized Certificates of Destruction, and reconcile customer asset tags with Integritrade tracking tags. TraceTech can also surface client-approved handling instructions when an asset is scanned.",
+      },
+      {
+        question:
+          "Can retired healthcare IT equipment generate value instead of becoming a recycling cost?",
+        answer:
+          "Eligible laptops, desktops, servers, storage equipment, networking hardware, tablets, phones, and other reusable technology can be evaluated for direct buyback, revenue-share remarketing, reuse, or parts recovery before materials recycling is considered. Integritrade evaluates value-recovery opportunities alongside the healthcare organization’s data-security, disposition, and compliance requirements. Not every asset qualifies for resale or revenue recovery, but a value-first evaluation helps avoid treating usable technology as scrap by default.",
+      },
+      {
+        question:
+          "What documentation can Integritrade provide for a healthcare technology-retirement project?",
+        answer:
+          "Available documentation may include chain-of-custody records, mutually confirmed piece counts, asset manifests, data-erasure records, Certificates of Erasure, serialized Certificates of Destruction, disposition reporting, and applicable photo or video documentation when included in the project scope. The documentation package is aligned to the selected services and client requirements.",
       },
     ],
   },
