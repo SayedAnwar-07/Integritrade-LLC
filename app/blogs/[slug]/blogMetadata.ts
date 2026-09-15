@@ -1354,4 +1354,69 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       },
     },
   },
+
+  "reuse-focused-itad-vs-scrap-recycling": {
+    title:
+      "Reuse-Focused ITAD vs. Scrap Recycling: Better Data Security and Value Recovery | Integritrade",
+
+    description:
+      "Learn why a reuse-focused ITAD provider can protect retired technology, recover more value, and manage end-of-life electronics responsibly without compromising data security.",
+
+    alternates: {
+      canonical:
+        `${BASE_URL}/blogs/reuse-focused-itad-vs-scrap-recycling`,
+    },
+
+    openGraph: {
+      title:
+        "Your Retired IT Is Not Automatically Scrap",
+
+      description:
+        "A value-first ITAD process protects data, tests equipment, recovers usable components, and recycles the rest through the right downstream path.",
+
+      url:
+        `${BASE_URL}/blogs/reuse-focused-itad-vs-scrap-recycling`,
+
+      siteName: SITE_NAME,
+
+      locale: "en_US",
+
+      type: "article",
+
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt:
+            "Why a Reuse-Focused ITAD Provider Can Deliver More Value Than a Scrap-First Recycler",
+        },
+      ],
+    },
+
+    twitter: {
+      card: "summary_large_image",
+
+      title:
+        "Your Retired IT Is Not Automatically Scrap",
+
+      description:
+        "A value-first ITAD process protects data, tests equipment, recovers usable components, and recycles the rest through the right downstream path.",
+
+      images: [OG_IMAGE],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+  },
 };

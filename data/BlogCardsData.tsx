@@ -28,6 +28,7 @@ import LandfillRecyclingImage from "@/public/blogs/LandfillRecyclingImage.jpg";
 import DataRecoveredImage from "@/public/blogs/DataRecovered.jpg";
 import ServerDisposalImage from "@/public/blogs/ServerDisposalImage.webp";
 import DeceptiveAdvertisingImage from "@/public/blogs/deceptive-advertising-certifications.webp";
+import ReuseFocusedItadVsScrapRecyclingImage from "@/public/blogs/reuse-focused-itad-vs-scrap-recycling.webp";
 
 export interface BlogCard {
   image: any;
@@ -260,17 +261,17 @@ export const AllBlogCards: BlogCard[] = [
 
   {
     image: DeceptiveAdvertisingImage,
+    title:"Certified ITAD and Electronics Recycling: How to Verify a Provider",
+    description:"Learn how to verify ITAD and electronics recycling certification claims, evaluate data destruction capability, and choose a secure provider for reuse, buyback, recycling, and decommissioning.",
+    date:"September 12, 2026",
+    slug: "deceptive-advertising-itad-electronics-recycling-certifications",
+  },
 
-    title:
-      "Certified ITAD and Electronics Recycling: How to Verify a Provider",
-
-    description:
-      "Learn how to verify ITAD and electronics recycling certification claims, evaluate data destruction capability, and choose a secure provider for reuse, buyback, recycling, and decommissioning.",
-
-    date:
-      "September 12, 2026",
-
-    slug:
-      "deceptive-advertising-itad-electronics-recycling-certifications",
+  {
+    image: ReuseFocusedItadVsScrapRecyclingImage,
+    title:"Why a Reuse-Focused ITAD Provider Can Deliver More Value Than a Scrap-First Recycler",
+    description:"Learn why a reuse-focused ITAD provider can protect retired technology, recover more value, and manage end-of-life electronics responsibly without compromising data security.",
+    date:"September 15, 2026",
+    slug:"reuse-focused-itad-vs-scrap-recycling",
   },
 ];
