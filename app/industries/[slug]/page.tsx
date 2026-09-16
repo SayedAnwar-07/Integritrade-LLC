@@ -13,6 +13,7 @@ import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import IndustryFAQ from "@/components/industries/IndustryFAQ";
 import FAQSchema from "@/components/industries/FAQSchema";
+import IndustryCertBadges from "@/components/industries/IndustryCertBadges";
 
 
 const ConsultationForm = dynamic(
@@ -250,6 +251,19 @@ export default async function IndustryPage(
 
                     ):null}
 
+
+                    {section.cta && (
+
+                      <Link
+                        href={section.cta.href}
+                        className="group inline-flex items-center gap-1.5 pt-1 text-[15px] font-semibold text-[#19723e] transition-colors hover:text-[#2aac61]"
+                      >
+                        {section.cta.text}
+                        <ChevronRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5"/>
+                      </Link>
+
+                    )}
+
                   </div>
 
                 ))}
@@ -292,6 +306,10 @@ export default async function IndustryPage(
 
         {/* FAQ */}
         <IndustryFAQ faqs={industry.faqs}/>
+
+
+        {/* Certification badges — reassure visitors this is a low-risk, audited choice */}
+        <IndustryCertBadges/>
 
 
         {/* Contact CTA */}

@@ -163,9 +163,6 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
 
   return (
     <div className="rounded-md border border-gray-200 dark:border-gray-700/60 bg-white dark:bg-dark-secondary p-6 shadow-sm">
-      <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
-        Free Consultation
-      </p>
       <h3 className="font-serif text-2xl font-semibold leading-tight text-gray-900 dark:text-white">
         Contact Us for a Free Consultation
       </h3>

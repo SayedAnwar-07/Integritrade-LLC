@@ -7,7 +7,6 @@ import GovernmentITEquipment from "@/public/industries/government-IT-equipment.w
 import LawFirmData from "@/public/industries/law-firm-data.webp";
 import SecureRetailPOS from "@/public/industries/secure-retail-POS.webp";
 import SecureDefenseServer from "@/public/industries/secure-defense-server.webp";
-import { CERTIFICATE_PDFS } from "./certificates";
 
 export type FAQItem = {
   question: string;
@@ -36,6 +35,7 @@ export type ContentSection = {
   heading?: string;
   paragraphs?: string[];
   bullets?: BulletPoint[];
+  cta?: { text: string; href: string };
   className?: string;
 };
 
@@ -62,68 +62,79 @@ export const industriesData: Industry[] = [
   {
     slug: "education",
     image: Education,
-    imageAlt: "Students using laptops in a classroom",
-    eyebrow: "Industries We Serve",
+    imageAlt: "Chromebook and laptop fleet staged for a school technology refresh",
+    eyebrow: "Education ITAD",
     title: "Education",
     description:
-      "Helping schools, colleges, and universities manage device refreshes, student data risk, and surplus technology with clear documentation and value recovery.",
-    metaTitle: "ITAD Services for Education | Secure School & University IT Disposal",
+      "Retire school technology with security, clarity, and a better next step — for schools, districts, colleges, and universities across California and the Western U.S.",
+    metaTitle: "Education ITAD, Chromebook Recycling & Secure Data Destruction | Integritrade",
     metaDescription:
-      "Secure IT asset disposition for schools and universities. FERPA-compliant data destruction, device recycling, and asset recovery for educational institutions.",
+      "Integritrade supports schools, districts, colleges, and universities with secure ITAD, Chromebook and device-fleet retirement, data destruction, value recovery, and electronics recycling across California and the Western U.S.",
     content: [
-      `Educational institutions manage vast fleets of technology - from individual student Chromebooks to complex research servers. Integritrade provides specialized IT Asset Disposition (ITAD) services designed to address the unique scale, budget constraints, and security requirements of modern academic environments.`,
-      `By partnering with an optimally certified provider like Integritrade, you ensure your digital infrastructure is retired securely, profitably, and responsibly.`,
+      `Schools, districts, colleges, universities, and education technology teams manage large fleets of Chromebooks, laptops, tablets, desktops, servers, networking equipment, printers, MFPs, and classroom technology. When those devices are refreshed, reassigned, or retired, they may still hold student, family, staff, financial, research, or administrative information.`,
+      `Integritrade helps education organizations manage retired technology through a documented process that supports secure pickup, client-specific data handling, asset recovery, electronics recycling, and clear final reporting that can support institutional FERPA and information-security requirements.`,
     ],
     contentSections: [
       {
         paragraphs: [
-          `Educational institutions manage vast fleets of technology - from individual student Chromebooks to complex research servers. Integritrade provides specialized IT Asset Disposition (ITAD) services designed to address the unique scale, budget constraints, and security requirements of modern academic environments.`,
+          `Schools, districts, colleges, universities, and education technology teams manage large fleets of Chromebooks, laptops, tablets, desktops, servers, networking equipment, printers, MFPs, and classroom technology. When those devices are refreshed, reassigned, or retired, they may still hold student, family, staff, financial, research, or administrative information.`,
+          `Integritrade helps education organizations manage retired technology through a documented process that supports secure pickup, client-specific data handling, asset recovery, electronics recycling, and clear final reporting that can support institutional FERPA and information-security requirements.`,
         ],
       },
       {
-        heading: "Core Benefits for Schools and Universities",
+        heading: "Built for education device fleets",
+        paragraphs: [
+          `A school technology refresh is not just a pallet of old computers. It can include student Chromebooks, faculty laptops, classroom desktops, tablets, mobile carts, servers, wireless equipment, network hardware, copiers, MFPs, displays, and loose data-bearing media. Each asset needs the right approved outcome.`,
+          `Integritrade supports education organizations with secure IT asset disposition, data sanitization, physical data destruction, direct buyback, revenue-share remarketing, reuse evaluation, parts recovery, and qualified downstream recycling for truly end-of-life material.`,
+        ],
+      },
+      {
+        heading: "Where each asset can go",
         bullets: [
           {
-            title: "FERPA-Compliant Data Destruction",
-            text: "Protecting student and faculty data is paramount. Our certified data sanitization processes guarantee that sensitive academic records and personal information never leave your campus in a recoverable format.",
+            title: "1:1 Chromebook or tablet refresh",
+            text: "Pickup, asset sorting, approved data handling, testing, reuse evaluation, and final reporting.",
           },
           {
-            title: "Maximizing Tight Budgets",
-            text: "We help schools recoup significant value from retired assets through our targeted remarketing program. By turning outdated hardware into a new revenue stream, you can reinvest directly into classroom innovation.",
+            title: "Student, faculty, and staff data protection",
+            text: "Client-approved data sanitization or physical destruction, with serialized Certificates of Erasure or Certificates of Destruction based on the service performed.",
           },
           {
-            title: "Audit-Ready Transparency",
-            text: "We provide the rigorous chain-of-custody tracking and detailed reporting required for public audits and government-funded educational initiatives.",
+            title: "Technology budget recovery",
+            text: "Direct buyback or revenue-share remarketing for eligible Chromebooks, laptops, MacBooks, tablets, servers, networking equipment, and accessories.",
           },
           {
-            title: "Zero-Landfill Commitment",
-            text: "We manage the logistics and environmentally responsible recycling from start to finish, allowing educators to focus on learning rather than lifecycle management.",
+            title: "Summer, break, or campus scheduling",
+            text: "Scheduled pickup and processing coordination designed around instructional calendars and facility access.",
+          },
+          {
+            title: "End-of-life equipment",
+            text: "Qualified downstream recycling for non-recoverable or client-designated electronics.",
           },
         ],
       },
       {
-        heading: "The R2v3 Advantage: Why Certification Matters",
+        heading: "Secure data handling for more than laptops",
         paragraphs: [
-          `When managing sensitive educational data and retiring hardware, choosing a vendor certified to a rigorous industry standard like R2v3 is essential. This globally recognized certification guarantees that an ITAD partner doesn't just make promises, but actively undergoes third-party audits to ensure:`,
-        ],
-        bullets: [
-          {
-            title: "Absolute Data Security",
-            text: "Strict, verifiable protocols for data sanitization and destruction.",
-          },
-          {
-            title: "Environmental Responsibility",
-            text: "A guarantee that e-waste is processed ethically and sustainably, never dumped in landfills or exported illegally.",
-          },
-          {
-            title: "Liability Protection",
-            text: "Potentially shielding your institution from the severe legal, financial, and reputational risks associated with data breaches or improper recycling by demonstrating vendor selection due-diligence.",
-          },
+          `Education technology can hold sensitive information in more places than IT teams expect. In addition to laptops, servers, tablets, and phones, data may be found in internal SSDs, NVMe storage, removable media, copier and MFP hard drives, and devices that were previously marked for recycling.`,
+          `Integritrade applies the institution's approved data-handling requirements to each project. Where a client does not specify a method, Integritrade follows its documented NIST SP 800-88 Rev. 2-aligned sanitization process, with physical destruction available when required.`,
+          `On-site capabilities include PXE-based high-throughput erasure, HDD degauss-plus-shred processing for applicable magnetic hard drives, and 2 mm physical destruction for SSD and NVMe media. Devices that do not complete approved erasure can be routed to the appropriate client-approved physical-destruction path.`,
         ],
       },
       {
+        heading: "Keep visibility after pickup",
         paragraphs: [
-          `By partnering with an optimally certified provider like Integritrade, you ensure your digital infrastructure is retired securely, profitably, and responsibly.`,
+          `TraceTech is Integritrade's proprietary ITAD client platform, included at no additional cost for clients. Authorized education teams can follow project and asset status, reconcile school asset tags with Integritrade tracking tags, manage service requests or amendments, and retrieve available Certificates of Erasure, serialized Certificates of Destruction, manifests, and project records.`,
+          `TraceTech can also associate approved project or asset-level instructions with the relevant record and display them when an asset is scanned. This helps maintain the selected workflow across a mixed fleet, whether the approved outcome is erasure, physical destruction, buyback, remarketing, reuse evaluation, or recycling.`,
+        ],
+        cta: { text: "Explore TraceTech", href: "/tracetech/" },
+      },
+      {
+        heading: "A California facility for education projects at scale",
+        paragraphs: [
+          `Integritrade operates from a dedicated 30,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
+          `The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics each month. Integritrade supports individual campuses, district-wide refreshes, college and university technology programs, regional collections, and multi-location education projects throughout California and the Western United States.`,
+          `Integritrade maintains R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications. These credentials support documented quality, environmental, occupational health and safety, and information-security management systems within the applicable certified scope.`,
         ],
       },
     ],
@@ -155,29 +166,34 @@ export const industriesData: Industry[] = [
     },
     faqs: [
       {
-        question: "Can you schedule pickups during summer break only?",
+        question: "Can Integritrade handle Chromebook, laptop, and tablet refreshes for schools?",
         answer:
-          "Yes. Most of our education clients consolidate their decommissioning into the summer window, and we plan capacity around that. Tell us your last day of instruction and your target completion date, and we'll build a multi-site pickup schedule that finishes before staff returns.",
+          "Yes. Integritrade supports education device fleets including Chromebooks, laptops, MacBooks, tablets, desktops, servers, networking equipment, printers, MFPs, mobile carts, and related accessories. The project can include secure pickup, asset sorting, approved data handling, testing, value recovery, and final disposition reporting.",
       },
       {
-        question: "Do your reports satisfy bond audits and E-Rate documentation?",
+        question: "Can education projects be scheduled during summer break or other school closures?",
         answer:
-          "Our standard chain-of-custody and disposition reports include the line items public-funded technology audits typically require asset tag, serial number, make/model, sanitization method, final disposition, and date. If your auditor needs a specific format, send us the template and we'll match it.",
+          "Yes. Integritrade can coordinate pickup and project activity around summer break, semester breaks, campus access rules, and other school-calendar requirements. Scheduling should be discussed during the project evaluation so site access, quantities, documentation, and custody-transfer requirements can be planned correctly.",
       },
       {
-        question: "How do you handle student data on Chromebooks and tablets?",
+        question: "How does Integritrade protect student and staff data on retired devices?",
         answer:
-          "Every device-bearing data managed or not goes through certified sanitization or physical destruction before it leaves our chain of custody. We treat anything that touched a student account as FERPA-regulated by default, regardless of whether the data was synced to the cloud.",
+          "Integritrade applies the institution's approved data-handling requirements to the project. This can include NIST SP 800-88 Rev. 2-aligned sanitization for eligible reuse pathways or physical destruction when required. Data-bearing components are identified before the asset is directed to reuse, value recovery, or recycling.",
       },
       {
-        question: "Can we recover value from older devices, or is it all recycling?",
+        question: "Can schools recover value from retired technology?",
         answer:
-          "It depends on age and condition. Recent-generation Chromebooks, faculty laptops, and lab equipment often carry meaningful resale value, and we share that recovery back to the district. Older or damaged equipment goes through R2v3-compliant recycling at no cost to you.",
+          "Potentially. Integritrade evaluates eligible Chromebooks, laptops, MacBooks, tablets, servers, storage, networking equipment, and accessories for direct buyback or revenue-share remarketing. Eligibility depends on age, configuration, condition, successful approved data handling, corporate-lock status, client requirements, and market demand.",
       },
       {
-        question: "Do you serve districts outside California?",
+        question: "What documentation does Integritrade provide for education ITAD projects?",
         answer:
-          "Our home base is Fresno and we cover California end-to-end, but we handle multi-state university systems and regional consortiums on a project basis. Reach out with your locations and we'll confirm coverage.",
+          "Available documentation can include chain-of-custody records, manifests, serialized Certificates of Erasure, serialized Certificates of Destruction, project reporting, asset records, and final disposition information based on the work performed and agreed project scope. Authorized users can retrieve available records through TraceTech.",
+      },
+      {
+        question: "Why is Integritrade a strong option for schools, districts, and universities?",
+        answer:
+          "Integritrade combines a 30,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech visibility. The company supports education organizations throughout California and the Western United States.",
       },
     ],
   },
@@ -186,7 +202,7 @@ export const industriesData: Industry[] = [
     slug: "finance",
     image: Finance,
     imageAlt: "Financial professionals reviewing data on screens",
-    eyebrow: "Industries We Serve",
+    eyebrow: "Finance ITAD",
     title: "Finance",
     description:
       "Supporting banks, insurance firms, and investment teams with controlled asset retirement, documented handling, and end-of-life hardware processing across regulated environments.",
@@ -258,30 +274,69 @@ export const industriesData: Industry[] = [
   {
     slug: "business-corporate",
     image: BusinessCorporate,
-    imageAlt: "Corporate office workspace with computers",
-    eyebrow: "Industries We Serve",
+    imageAlt: "Enterprise laptops and servers staged for a corporate IT refresh",
+    eyebrow: "Business & Corporate ITAD",
     title: "Business & Corporate",
     description:
-      "Helping businesses retire office technology, recover asset value, and keep multi-location equipment projects organized from pickup to final reporting.",
-    metaTitle: "Corporate ITAD Services | Multi-Site IT Decommissioning",
+      "Retire corporate technology with security, visibility, and a better recovery outcome — across California and the Western U.S.",
+    metaTitle: "Corporate ITAD, Data Destruction & IT Equipment Buyback | Integritrade",
     metaDescription:
-      "Enterprise ITAD solutions for businesses. Secure data destruction, asset recovery, and zero-landfill electronics recycling for corporate environments.",
+      "Secure corporate IT retirement with Integritrade. ITAD, data destruction, equipment buyback, value recovery, electronics recycling, and TraceTech visibility across California and the Western U.S.",
     content: [
-      `For the business and corporate sector, Integritrade provides a comprehensive ITAD framework that combines operational efficiency, data security, environmental responsibility, and asset recovery. Many organizations accumulate retired electronics for months or years because internal teams are unsure how to dispose of them securely. That delay creates avoidable risk. Stored equipment can contain sensitive data, take up valuable space, complicate audits, and expose the business if devices are lost, stolen, resold, or recycled without proper controls.`,
-
-      `Integritrade turns that uncertainty into a managed process. We coordinate secure collection, transportation, sorting, data sanitization, resale evaluation, recycling, and final documentation. From office laptops and employee workstations to servers, storage media, mobile devices, printers, and networking hardware, we help businesses handle end-of-life technology with confidence.`,
-
-      `Our data destruction and sanitization services are built for organizations that need proof, not promises. Software-based erasure is available for eligible devices and can be paired with digitally signed certificates of destruction or sanitization. When the asset, media condition, client policy, or data sensitivity calls for it, physical destruction is available for virtually all data-bearing media. That flexibility allows your company to choose the right outcome for each asset: secure reuse when value can be recovered, or destruction when risk must be eliminated.`,
-
-      `Retiring IT assets should not create a security gap. With Integritrade, your business gets a clear path from pickup to final reporting: secure handling, NIST SP 800-88-aligned sanitization options, available digitally signed certificates, responsible recycling, and value recovery when possible.`,
-
-      `If your company is planning a device refresh, office move, server replacement, storage cleanout, or multi-site decommissioning project, Integritrade can help you protect data, recover value, and document every step.`,
+      `Retired laptops, desktops, servers, storage, networking equipment, phones, tablets, printers, and office technology can still hold sensitive data and recoverable value. Integritrade helps organizations move those assets through a documented IT asset disposition process built around secure pickup, client-specific handling instructions, data sanitization or physical destruction, value recovery, and qualified downstream recycling.`,
     ],
-    closingCallout: {
-      linkText: "Schedule a pickup",
-      linkHref: "/contact",
-      after: " or request a custom corporate ITAD quote today.",
-    },
+    contentSections: [
+      {
+        paragraphs: [
+          `Retired laptops, desktops, servers, storage, networking equipment, phones, tablets, printers, and office technology can still hold sensitive data and recoverable value. Integritrade helps organizations move those assets through a documented IT asset disposition process built around secure pickup, client-specific handling instructions, data sanitization or physical destruction, value recovery, and qualified downstream recycling.`,
+          `R2v3 Certified · ISO 9001, 14001, 45001 & 27001 · California & Western U.S. Coverage`,
+        ],
+      },
+      {
+        heading: "One project. The right disposition for every asset.",
+        paragraphs: [
+          `A corporate IT refresh is rarely all recycling or all resale. A single project may contain laptops ready for buyback, servers requiring erasure before remarketing, selected drives that require physical destruction, and truly end-of-life material that belongs in qualified downstream recycling.`,
+          `Integritrade applies the client's approved requirements to the asset or project. Eligible devices can be evaluated for direct buyback, revenue-share remarketing, reuse, donation, or parts recovery. When client requirements call for data destruction, Integritrade provides NIST SP 800-88 Rev. 2-aligned sanitization and physical destruction options, including HDD degauss-plus-shred processing and 2 mm physical destruction for SSD and NVMe media.`,
+        ],
+      },
+      {
+        heading: "What the project needs",
+        bullets: [
+          {
+            title: "Secure technology retirement",
+            text: "Pickup, chain of custody, asset identification, project requirements, approved data handling, and final documentation.",
+          },
+          {
+            title: "Data destruction",
+            text: "Logical sanitization for eligible reuse pathways or physical destruction where required, with serialized Certificates of Erasure or Certificates of Destruction based on the service performed.",
+          },
+          {
+            title: "Equipment buyback and recovery",
+            text: "Direct buyback or revenue-share remarketing for eligible laptops, MacBooks, servers, networking equipment, GPUs, storage, tablets, phones, and accessories.",
+          },
+          {
+            title: "End-of-life electronics recycling",
+            text: "Qualified downstream recycling for non-recoverable or client-designated e-scrap.",
+          },
+        ],
+      },
+      {
+        heading: "More visibility after pickup",
+        paragraphs: [
+          `TraceTech is Integritrade's proprietary ITAD client platform, included at no additional cost for clients. Authorized users can follow project and asset status, reconcile internal asset tags with Integritrade tracking tags, manage service requests or project amendments, and retrieve available documentation without relying on scattered spreadsheets and manual email requests.`,
+          `TraceTech can also surface client-approved requirements to Integritrade technicians when an asset is scanned. That helps keep the selected workflow visible throughout processing, whether the approved outcome is erasure, physical destruction, remarketing, reuse evaluation, or recycling.`,
+        ],
+        cta: { text: "Explore TraceTech", href: "/tracetech/" },
+      },
+      {
+        heading: "Built for corporate scale",
+        paragraphs: [
+          `Integritrade operates from a dedicated 30,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
+          `The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics each month. Integritrade supports office refreshes, multi-site collections, server-room and data-center projects, equipment buyback, lease-return preparation, remote recovery, returns processing, and electronics recycling for organizations throughout California and the Western United States.`,
+          `Integritrade maintains R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications. These credentials support documented quality, environmental, occupational health and safety, and information-security management systems within the applicable certified scope.`,
+        ],
+      },
+    ],
     projectScenarios: {
       intro:
         "Most corporate ITAD work clusters around a few well-defined business events. We've built repeatable playbooks for each so projects ship on schedule even when the underlying business move is messy.",
@@ -310,29 +365,34 @@ export const industriesData: Industry[] = [
     },
     faqs: [
       {
-        question: "Can you handle pickups across multiple locations in one project?",
+        question: "What corporate ITAD services does Integritrade provide?",
         answer:
-          "Yes multi-site is most of what we do for corporate clients. One project manager, one consolidated report, one point of contact. We coordinate regional logistics so you're not managing ten separate engagements.",
+          "Integritrade provides IT asset disposition, secure data destruction, electronics recycling, corporate IT equipment buyback, revenue-share remarketing, asset recovery, remote recovery, lease-return preparation, returns processing, and data-center decommissioning support.",
       },
       {
-        question: "What's your minimum project size?",
+        question: "Can Integritrade handle office refreshes and multi-location ITAD projects?",
         answer:
-          "We don't enforce a hard minimum, but corporate engagements usually start around 50 devices or a single office decommission. For smaller volumes, drop-off at our Fresno facility is often the most efficient option.",
+          "Yes. Integritrade supports single-site, regional, and multi-location projects involving laptops, desktops, MacBooks, servers, storage, networking equipment, mobile fleets, printers, copiers, accessories, and loose data-bearing media.",
       },
       {
-        question: "How do you handle equipment with mixed disposition some resold, some destroyed?",
+        question: "Can Integritrade apply different handling instructions to assets in the same project?",
         answer:
-          "Standard. At intake, every asset is evaluated for resale eligibility. Devices with recoverable value go through sanitization and resale; everything else goes through destruction. You receive a single report covering both paths with full traceability.",
+          "Yes. Integritrade can apply different client-approved outcomes in the same project. One asset group may be sanitized for remarketing, specified media may be physically destroyed, and non-recoverable material may move to qualified downstream recycling.",
       },
       {
-        question: "Can you provide ESG and sustainability reporting?",
+        question: "Does Integritrade provide Certificates of Erasure and Certificates of Destruction?",
         answer:
-          "Yes. Our standard reporting includes weight by material category, percent diverted from landfill, and downstream processor disclosure. If your sustainability team needs specific metrics or framework alignment (GRI, SASB), tell us upfront and we'll structure the report accordingly.",
+          "Yes. Successful approved logical sanitization can generate serialized Certificates of Erasure. Physical data-destruction services can generate serialized Certificates of Destruction. Authorized users can retrieve available batch or individual documentation through TraceTech, based on the agreed project scope.",
       },
       {
-        question: "Do you offer leased equipment return preparation?",
+        question: "Can Integritrade help sell retired corporate IT equipment?",
         answer:
-          "We do. Lessor return packets vary widely, so send us the requirements with the project request. We'll sanitize to the lessor's specification, restore configuration where required, and provide documentation that satisfies the return inspection.",
+          "Yes. Integritrade evaluates eligible laptops, desktops, MacBooks, servers, storage, networking equipment, GPUs, tablets, phones, and accessories for direct buyback or revenue-share remarketing. Eligibility depends on age, configuration, condition, successful approved data handling, corporate-lock status, client requirements, and market demand.",
+      },
+      {
+        question: "Why is Integritrade a strong option for business and corporate ITAD?",
+        answer:
+          "Integritrade combines a 30,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech client visibility. The company supports organizations throughout California and the Western United States.",
       },
     ],
   },
@@ -344,7 +404,7 @@ export const industriesData: Industry[] = [
     title: "Healthcare",
     description:
       "Helping healthcare providers remove outdated technology while protecting patient information and maintaining audit-ready asset records.",
-    eyebrow: "Industries We Serve",
+    eyebrow: "Healthcare ITAD",
     metaTitle: "Healthcare ITAD | HIPAA-Compliant Data Destruction Services",
     metaDescription:
       "Secure IT asset disposal for healthcare providers. HIPAA-compliant data destruction, equipment recycling, and asset recovery solutions.",
@@ -446,72 +506,79 @@ export const industriesData: Industry[] = [
   {
     slug: "legal-professional-services",
     image: LawFirmData,
-    imageAlt: "Professional services office with secure business technology",
-    eyebrow: "Industries We Serve",
+    imageAlt: "Secure office technology and asset cart in a professional services firm",
+    eyebrow: "Legal & Professional Services ITAD",
     title: "Legal & Professional Services",
     description:
-      "Confidential ITAD for office refreshes, firm relocations, partner departures, and end-of-life business equipment.",
-    metaTitle: "Legal ITAD & Law Firm Data Destruction",
+      "Retire sensitive office technology without losing control of confidential information — for law firms and professional service organizations across California and the Western U.S.",
+    metaTitle: "Legal ITAD, Law Firm Data Destruction & IT Equipment Buyback | Integritrade",
     metaDescription:
-      "Confidential ITAD for law firms, accounting firms, consultants, and professional service providers. Secure data destruction, asset recovery, and electronics recycling.",
+      "Integritrade supports law firms and professional service organizations with secure ITAD, data destruction, office technology retirement, equipment buyback, and documented asset disposition across California and the Western U.S.",
     content: [
-      `Law firms, accounting firms, consultants, advisors, architects, and professional service providers handle highly confidential client and business records every single day. When it is time to upgrade or retire office technology, Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction for computers, servers, drives, phones, printers, and scanners that may contain sensitive files or litigation-sensitive data.`,
-      `Uncompromising Security for Client Confidentiality Professional service firms require an asset retirement process that absolutely protects client confidentiality and supports strict internal records-retention and vendor-risk expectations. To guarantee this level of security, Integritrade processes all retired assets at our video-surveilled facility. Every device is handled exclusively by thoroughly vetted staff trained in strict security protocols. Utilizing industrial-grade, full destruction equipment, we can sanitize and/or physically shred hard drives and storage media to ensure that privileged communications, financial records, and proprietary client data are permanently destroyed.`,
-      `Defensible Compliance and NIST-Aligned Destruction We understand the privacy obligations and litigation risks inherent in professional services. Integritrade provides a documented,  process by offering secure chain of custody, NIST SP 800-88 media sanitization, audit-ready documentation, and responsible electronics recycling. Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
+      `Law firms, accounting practices, consulting groups, advisory firms, architects, and other professional-service organizations manage technology that can hold client files, financial records, privileged communications, case materials, contracts, research, and proprietary work product.`,
+      `When that technology is retired, moved, replaced, returned, or sold, Integritrade helps keep it inside a documented IT asset disposition process. The process supports secure pickup, chain of custody, client-specific handling instructions, data sanitization or physical destruction, value recovery, qualified downstream recycling, and project reporting.`,
     ],
     contentSections: [
       {
         paragraphs: [
-          `Law firms, accounting firms, consultants, advisors, architects, and professional service providers handle highly confidential client and business records every single day. When it is time to upgrade or retire office technology, Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction for computers, servers, drives, phones, printers, and scanners that may contain sensitive files or litigation-sensitive data.`,
+          `Law firms, accounting practices, consulting groups, advisory firms, architects, and other professional-service organizations manage technology that can hold client files, financial records, privileged communications, case materials, contracts, research, and proprietary work product.`,
+          `When that technology is retired, moved, replaced, returned, or sold, Integritrade helps keep it inside a documented IT asset disposition process. The process supports secure pickup, chain of custody, client-specific handling instructions, data sanitization or physical destruction, value recovery, qualified downstream recycling, and project reporting.`,
         ],
       },
       {
-        heading: "Uncompromising Security for Client Confidentiality",
+        heading: "Confidential data can be hidden in more places than expected",
         paragraphs: [
-          `Professional service firms require an asset retirement process that absolutely protects client confidentiality and supports strict internal records-retention and vendor-risk expectations. To guarantee this level of security, Integritrade processes all retired assets at our video-surveilled facility. Every device is handled exclusively by thoroughly vetted staff trained in strict security protocols. Utilizing industrial-grade, full destruction equipment, we can sanitize and/or physically shred hard drives and storage media to ensure that privileged communications, financial records, and proprietary client data are permanently destroyed.`,
+          `Laptops, desktops, servers, phones, tablets, and loose hard drives are obvious data risks. But retired office technology can also contain sensitive material in copier and MFP hard drives, short M.2 storage modules, embedded flash, removable media, and documents left in scanner beds or paper trays.`,
+          `Integritrade applies the client's approved data-handling requirements to each project. Where a client does not specify a method, Integritrade follows its documented NIST SP 800-88 Rev. 2-aligned sanitization process, with physical destruction available when required.`,
+          `On-site capabilities include PXE-based high-throughput erasure, HDD degauss-plus-shred processing for applicable magnetic hard drives, and 2 mm physical destruction for SSD and NVMe media. Devices that do not complete approved sanitization can be routed to the appropriate client-approved physical-destruction path.`,
         ],
       },
       {
-        heading: "Defensible Compliance and NIST-Aligned Destruction",
+        heading: "One office project. Multiple approved outcomes.",
         paragraphs: [
-          `We understand the privacy obligations and litigation risks inherent in professional services. Integritrade provides a documented, legally defensible process by offering:`,
+          `A law-firm relocation, practice expansion, technology refresh, partner transition, or records-management project can include assets with very different requirements. Current laptops and servers may be eligible for secure erasure and remarketing, specified media may require physical destruction, office copiers may need internal data-bearing components identified, and truly end-of-life electronics may need qualified downstream recycling.`,
+          `Integritrade helps legal and professional-service clients direct each category through the right approved path.`,
         ],
         bullets: [
           {
-            title: "Secure Chain of Custody",
-            text: "Tracked and documented logistics tailored for firm relocations, office refreshes, and partner departures.",
+            title: "Confidential technology retirement",
+            text: "Scheduled pickup, custody-transfer records, client-approved handling instructions, secure data workflows, and final documentation.",
           },
           {
-            title: "NIST SP 800-88 Media Sanitization",
-            text: "Strict adherence to federal guidelines for the logical wiping and physical destruction of data-bearing media.",
+            title: "Data sanitization or physical destruction",
+            text: "NIST SP 800-88 Rev. 2-aligned sanitization for eligible reuse, plus physical-destruction options where the project requires them.",
           },
           {
-            title: "Audit-Ready Documentation",
-            text: "Comprehensive reporting, including serialized inventory tracking and verifiable certificates of destruction.",
+            title: "Firm relocation or office closure",
+            text: "Secure removal and processing of employee devices, servers, phones, printers, MFPs, networking equipment, and accumulated e-waste.",
           },
           {
-            title: "Responsible Electronics Recycling",
-            text:
-            "R2v3-certified processing to ensure environmentally compliant downstream recycling for all end-of-life business equipment.",
-            link:{
-              text:"R2v3-certified",
-              href:CERTIFICATE_PDFS.r2v3
-            }
+            title: "Value recovery",
+            text: "Direct buyback or revenue-share remarketing for eligible laptops, desktops, MacBooks, servers, storage, networking equipment, GPUs, phones, tablets, and accessories.",
+          },
+          {
+            title: "End-of-life equipment",
+            text: "Qualified downstream recycling for non-recoverable or client-designated material.",
           },
         ],
       },
       {
+        heading: "Visibility and documentation after pickup",
         paragraphs: [
-          `Whether you are managing a firm-wide technology refresh or securing data during a partner transition, Integritrade ensures your confidential information is protected from start to finish.`,
+          `TraceTech is Integritrade's proprietary ITAD client platform, included at no additional cost for Integritrade clients. Authorized users can follow applicable project and asset statuses, reconcile client asset tags with Integritrade tracking tags, manage service requests or project amendments, and retrieve available documentation without relying on disconnected emails or spreadsheets.`,
+          `Available documentation can include chain-of-custody records, manifests, serialized Certificates of Erasure, serialized Certificates of Destruction, and project reporting based on the services performed and agreed scope. TraceTech can also associate client-approved requirements with the project or asset record and display them when the asset is scanned.`,
         ],
-        className: "mt-8",
+        cta: { text: "Explore TraceTech", href: "/tracetech/" },
+      },
+      {
+        heading: "Built for serious office technology projects",
+        paragraphs: [
+          `Integritrade operates from a dedicated 30,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
+          `The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics each month. Integritrade supports secure office IT retirement, technology refreshes, firm relocations, regional and multi-site collections, data destruction, corporate equipment buyback, and electronics recycling throughout California and the Western United States.`,
+          `Integritrade maintains R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications. These credentials support documented quality, environmental, occupational health and safety, and information-security management systems within the applicable certified scope.`,
+        ],
       },
     ],
-    closingCallout: {
-      linkText: "Request confidential ITAD support",
-      linkHref: "/contact",
-      after: " for your legal or professional services firm.",
-    },
     projectScenarios: {
       intro:
         "Legal and professional services ITAD projects usually involve confidentiality, office transitions, and strict documentation expectations.",
@@ -540,19 +607,34 @@ export const industriesData: Industry[] = [
     },
     faqs: [
       {
-        question: "Can you support law firm data destruction requirements?",
+        question: "Can Integritrade support secure IT asset disposition for law firms and professional-service organizations?",
         answer:
-          "Yes. We provide secure chain of custody, NIST SP 800-88-aligned sanitization, physical destruction when required, and certificates of destruction for confidential legal and professional services data.",
+          "Yes. Integritrade supports law firms, accounting firms, consulting practices, financial advisers, architects, and other professional-service organizations with secure pickup, asset tracking, approved data handling, data destruction, equipment buyback, value recovery, and qualified downstream recycling.",
       },
       {
-        question: "Do you handle office refreshes and firm relocations?",
+        question: "What office equipment should law firms and professional-service organizations treat as a data risk?",
         answer:
-          "Yes. We support office refreshes, firm relocations, partner departures, and end-of-life business equipment projects.",
+          "Organizations should consider laptops, desktops, servers, phones, tablets, loose drives, storage devices, printers, copiers, MFPs, removable media, and devices with embedded or short-form-factor storage. Integritrade can help identify the relevant asset categories before a project begins.",
       },
       {
-        question: "Can you provide documentation for client confidentiality and vendor review?",
+        question: "Can Integritrade handle different data-destruction requirements within one office project?",
         answer:
-          "Yes. We provide serialized inventory tracking, audit-ready reporting, chain-of-custody records, and verifiable certificates of destruction.",
+          "Yes. Integritrade can apply different client-approved outcomes in the same project. For example, eligible laptops may be sanitized for remarketing, specific media may be physically destroyed, and non-recoverable equipment may move to qualified downstream recycling.",
+      },
+      {
+        question: "Does Integritrade provide Certificates of Erasure and Certificates of Destruction?",
+        answer:
+          "Yes. Successful approved logical sanitization can generate serialized Certificates of Erasure. Physical data-destruction services can generate serialized Certificates of Destruction. Authorized users can retrieve available batch or individual records through TraceTech, based on the agreed scope.",
+      },
+      {
+        question: "Can Integritrade help recover value from retired law-firm or office IT equipment?",
+        answer:
+          "Yes. Integritrade evaluates eligible laptops, desktops, MacBooks, servers, storage, networking equipment, GPUs, phones, tablets, and accessories for direct buyback or revenue-share remarketing. Eligibility depends on equipment age, configuration, condition, successful approved data handling, lock status, client requirements, and market demand.",
+      },
+      {
+        question: "Why is Integritrade a strong option for legal and professional-services ITAD?",
+        answer:
+          "Integritrade combines a 30,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech client visibility. The company supports organizations throughout California and the Western United States.",
       },
     ],
   },
@@ -561,7 +643,7 @@ export const industriesData: Industry[] = [
     slug: "retail-hospitality",
     image: SecureRetailPOS,
     imageAlt: "Retail and hospitality technology prepared for secure recycling",
-    eyebrow: "Industries We Serve",
+    eyebrow: "Retail & Hospitality ITAD",
     title: "Retail & Hospitality",
     description:
       "Secure retirement for POS refreshes, store closures, hotel upgrades, franchise rollouts, and customer-data devices.",
@@ -669,7 +751,7 @@ export const industriesData: Industry[] = [
     slug: "government-public-sector",
     image: GovernmentITEquipment,
     imageAlt: "Public sector office technology prepared for secure asset disposition",
-    eyebrow: "Industries We Serve",
+    eyebrow: "Government & Public Sector ITAD",
     title: "Government & Public Sector",
     description:
       "Secure and transparent ITAD for agencies, municipalities, public authorities, courts, and public institutions.",
@@ -777,7 +859,7 @@ export const industriesData: Industry[] = [
     slug: "defense-contractors",
     image: SecureDefenseServer,
     imageAlt: "Secure defense contractor IT assets prepared for controlled destruction",
-    eyebrow: "Industries We Serve",
+    eyebrow: "Defense Contractor ITAD",
     title: "Defense Contractors",
     description:
       "High-security ITAD for defense contractors, suppliers, secure labs, hardware refreshes, and sensitive project equipment.",
