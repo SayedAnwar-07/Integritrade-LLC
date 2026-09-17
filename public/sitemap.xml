@@ -22,13 +22,13 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://integritradellc.com/about/our-team/</loc>
+    <loc>https://integritradellc.com/about/our-locations/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://integritradellc.com/about/our-locations/</loc>
+    <loc>https://integritradellc.com/about/our-team/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -66,6 +66,12 @@
   <url>
     <loc>https://integritradellc.com/blogs/data-erasure-vs-degaussing-vs-physical-destruction/</loc>
     <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://integritradellc.com/blogs/deceptive-advertising-itad-electronics-recycling-certifications/</loc>
+    <lastmod>2026-09-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -184,6 +190,12 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://integritradellc.com/blogs/reuse-focused-itad-vs-scrap-recycling/</loc>
+    <lastmod>2026-09-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://integritradellc.com/blogs/risk-of-storing-old-hard-drives-vs-recycling/</loc>
     <lastmod>2026-08-13</lastmod>
     <changefreq>monthly</changefreq>
@@ -220,18 +232,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://integritradellc.com/blogs/deceptive-advertising-itad-electronics-recycling-certifications/</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://integritradellc.com/blogs/reuse-focused-itad-vs-scrap-recycling/</loc>
-    <lastmod>2026-09-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://integritradellc.com/certifications/</loc>
     <lastmod>2026-08-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -244,8 +244,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://integritradellc.com/fresno-electronics-recycling/</loc>
-    <lastmod>2026-08-25</lastmod>
+    <loc>https://integritradellc.com/fresno-residential-electronics-recycling/</loc>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

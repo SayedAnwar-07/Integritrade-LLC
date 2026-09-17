@@ -55,7 +55,7 @@ const DROPDOWN_ICON_COLORS: Record<string, string> = {
   '/services/it-asset-disposition': 'text-blue-600 dark:text-blue-400',
   "/services/remote-it-asset-recovery": 'text-violet-600 dark:text-violet-400',
   '/services/demanufacturing-prototype-destruction': 'text-amber-600 dark:text-amber-400',
-  '/fresno-electronics-recycling/': 'text-teal-600 dark:text-teal-400',
+  '/fresno-residential-electronics-recycling/': 'text-teal-600 dark:text-teal-400',
   // Industries
   '/industries/business-corporate': 'text-blue-600 dark:text-blue-400',
   '/industries/healthcare': 'text-rose-600 dark:text-rose-400',
@@ -419,7 +419,7 @@ export default function Navbar() {
         { href: '/services/it-asset-disposition', label: 'IT Asset Disposition & Value Recovery', icon: Monitor },  
         {href: "/services/remote-it-asset-recovery",label: "Remote IT Asset Recovery",icon: Laptop,},      
         { href: '/services/demanufacturing-prototype-destruction', label: 'Demanufacturing & Prototype Destruction', icon: Hammer },    
-        { href: '/fresno-electronics-recycling/', label: 'Fresno Public E-Waste Drop Off', icon: Store },    
+        { href: '/fresno-residential-electronics-recycling/', label: 'Fresno Residential E-Waste Drop-Off', icon: Store },
       ],
     },
     {

@@ -9,9 +9,9 @@ import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import ConsultationForm from "@/components/contact/ConsultationForm";
 
 // Positioned as the broad educational pillar page — "what is e-waste" and how
-// to verify a recycler's claims. Fresno-specific drop-off intent stays on
-// /fresno-electronics-recycling/, which already ranks for it; the two link to
-// each other rather than competing for the same query.
+// to verify a recycler's claims. Fresno-specific residential drop-off intent
+// stays on /fresno-residential-electronics-recycling/; the two link to each
+// other rather than competing for the same query.
 export const metadata: Metadata = {
   title: "What Is E-Waste? Data Risks & Recycling",
 
@@ -425,8 +425,8 @@ export default function EWastePage() {
                 secure pickup, chain-of-custody options, asset tracking, data sanitization or
                 physical destruction, equipment buyback, remarketing, and California-wide ITAD
                 services. Full details are on the{" "}
-                <Link className={extLink} href="/fresno-electronics-recycling/">
-                  Fresno electronics recycling and drop-off page
+                <Link className={extLink} href="/fresno-residential-electronics-recycling/">
+                  Fresno residential electronics recycling and drop-off page
                 </Link>
                 .
               </p>

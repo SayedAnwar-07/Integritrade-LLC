@@ -25,8 +25,8 @@ const footerServices = [
     label: "Demanufacturing & Prototype Destruction" 
   },
   { 
-    href: "/fresno-electronics-recycling/", 
-    label: "Fresno Public E-Waste Drop Off" 
+    href: "/fresno-residential-electronics-recycling/",
+    label: "Fresno Residential E-Waste Drop-Off"
   },
 ];
 

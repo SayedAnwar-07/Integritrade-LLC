@@ -26,7 +26,7 @@ export const metadata: Metadata = {
       {
         url: "/logo/integritradellc-favicon.png",
         type: "image/png",
-        sizes: "96x96",
+        sizes: "512x512",
       },
     ],
 
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       {
         url: "/logo/integritradellc-favicon.png",
         type: "image/png",
-        sizes: "180x180",
+        sizes: "512x512",
       },
     ],
   },

@@ -14,6 +14,10 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 RewriteRule ^service-area/([^/]+)/e-waste-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]
 RewriteRule ^service-area/(fresno|san-francisco|clovis)/electronics-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]
 
+# ── Fresno residential recycling rename (2026-09-17) ──
+# Old page retired; residential-focused URL is better suited for SEO.
+RewriteRule ^fresno-electronics-recycling/?$ /fresno-residential-electronics-recycling/ [R=301,L]
+
 # ── Palo Alto legacy URLs from old sitemap ──
 RewriteRule ^service-area/palo-alto/it-asset-disposition/?$ /service-area/palo-alto/it-asset-disposition-palo-alto/ [R=301,L]
 RewriteRule ^service-area/palo-alto/asset-recovery-palo-alto/?$ /service-area/palo-alto/asset-recovery/ [R=301,L]

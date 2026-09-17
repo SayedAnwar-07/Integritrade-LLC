@@ -491,10 +491,10 @@ export default function OurLocationsPage() {
 
                 <div className="flex flex-col sm:flex-row gap-4 mt-10">
                   <OutlineButton
-                    href="/fresno-electronics-recycling/"
+                    href="/fresno-residential-electronics-recycling/"
                     testId="locations-drop-off-details"
                   >
-                    Fresno Public E-Waste Drop Off
+                    Fresno Residential E-Waste Drop-Off
                   </OutlineButton>
 
                   <PrimaryButton
