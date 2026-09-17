@@ -47,6 +47,7 @@ const SERVICE_OPTIONS: Option[] = [
   { value: 'it-asset-disposition', label: 'IT Asset Disposition' },
   { value: 'data-center-decommissioning', label: 'Data Center Decommissioning' },
   { value: 'lease-return', label: 'Lease Return' },
+  { value: 'tracetech-walkthrough', label: 'TraceTech Walkthrough' },
   { value: 'sales-inquiry', label: 'Sales Inquiry' },
   { value: 'others', label: 'Others' },
 ]

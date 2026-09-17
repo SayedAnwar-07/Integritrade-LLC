@@ -137,14 +137,14 @@ export default function ContactDescription() {
                 Our Certifications &amp; Standards
               </h2>
 
-              <div className="mt-5 grid grid-cols-3 items-stretch gap-3">
+              <div className="mt-6 grid grid-cols-3 items-start gap-x-4 gap-y-7">
                 {certs.map(({ image, name, href, external }) => {
                   const content = (
-                    <div className="flex h-full min-h-[104px] flex-col items-center justify-between rounded-md border border-slate-100 bg-white px-2.5 py-3.5 transition-all duration-300 hover:scale-105 dark:border-white/5">
-                      <div className="relative flex h-10 w-full items-center justify-center">
+                    <div className="flex h-full flex-col items-center justify-start gap-3 transition-transform duration-300 hover:scale-105">
+                      <div className="relative h-20 w-full">
                         <Image src={image} alt={name} fill className="object-contain" />
                       </div>
-                      <span className="mt-2.5 text-center text-[10.5px] font-semibold leading-tight text-slate-700">
+                      <span className="text-center text-[11px] font-semibold leading-tight text-slate-600 dark:text-slate-300">
                         {name}
                       </span>
                     </div>
