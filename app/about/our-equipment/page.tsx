@@ -442,12 +442,6 @@ export default function OurCapabilitiesPage() {
             <ScrollLoader>
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                   <div className="lg:col-span-7">
-                    <div className="flex items-center gap-3 mb-6">
-                      <span className="h-px w-8 bg-emerald-600 dark:bg-emerald-400" />
-                      <span className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
-                        Come See It
-                      </span>
-                    </div>
                     <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-[1.1] tracking-tight text-gray-900 dark:text-gray-100">
                       Site visits welcome. Walk the floor before you sign.
                     </h2>

@@ -332,12 +332,6 @@ export default function FresnoResidentialElectronicsRecyclingPage() {
           <div className="mt-20 md:mt-28 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-start">
               <div>
-                <div className="flex items-center gap-3">
-                  <span className="h-px w-8 bg-emerald-700 dark:bg-emerald-400" />
-                  <span className="text-[1rem] font-mono uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400 font-bold">
-                    A Secure Fresno Facility
-                  </span>
-                </div>
                 <h2 className="mt-6 font-serif text-3xl md:text-4xl text-gray-900 dark:text-gray-100 tracking-tight leading-[1.1]">
                   Delivered to an established ITAD operation — not an unknown collection point.
                 </h2>
@@ -400,12 +394,6 @@ export default function FresnoResidentialElectronicsRecyclingPage() {
         {/* ── Not accepted ───────────────────────────────────────────── */}
         <ScrollLoader>
           <div className="mt-20 md:mt-28 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex items-center gap-3">
-              <span className="h-px w-8 bg-red-700 dark:bg-red-400" />
-              <span className="text-[1rem] font-mono uppercase tracking-[0.25em] text-red-700 dark:text-red-400 font-bold">
-                Not Accepted
-              </span>
-            </div>
             <h2 className="mt-6 font-serif text-3xl md:text-4xl text-gray-900 dark:text-gray-100 tracking-tight leading-[1.1]">
               Items we can&apos;t take at residential drop-off.
             </h2>

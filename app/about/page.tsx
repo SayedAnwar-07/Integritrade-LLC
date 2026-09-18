@@ -133,19 +133,7 @@ function Eyebrow({
   children: ReactNode
   center?: boolean
 }) {
-  return (
-    <div
-      className={`mb-6 flex items-center gap-4 ${center ? "justify-center" : ""}`}
-    >
-      <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
-      <span className="font-mono text-[0.95rem] font-bold uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400">
-        {children}
-      </span>
-      {center && (
-        <span className="h-px w-12 bg-emerald-700 dark:bg-emerald-500" />
-      )}
-    </div>
-  )
+  return null // Kicker removed site-wide: the green label duplicated the heading below it.
 }
 
 const stats = [

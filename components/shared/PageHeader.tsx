@@ -43,19 +43,11 @@ export default function PageHeader({
 
   return (
     <header className={`w-full ${className}`}>
-      {/* Section eyebrow label */}
-      {eyebrow && (
-        <div className={`mb-8 flex items-center gap-3 sm:gap-4 ${isCenter ? "justify-center" : "justify-start"}`}>
-          <span className="h-px w-8 shrink-0 bg-emerald-700 sm:w-12 dark:bg-emerald-500" />
-
-          <span className="max-w-[150px] text-center font-mono text-[0.7rem] font-extrabold uppercase leading-[1.8] tracking-[0.22em] text-emerald-800 sm:max-w-none sm:text-[1rem] sm:leading-normal sm:tracking-[0.25em] dark:text-emerald-400">
-            {sectionNumber ? `§${sectionNumber} / ${eyebrow}` : eyebrow}
-          </span>
-
-          <span className="h-px w-8 shrink-0 bg-emerald-700 sm:w-12 dark:bg-emerald-500" />
-        </div>
-      )}
-
+      {/* Section eyebrow label intentionally not rendered. The small green
+          kicker (and its flanking rules) read as redundant filler next to the
+          heading right below it, so it was removed site-wide on 2026-09-19.
+          The `eyebrow` prop is still accepted so the many existing call sites
+          keep compiling; it simply has no output. */}
       <div
         className={`w-full max-w-6xl ${
           isCenter ? "mx-auto text-center" : "mr-auto text-left"

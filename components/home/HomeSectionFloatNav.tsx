@@ -1,14 +1,14 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-// `href` items navigate to another page; the rest scroll to a same-page section.
-// Certifications live on their own page (and in the hero badge ring), so that
-// item links out rather than scrolling to the client-logos band.
+// Every item scrolls to a section on this page. An earlier version pointed the
+// first item at /certifications/, but jumping to another page from a
+// scroll-progress rail is disorienting, so it now tracks the client-logos band
+// it actually sits next to.
 const sections = [
-  { id: "certifications", label: "Certifications", href: "/certifications/" },
+  { id: "clients", label: "Clients" },
   { id: "why-choose", label: "Why Choose Us" },
   { id: "services", label: "Solutions" },
   { id: "process", label: "Process" },
@@ -17,7 +17,7 @@ const sections = [
 ];
 
 export default function HomeSectionNav() {
-    const [activeSection, setActiveSection] = useState("certifications");
+    const [activeSection, setActiveSection] = useState("clients");
     const [progressHeight, setProgressHeight] = useState(0);
     const [trackBounds, setTrackBounds] = useState({ top: 0, bottom: 0 });
     const listRef = useRef<HTMLDivElement>(null);
@@ -29,7 +29,6 @@ export default function HomeSectionNav() {
     const observers: IntersectionObserver[] = [];
 
     sections.forEach((section) => {
-      if (section.href) return; // link items have no same-page section to observe
       const element = document.getElementById(section.id);
       if (!element) return;
 
@@ -135,13 +134,7 @@ export default function HomeSectionNav() {
             </>
           );
 
-          // Certifications (and any href item) navigates to its own page;
-          // the rest smooth-scroll to a same-page section.
-          return section.href ? (
-            <Link key={section.id} href={section.href} className={rowClass}>
-              {inner}
-            </Link>
-          ) : (
+          return (
             <button
               key={section.id}
               onClick={() => scrollToSection(section.id)}

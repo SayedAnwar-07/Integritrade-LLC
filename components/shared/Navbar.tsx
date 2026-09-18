@@ -212,7 +212,7 @@ function TraceTechNavItem({
         href={TRACETECH_HREF}
         className="relative z-10 inline-flex items-center gap-1.5 rounded-md px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white"
       >
-        <span>TraceTech</span>
+        <span>TraceTech Asset Tracking</span>
         <ChevronDown
           className={`w-3 h-3 transition-transform duration-300 ${open ? 'rotate-180' : ''} opacity-60`}
           strokeWidth={2.5}
@@ -703,7 +703,7 @@ export default function Navbar() {
               onClick={() => setIsMenuOpen(false)}
               className="block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-medium tracking-tight transition-all active:scale-[0.97] active:duration-75 text-gray-700 dark:text-gray-200 hover:text-primary"
             >
-              TraceTech
+              TraceTech Asset Tracking
             </Link>
           </nav>
 

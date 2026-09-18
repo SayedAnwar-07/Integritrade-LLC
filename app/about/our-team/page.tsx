@@ -167,12 +167,6 @@ export default function OurTeamPage() {
         <ScrollLoader>
           <div className="mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-7">
-              <div className="mb-6 flex items-center gap-3">
-                <span className="h-px w-8 bg-emerald-600 dark:bg-emerald-400" />
-                <span className="font-mono text-[0.95rem] font-bold uppercase tracking-[0.25em] text-emerald-800 dark:text-emerald-400">
-                  Come See It
-                </span>
-              </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl leading-[1.1] tracking-tight text-stone-900 dark:text-white">
                 Site visits welcome. Walk the floor before you sign.

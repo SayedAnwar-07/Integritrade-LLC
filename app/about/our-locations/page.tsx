@@ -8,12 +8,6 @@ import ScrollLoader from "@/components/shared/ScrollLoader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
 
 const PAGE_URL = "https://integritradellc.com/about/our-locations/";
@@ -65,39 +59,6 @@ const facilityDetails = [
     title: "Capacity and Project Scale",
     body:
       "Integritrade can support individual, small-business, enterprise, and high-volume institutional projects. The Fresno facility can securely stage and store more than 1,000,000 pounds of retired IT equipment and e-waste per month, subject to safe storage configuration and material type. Its dock, lift, racking, security, staging, PXE erasure systems, and physical destruction capability support fleet refreshes, office cleanouts, warehouse cleanouts, data-center decommissioning, retail-return programs, and consolidated multi-site projects.",
-  },
-] as const;
-
-const serviceAreas = [
-  {
-    id: "san-francisco",
-    name: "San Francisco and the Peninsula",
-    description:
-      "San Francisco, South San Francisco, Daly City, San Mateo, Redwood City, Palo Alto, Menlo Park, Burlingame, and surrounding areas.",
-  },
-  {
-    id: "silicon-valley",
-    name: "Silicon Valley and South Bay",
-    description:
-      "San Jose, Santa Clara, Sunnyvale, Mountain View, Cupertino, Milpitas, Campbell, Los Gatos, and Fremont.",
-  },
-  {
-    id: "east-north-bay",
-    name: "East Bay and North Bay",
-    description:
-      "Oakland, Berkeley, Richmond, Pinole, Walnut Creek, Concord, Pleasanton, Livermore, Hayward, Alameda, San Rafael, and surrounding Contra Costa, Alameda, and Marin communities.",
-  },
-  {
-    id: "central-valley",
-    name: "Central Valley",
-    description:
-      "Fresno, Clovis, Madera, Merced, Visalia, Bakersfield, Stockton, Modesto, Sacramento, and surrounding communities.",
-  },
-  {
-    id: "southern-california",
-    name: "Southern California",
-    description:
-      "Los Angeles, Long Beach, Pasadena, Burbank, Glendale, Santa Monica, Irvine, Anaheim, Orange County, Riverside, San Bernardino, Ontario, San Diego, and surrounding areas.",
   },
 ] as const;
 
@@ -218,7 +179,7 @@ export default function OurLocationsPage() {
                 Our <em className="italic font-serif">Locations.</em>
               </>
             }
-            description="Integritrade operates a dedicated 31,000 square foot secured California ITAD Operations Center in Fresno, plus a Bay Area dispatch location in Pinole for scheduled business service."
+            description="Integritrade operates a dedicated 31,000 square foot secured California IT Asset Disposal Megacenter in Fresno, plus a Bay Area dispatch location in Pinole for scheduled business service."
           />
         </ScrollLoader>
 
@@ -236,16 +197,12 @@ export default function OurLocationsPage() {
               <div className="w-full lg:col-span-7">
 
                 <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-5">
-                  California ITAD Operations Center
+                  California IT Asset Disposal Megacenter
                 </h3>
 
 
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Integritrade’s operational facility is located at{" "}
-                  <strong className="font-semibold text-gray-900 dark:text-gray-100">
-                    944 S. Topeka Ave, Fresno, CA 93721
-                  </strong>
-                  . It is a dedicated 31,000 square foot ITAD and
+                  Integritrade&rsquo;s Fresno facility is a dedicated 31,000 square foot ITAD and
                   electronics-processing facility with controlled access,
                   video monitoring, secure asset staging, dock access,
                   lifts, pallet jacks, racking, and material-handling
@@ -266,9 +223,16 @@ export default function OurLocationsPage() {
                     </div>
 
                     <dd className="text-sm text-gray-900 dark:text-gray-100 mt-2 ml-8">
-                      944 S. Topeka Ave
-                      <br />
-                      Fresno, CA 93721
+                      <a
+                        href="https://maps.app.goo.gl/foJtYrjryesSmFoG7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={contactLinkClass}
+                      >
+                        944 S. Topeka Ave
+                        <br />
+                        Fresno, CA 93721
+                      </a>
                     </dd>
                   </div>
 
@@ -344,7 +308,7 @@ export default function OurLocationsPage() {
 
 
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=944+S.+Topeka+Ave,+Fresno,+CA+93721"
+                  href="https://maps.app.goo.gl/foJtYrjryesSmFoG7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block group"
@@ -355,7 +319,7 @@ export default function OurLocationsPage() {
 
                     <iframe
                       title="Integritrade Fresno ITAD Facility Map"
-                      src="https://www.google.com/maps?q=944+S.+Topeka+Ave,+Fresno,+CA+93721&output=embed"
+                      src="https://www.google.com/maps?q=Integritrade+LLC+Electronics+Recycling+%26+ITAD+Services,+944+S+Topeka+Ave,+Fresno,+CA+93721&output=embed"
                       className="absolute inset-0 w-full h-full pointer-events-none"
                       loading="lazy"
                       style={{border:0}}
@@ -420,15 +384,11 @@ export default function OurLocationsPage() {
                 </div>
 
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Integritrade&rsquo;s Bay Area dispatch location is at{" "}
-                  <strong className="font-semibold text-gray-900 dark:text-gray-100">
-                    1576 Fitzgerald Dr, Pinole, CA 94564
-                  </strong>
-                  . The site stages crew supplies, bins, totes, and transport equipment for
+                  The Bay Area dispatch location stages crew supplies, bins, totes, and transport equipment for
                   Bay Area projects, supporting scheduled ITAD pickups, data destruction, and
                   electronics collection across the East Bay, North Bay, San Francisco, the
                   Peninsula, and Silicon Valley. Asset processing, data sanitization, and
-                  physical destruction are performed at the Fresno ITAD Operations Center.
+                  physical destruction are performed at the Fresno IT Asset Disposal Megacenter.
                 </p>
 
                 <dl className="space-y-7 py-8">
@@ -443,9 +403,16 @@ export default function OurLocationsPage() {
                     </div>
 
                     <dd className="text-sm text-gray-900 dark:text-gray-100 mt-2 ml-8">
-                      1576 Fitzgerald Dr
-                      <br />
-                      Pinole, CA 94564
+                      <a
+                        href="https://www.google.com/maps/search/?api=1&query=Integritrade%2C%201576%20Fitzgerald%20Dr%2C%20Pinole%2C%20CA%2094564"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={contactLinkClass}
+                      >
+                        1576 Fitzgerald Dr
+                        <br />
+                        Pinole, CA 94564
+                      </a>
                     </dd>
                   </div>
 
@@ -504,7 +471,7 @@ export default function OurLocationsPage() {
                 <Separator className="mb-6 bg-gray-300 dark:bg-gray-800" />
 
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=1576+Fitzgerald+Dr,+Pinole,+CA+94564"
+                  href="https://www.google.com/maps/search/?api=1&query=Integritrade%2C%201576%20Fitzgerald%20Dr%2C%20Pinole%2C%20CA%2094564"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block group"
@@ -514,7 +481,7 @@ export default function OurLocationsPage() {
 
                     <iframe
                       title="Integritrade Pinole Bay Area Dispatch Location Map"
-                      src="https://www.google.com/maps?q=1576+Fitzgerald+Dr,+Pinole,+CA+94564&output=embed"
+                      src="https://www.google.com/maps?q=Integritrade+IT+Asset+Disposition+%26+Data+Destruction+Services,+1576+Fitzgerald+Dr,+Pinole,+CA+94564&output=embed"
                       className="absolute inset-0 w-full h-full pointer-events-none"
                       loading="lazy"
                       style={{border:0}}
@@ -584,111 +551,6 @@ export default function OurLocationsPage() {
           </div>
         </ScrollLoader>
 
-        {/* SERVICE AREAS — shadcn Accordion, all regions initially visible */}
-        <ScrollLoader>
-          <div
-            id="service-areas"
-            className="py-8 md:py-12 scroll-mt-24"
-          >
-            <SectionHeader
-              eyebrow="Service coverage"
-              title="California Service Areas"
-              description="Integritrade supports organizations throughout California. High-priority service markets include:"
-              linkText=""
-              linkHref=""
-            />
-
-            <div className="mt-12 md:mt-16 border-t border-gray-200 dark:border-gray-800">
-              {serviceAreas.map((detail, index) => (
-                <div
-                  key={detail.name}
-                  className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 py-8 lg:py-10 border-b border-gray-200 dark:border-gray-800"
-                >
-                  <div className="md:col-span-1">
-                    <span
-                      aria-hidden="true"
-                      className="text-2xl font-light text-gray-400 dark:text-gray-600 tabular-nums"
-                    >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-
-                  <div className="md:col-span-4">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 tracking-tight">
-                      {detail.name}
-                    </h3>
-                  </div>
-
-                  <div className="md:col-span-7">
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
-                      {detail.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <div className="flex gap-3 mt-8">
-              <ChevronRight
-                aria-hidden="true"
-                className="w-5 h-5 mt-0.5 shrink-0 text-emerald-700 dark:text-[#34d399]"
-              />
-              <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
-                For large projects, multi-site projects, and specialized
-                requirements, Integritrade can evaluate service beyond its
-                primary California coverage area.
-              </p>
-            </div>
-          </div>
-        </ScrollLoader>
-
-        {/* LOCAL DROP-OFF — shared section header and existing buttons */}
-        <ScrollLoader>
-          <div className="py-8 md:py-16">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
-              <div className="lg:col-span-5">
-                <SectionHeader
-                  eyebrow="Fresno drop-off"
-                  title="E-Waste Recycling and Electronics Recycling"
-                  description=""
-                  linkText=""
-                  linkHref=""
-                />
-              </div>
-
-              <div className="lg:col-span-7">
-                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed custom-text-center">
-                  For Fresno customers, Integritrade offers{" "}
-                  <strong className="font-semibold text-gray-900 dark:text-gray-100">
-                    free drop-off recycling for most accepted IT equipment
-                    and electronics
-                  </strong>
-                  . Certain bulky or specialized items, including large
-                  copy machines and large multifunction printers, may have
-                  nominal handling charges. Customers should contact
-                  Integritrade before drop-off to confirm current acceptance
-                  requirements and applicable fees.
-                </p>
-
-                <div className="flex flex-col sm:flex-row gap-4 mt-10">
-                  <OutlineButton
-                    href="/fresno-residential-electronics-recycling/"
-                    testId="locations-drop-off-details"
-                  >
-                    Fresno Residential E-Waste Drop-Off
-                  </OutlineButton>
-
-                  <PrimaryButton
-                    href="/service-book"
-                    testId="locations-contact-team"
-                  >
-                    Contact Us
-                  </PrimaryButton>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ScrollLoader>
       </div>
     </section>
   );

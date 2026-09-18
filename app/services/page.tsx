@@ -1,15 +1,26 @@
 import type { Metadata } from "next"
 import Script from "next/script"
 import Process from "@/components/services/Process"
-import PageHeader from "@/components/shared/PageHeader"
-import ServicesShowcase from "@/components/services/Servicesshowcase"
+import ServiceCards from "@/components/services/ServiceCards"
 import ServicesCTA from "@/components/services/Servicescta"
 import { decisionGuide, servicesData, valueRecoveryDisclaimer } from "@/data/servicesData"
+import ServiceComparisonMatrix from "@/components/services/ServiceComparisonMatrix"
 import ScrollLoader from "@/components/shared/ScrollLoader"
 import SectionHeader from "@/components/shared/SectionHeader"
+import SectionFloatNav from "@/components/shared/SectionFloatNav"
 import RackOfServers from "@/public/services/rack-of-servers.jpg"
 import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import ReadMore from "@/components/shared/buttons/ReadMore"
+
+const NAV_SECTIONS = [
+  { id: "services", label: "Services" },
+  { id: "compare", label: "What's Included" },
+  { id: "decision-guide", label: "Decision Guide" },
+  { id: "eligibility", label: "Eligibility" },
+  { id: "process", label: "Process" },
+];
 
 export const metadata: Metadata = {
   title: "Enterprise ITAD, Data Destruction & E-Waste Recycling",
@@ -115,21 +126,66 @@ export default function ServicesPage() {
   }
 
   return (
-    <main className="bg-secondary dark:bg-dark py-10 md:py-24">
-      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10">
-        <ScrollLoader>
-          <PageHeader
-            eyebrow="Service Level Comparison"
-            title="Choose the Right Service Level for Your Retired IT Assets"
-            description="Not every retired-electronics project needs the same handling. Integritrade offers ITAD service levels across California, from responsible e-waste recycling to certified data destruction to a full ITAD program with value recovery, so you can match your compliance, data security, and recovery goals to the right package."
-          />
-        </ScrollLoader>
+    <main className="bg-secondary dark:bg-dark pb-10 md:pb-24">
+      {/* Full-bleed hero: one headline, one line, one action. */}
+      <section className="relative isolate overflow-hidden">
+        <Image
+          src={RackOfServers}
+          alt="Racked servers staged for secure IT asset disposition at Integritrade"
+          fill
+          priority
+          sizes="100vw"
+          className="-z-10 object-cover"
+          placeholder="blur"
+        />
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 -z-10 bg-gradient-to-r from-black/85 via-black/70 to-black/40"
+        />
 
-        <section>
-          <ServicesShowcase />
+        <div className="mx-auto max-w-[1400px] px-6 py-24 lg:px-10 lg:py-36">
+          <div className="max-w-3xl">
+            <h1 className="font-serif text-4xl leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-6xl">
+              Choose the right service level for your retired IT assets.
+            </h1>
+
+            <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-stone-200">
+              From responsible e-waste recycling, to certified data destruction, to a full ITAD
+              program with value recovery.
+            </p>
+
+            <Link
+              href="/service-book/"
+              className="mt-9 inline-flex items-center gap-2 rounded-md bg-primary px-7 py-4 text-[15px] font-semibold text-white transition-colors hover:bg-primary/90"
+            >
+              Talk to an ITAD specialist
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10 pt-16 md:pt-24">
+        <div className="grid gap-12 lg:grid-cols-12">
+
+          <aside className="hidden lg:col-span-2 lg:block">
+            <SectionFloatNav sections={NAV_SECTIONS} />
+          </aside>
+
+          <div className="lg:col-span-10">
+            <section id="services" className="scroll-mt-28">
+          <ScrollLoader>
+            <ServiceCards />
+          </ScrollLoader>
         </section>
 
-        <section className="mt-6">
+            <section id="compare" className="scroll-mt-28 mt-16">
+          <ScrollLoader>
+            <ServiceComparisonMatrix />
+          </ScrollLoader>
+        </section>
+
+            <section id="decision-guide" className="scroll-mt-28 mt-6">
           <SectionHeader
             eyebrow="Decision Guide"
             title="Which Service Level Is Right for You?"
@@ -189,7 +245,7 @@ export default function ServicesPage() {
           </ScrollLoader>
         </section>
 
-        <section>
+            <section id="eligibility" className="scroll-mt-28">
             <ScrollLoader>
               <div className="mt-12 lg:mt-24 pt-10">
                 <SectionHeader
@@ -244,13 +300,16 @@ export default function ServicesPage() {
             </ScrollLoader>
         </section>
         
-        <section>
+            <section id="process" className="scroll-mt-28">
           <Process />
         </section>
 
-        <section className="mt-20">
-          <ServicesCTA />
-        </section>
+            <section className="mt-20">
+              <ServicesCTA />
+            </section>
+
+          </div>
+        </div>
 
         <Script
           id="localbusiness-jsonld-services"

@@ -110,7 +110,7 @@ export default function Hero() {
                 <OutlineButton
                   href="/services/"
                   testId="button-learn-more"
-                  className="text-sm py-3 sm:flex-1 lg:flex-none"
+                  className="text-[15px] py-4 sm:flex-1 lg:flex-none"
                 >
                   View Our Service Levels
                 </OutlineButton>
@@ -118,9 +118,9 @@ export default function Hero() {
                 <PrimaryButton
                   href="/service-book/"
                   testId="button-get-quote"
-                  className="text-sm py-3 sm:flex-1 lg:flex-none"
+                  className="text-[15px] py-4 sm:flex-1 lg:flex-none"
                 >
-                  Get a Free Consultation
+                  Contact Us
                 </PrimaryButton>
 
               </div>
