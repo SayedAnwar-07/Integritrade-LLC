@@ -168,11 +168,11 @@ export default function ServicesPage() {
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10 pt-16 md:pt-24">
         <div className="grid gap-12 lg:grid-cols-12">
 
-          <aside className="hidden lg:col-span-2 lg:block">
+          <aside className="hidden min-w-0 lg:col-span-2 lg:block">
             <SectionFloatNav sections={NAV_SECTIONS} />
           </aside>
 
-          <div className="lg:col-span-10">
+          <div className="min-w-0 lg:col-span-10">
             <section id="services" className="scroll-mt-28">
           <ScrollLoader>
             <ServiceCards />

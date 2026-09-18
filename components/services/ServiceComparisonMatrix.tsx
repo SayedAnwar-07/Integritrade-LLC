@@ -88,7 +88,7 @@ export default function ServiceComparisonMatrix() {
       </p>
 
       {/* Table scrolls on narrow screens rather than squeezing the columns. */}
-      <div className="mt-10 overflow-x-auto rounded-xl ring-1 ring-black/5 dark:ring-white/10">
+      <div className="relative mt-10 overflow-x-auto rounded-xl ring-1 ring-black/5 dark:ring-white/10">
         <table className="w-full min-w-[640px] border-collapse bg-white text-left dark:bg-dark-secondary">
           <caption className="sr-only">
             Comparison of what is included in Integritrade&apos;s Basic Recycling, Data Destruction,
