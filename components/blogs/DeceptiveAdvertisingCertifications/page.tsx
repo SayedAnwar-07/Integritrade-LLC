@@ -317,7 +317,7 @@ export default function DeceptiveAdvertisingCertifications() {
               <section className="mb-16">
                 <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight font-serif">A secure facility built for project scale</h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
-                  <p className="custom-text-center">Integritrade operates from a dedicated 30,000 sq ft controlled-access facility in Fresno with 24/7 video monitoring, secure staging areas, industrial pallet racking, dock access, pallet-handling equipment, and trained, background-checked personnel. The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics per month. That capacity supports large office refreshes, multi-site technology retirements, enterprise buyback programs, retail reverse logistics, and regional or national decommissioning projects</p>
+                  <p className="custom-text-center">Integritrade operates from a dedicated 31,000 sq ft controlled-access facility in Fresno with 24/7 video monitoring, secure staging areas, industrial pallet racking, dock access, pallet-handling equipment, and trained, background-checked personnel. The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics per month. That capacity supports large office refreshes, multi-site technology retirements, enterprise buyback programs, retail reverse logistics, and regional or national decommissioning projects</p>
                 </div>
               </section>
             </ScrollLoader>

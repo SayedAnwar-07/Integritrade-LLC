@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ArrowUpRight, ChevronRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Ban, CalendarCheck, ChevronRight, Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 
 import PageHeader from "@/components/shared/PageHeader";
 import SectionHeader from "@/components/shared/SectionHeader";
@@ -18,9 +19,9 @@ import { Separator } from "@/components/ui/separator";
 const PAGE_URL = "https://integritradellc.com/about/our-locations/";
 
 // Suggested metadata: the attachment did not include location-page SEO tags.
-const SEO_TITLE = "Our Locations | Fresno ITAD Facility | Integritrade LLC";
+const SEO_TITLE = "Our Locations | Fresno ITAD Facility & Bay Area Dispatch | Integritrade LLC";
 const SEO_DESCRIPTION =
-  "Explore Integritrade’s Fresno ITAD facility and California service areas for secure IT asset disposition, data destruction, and electronics recycling.";
+  "Explore Integritrade’s Fresno ITAD facility and Pinole Bay Area dispatch location, plus California service areas for secure IT asset disposition, data destruction, and electronics recycling.";
 
 export const metadata: Metadata = {
   title: { absolute: SEO_TITLE },
@@ -138,6 +139,31 @@ const schemaData = {
       },
     },
     {
+      "@type": "LocalBusiness",
+      "@id": `${PAGE_URL}#pinole-dispatch`,
+      name: "Integritrade - Bay Area Dispatch",
+      url: "https://integritradellc.com/",
+      telephone: "+1-559-325-4819",
+      email: "info@integritradeLLC.com",
+      description:
+        "Bay Area dispatch and supply location for scheduled ITAD, data destruction, and electronics collection. No public drop-off at this location.",
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: "1576 Fitzgerald Dr",
+        addressLocality: "Pinole",
+        addressRegion: "CA",
+        postalCode: "94564",
+        addressCountry: "US",
+      },
+      areaServed: {
+        "@type": "State",
+        name: "California",
+      },
+      parentOrganization: {
+        "@id": `${PAGE_URL}#fresno-facility`,
+      },
+    },
+    {
       "@type": "BreadcrumbList",
       "@id": `${PAGE_URL}#breadcrumb`,
       itemListElement: [
@@ -192,7 +218,7 @@ export default function OurLocationsPage() {
                 Our <em className="italic font-serif">Locations.</em>
               </>
             }
-            description="Integritrade operates from a dedicated 31,000 square foot secured California ITAD Operations Center in Fresno."
+            description="Integritrade operates a dedicated 31,000 square foot secured California ITAD Operations Center in Fresno, plus a Bay Area dispatch location in Pinole for scheduled business service."
           />
         </ScrollLoader>
 
@@ -354,6 +380,161 @@ export default function OurLocationsPage() {
 
               </div>
 
+
+            </div>
+
+          </div>
+        </ScrollLoader>
+
+        {/* PINOLE — BAY AREA DISPATCH LOCATION */}
+        <ScrollLoader>
+          <div
+            id="pinole-dispatch"
+            className="py-8 md:py-12 scroll-mt-24 border-t border-gray-200 dark:border-gray-800"
+          >
+
+            <div className="flex flex-col-reverse lg:grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+
+              {/* CONTENT */}
+              <div className="w-full lg:col-span-7">
+
+                <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-5">
+                  Bay Area Dispatch Location
+                </h3>
+
+                {/* Prominent notice: this site is not a drop-off point. */}
+                <div className="mb-6 flex items-start gap-3 rounded-md border border-amber-500/40 bg-amber-50 p-4 dark:bg-amber-400/10">
+                  <Ban className="mt-0.5 h-5 w-5 shrink-0 text-amber-600 dark:text-amber-400" />
+                  <p className="text-sm leading-relaxed text-stone-800 dark:text-amber-100">
+                    <strong className="font-semibold">No public drop-off at this location.</strong>{" "}
+                    The Pinole site is a dispatch and supply location for scheduled business
+                    service only. Residents and walk-in drop-offs should use the{" "}
+                    <Link
+                      href="/fresno-residential-electronics-recycling/"
+                      className="underline underline-offset-4 hover:text-emerald-700 dark:hover:text-[#34d399]"
+                    >
+                      Fresno residential drop-off
+                    </Link>{" "}
+                    instead.
+                  </p>
+                </div>
+
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Integritrade&rsquo;s Bay Area dispatch location is at{" "}
+                  <strong className="font-semibold text-gray-900 dark:text-gray-100">
+                    1576 Fitzgerald Dr, Pinole, CA 94564
+                  </strong>
+                  . The site stages crew supplies, bins, totes, and transport equipment for
+                  Bay Area projects, supporting scheduled ITAD pickups, data destruction, and
+                  electronics collection across the East Bay, North Bay, San Francisco, the
+                  Peninsula, and Silicon Valley. Asset processing, data sanitization, and
+                  physical destruction are performed at the Fresno ITAD Operations Center.
+                </p>
+
+                <dl className="space-y-7 py-8">
+
+                  <div>
+                    <div className="flex items-center gap-3">
+                      <MapPin className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+
+                      <dt className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                        Dispatch Location
+                      </dt>
+                    </div>
+
+                    <dd className="text-sm text-gray-900 dark:text-gray-100 mt-2 ml-8">
+                      1576 Fitzgerald Dr
+                      <br />
+                      Pinole, CA 94564
+                    </dd>
+                  </div>
+
+                  <div>
+                    <div className="flex items-center gap-3">
+                      <Phone className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+
+                      <dt className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                        Direct Line
+                      </dt>
+                    </div>
+
+                    <dd className="text-sm text-gray-900 dark:text-gray-100 mt-2 ml-8">
+                      <a
+                        href="tel:+15593254819"
+                        className={contactLinkClass}
+                      >
+                        (559) 325-4819
+                      </a>
+                    </dd>
+                  </div>
+
+                  <div>
+                    <div className="flex items-center gap-3">
+                      <CalendarCheck className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+
+                      <dt className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                        Access
+                      </dt>
+                    </div>
+
+                    <dd className="text-sm text-gray-900 dark:text-gray-100 mt-2 ml-8">
+                      Scheduled business service only, by appointment
+                    </dd>
+                  </div>
+
+                </dl>
+
+              </div>
+
+              {/* MAP */}
+              <div className="w-full lg:col-span-5 lg:pl-8">
+
+                <div className="flex items-center justify-between mb-6">
+
+                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-700 dark:text-[#34d399]">
+                    Bay Area Dispatch
+                  </p>
+
+                  <p className="text-sm italic font-serif text-gray-400">
+                    Pinole, California
+                  </p>
+
+                </div>
+
+                <Separator className="mb-6 bg-gray-300 dark:bg-gray-800" />
+
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=1576+Fitzgerald+Dr,+Pinole,+CA+94564"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block group"
+                >
+
+                  <div className="relative w-full aspect-[4/3] min-h-[320px] overflow-hidden border border-gray-300 dark:border-gray-800">
+
+                    <iframe
+                      title="Integritrade Pinole Bay Area Dispatch Location Map"
+                      src="https://www.google.com/maps?q=1576+Fitzgerald+Dr,+Pinole,+CA+94564&output=embed"
+                      className="absolute inset-0 w-full h-full pointer-events-none"
+                      loading="lazy"
+                      style={{border:0}}
+                      allowFullScreen
+                      referrerPolicy="no-referrer-when-downgrade"
+                    />
+
+                    <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/10 transition">
+
+                      <span className="opacity-0 group-hover:opacity-100 bg-white px-4 py-2 rounded-md text-sm font-semibold shadow-lg transition">
+                        Open in Google Maps ↗
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                </a>
+
+              </div>
 
             </div>
 

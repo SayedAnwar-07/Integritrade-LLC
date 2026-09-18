@@ -343,7 +343,7 @@ export default function FresnoResidentialElectronicsRecyclingPage() {
                 </h2>
                 <div className="mt-6 space-y-5 text-[15px] leading-relaxed text-stone-700 dark:text-slate-300">
                   <p>
-                    Residential electronics are received at Integritrade&apos;s 30,000 sq ft
+                    Residential electronics are received at Integritrade&apos;s 31,000 sq ft
                     controlled-access, video-monitored Fresno ITAD facility. The location supports
                     secure staging, electronics-recycling intake, data-handling services, value
                     recovery, and coordination with qualified downstream recycling vendors for

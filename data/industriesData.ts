@@ -132,7 +132,7 @@ export const industriesData: Industry[] = [
       {
         heading: "A California facility for education projects at scale",
         paragraphs: [
-          `Integritrade operates from a dedicated 30,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
+          `Integritrade operates from a dedicated 31,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
           `The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics each month. Integritrade supports individual campuses, district-wide refreshes, college and university technology programs, regional collections, and multi-location education projects throughout California and the Western United States.`,
           `Integritrade maintains R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications. These credentials support documented quality, environmental, occupational health and safety, and information-security management systems within the applicable certified scope.`,
         ],
@@ -193,7 +193,7 @@ export const industriesData: Industry[] = [
       {
         question: "Why is Integritrade a strong option for schools, districts, and universities?",
         answer:
-          "Integritrade combines a 30,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech visibility. The company supports education organizations throughout California and the Western United States.",
+          "Integritrade combines a 31,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech visibility. The company supports education organizations throughout California and the Western United States.",
       },
     ],
   },
@@ -331,7 +331,7 @@ export const industriesData: Industry[] = [
       {
         heading: "Built for corporate scale",
         paragraphs: [
-          `Integritrade operates from a dedicated 30,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
+          `Integritrade operates from a dedicated 31,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
           `The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics each month. Integritrade supports office refreshes, multi-site collections, server-room and data-center projects, equipment buyback, lease-return preparation, remote recovery, returns processing, and electronics recycling for organizations throughout California and the Western United States.`,
           `Integritrade maintains R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications. These credentials support documented quality, environmental, occupational health and safety, and information-security management systems within the applicable certified scope.`,
         ],
@@ -392,7 +392,7 @@ export const industriesData: Industry[] = [
       {
         question: "Why is Integritrade a strong option for business and corporate ITAD?",
         answer:
-          "Integritrade combines a 30,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech client visibility. The company supports organizations throughout California and the Western United States.",
+          "Integritrade combines a 31,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech client visibility. The company supports organizations throughout California and the Western United States.",
       },
     ],
   },
@@ -573,7 +573,7 @@ export const industriesData: Industry[] = [
       {
         heading: "Built for serious office technology projects",
         paragraphs: [
-          `Integritrade operates from a dedicated 30,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
+          `Integritrade operates from a dedicated 31,000 sq ft ITAD facility at 944 S. Topeka Ave, Fresno, CA. The controlled-access, 24/7 video-monitored facility includes secure staging, industrial pallet racking, dock access, powered lift equipment, and background-checked personnel.`,
           `The facility can securely stage and store more than 1 million pounds of retired IT equipment and electronics each month. Integritrade supports secure office IT retirement, technology refreshes, firm relocations, regional and multi-site collections, data destruction, corporate equipment buyback, and electronics recycling throughout California and the Western United States.`,
           `Integritrade maintains R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO 27001 certifications. These credentials support documented quality, environmental, occupational health and safety, and information-security management systems within the applicable certified scope.`,
         ],
@@ -634,7 +634,7 @@ export const industriesData: Industry[] = [
       {
         question: "Why is Integritrade a strong option for legal and professional-services ITAD?",
         answer:
-          "Integritrade combines a 30,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech client visibility. The company supports organizations throughout California and the Western United States.",
+          "Integritrade combines a 31,000 sq ft controlled-access and video-monitored facility, on-site data sanitization and physical-destruction capability, R2v3 plus ISO 9001, 14001, 45001, and 27001 certifications, background-checked personnel, value-first disposition planning, and TraceTech client visibility. The company supports organizations throughout California and the Western United States.",
       },
     ],
   },
