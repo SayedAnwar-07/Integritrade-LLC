@@ -50,12 +50,17 @@ export default function Parallax({
       const range = viewport / 2 + rect.height / 2;
       const progress = Math.max(-1, Math.min(1, distance / range));
 
-      const shift = progress * speed * 100;
+      // Whole pixels only. A fractional translate (12.37px) lands the promoted
+      // layer off the device pixel grid, and the browser resamples everything
+      // inside it — which showed up as a visibly soft dashboard screenshot on
+      // /tracetech/ while the same file opened in a tab was sharp. Rounding
+      // costs nothing perceptually at these speeds and keeps text crisp.
+      const shift = Math.round(progress * speed * 100);
       const angle = tilt ? Math.max(0, progress) * tilt : 0;
 
       el.style.transform = angle
-        ? `perspective(1200px) translate3d(0, ${shift.toFixed(2)}px, 0) rotateX(${angle.toFixed(2)}deg)`
-        : `translate3d(0, ${shift.toFixed(2)}px, 0)`;
+        ? `perspective(1200px) translate3d(0, ${shift}px, 0) rotateX(${angle.toFixed(2)}deg)`
+        : `translate3d(0, ${shift}px, 0)`;
     };
 
     const request = () => {

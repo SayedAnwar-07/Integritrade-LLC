@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
 import Script from "next/script"
-import Process from "@/components/services/Process"
+// Ian asked on 2026-09-20 to pull the four-step process section. Kept, not
+// deleted, so it can be dropped back in without rebuilding it.
+// import Process from "@/components/services/Process"
 import ServiceCards from "@/components/services/ServiceCards"
 import ServicesCTA from "@/components/services/Servicescta"
 import { decisionGuide, servicesData, valueRecoveryDisclaimer } from "@/data/servicesData"
@@ -19,7 +21,7 @@ const NAV_SECTIONS = [
   { id: "compare", label: "What's Included" },
   { id: "decision-guide", label: "Decision Guide" },
   { id: "eligibility", label: "Eligibility" },
-  { id: "process", label: "Process" },
+  // { id: "process", label: "Process" },
 ];
 
 export const metadata: Metadata = {
@@ -300,9 +302,14 @@ export default function ServicesPage() {
             </ScrollLoader>
         </section>
         
+            {/* Removed at Ian's request on 2026-09-20. Left in place, commented,
+                so it can be restored by uncommenting this block, the import at
+                the top of the file, and the "process" entry in NAV_SECTIONS. */}
+            {/*
             <section id="process" className="scroll-mt-28">
-          <Process />
-        </section>
+              <Process />
+            </section>
+            */}
 
             <section className="mt-20">
               <ServicesCTA />

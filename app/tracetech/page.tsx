@@ -22,6 +22,7 @@ import {
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import ScrollLoader from "@/components/shared/ScrollLoader";
+import ApprovedOutcomes from "@/public/images/tracetech/approved-outcomes.webp";
 import IndustryFAQ from "@/components/industries/IndustryFAQ";
 import FAQSchema from "@/components/industries/FAQSchema";
 import SectionFloatNav from "@/components/shared/SectionFloatNav";
@@ -91,25 +92,6 @@ const FEATURES = [
     icon: Leaf,
     title: "Sustainability and CO2e reporting",
     desc: "Review estimated CO2e impact associated with documented reuse, remarketing, recycling, and destruction pathways. These estimates help sustainability teams understand documented lifecycle outcomes.",
-  },
-];
-
-const WORKFLOW = [
-  {
-    label: "Asset received",
-    line: "Customer asset tag and Integritrade tracking tag are connected.",
-  },
-  {
-    label: "Requirement identified",
-    line: "The project's approved handling instruction is associated with the asset.",
-  },
-  {
-    label: "Correct workflow shown",
-    line: "The next approved action is visible at scan time.",
-  },
-  {
-    label: "Outcome documented",
-    line: "Processing status and available records are added to the project view.",
   },
 ];
 
@@ -228,16 +210,18 @@ export default function TraceTechPage() {
         />
 
         <div className="relative mx-auto max-w-[1400px] px-4 pt-16 sm:px-6 lg:px-8 lg:pt-20">
-          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+          {/* 5/7 rather than 50/50: the dashboard screenshot is a wide
+              1621x972, so it needs the larger share to stay readable. */}
+          <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14">
 
             {/* Copy */}
-            <ScrollLoader>
+            <ScrollLoader className="min-w-0 lg:col-span-5">
               <div>
-                <h1 className="font-serif text-4xl leading-[1.08] tracking-tight text-stone-900 dark:text-white sm:text-5xl">
+                <h1 className="font-serif text-[2rem] leading-[1.1] tracking-tight text-stone-900 dark:text-white sm:text-[2.5rem] lg:text-[2.6rem]">
                   Your ITAD project should not become a black box after pickup.
                 </h1>
 
-                <p className="mt-6 max-w-xl text-[16px] leading-relaxed text-stone-600 dark:text-slate-300">
+                <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-stone-600 dark:text-slate-300">
                   TraceTech is Integritrade&apos;s proprietary ITAD client portal and processing
                   platform. It connects your assets, service requirements, project records,
                   documentation, and value-recovery results in one place, giving authorized teams
@@ -262,7 +246,7 @@ export default function TraceTechPage() {
             </ScrollLoader>
 
             {/* Dashboard */}
-            <ScrollLoader delay={0.1}>
+            <ScrollLoader delay={0.1} className="min-w-0 lg:col-span-7">
               <Parallax speed={0.04}>
                 <div className="relative">
                   <div
@@ -272,10 +256,10 @@ export default function TraceTechPage() {
                   <Image
                     src="/images/tracetech/dashboard.webp"
                     alt="TraceTech client dashboard showing project status, asset disposition, certificates, and estimated CO2e impact (sample data)"
-                    width={1568}
-                    height={1474}
+                    width={1621}
+                    height={972}
                     priority
-                    sizes="(max-width:1024px) 100vw, 620px"
+                    sizes="(max-width:1024px) 100vw, 800px"
                     className="relative h-auto w-full rounded-xl border border-black/5 shadow-2xl ring-1 ring-black/5 dark:border-white/10 dark:ring-white/10"
                   />
                 </div>
@@ -386,38 +370,50 @@ export default function TraceTechPage() {
 
             {/* ── Your exact rules ──────────────────────────────────── */}
             <section id="rules" className="scroll-mt-28 pt-24">
+              {/* Heading and body are live text, not baked into the artwork, so
+                  they scale, reflow and get indexed. Written in second person on
+                  Ian's note: the reader is a client already, not "a client". */}
               <ScrollLoader>
-                <div className="max-w-3xl">
+                <div className="mx-auto max-w-3xl text-center">
                   <h2 className="font-serif text-3xl leading-[1.15] tracking-tight text-stone-900 dark:text-white sm:text-4xl">
-                    Your Exact Rules, Followed at Every Scan
+                    One project can have different approved outcomes. TraceTech keeps them clear.
                   </h2>
                   <p className="mt-6 text-[16px] leading-relaxed text-stone-600 dark:text-slate-300">
-                    Whether you require physical shredding for sensitive drives, certified wiping
-                    for laptop redeployment, or remarketing to recover value, you define the rules.
-                    TraceTech ties your custom requirements directly to each asset record,
-                    instantly prompting our technicians with your exact instructions the moment a
-                    tag is scanned.
+                    Your project can call for several outcomes at once: physical destruction for
+                    specified media, erasure and reuse evaluation for eligible laptops, remarketing
+                    for approved equipment, and recycling for anything non-recoverable. TraceTech
+                    ties each of those requirements to your project and to the individual asset
+                    record, so our technicians see your instruction the moment a tag is scanned.
                   </p>
                 </div>
               </ScrollLoader>
 
-              <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-                {WORKFLOW.map((w, i) => (
-                  <ScrollLoader key={w.label} delay={i * 0.08}>
-                    <div className="h-full rounded-md border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-dark-secondary">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-sm font-bold text-white">
-                        {i + 1}
-                      </span>
-                      <h3 className="mt-4 font-serif text-lg text-gray-900 dark:text-white">
-                        {w.label}
-                      </h3>
-                      <p className="mt-2 text-[14px] leading-relaxed text-stone-600 dark:text-gray-300">
-                        {w.line}
-                      </p>
-                    </div>
-                  </ScrollLoader>
-                ))}
-              </div>
+              {/* Haseeb's artwork, diagram only.
+
+                  Sat on a panel in the graphic's own background colour rather
+                  than dropped straight onto the page. The artwork is warm cream
+                  (#f6f5ec) and the page is cool grey (#f4f4f5): nine points
+                  apart on blue, which is just enough to read as a pasted
+                  rectangle. Matching the panel to the image removes the seam,
+                  and the padding and radius make it a deliberate figure. Its
+                  content runs to within 2px of the top edge, so fading the
+                  edges instead would have clipped the diagram.
+
+                  The panel stays cream in dark mode on purpose: the artwork is
+                  drawn for a light background, so inverting the surround would
+                  leave a glowing rectangle. A light figure on a dark page is
+                  the normal treatment for a diagram. */}
+              <ScrollLoader>
+                <figure className="mt-12 overflow-hidden rounded-2xl bg-[#f6f5ec] p-4 ring-1 ring-black/[0.04] sm:p-8 dark:ring-white/10">
+                  <Image
+                    src={ApprovedOutcomes}
+                    alt="An asset is received and its customer and Integritrade tags are connected, the approved handling requirement is identified, the correct workflow is shown when the tag is scanned, branching to physical destruction, erase and reuse evaluation, remarketing or recycling, and the outcome is documented in the project view."
+                    sizes="(max-width: 1024px) 100vw, 1100px"
+                    placeholder="blur"
+                    className="h-auto w-full"
+                  />
+                </figure>
+              </ScrollLoader>
             </section>
 
             {/* ── Evidence ──────────────────────────────────────────── */}

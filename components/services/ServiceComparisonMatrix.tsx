@@ -16,9 +16,24 @@ import { Check, X } from "lucide-react";
  */
 
 const COLUMNS = [
-  { key: "basic", label: "Basic Recycling", href: "/services/basic-electronics-recycling/" },
-  { key: "destruction", label: "Data Destruction", href: "/services/data-destruction-services/" },
-  { key: "itad", label: "IT Asset Disposition", href: "/services/it-asset-disposition/" },
+  {
+    key: "basic",
+    label: "Basic Recycling",
+    short: "Basic",
+    href: "/services/basic-electronics-recycling/",
+  },
+  {
+    key: "destruction",
+    label: "Data Destruction",
+    short: "Destruction",
+    href: "/services/data-destruction-services/",
+  },
+  {
+    key: "itad",
+    label: "IT Asset Disposition",
+    short: "ITAD",
+    href: "/services/it-asset-disposition/",
+  },
 ] as const;
 
 type ColumnKey = (typeof COLUMNS)[number]["key"];
@@ -87,8 +102,68 @@ export default function ServiceComparisonMatrix() {
         each, then pick the level that matches your compliance and recovery requirements.
       </p>
 
-      {/* Table scrolls on narrow screens rather than squeezing the columns. */}
-      <div className="relative mt-10 overflow-x-auto rounded-xl ring-1 ring-black/5 dark:ring-white/10">
+      {/* Mobile: one card per row, with the three levels as a 3-up strip.
+          A 640px table in a horizontal scroller technically "worked" here, but
+          nobody swipes a table sideways on a phone, so the two columns off the
+          right edge were effectively invisible. This keeps the comparison and
+          loses the scrollbar. */}
+      <div className="mt-10 space-y-8 md:hidden">
+        {ROWS.map((section) => (
+          <div key={section.group}>
+            <h3 className="text-[12px] font-bold uppercase tracking-[0.14em] text-gray-500 dark:text-gray-400">
+              {section.group}
+            </h3>
+
+            <div className="mt-3 space-y-3">
+              {section.items.map((item) => (
+                <div
+                  key={item.label}
+                  className="rounded-xl bg-white p-4 ring-1 ring-black/5 dark:bg-dark-secondary dark:ring-white/10"
+                >
+                  <p className="text-[14px] font-medium leading-snug text-stone-800 dark:text-gray-200">
+                    {item.label}
+                  </p>
+
+                  <div className="mt-3 grid grid-cols-3 gap-2">
+                    {COLUMNS.map((c) => {
+                      const included = item.included.includes(c.key);
+                      return (
+                        <div
+                          key={c.key}
+                          className="flex flex-col items-center gap-1.5 rounded-md bg-gray-50 py-2.5 dark:bg-white/5"
+                        >
+                          <span className="text-[10px] font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                            {c.short}
+                          </span>
+                          {included ? (
+                            <Check
+                              className="h-4 w-4 text-emerald-600 dark:text-emerald-400"
+                              strokeWidth={2.5}
+                              aria-hidden="true"
+                            />
+                          ) : (
+                            <X
+                              className="h-4 w-4 text-red-500/80 dark:text-red-400/80"
+                              strokeWidth={2.5}
+                              aria-hidden="true"
+                            />
+                          )}
+                          <span className="sr-only">
+                            {item.label} is {included ? "included" : "not included"} in {c.label}
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Tablet and up: the real table, which has room for it. */}
+      <div className="relative mt-10 hidden overflow-x-auto rounded-xl ring-1 ring-black/5 dark:ring-white/10 md:block">
         <table className="w-full min-w-[640px] border-collapse bg-white text-left dark:bg-dark-secondary">
           <caption className="sr-only">
             Comparison of what is included in Integritrade&apos;s Basic Recycling, Data Destruction,

@@ -31,6 +31,10 @@ import DeletedDataRecovery from "@/components/blogs/DeletedDataRecovery/page";
 import ServerDataCenterDisposal from "@/components/blogs/ServerDataCenterDisposal/page";
 import CutlinesInITAD from "@/components/blogs/cutlines-in-itad/page";
 import BlogBreadcrumb from "@/components/shared/BlogBreadcrumb";
+// Newer posts come from Ian's markdown through a shared layout rather than a
+// bespoke component each. See scripts/import-blog-articles.mjs.
+import ArticleLayout from "@/components/blogs/ArticleLayout";
+import { getArticleBySlug } from "@/data/blogArticles";
 import DeceptiveAdvertisingCertifications from "@/components/blogs/DeceptiveAdvertisingCertifications/page";
 import ReuseFocusedItadVsScrapRecycling from "@/components/blogs/ReuseFocusedItadVsScrapRecycling/page";
 
@@ -72,6 +76,10 @@ const BLOG_SLUGS = [
   "server-data-center-equipment-disposal-guide",
   "deceptive-advertising-itad-electronics-recycling-certifications",
   "reuse-focused-itad-vs-scrap-recycling",
+  "how-to-assess-electronics-recycling-it-asset-disposal-provider",
+  "bfsi-it-asset-disposition-financial-services-data-destruction",
+  "law-firm-it-asset-disposition-legal-data-destruction",
+  "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction",
 ] as const;
 
 export function generateStaticParams() {
@@ -110,7 +118,11 @@ const BLOG_COMPONENTS: Record<string, React.ReactElement> = {
   "is-it-possible-to-recover-deleted-data": <DeletedDataRecovery />,
   "server-data-center-equipment-disposal-guide": <ServerDataCenterDisposal />,
   "deceptive-advertising-itad-electronics-recycling-certifications":<DeceptiveAdvertisingCertifications />,
-  "reuse-focused-itad-vs-scrap-recycling": <ReuseFocusedItadVsScrapRecycling />
+  "reuse-focused-itad-vs-scrap-recycling": <ReuseFocusedItadVsScrapRecycling />,
+  "how-to-assess-electronics-recycling-it-asset-disposal-provider": <ArticleLayout article={getArticleBySlug("how-to-assess-electronics-recycling-it-asset-disposal-provider")!} />,
+  "bfsi-it-asset-disposition-financial-services-data-destruction": <ArticleLayout article={getArticleBySlug("bfsi-it-asset-disposition-financial-services-data-destruction")!} />,
+  "law-firm-it-asset-disposition-legal-data-destruction": <ArticleLayout article={getArticleBySlug("law-firm-it-asset-disposition-legal-data-destruction")!} />,
+  "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction": <ArticleLayout article={getArticleBySlug("ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction")!} />,
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

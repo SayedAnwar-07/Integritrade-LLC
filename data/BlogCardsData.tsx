@@ -1,3 +1,7 @@
+import ITADVendorCover from "@/public/blogs/ITAD_Vendor.jpg";
+import BfsiCover from "@/public/blogs/bloge-cover.jpg";
+import LawFirmCover from "@/public/blogs/value-data-security.webp";
+import FerpaCover from "@/public/blogs/blogs-cover.jpg";
 import decommissionBanner from "@/public/blogs/decommission-computers.jpg";
 import videoTape from "@/public/blogs/video-tape.jpg";
 import rohsImage from "@/public/blogs/rohs-compliance.jpg";
@@ -273,5 +277,33 @@ export const AllBlogCards: BlogCard[] = [
     description:"Learn why a reuse-focused ITAD provider can protect retired technology, recover more value, and manage end-of-life electronics responsibly without compromising data security.",
     date:"September 15, 2026",
     slug:"reuse-focused-itad-vs-scrap-recycling",
+  },
+  {
+    image: ITADVendorCover,
+    title: "How to Assess an Electronics Recycling or IT Asset Disposal Provider Before You Sign",
+    description: "Learn how to evaluate an electronics recycler or IT asset disposal provider. Verify R2 or e-Stewards certification, accredited ISO certificates, data-destruction equipment, reporting, and downstream accountability.",
+    date: "September 20, 2026",
+    slug: "how-to-assess-electronics-recycling-it-asset-disposal-provider",
+  },
+  {
+    image: BfsiCover,
+    title: "BFSI IT Asset Disposition: Financial Services Data Destruction, ITAD, and Electronics Recycling",
+    description: "A practical guide to financial services ITAD, bank data destruction, insurance computer disposal, vendor due diligence, tracking, value recovery, and qualified electronics recycling.",
+    date: "September 20, 2026",
+    slug: "bfsi-it-asset-disposition-financial-services-data-destruction",
+  },
+  {
+    image: LawFirmCover,
+    title: "Law Firm IT Asset Disposition: A Practical Guide to Legal Data Destruction and Secure Technology Recycling",
+    description: "Learn how law firms can plan computer disposal, legal data destruction, value recovery, and secure technology recycling with documented ITAD workflows.",
+    date: "September 20, 2026",
+    slug: "law-firm-it-asset-disposition-legal-data-destruction",
+  },
+  {
+    image: FerpaCover,
+    title: "FERPA-Focused School IT Asset Disposition: Chromebook Recycling and Student Data Destruction",
+    description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
+    date: "September 20, 2026",
+    slug: "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction",
   },
 ];

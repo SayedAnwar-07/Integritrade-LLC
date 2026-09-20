@@ -1419,4 +1419,120 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       },
     },
   },
+  "how-to-assess-electronics-recycling-it-asset-disposal-provider": {
+    title: "How to Choose an Electronics Recycling & ITAD Provider | Integritrade",
+    description: "Learn how to evaluate an electronics recycler or IT asset disposal provider. Verify R2 or e-Stewards certification, accredited ISO certificates, data-destruction equipment, reporting, and downstream accountability.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/how-to-assess-electronics-recycling-it-asset-disposal-provider`,
+    },
+    openGraph: {
+      title: "How to Choose an Electronics Recycling & ITAD Provider | Integritrade",
+      description: "Learn how to evaluate an electronics recycler or IT asset disposal provider. Verify R2 or e-Stewards certification, accredited ISO certificates, data-destruction equipment, reporting, and downstream accountability.",
+      url: `${BASE_URL}/blogs/how-to-assess-electronics-recycling-it-asset-disposal-provider`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Two professionals reviewing an IT asset disposition process on screen in a warehouse of racked equipment",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "How to Choose an Electronics Recycling & ITAD Provider | Integritrade",
+      description: "Learn how to evaluate an electronics recycler or IT asset disposal provider. Verify R2 or e-Stewards certification, accredited ISO certificates, data-destruction equipment, reporting, and downstream accountability.",
+      images: [OG_IMAGE],
+    },
+  },
+  "bfsi-it-asset-disposition-financial-services-data-destruction": {
+    title: "BFSI IT Asset Disposition and Bank Data Destruction | Integritrade",
+    description: "A practical guide to financial services ITAD, bank data destruction, insurance computer disposal, vendor due diligence, tracking, value recovery, and qualified electronics recycling.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/bfsi-it-asset-disposition-financial-services-data-destruction`,
+    },
+    openGraph: {
+      title: "BFSI IT Asset Disposition and Bank Data Destruction | Integritrade",
+      description: "A practical guide to financial services ITAD, bank data destruction, insurance computer disposal, vendor due diligence, tracking, value recovery, and qualified electronics recycling.",
+      url: `${BASE_URL}/blogs/bfsi-it-asset-disposition-financial-services-data-destruction`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Rows of data-center racks lit in blue, representing retired financial services IT infrastructure",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "BFSI IT Asset Disposition and Bank Data Destruction | Integritrade",
+      description: "A practical guide to financial services ITAD, bank data destruction, insurance computer disposal, vendor due diligence, tracking, value recovery, and qualified electronics recycling.",
+      images: [OG_IMAGE],
+    },
+  },
+  "law-firm-it-asset-disposition-legal-data-destruction": {
+    title: "Law Firm IT Asset Disposition & Legal Data Destruction",
+    description: "Learn how law firms can plan computer disposal, legal data destruction, value recovery, and secure technology recycling with documented ITAD workflows.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/law-firm-it-asset-disposition-legal-data-destruction`,
+    },
+    openGraph: {
+      title: "Law Firm IT Asset Disposition & Legal Data Destruction",
+      description: "Learn how law firms can plan computer disposal, legal data destruction, value recovery, and secure technology recycling with documented ITAD workflows.",
+      url: `${BASE_URL}/blogs/law-firm-it-asset-disposition-legal-data-destruction`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Secure handling of retired legal technology and data-bearing devices",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Law Firm IT Asset Disposition & Legal Data Destruction",
+      description: "Learn how law firms can plan computer disposal, legal data destruction, value recovery, and secure technology recycling with documented ITAD workflows.",
+      images: [OG_IMAGE],
+    },
+  },
+  "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction": {
+    title: "FERPA-Focused School ITAD, Chromebook Recycling & Student Data Destruction | Integritrade",
+    description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction`,
+    },
+    openGraph: {
+      title: "FERPA-Focused School ITAD, Chromebook Recycling & Student Data Destruction | Integritrade",
+      description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
+      url: `${BASE_URL}/blogs/ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Circuit boards arranged into a recycling symbol surrounded by retired electronic devices",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "FERPA-Focused School ITAD, Chromebook Recycling & Student Data Destruction | Integritrade",
+      description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
+      images: [OG_IMAGE],
+    },
+  },
 };

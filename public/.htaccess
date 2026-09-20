@@ -41,6 +41,14 @@ RewriteRule ^services/junk-removal-cleanouts/?$ /services/ [R=301,L]
 RewriteRule ^services/business-liquidation/?$ /services/ [R=301,L]
 RewriteRule ^services/commercial-liquidation-asset-recovery/?$ /services/ [R=301,L]
 
+# ── Device pages have no index of their own (2026-09-20) ──
+# Ian asked for the device list to sit inside Basic Electronics Recycling
+# rather than behind its own nav dropdown, so /what-we-recycle/ is a bare
+# directory. Send it to the page that actually lists the devices, and never
+# let Apache serve an autoindex of it.
+Options -Indexes
+RewriteRule ^what-we-recycle/?$ /services/basic-electronics-recycling/ [R=301,L]
+
 # ── Legacy top-level pages ──
 RewriteRule ^contact/?$ /service-book/ [R=301,L]
 RewriteRule ^resources/?$ /blogs/ [R=301,L]

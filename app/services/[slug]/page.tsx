@@ -9,6 +9,7 @@ import { servicesData, getServiceBySlug } from "@/data/servicesData";
 import ServicesCTA from "@/components/services/Servicescta";
 import RemoteITAssetRecoveryContent from "@/components/services/RemoteITAssetRecoveryContent";
 import ScrollLoader from "@/components/shared/ScrollLoader";
+import ProductGrid from "@/components/products/ProductGrid";
 import PageHeader from "@/components/shared/PageHeader";
 
 export async function generateMetadata(props: {
@@ -237,6 +238,27 @@ export default async function ServicePage(props: {
                   );
                 })}
               </nav>
+
+              {/* Ian asked for the devices section to be reachable from the
+                  quick sidebar, not just by scrolling the page. */}
+              {service.slug === "basic-electronics-recycling" && (
+                <>
+                  <p className="mb-4 mt-10 font-mono text-[10px] uppercase tracking-[0.24em] text-gray-500 dark:text-gray-400">
+                    On This Page
+                  </p>
+                  <a
+                    href="#devices"
+                    className="click-feel group flex items-baseline gap-4 border-b border-gray-200 py-3.5 text-gray-700 transition-colors hover:text-gray-900 dark:border-gray-800 dark:text-gray-300 dark:hover:text-white"
+                  >
+                    <span className="font-mono text-[10px] tabular-nums tracking-widest text-gray-400 dark:text-gray-500">
+                      01
+                    </span>
+                    <span className="flex-1 font-serif text-[15px] leading-snug">
+                      Devices we accept
+                    </span>
+                  </a>
+                </>
+              )}
             </div>
           </aside>
 
@@ -498,6 +520,37 @@ export default async function ServicePage(props: {
             )}
           </div>
         </div>
+
+        {/* =====================================================
+            DEVICES WE ACCEPT
+
+            Ian asked for the device list to live inside an existing
+            page rather than behind its own nav dropdown, and this is
+            the page it belongs on. The individual device pages hang
+            off this grid.
+        ===================================================== */}
+
+        {service.slug === "basic-electronics-recycling" && (
+          <div id="devices" className="mt-20 scroll-mt-28 lg:mt-24">
+            <ScrollLoader>
+              <div className="max-w-2xl">
+                <h2 className="font-serif text-3xl leading-[1.15] tracking-tight text-stone-900 dark:text-white sm:text-4xl">
+                  Devices we accept
+                </h2>
+                <p className="mt-5 text-[16px] leading-relaxed text-stone-600 dark:text-slate-300">
+                  How we handle each one, what comes off it, and what it is worth at end of
+                  life.
+                </p>
+              </div>
+            </ScrollLoader>
+
+            <div className="mt-12">
+              <ScrollLoader>
+                <ProductGrid />
+              </ScrollLoader>
+            </div>
+          </div>
+        )}
 
         {/* =====================================================
             CTA
