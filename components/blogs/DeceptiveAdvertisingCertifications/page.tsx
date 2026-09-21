@@ -293,19 +293,19 @@ export default function DeceptiveAdvertisingCertifications() {
 
                   <p className="custom-text-center">
                     Integritrade provides end-to-end IT asset disposition,{" "}
-                    <a href="/services/data-destruction-services" className="underline font-semibold hover:underline-offset-4">
+                    <a href="/services/data-destruction-services/" className="underline font-semibold hover:underline-offset-4">
                       data destruction services
                     </a>
                     ,{" "}
-                    <a href="/services/it-asset-disposition" className="underline font-semibold hover:underline-offset-4">
+                    <a href="/services/it-asset-disposition/" className="underline font-semibold hover:underline-offset-4">
                       corporate IT equipment buyback
                     </a>
                     , direct purchase, revenue-share remarketing,{" "}
-                    <a href="/services/basic-electronics-recycling" className="underline font-semibold hover:underline-offset-4">
+                    <a href="/services/basic-electronics-recycling/" className="underline font-semibold hover:underline-offset-4">
                       electronics recycling
                     </a>
                     ,{" "}
-                    <a href="/services/it-asset-disposition" className="underline font-semibold hover:underline-offset-4">
+                    <a href="/services/it-asset-disposition/" className="underline font-semibold hover:underline-offset-4">
                       data-center decommissioning
                     </a>
                     , lease-return preparation, remote recovery, reverse logistics, returns/recommerce processing, and prototype or demanufacturing destruction services.
