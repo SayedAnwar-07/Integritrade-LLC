@@ -26,7 +26,8 @@ const INITIAL: Fields = {
 
 const SERVICE_OPTIONS = [
   { value: '', label: 'Select a service (optional)' },
-  { value: 'Basic Recycling', label: 'Basic Recycling' },
+  // The value is what lands in the enquiry email, so it matches the label.
+  { value: 'Basic Electronics Recycling', label: 'Basic Electronics Recycling' },
   { value: 'Certified Data Destruction', label: 'Certified Data Destruction' },
   { value: 'IT Asset Disposition', label: 'IT Asset Disposition' },
   { value: 'Data Center Decommissioning', label: 'Data Center Decommissioning' },

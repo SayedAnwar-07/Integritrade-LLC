@@ -520,6 +520,7 @@ export default function Navbar() {
             </div>
           </Link>
 
+
           {/* ================== DESKTOP NAV with sliding pill (lg+) ================== */}
           <nav
             ref={navRef}
@@ -587,9 +588,19 @@ export default function Navbar() {
             </div>
           </nav>
 
-          {/* ================== RIGHT SIDE (lg+) ================== */}
-          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
+          {/* ================== RIGHT SIDE (lg+) ==================
+              The theme toggle is a preference control, not an action, so it
+              reads as the tail of the navigation rather than a sibling of the
+              CTA. A hairline divider and a wider gap fence the button off, so
+              nobody reaching for Contact Us lands on the toggle. */}
+          <div className="hidden lg:flex items-center flex-shrink-0">
             <ModeToggle />
+
+            <span
+              aria-hidden="true"
+              className="mx-4 h-6 w-px bg-black/10 dark:bg-white/15"
+            />
+
             <PrimaryButton href="/service-book" testId="button-get-quote">
               Contact Us
             </PrimaryButton>

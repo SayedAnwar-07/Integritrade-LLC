@@ -92,12 +92,12 @@ export const decisionGuide: DecisionGuideEntry[] = [
   {
     scenario:
       "We already destroyed or removed the drives and just need the electronics recycled.",
-    recommendation: "Basic Recycling",
+    recommendation: "Basic Electronics Recycling",
   },
   {
     scenario:
       "We need a recycling confirmation or weight ticket, but not serialized destruction records.",
-    recommendation: "Basic Recycling",
+    recommendation: "Basic Electronics Recycling",
   },
   {
     scenario:
@@ -145,20 +145,20 @@ export const servicesData: Service[] = [
     metaTitle: "Basic Electronics Recycling Services Nationwide",
     metaDescription:
       "Responsible e-waste recycling for organizations that have already handled data destruction internally. Weight tickets and recycling confirmation included. R2v3-aligned domestic processing.",
-    pageTitle: "Basic Recycling",
+    pageTitle: "Basic Electronics Recycling",
     pageSubtitle:
       "For organizations that have already handled data destruction internally and simply need a responsible vendor to remove and process retired electronics.",
     heroTitle:
       "Responsible E-Waste Recycling When Data Destruction Is Already Handled",
     heroDescription:
-      "Basic Recycling is the right fit when your organization has already handled data destruction internally and simply needs a responsible vendor to remove and process retired electronics. This service is designed for low-complexity projects where the primary goal is to keep e-waste out of improper disposal channels and receive confirmation that the material was recycled. With Basic Recycling, Integritrade collects or receives the equipment, processes the material through responsible recycling channels, and provides a weight ticket or recycling confirmation for your records.",
+      "Basic Electronics Recycling is the right fit when your organization has already handled data destruction internally and simply needs a responsible vendor to remove and process retired electronics. This service is designed for low-complexity projects where the primary goal is to keep e-waste out of improper disposal channels and receive confirmation that the material was recycled. With Basic Electronics Recycling, Integritrade collects or receives the equipment, processes the material through responsible recycling channels, and provides a weight ticket or recycling confirmation for your records.",
     sections: [
       {
-        title: "When Basic Recycling Is the Right Fit",
+        title: "When Basic Electronics Recycling Is the Right Fit",
         content: [
-          "Basic Recycling is designed for low-complexity projects where the primary goal is to keep e-waste out of improper disposal channels and receive confirmation that the material was recycled.",
+          "Basic Electronics Recycling is designed for low-complexity projects where the primary goal is to keep e-waste out of improper disposal channels and receive confirmation that the material was recycled.",
           "This option is ideal for companies that have already wiped, destroyed, or removed data-bearing media before release and do not require serialized asset reporting, certificates of destruction, remarketing, or resale recovery.",
-          "Choose Basic Recycling if your data destruction is already complete, your equipment has no resale objective, and your main requirement is responsible e-waste handling with basic recycling documentation.",
+          "Choose Basic Electronics Recycling if your data destruction is already complete, your equipment has no resale objective, and your main requirement is responsible e-waste handling with basic recycling documentation.",
         ],
       },
       {
@@ -213,7 +213,7 @@ export const servicesData: Service[] = [
     ],
     serviceLevel: {
       tier: "01",
-      label: "Basic Recycling",
+      label: "Basic Electronics Recycling",
       bestFor:
         "Organizations that have already handled data destruction and only need responsible e-waste processing.",
       includes:
@@ -249,7 +249,7 @@ export const servicesData: Service[] = [
     heroTitle:
       "Documented Destruction for Data-Bearing Assets That Need More Than a Recycling Receipt",
     heroDescription:
-      "Data Destruction Services are built for organizations that need more than a recycling receipt. This service level is best for companies, schools, healthcare providers, financial institutions, public agencies, and other regulated or policy-driven organizations that require specific destruction methods, documented proof, and a clear record of how data-bearing assets were handled. This package includes Basic Recycling and adds the data destruction services required for your project from serialized certificates to 2mm mandated physical destruction.",
+      "Data Destruction Services are built for organizations that need more than a recycling receipt. This service level is best for companies, schools, healthcare providers, financial institutions, public agencies, and other regulated or policy-driven organizations that require specific destruction methods, documented proof, and a clear record of how data-bearing assets were handled. This package includes Basic Electronics Recycling and adds the data destruction services required for your project from serialized certificates to 2mm mandated physical destruction.",
     sections: [
       {
         title: "Built for Compliance, Policy & Audit Requirements",
@@ -319,7 +319,7 @@ export const servicesData: Service[] = [
       bestFor:
         "Organizations that need specific destruction requirements for compliance, policy, or audit reasons especially when assets are older or below the recovery cutline.",
       includes:
-        "Everything in Basic Recycling, plus selected data destruction services such as physical destruction, 2mm mandated destruction, videotaped destruction, serialized certificates, and media-specific handling.",
+        "Everything in Basic Electronics Recycling, plus selected data destruction services such as physical destruction, 2mm mandated destruction, videotaped destruction, serialized certificates, and media-specific handling.",
       documentation:
         "Serialized certificates of destruction or other required destruction records, depending on the selected service.",
       valueRecovery: "Not included for assets below the technology cutline.",
@@ -673,7 +673,7 @@ export const servicesData: Service[] = [
         ],
       },
       {
-        title: "Why Choose Controlled Destruction Instead of Basic Recycling?",
+        title: "Why Choose Controlled Destruction Instead of Basic Electronics Recycling?",
         intro:
           "Basic recycling may be acceptable for low-risk commodity material, but not for sensitive devices. If you need to protect IP, data, brand integrity, or compliance records, a pickup receipt isn't enough a controlled process gives you a defined workflow, witnessed shredding, and a clearer record of what happened.",
         compare: {

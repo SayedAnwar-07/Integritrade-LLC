@@ -42,7 +42,7 @@ const INITIAL_DATA: FormData = {
 type Option = { value: string; label: string }
 
 const SERVICE_OPTIONS: Option[] = [
-  { value: 'basic-recycling', label: 'Basic Recycling' },
+  { value: 'basic-recycling', label: 'Basic Electronics Recycling' },
   { value: 'data-destruction-services', label: 'Certified Data Destruction' },
   { value: 'it-asset-disposition', label: 'IT Asset Disposition' },
   { value: 'data-center-decommissioning', label: 'Data Center Decommissioning' },

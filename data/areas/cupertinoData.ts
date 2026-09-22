@@ -72,7 +72,7 @@ export const cupertinoData: ServiceArea = {
         },
         {
           "heading": "Full Service Solutions for Every Need",
-          "body": "Whether your organization needs Basic Recycling for previously sanitized equipment, compliance grade Data Destruction, or a Full ITAD Package with value recovery, Integritrade has a tailored solution. We also offer Demanufacturing and Prototype Destruction for highly sensitive intellectual property requiring physical destruction with witnessed oversight. Choose the certified, secure, and accountable partner for electronics recycling in Cupertino."
+          "body": "Whether your organization needs Basic Electronics Recycling for previously sanitized equipment, compliance grade Data Destruction, or a Full ITAD Package with value recovery, Integritrade has a tailored solution. We also offer Demanufacturing and Prototype Destruction for highly sensitive intellectual property requiring physical destruction with witnessed oversight. Choose the certified, secure, and accountable partner for electronics recycling in Cupertino."
         },
         {
           "heading": "Frequently Asked Questions About Electronics Recycling in Cupertino",

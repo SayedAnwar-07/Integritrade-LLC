@@ -6,7 +6,7 @@ import { Check, X } from "lucide-react";
  * What each service level includes, at a glance.
  *
  * Every row is derived from the `serviceLevel` entries in servicesData: the
- * tiers are cumulative there ("Everything in Basic Recycling, plus...", then
+ * tiers are cumulative there ("Everything in Basic Electronics Recycling, plus...", then
  * "Everything in Data Destruction Services, plus..."), so an item introduced at
  * one tier is included in every tier above it.
  *
@@ -18,7 +18,7 @@ import { Check, X } from "lucide-react";
 const COLUMNS = [
   {
     key: "basic",
-    label: "Basic Recycling",
+    label: "Basic Electronics Recycling",
     short: "Basic",
     href: "/services/basic-electronics-recycling/",
   },
@@ -166,8 +166,8 @@ export default function ServiceComparisonMatrix() {
       <div className="relative mt-10 hidden overflow-x-auto rounded-xl ring-1 ring-black/5 dark:ring-white/10 md:block">
         <table className="w-full min-w-[640px] border-collapse bg-white text-left dark:bg-dark-secondary">
           <caption className="sr-only">
-            Comparison of what is included in Integritrade&apos;s Basic Recycling, Data Destruction,
-            and IT Asset Disposition service levels
+            Comparison of what is included in Integritrade&apos;s Basic Electronics Recycling, Data
+            Destruction, and IT Asset Disposition service levels
           </caption>
 
           <thead>
