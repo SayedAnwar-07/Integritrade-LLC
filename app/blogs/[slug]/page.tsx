@@ -151,6 +151,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     ...(metadata || {}),
+    // `absolute` stops the root layout appending " | Integritrade LLC".
+    // All 35 posts carried it, which alone pushed 18 of them past the ~60
+    // characters Google renders, and left several naming the brand twice
+    // because their own title already ended in "| Integritrade".
+    ...(metadata?.title ? { title: { absolute: metadata.title as string } } : {}),
     alternates: {
       canonical: `https://integritradellc.com/blogs/${slug}/`,
     },

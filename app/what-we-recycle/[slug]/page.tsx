@@ -39,7 +39,10 @@ export async function generateMetadata(props: {
   }
 
   return {
-    title: product.metaTitle,
+    // `absolute` stops the root layout appending " | Integritrade LLC".
+    // These metaTitles already ended with it, so every device page shipped
+    // the brand twice and ran to ~78 characters.
+    title: { absolute: product.metaTitle },
     description: product.metaDescription,
     alternates: {
       canonical: `/what-we-recycle/${product.slug}/`,

@@ -58,7 +58,7 @@ export const productsData: Product[] = [
     slug: "laptops",
     name: "Laptops",
     title: "Laptop Recycling",
-    metaTitle: "Laptop Recycling & Data Destruction | Integritrade LLC",
+    metaTitle: "Laptop Recycling & Data Destruction | R2v3 Certified",
     metaDescription:
       "Certified laptop recycling with NIST 800-88 sanitization, lithium battery handling and asset-level reporting. Nationwide pickup from Fresno, CA.",
     intro:
@@ -114,7 +114,7 @@ export const productsData: Product[] = [
     slug: "desktop-computers",
     name: "Desktop Computers",
     title: "Desktop Computer and Workstation Recycling",
-    metaTitle: "Desktop & Workstation Recycling | Integritrade LLC",
+    metaTitle: "Desktop & Workstation Recycling | R2v3 Certified",
     metaDescription:
       "Secure desktop and workstation disposal with drive extraction, NIST 800-88 sanitization and asset-level reporting. R2v3 certified recycling in Fresno, CA.",
     intro:
@@ -166,7 +166,7 @@ export const productsData: Product[] = [
     slug: "servers",
     name: "Servers & Data Center Equipment",
     title: "Server and Data Center Equipment Recycling",
-    metaTitle: "Server & Data Center Recycling | Integritrade LLC",
+    metaTitle: "Server & Data Center Equipment Recycling | R2v3",
     metaDescription:
       "Rack decommissioning with serialized per-drive destruction, chain-of-custody records and value recovery on processors, memory and drives. R2v3 certified.",
     intro:
@@ -219,7 +219,7 @@ export const productsData: Product[] = [
     slug: "hard-drives",
     name: "Hard Drives & Media",
     title: "Hard Drive Destruction and Media Disposal",
-    metaTitle: "Hard Drive Destruction & Media Disposal | Integritrade LLC",
+    metaTitle: "Hard Drive Destruction & Media Disposal | 2 mm",
     metaDescription:
       "Serialized hard drive destruction at 2 mm, plus SSD, tape and optical media. Certificates of Destruction and optional videotaped destruction. NIST 800-88 aligned.",
     intro:
@@ -271,7 +271,7 @@ export const productsData: Product[] = [
     slug: "monitors-and-displays",
     name: "Monitors & Displays",
     title: "Monitor, Display and CRT Recycling",
-    metaTitle: "Monitor, Display & CRT Recycling | Integritrade LLC",
+    metaTitle: "Monitor, Display & CRT Recycling | R2v3 Certified",
     metaDescription:
       "Certified monitor and CRT recycling with leaded glass and mercury backlight handling under California universal waste rules. R2v3 focus material management.",
     intro:
@@ -323,7 +323,7 @@ export const productsData: Product[] = [
     slug: "networking-equipment",
     name: "Networking Equipment",
     title: "Network Equipment Recycling",
-    metaTitle: "Network Equipment Recycling & Config Wiping | Integritrade LLC",
+    metaTitle: "Network Equipment Recycling & Config Wiping",
     metaDescription:
       "Switch, router and firewall disposal with NVRAM and configuration clearing, credential removal and value recovery on enterprise hardware. R2v3 certified.",
     intro:
@@ -375,7 +375,7 @@ export const productsData: Product[] = [
     slug: "printers-and-copiers",
     name: "Printers, Copiers & Plotters",
     title: "Printer, Copier and Plotter Recycling",
-    metaTitle: "Printer & Copier Recycling with Drive Removal | Integritrade LLC",
+    metaTitle: "Printer, Copier & Plotter Recycling | Drive Removal",
     metaDescription:
       "Multifunction printer and copier disposal including internal hard drive location and destruction, toner handling and leased-unit return coordination.",
     intro:
@@ -428,7 +428,7 @@ export const productsData: Product[] = [
     slug: "phones-and-tablets",
     name: "Phones & Tablets",
     title: "Mobile Phone and Tablet Recycling",
-    metaTitle: "Mobile Phone & Tablet Recycling | Integritrade LLC",
+    metaTitle: "Mobile Phone & Tablet Recycling | R2v3 Certified",
     metaDescription:
       "Secure mobile device disposal with MDM and activation lock handling, lithium battery management and value recovery on eligible handsets and tablets.",
     intro:
@@ -480,7 +480,7 @@ export const productsData: Product[] = [
     slug: "batteries-and-ups",
     name: "Batteries & UPS Systems",
     title: "Battery and UPS System Recycling",
-    metaTitle: "Battery & UPS Recycling and Disposal | Integritrade LLC",
+    metaTitle: "Battery & UPS Recycling | DOT Compliant Transport",
     metaDescription:
       "Lithium-ion, lead-acid and UPS battery disposal with DOT-compliant transport, damaged cell isolation and permitted downstream recycling. R2v3 certified.",
     intro:

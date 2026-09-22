@@ -7,7 +7,7 @@ const OG_IMAGE = "https://integritradellc.com/_next/static/media/main-logo.d9561
 export const BLOG_METADATA: Record<string, Metadata> = {
     "decommission-old-computers-it-equipment": {
     title:
-      "How to Properly Decommission Old Computers & Office Equipment",
+      "How to Decommission Old Computers & Office Equipment",
     description:
       "Learn how to safely decommission old computers and office equipment. Follow a secure, compliant step-by-step process for data wiping, recycling, and IT asset disposal.",
     alternates: {
@@ -15,7 +15,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     openGraph: {
       title:
-        "How to Properly Decommission Old Computers & Office Equipment",
+        "How to Decommission Old Computers & Office Equipment",
       description:
         "Learn how to safely decommission old computers and office equipment. Follow a secure, compliant step-by-step process for data wiping, recycling, and IT asset disposal.",
       url: `${BASE_URL}/blogs/decommission-old-computers-it-equipment`,
@@ -34,7 +34,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     twitter: {
       card: "summary_large_image",
       title:
-        "How to Properly Decommission Old Computers & Office Equipment",
+        "How to Decommission Old Computers & Office Equipment",
       description:
         "A secure, compliant guide to decommissioning computers and office equipment.",
       images: [OG_IMAGE],
@@ -131,7 +131,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   "rohs-compliance-electronics-recycling-services":
     {
       title:
-        "What Is RoHS Compliance? Toxic Metals in Electronics Explained",
+        "What Is RoHS Compliance? Toxic Metals Explained",
       description:
         "Learn what RoHS compliance means, which toxic metals are restricted in electronics manufacturing, and how RoHS protects health and the environment.",
       alternates: {
@@ -139,7 +139,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       },
       openGraph: {
         title:
-          "What Is RoHS Compliance? Toxic Metals in Electronics Explained",
+          "What Is RoHS Compliance? Toxic Metals Explained",
         description:
           "Learn what RoHS compliance means, which toxic metals are restricted in electronics manufacturing, and how RoHS protects health and the environment.",
         url: `${BASE_URL}/blogs/rohs-compliance-electronics-recycling-services`,
@@ -151,7 +151,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       twitter: {
         card: "summary_large_image",
         title:
-          "What Is RoHS Compliance? Toxic Metals in Electronics Explained",
+          "What Is RoHS Compliance? Toxic Metals Explained",
         description:
           "Learn what RoHS compliance means, which toxic metals are restricted in electronics manufacturing, and how RoHS protects health and the environment.",
         images: [OG_IMAGE],
@@ -339,14 +339,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "itad-cutlines-revenue-sharing-devices": {
-    title: "ITAD Cutlines Explained | Device Eligibility for Revenue Sharing",
+    title: "ITAD Cutlines: Device Eligibility for Revenue Share",
     description:
       "Learn which devices qualify for ITAD revenue sharing, including MacBooks, Intel laptops, tablets, and phones. Get tips for accelerated buy-back options.",
     alternates: {
       canonical: `${BASE_URL}/blogs/itad-cutlines-revenue-sharing-devices`,
     },
     openGraph: {
-      title: "ITAD Cutlines Explained | Device Eligibility for Revenue Sharing",
+      title: "ITAD Cutlines: Device Eligibility for Revenue Share",
       description:
         "Learn which devices qualify for ITAD revenue sharing, including MacBooks, Intel laptops, tablets, and phones. Get tips for accelerated buy-back options.",
       url: `${BASE_URL}/blogs/itad-cutlines-revenue-sharing-devices`,
@@ -364,7 +364,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "ITAD Cutlines Explained | Device Eligibility for Revenue Sharing",
+      title: "ITAD Cutlines: Device Eligibility for Revenue Share",
       description:
         "Learn which devices qualify for ITAD revenue sharing, including MacBooks, Intel laptops, tablets, and phones. Get tips for accelerated buy-back options.",
       images: [OG_IMAGE],
@@ -474,14 +474,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "itad-cutlines-asset-recovery-value-services": {
-    title: "Cutlines in ITAD: How Fair Cutlines Maximize IT Asset Recovery",
+    title: "Cutlines in ITAD: Maximizing IT Asset Recovery",
     description:
       "Learn what cutlines mean in IT Asset Disposition (ITAD) and how fair, recovery-focused cutlines help organizations maximize asset recovery, reduce recycling fees, and stay compliant.",
     alternates: {
       canonical: `${BASE_URL}/blogs/itad-cutlines-asset-recovery-value-services`,
     },
     openGraph: {
-      title: "Cutlines in ITAD: How Fair Cutlines Maximize IT Asset Recovery",
+      title: "Cutlines in ITAD: Maximizing IT Asset Recovery",
       description:
         "Learn what cutlines mean in IT Asset Disposition (ITAD) and how fair, recovery-focused cutlines help organizations maximize asset recovery, reduce recycling fees, and stay compliant.",
       url: `${BASE_URL}/blogs/itad-cutlines-asset-recovery-value-services`,
@@ -499,7 +499,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Cutlines in ITAD: How Fair Cutlines Maximize IT Asset Recovery",
+      title: "Cutlines in ITAD: Maximizing IT Asset Recovery",
       description:
         "Learn what cutlines mean in IT Asset Disposition (ITAD) and how fair, recovery-focused cutlines help organizations maximize asset recovery, reduce recycling fees, and stay compliant.",
       images: [OG_IMAGE],
@@ -519,14 +519,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "it-asset-recovery-process-and-best-practices": {
-    title: "IT Asset Recovery Explained: Best Practices for Maximizing Value and Data Security",
+    title: "IT Asset Recovery: Maximize Value, Keep Data Safe",
     description:
       "Learn what IT asset recovery is, how it fits into IT Asset Disposition (ITAD), and the best practices organizations should follow to maximize value while ensuring secure data destruction and compliance.",
     alternates: {
       canonical: `${BASE_URL}/blogs/it-asset-recovery-process-and-best-practices`,
     },
     openGraph: {
-      title: "IT Asset Recovery Explained: Best Practices for Maximizing Value and Data Security",
+      title: "IT Asset Recovery: Maximize Value, Keep Data Safe",
       description:
         "Learn what IT asset recovery is, how it fits into IT Asset Disposition (ITAD), and the best practices organizations should follow to maximize value while ensuring secure data destruction and compliance.",
       url: `${BASE_URL}/blogs/it-asset-recovery-process-and-best-practices`,
@@ -544,7 +544,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "IT Asset Recovery Explained: Best Practices for Maximizing Value and Data Security",
+      title: "IT Asset Recovery: Maximize Value, Keep Data Safe",
       description:
         "Learn what IT asset recovery is, how it fits into IT Asset Disposition (ITAD), and the best practices organizations should follow to maximize value while ensuring secure data destruction and compliance.",
       images: [OG_IMAGE],
@@ -654,14 +654,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "itad-vs-e-waste-recycling": {
-    title: "ITAD vs Electronic Recycling: Understanding the Difference and Why It Matters",
+    title: "ITAD vs Electronics Recycling: The Real Difference",
     description:
       "Learn the key differences between IT Asset Disposition (ITAD) and electronic recycling, and why choosing the right approach is critical for data security, compliance, asset recovery, and sustainability.",
     alternates: {
       canonical: `${BASE_URL}/blogs/itad-vs-e-waste-recycling`,
     },
     openGraph: {
-      title: "ITAD vs Electronic Recycling: Understanding the Difference and Why It Matters",
+      title: "ITAD vs Electronics Recycling: The Real Difference",
       description:
         "Learn the key differences between IT Asset Disposition (ITAD) and electronic recycling, and why choosing the right approach is critical for data security, compliance, asset recovery, and sustainability.",
       url: `${BASE_URL}/blogs/itad-vs-e-waste-recycling`,
@@ -679,7 +679,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "ITAD vs Electronic Recycling: Understanding the Difference and Why It Matters",
+      title: "ITAD vs Electronics Recycling: The Real Difference",
       description:
         "Learn the key differences between IT Asset Disposition (ITAD) and electronic recycling, and why choosing the right approach is critical for data security, compliance, asset recovery, and sustainability.",
       images: [OG_IMAGE],
@@ -699,14 +699,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "chain-of-custody-in-itad": {
-    title: "Chain of Custody in ITAD: Why Tracking and Documentation Matter",
+    title: "Chain of Custody in ITAD: Why Tracking Matters",
     description:
       "As AI transforms technology, a hardware refresh is more important than ever. Explore how AI affects electronics usage & how Integritrade delivers fair value for your old devices.",
     alternates: {
       canonical: `${BASE_URL}/blogs/chain-of-custody-in-itad`,
     },
     openGraph: {
-      title: "Chain of Custody in ITAD: Why Tracking and Documentation Matter",
+      title: "Chain of Custody in ITAD: Why Tracking Matters",
       description:
         "As AI transforms technology, a hardware refresh is more important than ever. Explore how AI affects electronics usage & how Integritrade delivers fair value for your old devices.",
       url: `${BASE_URL}/blogs/chain-of-custody-in-itad`,
@@ -724,7 +724,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Chain of Custody in ITAD: Why Tracking and Documentation Matter",
+      title: "Chain of Custody in ITAD: Why Tracking Matters",
       description:
         "As AI transforms technology, a hardware refresh is more important than ever. Explore how AI affects electronics usage & how Integritrade delivers fair value for your old devices.",
       images: [OG_IMAGE],
@@ -834,14 +834,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "it-asset-disposition-fresno-ca": {
-    title: "IT Asset Disposition in Fresno, CA: Secure and Compliant ITAD for Local Businesses",
+    title: "Fresno ITAD: Secure, Compliant Asset Disposition",
     description:
       "Learn how IT Asset Disposition (ITAD) works for businesses in Fresno, CA, and why secure data destruction, asset recovery, and compliance matter when retiring IT equipment.",
     alternates: {
       canonical: `${BASE_URL}/blogs/it-asset-disposition-fresno-ca`,
     },
     openGraph: {
-      title: "IT Asset Disposition in Fresno, CA: Secure and Compliant ITAD for Local Businesses",
+      title: "Fresno ITAD: Secure, Compliant Asset Disposition",
       description:
         "Learn how IT Asset Disposition (ITAD) works for businesses in Fresno, CA, and why secure data destruction, asset recovery, and compliance matter when retiring IT equipment.",
       url: `${BASE_URL}/blogs/it-asset-disposition-fresno-ca`,
@@ -859,7 +859,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "IT Asset Disposition in Fresno, CA: Secure and Compliant ITAD for Local Businesses",
+      title: "Fresno ITAD: Secure, Compliant Asset Disposition",
       description:
         "Learn how IT Asset Disposition (ITAD) works for businesses in Fresno, CA, and why secure data destruction, asset recovery, and compliance matter when retiring IT equipment.",
       images: [OG_IMAGE],
@@ -879,14 +879,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "it-asset-disposition-sacramento-ca": {
-    title: "IT Asset Disposition in Sacramento, CA: Secure and Compliant ITAD for Local Businesses",
+    title: "Sacramento ITAD & Secure Data Destruction",
     description:
       "Discover how IT Asset Disposition (ITAD) works for businesses in Sacramento, CA, including secure data destruction, asset recovery, and compliance best practices for retiring IT equipment.",
     alternates: {
       canonical: `${BASE_URL}/blogs/it-asset-disposition-sacramento-ca`,
     },
     openGraph: {
-      title: "IT Asset Disposition in Sacramento, CA: Secure and Compliant ITAD for Local Businesses",
+      title: "Sacramento ITAD & Secure Data Destruction",
       description:
         "Discover how IT Asset Disposition (ITAD) works for businesses in Sacramento, CA, including secure data destruction, asset recovery, and compliance best practices for retiring IT equipment.",
       url: `${BASE_URL}/blogs/it-asset-disposition-sacramento-ca`,
@@ -904,7 +904,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "IT Asset Disposition in Sacramento, CA: Secure and Compliant ITAD for Local Businesses",
+      title: "Sacramento ITAD & Secure Data Destruction",
       description:
         "Discover how IT Asset Disposition (ITAD) works for businesses in Sacramento, CA, including secure data destruction, asset recovery, and compliance best practices for retiring IT equipment.",
       images: [OG_IMAGE],
@@ -924,14 +924,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "itad-vs-free-e-waste-recycling-risks": {
-    title: "How does ITAD work? Why choosing the right vendor is important",
+    title: "How ITAD Works and Why the Vendor Matters",
     description:
       "Would you give your unlocked phone to someone? But why give your important computers to just anyone? Learn how ITAD reduces your costs & ensures security.",
     alternates: {
       canonical: `${BASE_URL}/blogs/itad-vs-free-e-waste-recycling-risks`,
     },
     openGraph: {
-      title: "How does ITAD work? Why choosing the right vendor is important",
+      title: "How ITAD Works and Why the Vendor Matters",
       description:
         "Would you give your unlocked phone to someone? But why give your important computers to just anyone? Learn how ITAD reduces your costs & ensures security.",
       url: `${BASE_URL}/blogs/itad-vs-free-e-waste-recycling-risks`,
@@ -949,7 +949,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "How does ITAD work? Why choosing the right vendor is important",
+      title: "How ITAD Works and Why the Vendor Matters",
       description:
         "Would you give your unlocked phone to someone? But why give your important computers to just anyone? Learn how ITAD reduces your costs & ensures security.",
       images: [OG_IMAGE],
@@ -1149,14 +1149,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "landfill-vs-certified-recycling-environment": {
-    title: "Landfill vs Certified Recycling; Which one is better for the Environment?",
+    title: "Landfill vs Certified Recycling: Which Is Better?",
     description:
       "Why is Landfilling E-waste dangerous? Learn how certified recycling protects the environment & reduces your organization's carbon footprint.",
     alternates: {
       canonical: `${BASE_URL}/blogs/landfill-vs-certified-recycling-environment`,
     },
     openGraph: {
-      title: "Landfill vs Certified Recycling; Which one is better for the Environment?",
+      title: "Landfill vs Certified Recycling: Which Is Better?",
       description:
         "Why is Landfilling E-waste dangerous? Learn how certified recycling protects the environment & reduces your organization's carbon footprint.",
       url: `${BASE_URL}/blogs/landfill-vs-certified-recycling-environment`,
@@ -1174,7 +1174,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Landfill vs Certified Recycling; Which one is better for the Environment?",
+      title: "Landfill vs Certified Recycling: Which Is Better?",
       description:
         "Why is Landfilling E-waste dangerous? Learn how certified recycling protects the environment & reduces your organization's carbon footprint.",
       images: [OG_IMAGE],
@@ -1194,7 +1194,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   },
 
   "is-it-possible-to-recover-deleted-data": {
-    title: "Is it possible to recover deleted data? Know the risks to your business.",
+    title: "Can Deleted Data Be Recovered? Know the Risks",
     description:
       "Is formatting your old office laptop enough? Learn why deleted data can be easily recovered and how to keep your business information safe.",
     keywords: [
@@ -1208,7 +1208,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       canonical: `${BASE_URL}/blogs/is-it-possible-to-recover-deleted-data`,
     },
     openGraph: {
-      title: "Is it possible to recover deleted data? Know the risks to your business.",
+      title: "Can Deleted Data Be Recovered? Know the Risks",
       description:
         "Is formatting your old office laptop enough? Learn why deleted data can be easily recovered and how to keep your business information safe.",
       url: `${BASE_URL}/blogs/is-it-possible-to-recover-deleted-data`,
@@ -1226,7 +1226,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "Is it possible to recover deleted data? Know the risks to your business.",
+      title: "Can Deleted Data Be Recovered? Know the Risks",
       description:
         "Is formatting your old office laptop enough? Learn why deleted data can be easily recovered and how to keep your business information safe.",
       images: [OG_IMAGE],
@@ -1292,7 +1292,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
 
   "deceptive-advertising-itad-electronics-recycling-certifications": {
     title:
-      "Certified ITAD and Electronics Recycling: How to Verify a Provider",
+      "Certified ITAD: How to Verify a Provider",
 
     description:
       "Learn how to verify ITAD and electronics recycling certification claims, evaluate data destruction capability, and choose a secure provider for reuse, buyback, recycling, and decommissioning.",
@@ -1357,7 +1357,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
 
   "reuse-focused-itad-vs-scrap-recycling": {
     title:
-      "Reuse-Focused ITAD vs. Scrap Recycling: Better Data Security and Value Recovery | Integritrade",
+      "Reuse-Focused ITAD vs Scrap Recycling: More Value",
 
     description:
       "Learn why a reuse-focused ITAD provider can protect retired technology, recover more value, and manage end-of-life electronics responsibly without compromising data security.",
@@ -1420,13 +1420,13 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
   },
   "how-to-assess-electronics-recycling-it-asset-disposal-provider": {
-    title: "How to Choose an Electronics Recycling & ITAD Provider | Integritrade",
+    title: "How to Choose an Electronics Recycling & ITAD Provider",
     description: "Learn how to evaluate an electronics recycler or IT asset disposal provider. Verify R2 or e-Stewards certification, accredited ISO certificates, data-destruction equipment, reporting, and downstream accountability.",
     alternates: {
       canonical: `${BASE_URL}/blogs/how-to-assess-electronics-recycling-it-asset-disposal-provider`,
     },
     openGraph: {
-      title: "How to Choose an Electronics Recycling & ITAD Provider | Integritrade",
+      title: "How to Choose an Electronics Recycling & ITAD Provider",
       description: "Learn how to evaluate an electronics recycler or IT asset disposal provider. Verify R2 or e-Stewards certification, accredited ISO certificates, data-destruction equipment, reporting, and downstream accountability.",
       url: `${BASE_URL}/blogs/how-to-assess-electronics-recycling-it-asset-disposal-provider`,
       siteName: SITE_NAME,
@@ -1443,19 +1443,19 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "How to Choose an Electronics Recycling & ITAD Provider | Integritrade",
+      title: "How to Choose an Electronics Recycling & ITAD Provider",
       description: "Learn how to evaluate an electronics recycler or IT asset disposal provider. Verify R2 or e-Stewards certification, accredited ISO certificates, data-destruction equipment, reporting, and downstream accountability.",
       images: [OG_IMAGE],
     },
   },
   "bfsi-it-asset-disposition-financial-services-data-destruction": {
-    title: "BFSI IT Asset Disposition and Bank Data Destruction | Integritrade",
+    title: "BFSI ITAD and Bank Data Destruction",
     description: "A practical guide to financial services ITAD, bank data destruction, insurance computer disposal, vendor due diligence, tracking, value recovery, and qualified electronics recycling.",
     alternates: {
       canonical: `${BASE_URL}/blogs/bfsi-it-asset-disposition-financial-services-data-destruction`,
     },
     openGraph: {
-      title: "BFSI IT Asset Disposition and Bank Data Destruction | Integritrade",
+      title: "BFSI ITAD and Bank Data Destruction",
       description: "A practical guide to financial services ITAD, bank data destruction, insurance computer disposal, vendor due diligence, tracking, value recovery, and qualified electronics recycling.",
       url: `${BASE_URL}/blogs/bfsi-it-asset-disposition-financial-services-data-destruction`,
       siteName: SITE_NAME,
@@ -1472,7 +1472,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "BFSI IT Asset Disposition and Bank Data Destruction | Integritrade",
+      title: "BFSI ITAD and Bank Data Destruction",
       description: "A practical guide to financial services ITAD, bank data destruction, insurance computer disposal, vendor due diligence, tracking, value recovery, and qualified electronics recycling.",
       images: [OG_IMAGE],
     },
@@ -1507,13 +1507,13 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
   },
   "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction": {
-    title: "FERPA-Focused School ITAD, Chromebook Recycling & Student Data Destruction | Integritrade",
+    title: "FERPA School ITAD & Chromebook Recycling",
     description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
     alternates: {
       canonical: `${BASE_URL}/blogs/ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction`,
     },
     openGraph: {
-      title: "FERPA-Focused School ITAD, Chromebook Recycling & Student Data Destruction | Integritrade",
+      title: "FERPA School ITAD & Chromebook Recycling",
       description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
       url: `${BASE_URL}/blogs/ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction`,
       siteName: SITE_NAME,
@@ -1530,7 +1530,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "FERPA-Focused School ITAD, Chromebook Recycling & Student Data Destruction | Integritrade",
+      title: "FERPA School ITAD & Chromebook Recycling",
       description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
       images: [OG_IMAGE],
     },
