@@ -67,9 +67,8 @@ export const industriesData: Industry[] = [
     title: "Education",
     description:
       "Retire school technology with security, clarity, and a better next step — for schools, districts, colleges, and universities across California and the Western U.S.",
-    metaTitle: "Education ITAD, Chromebook Recycling & Secure Data Destruction | Integritrade",
-    metaDescription:
-      "Integritrade supports schools, districts, colleges, and universities with secure ITAD, Chromebook and device-fleet retirement, data destruction, value recovery, and electronics recycling across California and the Western U.S.",
+    metaTitle: "School ITAD, Chromebook Recycling & Data Erasure",
+    metaDescription: "FERPA-aware IT asset disposition for California districts and universities. Chromebook recycling, student data destruction and documented outcomes.",
     content: [
       `Schools, districts, colleges, universities, and education technology teams manage large fleets of Chromebooks, laptops, tablets, desktops, servers, networking equipment, printers, MFPs, and classroom technology. When those devices are refreshed, reassigned, or retired, they may still hold student, family, staff, financial, research, or administrative information.`,
       `Integritrade helps education organizations manage retired technology through a documented process that supports secure pickup, client-specific data handling, asset recovery, electronics recycling, and clear final reporting that can support institutional FERPA and information-security requirements.`,
@@ -206,9 +205,8 @@ export const industriesData: Industry[] = [
     title: "Finance",
     description:
       "Supporting banks, insurance firms, and investment teams with controlled asset retirement, documented handling, and end-of-life hardware processing across regulated environments.",
-    metaTitle: "ITAD for Finance | Secure Data Destruction & Compliance Services",
-    metaDescription:
-      "ITAD and data destruction for financial institutions. GLBA, SOX, and PCI DSS compliant services for banks, insurance, and investment firms.",
+    metaTitle: "ITAD & Data Destruction for Banks | R2v3 Certified",
+    metaDescription: "Certified data destruction and IT asset disposition for California banks, credit unions and insurers. Serialized certificates and chain of custody.",
     content: [
       `Integritrade provides secure finance ITAD services for banks, credit unions, insurance firms, accounting teams, investment advisors, payment processors, and financial offices that cannot afford weak data handling, missing documentation, or uncontrolled asset disposal. Retired workstations, laptops, servers, hard drives, solid-state drives, mobile devices, printers, copiers, networking equipment, and storage systems may still contain customer financial records, account data, tax documents, payment information, loan files, credentials, proprietary models, audit materials, and confidential business records long after they are removed from service. We help financial organizations turn equipment refreshes, branch closures, office moves, server upgrades, and storage cleanouts into a controlled ITAD process built around secure pickup, documented chain of custody, NIST SP 800-88-aligned sanitization options, responsible recycling, asset recovery, and final reporting.`,
 
@@ -279,9 +277,8 @@ export const industriesData: Industry[] = [
     title: "Business & Corporate",
     description:
       "Retire corporate technology with security, visibility, and a better recovery outcome — across California and the Western U.S.",
-    metaTitle: "Corporate ITAD, Data Destruction & IT Equipment Buyback | Integritrade",
-    metaDescription:
-      "Secure corporate IT retirement with Integritrade. ITAD, data destruction, equipment buyback, value recovery, electronics recycling, and TraceTech visibility across California and the Western U.S.",
+    metaTitle: "Enterprise ITAD & Data Destruction in California",
+    metaDescription: "R2v3 certified IT asset disposition for California enterprises. Secure data destruction, asset-level reporting and value recovery on retired fleets.",
     content: [
       `Retired laptops, desktops, servers, storage, networking equipment, phones, tablets, printers, and office technology can still hold sensitive data and recoverable value. Integritrade helps organizations move those assets through a documented IT asset disposition process built around secure pickup, client-specific handling instructions, data sanitization or physical destruction, value recovery, and qualified downstream recycling.`,
     ],
@@ -405,9 +402,8 @@ export const industriesData: Industry[] = [
     description:
       "Helping healthcare providers remove outdated technology while protecting patient information and maintaining audit-ready asset records.",
     eyebrow: "Healthcare ITAD",
-    metaTitle: "Healthcare ITAD | HIPAA-Compliant Data Destruction Services",
-    metaDescription:
-      "Secure IT asset disposal for healthcare providers. HIPAA-compliant data destruction, equipment recycling, and asset recovery solutions.",
+    metaTitle: "HIPAA Compliant ITAD & Data Destruction | R2v3",
+    metaDescription: "HIPAA compliant data destruction, IT asset disposal and remarketing for California healthcare providers. R2v3 certified with audit-ready records.",
     content: [
       `Integritrade provides secure healthcare ITAD services for organizations that cannot afford uncertainty around HIPAA, PHI, patient privacy, or data-bearing equipment. Hospitals, clinics, dental offices, labs, imaging centers, medical groups, and care facilities handle technology that may contain protected health information, billing records, employee files, credentials, imaging data, and other confidential records long after the device is removed from service. We help healthcare teams retire computers, servers, drives, tablets, printers, networking equipment, medical office electronics, and other assets through a controlled process built around secure pickup, documented chain of custody, NIST SP 800-88-aligned sanitization options, responsible recycling, asset recovery, and final reporting.`,
 
@@ -511,9 +507,8 @@ export const industriesData: Industry[] = [
     title: "Legal & Professional Services",
     description:
       "Retire sensitive office technology without losing control of confidential information — for law firms and professional service organizations across California and the Western U.S.",
-    metaTitle: "Legal ITAD, Law Firm Data Destruction & IT Equipment Buyback | Integritrade",
-    metaDescription:
-      "Integritrade supports law firms and professional service organizations with secure ITAD, data destruction, office technology retirement, equipment buyback, and documented asset disposition across California and the Western U.S.",
+    metaTitle: "Law Firm ITAD & Legal Data Destruction | R2v3",
+    metaDescription: "Certified data destruction and IT asset disposition for California law firms. Client-confidential handling, serialized certificates, value recovery.",
     content: [
       `Law firms, accounting practices, consulting groups, advisory firms, architects, and other professional-service organizations manage technology that can hold client files, financial records, privileged communications, case materials, contracts, research, and proprietary work product.`,
       `When that technology is retired, moved, replaced, returned, or sold, Integritrade helps keep it inside a documented IT asset disposition process. The process supports secure pickup, chain of custody, client-specific handling instructions, data sanitization or physical destruction, value recovery, qualified downstream recycling, and project reporting.`,
@@ -647,9 +642,8 @@ export const industriesData: Industry[] = [
     title: "Retail & Hospitality",
     description:
       "Secure retirement for POS refreshes, store closures, hotel upgrades, franchise rollouts, and customer-data devices.",
-    metaTitle: "Retail ITAD | Hospitality Electronics Recycling & POS Disposal",
-    metaDescription:
-      "Retail and hospitality ITAD services for POS system disposal, PCI DSS data destruction, hotel e-waste recycling, secure logistics, and certified documentation.",
+    metaTitle: "Retail & Hospitality ITAD | POS Data Destruction",
+    metaDescription: "Certified IT asset disposition for California retail and hospitality. POS and back-office data destruction with documented chain of custody.",
     content: [
       `Retailers, hotels, restaurants, franchises, and hospitality groups rely heavily on interconnected technology across storefronts, properties, and distribution centers. When upgrading or decommissioning these systems, Integritrade provides specialized ITAD, electronic recycling, data destruction, and asset recovery for POS systems, tablets, laptops, displays, and back-office equipment to protect both your brand reputation and your customers.`,
       `High-Security Processing for Payment Data Retired retail and hospitality devices frequently harbor highly sensitive cardholder data, customer records, employee information, and corporate Wi-Fi credentials. To completely mitigate this risk, Integritrade safeguards your retired hardware at our video-surveilled facility. Every asset is handled exclusively by strictly vetted staff and processed using industrial-grade, full destruction equipment. We sanitize and physically shred hard drives, solid-state drives, and proprietary components to guarantee that sensitive payment and business data is permanently unrecoverable.`,
@@ -755,9 +749,8 @@ export const industriesData: Industry[] = [
     title: "Government & Public Sector",
     description:
       "Secure and transparent ITAD for agencies, municipalities, public authorities, courts, and public institutions.",
-    metaTitle: "Government ITAD Services | Public Sector Electronics Recycling",
-    metaDescription:
-      "Government ITAD services and public sector electronics recycling with chain of custody, NIST SP 800-88 sanitization, audit-ready reporting, and certified documentation.",
+    metaTitle: "Government ITAD & Certified Data Destruction",
+    metaDescription: "Certified IT asset disposition for California government and public sector. NIST 800-88 data destruction with serialized, audit-ready documentation.",
     content: [
       `Government agencies, municipalities, public authorities, transportation departments, courts, and public institutions manage a vast amount of sensitive citizen data and personnel records. When hardware reaches the end of its lifecycle, these organizations require a secure and highly transparent technology retirement process. Integritrade provides specialized ITAD, electronic recycling, asset recovery, and data destruction designed to meet strict public records and procurement requirements.`,
       `High-Security Processing for Public Sector Data Because public-sector environments frequently involve CJIS-sensitive systems, public safety records, and FISMA/NIST-aligned security programs, security cannot be compromised. Integritrade safeguards your retired assets at our video-surveilled facility, where all equipment is processed exclusively by thoroughly vetted staff. Using industrial-grade, full destruction equipment, we sanitize and physically shred and destroy sensitive drives and media to guarantee that classified or citizen data is completely eradicated.`,
@@ -863,9 +856,8 @@ export const industriesData: Industry[] = [
     title: "Defense Contractors",
     description:
       "High-security ITAD for defense contractors, suppliers, secure labs, hardware refreshes, and sensitive project equipment.",
-    metaTitle: "Defense Contractor ITAD | CMMC, CUI & NIST Data Destruction",
-    metaDescription:
-      "Defense contractor ITAD services with controlled logistics, NIST SP 800-88 media sanitization, chain of custody, and certified data destruction.",
+    metaTitle: "Defense Contractor ITAD & Data Destruction",
+    metaDescription: "Certified data destruction and IT asset disposition for California defense contractors. Witnessed destruction available, serialized certificates.",
     content: [
       `Defense contractors and suppliers operate in high-stakes environments where retiring assets requires strictly controlled ITAD processes. Hardware leaving your facility may contain sensitive project files, engineering data, contract information, credentials, or controlled technical data. Integritrade provides the highest level of secure IT asset disposition, electronic recycling, and asset recovery to ensure this information is permanently sanitized and protected.`,
       `Uncompromising Security Infrastructure To meet the stringent demands of the defense sector, Integritrade processes all materials through our highly secure, video-surveilled facility. Every asset is handled exclusively by strictly vetted staff who are trained in high-security protocols. Utilizing industrial-grade, full destruction equipment, we physically shred and destroy hard drives, solid-state drives, and proprietary components, ensuring that sensitive defense data is completely unrecoverable.`,

@@ -10,10 +10,10 @@ import BlogHomeSection from "@/components/home/BlogHomeSection";
 import HomeSectionFloatNav from "@/components/home/HomeSectionFloatNav";
 
 export const metadata: Metadata = {
-  title: "Integritrade: ITAD, Data Destruction & Recycling in California",
+  title: { absolute: "California ITAD, Data Destruction & IT Recycling" },
 
   description:
-    "Need secure electronics recycling and ITAD for California businesses? Integritrade offers R2v3-certified processing, data destruction, and asset management services.",
+    "R2v3 certified IT asset disposition, secure data destruction and electronics recycling for California businesses. Serialized certificates on every job.",
 
   // Verification tags live in app/layout.tsx for ALL owners. A block here would
   // override the layout's and strip every token but this one from the homepage.

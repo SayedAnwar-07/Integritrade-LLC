@@ -45,7 +45,10 @@ export async function generateMetadata(props: {
   }
 
   return {
-    title: industry.metaTitle,
+    // `absolute` so the root layout does not append " | Integritrade LLC".
+    // That suffix is 19 characters and pushed every industry title past the
+    // ~60 Google renders, which is why they were all truncated in results.
+    title: { absolute: industry.metaTitle },
     description: industry.metaDescription,
 
     alternates: {

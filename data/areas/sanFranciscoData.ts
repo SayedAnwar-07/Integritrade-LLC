@@ -14,8 +14,8 @@ export const sanFranciscoData: ServiceArea = {
   slug: "san-francisco",
   name: "San Francisco",
   tagline: "Certified IT asset disposition and secure data destruction services for San Francisco businesses.",
-  metaTitle: "IT Asset Disposition (ITAD) & Data Destruction in San Francisco, CA | Secure IT Recycling",
-  metaDescription: "Secure IT asset disposition (ITAD), hard drive shredding, and e-waste recycling in San Francisco, CA. Certified data destruction, compliance reporting, and nationwide service. Get a free quote today.",
+  metaTitle: "San Francisco ITAD & Data Destruction | R2v3 Certified",
+  metaDescription: "R2v3 certified IT asset disposition, hard drive shredding and e-waste recycling for San Francisco businesses. Serialized certificates. Free quote.",
   intro: "We provide secure IT asset disposition (ITAD), certified data destruction, and electronics recycling services for businesses in San Francisco. From hard drive shredding to full IT equipment disposal, we ensure compliance, security, and environmentally responsible recycling.",
 
   services: [

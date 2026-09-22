@@ -23,6 +23,9 @@ export function generateStaticParams() {
   return getAllAreaSlugs();
 }
 
+/** What Google renders before truncating a title in results. */
+const TITLE_LIMIT = 60;
+
 export async function generateMetadata({
   params,
 }: AreaPageProps): Promise<Metadata> {
@@ -41,7 +44,21 @@ export async function generateMetadata({
     `Certified IT asset disposition, secure data destruction, and e-waste recycling for ${area.name}, CA businesses. R2v3 and ISO certified with audit-ready documentation.`;
 
   return {
-    title: `${area.name} IT Asset Disposition Services`,
+    // Use the city's own metaTitle, but only when it actually fits what Google
+    // renders. `absolute` stops the root layout appending " | Integritrade LLC",
+    // so the whole budget is the city's to spend.
+    //
+    // The guard matters: the route used to ignore metaTitle entirely, and most
+    // of the 60 city files still carry long legacy titles ("E-Waste Recycling
+    // in South San Francisco, CA | Trusted Corporate E-Waste Recycling", 82
+    // characters). Honouring those unconditionally fixed the six cities we have
+    // rewritten and truncated the other 54. Cities fall back to the short
+    // generated pattern until their metaTitle has been rewritten to fit, so
+    // rewriting one is all it takes to switch it on.
+    title:
+      area.metaTitle && area.metaTitle.length <= TITLE_LIMIT
+        ? { absolute: area.metaTitle }
+        : `${area.name} IT Asset Disposition Services`,
     description,
     // Without this the page inherits the root layout's canonical of "/", which
     // tells Google every city hub is a duplicate of the homepage.

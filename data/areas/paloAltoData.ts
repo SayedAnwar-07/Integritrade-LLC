@@ -14,8 +14,8 @@ export const paloAltoData: ServiceArea = {
   slug: "palo-alto",
   name: "Palo Alto",
   tagline: "Certified Electronics Disposal, Secure Data Destruction & Corporate IT Asset Management in Palo Alto, CA",
-  metaTitle: "E-Waste Recycling in Palo Alto, CA | Corporate IT Asset Management",
-  metaDescription: "Looking for e-waste recycling in Palo Alto? IntegriTrade LLC provides secure data destruction and environmentally friendly electronics recycling services in compliance with California law.",
+  metaTitle: "Palo Alto ITAD & Certified Data Destruction",
+  metaDescription: "R2v3 certified IT asset disposition and data destruction for Palo Alto businesses. Serialized certificates, value recovery on eligible equipment.",
   intro: "IntegriTrade LLC delivers professional electronics disposal and IT asset management services in Palo Alto, CA, helping enterprises securely retire outdated technology. Our offerings cover certified data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, secure chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
 
   services: [

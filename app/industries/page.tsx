@@ -22,11 +22,12 @@ import { Mail, Phone } from "lucide-react";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export const metadata: Metadata = {
-  title:
-    "Industries We Serve | IT Asset Disposition (ITAD) by Industry",
+  // `absolute` keeps the root layout from appending " | Integritrade LLC",
+  // which pushed this past the ~60 characters Google renders.
+  title: { absolute: "ITAD by Industry | Certified Data Destruction" },
 
   description:
-    "Integritrade LLC provides industry-specific IT asset disposition (ITAD), secure data destruction, and e-waste recycling services for healthcare, finance, government, logistics, and more across the USA.",
+    "Certified IT asset disposition and data destruction built around your sector: healthcare, finance, education, legal, government, retail and defense.",
 
   keywords: [
     "ITAD industries",

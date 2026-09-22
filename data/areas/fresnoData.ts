@@ -14,8 +14,8 @@ export const fresnoData: ServiceArea = {
   slug: "fresno",
   name: "Fresno",
   tagline: "Secure IT asset and data destruction services for Fresno businesses.",
-  metaTitle: "IT Recycling & Data Destruction Services in Fresno, California",
-  metaDescription: "Professional IT asset disposition, hard drive shredding, and secure electronics recycling services in Fresno, California.",
+  metaTitle: "Fresno ITAD, Data Destruction & E-Waste Recycling",
+  metaDescription: "R2v3 certified IT asset disposition and hard drive shredding in Fresno, CA. Processed in our own facility with serialized Certificates of Destruction.",
   intro: "We help Fresno businesses securely destroy sensitive data, dispose of retired IT equipment, and recycle electronics responsibly.",
 
   services: [

@@ -14,8 +14,8 @@ export const fremontData: ServiceArea = {
   slug: "fremont",
   name: "Fremont",
   tagline: "Certified Electronics Disposal, Secure Data Destruction & Corporate IT Asset Management in Fremont, CA",
-  metaTitle: "E-Waste Recycling in Fremont, CA | Trusted Corporate E-Waste Recycling",
-  metaDescription: "Looking for e-waste recycling in Fremont? IntegriTrade LLC provides secure data destruction and environmentally friendly electronics recycling services in compliance with California law.",
+  metaTitle: "Fremont ITAD, Data Destruction & IT Recycling",
+  metaDescription: "R2v3 certified IT asset disposition and secure data destruction for Fremont, CA businesses. Serialized certificates and documented downstream recycling.",
   intro: "IntegriTrade LLC delivers certified electronics disposal and IT asset management services in Fremont, CA, helping enterprises and advanced manufacturing units retire outdated technology with confidence. Our offerings cover secure data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, tracked chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
 
   services: [

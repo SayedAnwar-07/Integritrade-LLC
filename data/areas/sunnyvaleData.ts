@@ -14,8 +14,8 @@ export const sunnyvaleData: ServiceArea = {
   slug: "sunnyvale",
   name: "Sunnyvale",
   tagline: "Certified Electronics Disposal, Secure Data Destruction & Corporate IT Resource Management in Sunnyvale, CA",
-  metaTitle: "E-Waste Recycling in Sunnyvale, CA | Certified IT Resource Management",
-  metaDescription: "Looking for e-waste recycling in Sunnyvale? IntegriTrade LLC provides secure data destruction and environmentally friendly electronics recycling services in compliance with California law.",
+  metaTitle: "Sunnyvale ITAD & Secure Data Destruction",
+  metaDescription: "R2v3 certified IT asset disposition, hard drive shredding and electronics recycling for Sunnyvale, CA. Audit-ready documentation on every job.",
   intro: "IntegriTrade LLC delivers professional electronics disposal and IT resource management services in Sunnyvale, CA, helping enterprises securely retire outdated technology. Our offerings cover certified data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, secure chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
 
   services: [

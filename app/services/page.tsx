@@ -25,9 +25,9 @@ const NAV_SECTIONS = [
 ];
 
 export const metadata: Metadata = {
-  title: "Enterprise ITAD, Data Destruction & E-Waste Recycling",
+  title: { absolute: "ITAD, Data Destruction & E-Waste Recycling Services" },
   description:
-    "R2v3 certified IT asset disposition, NIST 800-88 data destruction, and electronics recycling for enterprises retiring 500+ assets. Nationwide pickup from our Fresno, CA facility.",
+    "Compare our service levels: basic recycling, certified data destruction, and full IT asset disposition with value recovery. R2v3 certified, statewide.",
   alternates: {
     canonical: "/services/",
   },

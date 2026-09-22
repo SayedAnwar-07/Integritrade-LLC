@@ -14,8 +14,8 @@ export const sanJoseData: ServiceArea = {
   slug: "san-jose",
   name: "San Jose",
   tagline: "Secure IT Asset Disposition, Data Destruction & E-Waste Recycling Services in San Jose, CA",
-  metaTitle: "IT Asset Disposition (ITAD) in San Jose, CA | Data Destruction & E-Waste Recycling",
-  metaDescription: "Trusted IT asset disposition (ITAD) services in San Jose, CA including secure data destruction, hard drive shredding, e-waste recycling, and IT asset recovery. Certified, compliant, and nationwide support. Request a free quote today.",
+  metaTitle: "San Jose ITAD & Hard Drive Destruction | R2v3",
+  metaDescription: "R2v3 certified IT asset disposition, data destruction and e-waste recycling for San Jose businesses. Chain of custody and asset-level reporting.",
   intro: "Integritrade LLC delivers professional IT asset disposition (ITAD) services in San Jose, CA, helping businesses securely manage retired IT equipment. Our services include certified data destruction, hard drive shredding, e-waste recycling, and IT asset recovery to maximize value from your outdated devices. We ensure full compliance, secure handling, and environmentally responsible disposal tailored to your business needs.",
 
   services: [
