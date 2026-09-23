@@ -443,7 +443,7 @@ export default function Navbar() {
       dropdown: [
         { href: '/about/', label: 'About IntegriTrade', icon: Info },
         { href: '/about/our-team', label: 'Our Team', icon: Users },
-        { href: '/about/our-equipment', label: 'Our Equipment', icon: ShieldCheck },
+        { href: '/about/our-equipment', label: 'How We Destroy Data', icon: ShieldCheck },
         { href: '/about/our-locations',label: 'Our Locations',icon: MapPin },
       ],
     },
