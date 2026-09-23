@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
 import PageHeader from "@/components/shared/PageHeader";
 import SectionFloatNav from "@/components/shared/SectionFloatNav";
@@ -14,16 +15,16 @@ import softwareSanitizationImg from "../../../public/about/software-sanitization
 
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export const metadata: Metadata = {
-  title: "How We Destroy Data | Capabilities",
+  title: { absolute: "Data Destruction Methods | Erasure, Degaussing, Shredding" },
   description:
     "Curious how we destroy your data? Check out the heavy-duty equipment we use to permanently shred hard drives, tapes, and solid-state media with zero recovery.",
   alternates: { canonical: "/about/our-equipment/" },
   openGraph: {
-    title: "How We Destroy Data | Capabilities | Integritrade LLC",
+    title: "Data Destruction Methods | Integritrade LLC",
     description:
       "Industrial-grade data destruction with documented deliverables: software sanitization, degaussing, and SSD micro-shredding.",
     url: "https://integritradellc.com/about/our-equipment/",
@@ -53,18 +54,23 @@ export const metadata: Metadata = {
 },
 };
 
-// This page was "Our Equipment" in the nav until 2026-09-24. Ian found that
-// too vague: a visitor wants to know how their data gets destroyed, so the
-// page now says so. The URL stays /about/our-equipment/ because it carries the
-// page's search history and Ian's blog articles link to it directly.
+// Ian renamed this page "Data Destruction Methods" on 2026-09-24 ("Our
+// Equipment" was too vague) and asked for it as a plain 1-2-3: erase, then
+// degauss and shred, then 2 mm shredding for flash. The URL stays
+// /about/our-equipment/ because it carries the page's search history and his
+// blog articles link to it directly.
 const NAV_SECTIONS = [
   { id: "software", label: "Software Erasure" },
-  { id: "degaussing", label: "Degaussing" },
-  { id: "shredding", label: "Hard Drive Shredding" },
-  { id: "solidstate", label: "SSD Shredding" },
+  { id: "magnetic", label: "Degauss & Shred" },
+  { id: "solidstate", label: "SSD & Chip Shredding" },
   { id: "equipment", label: "Equipment List" },
   { id: "visit", label: "Site Visits" },
 ];
+
+const SAMPLE_COD = "/documents/sample-certificate-of-destruction.pdf";
+const TRACETECH_CERTS = "/tracetech/#portal";
+
+type Photo = { src: StaticImageData; alt: string; caption?: string; position?: string };
 
 type Method = {
   id: string;
@@ -73,17 +79,17 @@ type Method = {
   lead: string;
   body: string;
   specs: { label: string; value: string }[];
-  image: StaticImageData;
-  alt: string;
-  /** Crop focus for photos that are not already 4:3. */
-  imagePosition?: string;
+  /** One photo fills the frame; two sit side by side, one per machine. */
+  photos: Photo[];
+  /** Ian: the machines generate Certificates of Destruction in TraceTech,
+   *  so link a sample and the portal. */
+  sampleCertificate?: boolean;
 };
 
 /**
- * One row per method, every row built the same way: text on the left, photo
- * on the right. The page used to alternate sides (right, left, right, right),
- * which Ian found messy, so the layout now lives in one place. Add a method
- * here and it inherits the same row.
+ * The three methods, in the order Ian asked for. Every row is built the same
+ * way, text on the left and photos on the right, and the numbers match the
+ * section nav.
  */
 const METHODS: Method[] = [
   {
@@ -97,58 +103,49 @@ const METHODS: Method[] = [
       { label: "Standard", value: "NIST 800-88 baseline, adjustable to your requirements" },
       { label: "Output", value: "Serialized Certificate of Erasure for every drive" },
     ],
-    image: softwareSanitizationImg,
-    alt: "Integritrade software sanitization workflow",
+    photos: [{ src: softwareSanitizationImg, alt: "Integritrade software sanitization workflow" }],
   },
   {
-    id: "degaussing",
-    title: "Degaussing",
-    lead: "Step one of two for hard drives and tape being destroyed.",
-    body: "A high-energy magnetic field scrambles the magnetic orientation of the platter itself, not just the files stored on it. Either step alone is an industry standard. Hard drives destroyed here get both.",
+    id: "magnetic",
+    title: "Degaussing and shredding",
+    lead: "For magnetic hard drives and LTO tapes that must be destroyed.",
+    body: "The degausser scrambles the magnetic orientation of the platter or tape itself, then the shredder reduces it to fragments. Either step alone is an industry standard. We do both.",
     specs: [
-      { label: "Equipment", value: "Verity Datagauss ZZ001208" },
-      { label: "Media", value: "Hard drives and magnetic tape" },
+      { label: "Degausser", value: "Verity Datagauss ZZ001208" },
+      { label: "Shredder", value: "Proton Data Security Model 104" },
+      { label: "Media", value: "3.5″ and 2.5″ hard drives, LTO and other magnetic tape" },
       { label: "Standard", value: "NIST 800-88" },
-      { label: "Output", value: "Unreadable by any recovery method" },
+      { label: "Output", value: "Certificate of Destruction, generated in TraceTech" },
     ],
-    image: degausserImg,
-    alt: "Verity Systems Datagauss ZZ001208 Degausser",
-  },
-  {
-    id: "shredding",
-    title: "Hard drive shredding",
-    lead: "Step two. Every degaussed drive is then shredded.",
-    body: "Platters are reduced to jagged fragments. Even if a fragment were recovered, there is no readable magnetic signature left on it.",
-    specs: [
-      { label: "Equipment", value: "Proton Data Security Model 104" },
-      {
-        label: "Media",
-        value: "Degaussed 3.5″ and 2.5″ hard drives, magnetic media, and other approved electronic media",
-      },
-      { label: "Standard", value: "NIST 800-88" },
-      { label: "Output", value: "Certificate of Destruction" },
+    photos: [
+      { src: degausserImg, alt: "Verity Systems Datagauss ZZ001208 Degausser", caption: "Degausser" },
+      { src: ssdShredderImg, alt: "Proton Data Security Model 104 Hard Drive Shredder", caption: "Shredder" },
     ],
-    image: ssdShredderImg,
-    alt: "Proton Data Security Model 104 Hard Drive Shredder",
+    sampleCertificate: true,
   },
   {
     id: "solidstate",
-    title: "SSD shredding",
-    lead: "For SSDs, phones, and other flash storage.",
-    body: "SSDs and phones store data on tiny flash chips that a standard hard drive shredder can leave intact and recoverable. This machine shreds to a 2 mm particle size, small enough to destroy the chips themselves.",
+    title: "SSD and chip shredding",
+    lead: "For SSDs, NAND flash, phones, and anything with a memory chip.",
+    body: "Flash chips are small enough to pass through a standard hard drive shredder intact, data and all. This machine pulverizes media to a 2 mm particle size, small enough to destroy the chips themselves.",
     specs: [
       { label: "Equipment", value: "SEM Model 2 SSD-VK" },
+      { label: "Particle size", value: "2 mm" },
       {
         label: "Media",
         value: "2.5″ SATA, M.2 NVMe, M.2 SATA, and mSATA SSDs, USB flash drives, SD and microSD cards, phones, and tablets",
       },
-      { label: "Particle size", value: "2 mm" },
-      { label: "Output", value: "Serialized Certificate of Destruction" },
+      { label: "Output", value: "Serialized Certificate of Destruction, generated in TraceTech" },
     ],
-    image: hddShredderImg,
-    alt: "SEM Model 2 SSD-VK Shredder at Integritrade",
-    // Portrait photo: keep the whole machine in the 4:3 frame, not the shelving above it.
-    imagePosition: "object-[center_70%]",
+    photos: [
+      {
+        src: hddShredderImg,
+        alt: "SEM Model 2 SSD-VK Shredder at Integritrade",
+        // Portrait photo: keep the whole machine in the frame, not the shelving above it.
+        position: "object-[center_70%]",
+      },
+    ],
+    sampleCertificate: true,
   },
 ];
 
@@ -214,8 +211,8 @@ export default function OurCapabilitiesPage() {
       <div className="mx-auto max-w-[1400px] px-4 pt-10 sm:px-6 lg:px-8 lg:pt-16">
         <ScrollLoader>
           <PageHeader
-            title="How we destroy your data"
-            description="Drives headed for reuse are erased with certified software. Hard drives being destroyed are degaussed, then shredded. SSDs, phones, and other flash media are shredded to 2 mm. Everything happens inside our Fresno facility, run by our own staff, with a certificate for every drive."
+            title="Data destruction methods"
+            description="Software erasure for drives being reused. Degaussing and shredding for hard drives and tapes. 2 mm shredding for SSDs and chips. All of it happens inside our Fresno facility, with a certificate for every drive."
           />
         </ScrollLoader>
       </div>
@@ -231,16 +228,21 @@ export default function OurCapabilitiesPage() {
 
           <div className="min-w-0 space-y-24 md:space-y-32 lg:col-span-10">
 
-            {/* ── Methods: text left, photo right, every time ─────────── */}
+            {/* ── Methods 1-2-3: text left, photos right, every time ──── */}
             {METHODS.map((m, i) => (
               <section key={m.id} id={m.id} className="scroll-mt-28">
                 <ScrollLoader>
                   <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2 lg:gap-14">
                     <div className="min-w-0">
-                      <h2 className="font-serif text-3xl leading-[1.15] tracking-tight text-stone-900 dark:text-white sm:text-4xl">
-                        {m.title}
-                      </h2>
-                      <p className="mt-3 text-[17px] font-medium leading-snug text-stone-800 dark:text-gray-200">
+                      <div className="flex items-center gap-4">
+                        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary font-semibold text-white">
+                          {i + 1}
+                        </span>
+                        <h2 className="font-serif text-3xl leading-[1.15] tracking-tight text-stone-900 dark:text-white sm:text-4xl">
+                          {m.title}
+                        </h2>
+                      </div>
+                      <p className="mt-4 text-[17px] font-medium leading-snug text-stone-800 dark:text-gray-200">
                         {m.lead}
                       </p>
                       <p className="custom-text-center mt-4 text-[15px] leading-relaxed text-stone-600 dark:text-slate-300">
@@ -260,18 +262,64 @@ export default function OurCapabilitiesPage() {
                           </div>
                         ))}
                       </dl>
+
+                      {m.sampleCertificate && (
+                        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-8">
+                          <a
+                            href={SAMPLE_COD}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline-offset-4 hover:underline dark:text-emerald-400"
+                          >
+                            View a sample Certificate of Destruction
+                            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                          </a>
+                          <Link
+                            href={TRACETECH_CERTS}
+                            className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline-offset-4 hover:underline dark:text-emerald-400"
+                          >
+                            How certificates work in TraceTech
+                            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+                          </Link>
+                        </div>
+                      )}
                     </div>
 
-                    <div className="relative aspect-[4/3] w-full min-w-0 overflow-hidden rounded-md bg-white dark:bg-dark-secondary">
-                      <Image
-                        src={m.image}
-                        alt={m.alt}
-                        fill
-                        className={`object-cover ${m.imagePosition ?? ""}`}
-                        sizes="(max-width: 1023px) 100vw, 540px"
-                        priority={i === 0}
-                      />
-                    </div>
+                    {m.photos.length === 1 ? (
+                      <div className="relative aspect-[4/3] w-full min-w-0 overflow-hidden rounded-md bg-white dark:bg-dark-secondary">
+                        <Image
+                          src={m.photos[0].src}
+                          alt={m.photos[0].alt}
+                          fill
+                          className={`object-cover ${m.photos[0].position ?? ""}`}
+                          sizes="(max-width: 1023px) 100vw, 540px"
+                          priority={i === 0}
+                        />
+                      </div>
+                    ) : (
+                      // Two machines, one step: degauss, then shred. Square
+                      // tiles keep both machines whole in the frame.
+                      <div className="grid min-w-0 grid-cols-2 gap-3">
+                        {m.photos.map((p) => (
+                          <figure key={p.alt} className="min-w-0">
+                            <div className="relative aspect-square w-full overflow-hidden rounded-md bg-white dark:bg-dark-secondary">
+                              <Image
+                                src={p.src}
+                                alt={p.alt}
+                                fill
+                                className={`object-cover ${p.position ?? ""}`}
+                                sizes="(max-width: 1023px) 50vw, 270px"
+                              />
+                            </div>
+                            {p.caption && (
+                              <figcaption className="mt-2 text-xs font-semibold uppercase tracking-widest text-gray-500 dark:text-gray-400">
+                                {p.caption}
+                              </figcaption>
+                            )}
+                          </figure>
+                        ))}
+                      </div>
+                    )}
                   </div>
                 </ScrollLoader>
               </section>
