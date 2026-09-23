@@ -20,10 +20,10 @@ import sharp from "sharp";
 //     cheap (certificates actually gets SMALLER than it was lossy, 53KB -> 25KB)
 //     and removes compression artifacts around text entirely.
 //
-// The one exception is the approved-outcomes diagram, whose source is already a
-// JPEG: encoding that losslessly would faithfully preserve its JPEG artifacts at
-// triple the size, so it takes a high-quality lossy pass instead. If Haseeb
-// sends a PNG or SVG master, move it to the lossless list.
+// The approved-outcomes diagram used to be the one exception: its first source
+// was a JPEG, and encoding that losslessly would only have preserved its JPEG
+// artifacts at triple the size. Haseeb's 2026-09-24 masters are PNG, so it is
+// lossless now like everything else.
 
 const SRC_DIR = "c:/Users/zypher/Desktop/inte";
 const OUT_DIR = "public/images/tracetech";
@@ -39,7 +39,14 @@ const MAP = [
   // ["dashboard.png", "dashboard.webp"],
   ["report-view.png", "reports.webp"],
   ["jobs-cert.png", "certificates.webp", { crop: { top: 0, left: 0, width: 1076, height: 739 } }],
-  ["c-r.jpeg", "approved-outcomes.webp", { lossy: 95 }],
+  // Haseeb's redraw, 2026-09-24: a light and a dark version, diagram only. The
+  // four step labels that were baked into the old artwork are live text on the
+  // page now. The light master has a 1px lighter column down its right edge,
+  // which would show as a hairline against the panel, so both are cropped to
+  // 1599px: the same size, so light and dark swap without any shift.
+  ["g-c-white1.png", "approved-outcomes.webp", { crop: { top: 0, left: 0, width: 1599, height: 298 } }],
+  ["g-c-dark.png", "approved-outcomes-dark.webp", { crop: { top: 0, left: 0, width: 1599, height: 298 } }],
+  // ["c-r.jpeg", "approved-outcomes.webp", { lossy: 95 }],
 
   // Not referenced by the page — Ian had these two pulled from the showcase.
   // Left commented rather than deleted: uncomment to regenerate them from the

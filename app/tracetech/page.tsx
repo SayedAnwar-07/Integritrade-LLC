@@ -17,22 +17,26 @@ import {
   Palette,
   Plug,
   Users,
+  Box,
+  ShieldCheck,
+  ScanText,
+  FileText,
 } from "lucide-react";
 
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import ApprovedOutcomes from "@/public/images/tracetech/approved-outcomes.webp";
+import ApprovedOutcomesDark from "@/public/images/tracetech/approved-outcomes-dark.webp";
 import IndustryFAQ from "@/components/industries/IndustryFAQ";
 import FAQSchema from "@/components/industries/FAQSchema";
 import SectionFloatNav from "@/components/shared/SectionFloatNav";
 import Parallax from "@/components/shared/Parallax";
 
 export const metadata: Metadata = {
-  title:
-    "TraceTech ITAD Client Portal | Real-Time Asset Tracking & Certificates | Integritrade",
+  title: { absolute: "TraceTech ITAD Client Portal | Real-Time Asset Tracking" },
   description:
-    "TraceTech gives Integritrade clients real-time ITAD project visibility, batch or individual certificates, service-request messaging, asset controls, value reporting, and CO2e insights at no additional cost.",
+    "See every ITAD project in real time, download certificates on demand and track value recovery and CO2e. At no additional cost for Integritrade clients.",
   keywords: [
     "ITAD client portal",
     "IT asset tracking software",
@@ -186,6 +190,31 @@ const SHOWCASE: {
     desc: "Never wait on audit paperwork. Export serialized asset-level certificates or full batch summaries directly from your portal as soon as data sanitization is verified.",
     linkHref: "/documents/sample-certificate-of-destruction.pdf",
     linkText: "View a sample Certificate of Destruction",
+  },
+];
+
+// The four stages under the approved-outcomes diagram, in the artwork's order.
+// Wording is exactly what was baked into the old artwork, which Ian approved.
+const OUTCOME_STEPS = [
+  {
+    icon: Box,
+    title: "Asset received",
+    text: "Customer asset tag and Integritrade tracking tag are connected.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Requirement identified",
+    text: "The project’s approved handling instruction is associated with the asset.",
+  },
+  {
+    icon: ScanText,
+    title: "Correct workflow shown",
+    text: "The next approved action is visible at scan time.",
+  },
+  {
+    icon: FileText,
+    title: "Outcome documented",
+    text: "Processing status and available records are added to the project view.",
   },
 ];
 
@@ -388,30 +417,62 @@ export default function TraceTechPage() {
                 </div>
               </ScrollLoader>
 
-              {/* Haseeb's artwork, diagram only.
+              {/* Haseeb's artwork, diagram only, in a light and a dark version.
 
-                  Sat on a panel in the graphic's own background colour rather
-                  than dropped straight onto the page. The artwork is warm cream
-                  (#f6f5ec) and the page is cool grey (#f4f4f5): nine points
-                  apart on blue, which is just enough to read as a pasted
-                  rectangle. Matching the panel to the image removes the seam,
-                  and the padding and radius make it a deliberate figure. Its
-                  content runs to within 2px of the top edge, so fading the
-                  edges instead would have clipped the diagram.
+                  Each sits on a panel in its own background colour (#f5f4ef
+                  light, #0b0b0b dark) rather than straight on the page, so
+                  there is no seam where the image ends, and the padding and
+                  radius make it a deliberate figure. The artwork runs to within
+                  a few pixels of its edges, so fading the edges instead would
+                  have clipped the diagram.
 
-                  The panel stays cream in dark mode on purpose: the artwork is
-                  drawn for a light background, so inverting the surround would
-                  leave a glowing rectangle. A light figure on a dark page is
-                  the normal treatment for a diagram. */}
+                  The four step labels used to be baked into the bottom of the
+                  artwork. They are live text now, so they stay sharp, follow
+                  the theme and read properly on a phone. On desktop the column
+                  widths put each label under the node it describes. */}
               <ScrollLoader>
-                <figure className="mt-12 overflow-hidden rounded-2xl bg-[#f6f5ec] p-4 ring-1 ring-black/[0.04] sm:p-8 dark:ring-white/10">
+                <figure className="mt-12 overflow-hidden rounded-2xl bg-[#f5f4ef] p-4 ring-1 ring-black/[0.04] sm:p-8 dark:bg-[#0b0b0b] dark:ring-white/10">
                   <Image
                     src={ApprovedOutcomes}
-                    alt="An asset is received and its customer and Integritrade tags are connected, the approved handling requirement is identified, the correct workflow is shown when the tag is scanned, branching to physical destruction, erase and reuse evaluation, remarketing or recycling, and the outcome is documented in the project view."
+                    alt="Diagram of an asset moving from intake to a documented outcome, with the scanned tag routing it to physical destruction, erase and reuse evaluation, remarketing or recycling."
                     sizes="(max-width: 1024px) 100vw, 1100px"
                     placeholder="blur"
-                    className="h-auto w-full"
+                    className="h-auto w-full dark:hidden"
                   />
+                  <Image
+                    src={ApprovedOutcomesDark}
+                    alt="Diagram of an asset moving from intake to a documented outcome, with the scanned tag routing it to physical destruction, erase and reuse evaluation, remarketing or recycling."
+                    sizes="(max-width: 1024px) 100vw, 1100px"
+                    placeholder="blur"
+                    className="hidden h-auto w-full dark:block"
+                  />
+
+                  <figcaption>
+                    <ol className="mt-8 grid gap-6 sm:grid-cols-2 lg:mt-6 lg:grid-cols-[23.6fr_20.5fr_36.4fr_19.5fr] lg:gap-0">
+                      {OUTCOME_STEPS.map(({ icon: Icon, title, text }, i) => (
+                        <li
+                          key={title}
+                          className={`flex items-start gap-4 lg:block ${
+                            i === 0
+                              ? "lg:pl-10 xl:pl-12"
+                              : "lg:border-l lg:border-black/10 lg:pl-6 lg:dark:border-white/10"
+                          }`}
+                        >
+                          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-white">
+                            <Icon className="h-5 w-5" strokeWidth={1.75} aria-hidden="true" />
+                          </span>
+                          <div className="min-w-0 lg:mt-4 lg:pr-4">
+                            <p className="font-serif text-lg leading-snug text-stone-900 dark:text-white lg:text-xl">
+                              {title}
+                            </p>
+                            <p className="mt-1.5 text-[13px] leading-relaxed text-stone-500 dark:text-gray-400">
+                              {text}
+                            </p>
+                          </div>
+                        </li>
+                      ))}
+                    </ol>
+                  </figcaption>
                 </figure>
               </ScrollLoader>
             </section>
