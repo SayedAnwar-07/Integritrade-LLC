@@ -221,7 +221,7 @@ export const productsData: Product[] = [
     title: "Hard Drive Destruction and Media Disposal",
     metaTitle: "Hard Drive Destruction & Media Disposal | 2 mm",
     metaDescription:
-      "Serialized hard drive destruction at 2 mm, plus SSD, tape and optical media. Certificates of Destruction and optional videotaped destruction. NIST 800-88 aligned.",
+      "NIST 800-88 aligned destruction for hard drives, SSDs, tape and optical media, with serialized Certificates of Destruction and optional video evidence.",
     intro:
       "Drives pulled from machines over years and left in a drawer have no tag, no host and no record, so there is nothing to reconcile against. We serialize every piece at intake, labeled or not.",
     handling: {

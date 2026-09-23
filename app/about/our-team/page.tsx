@@ -12,9 +12,9 @@ import masood from "@/public/masood.jpg";
 import adnan from "@/public/adnan.jpg";
 
 export const metadata: Metadata = {
-  title: "Leadership | The People Accountable for Your Data",
+  title: { absolute: "Leadership | The People Accountable for Your Data" },
   description:
-    "Meet the founders who personally oversee every ITAD project at Integritrade a scientist with a Nature and Cell publication record and a cybersecurity engineer from Fortune 500 enterprise environments.",
+    "The founders who personally oversee every ITAD project: a scientist published in Nature and Cell, and a cybersecurity engineer from the Fortune 500.",
   keywords: [
     "Integritrade leadership",
     "Ian Ziyar founder",

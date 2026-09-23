@@ -13,9 +13,9 @@ import { Separator } from "@/components/ui/separator";
 const PAGE_URL = "https://integritradellc.com/about/our-locations/";
 
 // Suggested metadata: the attachment did not include location-page SEO tags.
-const SEO_TITLE = "Our Locations | Fresno ITAD Facility & Bay Area Dispatch | Integritrade LLC";
+const SEO_TITLE = "Our Locations | Fresno ITAD Facility & Bay Area Dispatch";
 const SEO_DESCRIPTION =
-  "Explore Integritrade’s Fresno ITAD facility and Pinole Bay Area dispatch location, plus California service areas for secure IT asset disposition, data destruction, and electronics recycling.";
+  "Our Fresno ITAD facility, our Pinole dispatch location for the Bay Area, and every California city we serve for ITAD and data destruction.";
 
 export const metadata: Metadata = {
   title: { absolute: SEO_TITLE },

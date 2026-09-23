@@ -142,9 +142,9 @@ export const servicesData: Service[] = [
   {
     slug: "basic-electronics-recycling",
     image: eRecycling,
-    metaTitle: "Basic Electronics Recycling Services Nationwide",
+    metaTitle: "Basic Electronics Recycling | Business E-Waste Pickup",
     metaDescription:
-      "Responsible e-waste recycling for organizations that have already handled data destruction internally. Weight tickets and recycling confirmation included. R2v3-aligned domestic processing.",
+      "Responsible e-waste recycling for organizations that have already handled data destruction. Pickup, weight tickets and R2v3-aligned processing.",
     pageTitle: "Basic Electronics Recycling",
     pageSubtitle:
       "For organizations that have already handled data destruction internally and simply need a responsible vendor to remove and process retired electronics.",
@@ -240,9 +240,9 @@ export const servicesData: Service[] = [
     slug: "data-destruction-services",
     image: certifiedDataDestruction,
     metaTitle:
-      "Certified Data Destruction Services Nationwide",
+      "Certified Data Destruction | Hard Drive & SSD Shredding",
     metaDescription:
-      "Compliance-grade data destruction with serialized certificates, 2mm mandated destruction, videotaped destruction, and media-specific handling. For data-bearing assets that are not eligible for value recovery.",
+      "Compliance-grade data destruction with serialized Certificates of Destruction, 2 mm shredding and videotaped destruction on request. R2v3 certified.",
     pageTitle: "Data Destruction Services",
     pageSubtitle:
       "For organizations that need specific destruction methods, documented proof, and a clear record of how data-bearing assets were handled including assets that fall below the value-recovery cutline.",
@@ -343,9 +343,9 @@ export const servicesData: Service[] = [
     slug: "it-asset-disposition",
     image: assetDisposition,
     metaTitle:
-      "IT Asset Disposition & Value Recovery",
+      "IT Asset Disposition (ITAD) & Value Recovery Services",
     metaDescription:
-      "Complete ITAD program: data sanitization, asset registration, refurbishment, remarketing, EOL recycling, and value recovery reporting. Percentage-based recovery or accelerated revenue split / buyback.",
+      "A complete ITAD program: data sanitization, refurbishment, remarketing and recycling, with value recovery reported per asset. Revenue share or buyback.",
     pageTitle: "IT Asset Disposition & Value Recovery",
     pageSubtitle:
       "For organizations with newer or higher-value assets that need secure data handling, reporting, resale, refurbishment, recycling, and financial recovery all under one chain of custody.",
@@ -584,9 +584,9 @@ export const servicesData: Service[] = [
     slug: "demanufacturing-prototype-destruction",
     image: demanufacturing,
     metaTitle:
-      "Demanufacturing and Witnessed Device Destruction Services | Prototype, Electronics, and IT Asset Destruction",
+      "Witnessed Prototype Destruction & Demanufacturing",
     metaDescription:
-      "Secure demanufacturing and witnessed destruction services for prototypes, engineering samples, electronics, IT assets, and sensitive devices. We prepare material, remove batteries, coordinate shredding through a partner facility, and document the destruction process.",
+      "Witnessed destruction of prototypes and engineering samples. We demanufacture, remove batteries, arrange shredding and document every step.",
     pageTitle: "Demanufacturing & Prototype Destruction",
     pageSubtitle:
       "For organizations that need controlled destruction rather than simple recycling, including prototypes, pre-release devices, engineering samples, recalled products, branded equipment, and sensitive IT assets that should never re-enter the market.",

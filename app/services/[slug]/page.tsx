@@ -40,7 +40,9 @@ export async function generateMetadata(props: {
   const canonicalPath = `/services/${params.slug}/`;
 
   return {
-    title: service.metaTitle,
+    // `absolute` stops the root layout appending " | Integritrade LLC", which
+    // pushed all five service titles past the ~60 characters Google renders.
+    title: { absolute: service.metaTitle },
     description: service.metaDescription,
 
     alternates: {

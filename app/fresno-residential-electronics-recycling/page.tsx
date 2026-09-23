@@ -24,9 +24,9 @@ import IndustryFAQ from '@/components/industries/IndustryFAQ'
 import FAQSchema from '@/components/industries/FAQSchema'
 
 export const metadata: Metadata = {
-  title: 'Fresno Residential Electronics Recycling & E-Waste Drop-Off | Integritrade',
+  title: { absolute: 'Fresno Residential Electronics Recycling & Drop-Off' },
   description:
-    'Recycle household electronics in Fresno at Integritrade’s residential e-waste drop-off. Most laptops, phones, tablets, computers, TVs, and electronics are accepted at no charge. Call ahead.',
+    'Recycle household electronics in Fresno. Most laptops, phones, tablets, computers and TVs are accepted free at our residential drop-off. Call ahead.',
   alternates: { canonical: '/fresno-residential-electronics-recycling/' },
   openGraph: {
     title: 'Fresno Residential Electronics Recycling & E-Waste Drop-Off',

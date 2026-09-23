@@ -28,9 +28,9 @@ import OutlineButton from "@/components/shared/buttons/OutlineButton"
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton"
 
 export const metadata: Metadata = {
-  title: "About Us | Trusted ITAD & Recycling Partner",
+  title: { absolute: "About Integritrade | R2v3 & ISO 27001 Certified ITAD" },
   description:
-    "Discover Integritrade, a trusted ITAD and e-waste recycling company dedicated to data security, compliance, and sustainable technology management.",
+    "R2v3 and ISO 27001 certified ITAD from our Fresno facility: secure data destruction, recycling and value recovery for businesses across California.",
   keywords: [
     "About Integritrade LLC",
     "IT Asset Disposition Experts",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Integritrade LLC | Trusted ITAD and Recycling Partner",
     description:
-      "Discover Integritrade, a trusted ITAD and e-waste recycling company dedicated to data security, compliance, and sustainable technology management.",
+      "R2v3 and ISO 27001 certified ITAD from our Fresno facility: secure data destruction, recycling and value recovery for businesses across California.",
     url: "https://integritradellc.com/about/",
     siteName: "Integritrade LLC",
     locale: "en_US",
