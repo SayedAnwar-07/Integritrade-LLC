@@ -110,6 +110,18 @@ if (urlList.length > MAX_URLS && !forceAll) {
   process.exit(1);
 }
 
+// Git Bash rewrites an argument that starts with "/" into a Windows path, so
+// "--urls /about/..." once arrived here as "C:/Program Files/Git/about/..."
+// and was submitted as a junk URL. Refuse anything shaped like that.
+const mangled = urlList.filter((u) => /\s|\/[A-Za-z]:\//.test(u));
+if (mangled.length) {
+  console.error(
+    `Refusing malformed URL(s): ${mangled.slice(0, 3).join(", ")}\n` +
+      "In Git Bash, pass full https:// URLs or run with MSYS_NO_PATHCONV=1."
+  );
+  process.exit(1);
+}
+
 const offHost = urlList.filter((u) => !u.startsWith(`${ORIGIN}/`) && u !== ORIGIN);
 if (offHost.length) {
   console.error(`Refusing to submit URLs on another host: ${offHost.slice(0, 3).join(", ")}`);
