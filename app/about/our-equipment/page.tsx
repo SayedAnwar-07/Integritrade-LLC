@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
 import PageHeader from "@/components/shared/PageHeader";
 import SectionFloatNav from "@/components/shared/SectionFloatNav";
+import MediaMethodMatrix from "@/components/about/MediaMethodMatrix";
 
 // The file names are the wrong way round: ssd-shredder.jpeg is the Proton hard
 // drive shredder and hdd-shredder.jpeg is the SEM SSD shredder (its badge is in
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     "Curious how we destroy your data? Check out the heavy-duty equipment we use to permanently shred hard drives, tapes, and solid-state media with zero recovery.",
   alternates: { canonical: "/about/our-equipment/" },
   openGraph: {
-    title: "Data Destruction Methods | Integritrade LLC",
+    title: "Our Data Destruction Methods | Integritrade LLC",
     description:
       "Industrial-grade data destruction with documented deliverables: software sanitization, degaussing, and SSD micro-shredding.",
     url: "https://integritradellc.com/about/our-equipment/",
@@ -54,9 +55,9 @@ export const metadata: Metadata = {
 },
 };
 
-// Ian renamed this page "Data Destruction Methods" on 2026-09-24 ("Our
-// Equipment" was too vague) and asked for it as a plain 1-2-3: erase, then
-// degauss and shred, then 2 mm shredding for flash. The URL stays
+// Ian renamed this page on 2026-09-24 ("Our Equipment" was too vague), settling
+// on "Our Data Destruction Methods", and asked for it as a plain 1-2-3: erase,
+// then degauss and shred, then 2 mm shredding for flash. The URL stays
 // /about/our-equipment/ because it carries the page's search history and his
 // blog articles link to it directly.
 const NAV_SECTIONS = [
@@ -68,6 +69,9 @@ const NAV_SECTIONS = [
 ];
 
 const SAMPLE_COD = "/documents/sample-certificate-of-destruction.pdf";
+// A real Blancco erasure report from an iPhone, with the IMEI and serial
+// masked down to their last digits as Ian asked.
+const SAMPLE_COE = "/documents/sample-certificate-of-erasure.pdf";
 const TRACETECH_CERTS = "/tracetech/#portal";
 
 type Photo = { src: StaticImageData; alt: string; caption?: string; position?: string };
@@ -81,9 +85,11 @@ type Method = {
   specs: { label: string; value: string }[];
   /** One photo fills the frame; two sit side by side, one per machine. */
   photos: Photo[];
-  /** Ian: the machines generate Certificates of Destruction in TraceTech,
-   *  so link a sample and the portal. */
-  sampleCertificate?: boolean;
+  /** A sample of the certificate this method produces. */
+  certificate: { label: string; href: string };
+  /** Ian: the two machines generate their certificates in TraceTech, so
+   *  those methods also link the portal. */
+  tracetech?: boolean;
 };
 
 /**
@@ -104,6 +110,7 @@ const METHODS: Method[] = [
       { label: "Output", value: "Serialized Certificate of Erasure for every drive" },
     ],
     photos: [{ src: softwareSanitizationImg, alt: "Integritrade software sanitization workflow" }],
+    certificate: { label: "View a sample Certificate of Erasure", href: SAMPLE_COE },
   },
   {
     id: "magnetic",
@@ -121,7 +128,8 @@ const METHODS: Method[] = [
       { src: degausserImg, alt: "Verity Systems Datagauss ZZ001208 Degausser", caption: "Degausser" },
       { src: ssdShredderImg, alt: "Proton Data Security Model 104 Hard Drive Shredder", caption: "Shredder" },
     ],
-    sampleCertificate: true,
+    certificate: { label: "View a sample Certificate of Destruction", href: SAMPLE_COD },
+    tracetech: true,
   },
   {
     id: "solidstate",
@@ -145,7 +153,8 @@ const METHODS: Method[] = [
         position: "object-[center_70%]",
       },
     ],
-    sampleCertificate: true,
+    certificate: { label: "View a sample Certificate of Destruction", href: SAMPLE_COD },
+    tracetech: true,
   },
 ];
 
@@ -211,9 +220,16 @@ export default function OurCapabilitiesPage() {
       <div className="mx-auto max-w-[1400px] px-4 pt-10 sm:px-6 lg:px-8 lg:pt-16">
         <ScrollLoader>
           <PageHeader
-            title="Data destruction methods"
-            description="Software erasure for drives being reused. Degaussing and shredding for hard drives and tapes. 2 mm shredding for SSDs and chips. All of it happens inside our Fresno facility, with a certificate for every drive."
+            title="Our data destruction methods"
+            description="We offer a full array of data destruction methods, because no single method works on every kind of media. Each hard drive, SSD, phone and tape gets the method that actually destroys its data, carried out in our Fresno facility and documented with a certificate."
           />
+        </ScrollLoader>
+
+        {/* What works on what, in green and red, before the detail. Ian's
+            point: visitors who don't already know that degaussing does
+            nothing to flash are exactly the ones this convinces. */}
+        <ScrollLoader>
+          <MediaMethodMatrix />
         </ScrollLoader>
       </div>
 
@@ -263,17 +279,17 @@ export default function OurCapabilitiesPage() {
                         ))}
                       </dl>
 
-                      {m.sampleCertificate && (
-                        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-8">
-                          <a
-                            href={SAMPLE_COD}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline-offset-4 hover:underline dark:text-emerald-400"
-                          >
-                            View a sample Certificate of Destruction
-                            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-                          </a>
+                      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-x-8">
+                        <a
+                          href={m.certificate.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline-offset-4 hover:underline dark:text-emerald-400"
+                        >
+                          {m.certificate.label}
+                          <ArrowUpRight className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                        </a>
+                        {m.tracetech && (
                           <Link
                             href={TRACETECH_CERTS}
                             className="group inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline-offset-4 hover:underline dark:text-emerald-400"
@@ -281,8 +297,8 @@ export default function OurCapabilitiesPage() {
                             How certificates work in TraceTech
                             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
                           </Link>
-                        </div>
-                      )}
+                        )}
+                      </div>
                     </div>
 
                     {m.photos.length === 1 ? (
