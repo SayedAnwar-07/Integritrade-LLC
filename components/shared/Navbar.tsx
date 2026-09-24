@@ -112,7 +112,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
     >
       <Link
         href={item.href}
-        className={`relative z-10 inline-flex items-center gap-1.5 rounded-md px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
+        className={`relative z-10 inline-flex items-center gap-1.5 rounded-md px-3.5 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
           isActive
             ? 'text-primary'
             : 'text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white'
@@ -210,7 +210,7 @@ function TraceTechNavItem({
     >
       <Link
         href={TRACETECH_HREF}
-        className="relative z-10 inline-flex items-center gap-1.5 rounded-md px-4 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white"
+        className="relative z-10 inline-flex items-center gap-1.5 rounded-md px-3.5 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white"
       >
         <span>TraceTech Asset Tracking</span>
         <ChevronDown
@@ -443,7 +443,7 @@ export default function Navbar() {
       dropdown: [
         { href: '/about/', label: 'About IntegriTrade', icon: Info },
         { href: '/about/our-team', label: 'Our Team', icon: Users },
-        { href: '/about/our-equipment', label: 'Data Destruction Methods', icon: ShieldCheck },
+        { href: '/about/our-equipment', label: 'Our Data Destruction Methods', icon: ShieldCheck },
         { href: '/about/our-locations',label: 'Our Locations',icon: MapPin },
       ],
     },
@@ -505,9 +505,14 @@ export default function Navbar() {
         }`}
       >
         <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-2">
-          {/* ================== LOGO with subtle scale ================== */}
+          {/* ================== LOGO with subtle scale ==================
+              Between 1024 and 1279px (lg) the full bar did not fit: logo +
+              six nav items + toggle + CTA ran 52px past the viewport and gave
+              every page a sideways scroll. The logo drops to its phone size
+              and the nav padding tightens for that range only; xl and up are
+              unchanged. */}
           <Link href="/" className="group flex items-center gap-3 flex-shrink-0">
-            <div className="flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.03] w-52 md:w-64">
+            <div className="flex items-center justify-center transition-transform duration-500 group-hover:scale-[1.03] w-52 md:w-64 lg:w-52 xl:w-64">
               <Image
                 src={integritradeLogo}
                 alt="Integritrade LLC Logo"
@@ -569,7 +574,7 @@ export default function Navbar() {
                     if (el) linkRefs.current.set(item.href, el)
                   }}
                   onMouseEnter={() => setHoveredHref(item.href)}
-                  className={`relative z-10 rounded-md px-4 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
+                  className={`relative z-10 rounded-md px-3.5 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
                     isActive
                       ? 'text-primary'
                       : 'text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white'
@@ -598,7 +603,7 @@ export default function Navbar() {
 
             <span
               aria-hidden="true"
-              className="mx-4 h-6 w-px bg-black/10 dark:bg-white/15"
+              className="mx-3 h-6 w-px bg-black/10 xl:mx-4 dark:bg-white/15"
             />
 
             <PrimaryButton href="/service-book" testId="button-get-quote">
