@@ -36,19 +36,18 @@ const MEDIA: { label: string; verdicts: Record<MethodKey, Verdict> }[] = [
 // The facts behind the red crosses, for readers who have never had to know.
 const WHY = [
   {
-    title: "Degaussing does nothing to flash",
-    text: "SSDs, phones and USB drives store data as electrical charge, not magnetism, so a degausser leaves it readable.",
+    title: "Degaussing Inefficacy on Solid-State Media",
+    text: "Solid-state drives (SSDs), mobile devices, and USB flash memory store data via electrical charges within NAND chips rather than magnetic domains. Degaussing has zero sanitization effect on non-magnetic storage, leaving all stored data completely intact and readable.",
   },
   {
-    title: "A standard shredder can miss flash chips",
-    text: "The chips are small enough to come through whole, data and all. Flash goes through our 2 mm shredder instead.",
+    title: "Particle Size Standards for Flash Media",
+    text: "High-density flash chips are small enough to pass intact through conventional mechanical shredder blades, risking data remanence. Solid-state assets require high-security micro-shredding (≤ 2 mm particle size) to physically pulverize the storage dies.",
   },
   {
-    title: "Erasure needs a working drive",
-    text: "A drive that has failed cannot be erased, so it is destroyed physically instead.",
+    title: "Functional Prerequisites for Software Erasure",
+    text: "Cryptographic erasure and overwrite protocols require fully operational read/write heads and controller access. Non-functional, damaged, or unmountable drives cannot be logically sanitized and must proceed directly to certified physical destruction.",
   },
 ];
-
 const SENTENCE: Record<Verdict, string> = {
   yes: "is effective for",
   no: "is ineffective for",
@@ -79,7 +78,11 @@ function VerdictIcon({ verdict, size = "h-5 w-5" }: { verdict: Verdict; size?: s
 
 export default function MediaMethodMatrix() {
   return (
-    <section aria-labelledby="what-works" className="mx-auto mt-14 max-w-5xl md:mt-16">
+    <section
+      id="what-works"
+      aria-labelledby="what-works"
+      className="scroll-mt-24 mx-auto mt-14 max-w-5xl md:mt-16"
+    >
       <div className="text-center">
         <h2
           id="what-works"
@@ -196,14 +199,24 @@ export default function MediaMethodMatrix() {
         {WHY.map((w) => (
           <li
             key={w.title}
-            className="flex min-w-0 gap-3 rounded-xl bg-white p-5 ring-1 ring-black/5 dark:bg-dark-secondary dark:ring-white/10"
+            className="flex min-w-0 overflow-hidden gap-3 rounded-xl bg-white p-4 sm:p-5 ring-1 ring-black/5 dark:bg-dark-secondary dark:ring-white/10"
           >
-            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-50 dark:bg-red-500/10">
-              <X className="h-3.5 w-3.5 text-red-500 dark:text-red-400" strokeWidth={3} aria-hidden="true" />
+            <span className="mt-1 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-red-50 dark:bg-red-500/10">
+              <X
+                className="h-3.5 w-3.5 text-red-500 dark:text-red-400"
+                strokeWidth={3}
+                aria-hidden="true"
+              />
             </span>
-            <div className="min-w-0">
-              <p className="text-[14px] font-semibold leading-snug text-stone-900 dark:text-white">{w.title}</p>
-              <p className="mt-1 text-[13px] leading-relaxed text-stone-600 dark:text-slate-300">{w.text}</p>
+
+            <div className="min-w-0 flex-1">
+              <p className="break-words text-[13px] font-semibold leading-snug text-stone-900 dark:text-white sm:text-[14px]">
+                {w.title}
+              </p>
+
+              <p className="mt-1 break-words text-[12px] leading-relaxed text-stone-600 dark:text-slate-300 sm:text-[13px]">
+                {w.text}
+              </p>
             </div>
           </li>
         ))}

@@ -107,17 +107,37 @@ type Method = {
 const METHODS: Method[] = [
   {
     id: "software",
-    title: "Software erasure",
+    title: "Certified Software Erasure & Sanitization",
     lead: "Preserving residual hardware value through verified, non-destructive data elimination",
     body: "Assets are cryptographically sanitized and independently verified, preserving hardware integrity for redeployment, lease return, or resale remarketing. Our network-based PXE boot infrastructure supports automated, high-throughput batch processing across entire server racks simultaneously - eliminating serial processing bottlenecks and minimizing chain-of-custody exposure.",
     specs: [
-      { label: "Equipment", value: "Blancco and WipeOS, both ADISA-verified" },
-      { label: "Media", value: "HDDs, SSDs, NVMe drives, phones, tablets, and computers" },
-      { label: "Standard", value: "NIST 800-88 baseline, adjustable to your requirements" },
-      { label: "Output", value: "Serialized Certificate of Erasure for every asset" },
+      { 
+        label: "Equipment", 
+        value: "Blancco and WipeOS, both ADISA-verified" 
+      },
+      { 
+        label: "Media", 
+        value: "HDDs, SSDs, NVMe drives, phones, tablets, and computers" 
+      },
+      { 
+        label: "Standard", 
+        value: "NIST 800-88 baseline, adjustable to your requirements" 
+      },
+      { 
+        label: "Output", 
+        value: "Serialized Certificate of Erasure for every asset" 
+      },
     ],
-    photos: [{ src: softwareSanitizationImg, alt: "Integritrade software sanitization workflow" }],
-    certificate: { label: "View a sample Certificate of Erasure", href: SAMPLE_COE },
+    photos: [
+      { 
+        src: softwareSanitizationImg, 
+        alt: "Integritrade software sanitization workflow" 
+      }
+    ],
+    certificate: { 
+      label: "View a Sample Certificate of Erasure", 
+      href: SAMPLE_COE 
+    },
   },
   {
     id: "magnetic",
@@ -136,11 +156,11 @@ const METHODS: Method[] = [
          * The TraceTech reference in the destruction certificate output should be clickable.
          *
          * Previously:
-         * "Serialized Certificate of Destruction (TraceTech-verified)"
+         * "Serialized Certificate of Destruction (TraceTech-tracked)"
          * was plain text only.
          *
          * Update:
-         * Keep the certificate output wording, but link the "TraceTech-verified"
+         * Keep the certificate output wording, but link the "TraceTech-tracked"
          * text directly to the TraceTech certificate portal so users can verify
          * the certificate tracking system.
          */
@@ -151,7 +171,7 @@ const METHODS: Method[] = [
               href={TRACETECH_CERTS}
               className="text-primary underline"
             >
-              TraceTech-verified
+              TraceTech-tracked
             </Link>
             )
           </>
@@ -184,11 +204,11 @@ const METHODS: Method[] = [
          * The TraceTech reference in the destruction certificate output should be clickable.
          *
          * Previously:
-         * "Serialized Certificate of Destruction (TraceTech-verified)"
+         * "Serialized Certificate of Destruction ( TraceTech-verified)"
          * was plain text only.
          *
          * Update:
-         * Keep the certificate output wording, but link the "TraceTech-verified"
+         * Keep the certificate output wording, but link the " TraceTech-verified"
          * text directly to the TraceTech certificate portal so users can verify
          * the certificate tracking system.
          */
@@ -199,7 +219,7 @@ const METHODS: Method[] = [
               href={TRACETECH_CERTS}
               className="text-primary underline"
             >
-              TraceTech-verified
+               TraceTech-verified
             </Link>
             )
           </>
