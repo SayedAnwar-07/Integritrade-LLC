@@ -17,10 +17,10 @@ import { Check, Minus, X } from "lucide-react";
 type Verdict = "yes" | "no" | "na";
 
 const METHODS = [
-  { key: "erase", label: "Software erasure", short: "Erase", step: 1 },
-  { key: "degauss", label: "Degaussing", short: "Degauss", step: 2 },
-  { key: "shred", label: "Shredding", short: "Shred", step: 2 },
-  { key: "micro", label: "2 mm shredding", short: "2 mm", step: 3 },
+  { key: "erase", label: "Data Erasure", short: "Erase" },
+  { key: "degauss", label: "Magnetic Neutralization", short: "Magnetic" },
+  { key: "shred", label: "Standard Mechanical Shredding", short: "Shred" },
+  { key: "micro", label: "2mm Disintegration", short: "2mm" },
 ] as const;
 
 type MethodKey = (typeof METHODS)[number]["key"];
@@ -29,7 +29,7 @@ const MEDIA: { label: string; verdicts: Record<MethodKey, Verdict> }[] = [
   { label: "Hard drives", verdicts: { erase: "yes", degauss: "yes", shred: "yes", micro: "na" } },
   { label: "SSDs and NVMe drives", verdicts: { erase: "yes", degauss: "no", shred: "no", micro: "yes" } },
   { label: "Phones and tablets", verdicts: { erase: "yes", degauss: "no", shred: "no", micro: "yes" } },
-  { label: "USB drives and SD cards", verdicts: { erase: "na", degauss: "no", shred: "no", micro: "yes" } },
+  { label: "USB drives and SD cards", verdicts: { erase: "yes", degauss: "no", shred: "no", micro: "yes" } },
   { label: "LTO and magnetic tape", verdicts: { erase: "na", degauss: "yes", shred: "yes", micro: "na" } },
 ];
 
@@ -50,9 +50,9 @@ const WHY = [
 ];
 
 const SENTENCE: Record<Verdict, string> = {
-  yes: "works on",
-  no: "does not work on",
-  na: "is not used for",
+  yes: "is effective for",
+  no: "is ineffective for",
+  na: "is not applicable for",
 };
 
 function VerdictIcon({ verdict, size = "h-5 w-5" }: { verdict: Verdict; size?: string }) {
@@ -75,13 +75,7 @@ function VerdictIcon({ verdict, size = "h-5 w-5" }: { verdict: Verdict; size?: s
   );
 }
 
-function StepBadge({ step }: { step: number }) {
-  return (
-    <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-primary text-[10px] font-bold text-white">
-      {step}
-    </span>
-  );
-}
+
 
 export default function MediaMethodMatrix() {
   return (
@@ -91,10 +85,10 @@ export default function MediaMethodMatrix() {
           id="what-works"
           className="font-serif text-2xl leading-[1.15] tracking-tight text-stone-900 dark:text-white sm:text-3xl"
         >
-          Which method works on which media
+          Approved Destruction Methods by Storage Media
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-[15px] leading-relaxed text-stone-600 dark:text-slate-300">
-          The wrong method can leave data behind. The numbers match the steps below.
+          Improper destruction leaves recoverable data behind. Use the matrix below to match your asset types to verified sanitization procedures.
         </p>
       </div>
 
@@ -144,9 +138,12 @@ export default function MediaMethodMatrix() {
                 Media
               </th>
               {METHODS.map((method) => (
-                <th key={method.key} scope="col" className="px-3 py-4 text-center">
-                  <span className="inline-flex items-center gap-2 text-[14px] font-semibold text-gray-900 dark:text-white">
-                    <StepBadge step={method.step} />
+                <th
+                  key={method.key}
+                  scope="col"
+                  className="px-3 py-4 text-center"
+                >
+                  <span className="text-[14px] font-semibold text-gray-900 dark:text-white">
                     {method.label}
                   </span>
                 </th>
@@ -182,10 +179,10 @@ export default function MediaMethodMatrix() {
       <p className="mt-4 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-gray-500 dark:text-gray-400">
         {(
           [
-            ["yes", "Works"],
-            ["no", "Does not work"],
-            ["na", "Not used for this media"],
-          ] as const
+            ["yes", "Effective"],
+            ["no", "Ineffective"],
+            ["na", "N/A"],
+          ]as const
         ).map(([verdict, label]) => (
           <span key={verdict} className="inline-flex items-center gap-1.5">
             <VerdictIcon verdict={verdict} size="h-4 w-4" />
