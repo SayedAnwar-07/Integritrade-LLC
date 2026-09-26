@@ -62,9 +62,9 @@ export const metadata: Metadata = {
 // /about/our-equipment/ because it carries the page's search history and his
 // blog articles link to it directly.
 const NAV_SECTIONS = [
-  { id: "software", label: "Software Erasure" },
-  { id: "magnetic", label: "Degauss & Shred" },
-  { id: "solidstate", label: "SSD & Chip Shredding" },
+  { id: "software", label: "Data Erasure" },
+  { id: "magnetic", label: "Magnetic Neutralization" },
+  { id: "solidstate", label: "2mm Disintegration" },
   { id: "visit", label: "Site Visits" },
 ];
 
