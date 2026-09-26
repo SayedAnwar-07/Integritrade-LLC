@@ -24,21 +24,21 @@ import IndustryFAQ from '@/components/industries/IndustryFAQ'
 import FAQSchema from '@/components/industries/FAQSchema'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Fresno Residential Electronics Recycling & Drop-Off' },
-  description:
-    'Recycle household electronics in Fresno. Most laptops, phones, tablets, computers and TVs are accepted free at our residential drop-off. Call ahead.',
+  title: { absolute: "Free Fresno Electronics Recycling Drop-Off | Integritrade" },
+  description: 
+    "Drop off computers, laptops, TVs, and phones for free recycling in Fresno. Certified R2v3 zero-landfill e-waste disposal. View our facility hours today.",
   alternates: { canonical: '/fresno-residential-electronics-recycling/' },
   openGraph: {
-    title: 'Fresno Residential Electronics Recycling & E-Waste Drop-Off',
-    description:
-      'Residential e-waste drop-off in Fresno, CA at Integritrade’s R2v3-certified facility. Most household electronics accepted at no charge — call before drop-off.',
+    title: "Free Fresno Electronics Recycling Drop-Off | Integritrade",
+    description: 
+      "Drop off computers, laptops, TVs, and phones for free recycling in Fresno. Certified R2v3 zero-landfill e-waste disposal. View our facility hours today.",
     url: 'https://integritradellc.com/fresno-residential-electronics-recycling/',
     siteName: 'Integritrade LLC',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: 'https://integritradellc.com/logo/integritrade-logo.png',
+        url: 'https://integritradellc.com/og/fresno-residential-electronics-recycling.jpg',
         width: 1200,
         height: 630,
         alt: 'Residential Electronics Recycling in Fresno, CA | Integritrade LLC',
@@ -47,10 +47,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Fresno Residential Electronics Recycling & E-Waste Drop-Off | Integritrade',
-    description:
-      'Household e-waste drop-off in Fresno, CA. Most electronics accepted at no charge — call before drop-off at (559) 325-4813.',
-    images: ['https://integritradellc.com/logo/integritrade-logo.png'],
+    title: "Free Fresno Electronics Recycling Drop-Off | Integritrade",
+    description: 
+      "Drop off computers, laptops, TVs, and phones for free recycling in Fresno. Certified R2v3 zero-landfill e-waste disposal. View our facility hours today.",
+    images: ['https://integritradellc.com/og/fresno-residential-electronics-recycling.jpg'],
   },
   robots: {
     index: true,
@@ -471,7 +471,7 @@ export default function FresnoResidentialElectronicsRecyclingPage() {
                         href="mailto:info@integritradeLLC.com"
                         className="hover:text-emerald-700 dark:hover:text-emerald-400"
                       >
-                        info@integritradeLLC.com
+                        <span data-nosnippet="">info@integritradeLLC.com</span>
                       </a>
                     </dd>
                   </div>

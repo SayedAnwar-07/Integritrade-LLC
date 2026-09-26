@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { BLOG_METADATA } from "./blogMetadata";
+import { ogImage } from "@/lib/og";
 
 import Decommission from "@/components/blogs/decommission/page";
 import NvmeDrives from "@/components/blogs/nvme-drives/page";
@@ -149,6 +150,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const metadata = BLOG_METADATA[slug];
 
+  // Each post's own cover image as its share preview, built into
+  // public/og/blogs/ by scripts/make-og-images.mjs. Every post used to point
+  // at an old hashed logo file that no longer exists, so shared posts showed
+  // no picture at all.
+  const og = ogImage(`blogs/${slug}.jpg`, String(metadata?.title ?? "Integritrade blog"));
+
   return {
     ...(metadata || {}),
     // `absolute` stops the root layout appending " | Integritrade LLC".
@@ -156,6 +163,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // characters Google renders, and left several naming the brand twice
     // because their own title already ended in "| Integritrade".
     ...(metadata?.title ? { title: { absolute: metadata.title as string } } : {}),
+    openGraph: { ...(metadata?.openGraph || {}), images: [og] },
+    twitter: { ...(metadata?.twitter || {}), images: [og.url] },
     alternates: {
       canonical: `https://integritradellc.com/blogs/${slug}/`,
     },

@@ -11,6 +11,7 @@ import RemoteITAssetRecoveryContent from "@/components/services/RemoteITAssetRec
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import ProductGrid from "@/components/products/ProductGrid";
 import PageHeader from "@/components/shared/PageHeader";
+import { ogImageFor } from "@/lib/og";
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
@@ -38,6 +39,7 @@ export async function generateMetadata(props: {
   }
 
   const canonicalPath = `/services/${params.slug}/`;
+  const og = ogImageFor("services", params.slug, service.pageTitle);
 
   return {
     // `absolute` stops the root layout appending " | Integritrade LLC", which
@@ -57,21 +59,15 @@ export async function generateMetadata(props: {
       locale: "en_US",
       type: "website",
 
-      images: [
-        {
-          url: "https://integritradellc.com/logo/integritrade-logo.png",
-          width: 1200,
-          height: 630,
-          alt: `${service.pageTitle} | Integritrade LLC`,
-        },
-      ],
+      // The page's own photo, not the logo (Ian, 2026-09-26). See lib/og.ts.
+      images: [og],
     },
 
     twitter: {
       card: "summary_large_image",
       title: service.metaTitle,
       description: service.metaDescription,
-      images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+      images: [og.url],
     },
 
     robots: {
@@ -243,7 +239,7 @@ export default async function ServicePage(props: {
 
               {/* Ian asked for the devices section to be reachable from the
                   quick sidebar, not just by scrolling the page. */}
-              {service.slug === "basic-electronics-recycling" && (
+              {service.slug === "secure-electronics-recycling" && (
                 <>
                   <p className="mb-4 mt-10 font-mono text-[10px] uppercase tracking-[0.24em] text-gray-500 dark:text-gray-400">
                     On This Page
@@ -532,7 +528,7 @@ export default async function ServicePage(props: {
             off this grid.
         ===================================================== */}
 
-        {service.slug === "basic-electronics-recycling" && (
+        {service.slug === "secure-electronics-recycling" && (
           <div id="devices" className="mt-20 scroll-mt-28 lg:mt-24">
             <ScrollLoader>
               <div className="max-w-2xl">

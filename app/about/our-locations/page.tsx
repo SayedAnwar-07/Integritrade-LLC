@@ -13,9 +13,9 @@ import { Separator } from "@/components/ui/separator";
 const PAGE_URL = "https://integritradellc.com/about/our-locations/";
 
 // Suggested metadata: the attachment did not include location-page SEO tags.
-const SEO_TITLE = "Our Locations | Fresno ITAD Facility & Bay Area Dispatch";
+const SEO_TITLE = "ITAD Facilities & Dispatch Locations | Integritrade";
 const SEO_DESCRIPTION =
-  "Our Fresno ITAD facility, our Pinole dispatch location for the Bay Area, and every California city we serve for ITAD and data destruction.";
+  "Integritrade operates a 31k sq ft secure ITAD processing facility and Bay Area dispatch hub. Certified NIST 800-88 data destruction and CODs. Get a quote.";
 
 export const metadata: Metadata = {
   title: { absolute: SEO_TITLE },
@@ -30,6 +30,7 @@ export const metadata: Metadata = {
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://integritradellc.com/og/home.jpg", width: 1200, height: 630, alt: "Integritrade ITAD processing facility" }],
   },
   twitter: {
     card: "summary",
@@ -205,8 +206,7 @@ export default function OurLocationsPage() {
                   Integritrade&rsquo;s Fresno facility is a dedicated 31,000 square foot ITAD and
                   electronics-processing facility with controlled access,
                   video monitoring, secure asset staging, dock access,
-                  lifts, pallet jacks, racking, and material-handling
-                  capability.
+                  and racking.
                 </p>
 
 
@@ -273,7 +273,7 @@ export default function OurLocationsPage() {
                         href="mailto:info@integritradeLLC.com"
                         className={contactLinkClass}
                       >
-                        info@integritradeLLC.com
+                        <span data-nosnippet="">info@integritradeLLC.com</span>
                       </a>
                     </dd>
                   </div>

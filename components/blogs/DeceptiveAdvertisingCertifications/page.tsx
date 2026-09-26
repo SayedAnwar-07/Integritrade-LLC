@@ -301,7 +301,7 @@ export default function DeceptiveAdvertisingCertifications() {
                       corporate IT equipment buyback
                     </a>
                     , direct purchase, revenue-share remarketing,{" "}
-                    <a href="/services/basic-electronics-recycling/" className="underline font-semibold hover:underline-offset-4">
+                    <a href="/services/secure-electronics-recycling/" className="underline font-semibold hover:underline-offset-4">
                       electronics recycling
                     </a>
                     ,{" "}

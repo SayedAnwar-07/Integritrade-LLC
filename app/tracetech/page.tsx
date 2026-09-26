@@ -57,6 +57,7 @@ export const metadata: Metadata = {
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://integritradellc.com/og/tracetech.jpg", width: 1200, height: 630, alt: "TraceTech client dashboard" }],
   },
   twitter: {
     card: "summary_large_image",
@@ -257,11 +258,11 @@ export default function TraceTechPage() {
                   real-time visibility from pickup through documented disposition.
                 </p>
 
-                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                  <PrimaryButton href="/service-book/" testId="tracetech-walkthrough" className="text-sm py-3">
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+                  <PrimaryButton href="/service-book/" testId="tracetech-walkthrough" className="shrink-0 text-sm py-3">
                     Request a TraceTech Walkthrough
                   </PrimaryButton>
-                  <OutlineButton href="/service-book/" testId="tracetech-service-request" className="text-sm py-3">
+                  <OutlineButton href="/service-book/" testId="tracetech-service-request" className="shrink-0 text-sm py-3">
                     Schedule a Service Request
                   </OutlineButton>
                 </div>
@@ -562,11 +563,11 @@ export default function TraceTechPage() {
                     refresh, the platform helps keep project status, requests, requirements,
                     documentation, value recovery, and reporting in view.
                   </p>
-                  <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-                    <PrimaryButton href="/service-book/" testId="tracetech-walkthrough-2" className="text-sm py-3">
+                  <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
+                    <PrimaryButton href="/service-book/" testId="tracetech-walkthrough-2" className="shrink-0 text-sm py-3">
                       Request a TraceTech Walkthrough
                     </PrimaryButton>
-                    <OutlineButton href="/service-book/" testId="tracetech-service-request-2" className="text-sm py-3">
+                    <OutlineButton href="/service-book/" testId="tracetech-service-request-2" className="shrink-0 text-sm py-3">
                       Schedule a Service Request
                     </OutlineButton>
                   </div>

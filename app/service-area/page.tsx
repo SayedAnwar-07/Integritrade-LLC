@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/home.jpg",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Service Area | California ITAD Coverage",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "ITAD & E-Waste Recycling Service Area | Integritrade LLC",
     description:
       "R2v3-certified IT asset disposition and data destruction across California.",
-    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+    images: ["https://integritradellc.com/og/home.jpg"],
   },
   robots: {
   index: true,

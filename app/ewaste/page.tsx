@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "article",
+    images: [{ url: "https://integritradellc.com/og/industries.jpg", width: 1200, height: 630, alt: "Electronics recycling warehouse" }],
   },
 
   twitter: {

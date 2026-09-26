@@ -21,21 +21,21 @@ import ScrollLoader from "@/components/shared/ScrollLoader";
 import ConsultationForm from "@/components/contact/ConsultationForm";
 
 export const metadata: Metadata = {
-  title: { absolute: "Data Destruction Methods | Erasure, Degaussing, Shredding" },
-  description:
-    "Curious how we destroy your data? Check out the heavy-duty equipment we use to permanently shred hard drives, tapes, and solid-state media with zero recovery.",
+  title: { absolute: "Data Destruction Equipment & Methods | Integritrade" },
+  description: 
+    "Industrial media shredding, degaussing, and NIST 800-88 erasure. Automated tracking eliminates manual errors with serialized audit CODs. Request a quote.",
   alternates: { canonical: "/about/our-equipment/" },
   openGraph: {
-    title: "Our Data Destruction Methods | Integritrade LLC",
-    description:
-      "Industrial-grade data destruction with documented deliverables: software sanitization, degaussing, and SSD micro-shredding.",
+    title: "Data Destruction Equipment & Methods | Integritrade",
+    description: 
+      "Industrial media shredding, degaussing, and NIST 800-88 erasure. Automated tracking eliminates manual errors with serialized audit CODs. Request a quote.",
     url: "https://integritradellc.com/about/our-equipment/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/equipment.jpg",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Capabilities",
@@ -432,7 +432,7 @@ export default function OurCapabilitiesPage() {
                               Email
                             </dt>
                             <dd className="text-sm text-gray-900 dark:text-gray-100">
-                              info@integritradeLLC.com
+                              <span data-nosnippet="">info@integritradeLLC.com</span>
                             </dd>
                           </div>
                         </div>

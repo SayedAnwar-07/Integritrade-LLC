@@ -10,29 +10,30 @@ import BlogHomeSection from "@/components/home/BlogHomeSection";
 import HomeSectionFloatNav from "@/components/home/HomeSectionFloatNav";
 
 export const metadata: Metadata = {
-  title: { absolute: "California ITAD, Data Destruction & IT Recycling" },
+  title: { absolute: "ITAD, Data Destruction & Electronics Recycling | Integritrade" },
 
-  description:
-    "R2v3 certified IT asset disposition, secure data destruction and electronics recycling for California businesses. Serialized certificates on every job.",
+  description: 
+    "R2v3 & ISO-certified ITAD, NIST 800-88 data destruction, and zero-landfill recycling. Serialized TraceTech chain-of-custody CODs on every job. Request a quote.",
 
   // Verification tags live in app/layout.tsx for ALL owners. A block here would
   // override the layout's and strip every token but this one from the homepage.
 
   openGraph: {
-    title: "Integritrade: ITAD, Data Destruction & Recycling in California",
-    description:
-      "Need secure electronics recycling and ITAD for California businesses? Integritrade offers R2v3-certified processing, data destruction, and asset management services.",
+    title: "ITAD, Data Destruction & Electronics Recycling | Integritrade",
+    description: 
+      "R2v3 & ISO-certified ITAD, NIST 800-88 data destruction, and zero-landfill recycling. Serialized TraceTech chain-of-custody CODs on every job. Request a quote.",
     url: "https://integritradellc.com/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://integritradellc.com/og/home.jpg", width: 1200, height: 630, alt: "Integritrade ITAD processing facility" }],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Integritrade: ITAD, Data Destruction & Recycling in California",
-    description:
-      "Need secure electronics recycling and ITAD for California businesses? Integritrade offers R2v3-certified processing, data destruction, and asset management services.",
+    title: "ITAD, Data Destruction & Electronics Recycling | Integritrade",
+    description: 
+      "R2v3 & ISO-certified ITAD, NIST 800-88 data destruction, and zero-landfill recycling. Serialized TraceTech chain-of-custody CODs on every job. Request a quote.",
   },
 
   alternates: {

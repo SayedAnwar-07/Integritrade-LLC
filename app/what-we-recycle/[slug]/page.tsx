@@ -10,6 +10,7 @@ import SectionFloatNav from "@/components/shared/SectionFloatNav";
 import IndustryFAQ from "@/components/industries/IndustryFAQ";
 import FAQSchema from "@/components/industries/FAQSchema";
 import IndustryCertBadges from "@/components/industries/IndustryCertBadges";
+import { ogImage } from "@/lib/og";
 
 const NAV_SECTIONS = [
   { id: "overview", label: "Overview" },
@@ -19,6 +20,15 @@ const NAV_SECTIONS = [
   { id: "value", label: "Value Recovery" },
   { id: "faqs", label: "FAQs" },
 ];
+
+// Share preview per device. Anything not listed is a general electronics
+// device, so it gets the Secure Electronics Recycling photo, the service these
+// pages sit under.
+const DEVICE_OG: Record<string, string> = {
+  "hard-drives": "services/data-destruction-services.jpg",
+  servers: "services.jpg",
+  "networking-equipment": "services.jpg",
+};
 
 export async function generateStaticParams() {
   return productsData.map((product) => ({ slug: product.slug }));
@@ -38,6 +48,8 @@ export async function generateMetadata(props: {
     };
   }
 
+  const og = ogImage(DEVICE_OG[product.slug] ?? "services/secure-electronics-recycling.jpg", product.title);
+
   return {
     // `absolute` stops the root layout appending " | Integritrade LLC".
     // These metaTitles already ended with it, so every device page shipped
@@ -54,20 +66,13 @@ export async function generateMetadata(props: {
       siteName: "Integritrade LLC",
       locale: "en_US",
       type: "website",
-      images: [
-        {
-          url: "https://integritradellc.com/logo/integritrade-logo.png",
-          width: 1200,
-          height: 630,
-          alt: `${product.title} | Integritrade LLC`,
-        },
-      ],
+      images: [og],
     },
     twitter: {
       card: "summary_large_image",
       title: product.metaTitle,
       description: product.metaDescription,
-      images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+      images: [og.url],
     },
     robots: {
       index: true,
@@ -101,8 +106,8 @@ export default async function ProductPage(props: { params: Promise<{ slug: strin
       {
         "@type": "ListItem",
         position: 2,
-        name: "Basic Electronics Recycling",
-        item: "https://integritradellc.com/services/basic-electronics-recycling/",
+        name: "Secure Electronics Recycling",
+        item: "https://integritradellc.com/services/secure-electronics-recycling/",
       },
       {
         "@type": "ListItem",
@@ -128,10 +133,10 @@ export default async function ProductPage(props: { params: Promise<{ slug: strin
           </Link>
           <ChevronRight className="h-3 w-3" />
           <Link
-            href="/services/basic-electronics-recycling/"
+            href="/services/secure-electronics-recycling/"
             className="transition-colors hover:text-[#2aac61]"
           >
-            Basic Electronics Recycling
+            Secure Electronics Recycling
           </Link>
           <ChevronRight className="h-3 w-3" />
           <span className="text-gray-700 dark:text-gray-300">{product.name}</span>

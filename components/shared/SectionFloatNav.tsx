@@ -128,7 +128,9 @@ export default function SectionFloatNav({
               {/* Label */}
               <span
                 className={[
-                  "text-[13px] font-semibold leading-snug transition-colors",
+                  // min-w-0 + hyphens: a long single word ("Neutralization") in the narrow
+                  // 1024px rail hyphenates instead of spilling past the rail.
+                  "min-w-0 hyphens-auto break-words text-[13px] font-semibold leading-snug transition-colors",
                   isActive
                     ? "text-gray-900 dark:text-white"
                     : "text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-gray-200",

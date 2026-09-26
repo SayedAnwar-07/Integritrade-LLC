@@ -24,10 +24,10 @@ import ScrollLoader from "@/components/shared/ScrollLoader";
 export const metadata: Metadata = {
   // `absolute` keeps the root layout from appending " | Integritrade LLC",
   // which pushed this past the ~60 characters Google renders.
-  title: { absolute: "ITAD by Industry | Certified Data Destruction" },
+  title: { absolute: "Industry ITAD & Compliant Data Destruction | Integritrade" },
 
-  description:
-    "Certified IT asset disposition and data destruction built around your sector: healthcare, finance, education, legal, government, retail and defense.",
+  description: 
+    "Compliant ITAD and certified media destruction for healthcare, finance, and public sectors. Audit-ready chain of custody & serialized CODs. Request a quote.",
 
   keywords: [
     "ITAD industries",
@@ -47,11 +47,10 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Industries We Serve | Secure ITAD & Data Destruction Solutions USA",
+    title: "Industry ITAD & Compliant Data Destruction | Integritrade",
 
-    description:
-      "Industry-specific ITAD services with strict compliance. Serving healthcare, finance, federal agencies, and enterprise sectors with secure data destruction and e-waste recycling.",
+    description: 
+      "Compliant ITAD and certified media destruction for healthcare, finance, and public sectors. Audit-ready chain of custody & serialized CODs. Request a quote.",
 
     url: "https://integritradellc.com/industries/",
     siteName: "Integritrade LLC",
@@ -60,7 +59,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/industries.jpg",
         width: 1200,
         height: 630,
         alt: "Industries Served by Integritrade LLC ITAD Services",
@@ -70,13 +69,12 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Industries We Serve | ITAD & Secure Data Destruction",
+    title: "Industry ITAD & Compliant Data Destruction | Integritrade",
 
-    description:
-      "Explore industry-specific IT asset disposition solutions tailored for compliance-heavy sectors across the USA.",
+    description: 
+      "Compliant ITAD and certified media destruction for healthcare, finance, and public sectors. Audit-ready chain of custody & serialized CODs. Request a quote.",
 
-    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+    images: ["https://integritradellc.com/og/industries.jpg"],
   },
 
   robots: {
@@ -212,7 +210,7 @@ export default function IndustriesPage(){
                                     href="mailto:info@integritradeLLC.com"
                                     className="block text-[15px] text-gray-800 dark:text-gray-100 hover:text-[#2aac61] dark:hover:text-[#2aac61] transition-colors break-all"
                                   >
-                                    info@integritradeLLC.com
+                                    <span data-nosnippet="">info@integritradeLLC.com</span>
                                   </a>
                                 </div>
                               </div>

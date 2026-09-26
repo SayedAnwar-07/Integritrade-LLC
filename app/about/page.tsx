@@ -12,8 +12,8 @@ import {
   Mail,
   Building2,
   Award,
-  Users,
-  ShieldCheck,
+  ClipboardX,
+  ScanBarcode,
 } from "lucide-react"
 import Script from "next/script"
 import type { Metadata } from "next"
@@ -28,9 +28,9 @@ import OutlineButton from "@/components/shared/buttons/OutlineButton"
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton"
 
 export const metadata: Metadata = {
-  title: { absolute: "About Integritrade | R2v3 & ISO 27001 Certified ITAD" },
-  description:
-    "R2v3 and ISO 27001 certified ITAD from our Fresno facility: secure data destruction, recycling and value recovery for businesses across California.",
+  title: { absolute: "About Integritrade | R2v3 Certified Enterprise ITAD" },
+  description: 
+    "Our 30k sq ft facility and proprietary software eliminate manual ITAD errors. 5 core certifications, NIST 800-88 data destruction, and CODs. Get a quote.",
   keywords: [
     "About Integritrade LLC",
     "IT Asset Disposition Experts",
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
     canonical: "/about/",
   },
   openGraph: {
-    title: "About Integritrade LLC | Trusted ITAD and Recycling Partner",
-    description:
-      "R2v3 and ISO 27001 certified ITAD from our Fresno facility: secure data destruction, recycling and value recovery for businesses across California.",
+    title: "About Integritrade | R2v3 Certified Enterprise ITAD",
+    description: 
+      "Our 30k sq ft facility and proprietary software eliminate manual ITAD errors. 5 core certifications, NIST 800-88 data destruction, and CODs. Get a quote.",
     url: "https://integritradellc.com/about/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/about.jpg",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC | ITAD & Recycling Services",
@@ -68,10 +68,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Integritrade LLC | Trusted ITAD & Recycling Partner",
-    description:
-      "Integritrade LLC is a trusted ITAD and e-waste recycling company, ensuring secure data destruction and environmental compliance.",
-    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+    title: "About Integritrade | R2v3 Certified Enterprise ITAD",
+    description: 
+      "Our 30k sq ft facility and proprietary software eliminate manual ITAD errors. 5 core certifications, NIST 800-88 data destruction, and CODs. Get a quote.",
+    images: ["https://integritradellc.com/og/about.jpg"],
   },
   robots: {
   index: true,
@@ -137,10 +137,11 @@ function Eyebrow({
 }
 
 const stats = [
-  { Icon: Building2, value: "Fresno, CA", label: "Secure processing facility" },
-  { Icon: Award, value: "5", label: "Industry certifications" },
-  { Icon: Users, value: "40+ yrs", label: "Combined experience" },
-  { Icon: ShieldCheck, value: "24/7", label: "Video-monitored" },
+  // Ian's four boxes, 2026-09-26: headline figure, what it is, and the proof.
+  { Icon: Building2, value: "30K", label: "Square Foot Access-Restricted Facility", detail: "24/7 Monitored Chain of Custody" },
+  { Icon: Award, value: "5", label: "Core Certifications", detail: "R2v3, ISO 27001, ISO 9001, ISO 14001, ISO 45001" },
+  { Icon: ClipboardX, value: "0", label: "Manual Notes", detail: "100% Software-Enforced System Workflows" },
+  { Icon: ScanBarcode, value: "Serialized", label: "Reconciliation", detail: "Client Asset Tag Matched to Drive Serial" },
 ]
 
 const valueRecovery = [
@@ -305,15 +306,15 @@ export default function AboutPage() {
               <Eyebrow>About Integritrade</Eyebrow>
 
               <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl leading-[1.05] tracking-tight text-stone-900 dark:text-white">
-                Founded to make IT asset disposition secure, accountable, and
-                worth it.
+                Engineered for Security. Governed by Software. Proven by Audit.
               </h1>
 
               <p className="mt-7 max-w-xl text-lg leading-8 text-stone-700 dark:text-slate-300">
-                Integritrade exists to give organizations a frictionless, highly
-                secure, and fully accountable IT asset disposition process
-                using technology to eliminate human error, protect sensitive
-                data, and maximize the return on retired electronics.
+                Most ITAD failures happen because providers rely on manual notes,
+                paper clipboards, and human memory. Integritrade replaces manual
+                guesswork with proprietary software automation, eliminating
+                processing errors, safeguarding enterprise data, and delivering
+                an unbroken, audit-proof chain of custody.
               </p>
 
               <div className="mt-9 flex flex-col sm:flex-row gap-4">
@@ -345,7 +346,7 @@ export default function AboutPage() {
         {/* Stat strip — visual relief + at-a-glance credibility */}
         <ScrollLoader>
           <div className="mt-16 lg:mt-24 grid grid-cols-2 gap-px overflow-hidden rounded-md border border-stone-200 bg-stone-200 dark:border-white/10 dark:bg-white/10 lg:grid-cols-4">
-            {stats.map(({ Icon, value, label }) => (
+            {stats.map(({ Icon, value, label, detail }) => (
               <div
                 key={label}
                 className="flex flex-col items-center bg-white px-5 py-8 text-center dark:bg-dark-secondary"
@@ -354,8 +355,11 @@ export default function AboutPage() {
                 <div className="mt-4 font-serif text-2xl font-semibold text-stone-900 dark:text-white lg:text-3xl">
                   {value}
                 </div>
-                <p className="mt-1 text-sm text-stone-600 dark:text-slate-400">
+                <p className="mt-1 text-sm font-medium text-stone-700 dark:text-slate-300">
                   {label}
+                </p>
+                <p className="mt-2 text-xs leading-relaxed text-stone-500 dark:text-slate-400">
+                  {detail}
                 </p>
               </div>
             ))}
@@ -675,7 +679,7 @@ export default function AboutPage() {
                         Email
                       </dt>
                       <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        info@integritradeLLC.com
+                        <span data-nosnippet="">info@integritradeLLC.com</span>
                       </dd>
                     </div>
                   </div>

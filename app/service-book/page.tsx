@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     images: [
       {
-        url: 'https://integritradellc.com/logo/integritrade-logo.png',
+        url: 'https://integritradellc.com/og/home.jpg',
         width: 1200,
         height: 630,
         alt: 'Contact Integritrade LLC Certified ITAD & Electronic Recycling',
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: 'Contact Integritrade LLC | R2v3 Certified ITAD & Data Destruction',
     description:
       'Need certified data destruction or e-waste recycling in California? Integritrade provides secure ITAD solutions statewide from our secure Fresno facility.',
-    images: ['https://integritradellc.com/logo/integritrade-logo.png'],
+    images: ['https://integritradellc.com/og/home.jpg'],
   },
   alternates: {
     canonical: 'https://integritradellc.com/service-book',

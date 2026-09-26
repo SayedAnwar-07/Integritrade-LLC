@@ -89,7 +89,7 @@ export default function ServicesCTA() {
                         Email
                       </span>
                       <span className="text-sm text-gray-800 dark:text-gray-200 group-hover:text-primary transition-colors">
-                        info@integritradeLLC.com
+                        <span data-nosnippet="">info@integritradeLLC.com</span>
                       </span>
                     </a>
                   </div>

@@ -89,9 +89,9 @@ function TeardownGear(props: SVGProps<SVGSVGElement>) {
 
 const SERVICES = [
   {
-    href: "/services/basic-electronics-recycling/",
+    href: "/services/secure-electronics-recycling/",
     Icon: RecycleLoop,
-    title: "Basic Electronics Recycling",
+    title: "Secure Electronics Recycling",
     line: "Responsible e-waste processing when your data destruction is already handled.",
   },
   {

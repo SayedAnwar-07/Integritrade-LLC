@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/home.jpg",
         width: 1200,
         height: 630,
         alt: "Terms and Conditions | Integritrade LLC",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Terms and Conditions | Integritrade LLC",
     description:
       "Understand Integritrade LLC terms and conditions before using our services.",
-    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+    images: ["https://integritradellc.com/og/home.jpg"],
   },
 
   robots: {
@@ -238,7 +238,7 @@ export default function TermsPage() {
                         href="mailto:info@integritradeLLC.com"
                         className="text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors font-medium break-all"
                       >
-                        info@integritradeLLC.com
+                        <span data-nosnippet="">info@integritradeLLC.com</span>
                       </a>
                     </div>
                     <div>

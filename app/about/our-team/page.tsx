@@ -12,9 +12,9 @@ import masood from "@/public/masood.jpg";
 import adnan from "@/public/adnan.jpg";
 
 export const metadata: Metadata = {
-  title: { absolute: "Leadership | The People Accountable for Your Data" },
-  description:
-    "The founders who personally oversee every ITAD project: a scientist published in Nature and Cell, and a cybersecurity engineer from the Fortune 500.",
+  title: { absolute: "ITAD Leadership & Data Security Experts | Integritrade" },
+  description: 
+    "Led by a Fortune 500 cybersecurity engineer and published scientist. Integritrade replaces manual ITAD errors with rigorous data protection. Contact us.",
   keywords: [
     "Integritrade leadership",
     "Ian Ziyar founder",
@@ -27,16 +27,16 @@ export const metadata: Metadata = {
     canonical: "/about/our-team/",
   },
   openGraph: {
-    title: "Leadership | The People Accountable for Your Data | Integritrade LLC",
-    description:
-      "Meet the founders who personally oversee every ITAD project at Integritrade.",
+    title: "ITAD Leadership & Data Security Experts | Integritrade",
+    description: 
+      "Led by a Fortune 500 cybersecurity engineer and published scientist. Integritrade replaces manual ITAD errors with rigorous data protection. Contact us.",
     url: "https://integritradellc.com/about/our-team/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/about.jpg",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Leadership Team",
@@ -45,10 +45,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Leadership | The People Accountable for Your Data | Integritrade LLC",
-    description:
-      "Meet the founders who personally oversee every ITAD project at Integritrade.",
-    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+    title: "ITAD Leadership & Data Security Experts | Integritrade",
+    description: 
+      "Led by a Fortune 500 cybersecurity engineer and published scientist. Integritrade replaces manual ITAD errors with rigorous data protection. Contact us.",
+    images: ["https://integritradellc.com/og/about.jpg"],
   },
   robots: {
   index: true,
@@ -126,7 +126,7 @@ const stats: Stat[] = [
   { value: "100%", label: "In-house processing" },
 ];
 
-const HEADLINE = "The people accountable for every shipment.";
+const HEADLINE = "Engineering Rigor. Executive Accountability.";
 
 export default function OurTeamPage() {
   const personSchema = {
@@ -160,7 +160,7 @@ export default function OurTeamPage() {
           stats={stats}
           headline={HEADLINE}
           gradientWord="accountable"
-          intro="Every retired asset is processed under the direct supervision of a named, credentialed person not a subcontractor, not a faceless ops team."
+          intro="Data breaches during hardware retirement rarely stem from technical failures. They happen when vendors rely on manual intake sheets and human memory. Integritrade is built around software-enforced controls and verified custody that eliminate processing errors before hardware ever moves."
         />
 
         {/* ── CTA ── */}
@@ -229,7 +229,7 @@ export default function OurTeamPage() {
                         Email
                       </dt>
                       <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        info@integritradeLLC.com
+                        <span data-nosnippet="">info@integritradeLLC.com</span>
                       </dd>
                     </div>
                   </div>

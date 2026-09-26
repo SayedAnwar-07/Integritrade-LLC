@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://integritradellc.com/og/home.jpg", width: 1200, height: 630, alt: "Integritrade ITAD processing facility" }],
   },
   robots: {
   index: true,
@@ -144,7 +145,7 @@ export default function AccessibilityPage() {
                         href="mailto:info@integritradeLLC.com"
                         className="text-gray-700 dark:text-gray-300 hover:text-emerald-700 dark:hover:text-emerald-400 transition-colors font-medium break-all"
                       >
-                        info@integritradeLLC.com
+                        <span data-nosnippet="">info@integritradeLLC.com</span>
                       </a>
                     </div>
                     <div>

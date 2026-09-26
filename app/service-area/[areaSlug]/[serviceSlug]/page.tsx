@@ -14,6 +14,7 @@ import {
 import PageHeader from "@/components/shared/PageHeader";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import ServiceDetailSidebar from "@/components/service-area/Servicedetailsidebar";
+import { ogImage } from "@/lib/og";
 
 import {
   getAllServiceParams,
@@ -46,14 +47,48 @@ export async function generateMetadata({
 
   const { area, service } = data;
 
+  // With no openGraph of their own, all 420 of these pages inherited the
+  // homepage's title and link and the favicon as their share picture. Each now
+  // describes itself, with the photo from the matching service page.
+  const title = `${service.metaTitle} | Integritrade LLC`;
+  const url = `https://integritradellc.com/service-area/${area.slug}/${service.slug}/`;
+  const og = ogImage(SERVICE_OG[service.slug] ?? "home.jpg", `${service.title} in ${area.name}`);
+
   return {
     title: service.metaTitle,
     description: service.metaDescription,
     alternates: {
       canonical: `/service-area/${area.slug}/${service.slug}`,
     },
+    openGraph: {
+      title,
+      description: service.metaDescription,
+      url,
+      siteName: "Integritrade LLC",
+      locale: "en_US",
+      type: "website",
+      images: [og],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: service.metaDescription,
+      images: [og.url],
+    },
   };
 }
+
+// Share photo for each city service, taken from the matching service page.
+const SERVICE_OG: Record<string, string> = {
+  "data-destruction-services": "services/data-destruction-services.jpg",
+  "certificates-of-destruction": "services/data-destruction-services.jpg",
+  "hard-drive-shredding": "services/data-destruction-services.jpg",
+  "it-asset-disposition": "services/it-asset-disposition.jpg",
+  "asset-recovery": "services/it-asset-disposition.jpg",
+  "sell-used-apple-equipment": "services/it-asset-disposition.jpg",
+  "data-center-decommissioning": "services.jpg",
+  "basic-electronics-recycling": "services/secure-electronics-recycling.jpg",
+};
 
 export default async function ServicePage({ params }: PageProps) {
   const { areaSlug, serviceSlug } = await params;

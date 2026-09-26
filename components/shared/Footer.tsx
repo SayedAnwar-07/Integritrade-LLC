@@ -9,8 +9,8 @@ import SocialAddress from "../SocialAddress";
 
 const footerServices = [
   { 
-    href: "/services/basic-electronics-recycling/", 
-    label: "Basic Electronics Recycling" 
+    href: "/services/secure-electronics-recycling/", 
+    label: "Secure Electronics Recycling" 
   },
   { 
     href: "/services/data-destruction-services/", 
@@ -35,10 +35,11 @@ export default function Footer() {
   return (
     // data-nosnippet: the footer address/links are boilerplate on every page and
     // Google was pulling them in as search descriptions instead of the meta tag.
-    <footer
-      className="relative bg-[#0A0E0F] text-white overflow-hidden"
-      data-nosnippet
-    >
+    <footer className="relative bg-[#0A0E0F] text-white overflow-hidden">
+      {/* Google only honours data-nosnippet on div, span and section, so it
+          sits on this wrapper, not on <footer>. On <footer> it was ignored and
+          the footer email kept appearing as the search description. */}
+      <div data-nosnippet="">
       {/* Top accent line */}
       <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#2aac61] to-transparent" />
 
@@ -130,7 +131,7 @@ export default function Footer() {
                       href="mailto:info@integritradeLLC.com"
                       className="text-white/90 text-[13px] tracking-wide hover:text-[#2aac61] transition-colors duration-300"
                     >
-                      info@integritradeLLC.com
+                      <span data-nosnippet="">info@integritradeLLC.com</span>
                     </a>
                   ),
                 },
@@ -271,6 +272,7 @@ export default function Footer() {
 
       {/* Bottom accent line */}
       <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-[#2aac61]/40 to-transparent" />
+      </div>
     </footer>
   );
 }

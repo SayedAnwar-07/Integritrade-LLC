@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/home.jpg",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Blog – ITAD & Recycling Insights",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Integritrade LLC Blog – ITAD & E-Waste Recycling Insights",
     description:
       "Expert insights on IT asset disposition, secure data destruction, and electronics recycling.",
-    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+    images: ["https://integritradellc.com/og/home.jpg"],
   },
   robots: {
   index: true,

@@ -50,7 +50,7 @@ interface NavItem {
 const DROPDOWN_ICON_COLORS: Record<string, string> = {
   // Services
   '/services/': 'text-slate-600 dark:text-slate-300',
-  '/services/basic-electronics-recycling': 'text-emerald-600 dark:text-emerald-400',
+  '/services/secure-electronics-recycling': 'text-emerald-600 dark:text-emerald-400',
   '/services/data-destruction-services': 'text-rose-600 dark:text-rose-400',
   '/services/it-asset-disposition': 'text-blue-600 dark:text-blue-400',
   "/services/remote-it-asset-recovery": 'text-violet-600 dark:text-violet-400',
@@ -212,7 +212,7 @@ function TraceTechNavItem({
         href={TRACETECH_HREF}
         className="relative z-10 inline-flex items-center gap-1.5 rounded-md px-3.5 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white"
       >
-        <span>TraceTech Asset Tracking</span>
+        <span className="whitespace-nowrap">TraceTech<span className="hidden xl:inline"> Asset Tracking</span></span>
         <ChevronDown
           className={`w-3 h-3 transition-transform duration-300 ${open ? 'rotate-180' : ''} opacity-60`}
           strokeWidth={2.5}
@@ -414,7 +414,7 @@ export default function Navbar() {
       label: 'Services',
       dropdown: [
         { href: '/services/', label: 'Compare Our Service Levels', icon: Scale },
-        { href: '/services/basic-electronics-recycling', label: 'Basic Electronics Recycling', icon: Recycle },
+        { href: '/services/secure-electronics-recycling', label: 'Secure Electronics Recycling', icon: Recycle },
         { href: '/services/data-destruction-services', label: 'Data Destruction Services', icon: ShieldOff },
         { href: '/services/it-asset-disposition', label: 'IT Asset Disposition & Value Recovery', icon: Monitor },  
         {href: "/services/remote-it-asset-recovery",label: "Remote IT Asset Recovery",icon: Laptop,},      
@@ -504,7 +504,7 @@ export default function Navbar() {
             : ''
         }`}
       >
-        <div className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-2">
+        <div data-nosnippet="" className="mx-auto flex max-w-[1400px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8 py-2">
           {/* ================== LOGO with subtle scale ==================
               Between 1024 and 1279px (lg) the full bar did not fit: logo +
               six nav items + toggle + CTA ran 52px past the viewport and gave
@@ -626,7 +626,9 @@ export default function Navbar() {
       </header>
 
       {/* ================== MOBILE MENU ================== */}
+      {/* data-nosnippet: menu text is never a useful search description. */}
       <div
+        data-nosnippet=""
         className={`lg:hidden fixed inset-0 z-[100] transition-all duration-400 ${
           isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0 pointer-events-none'
         }`}

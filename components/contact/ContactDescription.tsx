@@ -112,7 +112,7 @@ export default function ContactDescription() {
             </h1>
 
             <p className="mt-6 max-w-md text-base leading-relaxed text-slate-600 dark:text-slate-300">
-              Whether you need basic recycling, certified data destruction, full
+              Whether you need secure electronics recycling, certified data destruction, full
               IT asset disposition, or a complete data center decommission - and
               whether you&apos;re in San Francisco, Fresno, Los Angeles, San
               Diego, or anywhere in between - our team handles it end to end.
@@ -183,7 +183,7 @@ export default function ContactDescription() {
               >
                 <Mail className="h-4 w-4 text-emerald-600 dark:text-emerald-400" />
                 <span className="text-sm font-semibold">
-                  info@integritradeLLC.com
+                  <span data-nosnippet="">info@integritradeLLC.com</span>
                 </span>
               </a>
 

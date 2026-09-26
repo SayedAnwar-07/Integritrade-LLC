@@ -67,9 +67,12 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     url: siteConfig.url,
     siteName: siteConfig.siteName,
+    // Default preview for any page that sets no image of its own. This was
+    // siteConfig.business.image, the favicon, which is what a shared city
+    // page showed on Reddit. A real photo now; see lib/og.ts.
     images: [
       {
-        url: siteConfig.business.image,
+        url: "https://integritradellc.com/og/home.jpg",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC — ITAD & Recycling Services",

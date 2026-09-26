@@ -8,9 +8,9 @@ import ServicesCTA from "@/components/services/Servicescta";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 
 export const metadata: Metadata = {
-  title: "Certifications and Standards",
-  description:
-    "View Integritrade LLC certifications including R2v3 and ISO 27001 proving our commitment to secure, compliant and sustainable IT asset management",
+  title: { absolute: "R2v3, ISO 27001 & ITAD Certifications | Integritrade" },
+  description: 
+    "R2v3, ISO 27001, 9001, 14001 & 45001 certified. Enterprise NIST 800-88 data destruction, strict chain of custody, and TraceTech CODs. Verify credentials.",
 
   keywords: [
     "R2 certified ITAD facility",
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Certifications and Standards | Integritrade LLC",
-    description:
-      "View Integritrade LLC certifications including R2v3 and ISO 27001 proving our commitment to secure, compliant and sustainable IT asset management",
+    title: "R2v3, ISO 27001 & ITAD Certifications | Integritrade",
+    description: 
+      "R2v3, ISO 27001, 9001, 14001 & 45001 certified. Enterprise NIST 800-88 data destruction, strict chain of custody, and TraceTech CODs. Verify credentials.",
     url: "https://integritradellc.com/certifications/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://integritradellc.com/logo/integritrade-logo.png",
+        url: "https://integritradellc.com/og/certifications.jpg",
         width: 1200,
         height: 630,
         alt: "Integritrade LLC Certifications and Standards",
@@ -51,10 +51,10 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Certifications and Standards | Integritrade LLC",
-    description:
-      "View Integritrade LLC certifications including R2v3 and ISO 27001 proving our commitment to secure, compliant and sustainable IT asset management",
-    images: ["https://integritradellc.com/logo/integritrade-logo.png"],
+    title: "R2v3, ISO 27001 & ITAD Certifications | Integritrade",
+    description: 
+      "R2v3, ISO 27001, 9001, 14001 & 45001 certified. Enterprise NIST 800-88 data destruction, strict chain of custody, and TraceTech CODs. Verify credentials.",
+    images: ["https://integritradellc.com/og/certifications.jpg"],
   },
 
   robots: {

@@ -12,6 +12,7 @@ import PageHeader from "@/components/shared/PageHeader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import { generateCityIntro } from "@/data/areas/seo/generateIntro";
+import { ogImage } from "@/lib/og";
 
 type AreaPageProps = {
   params: Promise<{
@@ -43,28 +44,44 @@ export async function generateMetadata({
     area.metaDescription ??
     `Certified IT asset disposition, secure data destruction, and e-waste recycling for ${area.name}, CA businesses. R2v3 and ISO certified with audit-ready documentation.`;
 
+  // Use the city's own metaTitle, but only when it actually fits what Google
+  // renders. It is set `absolute` so the root layout does not append
+  // " | Integritrade LLC" again.
+  //
+  // The guard matters: the route used to ignore metaTitle entirely, and most
+  // of the 60 city files still carry long legacy titles ("E-Waste Recycling
+  // in South San Francisco, CA | Trusted Corporate E-Waste Recycling", 82
+  // characters). Honouring those unconditionally fixed the six cities we have
+  // rewritten and truncated the other 54. Cities fall back to the short
+  // generated pattern until their metaTitle has been rewritten to fit, so
+  // rewriting one is all it takes to switch it on.
+  const title =
+    area.metaTitle && area.metaTitle.length <= TITLE_LIMIT
+      ? area.metaTitle
+      : `${area.name} IT Asset Disposition Services | Integritrade LLC`;
+  const url = `https://integritradellc.com/service-area/${areaSlug}/`;
+  const og = ogImage("home.jpg", `IT asset disposition in ${area.name}`);
+
   return {
-    // Use the city's own metaTitle, but only when it actually fits what Google
-    // renders. `absolute` stops the root layout appending " | Integritrade LLC",
-    // so the whole budget is the city's to spend.
-    //
-    // The guard matters: the route used to ignore metaTitle entirely, and most
-    // of the 60 city files still carry long legacy titles ("E-Waste Recycling
-    // in South San Francisco, CA | Trusted Corporate E-Waste Recycling", 82
-    // characters). Honouring those unconditionally fixed the six cities we have
-    // rewritten and truncated the other 54. Cities fall back to the short
-    // generated pattern until their metaTitle has been rewritten to fit, so
-    // rewriting one is all it takes to switch it on.
-    title:
-      area.metaTitle && area.metaTitle.length <= TITLE_LIMIT
-        ? { absolute: area.metaTitle }
-        : `${area.name} IT Asset Disposition Services`,
+    title: { absolute: title },
     description,
     // Without this the page inherits the root layout's canonical of "/", which
     // tells Google every city hub is a duplicate of the homepage.
     alternates: {
       canonical: `/service-area/${areaSlug}/`,
     },
+    // Same problem for sharing: with no openGraph of its own, a city page
+    // inherited the homepage's title, link and the favicon as its picture.
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "Integritrade LLC",
+      locale: "en_US",
+      type: "website",
+      images: [og],
+    },
+    twitter: { card: "summary_large_image", title, description, images: [og.url] },
   };
 }
 

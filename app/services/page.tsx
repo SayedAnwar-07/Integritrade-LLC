@@ -25,20 +25,21 @@ const NAV_SECTIONS = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: "ITAD, Data Destruction & E-Waste Recycling Services" },
-  description:
-    "Compare our service levels: basic recycling, certified data destruction, and full IT asset disposition with value recovery. R2v3 certified, statewide.",
+  title: { absolute: "ITAD, Data Destruction & E-Waste Services | Integritrade" },
+  description: 
+    "Explore certified ITAD, NIST 800-88 data destruction, and zero-landfill e-waste recycling. Serialized TraceTech tracking on every job. View our full services.",
   alternates: {
     canonical: "/services/",
   },
   openGraph: {
-    title: "Enterprise ITAD & Recycling Services",
-    description:
-      "R2v3 certified IT asset disposition, NIST 800-88 data destruction, and electronics recycling for enterprises. Serialized chain of custody. Nationwide pickup from Fresno, CA.",
+    title: "ITAD, Data Destruction & E-Waste Services | Integritrade",
+    description: 
+      "Explore certified ITAD, NIST 800-88 data destruction, and zero-landfill e-waste recycling. Serialized TraceTech tracking on every job. View our full services.",
     url: "https://integritradellc.com/services/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
+    images: [{ url: "https://integritradellc.com/og/services.jpg", width: 1200, height: 630, alt: "Server racks ready for IT asset disposition" }],
   },
   robots: {
   index: true,

@@ -14,6 +14,7 @@ import ScrollLoader from "@/components/shared/ScrollLoader";
 import IndustryFAQ from "@/components/industries/IndustryFAQ";
 import FAQSchema from "@/components/industries/FAQSchema";
 import IndustryCertBadges from "@/components/industries/IndustryCertBadges";
+import { ogImageFor } from "@/lib/og";
 
 
 const ConsultationForm = dynamic(
@@ -44,6 +45,8 @@ export async function generateMetadata(props: {
     };
   }
 
+  const og = ogImageFor("industries", params.slug, industry.title);
+
   return {
     // `absolute` so the root layout does not append " | Integritrade LLC".
     // That suffix is 19 characters and pushed every industry title past the
@@ -62,23 +65,15 @@ export async function generateMetadata(props: {
       siteName: "Integritrade LLC",
       locale: "en_US",
       type: "website",
-      images: [
-        {
-          url: "https://integritradellc.com/logo/integritrade-logo.png",
-          width: 1200,
-          height: 630,
-          alt: `${industry.title} | Integritrade LLC`,
-        },
-      ],
+      // The page's own photo, not the logo (Ian, 2026-09-26). See lib/og.ts.
+      images: [og],
     },
 
     twitter: {
       card: "summary_large_image",
       title: industry.metaTitle,
       description: industry.metaDescription,
-      images: [
-        "https://integritradellc.com/logo/integritrade-logo.png",
-      ],
+      images: [og.url],
     },
 
     robots: {
@@ -369,7 +364,7 @@ export default async function IndustryPage(
                     <Mail className="h-4 w-4 text-emerald-700 dark:text-emerald-400 mt-1"/>
 
                     <a href="mailto:info@integritradeLLC.com" className="text-[15px] text-gray-800 dark:text-gray-100 break-all">
-                      info@integritradeLLC.com
+                      <span data-nosnippet="">info@integritradeLLC.com</span>
                     </a>
 
                   </div>

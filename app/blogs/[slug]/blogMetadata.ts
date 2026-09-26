@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 
 const SITE_NAME = "Integritrade LLC";
 const BASE_URL = "https://integritradellc.com";
-const OG_IMAGE = "https://integritradellc.com/_next/static/media/main-logo.d956176c.png";
+// Was a hashed logo file from an old build that now 404s. The route replaces
+// it with each post's own cover (public/og/blogs/); this is only a fallback.
+const OG_IMAGE = "https://integritradellc.com/og/home.jpg";
 
 export const BLOG_METADATA: Record<string, Metadata> = {
     "decommission-old-computers-it-equipment": {
