@@ -152,8 +152,7 @@ export default function ServicesPage() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-[17px] leading-relaxed text-stone-200">
-              From responsible e-waste recycling, to certified data destruction, to a full ITAD
-              program with value recovery.
+              From responsible electronics recycling with a final weight ticket, to secure data destruction with serialized reporting, to full ITAD with real-time asset tracking, value recovery, and complete project visibility, Integritrade offers the right level of service for every retirement project. As your dedicated lifecycle partner, no matter the logistics or compliance challenge, we will make it happen.
             </p>
 
             <Link

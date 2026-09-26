@@ -189,7 +189,7 @@ const SHOWCASE: {
     title: "Certificates of Destruction & Erasure",
     desc: "Never wait on audit paperwork. Export serialized asset-level certificates or full batch summaries directly from your portal as soon as data sanitization is verified.",
     linkHref: "/documents/sample-certificate-of-destruction.pdf",
-    linkText: "View a sample Certificate of Destruction",
+    linkText: "View a Sample Certificate of Destruction",
   },
 ];
 
