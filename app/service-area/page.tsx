@@ -6,10 +6,14 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 
 
+// Ian, 2026-09-27.
+const SEO_TITLE = "California ITAD Service Areas & Pickup Hubs | Integritrade";
+const SEO_DESCRIPTION =
+  "Enterprise ITAD, secure electronics recycling, and data destruction across Northern and Southern California. Unbroken chain of custody. Request a quote.";
+
 export const metadata: Metadata = {
-  title: "ITAD & E-Waste Recycling Service Area | California Coverage",
-  description:
-    "Integritrade LLC serves businesses across California with R2v3-certified IT asset disposition, secure data destruction, and responsible e-waste recycling. Find local coverage in San Francisco, Silicon Valley, the Peninsula, the East Bay, North Bay, and Central Valley.",
+  title: { absolute: SEO_TITLE },
+  description: SEO_DESCRIPTION,
   keywords: [
     "IT asset disposition California",
     "ITAD service area",
@@ -24,10 +28,9 @@ export const metadata: Metadata = {
     canonical: "/service-area/",
   },
   openGraph: {
-    title: "ITAD & E-Waste Recycling Service Area",
-    description:
-      "R2v3-certified IT asset disposition and data destruction across California. Local coverage from the Bay Area to the Central Valley.",
-    url: "https://integritradellc.com/services/it-asset-disposition/",
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
+    url: "https://integritradellc.com/service-area/",
     siteName: "Integritrade LLC",
     locale: "en_US",
     type: "website",
@@ -42,9 +45,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ITAD & E-Waste Recycling Service Area | Integritrade LLC",
-    description:
-      "R2v3-certified IT asset disposition and data destruction across California.",
+    title: SEO_TITLE,
+    description: SEO_DESCRIPTION,
     images: ["https://integritradellc.com/og/home.jpg"],
   },
   robots: {
@@ -70,11 +72,11 @@ export default function ServiceAreaPage() {
         <ScrollLoader>
           <PageHeader
                 eyebrow="Service Area"
-                title="Local pickups,statewide and accountability."
-                description="Every pickup terminates at our Fresno R2v3 processing floor. No
-                  regional partners, no white-label brokers, no transfers between
-                  carriers. The same audit trail covers a startup in SoMa and a school
-                  district in Bakersfield."
+                title="Statewide Enterprise ITAD & Direct-Custody Logistics"
+                description="We provide coverage across California, and every data destruction
+                  or ITAD project is processed directly inside our 31,000 sq. ft. R2v3
+                  and ISO-certified facility. Every asset is tracked via proprietary
+                  software from your loading dock to certified final disposition."
                 linkText="Get in touch"
                 linkHref="/service-book/"
           />

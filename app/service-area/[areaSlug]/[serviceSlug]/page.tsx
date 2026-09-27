@@ -50,12 +50,16 @@ export async function generateMetadata({
   // With no openGraph of their own, all 420 of these pages inherited the
   // homepage's title and link and the favicon as their share picture. Each now
   // describes itself, with the photo from the matching service page.
-  const title = `${service.metaTitle} | Integritrade LLC`;
+  //
+  // Ian's titles (2026-09-27) already end in "| Integritrade", so those are
+  // used as written; the root layout would otherwise add " | Integritrade LLC".
+  const branded = /\bIntegritrade\b/i.test(service.metaTitle);
+  const title = branded ? service.metaTitle : `${service.metaTitle} | Integritrade LLC`;
   const url = `https://integritradellc.com/service-area/${area.slug}/${service.slug}/`;
   const og = ogImage(SERVICE_OG[service.slug] ?? "home.jpg", `${service.title} in ${area.name}`);
 
   return {
-    title: service.metaTitle,
+    title: branded ? { absolute: service.metaTitle } : service.metaTitle,
     description: service.metaDescription,
     alternates: {
       canonical: `/service-area/${area.slug}/${service.slug}`,

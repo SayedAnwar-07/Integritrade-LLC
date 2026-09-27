@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { certificationsData } from "@/data/certificationsData";
+
 import Iso9001 from "@/public/ISO/ISO-9001.webp";
 import Iso14001 from "@/public/ISO/ISO-14001.webp";
 import Iso27001 from "@/public/ISO/ISO-27001.webp";
@@ -63,18 +65,19 @@ const processSteps = [
   },
 ];
 
+// Each badge opens its certificate PDF in a new tab, so someone halfway
+// through the booking form never loses it (Ian, 2026-09-27). NIST 800-88 is a
+// standard we follow rather than a certificate we hold, so it opens the
+// certifications page instead, also in a new tab.
+const pdf = (header: string) => certificationsData.find((c) => c.header === header)?.pdf ?? "/certifications/";
+
 const certs = [
-  {
-    image: R2v3,
-    name: "R2v3",
-    href: "https://sustainableelectronics.org/find-an-r2-certified-facility/?appids=001UQ000001w7S2YAI&tab=2&backto=https://sustainableelectronics.org/find-an-r2-certified-facility/?type=byalias&alias=integritrade",
-    external: true,
-  },
-  { image: Iso27001, name: "ISO 27001", href: "/certifications" },
-  { image: Iso9001, name: "ISO 9001", href: "/certifications" },
-  { image: Iso14001, name: "ISO 14001", href: "/certifications" },
-  { image: Iso45001, name: "ISO 45001", href: "/certifications" },
-  { image: Nist, name: "NIST 800-88", href: "/certifications" },
+  { image: R2v3, name: "R2v3", href: pdf("R2v3 Standard") },
+  { image: Iso27001, name: "ISO 27001", href: pdf("ISO/IEC 27001") },
+  { image: Iso9001, name: "ISO 9001", href: pdf("ISO 9001") },
+  { image: Iso14001, name: "ISO 14001", href: pdf("ISO 14001") },
+  { image: Iso45001, name: "ISO 45001", href: pdf("ISO 45001") },
+  { image: Nist, name: "NIST 800-88", href: "/certifications/" },
 ];
 
 const trustPoints = [
@@ -138,28 +141,19 @@ export default function ContactDescription() {
               </h2>
 
               <div className="mt-6 grid grid-cols-3 items-start gap-x-4 gap-y-7">
-                {certs.map(({ image, name, href, external }) => {
-                  const content = (
+                {certs.map(({ image, name, href }) => (
+                  <a key={name} href={href} target="_blank" rel="noopener noreferrer">
                     <div className="flex h-full flex-col items-center justify-start gap-3 transition-transform duration-300 hover:scale-105">
                       <div className="relative h-20 w-full">
                         <Image src={image} alt={name} fill className="object-contain" />
                       </div>
                       <span className="text-center text-[11px] font-semibold leading-tight text-slate-600 dark:text-slate-300">
                         {name}
+                        <span className="sr-only"> (opens in a new tab)</span>
                       </span>
                     </div>
-                  );
-
-                  return external ? (
-                    <a key={name} href={href} target="_blank" rel="noopener noreferrer">
-                      {content}
-                    </a>
-                  ) : (
-                    <Link key={name} href={href}>
-                      {content}
-                    </Link>
-                  );
-                })}
+                  </a>
+                ))}
               </div>
             </div>
 
