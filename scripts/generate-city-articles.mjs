@@ -24,36 +24,18 @@ const AREAS_DIR = path.join(__dirname, "..", "data", "areas");
 // MASTER TEMPLATES — Ian's approved drafts, verbatim, with {{CITY}} placeholders
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Replace the single metaTitle/metaDescription string in each ────────
-// template with a *Variants array. Keep everything else the same.
+// Each *_META block holds Ian's title and meta description pattern for that
+// service (2026-09-27). Every city gets the same wording with its own name.
 
 // HARD DRIVE SHREDDING
 const HARD_DRIVE_SHREDDING_META = {
-  metaTitleVariants: [
-    "Certified Hard Drive Shredding in {{CITY}}, CA",
-    "{{CITY}} Hard Drive Destruction Services | Certified Disposal",
-    "Hard Drive Shredding {{CITY}} | Prevent Data Breaches",
-    "Secure Media Destruction Services Near {{CITY}}",
-    "{{CITY}} Businesses Trust Certified Hard Drive Shredding",
-    "On-Site Hard Drive Shredding in {{CITY}} CA",
-  ],
-
-  metaDescriptionVariants: [
-    "Protect confidential data with certified hard drive shredding in {{CITY}}. Secure pickup, chain of custody tracking, and destruction certificates included.",
-
-    "Retiring old computers? {{CITY}} organizations use our HDD and SSD destruction services to eliminate data recovery risks.",
-
-    "Deleting files is not enough. Get professional hard drive destruction in {{CITY}} with compliance documentation and secure processing.",
-  ],
+  metaTitle: "Hard Drive Shredding in {{CITY}} | Integritrade",
+  metaDescription:
+    "Certified hard drive shredding and data destruction in {{CITY}}. NIST 800-88 compliant, serialized audit CODs, and secure pickup. Request a quote.",
 };
 const HARD_DRIVE_SHREDDING = {
   slug: "data-destruction-services",
 
-  // SEO META VARIANTS:
-  // Provides multiple unique meta title and meta description options
-  // for Hard Drive Shredding service pages.
-  // The generator will automatically select one variant per city + service
-  // to avoid duplicate SEO snippets across location pages.
   ...HARD_DRIVE_SHREDDING_META,
 
   icon: "HardDrive",
@@ -171,24 +153,12 @@ Contact our {{CITY}} data destruction team today for a quote or to schedule cert
 
 // IT ASSET DISPOSITION
 const IT_ASSET_DISPOSITION_META = {
-  metaTitleVariants: [
-    "IT Asset Disposition in {{CITY}}, CA | Certified ITAD & Data Wiping",
-    "{{CITY}} ITAD Services: Data Destruction + Hardware Value Recovery",
-    "Retiring IT Equipment in {{CITY}}? Certified, Compliant Disposal Here",
-    "ITAD {{CITY}} — NIST 800-88 Erasure, Buybacks & Recycling",
-  ],
-  metaDescriptionVariants: [
-    "Decommissioning servers or laptops in {{CITY}}? Get NIST 800-88 certified erasure, chain-of-custody logistics, and buyback value recovery. Free evaluation within 24 hours.",
-    "{{CITY}} enterprises rely on Integritrade for compliant IT asset disposition — data center decommissioning, HIPAA-ready destruction, and R2v3 recycling. Get a quote.",
-    "Turn retired IT equipment into revenue. Certified ITAD services for {{CITY}} businesses with full compliance documentation. Contact us today.",
-  ],
+  metaTitle: "{{CITY}} IT Asset Disposition (ITAD) | Integritrade",
+  metaDescription:
+    "Certified IT asset disposition in {{CITY}}. Maximize fleet value recovery with automated tracking, NIST 800-88 sanitization & CODs. Request a quote.",
 };
 const IT_ASSET_DISPOSITION = {
   slug: "it-asset-disposition",
-  // SEO META VARIANTS:
-  // Provides unique SEO titles and descriptions for IT Asset Disposition (ITAD)
-  // pages including data wiping, hardware recovery, compliance, and recycling.
-  // Prevents duplicate metadata across different city landing pages.
   ...IT_ASSET_DISPOSITION_META,
   icon: "Monitor",
   title: "IT Asset Disposition in {{CITY}}",
@@ -291,24 +261,12 @@ Professional ITAD goes beyond basic recycling. It combines NIST 800-88 compliant
 
 // ELECTRONICS RECYCLING
 const ELECTRONICS_RECYCLING_META = {
-  metaTitleVariants: [
-    "R2v3 Certified Electronics Recycling in {{CITY}}, CA",
-    "{{CITY}} E-Waste Recycling: Secure, Compliant & Documented",
-    "Electronics Recycling {{CITY}} — Is Your Vendor Actually Certified?",
-    "Responsible E-Waste Disposal in {{CITY}} | R2v3 & ISO Certified",
-  ],
-  metaDescriptionVariants: [
-    "Not all recyclers are equal. Integritrade offers R2v3, ISO 27001 and ISO 14001 certified electronics recycling in {{CITY}}, with full data security guarantees. Request a pickup.",
-    "Protect your {{CITY}} business from data breaches and environmental liability. Certified e-waste recycling with audit-ready reporting. Get started free.",
-    "From servers to smartphones, we responsibly recycle it all for {{CITY}} organizations — securely, sustainably, and with proof. See how it works.",
-  ],
+  metaTitle: "{{CITY}} E-Waste Recycling & ITAD | Integritrade",
+  metaDescription:
+    "Commercial electronics recycling and e-waste disposal across {{CITY}}. R2v3-certified processing, serialized reporting, and fast pickup. Get a quote.",
 };
 const ELECTRONICS_RECYCLING = {
   slug: "basic-electronics-recycling",
-  // SEO META VARIANTS:
-  // Creates different search-focused metadata for Electronics Recycling pages.
-  // Variants target e-waste recycling, certification, sustainability,
-  // compliance, and secure disposal search intents.
   ...ELECTRONICS_RECYCLING_META,
   icon: "Recycle",
   title: "Electronics Recycling in {{CITY}}",
@@ -403,24 +361,12 @@ const ELECTRONICS_RECYCLING = {
 
 // IT EQUIPMENT BUYBACK
 const IT_EQUIPMENT_BUYBACK_META = {
-  metaTitleVariants: [
-    "Sell IT Equipment in {{CITY}}, CA | Get Paid, Not Billed",
-    "{{CITY}} IT Equipment Buyback — Free Pickup on 50+ Devices",
-    "Turn Retired Tech Into Cash in {{CITY}} | Certified Buyback Program",
-    "IT Asset Buyback {{CITY}}: Secure Erasure + Maximum Payout",
-  ],
-  metaDescriptionVariants: [
-    "Stop paying to haul away old IT equipment. {{CITY}} businesses can sell laptops, servers, and phones through our certified buyback program — free pickup, certified data wiping. Get your quote.",
-    "Your retired tech still has value. Integritrade buys back IT equipment from {{CITY}} organizations with a net-positive guarantee on qualifying batches. Find out what it's worth.",
-    "Sell your fleet, not just recycle it. Certified data destruction plus real payouts for {{CITY}} companies upgrading their IT. Request a free evaluation today.",
-  ],
+  metaTitle: "Sell IT Equipment in {{CITY}} | Buyback | Integritrade",
+  metaDescription:
+    "Monetize retired IT hardware in {{CITY}}. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
 };
 const IT_EQUIPMENT_BUYBACK = {
   slug: "asset-recovery",
-  // SEO META VARIANTS:
-  // Generates unique metadata for IT Equipment Buyback pages.
-  // Focuses on value recovery, selling retired technology, payouts,
-  // certified data destruction, and business asset recovery.
   ...IT_EQUIPMENT_BUYBACK_META,
   icon: "RefreshCw",
   title:
@@ -622,24 +568,12 @@ What truly sets TraceTech apart is its AI-integrated workflow engine, which is d
 
 // CERTIFICATES OF DESTRUCTION
 const CERTIFICATES_OF_DESTRUCTION_META = {
-  metaTitleVariants: [
-    "Certificates of Destruction in {{CITY}}, CA | Audit-Ready Proof",
-    "{{CITY}} Certificate of Destruction — R2v3 & ISO 27001 Backed",
-    "Need Proof of Data Destruction in {{CITY}}? Start Here",
-    "Legally Binding Certificates of Destruction for {{CITY}} Businesses",
-  ],
-  metaDescriptionVariants: [
-    "Protect your {{CITY}} organization during a compliance audit. Get a serialized, legally binding Certificate of Destruction for every device we process. Request service now.",
-    "Simple deletion isn't proof. Integritrade issues audit-ready Certificates of Destruction for {{CITY}} businesses, backed by R2v3 and ISO 27001 certification. Learn more.",
-    "HIPAA, FACTA, and CCPA compliance starts with documentation. Get certified proof of destruction for your {{CITY}} IT assets. Contact our team.",
-  ],
+  metaTitle: "{{CITY}} Certificate of Destruction | Integritrade",
+  metaDescription:
+    "Serialized, audit-ready Certificates of Destruction in {{CITY}}. R2v3 and ISO-certified data sanitization with automated reporting. Request a quote.",
 };
 const CERTIFICATES_OF_DESTRUCTION = {
   slug: "certificates-of-destruction",
-  // SEO META VARIANTS:
-  // Provides multiple metadata versions for Certificate of Destruction pages.
-  // Targets compliance, audit requirements, proof of destruction,
-  // regulatory documentation, and secure data disposal searches.
   ...CERTIFICATES_OF_DESTRUCTION_META,
   icon: "FileCheck",
   title: "Certificates of Destruction in {{CITY}}",
@@ -705,24 +639,12 @@ When you receive a Certificate of Destruction from our team, it is backed by fiv
 
 // DATA CENTER DECOMMISSIONING
 const DATA_CENTER_DECOMMISSIONING_META = {
-  metaTitleVariants: [
-    "Data Center Decommissioning in {{CITY}}, CA | Full-Service Teardowns",
-    "{{CITY}} Data Center Cleanout — Certified Destruction, Free Quote",
-    "Decommissioning a Data Center in {{CITY}}? Do It Right the First Time",
-    "Server Room & Data Center Removal Services in {{CITY}}",
-  ],
-  metaDescriptionVariants: [
-    "From a single rack to a full facility teardown, Integritrade handles data center decommissioning in {{CITY}} with certified destruction and chain-of-custody documentation. Schedule a walkthrough.",
-    "{{CITY}} colocation and enterprise data centers trust us for secure teardown, asset recovery, and compliance reporting. Get a free site assessment.",
-    "Don't let a data center decommission become a data breach. Certified, documented, and value-recovering service for {{CITY}} organizations. Contact us today.",
-  ],
+  metaTitle: "Data Center Decommissioning {{CITY}} | Integritrade",
+  metaDescription:
+    "Enterprise data center decommissioning in {{CITY}}. Server de-racking, certified media destruction, and maximum value recovery. Request a quote.",
 };
 const DATA_CENTER_DECOMMISSIONING = {
   slug: "data-center-decommissioning",
-  // SEO META VARIANTS:
-  // Generates unique SEO metadata for Data Center Decommissioning pages.
-  // Covers enterprise teardown, server removal, secure destruction,
-  // asset recovery, and compliance-focused search intent.
   ...DATA_CENTER_DECOMMISSIONING_META,
   icon: "Server",
   title:
@@ -920,24 +842,12 @@ Contact Integritrade today to schedule your free site walkthrough and get a fixe
 
 // APPLE EQUIPMENT
 const APPLE_EQUIPMENT_META = {
-  metaTitleVariants: [
-    "Sell Used Apple Equipment in {{CITY}}, CA | Top Buyback Rates",
-    "{{CITY}} MacBook & iPhone Fleet Buyback — Certified Data Wiping",
-    "Upgrading Your Mac Fleet in {{CITY}}? Sell It the Smart Way",
-    "Corporate Apple Buyback in {{CITY}} | Get More Than Trade-In",
-  ],
-  metaDescriptionVariants: [
-    "Don't settle for Apple trade-in prices. {{CITY}} businesses get top buyback rates for MacBooks, iMacs, and iPhones with certified data erasure included. Get a quote.",
-    "Selling your {{CITY}} company's Apple fleet? We pay more than trade-in and provide NIST 800-88 certified erasure on every device. Find out what it's worth.",
-    "MacBooks, iPads, iPhones — we buy it all from {{CITY}} organizations, with full chain-of-custody and fast payment. Request your free evaluation.",
-  ],
+  metaTitle: "Sell Used Apple Equipment {{CITY}} | Integritrade",
+  metaDescription:
+    "Corporate Apple equipment buyback in {{CITY}}. Maximize value recovery on MacBooks, iMacs, & iPads with certified data erasure. Request a quote.",
 };
 const APPLE_EQUIPMENT = {
   slug: "sell-used-apple-equipment",
-  // SEO META VARIANTS:
-  // Creates unique metadata for Apple Equipment Buyback pages.
-  // Targets MacBook, iPhone, iPad fleet disposal, corporate Apple upgrades,
-  // certified erasure, and maximum recovery value searches.
   ...APPLE_EQUIPMENT_META,
   icon: "Laptop",
   title: "Sell Used Apple Equipment in {{CITY}}",
@@ -1005,42 +915,45 @@ But value recovery is only half the story. The certifications behind our process
   ],
 };
 
-/**
- * meta-variants-patch.mjs
- *
- * Drop-in changes for generate-city-articles.mjs to fix duplicate
- * metaTitle / metaDescription across city pages.
- *
- * PROBLEM: every city gets the exact same title/description template with
- * only {{CITY}} swapped in. Google detects this as templated/thin content
- * and starts rewriting or suppressing the snippet (see the Integritrade LLC
- * results — identical "As data privacy mandates..." description repeated
- * across Huntington Beach, Glendale, Pasadena, Costa Mesa, Chula Vista).
- *
- * FIX: give each service 3-4 structurally different title/description
- * variants (different hook, different word order, different CTA), then
- * deterministically pick one per (city, service) pair using a hash. Same
- * city always gets the same copy on re-run, but different cities/services
- * get visibly different snippets — which also reads as more "written for
- * a human" and more clickable (numbers, questions, urgency, CTAs).
- */
+// City hub pages (/service-area/<city>/): Ian's pattern, 2026-09-27. It
+// replaced the per-city title/description "variants" (Aug 29), which picked a
+// different wording for each city by hash; Ian asked for one wording
+// everywhere, with the city name swapped in.
+const HUB_META = {
+  metaTitle: "{{CITY}} ITAD & Data Destruction | Integritrade",
+  metaDescription:
+    "Turnkey ITAD, certified hard drive shredding, and electronics recycling for {{CITY}} businesses. Value recovery and audit-ready CODs. Request a quote.",
+};
 
-// ── 1. Add this hash + picker anywhere above the CATEGORIES array ─────────
+// Key order of the committed city files. Emitting in this order is what lets
+// a re-run reproduce them byte for byte; any key not listed keeps its
+// template position after these.
+const SERVICE_KEY_ORDER = [
+  "slug",
+  "title",
+  "shortDescription",
+  "icon",
+  "metaTitle",
+  "metaDescription",
+  "ctaText",
+  "image",
+  "heroHeading",
+  "heroSubheading",
+  "details",
+];
 
-function hashString(str) {
-  let hash = 0;
-  for (let i = 0; i < str.length; i++) {
-    hash = (hash << 5) - hash + str.charCodeAt(i);
-    hash |= 0;
+function orderService(service) {
+  const output = {};
+
+  for (const key of SERVICE_KEY_ORDER) {
+    if (key in service) output[key] = service[key];
   }
-  return Math.abs(hash);
-}
 
-function pickVariant(variants, key) {
-  if (!Array.isArray(variants) || variants.length === 0) {
-    return "";
+  for (const [key, value] of Object.entries(service)) {
+    if (!(key in output)) output[key] = value;
   }
-  return variants[hashString(key) % variants.length];
+
+  return output;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -1328,9 +1241,7 @@ function emitQuoted(value) {
 function createCitySeed(area) {
   const tagline = `Secure IT asset disposition, data destruction, electronics recycling, and technology recovery services for ${area.name}, California businesses.`;
 
-  const metaTitle = `${area.name} IT Asset Disposition & Electronics Recycling`;
-
-  const metaDescription = `Certified IT asset disposition, secure data destruction, electronics recycling, and equipment recovery services for businesses in ${area.name}, CA.`;
+  const { metaTitle, metaDescription } = fillCity(HUB_META, area.name);
 
   const intro = `Integritrade provides secure and certified IT asset disposition services for organizations throughout ${area.name}, California. From electronics recycling and hard drive destruction to enterprise equipment buyback and data center decommissioning, our team provides documented chain of custody, certified data security, and responsible downstream processing.`;
 
@@ -1401,6 +1312,8 @@ const files = fs
 
 let generated = 0;
 
+let written = 0;
+
 const warnings = [];
 const addedUrls = [];
 
@@ -1431,10 +1344,6 @@ for (const file of files) {
     name: extractField(headSrc, "name"),
 
     tagline: extractField(headSrc, "tagline"),
-
-    metaTitle: extractField(headSrc, "metaTitle"),
-
-    metaDescription: extractField(headSrc, "metaDescription"),
 
     intro: extractField(headSrc, "intro"),
   };
@@ -1517,33 +1426,18 @@ for (const file of files) {
     addedUrls.push(`/service-area/${area.slug}/${item.slug}/`);
   }
 
-  const services = assigned.map(({ category, slug }) => {
-    const key = `${area.slug}::${slug}`; // stable unique key per city + service
+  const services = assigned.map(({ category, slug }) =>
+    orderService({ ...fillCity(category.template, cityName), slug }),
+  );
 
-    const resolvedTemplate = {
-      ...category.template,
-
-      metaTitle: pickVariant(category.template.metaTitleVariants, key),
-
-      metaDescription: pickVariant(
-        category.template.metaDescriptionVariants,
-        key,
-      ),
-    };
-
-    const filled = fillCity(resolvedTemplate, cityName);
-
-    return {
-      ...filled,
-      slug,
-    };
-  });
+  const hubMeta = fillCity(HUB_META, cityName);
 
   const servicesTs = services.map(emitService).join(",\n");
 
   /**
-   * Preserve each city's existing top-level metadata.
-   * Article/service content is regenerated from the approved templates.
+   * Preserve each city's existing tagline and intro. The hub title and meta
+   * description follow Ian's pattern (HUB_META). Article/service content is
+   * regenerated from the approved templates.
    */
   const headerFields = [
     `  slug: ${emitQuoted(area.slug)},`,
@@ -1554,15 +1448,9 @@ for (const file of files) {
       ? `  tagline: ${emitQuoted(JSON.parse(`"${area.tagline}"`))},`
       : null,
 
-    area.metaTitle !== null
-      ? `  metaTitle: ${emitQuoted(JSON.parse(`"${area.metaTitle}"`))},`
-      : null,
+    `  metaTitle: ${emitQuoted(hubMeta.metaTitle)},`,
 
-    area.metaDescription !== null
-      ? `  metaDescription: ${emitQuoted(
-          JSON.parse(`"${area.metaDescription}"`),
-        )},`
-      : null,
+    `  metaDescription: ${emitQuoted(hubMeta.metaDescription)},`,
 
     area.intro !== null
       ? `  intro: ${emitQuoted(JSON.parse(`"${area.intro}"`))},`
@@ -1573,9 +1461,7 @@ for (const file of files) {
 
   const output = `// AUTO-GENERATED by scripts/generate-city-articles.mjs — do not edit article
 // content here. Edit the master templates in the script and re-run it.
-
 import { ServiceArea } from "./types/serviceAreaTypes";
-
 import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpeg";
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg";
@@ -1589,13 +1475,25 @@ ${headerFields}
 
   services: [
 ${servicesTs}
-  ],
+  ]
 };
 `;
 
-  fs.writeFileSync(fullPath, output, "utf8");
+  // Keep the file's own line endings (CRLF on a Windows checkout) and leave
+  // unchanged files untouched, so a re-run with no template edits is a no-op.
+  const eol = src.includes("\r\n") ? "\r\n" : "\n";
+  const final = output.replace(/\r?\n/g, eol);
 
   generated++;
+
+  if (final === src) {
+    console.log(`= ${file} (${cityName}) unchanged`);
+    continue;
+  }
+
+  fs.writeFileSync(fullPath, final, "utf8");
+
+  written++;
 
   console.log(`✓ ${file} (${cityName})`);
 }
@@ -1604,7 +1502,9 @@ ${servicesTs}
 // SUMMARY
 // ─────────────────────────────────────────────────────────────────────────────
 
-console.log(`\nGenerated ${generated}/${files.length} city files.`);
+console.log(
+  `\nGenerated ${generated}/${files.length} city files, ${written} changed.`,
+);
 
 if (addedUrls.length) {
   console.log(

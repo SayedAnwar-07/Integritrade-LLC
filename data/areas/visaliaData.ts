@@ -4,7 +4,6 @@ import { ServiceArea } from "./types/serviceAreaTypes";
 import hardDriveShredding from "@/public/services/serviceArea/driveShredding.jpeg";
 import itAssetDisposition from "@/public/services/serviceArea/itAssetDisposition(ITAD).jpeg";
 import electronicRecyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg";
-import assetRecovery from "@/public/services/serviceArea/assetRecovery.webp";
 import itBuyback from "@/public/services/serviceArea/itBuyback.jpg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.webp";
 import dataCenterDecommissioning from "@/public/services/serviceArea/dataCenterDecommissioning.webp";
