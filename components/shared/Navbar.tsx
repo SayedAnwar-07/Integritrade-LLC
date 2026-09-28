@@ -627,9 +627,12 @@ export default function Navbar() {
 
       {/* ================== MOBILE MENU ================== */}
       {/* data-nosnippet: menu text is never a useful search description. */}
+      {/* overflow-hidden clips the drawer while it waits off-screen
+          (translate-x-full). Unclipped, that full-width panel past the right
+          edge can let phones pan the page sideways. */}
       <div
         data-nosnippet=""
-        className={`lg:hidden fixed inset-0 z-[100] transition-all duration-400 ${
+        className={`lg:hidden fixed inset-0 z-[100] overflow-hidden transition-all duration-400 ${
           isMenuOpen ? 'visible opacity-100' : 'invisible opacity-0 pointer-events-none'
         }`}
         aria-hidden={!isMenuOpen}

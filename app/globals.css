@@ -520,6 +520,155 @@
   color: hsl(var(--lead-muted) / 0.9);
 }
 
+/* Our Team hero (components/about/TeamHero.tsx): the team photo behind the
+   intro. The desktop fades use the page's own background so the photo melts
+   into it: bg-secondary in light mode, bg-dark in dark mode. */
+.team-hero {
+  --hero-fade: var(--brand-secondary);
+}
+.dark .team-hero {
+  --hero-fade: var(--dark-bg);
+}
+.team-hero-grid {
+  position: relative;
+}
+.team-hero-media {
+  position: relative;
+  overflow: hidden;
+}
+.team-hero-fade-l,
+.team-hero-fade-b,
+.team-hero-scrim {
+  position: absolute;
+  pointer-events: none;
+}
+.team-hero-fade-b {
+  inset: auto 0 0 0;
+  height: 30%;
+  background: linear-gradient(to top, hsl(var(--hero-fade)), hsl(var(--hero-fade) / 0));
+}
+.team-hero-fade-l {
+  inset: 0 auto 0 0;
+  width: 62%;
+  background: linear-gradient(
+    to right,
+    hsl(var(--hero-fade)) 0%,
+    hsl(var(--hero-fade) / 0.72) 42%,
+    hsl(var(--hero-fade) / 0) 100%
+  );
+}
+/* Phone/tablet: darkens the lower edge (shirts and table) for the heading. */
+.team-hero-scrim {
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgb(10 10 10 / 0.8) 0%,
+    rgb(10 10 10 / 0.5) 32%,
+    rgb(10 10 10 / 0) 60%
+  );
+}
+.dark .team-hero-img {
+  filter: brightness(0.8);
+}
+/* One heading line per sentence (TeamHero splits them). The words are
+   separated by real spaces here, so the reveal's margin is not needed. */
+.team-hero-line {
+  display: block;
+}
+.team-hero .lead-word {
+  margin-right: 0;
+}
+.team-hero .lead-sub {
+  margin-bottom: 0;
+}
+
+/* Phone and tablet: photo on top with the heading over its lower edge, the
+   paragraph below. The wrappers step aside so the heading block and the
+   paragraph become grid cells, and the heading shares the photo's cell. */
+@media (max-width: 1023.98px) {
+  .team-hero-grid {
+    display: grid;
+  }
+  .team-hero-inner,
+  .team-hero-copy {
+    display: contents;
+  }
+  .team-hero-media {
+    grid-area: 1 / 1;
+    aspect-ratio: 5 / 4;
+  }
+  .team-hero-head {
+    grid-area: 1 / 1;
+    align-self: end;
+    position: relative;
+    z-index: 1;
+    padding: 0 16px 18px;
+  }
+  .team-hero-head .lead-eyebrow {
+    margin-bottom: 10px;
+    color: rgb(255 255 255 / 0.85);
+  }
+  .team-hero-head .lead-h1 {
+    margin: 0;
+    font-size: clamp(30px, 8vw, 40px);
+    color: #fff;
+    text-shadow: 0 1px 14px rgb(0 0 0 / 0.35);
+  }
+  .team-hero .lead-sub {
+    grid-area: 2 / 1;
+    padding: 22px 16px 0;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023.98px) {
+  .team-hero-media {
+    aspect-ratio: 16 / 9;
+  }
+  .team-hero-head {
+    padding: 0 24px 26px;
+  }
+  /* Lift the 16ch cap so "Executive Accountability." fits on one line. */
+  .team-hero-head .lead-h1 {
+    max-width: none;
+  }
+  .team-hero .lead-sub {
+    padding: 26px 24px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Pin the photo's left edge to the 1400px content column, so the empty
+     haze on its left stays under the text however wide the screen is. */
+  .team-hero-media {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: max(0px, calc(50% - 700px));
+  }
+  /* Positioned so it paints above the absolutely positioned photo. */
+  .team-hero-inner {
+    position: relative;
+  }
+  .team-hero-copy {
+    max-width: 440px;
+  }
+  .team-hero .lead-h1 {
+    max-width: none;
+    font-size: clamp(40px, 3.6vw, 54px);
+  }
+  .team-hero .lead-sub {
+    max-width: 40ch;
+  }
+}
+@media (min-width: 1280px) {
+  .team-hero-copy {
+    max-width: 500px;
+  }
+  .team-hero .lead-sub {
+    max-width: 46ch;
+  }
+}
+
 /* Grid */
 .lead-grid {
   display: grid;

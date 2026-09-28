@@ -7,6 +7,8 @@ import LeadershipGrid, {
   type Person,
   type Stat,
 } from "@/components/about/LeadershipGrid";
+import TeamHero from "@/components/about/TeamHero";
+import teamCover from "@/public/about/team-cover.webp";
 import ian from "@/public/ian.jpg";
 import masood from "@/public/masood.jpg";
 import adnan from "@/public/adnan.jpg";
@@ -127,6 +129,8 @@ const stats: Stat[] = [
 ];
 
 const HEADLINE = "Engineering Rigor. Executive Accountability.";
+const INTRO =
+  "Data breaches during hardware retirement rarely stem from technical failures. They happen when vendors rely on manual intake sheets and human memory. Integritrade is built around software-enforced controls and verified custody that eliminate processing errors before hardware ever moves.";
 
 export default function OurTeamPage() {
   const personSchema = {
@@ -154,14 +158,10 @@ export default function OurTeamPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
 
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <LeadershipGrid
-          people={people}
-          stats={stats}
-          headline={HEADLINE}
-          gradientWord="accountable"
-          intro="Data breaches during hardware retirement rarely stem from technical failures. They happen when vendors rely on manual intake sheets and human memory. Integritrade is built around software-enforced controls and verified custody that eliminate processing errors before hardware ever moves."
-        />
+      <TeamHero image={teamCover} eyebrow="Leadership" headline={HEADLINE} intro={INTRO} />
+
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 lg:pt-10 lg:pb-24">
+        <LeadershipGrid people={people} stats={stats} />
 
         {/* ── CTA ── */}
         <ScrollLoader>

@@ -41,11 +41,14 @@ export default function LeadershipGrid({
 }: {
   people: Person[];
   stats: Stat[];
-  /** Split into words for the load reveal. Must match the approved H1 text. */
-  headline: string;
+  /**
+   * Split into words for the load reveal. Must match the approved H1 text.
+   * Leave out when the page renders its own hero (Our Team uses TeamHero).
+   */
+  headline?: string;
   /** The single word rendered in the brand gradient. */
-  gradientWord: string;
-  intro: string;
+  gradientWord?: string;
+  intro?: string;
   eyebrow?: string;
 }) {
   const rootRef = useRef<HTMLDivElement>(null);
@@ -109,30 +112,35 @@ export default function LeadershipGrid({
     };
   }, []);
 
-  const words = headline.split(" ");
+  const words = headline ? headline.split(" ") : [];
 
   return (
     <div ref={rootRef} className="lead">
-      <p className="lead-eyebrow">{eyebrow}</p>
+      {headline ? (
+        <>
+          <p className="lead-eyebrow">{eyebrow}</p>
 
-      <h1 className="lead-h1">
-        {words.map((w, i) => {
-          const clean = w.replace(/[^A-Za-z]/g, "");
-          const isGrad = clean.toLowerCase() === gradientWord.toLowerCase();
-          return (
-            <span
-              key={`${w}-${i}`}
-              className={`lead-word${isGrad ? " lead-grad" : ""}`}
-              style={{ animationDelay: `${0.05 + i * 0.07}s` }}
-            >
-              {w}
-              {i < words.length - 1 ? " " : ""}
-            </span>
-          );
-        })}
-      </h1>
+          <h1 className="lead-h1">
+            {words.map((w, i) => {
+              const clean = w.replace(/[^A-Za-z]/g, "");
+              const isGrad =
+                !!gradientWord && clean.toLowerCase() === gradientWord.toLowerCase();
+              return (
+                <span
+                  key={`${w}-${i}`}
+                  className={`lead-word${isGrad ? " lead-grad" : ""}`}
+                  style={{ animationDelay: `${0.05 + i * 0.07}s` }}
+                >
+                  {w}
+                  {i < words.length - 1 ? " " : ""}
+                </span>
+              );
+            })}
+          </h1>
 
-      <p className="lead-sub">{intro}</p>
+          {intro ? <p className="lead-sub">{intro}</p> : null}
+        </>
+      ) : null}
 
       <div className="lead-grid">
         {people.map((p, i) => (
