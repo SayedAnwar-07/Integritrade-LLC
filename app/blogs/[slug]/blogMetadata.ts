@@ -1537,4 +1537,34 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
   },
+
+  "nist-800-88-rev-2-clear-purge-destroy": {
+    title: "NIST SP 800-88 Rev. 2: When to Clear, Purge, or Destroy",
+    description: "How to choose Clear, Purge, or Destroy under NIST SP 800-88 Rev. 2, based on data risk, the storage media, and what happens to the device next.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/nist-800-88-rev-2-clear-purge-destroy`,
+    },
+    openGraph: {
+      title: "NIST SP 800-88 Rev. 2: When to Clear, Purge, or Destroy",
+      description: "How to choose Clear, Purge, or Destroy under NIST SP 800-88 Rev. 2, based on data risk, the storage media, and what happens to the device next.",
+      url: `${BASE_URL}/blogs/nist-800-88-rev-2-clear-purge-destroy`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Hard drives and SSDs at a data sanitization workstation, with a software erasure in progress on screen",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "NIST SP 800-88 Rev. 2: When to Clear, Purge, or Destroy",
+      description: "How to choose Clear, Purge, or Destroy under NIST SP 800-88 Rev. 2, based on data risk, the storage media, and what happens to the device next.",
+      images: [OG_IMAGE],
+    },
+  },
 };

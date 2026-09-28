@@ -57,6 +57,23 @@ const CONFIG = {
     imageAlt:
       "Circuit boards arranged into a recycling symbol surrounded by retired electronic devices",
   },
+  // Supplied 2026-09-28 as a .docx with no SEO title, meta description or
+  // image, so those three are set here. The markdown was converted from the
+  // .docx with its bolding kept; "Basic Electronics Recycling" became "Secure
+  // Electronics Recycling" to match the 2026-09-26 service rename.
+  "nist-800-88-rev-2-clear-purge-destroy": {
+    file: "NIST SP 800-88 Rev. 2_ When to Use Clear, Purge, or Destroy for Data Sanitization.md",
+    image: "Nist80088Cover",
+    imagePath: "about/software-sanitization.jpg",
+    category: "Data Destruction",
+    imageAlt:
+      "Hard drives and SSDs at a data sanitization workstation, with a software erasure in progress on screen",
+    date: "September 28, 2026",
+    dateISO: "2026-09-28",
+    seoTitle: "NIST SP 800-88 Rev. 2: When to Clear, Purge, or Destroy",
+    metaDescription:
+      "How to choose Clear, Purge, or Destroy under NIST SP 800-88 Rev. 2, based on data risk, the storage media, and what happens to the device next.",
+  },
 };
 
 // One article (the .docx one) hyperlinks its citations inline as [1](url) and
@@ -260,18 +277,22 @@ function parse(slug, cfg) {
 
   const wordCount = raw.split(/\s+/).length;
 
+  // CONFIG can supply what a source file does not carry (the NIST article came
+  // without an SEO title, description, date or image of its own).
+  const description = (cfg.metaDescription || meta.meta_description || "").trim();
+
   return {
     slug,
     title,
-    metaTitle: (meta.seo_title || title).trim(),
-    description: (meta.meta_description || "").trim(),
-    cardDescription: (meta.meta_description || "").trim(),
+    metaTitle: (cfg.seoTitle || meta.seo_title || title).trim(),
+    description,
+    cardDescription: description,
     category: cfg.category,
-    date: DATE,
-    dateISO: DATE_ISO,
+    date: cfg.date || DATE,
+    dateISO: cfg.dateISO || DATE_ISO,
     readMinutes: Math.max(1, Math.round(wordCount / WPM)),
     imageVar: cfg.image,
-    imageFile: cfg.imageFile,
+    imagePath: cfg.imagePath || `blogs/${cfg.imageFile}`,
     imageAlt: cfg.imageAlt,
     // The intro goes through the same block parser as the body: Ian opens the
     // FERPA article with a blockquote from NIST, which would otherwise render
@@ -291,7 +312,7 @@ function parse(slug, cfg) {
 const articles = Object.entries(CONFIG).map(([slug, cfg]) => parse(slug, cfg));
 
 const imports = articles
-  .map((a) => `import ${a.imageVar} from "@/public/blogs/${a.imageFile}";`)
+  .map((a) => `import ${a.imageVar} from "@/public/${a.imagePath}";`)
   .join("\n");
 
 const j = (v) => JSON.stringify(v, null, 2).replace(/\n/g, "\n  ");

@@ -81,6 +81,7 @@ const BLOG_SLUGS = [
   "bfsi-it-asset-disposition-financial-services-data-destruction",
   "law-firm-it-asset-disposition-legal-data-destruction",
   "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction",
+  "nist-800-88-rev-2-clear-purge-destroy",
 ] as const;
 
 export function generateStaticParams() {
@@ -124,6 +125,7 @@ const BLOG_COMPONENTS: Record<string, React.ReactElement> = {
   "bfsi-it-asset-disposition-financial-services-data-destruction": <ArticleLayout article={getArticleBySlug("bfsi-it-asset-disposition-financial-services-data-destruction")!} />,
   "law-firm-it-asset-disposition-legal-data-destruction": <ArticleLayout article={getArticleBySlug("law-firm-it-asset-disposition-legal-data-destruction")!} />,
   "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction": <ArticleLayout article={getArticleBySlug("ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction")!} />,
+  "nist-800-88-rev-2-clear-purge-destroy": <ArticleLayout article={getArticleBySlug("nist-800-88-rev-2-clear-purge-destroy")!} />,
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

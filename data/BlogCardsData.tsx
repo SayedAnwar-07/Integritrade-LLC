@@ -2,6 +2,7 @@ import ITADVendorCover from "@/public/blogs/ITAD_Vendor.jpg";
 import BfsiCover from "@/public/blogs/bloge-cover.jpg";
 import LawFirmCover from "@/public/blogs/value-data-security.webp";
 import FerpaCover from "@/public/blogs/blogs-cover.jpg";
+import Nist80088Cover from "@/public/about/software-sanitization.jpg";
 import decommissionBanner from "@/public/blogs/decommission-computers.jpg";
 import videoTape from "@/public/blogs/video-tape.jpg";
 import rohsImage from "@/public/blogs/rohs-compliance.jpg";
@@ -305,5 +306,12 @@ export const AllBlogCards: BlogCard[] = [
     description: "Learn how K-12 districts, colleges, and universities can plan FERPA-aware IT asset disposition, student-device disposal, Chromebook recycling, data sanitization, physical destruction, documentation, and value recovery.",
     date: "September 20, 2026",
     slug: "ferpa-school-it-asset-disposition-chromebook-recycling-student-data-destruction",
+  },
+  {
+    image: Nist80088Cover,
+    title: "NIST SP 800-88 Rev. 2: When to Use Clear, Purge, or Destroy for Data Sanitization",
+    description: "How to choose Clear, Purge, or Destroy under NIST SP 800-88 Rev. 2, based on data risk, the storage media, and what happens to the device next.",
+    date: "September 28, 2026",
+    slug: "nist-800-88-rev-2-clear-purge-destroy",
   },
 ];
