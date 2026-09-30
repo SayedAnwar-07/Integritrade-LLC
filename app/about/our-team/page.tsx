@@ -70,7 +70,7 @@ export const metadata: Metadata = {
 // A person with no URL renders no icon rather than a dead link.
 const LINKEDIN = {
   ian: "https://www.linkedin.com/in/ian-ziyar-801114237/",
-  masood: "",
+  masood: "https://www.linkedin.com/in/masoodburhani",
   adnan: "https://www.linkedin.com/in/muhammad-adnan-9ab26641b",
 } as const;
 
