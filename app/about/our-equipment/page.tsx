@@ -12,11 +12,12 @@ import MediaMethodMatrix from "@/components/about/MediaMethodMatrix";
 import ssdShredderImg from "../../../public/about/ssd-shredder.jpeg";
 import hddShredderImg from "../../../public/about/hdd-shredder.jpeg";
 import degausserImg from "../../../public/about/degausser.jpeg";
+
 import softwareSanitizationImg from "../../../public/about/software-sanitization.jpg";
 
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
-import { ArrowRight, ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import ConsultationForm from "@/components/contact/ConsultationForm";
 
@@ -339,30 +340,31 @@ export default function OurCapabilitiesPage() {
                       </div>
                     </div>
 
-                    {m.photos.length === 1 ? (
-                      <div className="relative aspect-[4/3] w-full min-w-0 overflow-hidden rounded-md bg-white dark:bg-dark-secondary">
-                        <Image
-                          src={m.photos[0].src}
-                          alt={m.photos[0].alt}
-                          fill
-                          className={`object-cover ${m.photos[0].position ?? ""}`}
-                          sizes="(max-width: 1023px) 100vw, 540px"
-                          priority={i === 0}
-                        />
-                      </div>
-                    ) : (
+                      {m.photos.length === 1 ? (
+                        <div className="w-[460px] max-w-full min-w-0 mx-auto overflow-hidden rounded-md dark:bg-dark-secondary">
+                          <Image
+                            src={m.photos[0].src}
+                            alt={m.photos[0].alt}
+                            width={420}
+                            height={315}
+                            className={`block h-auto w-full rounded-md ${m.photos[0].position ?? ""}`}
+                            sizes="420px"
+                            priority={i === 0}
+                          />
+                        </div>
+                      ) : (
                       // Two machines, one step: degauss, then shred. Square
                       // tiles keep both machines whole in the frame.
-                      <div className="grid min-w-0 grid-cols-2 gap-3">
+                     <div className="flex min-w-0 flex-col items-center gap-3">
                         {m.photos.map((p) => (
-                          <figure key={p.alt} className="min-w-0">
-                            <div className="relative aspect-square w-full overflow-hidden rounded-md bg-white dark:bg-dark-secondary">
+                          <figure key={p.alt} className="w-full min-w-0 max-w-[330px]">
+                            <div className="relative aspect-[5.2/5] w-full overflow-hidden rounded-md">
                               <Image
                                 src={p.src}
                                 alt={p.alt}
                                 fill
                                 className={`object-cover ${p.position ?? ""}`}
-                                sizes="(max-width: 1023px) 50vw, 270px"
+                                sizes="280px"
                               />
                             </div>
                             {p.caption && (
