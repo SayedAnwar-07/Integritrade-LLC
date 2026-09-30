@@ -268,7 +268,7 @@ export default function OurCapabilitiesPage() {
         <ScrollLoader>
           <PageHeader
             title="Our data destruction methods"
-            description="We offer a full array of data destruction methods, because no single method works on every kind of media. Each hard drive, SSD, phone and tape gets the method that actually destroys its data, carried out in our Fresno facility and documented with a certificate."
+            description="No single sanitization technique applies to every storage medium. We match each asset class - from NVMe drives to magnetic tape - to its federally aligned destruction protocol, executed inside our secure Fresno facility and validated with serialized Certificates of Destruction."
           />
         </ScrollLoader>
 

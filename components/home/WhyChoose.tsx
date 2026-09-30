@@ -59,8 +59,8 @@ export default function WhyChoose() {
     <section className="bg-secondary dark:bg-dark py-16 transition-colors duration-300 overflow-hidden">
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10">
         
-<ScrollLoader>
-          <SectionHeader title="Beyond Equipment Removal: Complete Chain of Custody, Security, and Value" />
+        <ScrollLoader>
+          <SectionHeader title="Smarter ITAD: Unbroken Custody, Live Asset Tracking, Maximum Returns" />
 
           <p className="mx-auto mt-6 max-w-4xl text-center text-base leading-relaxed text-stone-700 dark:text-slate-300">
             Integritrade delivers the most comprehensive, secure IT asset disposition process in

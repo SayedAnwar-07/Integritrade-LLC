@@ -47,7 +47,7 @@ const MEDIA: { label: string; cells: Record<MethodKey, Cell> }[] = [
       purge: yes("Firmware Block / Crypto"),
       degauss: no("Zero Magnetic Effect"),
       shred: no("NAND Chips Fall Through"),
-      micro: yes("NIST Destroy / NSA Spec"),
+      micro: yes("NIST Destroy"),
     },
   },
   {

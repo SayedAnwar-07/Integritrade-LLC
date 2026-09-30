@@ -55,8 +55,8 @@ export default function ServicePaths() {
          <ScrollLoader>
             <SectionHeader
               eyebrow="Choose Your Path"
-              title="Different needs, different workflows."
-              description="Whether you're retiring a fleet of company laptops, running an audit-bound industry program, or simply dropping off old electronics, we route each request through the right process from day one."
+              title="Tailored Disposition for Every Scale"
+              description="Whether managing enterprise fleet refreshes, navigating strict regulatory audits, or scheduling local recycling, we have a dedicated path built for you"
             />
         </ScrollLoader>
 
