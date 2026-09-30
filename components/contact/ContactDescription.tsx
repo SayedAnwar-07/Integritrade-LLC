@@ -145,7 +145,7 @@ export default function ContactDescription() {
                   <a key={name} href={href} target="_blank" rel="noopener noreferrer">
                     <div className="flex h-full flex-col items-center justify-start gap-3 transition-transform duration-300 hover:scale-105">
                       <div className="relative h-20 w-full">
-                        <Image src={image} alt={name} fill className="object-contain bg-white p-3 rounded-md border" />
+                        <Image src={image} alt={name} fill className="object-contain rounded-md" />
                       </div>
                       <span className="text-center text-[11px] font-semibold leading-tight text-slate-600 dark:text-slate-300">
                         {name}
