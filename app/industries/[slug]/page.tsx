@@ -342,6 +342,14 @@ export default async function IndustryPage(
             <div className="lg:col-span-5">
 
               <div className="bg-white dark:bg-dark-secondary rounded-md shadow-sm p-8 lg:p-10">
+ {/* Header */}
+    <div className="mb-8">
+      <span className="block h-0.5 w-10 bg-emerald-700 dark:bg-emerald-400 mb-4" aria-hidden="true" />
+      <h3 className="font-serif text-2xl lg:text-[26px] font-semibold tracking-tight leading-tight text-stone-900 dark:text-white">
+        Direct Inquiries
+      </h3>
+      <div className="mt-5 h-px bg-gray-200 dark:bg-gray-700/60" />
+    </div>
 
                 <div className="space-y-7">
 

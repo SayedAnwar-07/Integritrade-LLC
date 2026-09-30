@@ -9,12 +9,12 @@ import logo from "@/public/logo/integritrade-favicon.png"
 // Shared certificate PDF paths used across the site.
 import { CERTIFICATE_PDFS } from "@/data/certificates";
 
-import Iso9001 from "@/public/ISO/ISO-9001.webp"
-import Iso14001 from "@/public/ISO/ISO-14001.webp"
-import Iso27001 from "@/public/ISO/ISO-27001.webp"
-import Iso45001 from "@/public/ISO/ISO-45001.webp"
+import Iso9001 from "@/public/ISO/ISO-9001.png"
+import Iso14001 from "@/public/ISO/ISO-14001.png"
+import Iso27001 from "@/public/ISO/ISO-27001.png"
+import Iso45001 from "@/public/ISO/ISO-45001.png"
 import R2v3 from "@/public/ISO/r2v3.png"
-import Nist from "@/public/ISO/nist-800-88.jpg"
+import Nist from "@/public/ISO/nist-800-88.png"
 
 import { cn } from "@/lib/utils"
 

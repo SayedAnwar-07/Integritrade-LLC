@@ -146,79 +146,83 @@ export default function IndustriesPage(){
                  <Industries />
                </div>
 
-               <ScrollLoader>
-                  <div className="mt-20 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 px-4 sm:px-6 lg:px-8">
-                      {/* Left: Lead copy + primary CTA */}
-                      <div className="lg:col-span-7">
-                        <SectionHeader
-                          eyebrow="Get In Touch"
-                          title="Ready to retire your IT assets responsibly?"
-                        />
-                        <p className="text-[17px] text-gray-600 dark:text-gray-300 leading-[1.75] max-w-xl mt-4">
-                          Schedule a pickup, request a quote, or talk to our team about a custom
-                          ITAD program tailored to your facility, compliance requirements, and
-                          data security standards.
-                        </p>
+            {/* Contact CTA */}
+            <ScrollLoader>
 
-                        <div className="flex flex-col sm:flex-row gap-4 mt-4">
+              <div className="mt-8 lg:mt-16 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
 
-                          <OutlineButton href="/services" testId="button-learn-more">
-                            See How We Can Help
-                          </OutlineButton>
 
-                          <PrimaryButton href="/service-book" testId="button-get-quote">
-                            Book a Service
-                          </PrimaryButton>
-                        </div>
-                      </div>
+                <div className="lg:col-span-7">
+                  <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-4">Ready to retire your IT assets responsibly?</h3>
 
-                      {/* Right: Detached white shadow card with contact details */}
-                      <div className="lg:col-span-5">
-                        <div className="bg-white dark:bg-dark-secondary rounded-md shadow-sm p-8 lg:p-10">
-                            <div className="space-y-7">
-                              {/* Phone */}
-                              <div className="flex items-start gap-4">
-                                <div className="flex-shrink-0 mt-0.5">
-                                  <Phone className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                  <p className="text-[10px] font-medium tracking-[0.18em] uppercase text-gray-500 dark:text-gray-400 mb-1.5">
-                                    Call
-                                  </p>
-                                  <a
-                                    href="tel:+15593254813"
-                                    className="block text-[15px] text-gray-800 dark:text-gray-100 hover:text-[#2aac61] dark:hover:text-[#2aac61] transition-colors"
-                                  >
-                                    (559) 325-4813
-                                  </a>
-                                </div>
-                              </div>
+                  <p className="text-[17px] text-gray-600 dark:text-gray-300 leading-[1.75] max-w-xl mt-4">
+                    Schedule a pickup, request a quote, or talk to our team about a custom ITAD program tailored to your facility, compliance requirements, and data security standards.
+                  </p>
 
-                              {/* Hairline divider */}
-                              <div className="h-px bg-gray-200 dark:bg-gray-700/60" />
 
-                              {/* Email */}
-                              <div className="flex items-start gap-4">
-                                <div className="flex-shrink-0 mt-0.5">
-                                  <Mail className="h-4 w-4 text-emerald-700 dark:text-emerald-400" />
-                                </div>
-                                <div className="flex-1 min-w-0">
-                                  <p className="text-[10px] font-medium tracking-[0.18em] uppercase text-gray-500 dark:text-gray-400 mb-1.5">
-                                    Email
-                                  </p>
-                                  <a
-                                    href="mailto:info@integritradeLLC.com"
-                                    className="block text-[15px] text-gray-800 dark:text-gray-100 hover:text-[#2aac61] dark:hover:text-[#2aac61] transition-colors break-all"
-                                  >
-                                    <span data-nosnippet="">info@integritradeLLC.com</span>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
+                  <div className="flex flex-col sm:flex-row gap-4 mt-4">
+
+                    <OutlineButton href="/services" testId="button-learn-more">
+                      See How We Can Help
+                    </OutlineButton>
+
+                    <PrimaryButton href="/service-book" testId="button-get-quote">
+                      Book a Service
+                    </PrimaryButton>
+
                   </div>
-               </ScrollLoader>
+
+                </div>
+
+
+                <div className="lg:col-span-5">
+
+                  <div className="bg-white dark:bg-dark-secondary rounded-md shadow-sm p-8 lg:p-10">
+ {/* Header */}
+    <div className="mb-8">
+      <span className="block h-0.5 w-10 bg-emerald-700 dark:bg-emerald-400 mb-4" aria-hidden="true" />
+      <h3 className="font-serif text-2xl lg:text-[26px] font-semibold tracking-tight leading-tight text-stone-900 dark:text-white">
+        Direct Inquiries
+      </h3>
+      <div className="mt-5 h-px bg-gray-200 dark:bg-gray-700/60" />
+    </div>
+
+                    <div className="space-y-7">
+
+                      <div className="flex items-start gap-4">
+
+                        <Phone className="h-4 w-4 text-emerald-700 dark:text-emerald-400 mt-1"/>
+
+                        <a href="tel:+15593254813" className="text-[15px] text-gray-800 dark:text-gray-100">
+                          (559)325-4813
+                        </a>
+
+                      </div>
+
+
+                      <div className="h-px bg-gray-200 dark:bg-gray-700/60"/>
+
+
+                      <div className="flex items-start gap-4">
+
+                        <Mail className="h-4 w-4 text-emerald-700 dark:text-emerald-400 mt-1"/>
+
+                        <a href="mailto:info@integritradeLLC.com" className="text-[15px] text-gray-800 dark:text-gray-100 break-all">
+                          <span data-nosnippet="">info@integritradeLLC.com</span>
+                        </a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+            </ScrollLoader>
            </div>
         </main>
     )

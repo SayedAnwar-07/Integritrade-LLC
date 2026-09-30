@@ -12,6 +12,9 @@ interface SectionHeaderProps {
   linkText?: string;
   linkHref?: string;
   align?: "left" | "center";
+  as?: "h2" | "h3";
+  size?: "default" | "sm";
+  showPeriod?: boolean; // ডিফল্ট true; কোনো শিরোনামে ডট না চাইলে false দিন
   className?: string;
 }
 
@@ -23,10 +26,19 @@ export default function SectionHeader({
   linkText,
   linkHref,
   align = "center",
+  as: Tag = "h2",
+  size = "default",
+  showPeriod = true,
   className = "",
 }: SectionHeaderProps) {
   const isCenter = align === "center";
+  const isSmall = size === "sm";
   const hasLink = Boolean(linkText && linkHref);
+
+  // শিরোনামের শেষে আগে থেকেই যতিচিহ্ন থাকলে দ্বিতীয়বার ডট বসবে না
+  const alreadyEndsWithPunctuation =
+    typeof title === "string" && /[.!?:;।]$/.test(title.trim());
+  const showEndDot = showPeriod && !alreadyEndsWithPunctuation;
 
   const cta = hasLink && (
     <Link
@@ -37,6 +49,10 @@ export default function SectionHeader({
       <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
     </Link>
   );
+
+  const headingClasses = isSmall
+    ? "font-serif text-2xl lg:text-[26px] font-semibold leading-tight tracking-tight text-stone-900 dark:text-white"
+    : "font-serif text-3xl max-w-4xl mx-auto leading-[1.05] tracking-tight text-stone-900 sm:text-4xl lg:text-5xl dark:text-white";
 
   return (
     <div className={`w-full ${className}`}>
@@ -50,9 +66,12 @@ export default function SectionHeader({
           isCenter ? "mx-auto text-center" : "text-left"
         }`}
       >
-        <h2 className="font-serif text-3xl max-w-4xl mx-auto leading-[1.05] tracking-tight text-stone-900 sm:text-4xl lg:text-5xl dark:text-white">
+        <Tag className={headingClasses}>
           {title}
-        </h2>
+          {showEndDot && (
+            <span className="text-emerald-700 dark:text-emerald-400">.</span>
+          )}
+        </Tag>
 
         {description && (
           <p

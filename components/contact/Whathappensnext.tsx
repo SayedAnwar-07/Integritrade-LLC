@@ -44,7 +44,7 @@ export default function WhatHappensNext() {
         <ScrollLoader>
             <SectionHeader
                 eyebrow="How It Works"
-                title="A clear process from pickup to final documentation."
+                title="A clear process from pickup to final documentation"
                 description="From your first request to the final report, every step is structured
                   to give your team clarity, accountability, and confidence. We collect,
                   track, process, recycle or recover assets, then provide the documents

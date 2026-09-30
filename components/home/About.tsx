@@ -53,7 +53,7 @@ export default function About() {
           <ScrollLoader>
             <SectionHeader
                 eyebrow="About Integritrade"
-                title="A practical ITAD partner for businesses that need proof, not promises."
+                title="A practical ITAD partner for businesses that need proof, not promises"
                 description="Integritrade helps organizations and local customers remove,
                     track, process, recycle, and recover value from unwanted
                     electronics with a clear workflow and documented outcomes."
