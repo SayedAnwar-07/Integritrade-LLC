@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ServicingArea from "@/components/service-area/ServicingArea";
+import { cityIndex } from "@/lib/serviceAreaLinks";
 import PageHeader from "@/components/shared/PageHeader";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
@@ -87,7 +88,7 @@ export default function ServiceAreaPage() {
       <section className="p-2">
         <div className="mx-auto max-w-[1400px]">
           <div className="">
-            <ServicingArea />
+            <ServicingArea cities={cityIndex()} />
           </div>
         </div>
       </section>

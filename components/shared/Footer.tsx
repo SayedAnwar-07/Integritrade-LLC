@@ -6,6 +6,7 @@ import ServicingAreaMenu from "../service-area/ServicingAreaMenu";
 import integritradeLogo from "@/public/logo/integritrade-logo.svg"
 import { usePathname } from "next/navigation";
 import SocialAddress from "../SocialAddress";
+import type { CityIndexEntry } from "@/lib/serviceAreaLinks";
 
 const footerServices = [
   { 
@@ -30,7 +31,16 @@ const footerServices = [
   },
 ];
 
-export default function Footer() {
+// City data comes in as props from the root layout (a server component), so
+// this client component never imports data/serviceAreas. See cityIndex in
+// lib/serviceAreaLinks.ts.
+export default function Footer({
+  cities,
+  featuredCities,
+}: {
+  cities: CityIndexEntry[];
+  featuredCities: { name: string; slug: string }[];
+}) {
   const pathname = usePathname();
   return (
     // data-nosnippet: the footer address/links are boilerplate on every page and
@@ -55,8 +65,8 @@ export default function Footer() {
       <div className="relative container mx-auto px-6 lg:px-12 pt-16 pb-0">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 pb-14 border-b border-white/10">
 
-          {/* Brand Column — 5 cols */}
-          <div className="lg:col-span-5">
+          {/* Brand Column — 4 cols */}
+          <div className="lg:col-span-4">
             {/* Logo + Brand */}
             <Link href="/" className="flex items-center gap-2 sm:gap-3 flex-shrink-0 click-feel">
               <div className="flex items-center justify-center">
@@ -146,9 +156,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Spacer */}
-          <div className="lg:col-span-1" />
-
           {/* Services Column — 3 cols */}
           <div className="lg:col-span-3">
             <h3 className="text-[10px] font-semibold tracking-[0.3em] uppercase text-[#2aac61] mb-6">
@@ -156,6 +163,57 @@ export default function Footer() {
             </h3>
             <ul className="space-y-1">
               {footerServices.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={`
+                      click-feel
+                      group flex items-center gap-3 py-2.5
+                      border-b border-white/5
+                      hover:border-[#2aac61]/25
+                      transition-all duration-300
+                    `}
+                  >
+                    <span
+                      className={`
+                        w-0 group-hover:w-4 h-px bg-[#2aac61]
+                        transition-all duration-300 flex-shrink-0
+
+                        ${pathname === item.href ? "w-4" : ""}
+                      `}
+                    />
+
+                    <span
+                      className={`
+                        text-[13px] tracking-wide transition-colors duration-300
+
+                        ${
+                          pathname === item.href
+                            ? "text-[#2aac61]"
+                            : "text-white/80 group-hover:text-white/90"
+                        }
+                      `}
+                    >
+                      {item.label}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Service Areas Column — 2 cols. The major city pages, linked from
+              every page (2026-09-30): the full city menu below only renders
+              its links after a click, so Google never saw them. */}
+          <div className="lg:col-span-2">
+            <h3 className="text-[10px] font-semibold tracking-[0.3em] uppercase text-[#2aac61] mb-6">
+              Service Areas
+            </h3>
+            <ul className="space-y-1">
+              {[
+                ...featuredCities.map((c) => ({ href: `/service-area/${c.slug}/`, label: c.name })),
+                { href: "/service-area/", label: "All Service Areas" },
+              ].map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
@@ -253,7 +311,7 @@ export default function Footer() {
 
         {/* Service Area Bar */}
         <div className="py-5 border-b border-white/5 flex flex-col sm:flex-row items-center justify-center gap-2 text-center">
-          <ServicingAreaMenu />
+          <ServicingAreaMenu cities={cities} />
         </div>
 
         {/* Bottom Bar */}

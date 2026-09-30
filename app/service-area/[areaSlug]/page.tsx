@@ -13,6 +13,8 @@ import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
 import { generateCityIntro } from "@/data/areas/seo/generateIntro";
 import { ogImage } from "@/lib/og";
+import CityLinkList from "@/components/service-area/CityLinkList";
+import { nearbyAreas } from "@/lib/serviceAreaLinks";
 
 type AreaPageProps = {
   params: Promise<{
@@ -128,9 +130,11 @@ export default async function AreaPage({ params }: AreaPageProps) {
       {/* Hero */}
       <section className="mx-auto max-w-[1400px] px-4 py-8">
         <ScrollLoader>
+          {/* The H1 was just the city name. It now says what the page offers,
+              the way people search ("San Diego ITAD"), matching the title. */}
           <PageHeader
             eyebrow="Service Area"
-            title={area.name}
+            title={`ITAD & Data Destruction Services in ${area.name}, CA`}
             description={cityIntro}
           />
         </ScrollLoader>
@@ -174,6 +178,22 @@ export default async function AreaPage({ params }: AreaPageProps) {
             </div>
           )}
         </ScrollLoader>
+      </section>
+
+      {/* Nearby cities (lib/serviceAreaLinks.ts): each city page used to be
+          linked only from its own city's pages. */}
+      <section className="mx-auto max-w-[1400px] px-4 pb-4">
+        <CityLinkList
+          id="nearby-areas"
+          heading="Nearby service areas"
+          links={[
+            ...nearbyAreas(area.slug).map((a) => ({
+              href: `/service-area/${a.slug}/`,
+              label: a.name,
+            })),
+            { href: "/service-area/", label: "All service areas" },
+          ]}
+        />
       </section>
 
       {/* Certificates */}

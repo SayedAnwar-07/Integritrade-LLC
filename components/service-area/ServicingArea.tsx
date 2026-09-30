@@ -2,156 +2,31 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { serviceAreas } from "@/data/serviceAreas";
+// Type only: the city list arrives as a prop (see cityIndex in
+// lib/serviceAreaLinks.ts), so the city articles stay out of the browser bundle.
+import type { CityIndexEntry } from "@/lib/serviceAreaLinks";
+import { SERVICE_REGIONS } from "@/data/serviceRegions";
 import { ArrowUpRight, Plus, Minus } from "lucide-react";
 import SectionHeader from "../shared/SectionHeader";
 import ScrollLoader from "../shared/ScrollLoader";
 
-const SERVICE_REGIONS = [
-  {
-    name: "San Francisco",
-    blurb:
-      "Dense urban tower retirements, SOC-2 audited tenant fit-outs, and end-of-lease IT cleanouts.",
-    cities: ["San Francisco"],
-  },
-  {
-    name: "Silicon Valley & South Bay",
-    blurb:
-      "Tech campus fleet refreshes, lab equipment retirement, and high-volume server decommissions.",
-    cities: [
-      "San Jose",
-      "Mountain View",
-      "Cupertino",
-      "Santa Clara",
-      "Palo Alto",
-      "Sunnyvale",
-      "Los Gatos",
-      "Milpitas",
-      "Campbell",
-    ],
-  },
-  {
-    name: "The Peninsula",
-    blurb:
-      "Biotech and financial-services data destruction with HIPAA and GLBA-aligned reporting.",
-    cities: [
-      "Menlo Park",
-      "Redwood City",
-      "San Mateo",
-      "San Bruno",
-      "South San Francisco",
-      "Foster City",
-    ],
-  },
-  {
-    name: "The East Bay",
-    blurb:
-      "Industrial decommissions, university IT retirement, and municipal asset disposition.",
-    cities: [
-      "Berkeley",
-      "Oakland",
-      "Fremont",
-      "Emeryville",
-      "Alameda",
-      "Pleasanton",
-      "Walnut Creek",
-    ],
-  },
-  {
-    name: "North Bay",
-    blurb:
-      "Distributed pickups across wine country offices, healthcare networks, and county facilities.",
-    cities: ["San Rafael", "Santa Rosa", "Petaluma"],
-  },
-  {
-    name: "Central Valley",
-    blurb:
-      "Headquarters region. Same-day pickups for agriculture, logistics, education, and government.",
-    cities: [
-      "Fresno",
-      "Clovis",
-      "Sacramento",
-      "Bakersfield",
-      "Stockton",
-      "Modesto",
-      "Merced",
-      "Visalia",
-    ],
-  },
-
-  // Southern California coverage added based on the latest client request.
-  // Cities are grouped by county/region so the service-area UI stays easy to scan.
-  {
-    name: "Los Angeles County",
-    blurb:
-      "Secure IT asset recovery, electronics recycling, data destruction, and office technology cleanouts across Los Angeles County.",
-    cities: [
-      "Los Angeles",
-      "Santa Monica",
-      "Culver City",
-      "El Segundo",
-      "Torrance",
-      "Pasadena",
-      "Glendale",
-      "Burbank",
-      "Long Beach",
-    ],
-  },
-  {
-    name: "Orange County",
-    blurb:
-      "Business IT recycling, secure equipment disposition, and scheduled asset pickups throughout Orange County.",
-    cities: [
-      "Irvine",
-      "Newport Beach",
-      "Costa Mesa",
-      "Anaheim",
-      "Santa Ana",
-      "Huntington Beach",
-    ],
-  },
-  {
-    name: "San Diego County",
-    blurb:
-      "IT asset disposition, secure data destruction, and electronics recycling for organizations across San Diego County.",
-    cities: [
-      "San Diego",
-      "La Jolla",
-      "Sorrento Valley",
-      "Carlsbad",
-      "Oceanside",
-      "Chula Vista",
-    ],
-  },
-  {
-    name: "Inland Empire",
-    blurb:
-      "Enterprise IT recycling and asset recovery coverage across San Bernardino and Riverside Counties.",
-    cities: [
-      "Ontario",
-      "Rancho Cucamonga",
-      "Riverside",
-      "San Bernardino",
-      "Corona",
-    ],
-  },
-];
-
-function buildCityLookup() {
+// Regions live in data/serviceRegions.ts, shared with the nearby-city links
+// and the footer.
+function buildCityLookup(cities: CityIndexEntry[]) {
   const map = new Map<string, { slug: string; serviceCount: number }>();
 
-  for (const area of serviceAreas) {
-    map.set(area.name.toLowerCase(), {
-      slug: area.slug,
-      serviceCount: area.services.length,
+  for (const city of cities) {
+    map.set(city.name.toLowerCase(), {
+      slug: city.slug,
+      serviceCount: city.serviceCount,
     });
   }
 
   return map;
 }
 
-export default function ServicingArea() {
-  const cityLookup = buildCityLookup();
+export default function ServicingArea({ cities }: { cities: CityIndexEntry[] }) {
+  const cityLookup = buildCityLookup(cities);
   const [openIndex, setOpenIndex] = useState<number>(0);
 
   return (

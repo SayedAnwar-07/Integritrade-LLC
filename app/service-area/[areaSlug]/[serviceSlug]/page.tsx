@@ -14,7 +14,9 @@ import {
 import PageHeader from "@/components/shared/PageHeader";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import ServiceDetailSidebar from "@/components/service-area/Servicedetailsidebar";
+import CityLinkList from "@/components/service-area/CityLinkList";
 import { ogImage } from "@/lib/og";
+import { SERVICE_KIND_LABEL, nearbyAreas, serviceKind, serviceOfKind } from "@/lib/serviceAreaLinks";
 
 import {
   getAllServiceParams,
@@ -106,6 +108,15 @@ export default async function ServicePage({ params }: PageProps) {
 
   const otherServices =
     area.services?.filter((item) => item.slug !== service.slug) ?? [];
+
+  // The same service in neighbouring cities (lib/serviceAreaLinks.ts).
+  const kind = serviceKind(service.slug);
+  const nearbyLinks = kind
+    ? nearbyAreas(area.slug).flatMap((a) => {
+        const s = serviceOfKind(a, kind);
+        return s ? [{ href: `/service-area/${a.slug}/${s.slug}/`, label: a.name }] : [];
+      })
+    : [];
 
   return (
     <main className="min-h-screen bg-secondary transition-colors duration-300 dark:bg-dark">
@@ -252,6 +263,15 @@ export default async function ServicePage({ params }: PageProps) {
                 ))}
               </div>
             </ScrollLoader>
+
+            {kind && (
+              <CityLinkList
+                id="nearby-cities"
+                className="mt-14"
+                heading={`${SERVICE_KIND_LABEL[kind]} in nearby cities`}
+                links={nearbyLinks}
+              />
+            )}
           </section>
 
           {/* Floating sidebar */}

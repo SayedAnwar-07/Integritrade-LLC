@@ -9,6 +9,7 @@ import { Suspense } from "react"
 import RouteLoader from "@/components/shared/RouteLoader"
 import Navbar from "@/components/shared/Navbar"
 import SchemaMarkup from "@/components/home/SchemaMarkup"
+import { FOOTER_CITY_SLUGS, areasBySlug, cityIndex } from "@/lib/serviceAreaLinks"
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -118,7 +119,12 @@ export default function RootLayout({
 
             <Navbar />
             <main>{children}</main>
-            <Footer />
+            {/* City data is computed here, on the server, and passed down as a
+                small list, so the city articles never reach the browser. */}
+            <Footer
+              cities={cityIndex()}
+              featuredCities={areasBySlug(FOOTER_CITY_SLUGS).map((a) => ({ name: a.name, slug: a.slug }))}
+            />
           </ThemeProvider>
 
           <Toaster

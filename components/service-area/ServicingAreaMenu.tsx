@@ -2,7 +2,9 @@
 
 import Link from "next/link";
 import { useState, useRef, useCallback, useEffect } from "react";
-import { serviceAreas } from "@/data/serviceAreas";
+// Type only: the city list arrives as a prop (see cityIndex in
+// lib/serviceAreaLinks.ts), so the city articles stay out of the browser bundle.
+import type { CityIndexEntry } from "@/lib/serviceAreaLinks";
 import {
   MapPin,
   ChevronDown,
@@ -130,13 +132,13 @@ const REGION_COLORS = [
   { accent: "#ECC94B", label: "text-amber-400" },
 ];
 
-function buildCityLookup() {
+function buildCityLookup(cities: CityIndexEntry[]) {
   const map = new Map<string, { slug: string; serviceCount: number }>();
 
-  for (const area of serviceAreas) {
-    map.set(area.name.toLowerCase(), {
-      slug: area.slug,
-      serviceCount: area.services.length,
+  for (const city of cities) {
+    map.set(city.name.toLowerCase(), {
+      slug: city.slug,
+      serviceCount: city.serviceCount,
     });
   }
 
@@ -485,8 +487,8 @@ function MobileDrawer({
 
 /* ──────────────────────────── main export ──────────────────────────── */
 
-export default function ServicingAreaNav() {
-  const cityLookup = buildCityLookup();
+export default function ServicingAreaNav({ cities }: { cities: CityIndexEntry[] }) {
+  const cityLookup = buildCityLookup(cities);
   const [mobileOpen, setMobileOpen] =
     useState(false);
 

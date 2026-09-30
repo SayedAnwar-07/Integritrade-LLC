@@ -12,6 +12,14 @@ import ScrollLoader from "@/components/shared/ScrollLoader";
 import ProductGrid from "@/components/products/ProductGrid";
 import PageHeader from "@/components/shared/PageHeader";
 import { ogImageFor } from "@/lib/og";
+import CityLinkList from "@/components/service-area/CityLinkList";
+import {
+  KIND_FOR_SERVICE_PAGE,
+  PRIORITY_CITY_SLUGS,
+  SERVICE_KIND_LABEL,
+  areasBySlug,
+  serviceOfKind,
+} from "@/lib/serviceAreaLinks";
 
 export async function generateMetadata(props: {
   params: Promise<{ slug: string }>;
@@ -106,6 +114,17 @@ export default async function ServicePage(props: {
 
   const isRemoteITAssetRecovery =
     service.slug === "remote-it-asset-recovery";
+
+  // The city versions of this service, for the major cities.
+  const cityKind = KIND_FOR_SERVICE_PAGE[service.slug];
+  const cityLinks = cityKind
+    ? areasBySlug(PRIORITY_CITY_SLUGS).flatMap((a) => {
+        const s = serviceOfKind(a, cityKind);
+        return s
+          ? [{ href: `/service-area/${a.slug}/${s.slug}/`, label: `${SERVICE_KIND_LABEL[cityKind]} in ${a.name}` }]
+          : [];
+      })
+    : [];
 
   return (
     <div className="min-h-screen bg-secondary transition-colors duration-300 dark:bg-dark">
@@ -547,6 +566,27 @@ export default async function ServicePage(props: {
                 <ProductGrid />
               </ScrollLoader>
             </div>
+          </div>
+        )}
+
+        {/* =====================================================
+            CITY PAGES (2026-09-30)
+
+            These pages linked to none of their city versions, so
+            Google reached those only through the sitemap and left
+            many uncrawled. See lib/serviceAreaLinks.ts.
+        ===================================================== */}
+
+        {cityKind && (
+          <div className="mt-20 lg:mt-24">
+            <ScrollLoader>
+              <CityLinkList
+                id="service-cities"
+                wide
+                heading={`${SERVICE_KIND_LABEL[cityKind]} across California`}
+                links={[...cityLinks, { href: "/service-area/", label: "All service areas" }]}
+              />
+            </ScrollLoader>
           </div>
         )}
 
