@@ -10,6 +10,16 @@ RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# ── Email template images (2026-09-30) ──
+# The EmailJS auto-reply ("Thank you for contacting Integritrade") loads the
+# certification badges from these old .webp addresses. The badges became .png
+# on 2026-09-30 and every badge broke in clients' inboxes. Serve the .png
+# under the old name: a rewrite, not a redirect, so every email client shows
+# it. New template: one image at /email/certification-badges.png (see
+# public/email/README.md). Keep these rules for emails already sent.
+RewriteRule ^ISO/(ISO-9001|ISO-14001|ISO-27001|ISO-45001|R2V3_certified_logo)\.webp$ /ISO/$1.png [L]
+RewriteRule ^ISO/nist-800-88\.jpg$ /ISO/nist-800-88.png [L]
+
 # ── 301s for renamed recycling slugs (2026-07-22 rename) ──
 RewriteRule ^service-area/([^/]+)/e-waste-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]
 RewriteRule ^service-area/(fresno|san-francisco|clovis)/electronics-recycling/?$ /service-area/$1/basic-electronics-recycling/ [R=301,L]

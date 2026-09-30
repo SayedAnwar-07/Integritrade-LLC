@@ -90,7 +90,7 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
     })
     const requestId = `ITR-${Date.now().toString().slice(-6)}`
     const sourceLabel = industry
-      ? `Free Consultation — ${industry}`
+      ? `Free Consultation (${industry})`
       : 'Free Consultation'
 
     // Reuses the existing booking EmailJS template; booking-only fields are N/A.
