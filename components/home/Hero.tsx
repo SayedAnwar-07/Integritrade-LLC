@@ -139,7 +139,7 @@ export default function Hero() {
           {/* Trust ribbon — thin-line stat icons, brand-green rule, big numbers.
               currentColor + theme tokens keep it correct in dark mode; the grid
               reflows 2 → 3 → 6 columns and only shows column dividers at lg. */}
-          <div className="mt-12 lg:mt-16">
+          <div className="mt-20 md:mt-28 lg:mt-36">
             <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-0 lg:divide-x lg:divide-gray-200 dark:lg:divide-white/10">
               {trustItems.map(({ Icon, value, label }) => (
                 <div

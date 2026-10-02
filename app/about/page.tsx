@@ -137,11 +137,30 @@ function Eyebrow({
 }
 
 const stats = [
-  // Ian's four boxes, 2026-09-26: headline figure, what it is, and the proof.
-  { Icon: Building2, value: "30K", label: "Square Foot Access-Restricted Facility", detail: "24/7 Monitored Chain of Custody" },
-  { Icon: Award, value: "5", label: "Core Certifications", detail: "R2v3, ISO 27001, ISO 9001, ISO 14001, ISO 45001" },
-  { Icon: ClipboardX, value: "0", label: "Manual Notes", detail: "100% Software-Enforced System Workflows" },
-  { Icon: ScanBarcode, value: "Serialized", label: "Reconciliation", detail: "Client Asset Tag Matched to Drive Serial" },
+  {
+    Icon: Building2,
+    value: "30K",
+    label: "Square Foot Access-Restricted Facility",
+    detail: "24/7 Monitored Chain of Custody",
+  },
+  {
+    Icon: Award,
+    value: "5",
+    label: "Core Certifications",
+    detail: "R2v3, ISO 27001, ISO 9001, ISO 14001, ISO 45001",
+  },
+  {
+    Icon: FileCheck,
+    value: "100%",
+    label: "Data Destruction Guaranteed",
+    detail: "Permanent, Irreversible Data Sanitization",
+  },
+  {
+    Icon: ScanBarcode,
+    value: "Serialized",
+    label: "Reconciliation",
+    detail: "Client Asset Tag Matched to Drive Serial",
+  },
 ]
 
 const valueRecovery = [
@@ -352,17 +371,31 @@ export default function AboutPage() {
                 className="flex flex-col items-center bg-white px-5 py-8 text-center dark:bg-dark-secondary"
               >
                 <Icon className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+
                 <div className="mt-4 font-serif text-2xl font-semibold text-stone-900 dark:text-white lg:text-3xl">
                   {value}
                 </div>
+
                 <p className="mt-1 text-sm font-medium text-stone-700 dark:text-slate-300">
                   {label}
                 </p>
+
                 <p className="mt-2 text-xs leading-relaxed text-stone-500 dark:text-slate-400">
                   {detail}
                 </p>
               </div>
             ))}
+          </div>
+
+          <div className="mx-auto mt-8 max-w-5xl text-center">
+            <p className="text-base leading-7 text-stone-700 dark:text-slate-300 sm:text-lg sm:leading-8">
+              For all IT asset disposition projects, we guarantee the permanent,
+              irreversible sanitization of your data-bearing devices. Every asset is
+              processed under strict chain-of-custody protocols resulting in a flawless,
+              zero-breach track record across our entire operating history. Every data
+              destruction or ITAD project concludes with serialized Certificates of Data
+              Destruction for complete regulatory compliance.
+            </p>
           </div>
         </ScrollLoader>
       </div>

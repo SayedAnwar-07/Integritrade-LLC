@@ -6,6 +6,15 @@ import toast from 'react-hot-toast'
 import { AlertCircle, Loader2, Send } from 'lucide-react'
 import Link from 'next/link'
 
+import {
+  Select,
+  SelectContent,
+  SelectGroup,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
 type Fields = {
   name: string
   email: string
@@ -25,15 +34,13 @@ const INITIAL: Fields = {
 }
 
 const SERVICE_OPTIONS = [
-  { value: '', label: 'Select a service (optional)' },
-  // The value is what lands in the enquiry email, so it matches the label.
-  { value: 'Secure Electronics Recycling', label: 'Secure Electronics Recycling' },
-  { value: 'Certified Data Destruction', label: 'Certified Data Destruction' },
-  { value: 'IT Asset Disposition', label: 'IT Asset Disposition' },
-  { value: 'Data Center Decommissioning', label: 'Data Center Decommissioning' },
-  { value: 'IT Equipment Buyback', label: 'IT Equipment Buyback' },
-  { value: 'Other', label: 'Other / Not sure' },
-]
+  { value: "Secure Electronics Recycling", label: "Secure Electronics Recycling" },
+  { value: "Certified Data Destruction", label: "Certified Data Destruction" },
+  { value: "IT Asset Disposition", label: "IT Asset Disposition" },
+  { value: "Data Center Decommissioning", label: "Data Center Decommissioning" },
+  { value: "IT Equipment Buyback", label: "IT Equipment Buyback" },
+  { value: "Other", label: "Other / Not Sure" },
+];
 
 const baseInput =
   'w-full rounded-md bg-white dark:bg-dark-secondary text-gray-900 dark:text-gray-100 placeholder:text-gray-400 dark:placeholder:text-gray-500 border transition-all duration-200 outline-none px-3.5 py-2.5 text-sm focus:border-green-400 dark:focus:border-green-500'
@@ -57,14 +64,20 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
   }
 
   const validate = () => {
-    const e: Partial<Record<keyof Fields, string>> = {}
-    if (!data.name.trim()) e.name = 'Name is required'
-    if (!data.email.trim()) e.email = 'Email is required'
+    const e: Partial<Record<keyof Fields, string>> = {};
+
+    if (!data.name.trim()) e.name = "Name is required";
+
+    if (!data.email.trim()) e.email = "Email is required";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email))
-      e.email = 'Enter a valid email'
-    if (!data.message.trim()) e.message = 'Tell us a bit about your needs'
-    return e
-  }
+      e.email = "Enter a valid email";
+
+    if (!data.service) e.service = "Please select a service";
+
+    if (!data.message.trim()) e.message = "Tell us a bit about your needs";
+
+    return e;
+  };
 
   const handleSubmit = async (ev: React.FormEvent) => {
     ev.preventDefault()
@@ -225,18 +238,36 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
         </div>
 
         <div>
-          <label className={labelClass}>Service of Interest</label>
-          <select
+          <label className={labelClass}>
+            Service of Interest <span className="text-red-500">*</span>
+          </label>
+
+          <Select
             value={data.service}
-            onChange={(e) => set('service', e.target.value)}
-            className={`${baseInput} ${inputBorder(false)}`}
+            onValueChange={(value) => set("service", value)}
           >
-            {SERVICE_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value}>
-                {o.label}
-              </option>
-            ))}
-          </select>
+            <SelectTrigger
+              className={`w-full bg-white dark:bg-dark-secondary ${
+                errors.service
+                  ? "border-red-400 dark:border-red-500/70"
+                  : "border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600"
+              }`}
+            >
+              <SelectValue placeholder="Select a service" />
+            </SelectTrigger>
+
+            <SelectContent>
+              <SelectGroup>
+                {SERVICE_OPTIONS.map((option) => (
+                  <SelectItem key={option.value} value={option.value}>
+                    {option.label}
+                  </SelectItem>
+                ))}
+              </SelectGroup>
+            </SelectContent>
+          </Select>
+
+          <Err field="service" />
         </div>
 
         <div>

@@ -60,7 +60,7 @@ export default function WhyChoose() {
       <div className="relative max-w-[1400px] mx-auto px-6 lg:px-10">
         
         <ScrollLoader>
-          <SectionHeader title="Smarter ITAD- Unbroken Custody, Live Asset Tracking, Maximum Returns" />
+          <SectionHeader title="Smarter ITAD - Unbroken Custody, Live Asset Tracking, Maximum Returns" />
 
           <p className="mx-auto mt-6 max-w-4xl text-center text-base leading-relaxed text-stone-700 dark:text-slate-300">
             Integritrade delivers the most comprehensive, secure IT asset disposition process in

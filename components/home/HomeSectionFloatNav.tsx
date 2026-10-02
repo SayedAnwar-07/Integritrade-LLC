@@ -8,11 +8,11 @@ import { cn } from "@/lib/utils";
 // scroll-progress rail is disorienting, so it now tracks the client-logos band
 // it actually sits next to.
 const sections = [
-  { id: "clients", label: "Clients" },
-  { id: "why-choose", label: "Why Choose Us" },
-  { id: "services", label: "Solutions" },
-  { id: "process", label: "Process" },
-  { id: "about", label: "About" },
+  { id: "clients", label: "Previous Clients" },
+  { id: "why-choose", label: "Why Choose Integritrade" },
+  { id: "services", label: "Customized Solutions" },
+  { id: "process", label: "Our Process" },
+  // { id: "about", label: "About" },
   { id: "blogs", label: "Insights" },
 ];
 

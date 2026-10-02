@@ -36,15 +36,6 @@ const pillars = [
 export default function About() {
   return (
     <section className="bg-secondary dark:bg-dark transition-colors duration-300">
-      {/* <div
-        className="relative py-8 lg:py-16"
-        style={{
-          backgroundImage: `url(${eWasteManagement.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
-      > */}
       <div
         className="relative py-8 lg:py-16">
         {/* <div className="absolute inset-0 bg-black/70" /> */}
@@ -98,21 +89,20 @@ export default function About() {
 
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         <ScrollLoader>
-          <div className="mt-10 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+          <div className="mt-10 flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
             <div className="max-w-2xl">
               <h3 className="font-serif text-2xl lg:text-3xl text-stone-900 dark:text-white leading-tight mb-3">
                 Ready to plan a pickup with a team that documents the outcome?
               </h3>
 
               <p className="text-stone-600 dark:text-slate-400">
-                Tell us what you need removed, where it is, and when it needs to
-                happen. We’ll help you choose the right service path.
+                Tell us what you need removed, where it is, and when it needs to happen. We’ll help you choose the right service path.
               </p>
             </div>
 
-            <div className="flex flex-col gap-3 flex-shrink-0 md:min-w-96">
+            <div className="flex w-full flex-col gap-5 flex-shrink-0 sm:w-auto sm:min-w-[280px] md:min-w-[320px] lg:-translate-y-4 lg:min-w-[360px] xl:-translate-y-6 xl:min-w-[380px]">
               <OutlineButton href="/about" testId="button-learn-more">
-                Why Choose Us
+                Why Choose Integritrade
               </OutlineButton>
 
               <PrimaryButton href="/service-book" testId="button-get-quote">
