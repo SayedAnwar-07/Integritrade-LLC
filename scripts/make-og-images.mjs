@@ -55,10 +55,10 @@ const PHOTOS = [
 // ISO 45001 is left out on purpose: its badge artwork reads "Occupational
 // HEATH and Safety". Add it back once the badge file is corrected.
 const BADGES = [
-  "public/ISO/R2V3_certified_logo.webp",
-  "public/ISO/ISO-27001.webp",
-  "public/ISO/ISO-9001.webp",
-  "public/ISO/ISO-14001.webp",
+  "public/ISO/R2V3_certified_logo.png",
+  "public/ISO/ISO-27001.png",
+  "public/ISO/ISO-9001.png",
+  "public/ISO/ISO-14001.png",
 ];
 
 async function photo(out, src) {

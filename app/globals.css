@@ -1130,3 +1130,23 @@
     filter: none;
   }
 }
+
+/* 404 page (app/not-found.tsx): the dotted ring inside the recycling loop
+   turns slowly. Rotates about the loop's centre in SVG units. */
+.nf-orbit {
+  transform-box: view-box;
+  transform-origin: 200px 212px;
+  animation: nf-orbit 90s linear infinite;
+}
+
+@keyframes nf-orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nf-orbit {
+    animation: none;
+  }
+}

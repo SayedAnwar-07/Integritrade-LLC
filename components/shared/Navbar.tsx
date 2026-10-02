@@ -112,7 +112,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
     >
       <Link
         href={item.href}
-        className={`relative z-10 inline-flex items-center gap-1.5 rounded-md px-3.5 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
+        className={`relative z-10 inline-flex items-center gap-1.5 rounded-md px-3 xl:px-5 py-2 no-underline transition-all duration-300 font-semibold text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
           isActive
             ? 'text-primary'
             : 'text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white'
@@ -168,7 +168,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
                   )}
 
                   <span
-                    className={`text-[13px] font-medium leading-snug tracking-tight transition-colors duration-150 ${
+                    className={`text-[13px] font-semibold leading-snug tracking-tight transition-colors duration-150 ${
                       isSubActive
                         ? 'text-primary dark:text-white'
                         : 'text-gray-700 dark:text-gray-200 group-hover/item:text-primary group-focus-visible/item:text-primary dark:group-hover/item:text-white dark:group-focus-visible/item:text-white'
@@ -210,7 +210,7 @@ function TraceTechNavItem({
     >
       <Link
         href={TRACETECH_HREF}
-        className="relative z-10 inline-flex items-center gap-1.5 rounded-md px-3.5 xl:px-5 py-2 no-underline transition-all duration-300 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white"
+        className="relative z-10 inline-flex items-center gap-1.5 rounded-md px-3 xl:px-5 py-2 no-underline transition-all duration-300 font-semibold text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white"
       >
         <span className="whitespace-nowrap">TraceTech<span className="hidden xl:inline"> Asset Tracking</span></span>
         <ChevronDown
@@ -295,7 +295,7 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
         <Link
           href={item.href}
           onClick={onItemClick}
-          className={`flex-1 px-5 py-4 text-[15px] font-medium tracking-tight transition-all click-feel ${
+          className={`flex-1 px-5 py-4 text-[15px] font-semibold tracking-tight transition-all click-feel ${
             isActive
               ? 'text-primary'
               : 'text-gray-700 dark:text-gray-200'
@@ -342,7 +342,7 @@ function MobileDropdown({ item, isActive, isOpen, onToggle, onItemClick }: Mobil
                     <Icon className="h-3.5 w-3.5 flex-shrink-0 text-primary" strokeWidth={2.2} />
                   </div>
                 )}
-                <span className="font-medium tracking-tight">
+                <span className="font-semibold tracking-tight">
                   {dropdownItem.label}
                 </span>
               </Link>
@@ -574,7 +574,7 @@ export default function Navbar() {
                     if (el) linkRefs.current.set(item.href, el)
                   }}
                   onMouseEnter={() => setHoveredHref(item.href)}
-                  className={`relative z-10 rounded-md px-3.5 xl:px-5 py-2 no-underline transition-all duration-150 font-medium text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
+                  className={`relative z-10 rounded-md px-3 xl:px-5 py-2 no-underline transition-all duration-150 font-semibold text-[13px] tracking-tight click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark ${
                     isActive
                       ? 'text-primary'
                       : 'text-gray-600 dark:text-gray-300 hover:text-primary focus-visible:text-primary dark:hover:text-white dark:focus-visible:text-white'
@@ -709,7 +709,7 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-medium tracking-tight transition-all active:scale-[0.97] active:duration-75 ${
+                  className={`block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-semibold tracking-tight transition-all active:scale-[0.97] active:duration-75 ${
                     isActive ? 'text-primary' : 'text-gray-700 dark:text-gray-200 hover:text-primary'
                   }`}
                 >
@@ -722,7 +722,7 @@ export default function Navbar() {
             <Link
               href={TRACETECH_HREF}
               onClick={() => setIsMenuOpen(false)}
-              className="block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-medium tracking-tight transition-all active:scale-[0.97] active:duration-75 text-gray-700 dark:text-gray-200 hover:text-primary"
+              className="block px-5 py-4 border-b border-gray-100 dark:border-white/5 text-[15px] font-semibold tracking-tight transition-all active:scale-[0.97] active:duration-75 text-gray-700 dark:text-gray-200 hover:text-primary"
             >
               TraceTech Asset Tracking
             </Link>
@@ -737,7 +737,7 @@ export default function Navbar() {
               <Link
                 href="tel:+15593254813"
                 onClick={() => setIsMenuOpen(false)}
-                className="!bg-brand-accent hover:!bg-[hsl(var(--brand-accent-hover))] !text-white flex w-full items-center justify-center gap-2 rounded-md border border-primary/30 px-4 py-2.5 text-[14px] font-medium tracking-tight transition-all"
+                className="!bg-brand-accent hover:!bg-[hsl(var(--brand-accent-hover))] !text-white flex w-full items-center justify-center gap-2 rounded-md border border-primary/30 px-4 py-2.5 text-[14px] font-semibold tracking-tight transition-all"
               >
                 <Phone className="h-4 w-4 shrink-0" strokeWidth={2.2} />
                 <span>Call</span>
@@ -746,7 +746,7 @@ export default function Navbar() {
               <Link
                 href="sms:+15593254813"
                 onClick={() => setIsMenuOpen(false)}
-                className="flex w-full items-center justify-center gap-2 rounded-md border border-primary/40 px-4 py-2.5 text-[14px] font-medium tracking-tight text-primary transition-all hover:bg-primary/5"
+                className="flex w-full items-center justify-center gap-2 rounded-md border border-primary/40 px-4 py-2.5 text-[14px] font-semibold tracking-tight text-primary transition-all hover:bg-primary/5"
               >
                 <MessageSquare className="h-4 w-4 shrink-0" strokeWidth={2.2} />
                 <span>Text</span>

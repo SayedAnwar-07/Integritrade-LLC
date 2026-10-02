@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { Plus_Jakarta_Sans } from "next/font/google"
 import "./globals.css"
 import { Toaster } from "react-hot-toast"
 import Footer from "@/components/shared/Footer"
@@ -10,6 +11,16 @@ import RouteLoader from "@/components/shared/RouteLoader"
 import Navbar from "@/components/shared/Navbar"
 import SchemaMarkup from "@/components/home/SchemaMarkup"
 import { FOOTER_CITY_SLUGS, areasBySlug, cityIndex } from "@/lib/serviceAreaLinks"
+
+// The site's one typeface (2026-10-02, from the homepage reference Ian liked):
+// bold for headings, regular for body text. next/font downloads it at build
+// time and serves it from /_next/static, so visitors never call Google Fonts.
+// tailwind.config.ts maps both font-sans and font-serif to this variable.
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jakarta",
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
@@ -103,7 +114,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
+    <html lang="en" className={jakarta.variable} data-scroll-behavior="smooth" suppressHydrationWarning>
       <body suppressHydrationWarning>
         <Providers>
           <SchemaMarkup />

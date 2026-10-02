@@ -553,7 +553,7 @@ export default function TraceTechPage() {
             {/* ── Final CTA ─────────────────────────────────────────── */}
             <section id="cta" className="scroll-mt-28 pt-24">
               <ScrollLoader>
-                <div className="rounded-2xl bg-white p-8 text-center shadow-sm ring-1 ring-black/5 dark:bg-dark-secondary dark:ring-white/10 md:p-12">
+                <div className="rounded-2xl bg-white px-4 py-8 text-center shadow-sm ring-1 ring-black/5 dark:bg-dark-secondary dark:ring-white/10 sm:p-8 md:p-12">
                   <h2 className="mx-auto max-w-3xl font-serif text-2xl leading-snug text-stone-900 dark:text-white md:text-3xl">
                     TraceTech is included with your Integritrade program.
                   </h2>
@@ -564,10 +564,10 @@ export default function TraceTechPage() {
                     documentation, value recovery, and reporting in view.
                   </p>
                   <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap">
-                    <PrimaryButton href="/service-book/" testId="tracetech-walkthrough-2" className="shrink-0 text-sm py-3">
+                    <PrimaryButton href="/service-book/" testId="tracetech-walkthrough-2" className="shrink-0 whitespace-normal text-sm py-3 sm:whitespace-nowrap">
                       Request a TraceTech Walkthrough
                     </PrimaryButton>
-                    <OutlineButton href="/service-book/" testId="tracetech-service-request-2" className="shrink-0 text-sm py-3">
+                    <OutlineButton href="/service-book/" testId="tracetech-service-request-2" className="shrink-0 whitespace-normal text-sm py-3 sm:whitespace-nowrap">
                       Schedule a Service Request
                     </OutlineButton>
                   </div>

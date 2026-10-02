@@ -1567,4 +1567,33 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
   },
+  "bay-area-itad-electronics-recycling": {
+    title: "Bay Area ITAD & Electronics Recycling for Corporate IT",
+    description: "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/bay-area-itad-electronics-recycling`,
+    },
+    openGraph: {
+      title: "Bay Area ITAD & Electronics Recycling for Corporate IT",
+      description: "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
+      url: `${BASE_URL}/blogs/bay-area-itad-electronics-recycling`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Retired corporate laptops lined up on workbenches for testing in an ITAD warehouse",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Bay Area ITAD & Electronics Recycling for Corporate IT",
+      description: "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
+      images: [OG_IMAGE],
+    },
+  },
 };

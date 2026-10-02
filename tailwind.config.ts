@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import defaultTheme from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   darkMode: ["class"],
@@ -16,6 +17,14 @@ const config: Config = {
       }
     },
     extend: {
+      // Plus Jakarta Sans everywhere (loaded in app/layout.tsx). font-serif
+      // points at it too: the site's ~850 headings use that class from when
+      // they were set in a serif, so this restyles all of them in one place.
+      // font-mono is left alone.
+      fontFamily: {
+        sans: ['var(--font-jakarta)', ...defaultTheme.fontFamily.sans],
+        serif: ['var(--font-jakarta)', ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

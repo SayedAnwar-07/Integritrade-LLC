@@ -74,6 +74,22 @@ const CONFIG = {
     metaDescription:
       "How to choose Clear, Purge, or Destroy under NIST SP 800-88 Rev. 2, based on data risk, the storage media, and what happens to the device next.",
   },
+  // Supplied 2026-10-02 as a .docx, converted the same way as the NIST one:
+  // bolding and links kept, "Basic Electronics Recycling" renamed, and the
+  // address written the way the rest of the site writes it.
+  "bay-area-itad-electronics-recycling": {
+    file: "Bay Area ITAD and Electronics Recycling for Corporate Technology Retirement.md",
+    image: "BayAreaCover",
+    imagePath: "industries/business-corporate.webp",
+    category: "Bay Area",
+    imageAlt:
+      "Retired corporate laptops lined up on workbenches for testing in an ITAD warehouse",
+    date: "October 2, 2026",
+    dateISO: "2026-10-02",
+    seoTitle: "Bay Area ITAD & Electronics Recycling for Corporate IT",
+    metaDescription:
+      "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
+  },
 };
 
 // One article (the .docx one) hyperlinks its citations inline as [1](url) and

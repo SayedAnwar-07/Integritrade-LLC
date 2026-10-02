@@ -88,9 +88,11 @@ export default function Hero() {
                   lg:text-[3.25rem] lg:leading-[1.08]
                   xl:text-[3.5rem]
                   tracking-[-0.02em]
-                  text-black dark:text-white"
+                  text-[#0f2b46] dark:text-white"
               >
-                California&apos;s trusted partner for ITAD and ITAM - done with full accountability, every time.
+                California&apos;s trusted partner for{" "}
+                <span className="text-primary dark:text-emerald-400">ITAD and ITAM</span>
+                {" "}- done with full accountability, every time.
               </h1>
 
               <div className="mt-6 max-w-2xl">
@@ -156,7 +158,7 @@ export default function Hero() {
                     className="mt-4 h-px w-8 bg-emerald-600 dark:bg-emerald-500"
                   />
 
-                  <div className="mt-4 text-3xl font-bold tracking-tight text-slate-900 dark:text-white lg:text-4xl">
+                  <div className="mt-4 text-3xl font-bold tracking-tight text-[#0f2b46] dark:text-white lg:text-4xl">
                     {value}
                   </div>
 

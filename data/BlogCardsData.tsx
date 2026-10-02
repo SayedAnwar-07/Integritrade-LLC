@@ -3,6 +3,7 @@ import BfsiCover from "@/public/blogs/bloge-cover.jpg";
 import LawFirmCover from "@/public/blogs/value-data-security.webp";
 import FerpaCover from "@/public/blogs/blogs-cover.jpg";
 import Nist80088Cover from "@/public/about/software-sanitization.jpg";
+import BayAreaCover from "@/public/industries/business-corporate.webp";
 import decommissionBanner from "@/public/blogs/decommission-computers.jpg";
 import videoTape from "@/public/blogs/video-tape.jpg";
 import rohsImage from "@/public/blogs/rohs-compliance.jpg";
@@ -313,5 +314,12 @@ export const AllBlogCards: BlogCard[] = [
     description: "How to choose Clear, Purge, or Destroy under NIST SP 800-88 Rev. 2, based on data risk, the storage media, and what happens to the device next.",
     date: "September 28, 2026",
     slug: "nist-800-88-rev-2-clear-purge-destroy",
+  },
+  {
+    image: BayAreaCover,
+    title: "Bay Area ITAD and Electronics Recycling for Corporate Technology Retirement",
+    description: "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
+    date: "October 2, 2026",
+    slug: "bay-area-itad-electronics-recycling",
   },
 ];

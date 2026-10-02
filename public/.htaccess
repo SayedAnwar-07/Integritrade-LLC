@@ -1,5 +1,11 @@
 RewriteEngine On
 
+# ── Custom 404 page (2026-10-02) ──
+# Missing addresses get the site's own not-found page (app/not-found.tsx,
+# exported as 404.html) with a real 404 status. Without this line the server
+# showed its generic "This Page Does Not Exist" page.
+ErrorDocument 404 /404.html
+
 # ── Canonical host: force non-www ──
 # Matches the canonical tags, the sitemap, and the Search Console property.
 # Sends straight to https:// so http://www resolves in a single hop.

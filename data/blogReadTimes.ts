@@ -4,6 +4,7 @@
 
 export const blogReadTimes: Record<string, number> = {
   "ai-trends-in-it-refresh-hardware-recovery": 6,
+  "bay-area-itad-electronics-recycling": 7,
   "bfsi-it-asset-disposition-financial-services-data-destruction": 9,
   "chain-of-custody-in-itad": 5,
   "cod-vs-coe-data-destruction-certification-services": 5,
