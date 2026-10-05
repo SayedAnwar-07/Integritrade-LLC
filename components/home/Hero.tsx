@@ -13,13 +13,18 @@ import {
   Cctv,
 } from "lucide-react";
 
-type StatIcon = ComponentType<{ className?: string; strokeWidth?: number }>;
+type StatIcon = ComponentType<{
+  className?: string;
+  strokeWidth?: number;
+}>;
 
-// Custom database + verified-check glyph for the "zero breaches" stat — lucide
-// has no data-store-with-shield icon, so we draw one in the same thin-line
-// style as the lucide set. The check stroke uses the brand green as an accent;
-// the rest inherits currentColor so it flips cleanly in dark mode.
-function DatabaseCheck({ className, strokeWidth = 1.5 }: { className?: string; strokeWidth?: number }) {
+function DatabaseCheck({
+  className,
+  strokeWidth = 1.5,
+}: {
+  className?: string;
+  strokeWidth?: number;
+}) {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -40,8 +45,11 @@ function DatabaseCheck({ className, strokeWidth = 1.5 }: { className?: string; s
 }
 
 export default function Hero() {
-
-  const trustItems: { Icon: StatIcon; value: string; label: string }[] = [
+  const trustItems: {
+    Icon: StatIcon;
+    value: string;
+    label: string;
+  }[] = [
     {
       Icon: ShieldCheck,
       value: "100%",
@@ -75,44 +83,35 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative pt-20 lg:pt-28 bg-secondary dark:bg-dark transition-colors duration-300 overflow-hidden">
+    <section className="relative overflow-hidden bg-secondary pt-8 transition-colors duration-300 dark:bg-dark sm:pt-10 md:pt-12 lg:pt-28">
       <ScrollLoader>
-        <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="relative mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 items-center gap-6 md:gap-8 lg:grid-cols-12 lg:gap-14">
             <div className="lg:col-span-7 lg:pt-4">
-              <h1
-                className="
-                  font-serif font-bold [text-wrap:balance]
-                  text-[2rem] leading-[1.15]
-                  sm:text-[2.75rem] sm:leading-[1.1]
-                  lg:text-[3.25rem] lg:leading-[1.08]
-                  xl:text-[3.5rem]
-                  tracking-[-0.02em]
-                  text-[#0f2b46] dark:text-white"
-              >
+              <h1 className="font-serif text-[2rem] font-bold leading-[1.1] tracking-[-0.02em] text-[#0f2b46] [text-wrap:balance] dark:text-white sm:text-[2.5rem] sm:leading-[1.08] md:text-[2.75rem] lg:text-[3.25rem] lg:leading-[1.08] xl:text-[3.5rem]">
                 California&apos;s trusted partner for{" "}
-                <span className="text-primary dark:text-emerald-400">ITAD and ITAM</span>
-                {" "}- done with full accountability, every time.
+                <span className="text-primary dark:text-emerald-400">
+                  ITAD and ITAM
+                </span>{" "}
+                - done with full accountability, every time.
               </h1>
 
-              <div className="mt-6 max-w-2xl">
-                <p className="text-[15px] leading-7
-                  sm:text-[17px] sm:leading-8
-                  md:text-[18px] md:leading-8
-                  lg:text-[19px] lg:leading-9
-                  text-gray-600 dark:text-gray-300
-                  [text-wrap:pretty]
-                  custom-text-center"
-                >
-                  Integritrade manages the complete lifecycle of your retired electronics - secure data destruction, responsible recycling, and certified asset disposition -  all backed by documentation you can stand behind. Whether you're retiring 10 devices or 10,000, we give you the chain-of-custody reporting and compliance confidence your organization demands.
+              <div className="mt-5 max-w-2xl md:mt-6">
+                <p className="custom-text-center text-[15px] leading-6 text-gray-600 [text-wrap:pretty] dark:text-gray-300 sm:text-[16px] sm:leading-7 md:text-[17px] md:leading-8 lg:text-[19px] lg:leading-9">
+                  Integritrade manages the complete lifecycle of your retired
+                  electronics - secure data destruction, responsible recycling,
+                  and certified asset disposition - all backed by documentation
+                  you can stand behind. Whether you're retiring 10 devices or
+                  10,000, we give you the chain-of-custody reporting and
+                  compliance confidence your organization demands.
                 </p>
               </div>
 
-              <div className="flex flex-col sm:flex-row gap-4 mt-10">
+              <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:gap-4 md:mt-8 lg:mt-10">
                 <OutlineButton
                   href="/services/"
                   testId="button-learn-more"
-                  className="text-[15px] py-4 sm:flex-1 lg:flex-none"
+                  className="py-3.5 text-[15px] sm:flex-1 sm:py-4 lg:flex-none"
                 >
                   View Our Service Levels
                 </OutlineButton>
@@ -120,28 +119,23 @@ export default function Hero() {
                 <PrimaryButton
                   href="/service-book/"
                   testId="button-get-quote"
-                  className="text-[15px] py-4 sm:flex-1 lg:flex-none"
+                  className="py-3.5 text-[15px] sm:flex-1 sm:py-4 lg:flex-none"
                 >
                   Contact Us
                 </PrimaryButton>
-
               </div>
             </div>
 
-            <div className="lg:col-span-5 relative group">
-              <div className="absolute -inset-4 bg-gray-200/60 dark:bg-gray-800/30 blur-2xl rounded-md opacity-60 group-hover:opacity-80 transition duration-500" />
+            <div className="group relative lg:col-span-5 mt-10">
+              <div className="absolute -inset-4 rounded-md bg-gray-200/60 opacity-60 blur-2xl transition duration-500 group-hover:opacity-80 dark:bg-gray-800/30" />
+
               <div className="relative">
-                <div>
-                  <ItadGlobe />
-                </div>
+                <ItadGlobe />
               </div>
             </div>
           </div>
 
-          {/* Trust ribbon — thin-line stat icons, brand-green rule, big numbers.
-              currentColor + theme tokens keep it correct in dark mode; the grid
-              reflows 2 → 3 → 6 columns and only shows column dividers at lg. */}
-          <div className="mt-20 md:mt-28 lg:mt-36">
+          <div className="mt-12 sm:mt-16 md:mt-20 lg:mt-36">
             <div className="grid grid-cols-2 gap-x-4 gap-y-10 md:grid-cols-3 lg:grid-cols-6 lg:gap-x-0 lg:divide-x lg:divide-gray-200 dark:lg:divide-white/10">
               {trustItems.map(({ Icon, value, label }) => (
                 <div
