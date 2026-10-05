@@ -15,21 +15,34 @@ import Image, { type StaticImageData } from "next/image";
  *   scrim, and the intro paragraph underneath.
  *
  * One DOM serves both: below 1024px the two wrappers switch to
- * `display: contents`, so the heading block and the paragraph become cells of
+ * `display: contents`, so the heading block and the intro become cells of
  * a grid and the heading can share the photo's cell. That keeps a single H1.
  * Layout lives in globals.css (.team-hero). Typography reuses the Leadership
  * intro classes (.lead-eyebrow, .lead-h1, .lead-word, .lead-sub).
+ *
+ * Also used for the Certifications hero (2026-10-05): no eyebrow, a
+ * three-paragraph intro, its own crop, and `team-hero--wide` for a wider
+ * text column (that photo's empty left side is wider).
  */
 export default function TeamHero({
   image,
+  alt = "",
   eyebrow,
   headline,
   intro,
+  imageClassName = "object-[62%_center] lg:object-left",
+  className = "",
 }: {
   image: StaticImageData;
-  eyebrow: string;
+  /** Empty when the photo is decorative. */
+  alt?: string;
+  eyebrow?: string;
   headline: string;
-  intro: string;
+  /** One paragraph, or several. */
+  intro: string | string[];
+  /** object-position of the photo per breakpoint. */
+  imageClassName?: string;
+  className?: string;
 }) {
   // One line per sentence ("Engineering Rigor." / "Executive Accountability."),
   // so the heading never breaks mid-phrase; a long sentence can still wrap
@@ -41,18 +54,18 @@ export default function TeamHero({
   );
 
   return (
-    <header className="lead team-hero relative isolate overflow-hidden">
+    <header className={`lead team-hero relative isolate overflow-hidden ${className}`}>
       <div className="team-hero-grid">
         <div className="team-hero-media">
-          {/* Decorative: the people are not named team members, so no alt. */}
+          {/* Our Team: decorative (the people are not named team members), so no alt. */}
           <Image
             src={image}
-            alt=""
+            alt={alt}
             fill
             priority
             placeholder="blur"
             sizes="100vw"
-            className="team-hero-img object-cover object-[62%_center] lg:object-left"
+            className={`team-hero-img object-cover ${imageClassName}`}
           />
           <span aria-hidden="true" className="team-hero-scrim lg:hidden" />
           <span aria-hidden="true" className="team-hero-fade-l hidden lg:block" />
@@ -62,7 +75,7 @@ export default function TeamHero({
         <div className="team-hero-inner mx-auto max-w-[1400px] lg:flex lg:min-h-[540px] lg:items-center lg:px-8 lg:py-20 xl:min-h-[580px] 2xl:min-h-[600px]">
           <div className="team-hero-copy">
             <div className="team-hero-head">
-              <p className="lead-eyebrow">{eyebrow}</p>
+              {eyebrow ? <p className="lead-eyebrow">{eyebrow}</p> : null}
 
               <h1 className="lead-h1">
                 {sentences.map((words, si) => (
@@ -90,7 +103,13 @@ export default function TeamHero({
               </h1>
             </div>
 
-            <p className="lead-sub">{intro}</p>
+            <div className="team-hero-intro">
+              {(Array.isArray(intro) ? intro : [intro]).map((paragraph, i) => (
+                <p key={i} className="lead-sub">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </div>

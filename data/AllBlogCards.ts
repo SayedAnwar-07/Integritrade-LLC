@@ -4,6 +4,7 @@ import LawFirmCover from "@/public/blogs/value-data-security.webp";
 import FerpaCover from "@/public/blogs/blogs-cover.jpg";
 import Nist80088Cover from "@/public/about/software-sanitization.jpg";
 import BayAreaCover from "@/public/industries/business-corporate.webp";
+import DataSanitizationCover from "@/public/blogs/data-sanitization-best-practices.jpg";
 import videoTape from "@/public/blogs/video-tape.jpg";
 import r2_certified from "@/public/blogs/R2-Certified1.jpg";
 import nvmBanner from "@/public/blogs/NVMe_drives.jpg";
@@ -111,5 +112,12 @@ export const AllBlogCards: BlogCard[] = [
     description: "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
     date: "October 2, 2026",
     slug: "bay-area-itad-electronics-recycling",
+  },
+  {
+    image: DataSanitizationCover,
+    title: "Best Data Sanitization Practices for Businesses Before and After ITAD",
+    description: "Data sanitization best practices for businesses: before pickup, during custody transfer, while the ITAD provider processes assets, and after closeout.",
+    date: "October 5, 2026",
+    slug: "data-sanitization-best-practices-itad",
   },
 ];

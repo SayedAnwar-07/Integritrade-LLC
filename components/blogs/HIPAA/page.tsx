@@ -113,7 +113,7 @@ export default function HIPAACompliance() {
             <span>Data Security</span>
           </div>
           <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-          <span>4 min read</span>
+          <span>5 min read</span>
         </div>
 
         </ScrollLoader>

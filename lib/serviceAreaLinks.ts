@@ -17,7 +17,7 @@ import type { ServiceArea } from "@/data/areas/types/serviceAreaTypes";
  * hard-drive-shredding, Palo Alto it-asset-disposition-palo-alto), so links
  * between cities match on the kind, never on the slug.
  */
-export type ServiceKind = "shredding" | "itad" | "recycling" | "buyback" | "cod" | "decom" | "apple";
+export type ServiceKind = "shredding" | "itad" | "recycling" | "buyback" | "cod" | "decom" | "apple" | "laptops";
 
 export function serviceKind(slug: string): ServiceKind | null {
   if (slug === "data-destruction-services" || slug === "hard-drive-shredding") return "shredding";
@@ -27,6 +27,7 @@ export function serviceKind(slug: string): ServiceKind | null {
   if (slug === "certificates-of-destruction") return "cod";
   if (slug === "data-center-decommissioning") return "decom";
   if (slug === "sell-used-apple-equipment") return "apple";
+  if (slug === "sell-corporate-laptops-computers") return "laptops";
   return null;
 }
 
@@ -39,6 +40,7 @@ export const SERVICE_KIND_LABEL: Record<ServiceKind, string> = {
   cod: "Certificates of destruction",
   decom: "Data center decommissioning",
   apple: "Apple equipment buyback",
+  laptops: "Corporate laptop and computer buyback",
 };
 
 /** The main /services/ page each kind corresponds to, where one exists. */

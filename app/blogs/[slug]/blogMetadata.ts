@@ -1596,4 +1596,33 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       images: [OG_IMAGE],
     },
   },
+  "data-sanitization-best-practices-itad": {
+    title: "Data Sanitization Best Practices Before and After ITAD",
+    description: "Data sanitization best practices for businesses: before pickup, during custody transfer, while the ITAD provider processes assets, and after closeout.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/data-sanitization-best-practices-itad`,
+    },
+    openGraph: {
+      title: "Data Sanitization Best Practices Before and After ITAD",
+      description: "Data sanitization best practices for businesses: before pickup, during custody transfer, while the ITAD provider processes assets, and after closeout.",
+      url: `${BASE_URL}/blogs/data-sanitization-best-practices-itad`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "SEM Model 2 SSD-VK shredder at Integritrade, used for physical destruction of solid state drives",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Data Sanitization Best Practices Before and After ITAD",
+      description: "Data sanitization best practices for businesses: before pickup, during custody transfer, while the ITAD provider processes assets, and after closeout.",
+      images: [OG_IMAGE],
+    },
+  },
 };

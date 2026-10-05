@@ -94,6 +94,7 @@ const SERVICE_OG: Record<string, string> = {
   "sell-used-apple-equipment": "services/it-asset-disposition.jpg",
   "data-center-decommissioning": "services.jpg",
   "basic-electronics-recycling": "services/secure-electronics-recycling.jpg",
+  "sell-corporate-laptops-computers": "industries/business-corporate.jpg",
 };
 
 export default async function ServicePage({ params }: PageProps) {
@@ -198,12 +199,18 @@ export default async function ServicePage({ params }: PageProps) {
                 {service.details.map((item, sectionIndex) => (
                   <article
                     key={`${item.heading}-${sectionIndex}`}
-                    className="mt-12"
+                    className={item.subheading && !item.heading ? "mt-8" : "mt-12"}
                   >
                     {item.heading && (
                       <h2 className="text-left text-2xl font-semibold leading-tight text-slate-950 dark:text-gray-100">
                         {item.heading}
                       </h2>
+                    )}
+
+                    {item.subheading && (
+                      <h3 className={`${item.heading ? "mt-6" : ""} text-left text-xl font-semibold leading-snug text-slate-900 dark:text-gray-100`}>
+                        {item.subheading}
+                      </h3>
                     )}
 
                     {item.body &&
@@ -233,6 +240,16 @@ export default async function ServicePage({ params }: PageProps) {
                         ))}
                       </ul>
                     )}
+
+                    {item.outro &&
+                      item.outro.split(/\n\n+/).map((paragraph, paragraphIndex) => (
+                        <p
+                          key={`${sectionIndex}-outro-${paragraphIndex}`}
+                          className="mt-6 text-left text-base leading-7 text-stone-700 dark:text-slate-300"
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
 
                     {item.qna && item.qna.length > 0 && (
                       <div className="mt-8">

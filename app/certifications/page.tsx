@@ -1,11 +1,18 @@
 import React from "react";
 import type { Metadata } from "next";
 import Script from "next/script";
+import certificationsCover from "@/public/certificates/certifications-cover.webp";
+import TeamHero from "@/components/about/TeamHero";
 import { certificationsData } from "@/data/certificationsData";
 import CertificationCard from "@/components/Certificationcard";
-import PageHeader from "@/components/shared/PageHeader";
 import ServicesCTA from "@/components/services/Servicescta";
-import ScrollLoader from "@/components/shared/ScrollLoader";
+
+// The hero's intro, unchanged from the page header it replaced.
+const INTRO = [
+  "Any e-waste vendor can claim to be certified but who actually audits them? At Integritrade, our operations undergo rigorous annual audits by accredited third-party certification bodies to maintain R2v3, ISO 27001, ISO 9001, ISO 14001, and ISO 45001 standards.",
+  "We don’t rely on self-attestation or unverified promises. Backed by a spotless track record and zero data breaches in our history, Integritrade provides enterprise-grade IT Asset Disposition (ITAD) and secure e-waste recycling across California, including frequent service routes in San Francisco / the Bay Area, Los Angeles, San Diego, and surrounding states.",
+  "When your data security, brand reputation, and ESG commitments are on the line, we deliver defensible, audit-ready proof not just claims.",
+];
 
 export const metadata: Metadata = {
   title: { absolute: "R2v3, ISO 27001 & ITAD Certifications | Integritrade" },
@@ -105,32 +112,21 @@ export default function CertificationsPage() {
   };
 
   return (
-    <section className="section bg-secondary dark:bg-dark transition-colors duration-300 py-8 md:py-24">
-      <div className="container mx-auto px-4 md:px-6">
-        {/* Page header */}
-        <ScrollLoader>
-          <PageHeader
-              eyebrow="Trusted & Compliant"
-              title="Certifications & Compliance"
-               description="Any e-waste vendor can claim to be certified but who actually audits them? At Integritrade, our operations undergo rigorous annual audits by accredited third-party certification bodies to maintain R2v3, ISO 27001, ISO 9001, ISO 14001, and ISO 45001 standards."
-          />
-          {/* Certification trust statement */}
-            <div className="mx-auto mt-3 max-w-4xl text-center">
-              <p className="text-base leading-relaxed text-stone-700 dark:text-slate-300">
-                We don’t rely on self-attestation or unverified promises. Backed by a
-                spotless track record and zero data breaches in our history, Integritrade
-                provides enterprise-grade IT Asset Disposition (ITAD) and secure e-waste
-                recycling across California, including frequent service routes in San
-                Francisco / the Bay Area, Los Angeles, San Diego, and surrounding states.
-              </p>
+    <section className="bg-secondary dark:bg-dark transition-colors duration-300">
+      {/* Hero (2026-10-05): the certificate cover photo, built like the Our
+          Team hero (components/about/TeamHero.tsx): on desktop the photo bleeds
+          to the right edge and fades into the page, the text sits on its empty
+          left side; on phones the heading sits over the photo. No eyebrow. */}
+      <TeamHero
+        image={certificationsCover}
+        alt="Certification folder with R2v3 and ISO badges on a desk beside a plant and a laptop"
+        headline="Certifications & Compliance"
+        intro={INTRO}
+        imageClassName="object-[85%_center] lg:object-right"
+        className="team-hero--wide team-hero--head-center"
+      />
 
-              <p className="mt-4 text-base leading-relaxed text-stone-700 dark:text-slate-300">
-                When your data security, brand reputation, and ESG commitments are on the
-                line, we deliver defensible, audit-ready proof not just claims.
-              </p>
-            </div>
-        </ScrollLoader>
-
+      <div className="container mx-auto px-4 pb-8 md:px-6 md:pb-24">
         {/* Certification cards stack */}
         <div className="space-y-10 lg:space-y-14 my-20">
           {certificationsData.map((cert, idx) => (

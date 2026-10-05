@@ -90,6 +90,21 @@ const CONFIG = {
     metaDescription:
       "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
   },
+  // Supplied 2026-10-05 as a .docx (no SEO title, description or image).
+  // Cover: a 16:9 crop of the SEM SSD shredder photo from /about/our-equipment/
+  // (public/about/hdd-shredder.jpeg, despite its name).
+  "data-sanitization-best-practices-itad": {
+    file: "Best Data Sanitization Practices for Businesses Before and After ITAD.md",
+    image: "DataSanitizationCover",
+    imagePath: "blogs/data-sanitization-best-practices.jpg",
+    category: "Data Destruction",
+    imageAlt: "SEM Model 2 SSD-VK shredder at Integritrade, used for physical destruction of solid state drives",
+    date: "October 5, 2026",
+    dateISO: "2026-10-05",
+    seoTitle: "Data Sanitization Best Practices Before and After ITAD",
+    metaDescription:
+      "Data sanitization best practices for businesses: before pickup, during custody transfer, while the ITAD provider processes assets, and after closeout.",
+  },
 };
 
 // One article (the .docx one) hyperlinks its citations inline as [1](url) and

@@ -7,8 +7,12 @@ export interface FAQItem {
 
 export interface ServiceDetail {
   heading: string;
+  /** Rendered as an h3 under the section's h2 (or on its own). */
+  subheading?: string;
   body?: string;
   bullets?: string[];
+  /** Paragraphs that follow the bullet list. */
+  outro?: string;
   qna?: FAQItem[];
 }
 

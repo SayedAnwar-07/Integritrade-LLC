@@ -101,7 +101,7 @@ export default function ReuseFocusedItadVsScrapRecycling() {
               <span>ITAD Value Recovery</span>
             </div>
             <span className="hidden sm:inline text-gray-300 dark:text-gray-700">•</span>
-            <span>9 min read</span>
+            <span>11 min read</span>
           </div>
         </ScrollLoader>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-20">

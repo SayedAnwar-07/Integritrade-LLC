@@ -46,10 +46,18 @@ const AccordionContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <AccordionPrimitive.Content
     ref={ref}
-    className="overflow-hidden text-sm data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    // FAQ answers stay in the page HTML while closed (forceMount), so search
+    // engines can read them; Radix alone unmounts a closed panel. A closed
+    // panel is a 0fr grid row and visibility:hidden, so screen readers skip
+    // it too. Opening slides via .faq-panel's keyframes (globals.css), which
+    // need no height measurement.
+    forceMount
+    className="faq-panel grid text-sm data-[state=closed]:invisible data-[state=closed]:grid-rows-[0fr] data-[state=open]:grid-rows-[1fr]"
     {...props}
   >
-    <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    <div className="min-h-0 overflow-hidden">
+      <div className={cn("pb-4 pt-0", className)}>{children}</div>
+    </div>
   </AccordionPrimitive.Content>
 ))
 AccordionContent.displayName = AccordionPrimitive.Content.displayName

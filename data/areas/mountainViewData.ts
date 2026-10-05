@@ -8,6 +8,7 @@ import itBuyback from "@/public/services/serviceArea/itBuyback.jpg";
 import dataDestruction from "@/public/services/serviceArea/dataDestruction.webp";
 import dataCenterDecommissioning from "@/public/services/serviceArea/dataCenterDecommissioning.webp";
 import appleEquipment from "@/public/services/serviceArea/appleEquipment.jpeg";
+import corporateLaptops from "@/public/industries/business-corporate.webp";
 
 export const mountainViewData: ServiceArea = {
   slug: "mountain-view",
@@ -729,6 +730,147 @@ export const mountainViewData: ServiceArea = {
         {
           "heading": "Get the Best Return on Your Apple Investment",
           "body": "Ready to sell your Apple equipment in Mountain View? Request an Apple asset evaluation today. Our team responds within 24 hours with a no-obligation quote and a fixed plan for secure pickup, certified data destruction, and maximum value recovery from your Mountain View location."
+        }
+      ]
+    },
+    {
+      "slug": "sell-corporate-laptops-computers",
+      "title": "Sell Corporate Laptops and Computers in Mountain View",
+      "shortDescription": "Sell used corporate laptops, MacBooks, desktops, servers, and IT equipment in Mountain View through Integritrade.",
+      "icon": "Laptop",
+      "metaTitle": "Sell Corporate Laptops and Computers in Mountain View | Integritrade",
+      "metaDescription": "Sell Dell, Lenovo, Apple, and HP computers in Mountain View. Integritrade offers secure buyback, data sanitization, ITAD, and electronics recycling.",
+      "image": corporateLaptops,
+      "heroHeading": "Sell Corporate Laptops and Computers in Mountain View, California",
+      "heroSubheading": "Sell used corporate laptops, MacBooks, desktops, servers, and IT equipment in Mountain View through Integritrade. Integritrade helps businesses, schools, healthcare organizations, government contractors, offices, and enterprise IT teams turn retired technology into documented value while protecting the data stored on every device.",
+      "details": [
+        {
+          "heading": "",
+          "body": "Whether a company is replacing an employee laptop fleet, closing an office, completing a lease return, or decommissioning a technology environment, Integritrade provides a secure path for selling, data sanitizing, testing, and responsibly processing corporate equipment in Mountain View."
+        },
+        {
+          "heading": "Sell Dell, Lenovo, Apple, HP, and other corporate computers",
+          "body": "Integritrade evaluates a wide range of business technology, including:",
+          "bullets": [
+            "Dell Latitude, Precision, OptiPlex, XPS, PowerEdge, and similar systems",
+            "Lenovo ThinkPad, ThinkCentre, ThinkStation, and ThinkSystem equipment",
+            "Apple MacBook Air, MacBook Pro, iMac, Mac mini, Mac Studio, and Mac Pro systems",
+            "HP EliteBook, ProBook, ZBook, EliteDesk, ProDesk, and business desktops",
+            "Microsoft Surface laptops and tablets",
+            "Business laptops, desktops, workstations, and mobile-device fleets",
+            "Servers, storage, networking equipment, and GPUs",
+            "Monitors, docks, keyboards, chargers, and other corporate accessories",
+            "Phones, tablets, and Apple equipment when eligible"
+          ],
+          "outro": "The strongest recovery potential typically comes from newer, working equipment with desirable specifications, clean serial records, good physical condition, and no remaining management locks. Integritrade also accepts older or nonrecoverable equipment for secure data destruction and responsible recycling when a buyback is not appropriate."
+        },
+        {
+          "heading": "Two ways to recover value from retired IT equipment",
+          "subheading": "Direct corporate IT buyback",
+          "body": "A direct buyback provides a defined offer for eligible equipment after review of the inventory, models, quantities, condition, and lock status. This option is designed for companies that prefer a quicker, more predictable financial outcome rather than waiting for individual assets to sell.\n\nThe final offer may depend on:",
+          "bullets": [
+            "Manufacturer and model",
+            "Processor generation and configuration",
+            "RAM and storage capacity",
+            "Cosmetic and functional condition",
+            "Quantity and consistency of the fleet",
+            "Battery health where applicable",
+            "BIOS, MDM, Autopilot, Apple Activation Lock, or other restrictions",
+            "Current market demand"
+          ]
+        },
+        {
+          "heading": "",
+          "subheading": "Revenue-share remarketing",
+          "body": "A revenue-share program may be appropriate when eligible equipment has stronger resale potential and the client is willing to wait for the remarketing process. Integritrade can evaluate qualifying devices, sanitize them, test and grade them, prepare them for resale, and provide reporting on the recovery process.\n\nEquipment that does not pass testing, remains locked, is damaged, or has no meaningful market value can be routed to parts recovery, physical destruction, or responsible recycling under the same project."
+        },
+        {
+          "heading": "Data security is part of the buyback process",
+          "body": "Selling used corporate computers should never mean giving away company data. Before any equipment is resold, Integritrade identifies the applicable storage media and follows the approved data-handling requirement for the project.\n\nDepending on the asset and client requirements, the workflow may include:",
+          "bullets": [
+            "Logical sanitization for eligible reusable equipment",
+            "NIST SP 800-88 Rev. 2-aligned Clear or Purge outcomes when appropriate",
+            "Cryptographic erase or device-specific sanitization",
+            "Physical destruction for failed, inaccessible, or destroy-only media",
+            "Degaussing and shredding for appropriate magnetic media",
+            "Specialized physical destruction for SSD, NVMe, USB, SD, and other flash media",
+            "Serialized Certificates of Erasure or Certificates of Destruction"
+          ],
+          "outro": "Degaussing is not an effective method for SSDs, NVMe drives, USB flash drives, or SD cards because those devices store data in non-magnetic flash memory. Integritrade uses media-specific workflows instead of applying one generic method to every device."
+        },
+        {
+          "heading": "Management locks can affect the value of equipment",
+          "body": "Companies should remove or resolve device-management restrictions before requesting a buyback whenever possible. Potential issues include:",
+          "bullets": [
+            "Apple Activation Lock or iCloud status",
+            "Mobile-device management enrollment",
+            "Google Factory Reset Protection",
+            "Windows Autopilot enrollment",
+            "BIOS or firmware passwords",
+            "Computrace or similar persistence controls",
+            "Carrier locks on phones",
+            "Encryption or recovery-key issues"
+          ],
+          "outro": "Locked equipment may not qualify for resale until the restriction is removed. Integritrade can identify exceptions during processing and report them to the client rather than treating locked equipment as ready for remarketing."
+        },
+        {
+          "heading": "TraceTech visibility for Full ITAD projects",
+          "body": "For Full ITAD projects, Integritrade provides authorized clients with access to TraceTech at no additional cost. The proprietary platform gives clients real-time visibility into project and asset status after pickup.\n\nDepending on the project scope, TraceTech can provide:",
+          "bullets": [
+            "Client asset-tag reconciliation",
+            "Asset and batch status",
+            "Sanitization and destruction documentation as issued",
+            "Service requests, questions, and project amendments",
+            "Client-specific handling instructions",
+            "Buyback and revenue-share visibility",
+            "Estimated CO2e reporting based on documented disposition pathways"
+          ],
+          "outro": "TraceTech helps prevent the black-box experience that can occur after a corporate IT fleet leaves the client’s facility."
+        },
+        {
+          "heading": "Secure processing for Mountain View corporate equipment",
+          "body": "Integritrade supports corporate equipment buyback and ITAD projects throughout Mountain View, California, and surrounding communities. Material is processed through Integritrade’s dedicated 30,000 sq ft ITAD Megacenter at 944 S Topeka Ave in Fresno, California. Our strategic central location allows us to service the Western United States including all of California with unmatched efficiency.\n\nThe controlled-access facility includes 24/7 video monitoring, secure staging, industrial racking, dock capabilities, trained and background-checked personnel, high-throughput software-erasure infrastructure, magnetic-media destruction equipment, and specialized flash-media destruction capabilities.\n\nIntegritrade maintains R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO/IEC 27001 certifications within their applicable scopes. These standards support responsible electronics recycling, quality management, environmental management, occupational health and safety, and information security management."
+        },
+        {
+          "heading": "Sell corporate computers in Mountain View with Integritrade",
+          "body": "Integritrade can help companies in Mountain View determine whether retired equipment is best suited for direct buyback, revenue sharing, redeployment, donation, parts recovery, secure destruction, or recycling."
+        },
+        {
+          "heading": "Frequently Asked Questions",
+          "qna": [
+            {
+              "question": "Can Integritrade buy corporate laptops and computers in Mountain View?",
+              "answer": "Yes. Integritrade evaluates corporate laptops, desktops, MacBooks, workstations, servers, networking equipment, phones, tablets, and related IT assets from businesses in Mountain View and surrounding areas."
+            },
+            {
+              "question": "What brands does Integritrade accept for corporate buyback?",
+              "answer": "Integritrade evaluates Dell, Lenovo, Apple, HP, Microsoft, Cisco, and other business technology brands. Eligibility depends on model, age, configuration, condition, quantity, lock status, and current market demand."
+            },
+            {
+              "question": "Does Integritrade erase data before reselling corporate computers?",
+              "answer": "Yes. Integritrade follows the approved project requirement and uses a media-appropriate sanitization method before eligible equipment is prepared for resale, remarketing, redeployment, or donation. Serialized Certificates of Erasure or Destruction may be provided according to the selected service scope."
+            },
+            {
+              "question": "Can Integritrade handle locked laptops from a Mountain View business?",
+              "answer": "Integritrade can receive and identify locked devices, but Apple Activation Lock, MDM, Autopilot, BIOS, Computrace, carrier, and other management restrictions may prevent resale until the client resolves them. Locked devices are reported as exceptions rather than represented as ready for buyback."
+            },
+            {
+              "question": "Does Integritrade offer a direct buyback or revenue sharing?",
+              "answer": "Integritrade may offer either a direct buyback or a percentage-based revenue-share arrangement. Direct buyback is designed for speed and a defined outcome. Revenue sharing may provide a higher potential return when eligible assets are remarketed over time."
+            },
+            {
+              "question": "What happens to corporate computers that have no resale value?",
+              "answer": "Integritrade can route nonrecoverable, damaged, locked, or end-of-life equipment to approved data destruction, parts recovery, or responsible electronics recycling pathways. The final pathway depends on the asset condition and the client’s requirements."
+            },
+            {
+              "question": "Does Integritrade use TraceTech for corporate ITAD projects?",
+              "answer": "Yes. For Full ITAD projects, Integritrade includes TraceTech at no additional cost. Authorized clients can view project and asset status, reconcile internal asset tags, access available certificates, submit service requests, and review value-recovery information."
+            },
+            {
+              "question": "What information should a company provide for a buyback quote?",
+              "answer": "A model-and-quantity list is the best starting point. Include manufacturer, model, processor, RAM, storage, serial number, condition, quantity, location, and known management-lock status. Photos are useful when a full manifest is not yet available."
+            }
+          ]
         }
       ]
     }
