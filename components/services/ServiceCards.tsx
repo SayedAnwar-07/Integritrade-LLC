@@ -120,10 +120,33 @@ const SERVICES = [
   },
 ];
 
-export default function ServiceCards() {
+/** Open bin with an item dropping in: equipment brought to us. */
+function DropOffBin(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...iconBase} {...props}>
+      <path d="M24 6v14" />
+      <path d="M19 15.5l5 5 5-5" />
+      <path d="M9 24h30l-3.4 16a2.5 2.5 0 0 1-2.45 2H14.85a2.5 2.5 0 0 1-2.45-2z" />
+      <path d="M19 30v6M24 30v6M29 30v6" />
+    </svg>
+  );
+}
+
+// Only offered at the Fresno facility, so it is shown on the Fresno location
+// card set, not the services index.
+const DROP_OFF = {
+  href: "/fresno-residential-electronics-recycling/",
+  Icon: DropOffBin,
+  title: "Residential E-Waste Drop-Off",
+  line: "Fresno residents can drop off household electronics for certified recycling.",
+};
+
+export default function ServiceCards({ withDropOff = false }: { withDropOff?: boolean }) {
+  const services = withDropOff ? [...SERVICES, DROP_OFF] : SERVICES;
+
   return (
     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      {SERVICES.map(({ href, Icon, title, line }) => (
+      {services.map(({ href, Icon, title, line }) => (
         <Link
           key={href}
           href={href}

@@ -39,6 +39,7 @@ export const blogReadTimes: Record<string, number> = {
   "rohs-compliance-electronics-recycling-services": 7,
   "server-data-center-equipment-disposal-guide": 6,
   "video-tape-data-destruction-services": 7,
+  "what-is-itad-it-asset-disposition": 8,
   "why-it-asset-disposition-is-important": 7,
   "zero-trust-security-in-it-asset-disposition": 6,
 };

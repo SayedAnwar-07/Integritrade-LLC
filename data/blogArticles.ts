@@ -10,7 +10,8 @@ import LawFirmCover from "@/public/blogs/value-data-security.webp";
 import FerpaCover from "@/public/blogs/blogs-cover.jpg";
 import Nist80088Cover from "@/public/about/software-sanitization.jpg";
 import BayAreaCover from "@/public/industries/business-corporate.webp";
-import DataSanitizationCover from "@/public/blogs/data-sanitization-best-practices.jpg";
+import DataSanitizationCover from "@/public/blogs/data-sanitization-drive-handling.jpg";
+import WhatIsItadCover from "@/public/blogs/what-is-itad-guide.jpg";
 
 export const blogArticles: Article[] = [
   {
@@ -1919,7 +1920,7 @@ export const blogArticles: Article[] = [
     dateISO: "2026-10-05",
     readMinutes: 9,
     image: DataSanitizationCover,
-    imageAlt: "SEM Model 2 SSD-VK shredder at Integritrade, used for physical destruction of solid state drives",
+    imageAlt: "Technician handling a hard drive removed from a server rack",
     intro: [
     {
       "type": "p",
@@ -2318,6 +2319,393 @@ export const blogArticles: Article[] = [
       "n": 4,
       "href": "https://integritradellc.com/services/it-asset-disposition/",
       "label": "Integritrade IT Asset Disposition and Value Recovery"
+    }
+  ],
+  },
+  {
+    slug: "what-is-itad-it-asset-disposition",
+    title: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+    metaTitle: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+    description: "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
+    cardDescription: "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
+    category: "ITAD Explained",
+    date: "October 7, 2026",
+    dateISO: "2026-10-07",
+    readMinutes: 7,
+    image: WhatIsItadCover,
+    imageAlt: "Stacks of retired laptops on a roller conveyor in an ITAD warehouse, with technicians testing equipment at workstations behind them",
+    intro: [
+    {
+      "type": "p",
+      "text": "**ITAD**, or **Information Technology Asset Disposition**, is the structured process a business uses to retire computers, servers, storage devices, phones, networking equipment, printers, copiers, and other technology."
+    },
+    {
+      "type": "p",
+      "text": "ITAD is more than removing old equipment from an office. A complete ITAD program controls what happens to each asset from the moment it leaves the client’s custody through final data sanitization, reuse, resale, physical destruction, recycling, and reporting."
+    },
+    {
+      "type": "p",
+      "text": "For businesses, ITAD brings together **data security, asset management, compliance, value recovery, sustainability, and chain-of-custody controls** in one documented process."
+    }
+  ],
+    sections: [
+    {
+      "heading": "Why businesses need ITAD",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Retired technology may still contain sensitive information, including:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Customer and employee records",
+            "Financial information",
+            "Medical or insurance information",
+            "Passwords and authentication tokens",
+            "Emails and business documents",
+            "Intellectual property and source code",
+            "Network configurations and system credentials",
+            "Stored print, scan, fax, and copy jobs"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Deleting files or performing a basic factory reset does not automatically provide documented, media-appropriate sanitization. A hard drive, SSD, phone, server, printer, or copier may retain data after the equipment is no longer in service."
+        },
+        {
+          "type": "p",
+          "text": "Improper disposition can expose a company to data breaches, regulatory scrutiny, contract violations, lost customer trust, and unnecessary financial loss. It can also cause a company to discard equipment that still has resale or redeployment value."
+        }
+      ]
+    },
+    {
+      "heading": "What services are included in ITAD?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "The exact scope depends on the client’s equipment and requirements, but a complete ITAD project commonly includes the following stages."
+        },
+        {
+          "type": "h3",
+          "text": "1. Project planning"
+        },
+        {
+          "type": "p",
+          "text": "The provider and client define the locations, equipment types, quantities, timeline, security requirements, reporting needs, and final disposition options."
+        },
+        {
+          "type": "p",
+          "text": "The project should also identify whether assets are intended for reuse, resale, donation, lease return, physical destruction, or recycling."
+        },
+        {
+          "type": "h3",
+          "text": "2. Inventory and asset identification"
+        },
+        {
+          "type": "p",
+          "text": "The provider records available information such as:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Client asset tag",
+            "Manufacturer and model",
+            "Serial number",
+            "Device type",
+            "Storage-media type",
+            "Condition",
+            "Quantity",
+            "Location",
+            "Management-lock status",
+            "Required disposition pathway"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "Accurate inventory records allow the client to reconcile what was released, what was received, and what happened to each asset."
+        },
+        {
+          "type": "h3",
+          "text": "3. Secure pickup and chain of custody"
+        },
+        {
+          "type": "p",
+          "text": "ITAD includes controlled transfer from the client’s location to the provider’s facility or processing point. Depending on the project, the custody record may include verified piece counts, serialized assets, pallet and box counts, photographs, pickup timestamps, authorized representatives, and receiving confirmation."
+        },
+        {
+          "type": "p",
+          "text": "A documented chain of custody helps establish who controlled the equipment and when the transfer occurred."
+        },
+        {
+          "type": "h3",
+          "text": "4. Data sanitization or physical destruction"
+        },
+        {
+          "type": "p",
+          "text": "The provider determines the appropriate method based on the media, information sensitivity, device condition, and client requirements."
+        },
+        {
+          "type": "p",
+          "text": "NIST SP 800-88 Rev. 2 describes three broad sanitization outcomes:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "**Clear:** A logical method intended to protect against ordinary recovery attempts while allowing the media to remain usable in appropriate situations.",
+            "**Purge:** A stronger logical or physical method intended to make recovery infeasible for the applicable level of effort while potentially preserving the device.",
+            "**Destroy:** A physical process that makes the media unusable and prevents reuse."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "NIST describes media sanitization as a process that makes access to target data infeasible for a given level of effort.[1] The appropriate outcome depends on the risk assessment and the planned disposition."
+        },
+        {
+          "type": "h3",
+          "text": "5. Testing and value recovery"
+        },
+        {
+          "type": "p",
+          "text": "Working equipment may be tested, graded, and evaluated for:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Internal redeployment",
+            "Lease return",
+            "Direct buyback",
+            "Revenue-share remarketing",
+            "Donation",
+            "Parts recovery"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "The value of an asset depends on its manufacturer, model, processor, memory, storage, condition, quantity, age, battery health, market demand, and management-lock status."
+        },
+        {
+          "type": "p",
+          "text": "Apple Activation Lock, MDM, Autopilot, BIOS passwords, Computrace, carrier locks, and other restrictions can prevent a device from being resold until the client resolves them."
+        },
+        {
+          "type": "h3",
+          "text": "6. Recycling and downstream management"
+        },
+        {
+          "type": "p",
+          "text": "Equipment that is damaged, obsolete, locked, failed in testing, or not economically recoverable can be routed to materials recovery or responsible electronics recycling."
+        },
+        {
+          "type": "p",
+          "text": "A complete ITAD program should document the applicable downstream pathway rather than treating every asset as ordinary scrap. Reuse and parts recovery may be considered before final material recycling when approved and economically practical."
+        },
+        {
+          "type": "h3",
+          "text": "7. Reporting and project closeout"
+        },
+        {
+          "type": "p",
+          "text": "The closeout package may include:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Serialized Certificates of Erasure",
+            "Serialized Certificates of Destruction",
+            "Final asset reconciliation",
+            "Chain-of-custody records",
+            "Exception reports",
+            "Weight tickets",
+            "Buyback or revenue-share statements",
+            "Downstream documentation",
+            "Photographs or video when requested"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A weight ticket confirms material weight. It does not replace serialized data-destruction documentation when the client requires asset-level evidence."
+        }
+      ]
+    },
+    {
+      "heading": "Why media-specific data destruction matters",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Different storage technologies require different treatment."
+        },
+        {
+          "type": "p",
+          "text": "Degaussing may be appropriate for magnetic hard drives and magnetic tape. It is not an effective sanitization method for SSDs, NVMe drives, USB flash drives, SD cards, or other flash-based media because those devices do not store data magnetically."
+        },
+        {
+          "type": "p",
+          "text": "A capable provider should be able to identify the media and explain the method used. Hard drives, SSDs, NVMe drives, removable media, mobile devices, servers, and embedded storage should not automatically be processed using one generic method."
+        },
+        {
+          "type": "p",
+          "text": "Printers, copiers, scanners, and multifunction devices also require attention. The Federal Trade Commission explains that digital copiers contain hard drives that can store information about documents they copy, print, scan, fax, or email.[2]"
+        }
+      ]
+    },
+    {
+      "heading": "What is the difference between ITAD and electronics recycling?",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Basic electronics recycling generally focuses on collecting and processing material. Depending on the service level, the documentation may be limited to a weight ticket or receipt."
+        },
+        {
+          "type": "p",
+          "text": "ITAD is broader. It may include:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Asset-level inventory",
+            "Data sanitization or destruction",
+            "Chain of custody",
+            "Testing and grading",
+            "Buyback or revenue recovery",
+            "Redeployment and remarketing",
+            "Exception management",
+            "Serialized certificates",
+            "Downstream documentation",
+            "Client portal visibility"
+          ]
+        },
+        {
+          "type": "p",
+          "text": "A company selecting a service should determine whether it needs basic recycling, data destruction, or a complete ITAD program."
+        }
+      ]
+    },
+    {
+      "heading": "Why certification matters",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Businesses should ask exactly what a provider means when it says “certified.” The claim should identify the standard, certification body, facility, scope, and current status."
+        },
+        {
+          "type": "p",
+          "text": "The U.S. Environmental Protection Agency encourages businesses to use electronics recyclers certified by an accredited, independent third-party auditor. EPA states that certification provides a way to assess environmental, worker health and safety, security, and downstream-management practices.[3]"
+        },
+        {
+          "type": "p",
+          "text": "Certification is not a substitute for project-specific due diligence, but it gives procurement and compliance teams a meaningful framework for evaluating a provider’s controls."
+        },
+        {
+          "type": "p",
+          "text": "Businesses should verify:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "The current certificate",
+            "The certified facility address",
+            "The services included in the scope",
+            "The certification body",
+            "The provider’s data-destruction equipment",
+            "Chain-of-custody procedures",
+            "Employee training and access controls",
+            "Downstream-management practices",
+            "Certificate and reporting capabilities"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Integritrade’s ITAD capabilities",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Integritrade provides IT asset disposition, secure data destruction, electronics recycling, equipment buyback, revenue-share remarketing, and value-recovery services for businesses and organizations across California and the Western United States."
+        },
+        {
+          "type": "p",
+          "text": "Material is processed through Integritrade’s dedicated **30,000 sq ft ITAD Megacenter** at 944 S Topeka Ave in Fresno, California. The controlled-access facility includes 24/7 video monitoring, secure staging, industrial racking, dock capabilities, trained and background-checked personnel, PXE-based software sanitization infrastructure, magnetic-media destruction equipment, and specialized physical-destruction capability for approved flash media."
+        },
+        {
+          "type": "p",
+          "text": "Integritrade maintains **R2v3, ISO 9001, ISO 14001, ISO 45001, and ISO/IEC 27001** certifications within their applicable scopes."
+        },
+        {
+          "type": "p",
+          "text": "For Full ITAD projects, authorized clients receive access to TraceTech at no additional cost. TraceTech provides real-time project and asset visibility, client asset-tag reconciliation, certificates as issued, service requests and project amendments, client-specific handling instructions, and value-recovery reporting."
+        }
+      ]
+    },
+    {
+      "heading": "How to prepare for an ITAD project",
+      "blocks": [
+        {
+          "type": "p",
+          "text": "Before handing over equipment, a business should:"
+        },
+        {
+          "type": "ul",
+          "items": [
+            "Create an inventory with asset tags, serial numbers, models, quantities, and storage details.",
+            "Confirm that backups, legal holds, retention requirements, and investigations are complete.",
+            "Include printers, copiers, scanners, servers, backup appliances, and removable media.",
+            "Separate reuse candidates from destroy-only equipment.",
+            "Resolve Apple Activation Lock, MDM, Autopilot, BIOS, carrier, and other restrictions when reuse is intended.",
+            "Define the required sanitization or destruction outcome.",
+            "Confirm whether the count will occur at the client site or the ITAD facility.",
+            "Specify certificates, reports, photos, video, and witness requirements.",
+            "Establish how failed, locked, damaged, or unidentified assets will be handled."
+          ]
+        },
+        {
+          "type": "p",
+          "text": "After the project, reconcile the final report to the original inventory and retain the certificates, custody records, exception reports, and disposition documentation according to the organization’s record-retention requirements."
+        }
+      ]
+    }
+  ],
+    faqs: [
+    {
+      "question": "What does ITAD stand for?",
+      "answer": "ITAD stands for Information Technology Asset Disposition. It is the controlled retirement of technology through data sanitization, reuse, value recovery, destruction, recycling, and documented reporting."
+    },
+    {
+      "question": "Is ITAD only for large corporations?",
+      "answer": "No. ITAD can support businesses of any size. A small office may need secure data destruction for a few computers, while a larger enterprise may require multi-site pickup, serialized inventory, value recovery, and real-time project reporting."
+    },
+    {
+      "question": "Does ITAD include data destruction?",
+      "answer": "A Full ITAD program generally includes data sanitization or physical destruction when required. The exact method depends on the storage media, client requirements, device condition, and final disposition."
+    },
+    {
+      "question": "Can ITAD providers resell used computers?",
+      "answer": "Yes. Eligible equipment may be sanitized, tested, graded, and evaluated for redeployment, direct buyback, revenue sharing, donation, or remarketing. Locked, damaged, or nonrecoverable equipment may be routed to destruction or recycling."
+    },
+    {
+      "question": "Does Integritrade provide ITAD and data destruction services?",
+      "answer": "Yes. Integritrade provides Full ITAD, data destruction, electronics recycling, equipment buyback, revenue-share remarketing, and value-recovery services. Integritrade also provides authorized Full ITAD clients with TraceTech visibility at no additional cost."
+    },
+    {
+      "question": "What documentation should an ITAD provider provide?",
+      "answer": "Depending on the service level, documentation may include chain-of-custody records, serialized Certificates of Erasure or Destruction, final asset reconciliation, exception reports, weight tickets, downstream documentation, and value-recovery statements."
+    }
+  ],
+    references: [
+    {
+      "n": 1,
+      "href": "https://csrc.nist.gov/pubs/sp/800/88/r2/final",
+      "label": "NIST SP 800-88 Rev. 2: Guidelines for Media Sanitization"
+    },
+    {
+      "n": 2,
+      "href": "https://www.ftc.gov/business-guidance/resources/digital-copier-data-security-guide-businesses",
+      "label": "FTC: Digital Copier Data Security: A Guide for Businesses"
+    },
+    {
+      "n": 3,
+      "href": "https://www.epa.gov/smm-electronics/certified-electronics-recyclers",
+      "label": "U.S. EPA: Certified Electronics Recyclers"
     }
   ],
   },

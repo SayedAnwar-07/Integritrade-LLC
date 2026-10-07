@@ -91,19 +91,40 @@ const CONFIG = {
       "Corporate ITAD across the Bay Area: pickups coordinated from Pinole, data destruction and recycling at our Fresno facility, and TraceTech tracking.",
   },
   // Supplied 2026-10-05 as a .docx (no SEO title, description or image).
-  // Cover: a 16:9 crop of the SEM SSD shredder photo from /about/our-equipment/
-  // (public/about/hdd-shredder.jpeg, despite its name).
+  // Cover: a 16:9 crop of public/about/software-sanitization.jpg (drives
+  // connected to a wiping workstation), 1600x900. It replaced a crop of the
+  // SSD shredder photo on 2026-10-07 at Ian's request, under a new file name
+  // so Cloudflare's cached copy of the old one is never served for it.
   "data-sanitization-best-practices-itad": {
     file: "Best Data Sanitization Practices for Businesses Before and After ITAD.md",
     image: "DataSanitizationCover",
-    imagePath: "blogs/data-sanitization-best-practices.jpg",
+    imagePath: "blogs/data-sanitization-drive-handling.jpg",
     category: "Data Destruction",
-    imageAlt: "SEM Model 2 SSD-VK shredder at Integritrade, used for physical destruction of solid state drives",
+    imageAlt:
+      "Technician handling a hard drive removed from a server rack",
     date: "October 5, 2026",
     dateISO: "2026-10-05",
     seoTitle: "Data Sanitization Best Practices Before and After ITAD",
     metaDescription:
       "Data sanitization best practices for businesses: before pickup, during custody transfer, while the ITAD provider processes assets, and after closeout.",
+  },
+  // Supplied 2026-10-07 as a .docx (no SEO title, description or image). Its
+  // three citations were links on a bare "1", "2", "3" with an empty
+  // References heading, so the markdown writes them as plain [n] markers and
+  // lists the sources under References. Cover: a centre 16:9 crop of
+  // public/eRecyclingWarehouse.jpeg at its native 957px width.
+  "what-is-itad-it-asset-disposition": {
+    file: "What Is ITAD A Complete Guide to IT Asset Disposition.md",
+    image: "WhatIsItadCover",
+    imagePath: "blogs/what-is-itad-guide.jpg",
+    category: "ITAD Explained",
+    imageAlt:
+      "Stacks of retired laptops on a roller conveyor in an ITAD warehouse, with technicians testing equipment at workstations behind them",
+    date: "October 7, 2026",
+    dateISO: "2026-10-07",
+    seoTitle: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+    metaDescription:
+      "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
   },
 };
 

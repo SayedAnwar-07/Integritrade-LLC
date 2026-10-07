@@ -216,9 +216,7 @@ export default async function ServicePage(props: {
               </p>
 
               <nav aria-label="All services">
-                {servicesData.map((s, idx) => {
-                  const num = String(idx + 1).padStart(2, "0");
-
+                {servicesData.map((s) => {
                   const isActive =
                     s.slug === service.slug;
 
@@ -232,16 +230,6 @@ export default async function ServicePage(props: {
                           : "text-gray-700 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white"
                       }`}
                     >
-                      <span
-                        className={`font-mono text-[10px] tabular-nums tracking-widest ${
-                          isActive
-                            ? "text-primary"
-                            : "text-gray-400 dark:text-gray-500"
-                        }`}
-                      >
-                        {num}
-                      </span>
-
                       <span className="flex-1 font-serif text-[15px] leading-snug">
                         {s.pageTitle}
                       </span>
@@ -267,9 +255,6 @@ export default async function ServicePage(props: {
                     href="#devices"
                     className="click-feel group flex items-baseline gap-4 border-b border-gray-200 py-3.5 text-gray-700 transition-colors hover:text-gray-900 dark:border-gray-800 dark:text-gray-300 dark:hover:text-white"
                   >
-                    <span className="font-mono text-[10px] tabular-nums tracking-widest text-gray-400 dark:text-gray-500">
-                      01
-                    </span>
                     <span className="flex-1 font-serif text-[15px] leading-snug">
                       Devices we accept
                     </span>

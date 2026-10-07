@@ -10,15 +10,7 @@ import Iso45001 from "@/public/ISO/ISO-45001.png";
 import R2v3 from "@/public/ISO/R2V3_certified_logo.png";
 import Nist from "@/public/ISO/nist-800-88.png";
 
-import {
-  Truck,
-  ShieldCheck,
-  HardDriveDownload,
-  Recycle,
-  FileCheck2,
-  Phone,
-  Mail,
-} from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 
 /** lucide-react ships no brand marks, so the WhatsApp glyph lives here. */
 function WhatsAppGlyph({ className }: { className?: string }) {
@@ -37,34 +29,6 @@ function WhatsAppGlyph({ className }: { className?: string }) {
 
 import BookingForm from "./BookingForm";
 
-const processSteps = [
-  {
-    icon: Truck,
-    title: "We Come to You",
-    text: "Schedule a pickup at your site - no hauling, no hassle",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Tracked Every Step",
-    text: "Full chain-of-custody from your door to final processing.",
-  },
-  {
-    icon: HardDriveDownload,
-    title: "Data Gone for Good",
-    text: "NIST 800-88 certified erasure or physical destruction.",
-  },
-  {
-    icon: Recycle,
-    title: "Responsible Lifecycle Management",
-    text: "R2v3-Responsible Recycling aligned with state and federal environmental laws.",
-  },
-  {
-    icon: FileCheck2,
-    title: "Proof in Writing",
-    text: "Certificates of destruction and audit-ready reports available.",
-  },
-];
-
 // Each badge opens its certificate PDF in a new tab, so someone halfway
 // through the booking form never loses it (Ian, 2026-09-27). NIST 800-88 is a
 // standard we follow rather than a certificate we hold, so it opens the
@@ -80,17 +44,18 @@ const certs = [
   { image: Nist, name: "NIST 800-88", href: "/certifications/" },
 ];
 
+// No response-time point here: the form box already promises a reply within
+// one business day (Ian, 2026-10-07).
 const trustPoints = [
   "No-obligation quote",
-  "24-hour response",
-  "Fully certified team",
+  "Fully certified, background-checked data destruction specialists",
   "100% Data Destruction Guarantee",
 ];
 
 function Check() {
   return (
     <svg
-      className="h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400"
+      className="mt-0.5 h-4 w-4 shrink-0 text-emerald-600 dark:text-emerald-400"
       fill="none"
       stroke="currentColor"
       strokeWidth="2.5"
@@ -126,7 +91,7 @@ export default function ContactDescription() {
               {trustPoints.map((point) => (
                 <li
                   key={point}
-                  className="flex items-center gap-2.5 text-sm font-medium text-slate-700 dark:text-slate-300"
+                  className="flex items-start gap-2.5 text-sm font-medium text-slate-700 dark:text-slate-300"
                 >
                   <Check />
                   {point}
@@ -214,8 +179,9 @@ export default function ContactDescription() {
                   Tell us about your project
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300">
-                  Share a few details and our team will get back to you within
-                  one business day with next steps.
+                  Tell us about the electronics or equipment you need to retire.
+                  An expert will review your request and provide a no-obligation
+                  solution within 1 business day.
                 </p>
               </div>
 
@@ -234,31 +200,6 @@ export default function ContactDescription() {
                 process your service request.
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* ── How it works ─────────────────────────────────────── */}
-        <div className="mt-20 border-t border-stone-200 pt-14 dark:border-slate-700/60">
-          <h2 className="text-center text-sm font-bold uppercase tracking-[0.2em] text-slate-500 dark:text-slate-400">
-            What Happens Next
-          </h2>
-
-          <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-5">
-            {processSteps.map(({ icon: Icon, title, text }) => (
-              <div key={title}>
-                <span className="mb-4 flex h-9 w-9 items-center justify-center rounded-full border border-emerald-200 bg-white text-emerald-700 shadow-sm dark:border-emerald-500/30 dark:bg-dark-secondary dark:text-emerald-400">
-                  <Icon size={15} strokeWidth={2} />
-                </span>
-
-                <h3 className="mb-1.5 text-[15px] font-semibold text-stone-900 dark:text-white">
-                  {title}
-                </h3>
-
-                <p className="text-sm leading-6 text-stone-600 dark:text-slate-300">
-                  {text}
-                </p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

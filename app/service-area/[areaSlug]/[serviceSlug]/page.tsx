@@ -15,6 +15,7 @@ import PageHeader from "@/components/shared/PageHeader";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import ServiceDetailSidebar from "@/components/service-area/Servicedetailsidebar";
 import CityLinkList from "@/components/service-area/CityLinkList";
+import IndustryCertBadges from "@/components/industries/IndustryCertBadges";
 import { ogImage } from "@/lib/og";
 import { SERVICE_KIND_LABEL, nearbyAreas, serviceKind, serviceOfKind } from "@/lib/serviceAreaLinks";
 
@@ -280,6 +281,11 @@ export default async function ServicePage({ params }: PageProps) {
                 ))}
               </div>
             </ScrollLoader>
+
+            {/* Certification badges, as on the industry pages (Ian, 2026-10-07).
+                In the main column rather than under the sticky form, where
+                they would stay hidden until the very end of the page. */}
+            <IndustryCertBadges />
 
             {kind && (
               <CityLinkList

@@ -1,6 +1,7 @@
 import { Metadata } from 'next'
 import Script from 'next/script'
 import ContactDescription from '@/components/contact/ContactDescription'
+import TrustedLogos from '@/components/home/TrustedLogo'
 import ScrollLoader from '@/components/shared/ScrollLoader'
 
 // ─── SEO METADATA ─────────────────────────────────────────────────────────────
@@ -114,8 +115,8 @@ const localBusinessSchema = {
     {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-      opens: '09:00',
-      closes: '15:00',
+      opens: '10:00',
+      closes: '16:00',
     },
   ],
   contactPoint: [
@@ -128,8 +129,8 @@ const localBusinessSchema = {
       hoursAvailable: {
         '@type': 'OpeningHoursSpecification',
         dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '15:00',
+        opens: '10:00',
+        closes: '16:00',
       },
     },
     {
@@ -234,6 +235,10 @@ export default function ContactPage() {
             <ContactDescription />
           </ScrollLoader>
         </div>
+
+        {/* Client logos in place of the old "What happens next" strip (Ian,
+            2026-10-07); the same carousel as the homepage. */}
+        <TrustedLogos />
       </main>
     </>
   )

@@ -4,7 +4,8 @@ import LawFirmCover from "@/public/blogs/value-data-security.webp";
 import FerpaCover from "@/public/blogs/blogs-cover.jpg";
 import Nist80088Cover from "@/public/about/software-sanitization.jpg";
 import BayAreaCover from "@/public/industries/business-corporate.webp";
-import DataSanitizationCover from "@/public/blogs/data-sanitization-best-practices.jpg";
+import DataSanitizationCover from "@/public/blogs/data-sanitization-drive-handling.jpg";
+import WhatIsItadCover from "@/public/blogs/what-is-itad-guide.jpg";
 import decommissionBanner from "@/public/blogs/decommission-computers.jpg";
 import videoTape from "@/public/blogs/video-tape.jpg";
 import rohsImage from "@/public/blogs/rohs-compliance.jpg";
@@ -329,5 +330,12 @@ export const AllBlogCards: BlogCard[] = [
     description: "Data sanitization best practices for businesses: before pickup, during custody transfer, while the ITAD provider processes assets, and after closeout.",
     date: "October 5, 2026",
     slug: "data-sanitization-best-practices-itad",
+  },
+  {
+    image: WhatIsItadCover,
+    title: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+    description: "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
+    date: "October 7, 2026",
+    slug: "what-is-itad-it-asset-disposition",
   },
 ];

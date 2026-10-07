@@ -37,7 +37,7 @@ export default function IndustryCertBadges() {
 
           <p className="mx-auto mt-3 max-w-2xl text-sm leading-relaxed text-gray-600 dark:text-gray-400">
             Integritrade maintains R2v3 and ISO 9001, 14001, 45001 &amp; 27001 certifications, with
-            NIST SP 800-88-aligned data sanitization — documented controls for quality, environment,
+            NIST SP 800-88-aligned data sanitization and documented controls for quality, environment,
             safety, and information security within the applicable certified scope.
           </p>
         </div>

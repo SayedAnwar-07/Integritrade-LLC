@@ -70,7 +70,7 @@ const SERVICES: Service[] = [
     label: "R2v3\nCERTIFIED",
     angle: -90,
     description:
-      "Responsible Recycling (R2v3) certification verifies secure electronics reuse, recycling practices, and responsible downstream management.",
+      "R2v3 is an EPA-recognized accredited certification standard for electronics recyclers. Integritrade’s certification covers secure data sanitization and destruction, equipment testing and repair, reuse evaluation, responsible recycling, and downstream management through Appendices A, B, and C.",
     pdf: CERTIFICATE_PDFS.r2v3,
   },
   {

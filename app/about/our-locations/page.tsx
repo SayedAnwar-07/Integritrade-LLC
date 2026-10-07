@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { ArrowUpRight, Ban, CalendarCheck, ChevronRight, Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
+import { ArrowUpRight, Ban, CalendarCheck, ChevronRight, Clock, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 
 import PageHeader from "@/components/shared/PageHeader";
@@ -7,8 +8,18 @@ import SectionHeader from "@/components/shared/SectionHeader";
 import ScrollLoader from "@/components/shared/ScrollLoader";
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton";
 import OutlineButton from "@/components/shared/buttons/OutlineButton";
+import ServiceCards from "@/components/services/ServiceCards";
 
 import { Separator } from "@/components/ui/separator";
+
+import { certificationsData } from "@/data/certificationsData";
+
+import Iso9001 from "@/public/ISO/ISO-9001.png";
+import Iso14001 from "@/public/ISO/ISO-14001.png";
+import Iso27001 from "@/public/ISO/ISO-27001.png";
+import Iso45001 from "@/public/ISO/ISO-45001.png";
+import R2v3 from "@/public/ISO/R2V3_certified_logo.png";
+import Nist from "@/public/ISO/nist-800-88.png";
 
 const PAGE_URL = "https://integritradellc.com/about/our-locations/";
 
@@ -63,6 +74,22 @@ const facilityDetails = [
   },
 ] as const;
 
+// The certifications cover the Fresno facility only, so the badges sit in the
+// Fresno section and not under Pinole (Ian, 2026-10-07). Each badge opens its
+// certificate PDF; NIST 800-88 is a standard we follow rather than a
+// certificate we hold, so it opens the certifications page.
+const certificatePdf = (header: string) =>
+  certificationsData.find((c) => c.header === header)?.pdf ?? "/certifications/";
+
+const fresnoCertifications = [
+  { image: R2v3, name: "R2v3", href: certificatePdf("R2v3 Standard") },
+  { image: Iso9001, name: "ISO 9001", href: certificatePdf("ISO 9001") },
+  { image: Iso14001, name: "ISO 14001", href: certificatePdf("ISO 14001") },
+  { image: Iso45001, name: "ISO 45001", href: certificatePdf("ISO 45001") },
+  { image: Iso27001, name: "ISO 27001", href: certificatePdf("ISO/IEC 27001") },
+  { image: Nist, name: "NIST 800-88", href: "/certifications/" },
+];
+
 const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -95,6 +122,14 @@ const schemaData = {
         postalCode: "93721",
         addressCountry: "US",
       },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "10:00",
+          closes: "16:00",
+        },
+      ],
       areaServed: {
         "@type": "State",
         name: "California",
@@ -175,11 +210,7 @@ export default function OurLocationsPage() {
         <ScrollLoader>
           <PageHeader
             eyebrow="OUR LOCATIONS"
-            title={
-              <>
-                Our <em className="italic font-serif">Locations.</em>
-              </>
-            }
+            title="Our Locations."
             description="Integritrade operates a dedicated 31,000 square foot secured California IT Asset Disposal Megacenter in Fresno, plus a Bay Area dispatch location in Pinole for scheduled business service."
           />
         </ScrollLoader>
@@ -203,10 +234,12 @@ export default function OurLocationsPage() {
 
 
                 <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
-                  Integritrade&rsquo;s Fresno facility is a dedicated 31,000 square foot ITAD and
-                  electronics-processing facility with controlled access,
-                  video monitoring, secure asset staging, dock access,
-                  and racking.
+                  Our centralized Fresno location gives us the strategic advantage to easily
+                  support ITAD and recycling projects anywhere in the Western United States.
+                  The 31,000-square-foot facility is engineered for secure, end-to-end
+                  processing, complete with strict access controls, continuous video
+                  monitoring, dedicated asset staging, and streamlined dock and racking
+                  capabilities.
                 </p>
 
 
@@ -233,6 +266,26 @@ export default function OurLocationsPage() {
                         <br />
                         Fresno, CA 93721
                       </a>
+                    </dd>
+                  </div>
+
+
+
+                  <div>
+                    <div className="flex items-center gap-3">
+                      <Clock className="h-5 w-5 text-emerald-600 dark:text-emerald-400" />
+
+                      <dt className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400">
+                        Hours
+                      </dt>
+                    </div>
+
+                    <dd className="text-sm text-gray-900 dark:text-gray-100 mt-2 ml-8">
+                      Monday to Friday, 10:00 AM to 4:00 PM
+                      <br />
+                      <span className="text-gray-600 dark:text-gray-400">
+                        After-hours service available by appointment
+                      </span>
                     </dd>
                   </div>
 
@@ -345,6 +398,54 @@ export default function OurLocationsPage() {
               </div>
 
 
+            </div>
+
+            {/* Services offered here, the way ERI lists them per location (Ian,
+                2026-10-07). The drop-off card is Fresno-only. */}
+            <div className="mt-14 md:mt-20">
+              <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-8">
+                Services at the Fresno facility
+              </h3>
+
+              <ServiceCards withDropOff />
+            </div>
+
+            <div className="mt-14 md:mt-20">
+              <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white">
+                Certifications and standards at this facility
+              </h3>
+
+              <p className="mt-3 max-w-2xl text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                Integritrade&rsquo;s certifications cover the Fresno facility, where asset
+                processing, data sanitization, and physical destruction are performed.
+              </p>
+
+              <div className="mt-8 grid grid-cols-3 sm:grid-cols-6 items-start gap-x-4 gap-y-8">
+                {fresnoCertifications.map(({ image, name, href }) => (
+                  <a
+                    key={name}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex flex-col items-center gap-3"
+                  >
+                    <div className="relative h-20 w-full">
+                      <Image
+                        src={image}
+                        alt={name}
+                        fill
+                        sizes="120px"
+                        className="object-contain transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+
+                    <span className="text-center text-xs font-semibold text-gray-600 dark:text-gray-300">
+                      {name}
+                      <span className="sr-only"> (opens in a new tab)</span>
+                    </span>
+                  </a>
+                ))}
+              </div>
             </div>
 
           </div>
@@ -520,21 +621,12 @@ export default function OurLocationsPage() {
             />
 
             <div className="mt-12 md:mt-16 border-t border-gray-200 dark:border-gray-800">
-              {facilityDetails.map((detail, index) => (
+              {facilityDetails.map((detail) => (
                 <div
                   key={detail.title}
                   className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 py-8 lg:py-10 border-b border-gray-200 dark:border-gray-800"
                 >
-                  <div className="md:col-span-1">
-                    <span
-                      aria-hidden="true"
-                      className="text-2xl font-light text-gray-400 dark:text-gray-600 tabular-nums"
-                    >
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                  </div>
-
-                  <div className="md:col-span-4">
+                  <div className="md:col-span-5">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 tracking-tight">
                       {detail.title}
                     </h3>
