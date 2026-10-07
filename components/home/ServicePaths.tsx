@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Building2, ShieldCheck, Recycle, ArrowUpRight } from "lucide-react";
+import { Building2, ShieldCheck, Truck, ArrowUpRight } from "lucide-react";
 import SectionHeader from "../shared/SectionHeader";
 import ScrollLoader from "../shared/ScrollLoader";
 
@@ -22,7 +22,7 @@ const paths: Path[] = [
     iconColor: "text-emerald-700 dark:text-emerald-300",
     iconBorder: "border-emerald-200/80 dark:border-emerald-700/40",
     title: "Retiring IT assets at scale",
-    desc: "Office refreshes, data center decommissions, and fleet retirements handled with serialized asset tracking, certified data destruction, and audit-ready reporting your finance team can file with confidence.",
+    desc: "Office refreshes, data center decommissions, and fleet retirements processed at our 30,000 sq ft, 24/7 video-monitored Fresno facility, with serialized asset tracking, certified data destruction, and audit-ready reporting your finance team can file with confidence.",
     ctaLabel: "Explore Business",
     href: "/services/",
   },
@@ -37,14 +37,16 @@ const paths: Path[] = [
     href: "/industries/",
   },
   {
+    // 2026-10-07: replaced the drop-off card (the residential drop-off page
+    // stays in the Services menu).
     id:3,
-    icon: Recycle,
+    icon: Truck,
     iconColor: "text-amber-700 dark:text-amber-300",
     iconBorder: "border-amber-200/80 dark:border-amber-700/40",
-    title: "Free e-waste drop-off and local pickups",
-    desc: "Households, small offices, and community sites can drop off various electronics at our Fresno facility, or schedule a convenient pickup across our California service zones for qualifying volumes.",
-    ctaLabel: "Explore Drop-off",
-    href: "/fresno-residential-electronics-recycling/",
+    title: "White-glove packing and transport",
+    desc: "On-site packing and secure transit utilizing dedicated lockable, tamper-evident rolling bins. Complete labor, serialized handoff, and direct logistics managed end-to-end to maintain an unbroken, audit-verified chain of custody.",
+    ctaLabel: "Explore Logistics",
+    href: "/services/it-asset-disposition/",
   },
 ];
 
@@ -56,7 +58,7 @@ export default function ServicePaths() {
             <SectionHeader
               eyebrow="Choose Your Path"
               title="Tailored Disposition for Every Scale"
-              description="Whether managing enterprise fleet refreshes, navigating strict regulatory audits, or scheduling local recycling, we have a dedicated path built for you"
+              description="Whether managing enterprise fleet refreshes, navigating strict regulatory audits, or arranging secure on-site packing and transport, we have a dedicated path built for you"
             />
         </ScrollLoader>
 
@@ -76,7 +78,7 @@ export default function ServicePaths() {
               <ScrollLoader key={title} delay={id * 0.08}>
                 <article
                   key={id}
-                  className="group flex flex-col p-6 bg-white dark:bg-dark-secondary rounded-md transition-all duration-300 hover:shadow-lg"
+                  className="group flex h-full flex-col p-6 bg-white dark:bg-dark-secondary rounded-md transition-all duration-300 hover:shadow-lg"
                 >
                   <div className="flex items-center justify-between mb-6">
                       <div className={`inline-flex items-center justify-center w-12 h-12 rounded-md border ${iconBorder}`}>
