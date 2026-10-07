@@ -44,33 +44,13 @@ interface NavItem {
   href: string
   label: string
   dropdown?: Array<{ href: string; label: string; icon?: React.ComponentType<any> }>
+  /** Intro column of the wide dropdown panel (desktop). */
+  intro?: { title: string; text: string; cta: { label: string; href: string } }
 }
 
-/* -------- Colorful dropdown icon colors (keyed by href) -------- */
-const DROPDOWN_ICON_COLORS: Record<string, string> = {
-  // Services
-  '/services/': 'text-slate-600 dark:text-slate-300',
-  '/services/secure-electronics-recycling': 'text-emerald-600 dark:text-emerald-400',
-  '/services/data-destruction-services': 'text-rose-600 dark:text-rose-400',
-  '/services/it-asset-disposition': 'text-blue-600 dark:text-blue-400',
-  "/services/remote-it-asset-recovery": 'text-violet-600 dark:text-violet-400',
-  '/services/demanufacturing-prototype-destruction': 'text-amber-600 dark:text-amber-400',
-  '/fresno-residential-electronics-recycling/': 'text-teal-600 dark:text-teal-400',
-  // Industries
-  '/industries/business-corporate': 'text-blue-600 dark:text-blue-400',
-  '/industries/healthcare': 'text-rose-600 dark:text-rose-400',
-  '/industries/education': 'text-emerald-600 dark:text-emerald-400',
-  '/industries/finance': 'text-amber-600 dark:text-amber-400',
-  '/industries/legal-professional-services': 'text-indigo-600 dark:text-indigo-400',
-  '/industries/retail-hospitality': 'text-orange-600 dark:text-orange-400',
-  '/industries/government-public-sector': 'text-violet-600 dark:text-violet-400',
-  '/industries/defense-contractors': 'text-slate-600 dark:text-slate-300',
-  // About
-  '/about/': 'text-blue-600 dark:text-blue-400',
-  '/about/our-team': 'text-emerald-600 dark:text-emerald-400',
-  '/about/our-equipment': 'text-amber-600 dark:text-amber-400',
-  '/about/our-locations': 'text-teal-600 dark:text-teal-400',
-}
+/* Dropdown icons are one neutral colour that turns brand green on hover or
+   when the page is active (Ian, 2026-10-07: the per-item rainbow of icon
+   colours looked "childish" next to the plain TraceTech panel). */
 
 interface DesktopDropdownProps {
   item: NavItem
@@ -106,7 +86,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
   return (
     <div
       ref={wrapperRef}
-      className="relative flex items-center"
+      className="flex items-center"
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
     >
@@ -125,7 +105,11 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
         />
       </Link>
 
-      {/* Hover dropdown panel */}
+      {/* Hover panel, styled after the TraceTech panel (Ian, 2026-10-07): an
+          intro column and the links. Positioned against the <nav> (this
+          wrapper is not positioned), centred under the whole menu, so the
+          760px panel stays on screen at 1024px and its top padding bridges
+          the gap under every menu item. */}
       <div
         className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50 transition-all duration-200 ${
           open
@@ -133,52 +117,68 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
             : 'opacity-0 -translate-y-1 pointer-events-none'
         }`}
       >
-        <div className="overflow-hidden rounded-xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)] p-2.5">
-          {/* Mega-menu grid — wider, icon + label, 2 cols for larger menus */}
-          <div
-            className={`grid gap-1 ${
-              (item.dropdown?.length ?? 0) > 4
-                ? 'grid-cols-2 w-[580px]'
-                : 'grid-cols-1 w-[300px]'
-            }`}
-          >
-            {item.dropdown?.map((dropdownItem) => {
-              const isSubActive = isSubItemActive(dropdownItem.href, pathname, item.href)
-              const Icon = dropdownItem.icon
+        <div className="w-[760px] overflow-hidden rounded-xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
+          <div className="grid grid-cols-[250px_1fr]">
+            {item.intro && (
+              <div className="flex flex-col justify-center border-r border-gray-200/70 bg-gray-50/80 p-6 dark:border-white/10 dark:bg-white/[0.03]" data-nosnippet>
+                <h3 className="font-serif text-[20px] font-semibold leading-tight text-gray-900 dark:text-white">
+                  {item.intro.title}
+                </h3>
+                <p className="mt-2.5 text-[13px] leading-6 text-gray-600 dark:text-gray-300">
+                  {item.intro.text}
+                </p>
+                <div className="mt-5">
+                  <Link
+                    href={item.intro.cta.href}
+                    className="group/cta inline-flex items-center gap-2 rounded-md border border-primary px-4 py-2.5 text-[13px] font-semibold text-primary transition-all duration-300 hover:bg-primary hover:text-white click-feel"
+                  >
+                    {item.intro.cta.label}
+                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/cta:translate-x-0.5" />
+                  </Link>
+                </div>
+              </div>
+            )}
 
-              return (
-                <Link
-                  key={dropdownItem.href}
-                  href={dropdownItem.href}
-                  className={`group/item flex items-center gap-3 rounded-md px-3 py-2.5 transition-colors duration-200 click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark-secondary ${
-                    isSubActive
-                      ? 'bg-primary/10 dark:bg-white/[0.10]'
-                      : 'hover:bg-primary/10 focus-visible:bg-primary/10 dark:hover:bg-white/[0.10] dark:focus-visible:bg-white/[0.10]'
-                  }`}
-                >
-                  {Icon && (
-                    <span
-                      className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-gray-50 transition-colors duration-200 group-hover/item:border-primary/40 group-hover/item:bg-primary/10 group-focus-visible/item:border-primary/40 group-focus-visible/item:bg-primary/10 dark:border-white/10 dark:bg-white/[0.04] dark:group-hover/item:border-white/25 dark:group-hover/item:bg-white/[0.10] ${
-                        DROPDOWN_ICON_COLORS[dropdownItem.href] ??
-                        'text-gray-500 dark:text-gray-400'
-                      }`}
-                    >
-                      <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
-                    </span>
-                  )}
+            <div className="grid grid-cols-2 content-center gap-1 p-3">
+              {item.dropdown?.map((dropdownItem) => {
+                const isSubActive = isSubItemActive(dropdownItem.href, pathname, item.href)
+                const Icon = dropdownItem.icon
 
-                  <span
-                    className={`text-[13px] font-semibold leading-snug tracking-tight transition-colors duration-150 ${
+                return (
+                  <Link
+                    key={dropdownItem.href}
+                    href={dropdownItem.href}
+                    className={`group/item flex items-center gap-3 rounded-md px-3 py-2.5 transition-colors duration-200 click-feel outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-white dark:focus-visible:ring-offset-dark-secondary ${
                       isSubActive
-                        ? 'text-primary dark:text-white'
-                        : 'text-gray-700 dark:text-gray-200 group-hover/item:text-primary group-focus-visible/item:text-primary dark:group-hover/item:text-white dark:group-focus-visible/item:text-white'
+                        ? 'bg-primary/10 dark:bg-white/[0.10]'
+                        : 'hover:bg-primary/10 focus-visible:bg-primary/10 dark:hover:bg-white/[0.10] dark:focus-visible:bg-white/[0.10]'
                     }`}
                   >
-                    {dropdownItem.label}
-                  </span>
-                </Link>
-              )
-            })}
+                    {Icon && (
+                      <span
+                        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-md border border-gray-200 bg-gray-50 transition-colors duration-200 group-hover/item:border-primary/40 group-hover/item:bg-primary/10 group-focus-visible/item:border-primary/40 group-focus-visible/item:bg-primary/10 dark:border-white/10 dark:bg-white/[0.04] dark:group-hover/item:border-white/25 dark:group-hover/item:bg-white/[0.10] ${
+                          isSubActive
+                            ? 'text-primary dark:text-white'
+                            : 'text-slate-500 group-hover/item:text-primary group-focus-visible/item:text-primary dark:text-slate-400 dark:group-hover/item:text-white dark:group-focus-visible/item:text-white'
+                        }`}
+                      >
+                        <Icon className="h-[18px] w-[18px]" strokeWidth={1.8} />
+                      </span>
+                    )}
+
+                    <span
+                      className={`text-[13px] font-semibold leading-snug tracking-tight transition-colors duration-150 ${
+                        isSubActive
+                          ? 'text-primary dark:text-white'
+                          : 'text-gray-700 dark:text-gray-200 group-hover/item:text-primary group-focus-visible/item:text-primary dark:group-hover/item:text-white dark:group-focus-visible/item:text-white'
+                      }`}
+                    >
+                      {dropdownItem.label}
+                    </span>
+                  </Link>
+                )
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -233,11 +233,7 @@ function TraceTechNavItem({
                 snippets; without it the panel text (present on every page)
                 gets scraped as the page description. */}
             <div className="flex flex-col justify-center p-7" data-nosnippet>
-              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
-                Our Technology
-              </p>
-
-              <h3 className="mt-2 font-serif text-[22px] font-semibold leading-tight text-gray-900 dark:text-white">
+              <h3 className="font-serif text-[22px] font-semibold leading-tight text-gray-900 dark:text-white">
                 AI-Integrated ITAD with TraceTech
               </h3>
 
@@ -412,6 +408,11 @@ export default function Navbar() {
     {
       href: '/services',
       label: 'Services',
+      intro: {
+        title: 'ITAD and data destruction services',
+        text: 'Secure electronics recycling, certified data destruction, and full IT asset disposition, with serialized reporting available.',
+        cta: { label: 'View All Services', href: '/services/' },
+      },
       dropdown: [
         { href: '/services/', label: 'Compare Our Service Levels', icon: Scale },
         { href: '/services/secure-electronics-recycling', label: 'Secure Electronics Recycling', icon: Recycle },
@@ -425,6 +426,11 @@ export default function Navbar() {
     {
       href: '/industries',
       label: 'Industries',
+      intro: {
+        title: 'Industries we serve',
+        text: 'ITAD programs built around the compliance rules each sector answers to, from HIPAA and GLBA to FERPA and government standards.',
+        cta: { label: 'View All Industries', href: '/industries/' },
+      },
       dropdown: [
         { href: '/industries/business-corporate', label: 'Corporate & Enterprise', icon: Building2 },
         { href: '/industries/healthcare', label: 'Healthcare', icon: HeartPulse },
@@ -440,6 +446,11 @@ export default function Navbar() {
     {
       href: '/about',
       label: 'About',
+      intro: {
+        title: 'About Integritrade',
+        text: 'R2v3 and ISO-certified ITAD from our 30,000 sq ft, 24/7 video-monitored facility in Fresno, California.',
+        cta: { label: 'Learn About Us', href: '/about/' },
+      },
       dropdown: [
         { href: '/about/', label: 'About IntegriTrade', icon: Info },
         { href: '/about/our-team', label: 'Our Team', icon: Users },

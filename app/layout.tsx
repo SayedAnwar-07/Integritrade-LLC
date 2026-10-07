@@ -32,9 +32,24 @@ export const metadata: Metadata = {
 
   description: siteConfig.description,
 
+  // The standard favicon set, all the same logo tile. /favicon.ico matters on
+  // its own: many crawlers and link-preview services (AI chat answers, DuckDuckGo)
+  // only request that path and skip the <link> tags. Keep the 512px URL stable;
+  // Google's favicon guidelines ask for a URL that doesn't change.
   icons: {
 
     icon: [
+      { url: "/favicon.ico", sizes: "16x16 32x32 48x48" },
+      {
+        url: "/logo/integritradellc-favicon-32.png",
+        type: "image/png",
+        sizes: "32x32",
+      },
+      {
+        url: "/logo/integritradellc-favicon-192.png",
+        type: "image/png",
+        sizes: "192x192",
+      },
       {
         url: "/logo/integritradellc-favicon.png",
         type: "image/png",
@@ -42,13 +57,13 @@ export const metadata: Metadata = {
       },
     ],
 
-    shortcut: "/logo/integritradellc-favicon.png",
+    shortcut: "/favicon.ico",
 
     apple: [
       {
-        url: "/logo/integritradellc-favicon.png",
+        url: "/apple-touch-icon.png",
         type: "image/png",
-        sizes: "512x512",
+        sizes: "180x180",
       },
     ],
   },
