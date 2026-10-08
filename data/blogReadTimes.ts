@@ -4,9 +4,10 @@
 
 export const blogReadTimes: Record<string, number> = {
   "ai-trends-in-it-refresh-hardware-recovery": 7,
-  "bay-area-itad-electronics-recycling": 7,
+  "bay-area-itad-electronics-recycling": 8,
   "bfsi-it-asset-disposition-financial-services-data-destruction": 11,
   "chain-of-custody-in-itad": 5,
+  "choosing-electronics-recycling-provider-bay-area": 11,
   "cod-vs-coe-data-destruction-certification-services": 6,
   "data-erasure-vs-degaussing-vs-physical-destruction": 6,
   "data-sanitization-best-practices-itad": 10,
@@ -39,7 +40,7 @@ export const blogReadTimes: Record<string, number> = {
   "rohs-compliance-electronics-recycling-services": 7,
   "server-data-center-equipment-disposal-guide": 6,
   "video-tape-data-destruction-services": 7,
-  "what-is-itad-it-asset-disposition": 8,
+  "what-is-itad-it-asset-disposition": 9,
   "why-it-asset-disposition-is-important": 7,
   "zero-trust-security-in-it-asset-disposition": 6,
 };

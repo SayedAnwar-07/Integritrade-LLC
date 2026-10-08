@@ -305,7 +305,7 @@ export default function R2Certified() {
                       1. Confirm certification status directly
                     </h3>
                     <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Verify the recycler&apos;s certification number and expiration via the official SERI directory before signing anything. You can review IntegriTrade&apos;s active certifications on our{' '}
+                      Verify the recycler&apos;s certification number and expiration via the official SERI directory before signing anything. You can review Integritrade&apos;s active certifications on our{' '}
                       <Link
                         href="/certifications"
                         className="text-blue-600 dark:text-blue-400 font-medium hover:underline"

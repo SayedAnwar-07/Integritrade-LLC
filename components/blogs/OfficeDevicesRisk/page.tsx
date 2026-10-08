@@ -32,12 +32,12 @@ const faqs = [
   {
     question: "What is R2v3 Appendix B and why does it matter?",
     answer:
-      "R2v3 Appendix B is the certified standard for responsible data destruction, covering both physical and logical methods. IntegriTrade complies with this standard and issues a Certificate of Destruction for every device as defensible evidence.",
+      "R2v3 Appendix B is the certified standard for responsible data destruction, covering both physical and logical methods. Integritrade complies with this standard and issues a Certificate of Destruction for every device as defensible evidence.",
   },
   {
-    question: "How does IntegriTrade handle supply closet cleanout?",
+    question: "How does Integritrade handle supply closet cleanout?",
     answer:
-      "IntegriTrade performs a systematic cleanout, inventories every asset, securely destroys all data under R2v3 Appendix B standards, maintains a sealed chain of custody, and returns the maximum recoverable market value for retired devices.",
+      "Integritrade performs a systematic cleanout, inventories every asset, securely destroys all data under R2v3 Appendix B standards, maintains a sealed chain of custody, and returns the maximum recoverable market value for retired devices.",
   },
 ];
 
@@ -167,15 +167,15 @@ export default function OfficeDevicesRisk() {
               </section>
             </ScrollLoader>
 
-            {/* How IntegriTrade Helps */}
+            {/* How Integritrade Helps */}
             <ScrollLoader>
               <section className="mb-16">
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                  How IntegriTrade Helps
+                  How Integritrade Helps
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                   <p className="custom-text-center">
-                    IntegriTrade&apos;s supply closet cleanout service turns retired equipment from a liability into a recoverable asset, with each step documented for audit and compliance review.
+                    Integritrade&apos;s supply closet cleanout service turns retired equipment from a liability into a recoverable asset, with each step documented for audit and compliance review.
                   </p>
                 </div>
 
@@ -254,7 +254,7 @@ export default function OfficeDevicesRisk() {
                     Storing old devices isn&apos;t a neutral decision. Every month equipment sits in a closet, value depreciates, data exposure compounds, and physical risks build all while professional disposition could turn the same equipment into recovered capital.
                   </p>
                   <p className="custom-text-center">
-                    IntegriTrade LLC has maintained a clean record with no history of data breach. When data security, compliance, and asset recovery all need to land in the same place, working with a certified ITAD partner is what makes that possible.
+                    Integritrade LLC has maintained a clean record with no history of data breach. When data security, compliance, and asset recovery all need to land in the same place, working with a certified ITAD partner is what makes that possible.
                   </p>
                 </div>
               </section>

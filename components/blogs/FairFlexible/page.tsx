@@ -22,7 +22,7 @@ export default function FairFlexibleCutlines() {
         <PageHeader
           eyebrow="Asset Recovery"
           title="Fair and Flexible ITAD Cutlines Based on Condition, Scope, and Reuse Potential"
-          description="Most providers retire devices by the calendar. IntegriTrade evaluates them by what they&apos;re actually worth, recovering meaningful value from assets others would scrap."
+          description="Most providers retire devices by the calendar. Integritrade evaluates them by what they&apos;re actually worth, recovering meaningful value from assets others would scrap."
         />
         </ScrollLoader>
 
@@ -67,7 +67,7 @@ export default function FairFlexibleCutlines() {
                 Most ITAD providers apply rigid age-based cutlines to retired equipment. A laptop crosses a four or five-year mark, gets stamped as scrap, and the residual value disappears with it. The approach is convenient for the provider and expensive for the client.
               </p>
               <p className="custom-text-center">
-                IntegriTrade takes a different position. Each device is evaluated on its actual configuration, condition, and current market demand rather than its calendar age. The result is meaningful value recovery from equipment that other providers wouldn&apos;t bother to assess.
+                Integritrade takes a different position. Each device is evaluated on its actual configuration, condition, and current market demand rather than its calendar age. The result is meaningful value recovery from equipment that other providers wouldn&apos;t bother to assess.
               </p>
             </div>
             </ScrollLoader>
@@ -93,7 +93,7 @@ export default function FairFlexibleCutlines() {
             <ScrollLoader>
             <section className="mb-16">
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                Standard Cutlines vs IntegriTrade&apos;s Approach
+                Standard Cutlines vs Integritrade&apos;s Approach
               </h2>
               <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-8 custom-text-center">
                 The difference between rigid and flexible cutlines becomes clear when you look at how each method handles the same retired fleet.
@@ -105,7 +105,7 @@ export default function FairFlexibleCutlines() {
                     <tr className="border-b border-gray-200 dark:border-gray-800">
                       <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Aspect</th>
                       <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Standard ITAD Providers</th>
-                      <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">IntegriTrade</th>
+                      <th className="px-6 py-4 text-sm font-semibold font-serif text-gray-900 dark:text-white">Integritrade</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 dark:divide-gray-800">
@@ -202,7 +202,7 @@ export default function FairFlexibleCutlines() {
                   Our zero-landfill commitment is built into the workflow rather than added as a marketing line. Devices that can be refurbished are given a second life through verified resale and redeployment channels. Equipment that genuinely reaches end-of-life is recycled responsibly under R2v3 standards, with materials recovered rather than discarded.
                 </p>
                 <p className="custom-text-center">
-                  Working with IntegriTrade reduces your organization&apos;s environmental footprint while maximizing the financial recovery from retired IT assets two outcomes that no longer have to be a trade-off.
+                  Working with Integritrade reduces your organization&apos;s environmental footprint while maximizing the financial recovery from retired IT assets two outcomes that no longer have to be a trade-off.
                 </p>
               </div>
             </section>
@@ -229,7 +229,7 @@ export default function FairFlexibleCutlines() {
             <ScrollLoader>
             <section className="mb-16">
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                Why Organizations Choose IntegriTrade
+                Why Organizations Choose Integritrade
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="custom-text-center">
@@ -330,7 +330,7 @@ export default function FairFlexibleCutlines() {
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-0">
                   <AccordionTrigger className="font-serif text-lg font-medium text-gray-900 dark:text-white text-left">
-                    What makes IntegriTrade&apos;s cutlines different?
+                    What makes Integritrade&apos;s cutlines different?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
@@ -397,7 +397,7 @@ export default function FairFlexibleCutlines() {
                   The cutline policy is one of the clearest signals of how an ITAD provider really operates. Rigid age-based cutoffs are easy to administer and hard to defend financially. Flexible, condition-driven evaluation takes more work and produces measurably better outcomes for the organization retiring the equipment.
                 </p>
                 <p className="custom-text-center">
-                  IntegriTrade is built around the second approach. Every device gets a real assessment, every settlement is transparent, and every project closes with the documentation your team needs. That&apos;s how retired IT becomes recovered value rather than written-off scrap.
+                  Integritrade is built around the second approach. Every device gets a real assessment, every settlement is transparent, and every project closes with the documentation your team needs. That&apos;s how retired IT becomes recovered value rather than written-off scrap.
                 </p>
               </div>
             </section>

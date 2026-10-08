@@ -289,7 +289,7 @@ export const fresnoData: ServiceArea = {
       "metaTitle": "Sell IT Equipment in Fresno | Buyback | Integritrade",
       "metaDescription": "Monetize retired IT hardware in Fresno. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
       "ctaText": "Get a Free Quote",
-      "image": itBuyback,
+      "image": corporateLaptops,
       "heroHeading": "Sell Your IT Equipment in Fresno: Get the Best Value with Secure, Certified Buyback",
       "heroSubheading": "When your Fresno business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [

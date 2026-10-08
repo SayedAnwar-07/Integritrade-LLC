@@ -85,6 +85,7 @@ const BLOG_SLUGS = [
   "bay-area-itad-electronics-recycling",
   "data-sanitization-best-practices-itad",
   "what-is-itad-it-asset-disposition",
+  "choosing-electronics-recycling-provider-bay-area",
 ] as const;
 
 export function generateStaticParams() {
@@ -132,6 +133,7 @@ const BLOG_COMPONENTS: Record<string, React.ReactElement> = {
   "bay-area-itad-electronics-recycling": <ArticleLayout article={getArticleBySlug("bay-area-itad-electronics-recycling")!} />,
   "data-sanitization-best-practices-itad": <ArticleLayout article={getArticleBySlug("data-sanitization-best-practices-itad")!} />,
   "what-is-itad-it-asset-disposition": <ArticleLayout article={getArticleBySlug("what-is-itad-it-asset-disposition")!} />,
+  "choosing-electronics-recycling-provider-bay-area": <ArticleLayout article={getArticleBySlug("choosing-electronics-recycling-provider-bay-area")!} />,
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

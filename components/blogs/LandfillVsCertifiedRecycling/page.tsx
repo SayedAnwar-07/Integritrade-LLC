@@ -242,15 +242,15 @@ export default function LandfillVsCertifiedRecycling() {
               </section>
             </ScrollLoader>
 
-            {/* Why Choose IntegriTrade */}
+            {/* Why Choose Integritrade */}
             <ScrollLoader>
               <section className="mb-16">
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                  Why Choose IntegriTrade LLC?
+                  Why Choose Integritrade LLC?
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                   <p className="custom-text-center">
-                    E-waste management isn&apos;t just a legal obligation it&apos;s a moral one. IntegriTrade adheres strictly to environmental standards and ensures every device handled goes through an environmentally responsible workflow from intake to final disposition.
+                    E-waste management isn&apos;t just a legal obligation it&apos;s a moral one. Integritrade adheres strictly to environmental standards and ensures every device handled goes through an environmentally responsible workflow from intake to final disposition.
                   </p>
                 </div>
 
@@ -293,7 +293,7 @@ export default function LandfillVsCertifiedRecycling() {
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                   <p className="custom-text-center">
-                    Looking for responsible e-waste recycling in San Francisco? IntegriTrade LLC provides certified electronics recycling services that ensure safe disposal of IT equipment without harming the environment.
+                    Looking for responsible e-waste recycling in San Francisco? Integritrade LLC provides certified electronics recycling services that ensure safe disposal of IT equipment without harming the environment.
                   </p>
                   <p className="custom-text-center">
                     Our R2v3-certified process focuses on zero landfill, resource recovery, and secure handling of all devices helping your organization reduce environmental impact while staying compliant with industry regulations.
@@ -345,7 +345,7 @@ export default function LandfillVsCertifiedRecycling() {
                     The choice between landfilling and certified recycling isn&apos;t just an operational decision. It&apos;s an environmental and ethical one. Every device an organization retires is an opportunity either to harm the environment or to keep recoverable materials in productive use and the difference is decided at the point of disposition, not afterward.
                   </p>
                   <p className="custom-text-center">
-                    IntegriTrade LLC has maintained a clean record with no history of data breach and operates a verified zero-landfill workflow. When data security and environmental responsibility both matter, they shouldn&apos;t be a trade-off and they don&apos;t have to be.
+                    Integritrade LLC has maintained a clean record with no history of data breach and operates a verified zero-landfill workflow. When data security and environmental responsibility both matter, they shouldn&apos;t be a trade-off and they don&apos;t have to be.
                   </p>
                 </div>
               </section>

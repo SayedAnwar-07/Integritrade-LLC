@@ -199,7 +199,7 @@ export default function UnderstandingITasset() {
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                   <p className="custom-text-center">
-                    Looking for secure IT asset disposition in San Francisco? IntegriTrade LLC helps businesses retire laptops, servers, storage devices, and network equipment through certified ITAD services focused on data security, compliance, and environmental responsibility.
+                    Looking for secure IT asset disposition in San Francisco? Integritrade LLC helps businesses retire laptops, servers, storage devices, and network equipment through certified ITAD services focused on data security, compliance, and environmental responsibility.
                   </p>
                   <p className="custom-text-center">
                     Our process includes asset decommissioning, NIST 800-88 compliant data sanitization, secure chain of custody, value recovery, and responsible recycling so your organization can reduce risk while maximizing the return on retired IT assets.

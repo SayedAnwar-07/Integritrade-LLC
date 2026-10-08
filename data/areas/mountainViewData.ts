@@ -16,7 +16,7 @@ export const mountainViewData: ServiceArea = {
   tagline: "Secure IT Asset Disposition, Data Destruction & E-Waste Recycling Services in Mountain View, CA",
   metaTitle: "Mountain View ITAD & Data Destruction | Integritrade",
   metaDescription: "Turnkey ITAD, certified hard drive shredding, and electronics recycling for Mountain View businesses. Value recovery and audit-ready CODs. Request a quote.",
-  intro: "IntegriTrade LLC delivers professional IT asset disposition (ITAD) services in Mountain View, CA, helping businesses securely manage retired IT equipment. Serving the heart of Silicon Valley, we support tech companies, startups, and enterprises with certified data destruction, hard drive shredding, e-waste recycling, and IT asset recovery. Our solutions ensure full compliance with California regulations, protect sensitive data, and promote environmentally responsible disposal while maximizing value from outdated devices.",
+  intro: "Integritrade LLC delivers professional IT asset disposition (ITAD) services in Mountain View, CA, helping businesses securely manage retired IT equipment. Serving the heart of Silicon Valley, we support tech companies, startups, and enterprises with certified data destruction, hard drive shredding, e-waste recycling, and IT asset recovery. Our solutions ensure full compliance with California regulations, protect sensitive data, and promote environmentally responsible disposal while maximizing value from outdated devices.",
 
   services: [
     {
@@ -289,7 +289,7 @@ export const mountainViewData: ServiceArea = {
       "metaTitle": "Sell IT Equipment in Mountain View | Buyback | Integritrade",
       "metaDescription": "Monetize retired IT hardware in Mountain View. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
       "ctaText": "Get a Free Quote",
-      "image": itBuyback,
+      "image": corporateLaptops,
       "heroHeading": "Sell Your IT Equipment in Mountain View: Get the Best Value with Secure, Certified Buyback",
       "heroSubheading": "When your Mountain View business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [

@@ -78,6 +78,7 @@ RewriteRule ^hard-drive-shredding-fresno/?$ /service-area/fresno/hard-drive-shre
 # /home/ is an image folder, not a route — directory listing returns 403.
 # Redirect the bare directory only, so /home/<file> keeps resolving.
 RewriteRule ^home/$ / [R=301,L]
+RewriteRule ^documents/sample-certificate-of-destruction\.pdf$ /documents/integritrade-sample-certificate-of-destruction.pdf [R=301,L]
 
 # ── Renamed blog posts ──
 RewriteRule ^blogs/why-choosing-an-r2-certified-recycler-matters/?$ /blogs/r2-certified-e-waste-recycling-services/ [R=301,L]

@@ -429,7 +429,7 @@ export default function ITADPolicyImportance() {
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="custom-text-center">
-                  Looking for secure IT asset disposition in San Francisco? IntegriTrade LLC provides certified ITAD services including data sanitization, secure logistics, asset tracking, and compliant electronics recycling for businesses of all sizes.
+                  Looking for secure IT asset disposition in San Francisco? Integritrade LLC provides certified ITAD services including data sanitization, secure logistics, asset tracking, and compliant electronics recycling for businesses of all sizes.
                 </p>
                 <p className="custom-text-center">
                   Our process ensures complete data protection, regulatory compliance (NIST 800-88, HIPAA, GDPR), and maximum value recovery through secure reuse and remarketing of IT assets.

@@ -247,7 +247,7 @@ export default function ZeroTrustITAD() {
                     A zero-trust security model remains incomplete without the disposal and decommissioning stages of IT assets. Genuine zero-trust requires full control and irrefutable proof of every step from a device&apos;s birth through its final disposition not just the parts of the lifecycle that are easy to monitor.
                   </p>
                   <p className="custom-text-center">
-                    IntegriTrade closes the last step of the zero-trust journey, where security and transparency stay aligned with the rest of the framework rather than quietly drifting away once devices leave active service.
+                    Integritrade closes the last step of the zero-trust journey, where security and transparency stay aligned with the rest of the framework rather than quietly drifting away once devices leave active service.
                   </p>
                 </div>
               </section>

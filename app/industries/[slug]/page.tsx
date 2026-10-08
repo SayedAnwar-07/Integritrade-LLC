@@ -1,10 +1,11 @@
 import { Metadata } from "next";
+import ExpertContactCard from "@/components/industries/ExpertContactCard";
 import { notFound } from "next/navigation";
 import { industriesData, getIndustryBySlug } from "@/data/industriesData";
 import Link from "next/link";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import { ChevronRight, Mail, Phone } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 import PageHeader from "@/components/shared/PageHeader";
 import SectionHeader from "@/components/shared/SectionHeader";
@@ -341,45 +342,7 @@ export default async function IndustryPage(
 
             <div className="lg:col-span-5">
 
-              <div className="bg-white dark:bg-dark-secondary rounded-md shadow-sm p-8 lg:p-10">
- {/* Header */}
-    <div className="mb-8">
-      <span className="block h-0.5 w-10 bg-emerald-700 dark:bg-emerald-400 mb-4" aria-hidden="true" />
-      <h3 className="font-serif text-2xl lg:text-[26px] font-semibold tracking-tight leading-tight text-stone-900 dark:text-white">
-        Direct Inquiries
-      </h3>
-      <div className="mt-5 h-px bg-gray-200 dark:bg-gray-700/60" />
-    </div>
-
-                <div className="space-y-7">
-
-                  <div className="flex items-start gap-4">
-
-                    <Phone className="h-4 w-4 text-emerald-700 dark:text-emerald-400 mt-1"/>
-
-                    <a href="tel:+15593254813" className="text-[15px] text-gray-800 dark:text-gray-100">
-                      (559)325-4813
-                    </a>
-
-                  </div>
-
-
-                  <div className="h-px bg-gray-200 dark:bg-gray-700/60"/>
-
-
-                  <div className="flex items-start gap-4">
-
-                    <Mail className="h-4 w-4 text-emerald-700 dark:text-emerald-400 mt-1"/>
-
-                    <a href="mailto:info@integritradeLLC.com" className="text-[15px] text-gray-800 dark:text-gray-100 break-all">
-                      <span data-nosnippet="">info@integritradeLLC.com</span>
-                    </a>
-
-                  </div>
-
-                </div>
-
-              </div>
+              <ExpertContactCard />
 
             </div>
 

@@ -16,7 +16,7 @@ export const torranceData: ServiceArea = {
   tagline: "Certified Electronics Disposal, Secure Data Destruction & Corporate IT Asset Management in Torrance, CA",
   metaTitle: "Torrance ITAD & Data Destruction | Integritrade",
   metaDescription: "Turnkey ITAD, certified hard drive shredding, and electronics recycling for Torrance businesses. Value recovery and audit-ready CODs. Request a quote.",
-  intro: "IntegriTrade LLC delivers certified electronics disposal and IT asset management services in Torrance, CA, helping enterprises, commercial offices, and green-tech companies retire outdated technology with confidence. Our offerings cover secure data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, tracked chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
+  intro: "Integritrade LLC delivers certified electronics disposal and IT asset management services in Torrance, CA, helping enterprises, commercial offices, and green-tech companies retire outdated technology with confidence. Our offerings cover secure data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, tracked chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
 
   services: [
     {
@@ -289,7 +289,7 @@ export const torranceData: ServiceArea = {
       "metaTitle": "Sell IT Equipment in Torrance | Buyback | Integritrade",
       "metaDescription": "Monetize retired IT hardware in Torrance. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
       "ctaText": "Get a Free Quote",
-      "image": itBuyback,
+      "image": corporateLaptops,
       "heroHeading": "Sell Your IT Equipment in Torrance: Get the Best Value with Secure, Certified Buyback",
       "heroSubheading": "When your Torrance business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [

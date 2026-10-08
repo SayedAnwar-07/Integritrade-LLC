@@ -6,6 +6,7 @@ import Nist80088Cover from "@/public/about/software-sanitization.jpg";
 import BayAreaCover from "@/public/industries/business-corporate.webp";
 import DataSanitizationCover from "@/public/blogs/data-sanitization-drive-handling.jpg";
 import WhatIsItadCover from "@/public/blogs/what-is-itad-guide.jpg";
+import ChoosingProviderCover from "@/public/blogs/choosing-electronics-recycling-provider-bay-area.jpg";
 import decommissionBanner from "@/public/blogs/decommission-computers.jpg";
 import videoTape from "@/public/blogs/video-tape.jpg";
 import rohsImage from "@/public/blogs/rohs-compliance.jpg";
@@ -95,7 +96,7 @@ export const AllBlogCards: BlogCard[] = [
   {
     image: HIPAA,
     title: "HIPAA Compliance in ITAD: Why Your Choice of Vendor is a Legal Necessity",
-    description: "Ensure HIPAA compliance with IntegriTrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
+    description: "Ensure HIPAA compliance with Integritrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
     date: "February 11, 2026",
     slug: "hipaa-compliant-itad-data-destruction-services",
   },
@@ -174,7 +175,7 @@ export const AllBlogCards: BlogCard[] = [
   {
     image: FairFlexible,
     title: "Fair and Flexible ITAD Cutlines Based on Device Condition, Scope, and Reuse Potential",
-    description: "Get more than just scrap value. IntegriTrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets.",
+    description: "Get more than just scrap value. Integritrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets.",
     date: "February 11, 2026",
     slug: "fair-flexible-itad-cutlines",
   },
@@ -333,9 +334,16 @@ export const AllBlogCards: BlogCard[] = [
   },
   {
     image: WhatIsItadCover,
-    title: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+    title: "What Is ITAD? A Complete Guide to IT Asset Disposition (2026)",
     description: "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
     date: "October 7, 2026",
     slug: "what-is-itad-it-asset-disposition",
+  },
+  {
+    image: ChoosingProviderCover,
+    title: "Choosing an Electronics Recycling Provider in the Bay Area: The Risk of the Wrong Vendor",
+    description: "Before choosing a Bay Area electronics recycling provider, verify its certifications, data destruction methods, chain of custody, and serialized certificates.",
+    date: "October 8, 2026",
+    slug: "choosing-electronics-recycling-provider-bay-area",
   },
 ];

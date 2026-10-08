@@ -404,7 +404,7 @@ export default function OurLocationsPage() {
                 2026-10-07). The drop-off card is Fresno-only. */}
             <div className="mt-14 md:mt-20">
               <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white mb-8">
-                Services at the Fresno facility
+                Services at the Fresno Facility
               </h3>
 
               <ServiceCards withDropOff />
@@ -412,7 +412,7 @@ export default function OurLocationsPage() {
 
             <div className="mt-14 md:mt-20">
               <h3 className="font-serif text-2xl leading-snug text-stone-900 dark:text-white">
-                Certifications and standards at this facility
+                Certifications and Standards at This Facility
               </h3>
 
               <p className="mt-3 max-w-2xl text-sm text-gray-600 dark:text-gray-400 leading-relaxed">

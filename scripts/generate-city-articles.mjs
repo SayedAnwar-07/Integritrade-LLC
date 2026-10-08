@@ -374,7 +374,7 @@ const IT_EQUIPMENT_BUYBACK = {
   shortDescription:
     "Sell your retired IT equipment in {{CITY}} through Integritrade's certified buyback program - secure, verifiable data destruction and recovered revenue instead of a hauling bill.",
   ctaText: "Get a Free Quote",
-  image: "__IMG_itBuyback__",
+  image: "__IMG_corporateLaptops__", // laptop fleet, not circuit boards (Ian, 2026-10-08)
   heroHeading:
     "Sell Your IT Equipment in {{CITY}}: Get the Best Value with Secure, Certified Buyback",
   heroSubheading:

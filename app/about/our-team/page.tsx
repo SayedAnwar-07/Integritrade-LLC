@@ -124,8 +124,8 @@ const people: Person[] = [
 const stats: Stat[] = [
   { value: "2023", label: "Founded" },
   { value: "R2v3 + 4 ISO", label: "Certifications" },
-  { value: "6,000+", label: "Research citations" },
-  { value: "100%", label: "In-house processing" },
+  { value: "6,000+", label: "Research Citations" },
+  { value: "100%", label: "In-House Data Destruction" },
 ];
 
 const HEADLINE = "Engineering Rigor. Executive Accountability.";
@@ -203,9 +203,11 @@ export default function OurTeamPage() {
                         Facility
                       </dt>
                       <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        944 S Topeka Ave
-                        <br />
-                        Fresno, CA 93721
+                        <a href="https://maps.app.goo.gl/foJtYrjryesSmFoG7" target="_blank" rel="noopener noreferrer" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                          944 S Topeka Ave
+                          <br />
+                          Fresno, CA 93721
+                        </a>
                       </dd>
                     </div>
                   </div>
@@ -217,7 +219,9 @@ export default function OurTeamPage() {
                         Direct Line
                       </dt>
                       <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        (559) 325-4813
+                        <a href="tel:+15593254813" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                          (559) 325-4813
+                        </a>
                       </dd>
                     </div>
                   </div>
@@ -228,8 +232,10 @@ export default function OurTeamPage() {
                       <dt className="mb-1 text-xs uppercase tracking-wider text-muted-foreground dark:text-gray-400">
                         Email
                       </dt>
-                      <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        <span data-nosnippet="">info@integritradeLLC.com</span>
+                      <dd className="text-sm text-stone-900 dark:text-gray-100 break-all">
+                        <a href="mailto:info@integritradeLLC.com" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                          <span data-nosnippet="">info@integritradeLLC.com</span>
+                        </a>
                       </dd>
                     </div>
                   </div>

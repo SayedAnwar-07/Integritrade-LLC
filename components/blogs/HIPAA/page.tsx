@@ -55,9 +55,9 @@ const contentBlocks = [
       "A Certificate of Data Destruction provides formal confirmation that data-bearing media was processed according to the agreed destruction method. For healthcare organizations, this documentation is a key part of HIPAA-ready IT asset disposition.",
   },
   {
-    title: "The IntegriTrade Difference",
+    title: "The Integritrade Difference",
     details:
-      "IntegriTrade treats ITAD as a security and compliance process, not just electronics recycling. Our workflow is built around controlled handling, certified destruction options, transparent reporting, and responsible recovery for assets that still hold value.",
+      "Integritrade treats ITAD as a security and compliance process, not just electronics recycling. Our workflow is built around controlled handling, certified destruction options, transparent reporting, and responsible recovery for assets that still hold value.",
   },
   {
     title: "Your ITAD Vendor Is a Security Partner",
@@ -190,7 +190,7 @@ export default function HIPAACompliance() {
                   HIPAA-compliant ITAD is about more than removing old equipment from a facility. It requires secure custody, verified destruction, and documentation that proves your organization handled PHI responsibly.
                 </p>
                 <p className="custom-text-center">
-                  By working with a certified ITAD provider like IntegriTrade, healthcare teams can reduce data exposure risk, support audit readiness, and retire assets with confidence.
+                  By working with a certified ITAD provider like Integritrade, healthcare teams can reduce data exposure risk, support audit readiness, and retire assets with confidence.
                 </p>
               </div>
             </section>

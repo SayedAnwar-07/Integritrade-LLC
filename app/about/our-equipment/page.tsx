@@ -69,7 +69,7 @@ const NAV_SECTIONS = [
   { id: "visit", label: "Site Visits" },
 ];
 
-const SAMPLE_COD = "/documents/sample-certificate-of-destruction.pdf";
+const SAMPLE_COD = "/documents/integritrade-sample-certificate-of-destruction.pdf";
 // A real Blancco erasure report from an iPhone, with the IMEI and serial
 // masked down to their last digits as Ian asked.
 const SAMPLE_COE = "/documents/sample-certificate-of-erasure.pdf";
@@ -408,9 +408,11 @@ export default function OurCapabilitiesPage() {
                               Facility
                             </dt>
                             <dd className="text-sm text-gray-900 dark:text-gray-100">
-                              944 S Topeka Ave
-                              <br />
-                              Fresno, CA 93721
+                              <a href="https://maps.app.goo.gl/foJtYrjryesSmFoG7" target="_blank" rel="noopener noreferrer" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                                944 S Topeka Ave
+                                <br />
+                                Fresno, CA 93721
+                              </a>
                             </dd>
                           </div>
                         </div>
@@ -422,7 +424,9 @@ export default function OurCapabilitiesPage() {
                               Direct Line
                             </dt>
                             <dd className="text-sm text-gray-900 dark:text-gray-100">
-                              (559) 325-4813
+                              <a href="tel:+15593254813" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                                (559) 325-4813
+                              </a>
                             </dd>
                           </div>
                         </div>
@@ -433,8 +437,10 @@ export default function OurCapabilitiesPage() {
                             <dt className="mb-1 text-xs uppercase tracking-wider text-muted-foreground dark:text-gray-400">
                               Email
                             </dt>
-                            <dd className="text-sm text-gray-900 dark:text-gray-100">
-                              <span data-nosnippet="">info@integritradeLLC.com</span>
+                            <dd className="text-sm text-gray-900 dark:text-gray-100 break-all">
+                              <a href="mailto:info@integritradeLLC.com" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                                <span data-nosnippet="">info@integritradeLLC.com</span>
+                              </a>
                             </dd>
                           </div>
                         </div>

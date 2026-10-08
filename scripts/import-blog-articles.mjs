@@ -122,9 +122,28 @@ const CONFIG = {
       "Stacks of retired laptops on a roller conveyor in an ITAD warehouse, with technicians testing equipment at workstations behind them",
     date: "October 7, 2026",
     dateISO: "2026-10-07",
-    seoTitle: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+    seoTitle: "What Is ITAD? A Complete Guide to IT Asset Disposition (2026)",
     metaDescription:
       "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
+  },
+  // Supplied 2026-10-08 as a .docx (no SEO title, description or image).
+  // Converted like the What Is ITAD one: its five citations were links on a
+  // bare "1" to "5" and become plain [n] markers. Its References heading was
+  // followed by a "Direct source links" list, whose labels are used as the
+  // References labels. Section headings were put in Title Case. Cover: a
+  // centre 16:9 crop of public/hardwareHandling.jpeg at its native 948px width.
+  "choosing-electronics-recycling-provider-bay-area": {
+    file: "Choosing an Electronics Recycling Provider in the Bay Area_ The Risk of the Wrong Vendor.md",
+    image: "ChoosingProviderCover",
+    imagePath: "blogs/choosing-electronics-recycling-provider-bay-area.jpg",
+    category: "Vendor Selection",
+    imageAlt:
+      "Workers in safety vests sorting electronic waste into bins on a conveyor line at an electronics recycling facility",
+    date: "October 8, 2026",
+    dateISO: "2026-10-08",
+    seoTitle: "Choosing an Electronics Recycling Provider in the Bay Area: The Risk of the Wrong Vendor",
+    metaDescription:
+      "Before choosing a Bay Area electronics recycling provider, verify its certifications, data destruction methods, chain of custody, and serialized certificates.",
   },
 };
 

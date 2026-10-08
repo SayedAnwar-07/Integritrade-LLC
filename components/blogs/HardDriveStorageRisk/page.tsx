@@ -274,7 +274,7 @@ export default function HardDriveStorageRisk() {
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
-                      A certified ITAD partner like IntegriTrade combines serial-number tracking, certified data destruction, sealed chain of custody, and value recovery in a single workflow eliminating data breach exposure, compliance gaps, asset depreciation, and physical hazards simultaneously.
+                      A certified ITAD partner like Integritrade combines serial-number tracking, certified data destruction, sealed chain of custody, and value recovery in a single workflow eliminating data breach exposure, compliance gaps, asset depreciation, and physical hazards simultaneously.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -293,7 +293,7 @@ export default function HardDriveStorageRisk() {
                   Old hard drives are not harmless artifacts of past hardware refreshes. Every drive in storage is an open data breach window, a slowly eroding financial asset, and a quiet compliance liability. The longer they stay on the shelf, the worse each of those problems gets.
                 </p>
                 <p className="custom-text-center">
-                  Certified recycling closes the entire risk profile in a single workflow. IntegriTrade LLC has maintained a clean record with no history of data breach. When data security and asset value both matter, they shouldn&apos;t be a trade-off and they don&apos;t have to be.
+                  Certified recycling closes the entire risk profile in a single workflow. Integritrade LLC has maintained a clean record with no history of data breach. When data security and asset value both matter, they shouldn&apos;t be a trade-off and they don&apos;t have to be.
                 </p>
               </div>
             </section>

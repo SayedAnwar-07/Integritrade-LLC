@@ -16,7 +16,7 @@ export const milpitasData: ServiceArea = {
   tagline: "Professional Electronics Disposal, Reliable Data Destruction & Corporate IT Asset Management in Milpitas, CA",
   metaTitle: "Milpitas ITAD & Data Destruction | Integritrade",
   metaDescription: "Turnkey ITAD, certified hard drive shredding, and electronics recycling for Milpitas businesses. Value recovery and audit-ready CODs. Request a quote.",
-  intro: "IntegriTrade LLC delivers professional electronics disposal and IT asset management services in Milpitas, CA, helping enterprises retire outdated technology with confidence. Our offerings cover thorough data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory adherence, tracked chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
+  intro: "Integritrade LLC delivers professional electronics disposal and IT asset management services in Milpitas, CA, helping enterprises retire outdated technology with confidence. Our offerings cover thorough data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory adherence, tracked chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
 
   services: [
     {
@@ -289,7 +289,7 @@ export const milpitasData: ServiceArea = {
       "metaTitle": "Sell IT Equipment in Milpitas | Buyback | Integritrade",
       "metaDescription": "Monetize retired IT hardware in Milpitas. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
       "ctaText": "Get a Free Quote",
-      "image": itBuyback,
+      "image": corporateLaptops,
       "heroHeading": "Sell Your IT Equipment in Milpitas: Get the Best Value with Secure, Certified Buyback",
       "heroSubheading": "When your Milpitas business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [

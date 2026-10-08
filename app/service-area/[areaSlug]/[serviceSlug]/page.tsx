@@ -43,7 +43,7 @@ export async function generateMetadata({
 
   if (!data) {
     return {
-      title: "Service Not Found | IntegriTrade",
+      title: "Service Not Found | Integritrade",
       description: "The requested service page could not be found.",
     };
   }
@@ -91,7 +91,7 @@ const SERVICE_OG: Record<string, string> = {
   "certificates-of-destruction": "services/data-destruction-services.jpg",
   "hard-drive-shredding": "services/data-destruction-services.jpg",
   "it-asset-disposition": "services/it-asset-disposition.jpg",
-  "asset-recovery": "services/it-asset-disposition.jpg",
+  "asset-recovery": "industries/business-corporate.jpg",
   "sell-used-apple-equipment": "services/it-asset-disposition.jpg",
   "data-center-decommissioning": "services.jpg",
   "basic-electronics-recycling": "services/secure-electronics-recycling.jpg",
@@ -185,7 +185,7 @@ export default async function ServicePage({ params }: PageProps) {
               <div className="relative mt-10 h-[300px] w-full overflow-hidden rounded-md shadow-md sm:h-[380px] md:h-[450px]">
                 <Image
                   src={service.image}
-                  alt={`${service.title} in ${area.name} | IntegriTrade LLC`}
+                  alt={`${service.title} in ${area.name} | Integritrade LLC`}
                   fill
                   priority
                   sizes="(max-width: 1023px) 100vw, calc(100vw - 440px)"

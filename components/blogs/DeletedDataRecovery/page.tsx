@@ -201,15 +201,15 @@ export default function DeletedDataRecovery() {
             </section>
             </ScrollLoader>
 
-            {/* Section 5 - How IntegriTrade Works */}
+            {/* Section 5 - How Integritrade Works */}
             <ScrollLoader>
             <section className="mb-16">
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                How IntegriTrade LLC Closes Every Recovery Path
+                How Integritrade LLC Closes Every Recovery Path
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="custom-text-center">
-                  Data destruction should be transparent, verifiable, and audit-ready by default. The IntegriTrade workflow is built around exactly that principle and goes well beyond simple recycling.
+                  Data destruction should be transparent, verifiable, and audit-ready by default. The Integritrade workflow is built around exactly that principle and goes well beyond simple recycling.
                 </p>
               </div>
 
@@ -261,7 +261,7 @@ export default function DeletedDataRecovery() {
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="custom-text-center">
-                  Looking for certified data destruction in San Francisco? IntegriTrade LLC offers secure hard drive shredding, NIST 800-88 compliant data erasure, and complete IT asset disposition (ITAD) solutions to safeguard your sensitive business data.
+                  Looking for certified data destruction in San Francisco? Integritrade LLC offers secure hard drive shredding, NIST 800-88 compliant data erasure, and complete IT asset disposition (ITAD) solutions to safeguard your sensitive business data.
                 </p>
                 <p className="custom-text-center">
                   From on-site shredding to compliant data wiping, our process ensures zero data recovery risk, full regulatory compliance, and audit-ready reporting with COE and COD.
@@ -332,11 +332,11 @@ export default function DeletedDataRecovery() {
 
                 <AccordionItem value="item-4">
                   <AccordionTrigger className="font-serif text-lg font-medium text-gray-900 dark:text-white text-left">
-                    How is IntegriTrade different from formatting devices in-house?
+                    How is Integritrade different from formatting devices in-house?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-                      IntegriTrade follows NIST 800-88 certified sanitization, maintains a sealed chain of custody from collection to final disposition, and provides verifiable documentation including a Certificate of Erasure and a full inventory report. In-house formatting offers none of these protections and leaves organizations exposed.
+                      Integritrade follows NIST 800-88 certified sanitization, maintains a sealed chain of custody from collection to final disposition, and provides verifiable documentation including a Certificate of Erasure and a full inventory report. In-house formatting offers none of these protections and leaves organizations exposed.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -355,7 +355,7 @@ export default function DeletedDataRecovery() {
                   When an internal IT team or local shop says &ldquo;everything is deleted,&rdquo; that reassurance alone isn&apos;t sufficient. What you actually need is a Certificate of Erasure that proves sanitization was completed to a certified standard. Without it, the legal, financial, and reputational risk stays on your books.
                 </p>
                 <p className="custom-text-center">
-                  IntegriTrade LLC doesn&apos;t just delete data; we destroy it scientifically and document every step so that recovery isn&apos;t a possibility, no matter who tries or what tools they use.
+                  Integritrade LLC doesn&apos;t just delete data; we destroy it scientifically and document every step so that recovery isn&apos;t a possibility, no matter who tries or what tools they use.
                 </p>
               </div>
             </section>

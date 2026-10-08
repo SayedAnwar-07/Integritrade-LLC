@@ -1223,3 +1223,43 @@
     animation: none;
   }
 }
+
+/* TraceTech portal walkthrough on the About page (components/about/
+   TraceTechAnimation.tsx): screens and rows sliding in, and the cursor's click
+   halo. The component never animates with reduced motion; it shows the
+   finished dashboard instead. */
+@keyframes tt-ripple {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.15);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+@keyframes tt-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* TraceTech outro: each word of the tagline sharpens into place. */
+@keyframes tt-word {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: none;
+  }
+}

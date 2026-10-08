@@ -22,7 +22,7 @@ import Image from "next/image"
 import itadWarehouse from "@/public/about/itadWarehouse.jpeg"
 import itadAssemblyLine from "@/public/about/itadAssemblyLine.webp"
 import recyclingWarehouse from "@/public/services/serviceArea/electronicRecyclingWarehouse.jpeg"
-import tracetech from "@/public/about/Integritrade_Tracetech_AI_ERP.png"
+import TraceTechAnimation from "@/components/about/TraceTechAnimation"
 import ScrollLoader from "@/components/shared/ScrollLoader"
 import OutlineButton from "@/components/shared/buttons/OutlineButton"
 import PrimaryButton from "@/components/shared/buttons/PrimaryButton"
@@ -329,7 +329,7 @@ export default function AboutPage() {
               </h1>
 
               <p className="mt-7 max-w-xl text-lg leading-8 text-stone-700 dark:text-slate-300">
-                Most ITAD failures happen because providers rely on manual notes,
+                Many ITAD failures happen because providers rely on manual notes,
                 paper clipboards, and human memory. Integritrade replaces manual
                 guesswork with proprietary software automation, eliminating
                 processing errors, safeguarding enterprise data, and delivering
@@ -444,17 +444,11 @@ export default function AboutPage() {
             </div>
           </ScrollLoader>
 
-          {/* Screenshot showcase */}
+          {/* Animated portal preview (Ian, 2026-10-08), in place of the
+              static login screenshot */}
           <ScrollLoader delay={0.1}>
             <div className="mx-auto mt-12 max-w-5xl lg:mt-16">
-              <Image
-                src={tracetech}
-                alt="Integritrade TraceTech AI ERP platform providing ITAD asset visibility, control, and reporting"
-                className="h-auto w-full"
-                sizes="(max-width: 1024px) 100vw, 1024px"
-                quality={100}
-                placeholder="blur"
-              />
+              <TraceTechAnimation />
             </div>
           </ScrollLoader>
         </div>
@@ -686,9 +680,11 @@ export default function AboutPage() {
                         Facility
                       </dt>
                       <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        944 S Topeka Ave
-                        <br />
-                        Fresno, CA 93721
+                        <a href="https://maps.app.goo.gl/foJtYrjryesSmFoG7" target="_blank" rel="noopener noreferrer" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                          944 S Topeka Ave
+                          <br />
+                          Fresno, CA 93721
+                        </a>
                       </dd>
                     </div>
                   </div>
@@ -700,7 +696,9 @@ export default function AboutPage() {
                         Direct Line
                       </dt>
                       <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        (559) 325-4813
+                        <a href="tel:+15593254813" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                          (559) 325-4813
+                        </a>
                       </dd>
                     </div>
                   </div>
@@ -711,8 +709,10 @@ export default function AboutPage() {
                       <dt className="mb-1 text-xs uppercase tracking-wider text-muted-foreground dark:text-gray-400">
                         Email
                       </dt>
-                      <dd className="text-sm text-stone-900 dark:text-gray-100">
-                        <span data-nosnippet="">info@integritradeLLC.com</span>
+                      <dd className="text-sm text-stone-900 dark:text-gray-100 break-all">
+                        <a href="mailto:info@integritradeLLC.com" className="rounded-sm transition-colors hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600 dark:hover:text-[#34d399]">
+                          <span data-nosnippet="">info@integritradeLLC.com</span>
+                        </a>
                       </dd>
                     </div>
                   </div>

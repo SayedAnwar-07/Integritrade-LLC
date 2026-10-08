@@ -16,7 +16,7 @@ export const sunnyvaleData: ServiceArea = {
   tagline: "Certified Electronics Disposal, Secure Data Destruction & Corporate IT Resource Management in Sunnyvale, CA",
   metaTitle: "Sunnyvale ITAD & Data Destruction | Integritrade",
   metaDescription: "Turnkey ITAD, certified hard drive shredding, and electronics recycling for Sunnyvale businesses. Value recovery and audit-ready CODs. Request a quote.",
-  intro: "IntegriTrade LLC delivers professional electronics disposal and IT resource management services in Sunnyvale, CA, helping enterprises securely retire outdated technology. Our offerings cover certified data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, secure chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
+  intro: "Integritrade LLC delivers professional electronics disposal and IT resource management services in Sunnyvale, CA, helping enterprises securely retire outdated technology. Our offerings cover certified data destruction, hard drive shredding, sustainable electronics processing, and asset value recovery to maximize returns from legacy devices. Every engagement is backed by full regulatory compliance, secure chain-of-custody handling, and environmentally responsible disposal tailored to your organization's needs.",
 
   services: [
     {
@@ -289,7 +289,7 @@ export const sunnyvaleData: ServiceArea = {
       "metaTitle": "Sell IT Equipment in Sunnyvale | Buyback | Integritrade",
       "metaDescription": "Monetize retired IT hardware in Sunnyvale. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
       "ctaText": "Get a Free Quote",
-      "image": itBuyback,
+      "image": corporateLaptops,
       "heroHeading": "Sell Your IT Equipment in Sunnyvale: Get the Best Value with Secure, Certified Buyback",
       "heroSubheading": "When your Sunnyvale business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [

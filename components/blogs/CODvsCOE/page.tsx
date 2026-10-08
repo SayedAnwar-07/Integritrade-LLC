@@ -345,11 +345,11 @@ export default function CODvsCOE() {
 
                 <AccordionItem value="item-4">
                   <AccordionTrigger className="text-lg font-medium text-gray-900 dark:text-white text-left">
-                    Does IntegriTrade LLC provide COD, COE, or both?
+                    Does Integritrade LLC provide COD, COE, or both?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
-                      IntegriTrade LLC provides software-generated COEs and professional CODs for every device processed. Our double-layer protection approach (digital wipe followed by physical shredding where required) ensures your data sanitization is both secure and audit-friendly.
+                      Integritrade LLC provides software-generated COEs and professional CODs for every device processed. Our double-layer protection approach (digital wipe followed by physical shredding where required) ensures your data sanitization is both secure and audit-friendly.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -361,11 +361,11 @@ export default function CODvsCOE() {
             <ScrollLoader>
             <section>
               <h2 className="text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight font-serif">
-                Why IntegriTrade LLC?
+                Why Integritrade LLC?
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="custom-text-center">
-                  Would you trust your organization&apos;s critical data to a single paper Certificate of Destruction? At IntegriTrade LLC, every device receives a software-generated COE and a professional COD, giving you both verifiable digital proof and physical disposition records under one process.
+                  Would you trust your organization&apos;s critical data to a single paper Certificate of Destruction? At Integritrade LLC, every device receives a software-generated COE and a professional COD, giving you both verifiable digital proof and physical disposition records under one process.
                 </p>
                 <p className="custom-text-center">
                   Transparent workflows, certified tools, and a zero-data-breach record are what set our program apart. When data security is the priority, the choice of ITAD partner is just as important as the certificates they produce.

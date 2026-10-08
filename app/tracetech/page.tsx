@@ -189,7 +189,7 @@ const SHOWCASE: {
     h: 739,
     title: "Certificates of Destruction & Erasure",
     desc: "Never wait on audit paperwork. Export serialized asset-level certificates or full batch summaries directly from your portal as soon as data sanitization is verified.",
-    linkHref: "/documents/sample-certificate-of-destruction.pdf",
+    linkHref: "/documents/integritrade-sample-certificate-of-destruction.pdf",
     linkText: "View a Sample Certificate of Destruction",
   },
 ];
@@ -357,8 +357,7 @@ export default function TraceTechPage() {
                     A closer look at the client experience.
                   </h2>
                   <p className="mt-6 text-[16px] leading-relaxed text-stone-600 dark:text-slate-300">
-                    Real views from the TraceTech client portal, shown with test data only. No
-                    customer information.
+                    Real views from the TraceTech client portal, shown with sample data.
                   </p>
                 </div>
               </ScrollLoader>

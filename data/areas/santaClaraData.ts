@@ -16,7 +16,7 @@ export const santaClaraData: ServiceArea = {
   tagline: "Certified Electronics Disposal, Secure Data Destruction & Data-Center IT Asset Disposition in Santa Clara, CA",
   metaTitle: "Santa Clara ITAD & Data Destruction | Integritrade",
   metaDescription: "Turnkey ITAD, certified hard drive shredding, and electronics recycling for Santa Clara businesses. Value recovery and audit-ready CODs. Request a quote.",
-  intro: "IntegriTrade LLC provides certified electronics disposal and IT asset disposition services in Santa Clara, CA, supporting data centers, colocation facilities, semiconductor firms, and corporate tech offices through large-scale hardware retirement. Our work spans secure data destruction, hard drive shredding, high-density server and rack decommissioning, and asset value recovery on surplus equipment. Every project runs on a tracked chain of custody, meets California's regulatory requirements in full, and closes with audit-ready documentation built for the security and compliance standards Silicon Valley operators demand.",
+  intro: "Integritrade LLC provides certified electronics disposal and IT asset disposition services in Santa Clara, CA, supporting data centers, colocation facilities, semiconductor firms, and corporate tech offices through large-scale hardware retirement. Our work spans secure data destruction, hard drive shredding, high-density server and rack decommissioning, and asset value recovery on surplus equipment. Every project runs on a tracked chain of custody, meets California's regulatory requirements in full, and closes with audit-ready documentation built for the security and compliance standards Silicon Valley operators demand.",
 
   services: [
     {
@@ -289,7 +289,7 @@ export const santaClaraData: ServiceArea = {
       "metaTitle": "Sell IT Equipment in Santa Clara | Buyback | Integritrade",
       "metaDescription": "Monetize retired IT hardware in Santa Clara. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
       "ctaText": "Get a Free Quote",
-      "image": itBuyback,
+      "image": corporateLaptops,
       "heroHeading": "Sell Your IT Equipment in Santa Clara: Get the Best Value with Secure, Certified Buyback",
       "heroSubheading": "When your Santa Clara business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [

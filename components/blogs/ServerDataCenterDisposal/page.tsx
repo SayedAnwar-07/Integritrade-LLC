@@ -248,15 +248,15 @@ export default function ServerDataCenterDisposal() {
               </section>
             </ScrollLoader>
 
-            {/* How IntegriTrade Works */}
+            {/* How Integritrade Works */}
             <ScrollLoader>
               <section className="mb-16">
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                  How IntegriTrade Handles Data Center Decommissioning
+                  How Integritrade Handles Data Center Decommissioning
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                   <p className="custom-text-center">
-                    IntegriTrade operates a specialized team built for large-scale data center decommissioning projects, from initial inventory through final reporting.
+                    Integritrade operates a specialized team built for large-scale data center decommissioning projects, from initial inventory through final reporting.
                   </p>
                 </div>
 
@@ -335,7 +335,7 @@ export default function ServerDataCenterDisposal() {
                     Decommissioning a data center without a structured plan puts data, finances, and compliance standing at serious risk simultaneously. Every retired server is either a liability or an opportunity, and the difference is decided entirely by how the disposition is handled not by the equipment itself.
                   </p>
                   <p className="custom-text-center">
-                    IntegriTrade LLC has maintained a clean record with no history of data breach. When data security, asset value, and environmental responsibility all need to land in the same place, working with a certified ITAD partner is what makes that possible at the scale data center retirement actually requires.
+                    Integritrade LLC has maintained a clean record with no history of data breach. When data security, asset value, and environmental responsibility all need to land in the same place, working with a certified ITAD partner is what makes that possible at the scale data center retirement actually requires.
                   </p>
                 </div>
               </section>

@@ -5,6 +5,14 @@ import emailjs from '@emailjs/browser'
 import toast from 'react-hot-toast'
 import { AlertCircle, Loader2, Send } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
+
+import Iso9001 from '@/public/ISO/ISO-9001.png'
+import Iso14001 from '@/public/ISO/ISO-14001.png'
+import Iso27001 from '@/public/ISO/ISO-27001.png'
+import Iso45001 from '@/public/ISO/ISO-45001.png'
+import R2v3 from '@/public/ISO/R2V3_certified_logo.png'
+import Nist from '@/public/ISO/nist-800-88.png'
 
 import {
   Select,
@@ -53,7 +61,18 @@ const inputBorder = (hasError?: boolean) =>
 const labelClass =
   'block text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-2'
 
-export default function ConsultationForm({ industry }: { industry?: string }) {
+// Mini certification row for the bottom of the card (blog articles, Ian
+// 2026-10-08).
+const CERT_BADGES = [
+  { img: R2v3, name: 'R2v3' },
+  { img: Iso9001, name: 'ISO 9001' },
+  { img: Iso14001, name: 'ISO 14001' },
+  { img: Iso45001, name: 'ISO 45001' },
+  { img: Iso27001, name: 'ISO 27001' },
+  { img: Nist, name: 'NIST SP 800-88' },
+]
+
+export default function ConsultationForm({ industry, showCerts = false }: { industry?: string; showCerts?: boolean }) {
   const [data, setData] = useState<Fields>(INITIAL)
   const [errors, setErrors] = useState<Partial<Record<keyof Fields, string>>>({})
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -312,6 +331,23 @@ export default function ConsultationForm({ industry }: { industry?: string }) {
           process your service request.
         </p>
       </form>
+
+      {showCerts && (
+        <Link
+          href="/certifications/"
+          aria-label="View our certifications"
+          className="mt-5 block rounded-sm border-t border-gray-200 pt-4 dark:border-gray-700/60"
+        >
+          <span className="block text-center text-[11px] font-medium text-gray-500 dark:text-gray-400">
+            Certified and independently audited
+          </span>
+          <span className="mt-3 grid grid-cols-6 items-center gap-2">
+            {CERT_BADGES.map(({ img, name }) => (
+              <Image key={name} src={img} alt={name} className="mx-auto h-9 w-auto object-contain" />
+            ))}
+          </span>
+        </Link>
+      )}
     </div>
   )
 }

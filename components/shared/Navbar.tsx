@@ -4,9 +4,14 @@ import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 import integritradeLogo from "@/public/logo/integritrade-logo.svg"
 import tracetechCurved from "@/public/nav/tracetech-curved.webp"
+// Photos behind the intro column of the Services, Industries and About panels.
+// The Industries one is a free Unsplash photo (photo-1692468459903-28803629b68e).
+import servicesPanel from "@/public/nav/services-panel.webp"
+import industriesPanel from "@/public/nav/industries-panel.webp"
+import aboutPanel from "@/public/nav/about-panel.webp"
 
 import {
   ChevronDown,
@@ -45,7 +50,7 @@ interface NavItem {
   label: string
   dropdown?: Array<{ href: string; label: string; icon?: React.ComponentType<any> }>
   /** Intro column of the wide dropdown panel (desktop). */
-  intro?: { title: string; text: string; cta: { label: string; href: string } }
+  intro?: { title: string; text: string; image: StaticImageData; cta: { label: string; href: string } }
 }
 
 /* Dropdown icons are one neutral colour that turns brand green on hover or
@@ -77,6 +82,9 @@ const isSubItemActive = (
 function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
+  // The panel photo is only requested once the menu has been opened, so it
+  // adds nothing to pages where nobody hovers the menu.
+  const [opened, setOpened] = useState(false)
   const wrapperRef = useRef<HTMLDivElement | null>(null)
 
   useEffect(() => {
@@ -87,7 +95,10 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
     <div
       ref={wrapperRef}
       className="flex items-center"
-      onMouseEnter={() => setOpen(true)}
+      onMouseEnter={() => {
+        setOpen(true)
+        setOpened(true)
+      }}
       onMouseLeave={() => setOpen(false)}
     >
       <Link
@@ -108,7 +119,7 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
       {/* Hover panel, styled after the TraceTech panel (Ian, 2026-10-07): an
           intro column and the links. Positioned against the <nav> (this
           wrapper is not positioned), centred under the whole menu, so the
-          760px panel stays on screen at 1024px and its top padding bridges
+          780px panel stays on screen at 1024px and its top padding bridges
           the gap under every menu item. */}
       <div
         className={`absolute top-full left-1/2 -translate-x-1/2 pt-3 z-50 transition-all duration-200 ${
@@ -117,24 +128,43 @@ function DesktopDropdown({ item, isActive, registerRef }: DesktopDropdownProps) 
             : 'opacity-0 -translate-y-1 pointer-events-none'
         }`}
       >
-        <div className="w-[760px] overflow-hidden rounded-xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
-          <div className="grid grid-cols-[250px_1fr]">
+        <div className="w-[780px] overflow-hidden rounded-xl border border-gray-200/70 dark:border-white/10 bg-white dark:bg-dark-secondary shadow-[0_20px_45px_rgba(0,0,0,0.12)]">
+          <div className="grid min-h-[340px] grid-cols-[270px_1fr]">
+            {/* Photo card (Ian, 2026-10-08): the image fills the column and a
+                navy gradient keeps the copy readable, echoing the TraceTech
+                panel's image side. */}
             {item.intro && (
-              <div className="flex flex-col justify-center border-r border-gray-200/70 bg-gray-50/80 p-6 dark:border-white/10 dark:bg-white/[0.03]" data-nosnippet>
-                <h3 className="font-serif text-[20px] font-semibold leading-tight text-gray-900 dark:text-white">
-                  {item.intro.title}
-                </h3>
-                <p className="mt-2.5 text-[13px] leading-6 text-gray-600 dark:text-gray-300">
-                  {item.intro.text}
-                </p>
-                <div className="mt-5">
-                  <Link
-                    href={item.intro.cta.href}
-                    className="group/cta inline-flex items-center gap-2 rounded-md border border-primary px-4 py-2.5 text-[13px] font-semibold text-primary transition-all duration-300 hover:bg-primary hover:text-white click-feel"
-                  >
-                    {item.intro.cta.label}
-                    <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/cta:translate-x-0.5" />
-                  </Link>
+              <div className="relative flex flex-col justify-end overflow-hidden bg-[#0f2b46] p-6" data-nosnippet>
+                {opened && (
+                  <Image
+                    src={item.intro.image}
+                    alt=""
+                    fill
+                    sizes="270px"
+                    className="object-cover"
+                  />
+                )}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 bg-gradient-to-t from-[#0b2236] via-[#0b2236]/80 to-[#0b2236]/10"
+                />
+
+                <div className="relative">
+                  <h3 className="font-serif text-[20px] font-semibold leading-tight text-white">
+                    {item.intro.title}
+                  </h3>
+                  <p className="mt-2.5 text-[13px] leading-6 text-white/85">
+                    {item.intro.text}
+                  </p>
+                  <div className="mt-5">
+                    <Link
+                      href={item.intro.cta.href}
+                      className="group/cta inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2.5 text-[13px] font-semibold text-white transition-all duration-300 hover:bg-primary/90 click-feel"
+                    >
+                      {item.intro.cta.label}
+                      <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover/cta:translate-x-0.5" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             )}
@@ -409,8 +439,9 @@ export default function Navbar() {
       href: '/services',
       label: 'Services',
       intro: {
-        title: 'ITAD and data destruction services',
+        title: 'ITAD and Data Destruction Services',
         text: 'Secure electronics recycling, certified data destruction, and full IT asset disposition, with serialized reporting available.',
+        image: servicesPanel,
         cta: { label: 'View All Services', href: '/services/' },
       },
       dropdown: [
@@ -427,8 +458,9 @@ export default function Navbar() {
       href: '/industries',
       label: 'Industries',
       intro: {
-        title: 'Industries we serve',
+        title: 'Industries We Serve',
         text: 'ITAD programs built around the compliance rules each sector answers to, from HIPAA and GLBA to FERPA and government standards.',
+        image: industriesPanel,
         cta: { label: 'View All Industries', href: '/industries/' },
       },
       dropdown: [
@@ -449,10 +481,11 @@ export default function Navbar() {
       intro: {
         title: 'About Integritrade',
         text: 'R2v3 and ISO-certified ITAD from our 30,000 sq ft, 24/7 video-monitored facility in Fresno, California.',
+        image: aboutPanel,
         cta: { label: 'Learn About Us', href: '/about/' },
       },
       dropdown: [
-        { href: '/about/', label: 'About IntegriTrade', icon: Info },
+        { href: '/about/', label: 'About Integritrade', icon: Info },
         { href: '/about/our-team', label: 'Our Team', icon: Users },
         { href: '/about/our-equipment', label: 'Our Data Destruction Methods', icon: ShieldCheck },
         { href: '/about/our-locations',label: 'Our Locations',icon: MapPin },

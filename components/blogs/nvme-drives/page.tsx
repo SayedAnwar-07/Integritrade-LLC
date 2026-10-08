@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "Why use a certified data destruction company?",
     answer:
-      "Certified providers like IntegriTrade maintain full chain of custody, follow R2v3 and Appendix B standards, and issue Certificates of Destruction. The combination ensures compliance, security, and audit readiness that internal handling can\u2019t produce.",
+      "Certified providers like Integritrade maintain full chain of custody, follow R2v3 and Appendix B standards, and issue Certificates of Destruction. The combination ensures compliance, security, and audit readiness that internal handling can\u2019t produce.",
   },
   {
     question: "Can destroyed NVMe drives still be recovered?",
@@ -259,7 +259,7 @@ export default function NvmeDrives() {
                       Irreversible physical destruction
                     </h3>
                     <p className="custom-text-center text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Industrial shredders and pulverizers reduce drives to particle sizes small enough to destroy NAND chips, controllers, and the hidden over-provisioned memory along with everything else. IntegriTrade shreds drives to a 3mm particle size, ensuring complete irrecoverability across the entire device including the blocks that defeated software methods.
+                      Industrial shredders and pulverizers reduce drives to particle sizes small enough to destroy NAND chips, controllers, and the hidden over-provisioned memory along with everything else. Integritrade shreds drives to a 3mm particle size, ensuring complete irrecoverability across the entire device including the blocks that defeated software methods.
                     </p>
                   </div>
 
@@ -275,15 +275,15 @@ export default function NvmeDrives() {
               </section>
             </ScrollLoader>
 
-            {/* IntegriTrade Certified */}
+            {/* Integritrade Certified */}
             <ScrollLoader>
               <section className="mb-16">
                 <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                  IntegriTrade: R2v3 and Appendix B Certified
+                  Integritrade: R2v3 and Appendix B Certified
                 </h2>
                 <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                   <p className="custom-text-center">
-                    IntegriTrade operates a destruction program built specifically to handle the challenges that NVMe and modern flash media create. The certifications and operational model align directly with what regulated industries actually need from a destruction partner.
+                    Integritrade operates a destruction program built specifically to handle the challenges that NVMe and modern flash media create. The certifications and operational model align directly with what regulated industries actually need from a destruction partner.
                   </p>
                 </div>
 
@@ -378,7 +378,7 @@ export default function NvmeDrives() {
                     NVMe drives are difficult to sanitize because of wear-leveling, hidden over-provisioned blocks, and dynamic remapping factors that make traditional software wipes unreliable in ways that matter for regulated environments. The same architecture that makes NVMe so fast is exactly what makes it so hard to clean.
                   </p>
                   <p className="custom-text-center">
-                    Certified physical destruction is the only guaranteed answer. Working with R2v3 and Appendix B certified providers like IntegriTrade ensures secure, compliant, and environmentally responsible disposal with the documentation regulated industries actually need. Protecting sensitive data, maintaining compliance, and avoiding liability all converge on the same decision: choose certified NVMe destruction.
+                    Certified physical destruction is the only guaranteed answer. Working with R2v3 and Appendix B certified providers like Integritrade ensures secure, compliant, and environmentally responsible disposal with the documentation regulated industries actually need. Protecting sensitive data, maintaining compliance, and avoiding liability all converge on the same decision: choose certified NVMe destruction.
                   </p>
                 </div>
               </section>

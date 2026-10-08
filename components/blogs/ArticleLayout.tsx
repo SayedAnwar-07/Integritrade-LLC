@@ -4,6 +4,7 @@ import { Calendar, Tag } from "lucide-react";
 import PageHeader from "@/components/shared/PageHeader";
 import AllBlogCardsComponent from "@/components/EightBlogCards";
 import ScrollLoader from "@/components/shared/ScrollLoader";
+import ConsultationForm from "@/components/contact/ConsultationForm";
 import { blogReadTimes } from "@/data/blogReadTimes";
 import {
   Accordion,
@@ -224,37 +225,41 @@ export default function ArticleLayout({ article }: { article: Article }) {
       />
 
       <div className="mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
-        <ScrollLoader>
-          <PageHeader
-            eyebrow={article.category}
-            title={article.title}
-            description={article.description}
-          />
-        </ScrollLoader>
+        {/* Title on the left and the consultation form beside it on the right
+            (Ian, 2026-10-08); the article continues in the left column. */}
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-3">
+          <div className="min-w-0 lg:col-span-2">
+            <ScrollLoader>
+              <PageHeader
+                align="left"
+                eyebrow={article.category}
+                title={article.title}
+                description={article.description}
+              />
+            </ScrollLoader>
 
-        {/* Meta row */}
-        <ScrollLoader>
-          <div className="my-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-500 dark:text-gray-400">
-            <div className="flex items-center gap-2">
-              <Calendar className="h-4 w-4" />
-              <time dateTime={article.dateISO}>{article.date}</time>
-            </div>
-            <span className="hidden text-gray-300 dark:text-gray-700 sm:inline">•</span>
-            <div className="flex items-center gap-2">
-              <Tag className="h-4 w-4" />
-              <span>{article.category}</span>
-            </div>
-            <span className="hidden text-gray-300 dark:text-gray-700 sm:inline">•</span>
-            {/* blogReadTimes is generated from the rendered page by
-                scripts/build-read-times.mjs, the same source the rest of the
-                blog uses. The value on the article is only a fallback for a
-                post that has not been through that script yet. */}
-            <span>{blogReadTimes[article.slug] ?? article.readMinutes} min read</span>
-          </div>
-        </ScrollLoader>
+            {/* Meta row */}
+            <ScrollLoader>
+              <div className="my-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-gray-500 dark:text-gray-400">
+                <div className="flex items-center gap-2">
+                  <Calendar className="h-4 w-4" />
+                  <time dateTime={article.dateISO}>{article.date}</time>
+                </div>
+                <span className="hidden text-gray-300 dark:text-gray-700 sm:inline">•</span>
+                <div className="flex items-center gap-2">
+                  <Tag className="h-4 w-4" />
+                  <span>{article.category}</span>
+                </div>
+                <span className="hidden text-gray-300 dark:text-gray-700 sm:inline">•</span>
+                {/* blogReadTimes is generated from the rendered page by
+                    scripts/build-read-times.mjs, the same source the rest of the
+                    blog uses. The value on the article is only a fallback for a
+                    post that has not been through that script yet. */}
+                <span>{blogReadTimes[article.slug] ?? article.readMinutes} min read</span>
+              </div>
+            </ScrollLoader>
 
-        <div className="mt-20 grid grid-cols-1 gap-12 lg:grid-cols-3">
-          <article className="min-w-0 lg:col-span-2">
+          <article className="mt-12 min-w-0">
             {/* Featured image */}
             <ScrollLoader>
               <figure className="mb-12 overflow-hidden rounded-md">
@@ -344,10 +349,13 @@ export default function ArticleLayout({ article }: { article: Article }) {
               </ScrollLoader>
             )}
           </article>
+          </div>
 
-          {/* Sidebar */}
-          <aside className="hidden lg:col-span-1 lg:block">
-            <div className="sticky top-24">
+          {/* Sidebar: the consultation form (with the certification badges)
+              beside the title, then the related posts on desktop. */}
+          <aside className="min-w-0 lg:col-span-1">
+            <ConsultationForm industry={`Blog: ${article.title}`} showCerts />
+            <div className="mt-12 hidden lg:block">
               <AllBlogCardsComponent />
             </div>
           </aside>

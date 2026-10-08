@@ -280,7 +280,7 @@ export default function DataDestructionMethods() {
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="custom-text-center">
-                  Looking for certified data destruction in San Francisco? IntegriTrade LLC provides secure hard drive shredding, NIST 800-88 compliant data erasure, and complete IT asset disposal solutions designed to protect your sensitive business data.
+                  Looking for certified data destruction in San Francisco? Integritrade LLC provides secure hard drive shredding, NIST 800-88 compliant data erasure, and complete IT asset disposal solutions designed to protect your sensitive business data.
                 </p>
                 <p className="custom-text-center">
                   Whether you need on-site shredding or compliant data wiping, our services ensure full regulatory compliance, zero data recovery risk, and detailed reporting for audits.
@@ -351,11 +351,11 @@ export default function DataDestructionMethods() {
 
                 <AccordionItem value="item-4">
                   <AccordionTrigger className="font-serif text-lg font-medium text-gray-900 dark:text-white text-left">
-                    What does IntegriTrade recommend for maximum security?
+                    What does Integritrade recommend for maximum security?
                   </AccordionTrigger>
                   <AccordionContent>
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed custom-text-center">
-                      For the highest assurance, IntegriTrade recommends a combined approach: certified data erasure first, followed by physical destruction where required. This produces both software-level verification and irreversible hardware-level destruction with complete documentation at each step.
+                      For the highest assurance, Integritrade recommends a combined approach: certified data erasure first, followed by physical destruction where required. This produces both software-level verification and irreversible hardware-level destruction with complete documentation at each step.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
@@ -374,7 +374,7 @@ export default function DataDestructionMethods() {
                   There is no single best method for data destruction. The right choice depends on the condition of the drives, the level of security your organization needs to demonstrate, and whether the assets still have recoverable value. The cost of getting it wrong is measured in compliance gaps, lost revenue, or worse and the cost of getting it right is mostly a matter of choosing the right partner.
                 </p>
                 <p className="custom-text-center">
-                  IntegriTrade LLC has maintained a clean record with no history of data breach. When data security and asset value both matter, they shouldn&apos;t be a trade-off, and they don&apos;t have to be.
+                  Integritrade LLC has maintained a clean record with no history of data breach. When data security and asset value both matter, they shouldn&apos;t be a trade-off, and they don&apos;t have to be.
                 </p>
               </div>
             </section>

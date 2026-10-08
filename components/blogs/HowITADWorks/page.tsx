@@ -35,9 +35,9 @@ const faqs = [
       "In many cases, yes. Equipment with strong resale value, processed in volume, with practical sanitization requirements often produces returns rather than costs. The variables that matter most are device age, quantity, and your specific destruction requirements.",
   },
   {
-    question: "Why choose IntegriTrade LLC over other ITAD vendors?",
+    question: "Why choose Integritrade LLC over other ITAD vendors?",
     answer:
-      "IntegriTrade combines transparent processes, a clean record with no history of data breach, certified destruction aligned with R2v3 and NIST standards, and a commitment to maximizing asset value at every engagement. We\u2019re a security partner, not just a recycler.",
+      "Integritrade combines transparent processes, a clean record with no history of data breach, certified destruction aligned with R2v3 and NIST standards, and a commitment to maximizing asset value at every engagement. We\u2019re a security partner, not just a recycler.",
   },
 ];
 
@@ -391,14 +391,14 @@ export default function HowITADWorks() {
             <ScrollLoader>
             <section>
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-gray-900 dark:text-white mb-6 tracking-tight">
-                Why IntegriTrade LLC?
+                Why Integritrade LLC?
               </h2>
               <div className="space-y-5 text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p className="custom-text-center">
                   Choosing the right ITAD partner means keeping your organization&apos;s data secure while genuinely maximizing the value of retired assets. The two outcomes are not in tension when the workflow is built correctly they reinforce each other.
                 </p>
                 <p className="custom-text-center">
-                  Transparent processes, a zero-data-breach record, and certified destruction aligned with recognized standards are what set IntegriTrade apart. When data security matters, the choice of ITAD vendor matters just as much.
+                  Transparent processes, a zero-data-breach record, and certified destruction aligned with recognized standards are what set Integritrade apart. When data security matters, the choice of ITAD vendor matters just as much.
                 </p>
               </div>
             </section>

@@ -568,14 +568,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   "fair-flexible-itad-cutlines": {
     title: "Flexible ITAD Cutlines & Asset Recovery",
     description:
-      "Get more than just scrap value. IntegriTrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets. Recover value today!",
+      "Get more than just scrap value. Integritrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets. Recover value today!",
     alternates: {
       canonical: `${BASE_URL}/blogs/fair-flexible-itad-cutlines`,
     },
     openGraph: {
       title: "Flexible ITAD Cutlines & Asset Recovery",
       description:
-        "Get more than just scrap value. IntegriTrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets. Recover value today!",
+        "Get more than just scrap value. Integritrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets. Recover value today!",
       url: `${BASE_URL}/blogs/fair-flexible-itad-cutlines`,
       siteName: SITE_NAME,
       locale: "en_US",
@@ -585,7 +585,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
           url: OG_IMAGE,
           width: 1200,
           height: 630,
-          alt: "IntegriTrade Flexible ITAD Cutlines and Asset Recovery Services",
+          alt: "Integritrade Flexible ITAD Cutlines and Asset Recovery Services",
         },
       ],
     },
@@ -593,7 +593,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       card: "summary_large_image",
       title: "Flexible ITAD Cutlines & Asset Recovery",
       description:
-        "Get more than just scrap value. IntegriTrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets. Recover value today!",
+        "Get more than just scrap value. Integritrade's flexible ITAD cutlines and scope-of-job assessments maximize ROI on your retired IT assets. Recover value today!",
       images: [OG_IMAGE],
     },
     robots: {
@@ -613,14 +613,14 @@ export const BLOG_METADATA: Record<string, Metadata> = {
   "hipaa-compliant-itad-data-destruction-services": {
     title: "HIPAA Compliant ITAD & R2v3 Data Destruction",
     description:
-      "Ensure HIPAA compliance with IntegriTrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
+      "Ensure HIPAA compliance with Integritrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
     alternates: {
       canonical: `${BASE_URL}/blogs/hipaa-compliant-itad-data-destruction-services`,
     },
     openGraph: {
       title: "HIPAA Compliant ITAD & R2v3 Data Destruction",
       description:
-        "Ensure HIPAA compliance with IntegriTrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
+        "Ensure HIPAA compliance with Integritrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
       url: `${BASE_URL}/blogs/hipaa-compliant-itad-data-destruction-services`,
       siteName: SITE_NAME,
       locale: "en_US",
@@ -638,7 +638,7 @@ export const BLOG_METADATA: Record<string, Metadata> = {
       card: "summary_large_image",
       title: "HIPAA Compliant ITAD & R2v3 Data Destruction",
       description:
-        "Ensure HIPAA compliance with IntegriTrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
+        "Ensure HIPAA compliance with Integritrade. We provide R2v3 Appendix B certified logical and physical data destruction. Zero data breaches, total peace of mind.",
       images: [OG_IMAGE],
     },
     robots: {
@@ -1626,13 +1626,13 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
   },
   "what-is-itad-it-asset-disposition": {
-    title: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+    title: "What Is ITAD? A Complete Guide to IT Asset Disposition (2026)",
     description: "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
     alternates: {
       canonical: `${BASE_URL}/blogs/what-is-itad-it-asset-disposition`,
     },
     openGraph: {
-      title: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+      title: "What Is ITAD? A Complete Guide to IT Asset Disposition (2026)",
       description: "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
       url: `${BASE_URL}/blogs/what-is-itad-it-asset-disposition`,
       siteName: SITE_NAME,
@@ -1649,8 +1649,37 @@ export const BLOG_METADATA: Record<string, Metadata> = {
     },
     twitter: {
       card: "summary_large_image",
-      title: "What Is ITAD? A Complete Guide to IT Asset Disposition",
+      title: "What Is ITAD? A Complete Guide to IT Asset Disposition (2026)",
       description: "How IT asset disposition works for businesses: secure pickup, chain of custody, NIST 800-88 data sanitization, value recovery, recycling, and reporting.",
+      images: [OG_IMAGE],
+    },
+  },
+  "choosing-electronics-recycling-provider-bay-area": {
+    title: "Choosing an Electronics Recycling Provider in the Bay Area: The Risk of the Wrong Vendor",
+    description: "Before choosing a Bay Area electronics recycling provider, verify its certifications, data destruction methods, chain of custody, and serialized certificates.",
+    alternates: {
+      canonical: `${BASE_URL}/blogs/choosing-electronics-recycling-provider-bay-area`,
+    },
+    openGraph: {
+      title: "Choosing an Electronics Recycling Provider in the Bay Area: The Risk of the Wrong Vendor",
+      description: "Before choosing a Bay Area electronics recycling provider, verify its certifications, data destruction methods, chain of custody, and serialized certificates.",
+      url: `${BASE_URL}/blogs/choosing-electronics-recycling-provider-bay-area`,
+      siteName: SITE_NAME,
+      locale: "en_US",
+      type: "article",
+      images: [
+        {
+          url: OG_IMAGE,
+          width: 1200,
+          height: 630,
+          alt: "Workers in safety vests sorting electronic waste into bins on a conveyor line at an electronics recycling facility",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Choosing an Electronics Recycling Provider in the Bay Area: The Risk of the Wrong Vendor",
+      description: "Before choosing a Bay Area electronics recycling provider, verify its certifications, data destruction methods, chain of custody, and serialized certificates.",
       images: [OG_IMAGE],
     },
   },

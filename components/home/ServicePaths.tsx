@@ -22,7 +22,7 @@ const paths: Path[] = [
     iconColor: "text-emerald-700 dark:text-emerald-300",
     iconBorder: "border-emerald-200/80 dark:border-emerald-700/40",
     title: "Retiring IT assets at scale",
-    desc: "Office refreshes, data center decommissions, and fleet retirements processed at our 30,000 sq ft, 24/7 video-monitored Fresno facility, with serialized asset tracking, certified data destruction, and audit-ready reporting your finance team can file with confidence.",
+    desc: "Office refreshes, data center decommissions, and fleet retirements processed at our 30,000 sq ft, 24/7 video-monitored Fresno facility, with serialized asset tracking, certified data destruction, and audit-ready reporting your Compliance Team can file with confidence.",
     ctaLabel: "Explore Business",
     href: "/services/",
   },

@@ -16,7 +16,7 @@ export const cupertinoData: ServiceArea = {
   tagline: "Certified Electronics Disposal, Secure Data Destruction & High-Volume IT Asset Disposition in Cupertino, CA",
   metaTitle: "Cupertino ITAD & Data Destruction | Integritrade",
   metaDescription: "Turnkey ITAD, certified hard drive shredding, and electronics recycling for Cupertino businesses. Value recovery and audit-ready CODs. Request a quote.",
-  intro: "IntegriTrade LLC provides certified electronics disposal and IT asset disposition services in Cupertino, CA, supporting technology companies, hardware R&D labs, and corporate campuses as they retire and refresh equipment at scale. Our work spans secure data destruction, hard drive shredding, high-volume server decommissioning, and asset value recovery on surplus IT hardware. Every project runs on a tracked chain of custody, meets full California regulatory requirements, and ends with audit-ready documentation built for the compliance demands of Silicon Valley enterprises.",
+  intro: "Integritrade LLC provides certified electronics disposal and IT asset disposition services in Cupertino, CA, supporting technology companies, hardware R&D labs, and corporate campuses as they retire and refresh equipment at scale. Our work spans secure data destruction, hard drive shredding, high-volume server decommissioning, and asset value recovery on surplus IT hardware. Every project runs on a tracked chain of custody, meets full California regulatory requirements, and ends with audit-ready documentation built for the compliance demands of Silicon Valley enterprises.",
 
   services: [
     {
@@ -202,7 +202,7 @@ export const cupertinoData: ServiceArea = {
       "metaTitle": "Sell IT Equipment in Cupertino | Buyback | Integritrade",
       "metaDescription": "Monetize retired IT hardware in Cupertino. Certified equipment buyback, NIST data destruction, and maximum value recovery. Request an evaluation.",
       "ctaText": "Get a Free Quote",
-      "image": itBuyback,
+      "image": corporateLaptops,
       "heroHeading": "Sell Your IT Equipment in Cupertino: Get the Best Value with Secure, Certified Buyback",
       "heroSubheading": "When your Cupertino business retires a fleet of laptops, decommissions a server room, or upgrades its mobile devices, those assets still have real market value - and most organizations leave that money on the table. Instead of paying to have equipment hauled away or handing it over to a recycler who offers nothing in return, a certified IT equipment buyback program turns your retired technology into recovered revenue while ensuring your data is completely and verifiably destroyed along the way.",
       "details": [
